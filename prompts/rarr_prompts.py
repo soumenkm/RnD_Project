@@ -37,6 +37,94 @@ You said: {claim}
 To verify it,
 """.strip()
 
+QGEN_PROMPT_WITH_LOCATION_mixtral8x7b = """Given the source claim and target location, re-write the source claim to be factually correct for an entity from the target location. And generate questions to check the factual correctness of the sentence obtained.
+For example:
+Source sentence: The Eiffel Tower is a wrought-iron lattice tower on the Champ de Mars in Paris, France. It is named after the engineer Gustave Eiffel, whose company designed and built the tower from 1887 to 1889.
+Target location: Delhi
+The sentence in the target location and the questions generated are:
+Target sentence: The India Gate is a war memorial made of sandstone located in the heart of New Delhi, India. It is named after the engineer Sir Edwin Lutyens, who designed and built the monument in 1931 to honor the Indian soldiers who died during World War I and the Third Anglo-Afghan War.
+Q: What material is the India Gate made of?
+Q: In which city is the India Gate located?
+Q: Who is the engineer credited with designing and building the India Gate?
+Q: When was the India Gate constructed?
+
+Source sentence: {claim}
+Target location: {location}
+The sentence in the target location and the questions generated are:
+""".strip()
+
+
+QGEN_PROMPT_WITH_ENTITY_mixtral8x7b = """To check the factual correctness of a given sentence, generate sufficient number of questions based on the target entity. Do not generate irrelevant questions.
+For example,
+Sentence: The India Gate is a war memorial made of sandstone located in the heart of New Delhi, India. It is named after the engineer Sir Edwin Lutyens, who designed and built the monument in 1931 to honor the Indian soldiers who died during World War I and the Third Anglo-Afghan War.
+Target entity: India Gate
+The questions generated are:
+Q: What material is the India Gate made of?
+Q: In which city is the India Gate located?
+Q: Who is the engineer credited with designing and building the India Gate?
+Q: When was the India Gate constructed?
+
+Sentence: {claim}
+Target entity: {entity}
+The questions generated are:
+""".strip()
+
+QGEN_PROMPT_WITH_ENTITY_noushermes8x7b = """
+
+<|im_start|>system\n
+To check the factual correctness of a given sentence, generate sufficient number of questions based on the target entity. Do NOT generate irrelevant questions. Do not generate irrelevant questions.
+For example,
+Sentence: The India Gate is a war memorial made of sandstone located in the heart of New Delhi, India. It is named after the engineer Sir Edwin Lutyens, who designed and built the monument in 1931 to honor the Indian soldiers who died during World War I and the Third Anglo-Afghan War.
+Target entity: India Gate
+The questions generated are:
+Q: What material is the India Gate made of?
+Q: In which city is the India Gate located?
+Q: Who is the engineer credited with designing and building the India Gate?
+Q: When was the India Gate constructed?
+<|im_end|>\n
+
+<|im_start|>user\n
+Sentence: {claim}
+Target entity: {entity}
+The questions generated are:
+<|im_end|>\n<|im_start|>assistant
+
+""".strip()
+
+QGEN_PROMPT_mixtral8x7b = """To check the factual correctness of a given sentence, generate sufficient number of questions.  Do not generate irrelevant questions.
+For example,
+Sentence: The India Gate is a war memorial made of sandstone located in the heart of New Delhi, India. It is named after the engineer Sir Edwin Lutyens, who designed and built the monument in 1931 to honor the Indian soldiers who died during World War I and the Third Anglo-Afghan War.
+The questions generated are:
+Q: What material is the India Gate made of?
+Q: In which city is the India Gate located?
+Q: Who is the engineer credited with designing and building the India Gate?
+Q: When was the India Gate constructed?
+
+Sentence: {claim}
+The questions generated are:
+""".strip()
+
+QGEN_PROMPT_noushermes8x7b = """
+
+<|im_start|>system\n
+To check the factual correctness of a given sentence, generate sufficient number of questions. Do not generate irrelevant questions.
+For example,
+Sentence: The India Gate is a war memorial made of sandstone located in the heart of New Delhi, India. It is named after the engineer Sir Edwin Lutyens, who designed and built the monument in 1931 to honor the Indian soldiers who died during World War I and the Third Anglo-Afghan War.
+The questions generated are:
+Q: What material is the India Gate made of?
+Q: In which city is the India Gate located?
+Q: Who is the engineer credited with designing and building the India Gate?
+Q: When was the India Gate constructed?
+<|im_end|>\n
+
+<|im_start|>user\n
+Sentence: {claim}
+The questions generated are:
+<|im_end|>\n<|im_start|>assistant
+
+""".strip()
+
+
 CONTEXTUAL_QGEN_PROMPT = """I will check things you said and ask questions.
 
 Context: Your nose switches back and forth between nostrils. When you sleep, you switch about every 45 minutes.

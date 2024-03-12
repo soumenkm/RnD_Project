@@ -115,7 +115,7 @@ def run_agreement_gate(
     model: str,
     prompt: str,
     context: str = None,
-    num_retries: int = 5,
+    num_retries: int = 1,
 ) -> Dict[str, Any]:
     """Checks if a provided evidence contradicts the claim given a query.
 
@@ -153,6 +153,7 @@ def run_agreement_gate(
 
     is_open, reason, decision = parse_api_response(response.strip())
     gate = {"is_open": is_open, "reason": reason, "decision": decision}
+    
     return gate
 
 if __name__ == "__main__":

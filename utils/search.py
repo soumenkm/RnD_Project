@@ -19,7 +19,7 @@ PASSAGE_RANKER = CrossEncoder(
 SEARCH_URL = "https://api.bing.microsoft.com/v7.0/search/"
 # SUBSCRIPTION_KEY = os.getenv("AZURE_SEARCH_KEY")
 SUBSCRIPTION_KEY = "ced4261d47a64252b8a69cdd67c4e8f1"
-print(SUBSCRIPTION_KEY)
+# print(SUBSCRIPTION_KEY)
 TOKENIZER = spacy.load("en_core_web_sm", disable=["ner", "tagger", "lemmatizer"])
 # python -m spacy download en_core_web_sm
 
@@ -138,7 +138,7 @@ def search_bing(query: str, timeout: float = 3) -> List[str]:
         print(f"An error occurred: {e}")
         search_results = None
     
-    print(f"Query: {query}\nSearch Results: {search_results}")
+    # print(f"Query: {query}\nSearch Results: {search_results}")
     return search_results
 
 

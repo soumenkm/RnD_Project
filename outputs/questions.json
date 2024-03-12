@@ -1,0 +1,17 @@
+[
+    {
+        "claim_id": 1,
+        "claim": "On July 10, 2006, concrete ceiling panels and debris fell on a car traveling on the two-lane ramp connecting northbound I-93 to eastbound I-90 in South Boston, killing the passenger and injuring her husband, who was driving.",
+        "entity": null,
+        "location": "Uttarakhand",
+        "model": "mixtral8x7b",
+        "prompt": "Given the source claim and target location, re-write the source claim to be factually correct for an entity from the target location. And generate questions to check the factual correctness of the sentence obtained.\nFor example:\nSource sentence: The Eiffel Tower is a wrought-iron lattice tower on the Champ de Mars in Paris, France. It is named after the engineer Gustave Eiffel, whose company designed and built the tower from 1887 to 1889.\nTarget location: Delhi\nThe sentence in the target location and the questions generated are:\nTarget sentence: The India Gate is a war memorial made of sandstone located in the heart of New Delhi, India. It is named after the engineer Sir Edwin Lutyens, who designed and built the monument in 1931 to honor the Indian soldiers who died during World War I and the Third Anglo-Afghan War.\nQ: What material is the India Gate made of?\nQ: In which city is the India Gate located?\nQ: Who is the engineer credited with designing and building the India Gate?\nQ: When was the India Gate constructed?\n\nSource sentence: {claim}\nTarget location: {location}\nThe sentence in the target location and the questions generated are:",
+        "claim_target": "On October 19, 2021, a landslide on NH-109 near Dhanaulti in Uttarakhand caused boulders and debris to fall on a vehicle, killing two people traveling in it.",
+        "questions": [
+            "How many people were killed in the incident?",
+            "What caused the deaths on NH-109 near Dhanaulti in Uttarakhand on October 19, 2021?",
+            "Where did the incident take place?",
+            "Which highway was affected by the landslide?"
+        ]
+    }
+]
