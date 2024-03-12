@@ -17,9 +17,11 @@ PASSAGE_RANKER = CrossEncoder(
     device="cpu",
 )
 SEARCH_URL = "https://api.bing.microsoft.com/v7.0/search/"
-SUBSCRIPTION_KEY = os.getenv("AZURE_SEARCH_KEY")
+# SUBSCRIPTION_KEY = os.getenv("AZURE_SEARCH_KEY")
+SUBSCRIPTION_KEY = "ced4261d47a64252b8a69cdd67c4e8f1"
+print(SUBSCRIPTION_KEY)
 TOKENIZER = spacy.load("en_core_web_sm", disable=["ner", "tagger", "lemmatizer"])
-
+# python -m spacy download en_core_web_sm
 
 def chunk_text(
     text: str,
@@ -119,13 +121,24 @@ def search_bing(query: str, timeout: float = 3) -> List[str]:
     Returns:
         search_results: A list of the top URLs relevant to the query.
     """
+
+    endpoint = SEARCH_URL
     headers = {"Ocp-Apim-Subscription-Key": SUBSCRIPTION_KEY}
     params = {"q": query, "textDecorations": True, "textFormat": "HTML"}
-    response = requests.get(SEARCH_URL, headers=headers, params=params, timeout=timeout)
-    response.raise_for_status()
 
-    response = response.json()
-    search_results = [r["url"] for r in response["webPages"]["value"]]
+    try:
+        response = requests.get(endpoint, headers=headers, params=params)
+        response.raise_for_status()  # Raise an exception for 4xx or 5xx status codes
+        response = response.json()
+        search_results = [r["url"] for r in response["webPages"]["value"]]
+    except requests.exceptions.HTTPError as err:
+        print(f"HTTP error occurred: {err}")
+        search_results = None
+    except Exception as e:
+        print(f"An error occurred: {e}")
+        search_results = None
+    
+    print(f"Query: {query}\nSearch Results: {search_results}")
     return search_results
 
 

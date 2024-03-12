@@ -43,7 +43,7 @@ def run_editor_one_instance(
     context: str = None,
     model: str = "text-davinci-003",
     temperature_qgen: float = 0.7,
-    num_rounds_qgen: int = 3,
+    num_rounds_qgen: int = 1,
     max_search_results_per_query: int = 5,
     max_sentences_per_passage: int = 4,
     sliding_distance: int = 1,
@@ -76,16 +76,19 @@ def run_editor_one_instance(
     agreement_gates = []
 
     # Generate questions for the claim
-    questions = question_generation.run_rarr_question_generation(
-        claim=claim,
-        context=context,
-        model=model,
-        prompt=rarr_prompts.CONTEXTUAL_QGEN_PROMPT
-        if context
-        else rarr_prompts.QGEN_PROMPT,
-        temperature=temperature_qgen,
-        num_rounds=num_rounds_qgen,
-    )
+    # questions = question_generation.run_rarr_question_generation(
+    #     claim=claim,
+    #     context=context,
+    #     model=model,
+    #     prompt=rarr_prompts.CONTEXTUAL_QGEN_PROMPT
+    #     if context
+    #     else rarr_prompts.QGEN_PROMPT,
+    #     temperature=temperature_qgen,
+    #     num_rounds=num_rounds_qgen,
+    # )
+
+    questions = ["Is it true that Michael Jordan played for the LA Lakers?",
+        "When did Michael Jordan play for the LA Lakers?"]
 
     # Run search on generated question for the claim
     if hallucinate_evidence:
@@ -112,12 +115,16 @@ def run_editor_one_instance(
             for query in questions
         ]
 
+        # print(f"evidences_for_questions: \n{evidences_for_questions}")
+
     # Flatten the evidences per question into a single list.
     used_evidences = [
         e
         for cur_evids in evidences_for_questions
         for e in cur_evids[:max_evidences_per_question]
     ]
+
+    print(f"Search module is run")
 
     # Iterative editing over each evidence
     revision_steps = []
@@ -135,6 +142,8 @@ def run_editor_one_instance(
         )
         agreement_gates.append(gate)
 
+        print(f"Agreement Module is run\nClaim: {claim}, Query: {evid['query']}, Evidence: {evid['text']}\nGate: {gate['is_open']}")
+
         # Run the editor gate if the agreement gate is open
         if gate["is_open"]:
             edited_claim = editor.run_rarr_editor(
@@ -151,6 +160,8 @@ def run_editor_one_instance(
             # Don't keep the edit if the editor makes a huge change
             if Levenshtein.distance(claim, edited_claim) / len(claim) <= max_edit_ratio:
                 claim = edited_claim
+        
+        print(f"Editor module is run\nClaim: {claim}, Query: {evid['query']}, Evidence: {evid['text']}\nGate: {gate['is_open']}\n Edited Claim: {edited_claim}")
 
         revision_steps.append({"text": claim})
 
