@@ -10,6 +10,7 @@ import requests
 import spacy
 import torch
 from sentence_transformers import CrossEncoder
+from api import SUBSCRIPTION_KEY
 
 PASSAGE_RANKER = CrossEncoder(
     "cross-encoder/ms-marco-MiniLM-L-6-v2",
@@ -18,7 +19,6 @@ PASSAGE_RANKER = CrossEncoder(
 )
 SEARCH_URL = "https://api.bing.microsoft.com/v7.0/search/"
 # SUBSCRIPTION_KEY = os.getenv("AZURE_SEARCH_KEY")
-SUBSCRIPTION_KEY = "ced4261d47a64252b8a69cdd67c4e8f1"
 # print(SUBSCRIPTION_KEY)
 TOKENIZER = spacy.load("en_core_web_sm", disable=["ner", "tagger", "lemmatizer"])
 # python -m spacy download en_core_web_sm
