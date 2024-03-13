@@ -27,6 +27,7 @@ questions_output_path = "/raid/speech/soumenmondal/RnD_project/RARR/outputs/ques
 evidences_output_path = "/raid/speech/soumenmondal/RnD_project/RARR/outputs/evidences.json"
 agreements_output_path = "/raid/speech/soumenmondal/RnD_project/RARR/outputs/agreements.json"
 edits_output_path = "/raid/speech/soumenmondal/RnD_project/RARR/outputs/edits.json"
+results_output_path = "/raid/speech/soumenmondal/RnD_project/RARR/outputs/results.json"
 
 def append_to_json_file(data, file_path):
     
@@ -82,15 +83,14 @@ def get_questions(
         "entity": entity,
         "location": location,
         "model": model,
-        "prompt": prompt,
         "claim_target": sent,
         "questions": questions
     }
 
     # Dump the list into the JSON file
     append_to_json_file(output, file_path=questions_output_path)
-    
-    return sent, questions
+
+    return sent, questions, output
 
 def get_evidence(
     claim_id: int,
@@ -136,7 +136,7 @@ def get_evidence(
     # Dump the list into the JSON file
     append_to_json_file(output, file_path=evidences_output_path)
 
-    return used_evidences
+    return used_evidences, output
 
 def check_agreement(
     claim_id: int,
@@ -170,14 +170,13 @@ def check_agreement(
         "query": query,
         "evidence": evidence,
         "model": model,
-        "prompt": prompt,
         "gate": gate
     }
 
     # Dump the list into the JSON file
     append_to_json_file(output, file_path=agreements_output_path)
 
-    return gate
+    return gate, output
 
 def edit_claim(
     claim_id: int,
@@ -211,14 +210,172 @@ def edit_claim(
         "query": query,
         "evidence": evidence,
         "model": model,
-        "prompt": prompt,
         "edited_claim": edited_claim
     }
 
     # Dump the list into the JSON file
     append_to_json_file(output, file_path=edits_output_path)
 
-    return edited_claim
+    return edited_claim, output
+
+def write_questions_json(
+    data: dict
+):
+
+    num_claims = len(data)
+    output_list = []
+    for claim_id, item in enumerate(data):
+        claim = data[claim_id]["input_info"]["claim"]
+        entity = None
+        location = data[claim_id]["input_info"]["location"]
+
+        t1 = time.time()
+        output_list.append(get_questions(claim_id, claim, entity, location)[-1])
+        t2 = time.time()
+        print(f"Claim: {claim_id}, Question generation module is run in {(t2-t1)/60:.2f} mint")
+
+    # Dump the list into the JSON file
+    with open(questions_output_path.replace(".json","_final.json"), 'w') as json_file:
+        json.dump(output_list, json_file, indent=4)
+
+def write_evidences_json():
+
+    # Read the questions.json file
+    with open(questions_output_path, 'r') as json_file:
+        data = json.load(json_file)
+
+    num_claims = len(data)
+    output_list = []
+    for claim_id, item in enumerate(data):
+        claim = item["claim_target"]
+        entity = None
+        location = item["location"]
+        questions = item["questions"]
+        print(f"Claim: {claim_id}, Question is taken from file")
+    
+        t1 = time.time()
+        output_list.append(get_evidence(claim_id, claim, entity, location, questions)[-1])
+        t2 = time.time()
+        print(f"Claim: {claim_id}, Evidence module is run in {(t2-t1)/60:.2f} mint")
+
+    # Dump the list into the JSON file
+    with open(evidences_output_path.replace(".json","_final.json"), 'w') as json_file:
+        json.dump(output_list, json_file, indent=4)
+
+def write_agreements_json():
+
+    # Read the evidences.json file
+    with open(evidences_output_path, 'r') as json_file:
+        data = json.load(json_file)
+
+    num_claims = len(data)
+    output_list = []
+    for claim_id, item in enumerate(data):
+        claim = item["claim_target"]
+        entity = None
+        location = item["location"]
+        evidence_data = item["evidences"]
+        print(f"Claim: {claim_id}, Evidence is taken from file")
+
+        for evid_id, evid in enumerate(evidence_data):
+            t1 = time.time()
+            output_list.append(check_agreement(claim_id, claim, entity, location, evid_id, evid['query'], evid['text'])[-1])
+            t2 = time.time()
+            print(f"Claim: {claim_id}, Evidence: {evid_id}, Agreement module is run in {(t2-t1)/60:.2f} mint")
+
+    # Dump the list into the JSON file
+    with open(agreements_output_path.replace(".json","_final.json"), 'w') as json_file:
+        json.dump(output_list, json_file, indent=4)
+
+def write_edits_json():
+
+    # Read the questions.json file
+    with open(questions_output_path, 'r') as json_file:
+        ques_data = json.load(json_file)
+
+    # Read the evidences.json file
+    with open(evidences_output_path, 'r') as json_file:
+        evid_data = json.load(json_file)
+
+    num_claims = len(evid_data)
+    
+    # Read the agreements.json file
+    with open(agreements_output_path, 'r') as json_file:
+        data = json.load(json_file)
+
+    agreement_data = [None]*num_claims
+    for i in range(num_claims):
+        evids = []
+        for item in data:
+            if item["claim_id"] == i:
+                evids.append(item)      
+        agreement_data[i] = evids
+
+    output_list = []
+    results_list = []
+    for claim_id, ag_item in enumerate(agreement_data):
+        original_claim = ag_item[0]["claim_target"]
+        edit_rev_list = []
+
+        for evid_id, evid_item in enumerate(ag_item):
+            claim = evid_item["claim_target"]
+            entity = None
+            location = evid_item["location"]
+            evid = evid_item["evidence"]
+            query = evid_item["query"]
+            gate = evid_item["gate"]
+            print(f"Claim: {claim_id}, Evidence: {evid_id}, Agreement is taken from file")
+
+            # Run the editor gate if the agreement gate is open
+            if gate["is_open"]:
+                t1 = time.time()
+                edited_claim, output = edit_claim(claim_id, claim, entity, location, evid_id, query, evid)
+                t2 = time.time()
+                
+                # Don't keep the edit if the editor makes a huge change
+                max_edit_ratio = 100
+                if Levenshtein.distance(claim, edited_claim) / len(claim) <= max_edit_ratio:
+                    claim = edited_claim
+            
+                print(f"Claim: {claim_id}, Evidence: {evid_id}, Editor module is run in {(t2-t1)/60:.2f} mint")
+            else:
+                output = None
+                print(f"Claim: {claim_id}, Evidence: {evid_id}, Editor module is skipped")
+
+            # Replace the claim for next evidence
+            try:
+                ag_item[evid_id + 1]["claim_target"] = claim
+            except IndexError as e:
+                pass 
+
+            edit_rev_list.append({
+                "query": query,
+                "evidence": evid,
+                "is_open": gate["is_open"],
+                "edited_claim": claim
+            })
+        
+        results = {
+            "claim_id": ques_data[claim_id]["claim_id"],
+            "claim_ref": ques_data[claim_id]["claim"],
+            "entity": ques_data[claim_id]["entity"],
+            "location": ques_data[claim_id]["location"],
+            "claim_target": ques_data[claim_id]["claim_target"],
+            "questions": ques_data[claim_id]["questions"],
+            "edit_revisions": edit_rev_list,
+            "claim_attributed": claim
+        }
+
+        output_list.append(output)
+        results_list.append(results)
+
+    # Dump the list into the JSON file
+    with open(edits_output_path.replace(".json","_final.json"), 'w') as json_file:
+        json.dump(output_list, json_file, indent=4)
+
+    # Dump the list into the JSON file
+    with open(results_output_path.replace(".json","_final.json"), 'w') as json_file:
+        json.dump(results_list, json_file, indent=4)
 
 def run_editor_one_instance(
     claim_id: int,
@@ -363,16 +520,7 @@ if __name__ == "__main__":
         "location": "Kerala"}}
     ]
 
-    claim_id = 1
-    claim = data[claim_id-1]["input_info"]["claim"]
-    entity = None
-    location = data[claim_id-1]["input_info"]["location"]
-
-    result = run_editor_one_instance(
-        claim_id = claim_id,
-        claim=claim, 
-        entity=entity,
-        location=location,
-        model="mixtral8x7b")
-
-    print(json.dumps(result, indent=4))
+    # write_questions_json(data)
+    # write_evidences_json()
+    # write_agreements_json()
+    write_edits_json()

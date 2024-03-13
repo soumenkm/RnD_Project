@@ -1,47 +1,148 @@
 [
     {
-        "claim_id": 1,
-        "claim_target": "On October 19, 2021, a landslide on NH-109 near Dhanaulti in Uttarakhand caused boulders and debris to fall on a vehicle, killing two people traveling in it.",
+        "claim_id": 0,
+        "claim_target": "On July 10, 2006, concrete ceiling panels and debris fell on a car traveling on the two-lane ramp connecting National Highway 58 to National Highway 7 in Rishikesh, Uttarakhand, killing the passenger and injuring her husband, who was driving.",
         "entity": null,
         "location": "Uttarakhand",
         "questions": [
-            "How many people were killed in the incident?",
-            "What caused the deaths on NH-109 near Dhanaulti in Uttarakhand on October 19, 2021?",
-            "Where did the incident take place?",
-            "Which highway was affected by the landslide?"
+            "Where in Uttarakhand did this incident occur?",
+            "Which two highways in Uttarakhand are connected by this ramp?",
+            "Who was injured in this incident?",
+            "Who was killed in this incident?"
         ],
         "evidences": [
             {
+                "text": "The floodwaters burst open a dam and a deluge of water poured through a valley in the state of Uttarakhand. Villages have been evacuated, but officials warned more than 125 people may have been caught in the torrent. Video showed the floodwater barrelling through the area, leaving destruction in its wake. One witness said a wall of water and rock sped down the Dhauliganga river so quickly there was no time to sound the alarm.",
+                "url": "https://www.bbc.com/news/world-asia-india-55969669",
+                "query": "Where in Uttarakhand did this incident occur?",
+                "sents_per_passage": 4,
+                "retrieval_score": 3.847938060760498,
+                "score": 0.7712720632553101
+            },
+            {
+                "text": "Today, Uttarakhand proudly exhibits 14 National Highways, having a length of 2108 kilometres. Below is the list of all National highways with their route. List of National Highways in Uttarakhand NH 125 Route: Junction with NH-74 near Sitarganj and connecting Khatima \u2013 Tanakpur and terminating at Pithoragarh . Google Map : National Highway 125 NH 123 Route: Junction with NH-72 connecting Vikasnagar - Kalsi - Barkot and terminating at junction with NH 94 near Barkot bend.",
+                "url": "https://www.euttaranchal.com/uttarakhand/national-highways-uttarakhand.php",
+                "query": "Which two highways in Uttarakhand are connected by this ramp?",
+                "sents_per_passage": 4,
+                "retrieval_score": 6.512331485748291,
+                "score": 0.552277147769928
+            },
+            {
+                "text": "The deaths in that incident were a staggering 288, and more than 1,100 people were injured. Here are the key developments in the Andhra Pradesh train tragedy: 1. According to preliminary information, the reason for the collision is suspected to be human error owing to the overshooting of the signal by the Visakhapatnam-Rayagada train. 2.",
+                "url": "https://www.indiatoday.in/india/story/andhra-pradesh-train-accident-death-toll-rescue-operations-vizianagaram-trains-affected-2455389-2023-10-30",
+                "query": "Who was injured in this incident?",
+                "sents_per_passage": 4,
+                "retrieval_score": 3.7304351329803467,
+                "score": 0.6752499341964722
+            },
+            {
                 "text": "After blocking the exit with his troops, he ordered them to shoot at the crowd, continuing to fire even as the protestors tried to flee. The troops kept on firing until their ammunition was exhausted. [8] Estimates of those killed vary from 379 to 1,500 or more people [1] and over 1,200 other people were injured of whom 192 were seriously injured. [9] [10] Britain has never formally apologised for the massacre but expressed \"deep regret\" in 2019.",
                 "url": "https://en.wikipedia.org/wiki/Jallianwala_Bagh_massacre",
-                "query": "How many people were killed in the incident?",
+                "query": "Who was killed in this incident?",
                 "sents_per_passage": 4,
-                "retrieval_score": 6.92518949508667,
-                "score": 0.7098622918128967
+                "retrieval_score": 1.2623451948165894,
+                "score": 0.6310739517211914
+            }
+        ]
+    },
+    {
+        "claim_id": 1,
+        "claim_target": "A train accident occurred on February 4, 2023, at 7:25 IST, when 28 cars of a South Central Railway freight train carrying coal derailed in Vizianagaram, Andhra Pradesh, India.",
+        "entity": null,
+        "location": "Andhra Pradesh",
+        "questions": [
+            "In which state did the train accident in Vizianagaram occur?",
+            "What material was the train in Vizianagaram carrying?",
+            "When did the train accident occur in Vizianagaram?",
+            "Which railway is responsible for the train accident in Vizianagaram?"
+        ],
+        "evidences": [
+            {
+                "text": "Andhra Pradesh Train Accident: Explore the details of the tragic train collision in Andhra Pradesh, where two passenger trains collided in Vizianagaram, resulting in 11 fatalities and 40 injuries. Stay tuned for live updates on this train accident Follow us: Facebook Twitter Telegram Google News Andhra Pradesh Train Accident: At least 14 people were killed and 50 injured in the collision of two trains in the Vizianagaram district of Andhra Pradesh after which a passenger train which was going to Rayagada from Visakhapatnam derailed in Vizianagaram on Sunday evening.",
+                "url": "https://www.news18.com/india/andhra-pradesh-train-accident-live-updates-2-passenger-trains-collision-vizianagaram-killed-injured-death-toll-livenews-8639438.html",
+                "query": "In which state did the train accident in Vizianagaram occur?",
+                "sents_per_passage": 4,
+                "retrieval_score": 7.843596458435059,
+                "score": 0.6380863785743713
             },
             {
-                "text": "34 Killed Amid Heavy Rains, Destruction In State India News Edited by Sasha Gopalakrishnan Updated: October 20, 2021 3:15 am IST Uttarakhand Floods: A car was swept away by the stream and precariously caught between two boulders. Dehradun: 34 people have been reported dead, including labourers from Nepal who were buried alive by rubble, and people from Champawat district where a house collapsed after a landslide.",
-                "url": "https://www.ndtv.com/india-news/uttarakhand-rains-live-updates-pm-modi-speaks-to-chief-minister-amid-flooding-in-state-2580241",
-                "query": "What caused the deaths on NH-109 near Dhanaulti in Uttarakhand on October 19, 2021?",
+                "text": "A stationary train, the Visakhapatnam-Palasa passenger, was hit by the Visakhapatnam-Rayagada passenger at Kantakapalli station, 36 kilometres from Visakhapatnam, on the Vizianagaram-Visakhapatnam line. The accident comes just after the horrific three-train collision in Odisha\u2019s Balasore district in June, where at least 275 people were killed . Human error may be a common factor in both accidents. \u201cSignalling interference\u201d may have led to the accident in Odisha while \u201csignal jump\u201d is suspected to be the cause in Vizianagaram.",
+                "url": "https://www.thehindu.com/opinion/editorial/safety-first-the-hindu-editorial-on-the-lessons-from-the-train-accident-in-vizianagaram-andhra-pradesh/article67480946.ece",
+                "query": "What material was the train in Vizianagaram carrying?",
                 "sents_per_passage": 4,
-                "retrieval_score": 2.9578142166137695,
-                "score": 0.547048807144165
+                "retrieval_score": 1.8603153228759766,
+                "score": 0.48635339736938477
             },
             {
-                "text": "How did the incident take place? The DSP informed that the car had come in from the Palamau district of Jharkhand and those sitting inside were the residents of the Hydernagar area. \"Upon reaching Nabinagar, the driver stopped by, parking the vehicle in front of a shop in Taitariya Mod. The shopkeeper objected, leading to a heated exchange.",
-                "url": "https://www.indiatvnews.com/bihar/news-bihar-four-people-killed-over-car-parking-dispute-in-aurangabad-police-rule-out-communal-angle-nitish-kumar-jdu-bjp-latest-updates-2024-01-16-912051",
-                "query": "Where did the incident take place?",
+                "text": "This is the most serious train accident since June 2 when over 290 people died in a three-train crash in Odisha\u2019s Balasore district involving the Bengaluru-Howrah Superfast Express, the Shalimar-Chennai Central Coromandel Express and a goods train. (PTI input) Oct 30, 2023 00:12 IST 'Human error likely reason': East Coast Railway spokesperson on Andhra train accident East Coast Railway (ECoR) on Sunday said a human error could have resulted in the collision of two trains in Andhra Pradesh\u2019s Vizianagaram district.",
+                "url": "https://www.indiatoday.in/india/story/andhra-pradesh-passenger-trains-collision-accident-railway-vizianagaram-visakhapatnam-live-updates-2455352-2023-10-29",
+                "query": "When did the train accident occur in Vizianagaram?",
                 "sents_per_passage": 4,
-                "retrieval_score": 7.834550857543945,
-                "score": 0.9992960691452026
+                "retrieval_score": 6.349635124206543,
+                "score": 0.5319886803627014
             },
             {
-                "text": "(Representational Pic) An under-construction tunnel was damaged due to landslide in Jammu and Kashmir's Ramban district, which also affected traffic movement briefly. No casualties were reported in the incident. The landslide struck the 270-km highway near Cafeteria Morh around 1 am, blocking the only all-weather road linking Kashmir with the rest of the country, locals officials were quoted as saying by news agency PTI.",
-                "url": "https://www.ndtv.com/india-news/landslides-hits-jammu-srinagar-national-highway-under-construction-tunnel-damaged-4123567",
-                "query": "Which highway was affected by the landslide?",
+                "text": "Two trains collided on the Howrah-Chennai line in Vizianagaram district of Andhra Pradesh on Sunday evening, leaving more than 10 dead and many injured. The DRM told The Hindu that the Palasa passenger was going on the middle line and is said to have slow down and in the meantime, the Rayagada passenger overshot the signal and hit the Palasa passenger from behind. Three coaches of the Palasa passenger and the locomotive and two coaches of the Rayagada passenger were badly damaged and capsized and thrown beside the track. Relief and rescue operations are under way at the accident spot.",
+                "url": "https://www.thehindu.com/news/national/andhra-pradesh-vizianagaram-train-accident-live-updates-oct-30-2023/article67475483.ece",
+                "query": "Which railway is responsible for the train accident in Vizianagaram?",
                 "sents_per_passage": 4,
-                "retrieval_score": 6.717934608459473,
-                "score": 0.8315454721450806
+                "retrieval_score": 6.2973408699035645,
+                "score": 0.4832184314727783
+            }
+        ]
+    },
+    {
+        "claim_id": 2,
+        "claim_target": "Mohanlal is a Malayalam actor, producer, and philanthropist. The recipient of numerous accolades, including five National Film Awards and two Filmfare Awards South, he has been named one of India's greatest actors.",
+        "entity": null,
+        "location": "Kerala",
+        "questions": [
+            "How many Filmfare Awards South has Mohanlal won?",
+            "How many National Film Awards has Mohanlal won?",
+            "In which state does Mohanlal primarily work?",
+            "What are some of Mohanlal's notable achievements?",
+            "What language does Mohanlal primarily work in?"
+        ],
+        "evidences": [
+            {
+                "text": "Four of his films released in 1997\u2014 Chandralekha , Guru , Oru Yathramozhi , and Aaraam Thampuran garnered him the Screen Awards South for Best Actor. Mohanlal was nominated for a Filmfare Award for his Hindi debut Company (2002), his performance in the crime drama earned him a Screen Award and an International Indian Film Academy Award for Best Supporting Actor. He portrayed a patient suffering from Alzheimer's disease in the 2005 drama film Thanmathra for which he won the Kerala State Film Award for Best Actor and a Filmfare Award for Best Actor \u2013 Malayalam . Mohanlal portrayed an ageing bedridden man in the 2011 romantic drama Pranayam .",
+                "url": "https://en.bharatpedia.org/wiki/List_of_awards_and_nominations_received_by_Mohanlal",
+                "query": "How many Filmfare Awards South has Mohanlal won?",
+                "sents_per_passage": 4,
+                "retrieval_score": 6.6813578605651855,
+                "score": 0.6151531338691711
+            },
+            {
+                "text": "[7] [8] Largest attendance at a 3D film screening [9] Lent his voice to the longest documentary made in the world till now. [10] [11] National Film Awards The National Film Awards established in 1954, are administered by the Directorate of Film Festivals , Government of India . Mohanlal has received five awards (four for acting and one for producing).",
+                "url": "https://www.wikiwand.com/en/List_of_awards_and_nominations_received_by_Mohanlal",
+                "query": "How many National Film Awards has Mohanlal won?",
+                "sents_per_passage": 4,
+                "retrieval_score": 8.194986343383789,
+                "score": 0.7087305188179016
+            },
+            {
+                "text": "[15] Mohanlal prefers to work in Malayalam films, but he has also appeared in some of Hindi , Tamil , Telugu and Kannada films. Some of his best known non-Malayalam films include the Tamil political drama Iruvar (1997), the Hindi crime drama Company (2002) and the Telugu film Janatha Garage (2016). He received honorary doctorates from Sree Sankaracharya University of Sanskrit in 2010 [19] and the University of Calicut in 2018.",
+                "url": "https://en.wikipedia.org/wiki/Mohanlal",
+                "query": "In which state does Mohanlal primarily work?",
+                "sents_per_passage": 4,
+                "retrieval_score": 4.190996170043945,
+                "score": 0.5757279992103577
+            },
+            {
+                "text": "In the realm of the Indian film industry, only a select few can lay claim to such a distinguished tapestry of accomplishments, and Mohanlal reigns supreme among them. Mohanlal Viswanathan stands out as a truly exceptional actor, effortlessly blurring the boundaries between the real and the reel worlds. Undeniably, he holds the crown as the biggest superstar of the Malayalam film industry. However, contrary to actors who rely solely on their looks or physical prowess to captivate audiences, Mohanlal\u2019s illustrious career is built on his exceptional acting prowess rather than superficial attributes.",
+                "url": "https://indianexpress.com/article/entertainment/malayalam/mohanlal-birthday-most-underappreciated-performances-8612501/",
+                "query": "What are some of Mohanlal's notable achievements?",
+                "sents_per_passage": 4,
+                "retrieval_score": 5.881216049194336,
+                "score": 0.5772798657417297
+            },
+            {
+                "text": "[15] Mohanlal prefers to work in Malayalam films, but he has also appeared in some of Hindi , Tamil , Telugu and Kannada films. Some of his best known non-Malayalam films include the Tamil political drama Iruvar (1997), the Hindi crime drama Company (2002) and the Telugu film Janatha Garage (2016). He received honorary doctorates from Sree Sankaracharya University of Sanskrit in 2010 [19] and the University of Calicut in 2018.",
+                "url": "https://en.wikipedia.org/wiki/Mohanlal",
+                "query": "What language does Mohanlal primarily work in?",
+                "sents_per_passage": 4,
+                "retrieval_score": 6.050810813903809,
+                "score": 0.509331464767456
             }
         ]
     }

@@ -1,14 +1,57 @@
 [
     {
         "claim_id": 1,
-        "claim_target": "On October 19, 2021, a landslide on NH-109 near Dhanaulti in Uttarakhand caused boulders and debris to fall on a vehicle, killing two people traveling in it.",
+        "claim_target": "A train accident occurred on February 4, 2023, at 7:25 IST, when 28 cars of a South Central Railway freight train carrying coal derailed in Vizianagaram, Andhra Pradesh, India.",
         "entity": null,
-        "location": "Uttarakhand",
-        "evid_id": 2,
-        "query": "What caused the deaths on NH-109 near Dhanaulti in Uttarakhand on October 19, 2021?",
-        "evidence": "34 Killed Amid Heavy Rains, Destruction In State India News Edited by Sasha Gopalakrishnan Updated: October 20, 2021 3:15 am IST Uttarakhand Floods: A car was swept away by the stream and precariously caught between two boulders. Dehradun: 34 people have been reported dead, including labourers from Nepal who were buried alive by rubble, and people from Champawat district where a house collapsed after a landslide.",
+        "location": "Andhra Pradesh",
+        "evid_id": 1,
+        "query": "What material was the train in Vizianagaram carrying?",
+        "evidence": "A stationary train, the Visakhapatnam-Palasa passenger, was hit by the Visakhapatnam-Rayagada passenger at Kantakapalli station, 36 kilometres from Visakhapatnam, on the Vizianagaram-Visakhapatnam line. The accident comes just after the horrific three-train collision in Odisha\u2019s Balasore district in June, where at least 275 people were killed . Human error may be a common factor in both accidents. \u201cSignalling interference\u201d may have led to the accident in Odisha while \u201csignal jump\u201d is suspected to be the cause in Vizianagaram.",
         "model": "mixtral8x7b",
-        "prompt": "I will fix some things you said.\n\n1. You said: Your nose switches back and forth between nostrils. When you sleep, you switch about every 45 minutes. This is to prevent a buildup of mucus. It\u2019s called the nasal cycle.\n2. I checked: How often do your nostrils switch?\n3. I found this article: Although we don\u2019t usually notice it, during the nasal cycle one nostril becomes congested and thus contributes less to airflow, while the other becomes decongested. On average, the congestion pattern switches about every 2 hours, according to a small 2016 study published in the journal PLOS One.\n4. This suggests 45 minutes switch time in your statement is wrong.\n5. My fix: Your nose switches back and forth between nostrils. When you sleep, you switch about every 2 hours. This is to prevent a buildup of mucus. It\u2019s called the nasal cycle.\n\n1. You said: In the battles of Lexington and Concord, the British side was led by General Thomas Hall.\n2. I checked: Who led the British side in the battle of Lexington and Concord?\n3. I found this article: Interesting Facts about the Battles of Lexington and Concord. The British were led by Lieutenant Colonel Francis Smith. There were 700 British regulars.\n4. This suggests General Thomas Hall in your statement is wrong.\n5. My fix: In the battles of Lexington and Concord, the British side was led by Lieutenant Colonel Francis Smith.\n\n1. You said: The Stanford Prison Experiment was conducted in the basement of Encina Hall, Stanford\u2019s psychology building.\n2. I checked: Where was Stanford Prison Experiment conducted?\n3. I found this article: Carried out August 15-21, 1971 in the basement of Jordan Hall, the Stanford Prison Experiment set out to examine the psychological effects of authority and powerlessness in a prison environment.\n4. This suggests Encina Hall in your statement is wrong.\n5. My fix: The Stanford Prison Experiment was conducted in the basement of Jordan Hall, Stanford\u2019s psychology building.\n\n1. You said: The Havel-Hakimi algorithm is an algorithm for converting the adjacency matrix of a graph into its adjacency list. It is named after Vaclav Havel and Samih Hakimi.\n2. I checked: What is the Havel-Hakimi algorithm?\n3. I found this article: The Havel-Hakimi algorithm constructs a special solution if a simple graph for the given degree sequence exists, or proves that one cannot find a positive answer. This construction is based on a recursive algorithm. The algorithm was published by Havel (1955), and later by Hakimi (1962).\n4. This suggests the Havel-Hakimi algorithm\u2019s functionality in your statement is wrong.\n5. My fix: The Havel-Hakimi algorithm constructs a special solution if a simple graph for the given degree sequence exists, or proves that one cannot find a positive answer. It is named after Vaclav Havel and Samih Hakimi.\n\n1. You said: \"Time of My Life\" is a song by American singer-songwriter Bill Medley from the soundtrack of the 1987 film Dirty Dancing. The song was produced by Phil Ramone.\n2. I checked: Who was the producer of \"(I\u2019ve Had) The Time of My Life\"?\n3. I found this article: On September 8, 2010, the original demo of this song, along with a remix by producer Michael Lloyd , was released as digital files in an effort to raise money for the Patrick Swayze Pancreas Cancer Resarch Foundation at Stanford University.\n4. This suggests \"Time of My Life\" producer name in your statement is wrong.\n5. My fix: \"Time of My Life\" is a song by American singer-songwriter Bill Medley from the soundtrack of the 1987 film Dirty Dancing. The song was produced by Michael Lloyd.\n\n1. You said: Phoenix Market City Pune is located on 21 acres of prime property in Pune. It is spread across four levels with approximately 1.4 million square feet of built-up space. The mall is owned and operated by Phoenix Mills Limited.\n2. I checked: What is the area of Phoenix Market City in Pune?\n3. I found this article: Phoenix Market City was opened in January 2013 and has the distinction of being the largest mall in the city of Pune, with the area of 3.4 million square feet. It is located in the Viman Nagar area of Pune.\n4. This suggests the 1.4 million square feet of built-up space in your statment is wrong.\n5. My fix: Phoenix Market City Pune is located on 21 acres of prime property in Pune. It is spread across four levels with approximately 3.4 million square feet of built-up space. The mall is owned and operated by Phoenix Mills Limited.\n\n1. You said: {claim}\n2. I checked: {query}\n3. I found this article: {evidence}\n4. This suggests",
-        "edited_claim": "On October 19, 2021, a landslide on NH-109 near Dhanaulti in Uttarakhand caused a car with two people traveling in it to be swept away by a stream, caught precariously between two boulders, killing them."
+        "edited_claim": "A train accident occurred on February 4, 2023, at 7:25 IST, when 28 cars of a South Central Railway freight train derailed in Vizianagaram, Andhra Pradesh, India. The train was carrying human error, signalling interference was suspected."
+    },
+    {
+        "claim_id": 1,
+        "claim_target": "A train accident occurred on February 4, 2023, at 7:25 IST, when 28 cars of a South Central Railway freight train carrying coal derailed in Vizianagaram, Andhra Pradesh, India.",
+        "entity": null,
+        "location": "Andhra Pradesh",
+        "evid_id": 1,
+        "query": "What material was the train in Vizianagaram carrying?",
+        "evidence": "A stationary train, the Visakhapatnam-Palasa passenger, was hit by the Visakhapatnam-Rayagada passenger at Kantakapalli station, 36 kilometres from Visakhapatnam, on the Vizianagaram-Visakhapatnam line. The accident comes just after the horrific three-train collision in Odisha\u2019s Balasore district in June, where at least 275 people were killed . Human error may be a common factor in both accidents. \u201cSignalling interference\u201d may have led to the accident in Odisha while \u201csignal jump\u201d is suspected to be the cause in Vizianagaram.",
+        "model": "mixtral8x7b",
+        "edited_claim": "A train accident occurred on February 4, 2023, at 7:25 IST, when 28 cars of a South Central Railway freight train derailed in Vizianagaram, Andhra Pradesh, India."
+    },
+    {
+        "claim_id": 1,
+        "claim_target": "A train accident occurred on February 4, 2023, at 7:25 IST, when 28 cars of a South Central Railway freight train derailed in Vizianagaram, Andhra Pradesh, India.",
+        "entity": null,
+        "location": "Andhra Pradesh",
+        "evid_id": 2,
+        "query": "When did the train accident occur in Vizianagaram?",
+        "evidence": "This is the most serious train accident since June 2 when over 290 people died in a three-train crash in Odisha\u2019s Balasore district involving the Bengaluru-Howrah Superfast Express, the Shalimar-Chennai Central Coromandel Express and a goods train. (PTI input) Oct 30, 2023 00:12 IST 'Human error likely reason': East Coast Railway spokesperson on Andhra train accident East Coast Railway (ECoR) on Sunday said a human error could have resulted in the collision of two trains in Andhra Pradesh\u2019s Vizianagaram district.",
+        "model": "mixtral8x7b",
+        "edited_claim": "A train accident occurred on October 30, 2023, at 00:12 IST, when two trains collided in Vizianagaram, Andhra Pradesh, India. Another accident occurred on February 4, 2023, at 7:25 IST, when 28 cars of a South Central Railway freight train derailed in Vizianagaram, Andhra Pradesh, India."
+    },
+    {
+        "claim_id": 1,
+        "claim_target": "A train accident occurred on October 30, 2023, at 00:12 IST, when two trains collided in Vizianagaram, Andhra Pradesh, India. Another accident occurred on February 4, 2023, at 7:25 IST, when 28 cars of a South Central Railway freight train derailed in Vizianagaram, Andhra Pradesh, India.",
+        "entity": null,
+        "location": "Andhra Pradesh",
+        "evid_id": 3,
+        "query": "Which railway is responsible for the train accident in Vizianagaram?",
+        "evidence": "Two trains collided on the Howrah-Chennai line in Vizianagaram district of Andhra Pradesh on Sunday evening, leaving more than 10 dead and many injured. The DRM told The Hindu that the Palasa passenger was going on the middle line and is said to have slow down and in the meantime, the Rayagada passenger overshot the signal and hit the Palasa passenger from behind. Three coaches of the Palasa passenger and the locomotive and two coaches of the Rayagada passenger were badly damaged and capsized and thrown beside the track. Relief and rescue operations are under way at the accident spot.",
+        "model": "mixtral8x7b",
+        "edited_claim": "A train accident occurred on October 30, 2023, at 00:12 IST, when two trains collided in Vizianagaram, Andhra Pradesh, India. Another accident occurred on February 4, 2023, at 7:25 IST, when 28 cars of a South Central Railway freight train derailed in Vizianagaram, Andhra Pradesh, India. The incident happened when Palasa passenger overshot the signal and hit the Rayagada passenger from behind on Howrah-Chennai line. The Palasa passenger was going on the middle line and it is said to have slow down before the accident. Three coaches of the Palasa passenger and the locomotive and two coaches of the Rayagada passenger were badly damaged and capsized and thrown beside the track. Relief and rescue operations are under way at the accident spot."
+    },
+    {
+        "claim_id": 2,
+        "claim_target": "Mohanlal is a Malayalam actor, producer, and philanthropist. The recipient of numerous accolades, including five National Film Awards and two Filmfare Awards South, he has been named one of India's greatest actors.",
+        "entity": null,
+        "location": "Kerala",
+        "evid_id": 3,
+        "query": "What are some of Mohanlal's notable achievements?",
+        "evidence": "In the realm of the Indian film industry, only a select few can lay claim to such a distinguished tapestry of accomplishments, and Mohanlal reigns supreme among them. Mohanlal Viswanathan stands out as a truly exceptional actor, effortlessly blurring the boundaries between the real and the reel worlds. Undeniably, he holds the crown as the biggest superstar of the Malayalam film industry. However, contrary to actors who rely solely on their looks or physical prowess to captivate audiences, Mohanlal\u2019s illustrious career is built on his exceptional acting prowess rather than superficial attributes.",
+        "model": "mixtral8x7b",
+        "edited_claim": "Mohanlal is a Malayalam actor, producer, and philanthropist. The recipient of numerous accolades, including five National Film Awards, two Filmfare Awards South, and many more, he has been named one of India's greatest actors."
     }
 ]

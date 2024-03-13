@@ -1,17 +1,45 @@
 [
     {
-        "claim_id": 1,
+        "claim_id": 0,
         "claim": "On July 10, 2006, concrete ceiling panels and debris fell on a car traveling on the two-lane ramp connecting northbound I-93 to eastbound I-90 in South Boston, killing the passenger and injuring her husband, who was driving.",
         "entity": null,
         "location": "Uttarakhand",
         "model": "mixtral8x7b",
-        "prompt": "Given the source claim and target location, re-write the source claim to be factually correct for an entity from the target location. And generate questions to check the factual correctness of the sentence obtained.\nFor example:\nSource sentence: The Eiffel Tower is a wrought-iron lattice tower on the Champ de Mars in Paris, France. It is named after the engineer Gustave Eiffel, whose company designed and built the tower from 1887 to 1889.\nTarget location: Delhi\nThe sentence in the target location and the questions generated are:\nTarget sentence: The India Gate is a war memorial made of sandstone located in the heart of New Delhi, India. It is named after the engineer Sir Edwin Lutyens, who designed and built the monument in 1931 to honor the Indian soldiers who died during World War I and the Third Anglo-Afghan War.\nQ: What material is the India Gate made of?\nQ: In which city is the India Gate located?\nQ: Who is the engineer credited with designing and building the India Gate?\nQ: When was the India Gate constructed?\n\nSource sentence: {claim}\nTarget location: {location}\nThe sentence in the target location and the questions generated are:",
-        "claim_target": "On October 19, 2021, a landslide on NH-109 near Dhanaulti in Uttarakhand caused boulders and debris to fall on a vehicle, killing two people traveling in it.",
+        "claim_target": "On July 10, 2006, concrete ceiling panels and debris fell on a car traveling on the two-lane ramp connecting National Highway 58 to National Highway 7 in Rishikesh, Uttarakhand, killing the passenger and injuring her husband, who was driving.",
         "questions": [
-            "How many people were killed in the incident?",
-            "What caused the deaths on NH-109 near Dhanaulti in Uttarakhand on October 19, 2021?",
-            "Where did the incident take place?",
-            "Which highway was affected by the landslide?"
+            "Where in Uttarakhand did this incident occur?",
+            "Which two highways in Uttarakhand are connected by this ramp?",
+            "Who was injured in this incident?",
+            "Who was killed in this incident?"
+        ]
+    },
+    {
+        "claim_id": 1,
+        "claim": "A train derailment occurred on February 3, 2023, at 8:55 p.m. EST, when 38 cars of a Norfolk Southern freight train carrying hazardous materials derailed in East Palestine, Ohio, United States.",
+        "entity": null,
+        "location": "Andhra Pradesh",
+        "model": "mixtral8x7b",
+        "claim_target": "A train accident occurred on February 4, 2023, at 7:25 IST, when 28 cars of a South Central Railway freight train carrying coal derailed in Vizianagaram, Andhra Pradesh, India.",
+        "questions": [
+            "In which state did the train accident in Vizianagaram occur?",
+            "What material was the train in Vizianagaram carrying?",
+            "When did the train accident occur in Vizianagaram?",
+            "Which railway is responsible for the train accident in Vizianagaram?"
+        ]
+    },
+    {
+        "claim_id": 2,
+        "claim": "Angelina Jolie is an American actress, filmmaker and humanitarian. The recipient of numerous accolades, including an Academy Award and three Golden Globe Awards, she has been named Hollywood's highest-paid actress multiple times.",
+        "entity": null,
+        "location": "Kerala",
+        "model": "mixtral8x7b",
+        "claim_target": "Mohanlal is a Malayalam actor, producer, and philanthropist. The recipient of numerous accolades, including five National Film Awards and two Filmfare Awards South, he has been named one of India's greatest actors.",
+        "questions": [
+            "How many Filmfare Awards South has Mohanlal won?",
+            "How many National Film Awards has Mohanlal won?",
+            "In which state does Mohanlal primarily work?",
+            "What are some of Mohanlal's notable achievements?",
+            "What language does Mohanlal primarily work in?"
         ]
     }
 ]
