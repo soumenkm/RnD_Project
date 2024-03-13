@@ -313,12 +313,13 @@ def write_edits_json():
 
     output_list = []
     results_list = []
+
     for claim_id, ag_item in enumerate(agreement_data):
-        original_claim = ag_item[0]["claim_target"]
+        original_claim = evid_data[claim_id]["claim_target"]
         edit_rev_list = []
+        claim = original_claim
 
         for evid_id, evid_item in enumerate(ag_item):
-            claim = evid_item["claim_target"]
             entity = None
             location = evid_item["location"]
             evid = evid_item["evidence"]
@@ -327,11 +328,12 @@ def write_edits_json():
             print(f"Claim: {claim_id}, Evidence: {evid_id}, Agreement is taken from file")
 
             # Run the editor gate if the agreement gate is open
+            claim_input = claim
             if gate["is_open"]:
                 t1 = time.time()
                 edited_claim, output = edit_claim(claim_id, claim, entity, location, evid_id, query, evid)
                 t2 = time.time()
-                
+
                 # Don't keep the edit if the editor makes a huge change
                 max_edit_ratio = 100
                 if Levenshtein.distance(claim, edited_claim) / len(claim) <= max_edit_ratio:
@@ -342,16 +344,12 @@ def write_edits_json():
                 output = None
                 print(f"Claim: {claim_id}, Evidence: {evid_id}, Editor module is skipped")
 
-            # Replace the claim for next evidence
-            try:
-                ag_item[evid_id + 1]["claim_target"] = claim
-            except IndexError as e:
-                pass 
-
             edit_rev_list.append({
+                "claim": claim_input,
                 "query": query,
                 "evidence": evid,
                 "is_open": gate["is_open"],
+                "decision": gate["decision"],
                 "edited_claim": claim
             })
         
@@ -363,15 +361,31 @@ def write_edits_json():
             "claim_target": ques_data[claim_id]["claim_target"],
             "questions": ques_data[claim_id]["questions"],
             "edit_revisions": edit_rev_list,
+            "claim_original": original_claim,
             "claim_attributed": claim
         }
 
         output_list.append(output)
         results_list.append(results)
 
-    # Dump the list into the JSON file
-    with open(edits_output_path.replace(".json","_final.json"), 'w') as json_file:
-        json.dump(output_list, json_file, indent=4)
+        # rarr_result = {
+        #     "context": None,
+        #     "text": original_claim,
+        #     "questions": ques_data[claim_id]["questions"],
+        #     "evidences_for_questions": evid_data["claim_id"]["evidences_for_questions"],
+        #     "revisions": [
+        #         {
+        #             "original_text": original_claim,
+        #             "revised_text": revision_steps[-1]["text"],
+        #             "evidences": evid_data["claim_id"]["evidences"],
+        #             "agreement_gates": agreement_gates,
+        #             "revision_steps": revision_steps,
+        #         }
+        #     ],
+        # }
+        
+        # selected_evidences = evidence_selection.select_evidences(rarr_result)
+        # result["selected_evidences"] = selected_evidences
 
     # Dump the list into the JSON file
     with open(results_output_path.replace(".json","_final.json"), 'w') as json_file:
