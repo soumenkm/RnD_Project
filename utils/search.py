@@ -10,7 +10,6 @@ import requests
 import spacy
 import torch
 from sentence_transformers import CrossEncoder
-from api import SUBSCRIPTION_KEY
 
 PASSAGE_RANKER = CrossEncoder(
     "cross-encoder/ms-marco-MiniLM-L-6-v2",
@@ -113,7 +112,7 @@ def scrape_url(url: str, timeout: float = 3) -> Tuple[str, str]:
     return web_text, url
 
 
-def search_bing(query: str, timeout: float = 3) -> List[str]:
+def search_bing(query: str, timeout: float = 3, sub_key: str = None) -> List[str]:
     """Searches the query using Bing.
     Args:
         query: Search query.
@@ -123,7 +122,7 @@ def search_bing(query: str, timeout: float = 3) -> List[str]:
     """
 
     endpoint = SEARCH_URL
-    headers = {"Ocp-Apim-Subscription-Key": SUBSCRIPTION_KEY}
+    headers = {"Ocp-Apim-Subscription-Key": sub_key}
     params = {"q": query, "textDecorations": True, "textFormat": "HTML"}
 
     try:
@@ -153,6 +152,7 @@ def run_search(
     randomize_num_sentences: bool = False,
     filter_sentence_len: int = 250,
     max_passages_per_search_result_to_score: int = 30,
+    sub_key: str = None
 ) -> List[Dict[str, Any]]:
     """Searches the query on a search engine and returns the most relevant information.
 
@@ -173,7 +173,7 @@ def run_search(
     if cached_search_results is not None:
         search_results = cached_search_results
     else:
-        search_results = search_bing(query, timeout=timeout)
+        search_results = search_bing(query, timeout=timeout, sub_key=sub_key)
 
     # Scrape search results in parallel
     with concurrent.futures.ThreadPoolExecutor() as e:

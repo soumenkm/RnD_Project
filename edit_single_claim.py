@@ -20,14 +20,17 @@ from utils import (
     hallucination,
     search,
     question_generation,
-    LLM_QG
+    LLM_QG,
+    api
 )
 
-questions_output_path = "/raid/speech/soumenmondal/RnD_project/RARR/outputs/questions.json"
-evidences_output_path = "/raid/speech/soumenmondal/RnD_project/RARR/outputs/evidences.json"
-agreements_output_path = "/raid/speech/soumenmondal/RnD_project/RARR/outputs/agreements.json"
-edits_output_path = "/raid/speech/soumenmondal/RnD_project/RARR/outputs/edits.json"
-results_output_path = "/raid/speech/soumenmondal/RnD_project/RARR/outputs/results.json"
+path_name = "/root/RnD_Project/"
+
+questions_output_path = path_name + "outputs/questions.json"
+evidences_output_path = path_name +  "outputs/evidences.json"
+agreements_output_path = path_name +  "outputs/agreements.json"
+edits_output_path = path_name +  "outputs/edits.json"
+results_output_path = path_name +  "outputs/results.json"
 
 def append_to_json_file(data, file_path):
     
@@ -55,7 +58,7 @@ def get_questions(
     context: str = None,
     model: str = "mixtral8x7b",
     temperature_qgen: float = 0.7,
-    num_rounds_qgen: int = 1,
+    num_rounds_qgen: int = 2,
 ):
 
     # Generate questions for the claim
@@ -113,6 +116,7 @@ def get_evidence(
             max_sentences_per_passage=max_sentences_per_passage,
             sliding_distance=sliding_distance,
             max_passages_per_search_result_to_return=max_passages_per_search_result,
+            sub_key = api.SUBSCRIPTION_KEY
         )
         for query in questions
     ]
@@ -241,7 +245,7 @@ def write_questions_json(
 def write_evidences_json():
 
     # Read the questions.json file
-    with open(questions_output_path, 'r') as json_file:
+    with open(questions_output_path.replace(".json","_final.json"), 'r') as json_file:
         data = json.load(json_file)
 
     num_claims = len(data)
@@ -265,7 +269,7 @@ def write_evidences_json():
 def write_agreements_json():
 
     # Read the evidences.json file
-    with open(evidences_output_path, 'r') as json_file:
+    with open(evidences_output_path.replace(".json","_final.json"), 'r') as json_file:
         data = json.load(json_file)
 
     num_claims = len(data)
@@ -290,17 +294,17 @@ def write_agreements_json():
 def write_edits_json():
 
     # Read the questions.json file
-    with open(questions_output_path, 'r') as json_file:
+    with open(questions_output_path.replace(".json","_final.json"), 'r') as json_file:
         ques_data = json.load(json_file)
 
     # Read the evidences.json file
-    with open(evidences_output_path, 'r') as json_file:
+    with open(evidences_output_path.replace(".json","_final.json"), 'r') as json_file:
         evid_data = json.load(json_file)
 
     num_claims = len(evid_data)
     
     # Read the agreements.json file
-    with open(agreements_output_path, 'r') as json_file:
+    with open(agreements_output_path.replace(".json","_final.json"), 'r') as json_file:
         data = json.load(json_file)
 
     agreement_data = [None]*num_claims
@@ -335,7 +339,7 @@ def write_edits_json():
                 t2 = time.time()
 
                 # Don't keep the edit if the editor makes a huge change
-                max_edit_ratio = 100
+                max_edit_ratio = 50
                 if Levenshtein.distance(claim, edited_claim) / len(claim) <= max_edit_ratio:
                     claim = edited_claim
             
@@ -355,12 +359,12 @@ def write_edits_json():
         
         results = {
             "claim_id": ques_data[claim_id]["claim_id"],
-            "claim_ref": ques_data[claim_id]["claim"],
-            "entity": ques_data[claim_id]["entity"],
-            "location": ques_data[claim_id]["location"],
             "claim_target": ques_data[claim_id]["claim_target"],
             "questions": ques_data[claim_id]["questions"],
             "edit_revisions": edit_rev_list,
+            "claim_ref": ques_data[claim_id]["claim"],
+            "entity": ques_data[claim_id]["entity"],
+            "location": ques_data[claim_id]["location"],
             "claim_original": original_claim,
             "claim_attributed": claim
         }
@@ -368,173 +372,23 @@ def write_edits_json():
         output_list.append(output)
         results_list.append(results)
 
-        # rarr_result = {
-        #     "context": None,
-        #     "text": original_claim,
-        #     "questions": ques_data[claim_id]["questions"],
-        #     "evidences_for_questions": evid_data["claim_id"]["evidences_for_questions"],
-        #     "revisions": [
-        #         {
-        #             "original_text": original_claim,
-        #             "revised_text": revision_steps[-1]["text"],
-        #             "evidences": evid_data["claim_id"]["evidences"],
-        #             "agreement_gates": agreement_gates,
-        #             "revision_steps": revision_steps,
-        #         }
-        #     ],
-        # }
-        
-        # selected_evidences = evidence_selection.select_evidences(rarr_result)
-        # result["selected_evidences"] = selected_evidences
-
     # Dump the list into the JSON file
     with open(results_output_path.replace(".json","_final.json"), 'w') as json_file:
         json.dump(results_list, json_file, indent=4)
 
-def run_editor_one_instance(
-    claim_id: int,
-    claim: str,
-    entity: str,
-    location: str,
-    context: str = None,
-    model: str = "mixtral8x7b",
-    temperature_qgen: float = 0.7,
-    num_rounds_qgen: int = 1,
-    max_search_results_per_query: int = 3,
-    max_sentences_per_passage: int = 4,
-    sliding_distance: int = 1,
-    max_passages_per_search_result: int = 1,
-    max_evidences_per_question: int = 1,
-    max_edit_ratio: float = 100
-) -> Dict[str, Any]:
-    """Runs query generation, search, agreement gating, and editing on a claim.
-
-    Args:
-        claim: Text to check the validity of.
-        model: Name of the OpenAI GPT-3 model to use.
-        temperature_qgen: Sampling temperature to use for query generation.
-        num_rounds_qgen: Number of times to sample questions.
-        max_search_results_per_query: Maximum number of search results per query.
-        max_sentences_per_passage: Maximum number of sentences for each passage.
-        sliding_distance: Sliding window distance over the sentences of each search
-            result. Used to extract passages.
-        max_passages_per_search_result:  Maximum number of passages to return for
-            each search result. A passage ranker is applied first.
-        max_evidences_per_question: Maximum number of evidences to return per question.
-        max_edit_ratio: Maximum edit ratio between claim and edit for each round.
-    Returns:
-        result: All revision information, including the queries generated, search
-            results, agreement gate information, and each revision step done on the
-            claim.
-    """
-    
-    # Generate questions for the claim
-    run_ques = False
-    if run_ques:
-        t1 = time.time()
-        claim_target, questions = get_questions(claim_id, claim, entity, location, context, model, temperature_qgen, num_rounds_qgen)
-        t2 = time.time()
-        print(f"Claim: {claim_id}, Question generation module is run in {(t2-t1)/60:.2f} mint")
-    else:
-        with open(questions_output_path, 'r') as json_file:
-            questions_data = json.load(json_file)
-        for item in questions_data:
-            if int(item["claim_id"]) == claim_id:
-                claim_target = item["claim_target"]
-                questions = item["questions"]
-        print(f"Claim: {claim_id}, Question is taken from file")
-
-    # Set the claim_target as the claim now
-    claim_ref = claim
-    claim = claim_target
-    original_claim = claim
-
-    # Run search on generated question for the claim
-    run_search = False
-    if run_search:
-        t1 = time.time()
-        used_evidences = get_evidence(claim_id, claim, entity, location, questions)
-        t2 = time.time()
-        print(f"Claim: {claim_id}, Evidence module is run in {(t2-t1)/60:.2f} mint")
-    else:
-        with open(evidences_output_path, 'r') as json_file:
-            evidences_data = json.load(json_file)
-        for item in evidences_data:
-            if int(item["claim_id"]) == claim_id:
-                used_evidences = item["evidences"]
-        print(f"Claim: {claim_id}, Evidences is taken from file")
-
-    # Iterative editing over each evidence
-    revision_steps = []
-    agreement_gates = []
-    run_ag = [False, False, True, True]
-
-    for e, evid in enumerate(used_evidences):
-        
-        # Run the agreement gate on the current (claim, context, query, evidence) tuple
-        if run_ag[e]:
-            t1 = time.time()
-            gate = check_agreement(claim_id, claim, entity, location, e+1, evid['query'], evid['text'], context, model)
-            t2 = time.time()
-            print(f"Claim: {claim_id}, Evidence: {e+1}, Agreement module is run in {(t2-t1)/60:.2f} mint")
-        else:
-            with open(agreements_output_path, 'r') as json_file:
-                agreements_data = json.load(json_file)
-            for item in agreements_data:
-                if int(item["claim_id"]) == claim_id and int(item["evid_id"]) == e+1:
-                    gate = item["gate"]
-            print(f"Claim: {claim_id}, Evidence: {e+1}, Agreement is taken from file")
-
-        agreement_gates.append(gate)
-
-        # Run the editor gate if the agreement gate is open
-        if gate["is_open"]:
-            t1 = time.time()
-            edited_claim = edit_claim(claim_id, claim, entity, location, e+1, evid["query"], evid["text"], context, model)
-            t2 = time.time()
-            # Don't keep the edit if the editor makes a huge change
-            if Levenshtein.distance(claim, edited_claim) / len(claim) <= max_edit_ratio:
-                claim = edited_claim
-        
-            print(f"Claim: {claim_id}, Evidence: {e+1}, Editor module is run in {(t2-t1)/60:.2f} mint")
-        else:
-            print(f"Claim: {claim_id}, Evidence: {e+1}, Editor module is skipped")
-
-        revision_steps.append({"text": claim})
-
-    result = {
-        "context": context,
-        "text": original_claim,
-        "questions": questions,
-        "evidences_for_questions": evidences_for_questions,
-        "revisions": [
-            {
-                "original_text": original_claim,
-                "revised_text": revision_steps[-1]["text"],
-                "evidences": used_evidences,
-                "agreement_gates": agreement_gates,
-                "revision_steps": revision_steps,
-            }
-        ],
-    }
-    selected_evidences = evidence_selection.select_evidences(result)
-    result["selected_evidences"] = selected_evidences
-    return result
-
 if __name__ == "__main__":
 
     data = [{"input_info": 
-        {"claim": "On July 10, 2006, concrete ceiling panels and debris fell on a car traveling on the two-lane ramp connecting northbound I-93 to eastbound I-90 in South Boston, killing the passenger and injuring her husband, who was driving.", 
-        "location": "Uttarakhand"}},
-        {"input_info": 
-        {"claim": "A train derailment occurred on February 3, 2023, at 8:55 p.m. EST, when 38 cars of a Norfolk Southern freight train carrying hazardous materials derailed in East Palestine, Ohio, United States.", 
-        "location": "Andhra Pradesh"}},
-        {"input_info": 
-        {"claim": "Angelina Jolie is an American actress, filmmaker and humanitarian. The recipient of numerous accolades, including an Academy Award and three Golden Globe Awards, she has been named Hollywood's highest-paid actress multiple times.", 
-        "location": "Kerala"}}
+    {"claim": "Angelina Jolie is an American actress, filmmaker and humanitarian. The recipient of numerous accolades, including an Academy Award and three Golden Globe Awards, she has been named Hollywood's highest-paid actress multiple times.", 
+    "location": "Maharashtra"}},
+    {"input_info": 
+    {"claim": "Dwayne Douglas Johnson, also known by his ring name the Rock, is an American actor and professional wrestler currently signed to WWE.", 
+    "location": "Kerala"}},
+    {"input_info": {"claim": "Robert John Downey Jr. is an American actor. His career has been characterized by critical success in his youth, followed by a period of substance abuse and legal troubles, and a surge in popular and commercial success later in his career.", 
+    "location": "West Bengal"}}
     ]
 
-    # write_questions_json(data)
-    # write_evidences_json()
-    # write_agreements_json()
+    write_questions_json(data)
+    write_evidences_json()
+    write_agreements_json()
     write_edits_json()

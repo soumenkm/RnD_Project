@@ -1,46 +1,200 @@
 [
     {
-        "claim_id": 1,
-        "claim_target": "A train accident occurred on February 4, 2023, at 7:25 IST, when 28 cars of a South Central Railway freight train carrying coal derailed in Vizianagaram, Andhra Pradesh, India.",
+        "claim_id": 0,
+        "claim_target": "On July 10, 2006, concrete ceiling panels and debris fell on a car traveling on the two-lane ramp connecting National Highway 58 to National Highway 7 in Dehradun, Uttarakhand, killing the passenger and injuring her husband, who was driving.",
         "entity": null,
-        "location": "Andhra Pradesh",
-        "evid_id": 1,
-        "query": "What material was the train in Vizianagaram carrying?",
-        "evidence": "A stationary train, the Visakhapatnam-Palasa passenger, was hit by the Visakhapatnam-Rayagada passenger at Kantakapalli station, 36 kilometres from Visakhapatnam, on the Vizianagaram-Visakhapatnam line. The accident comes just after the horrific three-train collision in Odisha\u2019s Balasore district in June, where at least 275 people were killed . Human error may be a common factor in both accidents. \u201cSignalling interference\u201d may have led to the accident in Odisha while \u201csignal jump\u201d is suspected to be the cause in Vizianagaram.",
+        "location": "Uttarakhand",
+        "evid_id": 2,
+        "query": "Which specific place in Dehradun was this incident reported? (Note that this information might not be explicitly mentioned in the source sentence)",
+        "evidence": "WhatsApp Reddit READ LATER Remove SEE ALL Police, NDRF and other emergency services personnel at the site following an incident of chlorine gas leak in the Jhanjra area of Prem Nagar police station, in Dehradun on January 9, 2024. | Photo Credit: PTI A chlorine gas leak in the Jhajhra area of Dehradun triggered panic on January 9 morning, forcing people to leave their houses, officials said. The gas leaked from a cylinder kept in a vacant plot of land, they said, adding that security officials rushed the people to safety after being informed about the incident and no damage was reported. The district control room here was informed about the incident in the morning, the officials said.",
         "model": "mixtral8x7b",
-        "edited_claim": "A train accident occurred on February 4, 2023, at 7:25 IST, when Visakhapatnam-Palasa passenger train hit Visakhapatnam-Rayagada passenger train at Kantakapalli station, Vizianagaram-Visakhapatnam line. The accident comes just after the horrific three-train collision in Odisha\u2019s Balasore district in June, where at least 275 people were killed. Human error may be a common factor in both accidents. \u201cSignalling interference\u201d may have led to the accident in Odisha while \u201csignal jump\u201d is suspected to be the cause in Vizianagaram."
+        "edited_claim": "On July 10, 2006, concrete ceiling panels and debris fell on a car traveling on the two-lane ramp connecting National Highway 58 to National Highway 7 in Dehradun, Uttarakhand, killing the passenger and injuring her husband, who was driving. (This was not found in the source article but was mentioned as a fact so it's still added)"
     },
     {
         "claim_id": 1,
-        "claim_target": "A train accident occurred on February 4, 2023, at 7:25 IST, when Visakhapatnam-Palasa passenger train hit Visakhapatnam-Rayagada passenger train at Kantakapalli station, Vizianagaram-Visakhapatnam line. The accident comes just after the horrific three-train collision in Odisha\u2019s Balasore district in June, where at least 275 people were killed. Human error may be a common factor in both accidents. \u201cSignalling interference\u201d may have led to the accident in Odisha while \u201csignal jump\u201d is suspected to be the cause in Vizianagaram.",
+        "claim_target": "A train derailment took place on February 4, 2023, at 7:25 IST, when 25 cars of a South Central Railway freight train carrying coal derailed in Vizianagaram, Andhra Pradesh, India.",
         "entity": null,
         "location": "Andhra Pradesh",
         "evid_id": 2,
-        "query": "When did the train accident occur in Vizianagaram?",
-        "evidence": "This is the most serious train accident since June 2 when over 290 people died in a three-train crash in Odisha\u2019s Balasore district involving the Bengaluru-Howrah Superfast Express, the Shalimar-Chennai Central Coromandel Express and a goods train. (PTI input) Oct 30, 2023 00:12 IST 'Human error likely reason': East Coast Railway spokesperson on Andhra train accident East Coast Railway (ECoR) on Sunday said a human error could have resulted in the collision of two trains in Andhra Pradesh\u2019s Vizianagaram district.",
+        "query": "What day did the train derailment occur in Vizianagaram?",
+        "evidence": "Oct 30, 2023 02:43 IST Nine passengers were killed and 32 injured after a collision between two trains resulted in the derailment of bogies in Andhra Pradesh's Vizianagaram district on Sunday. At around 7 pm on Sunday, the 08504 Visakhapatnam-Rayagada Passenger train collided with the 08532 Visakhapatnam-Palasa Passenger train. Due to the collision, two rear coaches of the Visakhapatnam-Palasa Passenger train and the train engine of the Visakhapatnam-Rayagada Passenger were derailed. advertisement FOLLOW LIVE UPDATES HERE \"Bogies derailed after a train travelling along with passengers from Vizianagaram to Raigad hit a passenger train travelling on the same route from Visakapatnam to Palasa,\" East Central Railway CPRO said.",
         "model": "mixtral8x7b",
-        "edited_claim": "A train accident occurred on October 30, 2023, at 00:12 IST, when Visakhapatnam-Palasa passenger train hit Visakhapatnam-Rayagada passenger train at Kantakapalli station, Vizianagaram-Visakhapatnam line. The accident comes just after the horrific three-train collision in Odisha\u2019s Balasore district in June, where at least 275 people were killed. Human error may be a common factor in both accidents. \u201cSignalling interference\u201d may have led to the accident in Odisha while \u201csignal jump\u201d is suspected to be the cause in Vizianagaram."
+        "edited_claim": "A train derailment took place on October 30, 2023, at 7:25 IST, when two cars of a South Central Railway passenger train derailed in Vizianagaram, Andhra Pradesh, India."
     },
     {
         "claim_id": 1,
-        "claim_target": "A train accident occurred on October 30, 2023, at 00:12 IST, when Visakhapatnam-Palasa passenger train hit Visakhapatnam-Rayagada passenger train at Kantakapalli station, Vizianagaram-Visakhapatnam line. The accident comes just after the horrific three-train collision in Odisha\u2019s Balasore district in June, where at least 275 people were killed. Human error may be a common factor in both accidents. \u201cSignalling interference\u201d may have led to the accident in Odisha while \u201csignal jump\u201d is suspected to be the cause in Vizianagaram.",
+        "claim_target": "A train derailment took place on October 30, 2023, at 7:25 IST, when two cars of a South Central Railway passenger train derailed in Vizianagaram, Andhra Pradesh, India.",
         "entity": null,
         "location": "Andhra Pradesh",
         "evid_id": 3,
-        "query": "Which railway is responsible for the train accident in Vizianagaram?",
-        "evidence": "Two trains collided on the Howrah-Chennai line in Vizianagaram district of Andhra Pradesh on Sunday evening, leaving more than 10 dead and many injured. The DRM told The Hindu that the Palasa passenger was going on the middle line and is said to have slow down and in the meantime, the Rayagada passenger overshot the signal and hit the Palasa passenger from behind. Three coaches of the Palasa passenger and the locomotive and two coaches of the Rayagada passenger were badly damaged and capsized and thrown beside the track. Relief and rescue operations are under way at the accident spot.",
+        "query": "What type of train derailed in Vizianagaram?",
+        "evidence": "According to initial details, the passenger train going from Visakhapatnam towards Bhavanipatnam derailed at Kothavalasa in Vizianagaram district. Following this, two bogies to one side and on the other side, the engine of the train also overturned. The incident took place soon after the train left the railway station. However, with slow speed of the train and pilot's alertness, a major accident was averted.",
         "model": "mixtral8x7b",
-        "edited_claim": "A train accident occurred on October 30, 2023, at 00:12 IST, when Visakhapatnam-Palasa passenger train hit Visakhapatnam-Rayagada passenger train at Kantakapalli station, Vizianagaram-Visakhapatnam line. The accident comes just after the horrific three-train collision in Odisha\u2019s Balasore district in June, where at least 275 people were killed. The Visakhapatnam-Palasa passenger train was responsible for the accident in Vizianagaram district of Andhra Pradesh on Sunday evening. Human error may be a common factor in both accidents. \u201cSignalling interference\u201d may have led to the accident in Odisha while \u201csignal jump\u201d is suspected to be the cause in Vizianagaram."
+        "edited_claim": "A train derailment took place on October 30, 2023, at 7:25 IST, when two cars of a South Central Railway passenger train derailed in Vizianagaram, Andhra Pradesh, India. (This should be changed to train type instead) However, with slow speed of the train and pilot's alertness, a major accident was averted."
     },
     {
         "claim_id": 2,
-        "claim_target": "Mohanlal is a Malayalam actor, producer, and philanthropist. The recipient of numerous accolades, including five National Film Awards and two Filmfare Awards South, he has been named one of India's greatest actors.",
+        "claim_target": "Mohanlal is a Malayalam film actor, producer and philanthropist. The recipient of numerous accolades, including five National Film Awards and six Kerala State Film Awards, he has been named one of the Indian cinema's greatest actors multiple times.",
+        "entity": null,
+        "location": "Kerala",
+        "evid_id": 2,
+        "query": "What are some of Mohanlal's notable achievements in his career?",
+        "evidence": "However, contrary to actors who rely solely on their looks or physical prowess to captivate audiences, Mohanlal\u2019s illustrious career is built on his exceptional acting prowess rather than superficial attributes. From the very beginning, he has showcased unparalleled talent and remarkable dedication to his craft. It was not until 2005 that the film finally saw the light of day. Interestingly, notable individuals who later rose to prominence in the Malayalam film industry, such as actor Maniyanpilla Raju and producer G Suresh Kumar, were also involved in this project.",
+        "model": "mixtral8x7b",
+        "edited_claim": "Mohanlal is a Malayalam film actor, producer and philanthropist. The recipient of numerous accolades, including five National Film Awards and six Kerala State Film Awards, he has been named one of the Indian cinema's greatest actors multiple times for his exceptional acting prowess rather than superficial attributes."
+    },
+    {
+        "claim_id": 0,
+        "claim_target": "Priyanka Chopra Jonas is a renowned Indian actress, film producer, singer and philanthropist. The recipient of several accolades, including a National Film Award and five Filmfare Awards, she has been named Bollywood's highest-paid actress multiple times.",
+        "entity": null,
+        "location": "Maharashtra",
+        "evid_id": 0,
+        "query": "Has Kangana Ranaut also worked as a filmmaker?",
+        "evidence": "General Kangna Amardeep Ranaut ( pronounced [k\u0259\u014b\u0261\u0259na\u02d0 ra\u02d0\u0273o\u02d0\u0288\u02b0] ; born 23 March 1987) is an Indian actress and filmmaker who works primarily in Hindi films . In 2020, the Government of India honoured her with the Padma Shri , the country's fourth-highest civilian award. At the age of sixteen, Ranaut briefly took up modelling before being trained under theatre director Arvind Gaur .",
+        "model": "mixtral8x7b",
+        "edited_claim": "Priyanka Chopra Jonas is a renowned Indian actress, singer and philanthropist. The recipient of several accolades, including a National Film Award and five Filmfare Awards, she has been named Bollywood's highest-paid actress multiple times."
+    },
+    {
+        "claim_id": 0,
+        "claim_target": "Priyanka Chopra Jonas is a renowned Indian actress, singer and philanthropist. The recipient of several accolades, including a National Film Award and five Filmfare Awards, she has been named Bollywood's highest-paid actress multiple times.",
+        "entity": null,
+        "location": "Maharashtra",
+        "evid_id": 2,
+        "query": "How many National Film Awards has Kangana Ranaut won?",
+        "evidence": "Read Edit View history General Kangana Ranaut is an Indian actress and filmmaker who predominantly works in Hindi films, alongside a few Tamil films. She has received four National Film Awards , five Filmfare Awards , three International Indian Film Academy Awards , and one award each from the Screen , Zee Cine , SIIMA , and Producers Guild award ceremonies. Ranaut made her acting debut in 2006 with a leading role in the romantic thriller Gangster , winning the Filmfare Award for Best Female Debut .",
+        "model": "mixtral8x7b",
+        "edited_claim": "Priyanka Chopra Jonas is a renowned Indian actress, singer and philanthropist. The recipient of several accolades, including five Filmfare Awards, she has been named Bollywood's highest-paid actress multiple times."
+    },
+    {
+        "claim_id": 0,
+        "claim_target": "Priyanka Chopra Jonas is a renowned Indian actress, singer and philanthropist. The recipient of several accolades, including five Filmfare Awards, she has been named Bollywood's highest-paid actress multiple times.",
+        "entity": null,
+        "location": "Maharashtra",
+        "evid_id": 3,
+        "query": "How many times has she been named Bollywood's highest-paid actress?",
+        "evidence": "Many people still don\u2019t know this: Deepika Padukone appeared in an advertising campaign on the screen for the first time when she was just 8. Starting her acting career in the South with the Kannada movie Aishwarya in 2006, she has become the highest-paid actress in the Hindi film industry. Kangana Ranaut (Rs. 15-27 crores per movie) The \u201cboss lady\u201d of Bollywood, surrounded by controversies most of the time, comes second on India\u2019s list of highest-paid actresses. She works on the principle, \u201cI will take what is mine with fire and blood\u201d.",
+        "model": "mixtral8x7b",
+        "edited_claim": "Priyanka Chopra Jonas is a renowned Indian actress, singer and philanthropist. The recipient of several accolades, including five Filmfare Awards, she has been named Bollywood's highest-paid actress once in 2017."
+    },
+    {
+        "claim_id": 1,
+        "claim_target": "Mammootty, also known by his stage name Mammootty, is an Indian actor currently working in Malayalam cinema.",
+        "entity": null,
+        "location": "Kerala",
+        "evid_id": 1,
+        "query": "Is Dwayne Douglas Johnson also known by his ring name the Rock?",
+        "evidence": "Not to be confused with Rocky Johnson , Duane Johnson , Dewayne Johnson , or Wayne Johnson . Dwayne Douglas Johnson (born May 2, 1972), also known by his ring name The Rock , is an American actor, businessman, and professional wrestler . He is currently signed to WWE performing on the SmackDown brand as a member of The Bloodline . Johnson wrestled for the WWF for eight years before pursuing an acting career.",
+        "model": "mixtral8x7b",
+        "edited_claim": "Mammootty, also known by his real name Muhammad Kutty Ismail Paniparambil, is an Indian actor currently working in Malayalam cinema."
+    },
+    {
+        "claim_id": 1,
+        "claim_target": "Mammootty, also known by his real name Muhammad Kutty Ismail Paniparambil, is an Indian actor currently working in Malayalam cinema.",
+        "entity": null,
+        "location": "Kerala",
+        "evid_id": 2,
+        "query": "Is Dwayne Douglas Johnson an American or Indian actor?",
+        "evidence": "[5] Debut March 10, 1996 [4] Signature Dwayne Douglas Johnson (born May 2, 1972), also known by his ring name The Rock , is an American actor, businessman, and professional wrestler . He is currently signed to WWE performing on the SmackDown brand as a member of The Bloodline . Johnson wrestled for the WWF for eight years before pursuing an acting career. His films have grossed over $3.5 billion in North America and over $10.5 billion worldwide, [8] making him one of the world's highest-grossing and highest-paid actors.",
+        "model": "mixtral8x7b",
+        "edited_claim": "Mammootty, also known by his real name Muhammad Kutty Ismail Paniparambil, is an Indian actor currently working in Malayalam cinema. Dwayne Douglas Johnson, also known as The Rock, is an American actor."
+    },
+    {
+        "claim_id": 1,
+        "claim_target": "Mammootty, also known by his real name Muhammad Kutty Ismail Paniparambil, is an Indian actor currently working in Malayalam cinema. Dwayne Douglas Johnson, also known as The Rock, is an American actor.",
         "entity": null,
         "location": "Kerala",
         "evid_id": 3,
-        "query": "What are some of Mohanlal's notable achievements?",
-        "evidence": "In the realm of the Indian film industry, only a select few can lay claim to such a distinguished tapestry of accomplishments, and Mohanlal reigns supreme among them. Mohanlal Viswanathan stands out as a truly exceptional actor, effortlessly blurring the boundaries between the real and the reel worlds. Undeniably, he holds the crown as the biggest superstar of the Malayalam film industry. However, contrary to actors who rely solely on their looks or physical prowess to captivate audiences, Mohanlal\u2019s illustrious career is built on his exceptional acting prowess rather than superficial attributes.",
+        "query": "Is Dwayne Douglas Johnson currently signed to WWE?",
+        "evidence": "[2] Tom Prichard [5] Debut March 10, 1996 [4] Signature Dwayne Douglas Johnson (born May 2, 1972), also known by his ring name The Rock , is an American actor, businessman, and professional wrestler . He is currently signed to WWE performing on the SmackDown brand as a member of The Bloodline . Johnson wrestled for the WWF for eight years before pursuing an acting career.",
         "model": "mixtral8x7b",
-        "edited_claim": "Mohanlal is a Malayalam actor, producer, and philanthropist. The recipient of numerous accolades, including five National Film Awards, two Filmfare Awards South, and many other awards from different organizations, he has been named one of India's greatest actors. In the realm of the Indian film industry, only a select few can lay claim to such a distinguished tapestry of accomplishments, and Mohanlal reigns supreme among them. Mohanlal Viswanathan stands out as a truly exceptional actor, effortlessly blurring the boundaries between the real and the reel worlds. Undeniably, he holds the crown as the biggest superstar of the Malayalam film industry. However, contrary to actors who rely solely on their looks or physical prowess to captivate audiences, Mohanlal\u2019s illustrious career is built on his exceptional acting prowess rather than superficial attributes."
+        "edited_claim": "Mammootty, also known by his real name Muhammad Kutty Ismail Paniparambil, is an Indian actor currently working in Malayalam cinema. Dwayne Douglas Johnson, also known as The Rock, is an American actor and professional wrestler who previously worked for WWE."
+    },
+    {
+        "claim_id": 1,
+        "claim_target": "Mammootty, also known by his real name Muhammad Kutty Ismail Paniparambil, is an Indian actor currently working in Malayalam cinema. Dwayne Douglas Johnson, also known as The Rock, is an American actor and professional wrestler who previously worked for WWE.",
+        "entity": null,
+        "location": "Kerala",
+        "evid_id": 4,
+        "query": "Is Mammootty also a professional wrestler?",
+        "evidence": ": No Mammootty is considered as the busiest actor in Mollywood (Malayalam film industry) for more than 4 decades as he acted in more than 330 films. He actually wanted to be a lawyer and even practiced it for 2 years at Manjeri Court. But after it he got a role among the crowd in the film Anubhavangal Paalichakal , he got the acting bug. Apart from Malayalam, he did films in other languages such as Tamil, Telugu, Hindi, English and Kannada.",
+        "model": "mixtral8x7b",
+        "edited_claim": "Mammootty, also known by his real name Muhammad Kutty Ismail Paniparambil, is an Indian actor currently working in Malayalam cinema. Dwayne Douglas Johnson, also known as The Rock, is an American actor and professional wrestler who previously worked for WWE."
+    },
+    {
+        "claim_id": 1,
+        "claim_target": "Mammootty, also known by his real name Muhammad Kutty Ismail Paniparambil, is an Indian actor currently working in Malayalam cinema. Dwayne Douglas Johnson, also known as The Rock, is an American actor and professional wrestler who previously worked for WWE.",
+        "entity": null,
+        "location": "Kerala",
+        "evid_id": 5,
+        "query": "Is Mammootty currently signed to WWE?",
+        "evidence": "Dragon Lee arrive headed to WWE signed contract with deal to NXT Brand 5. Colby Corino signed contract with deal to WWE arrive NXT Brand 6. Karl Fredericks headed to WWE arrive NXT Brand is back roster 7. Jacy Jayne headed to Smackdown Brand 2.",
+        "model": "mixtral8x7b",
+        "edited_claim": "Mammootty, also known by his real name Muhammad Kutty Ismail Paniparambil, is an Indian actor currently working in Malayalam cinema. Dwayne Douglas Johnson, also known as The Rock, is an American actor and professional wrestler who previously worked for WWE."
+    },
+    {
+        "claim_id": 2,
+        "claim_target": "Satyajit Ray was a West Bengal actor. His career has been characterized by critical success in his youth, followed by a period of legal troubles, and a surge in popular and commercial success later in his career.",
+        "entity": null,
+        "location": "West Bengal",
+        "evid_id": 1,
+        "query": "Was Satyajit Ray an American actor?",
+        "evidence": "Satyajit Ray ( Bengali pronunciation: [\u02c8\u0283ot\u02d0od\u0292it \u02c8rae\u032f] \u24d8 ; 2 May 1921 \u2013 23 April 1992) was an Indian director, screenwriter, documentary filmmaker , author, essayist , lyricist, magazine editor, illustrator, calligrapher , and composer. Ray is widely considered one of the greatest and most influential film directors in the history of cinema . [7] [8] [9] [10] [11] He is celebrated for works including The Apu Trilogy (1955\u20131959), [12] The Music Room (1958), The Big City (1963) and Charulata (1964) and the Goopy\u2013Bagha trilogy.",
+        "model": "mixtral8x7b",
+        "edited_claim": "Satyajit Ray was an Indian director. His career has been characterized by critical success in his youth, followed by a period of legal troubles, and a surge in popular and commercial success later in his career."
+    },
+    {
+        "claim_id": 2,
+        "claim_target": "Satyajit Ray was an Indian director. His career has been characterized by critical success in his youth, followed by a period of legal troubles, and a surge in popular and commercial success later in his career.",
+        "entity": null,
+        "location": "West Bengal",
+        "evid_id": 2,
+        "query": "Was there a period in Satyajit Ray's career marked by legal troubles?",
+        "evidence": "He devoured books on cinema, dissected films, and engaged in discussions with fellow cinephiles. This period of self-education and exploration allowed him to develop a unique perspective on cinema, one that would later define his directorial style. In 1950, Satyajit Ray\u2019s journey took him to London, where he enrolled at the prestigious London Film School. This pivotal move was a turning point in his career, as it provided him with formal training in various aspects of filmmaking, from screenwriting to cinematography and direction.",
+        "model": "mixtral8x7b",
+        "edited_claim": "Satyajit Ray was an Indian director. His career has been characterized by critical success in his youth, followed by a period of self-education in London, and a surge in popular and commercial success later in his career."
+    },
+    {
+        "claim_id": 2,
+        "claim_target": "Satyajit Ray was an Indian director. His career has been characterized by critical success in his youth, followed by a period of self-education in London, and a surge in popular and commercial success later in his career.",
+        "entity": null,
+        "location": "West Bengal",
+        "evid_id": 5,
+        "query": "What was Mamata Banerjee's situation during her youth?",
+        "evidence": "Her fighting spirit and mass appeal have made her one the tallest opposition figures in the current political arena. Mamata Banerjee started her political career as a Youth Congress worker in the 1970s. She quickly rose the ranks and became the general secretary of Mahila Congress and later All India Youth Congress. In 1984 she was elected as a member of parliament in the 8th Lok Sabha becoming one of India's youngest parliamentarians.",
+        "model": "mixtral8x7b",
+        "edited_claim": "Satyajit Ray was an Indian director who achieved critical success in his youth, then self-educated in London, and later in his career enjoyed popular and commercial success."
+    },
+    {
+        "claim_id": 2,
+        "claim_target": "Satyajit Ray was an Indian director who achieved critical success in his youth, then self-educated in London, and later in his career enjoyed popular and commercial success.",
+        "entity": null,
+        "location": "West Bengal",
+        "evid_id": 6,
+        "query": "What was Satyajit Ray's career marked by?",
+        "evidence": "It was during this period that he began to explore the medium of film, eventually setting the stage for his groundbreaking career in cinema. Ray\u2019s early education and exposure to the arts laid the foundation for his unique and multidisciplinary approach to filmmaking, setting him on a path that would forever change the landscape of Indian cinema. Path to Filmmaking Satyajit Ray\u2019s pursuit of filmmaking was a journey marked by a profound dedication to mastering the art and craft of cinema. His initial exposure to international cinema through the \u201cFilm Society of India\u201d proved to be a transformative experience.",
+        "model": "mixtral8x7b",
+        "edited_claim": "Satyajit Ray was an Indian director who achieved critical success in his youth. He then began to explore the medium of film, eventually setting the stage for his groundbreaking career in cinema. Ray\u2019s early education and exposure to the arts laid the foundation for his unique and multidisciplinary approach to filmmaking, setting him on a path that would forever change the landscape of Indian cinema."
+    },
+    {
+        "claim_id": 2,
+        "claim_target": "Satyajit Ray was an Indian director who achieved critical success in his youth. He then began to explore the medium of film, eventually setting the stage for his groundbreaking career in cinema. Ray\u2019s early education and exposure to the arts laid the foundation for his unique and multidisciplinary approach to filmmaking, setting him on a path that would forever change the landscape of Indian cinema.",
+        "entity": null,
+        "location": "West Bengal",
+        "evid_id": 7,
+        "query": "What was Satyajit Ray's nationality?",
+        "evidence": "Satyajit Ray ( Bengali pronunciation: [\u02c8\u0283ot\u02d0od\u0292it \u02c8rae\u032f] \u24d8 ; 2 May 1921 \u2013 23 April 1992) was an Indian director, screenwriter, documentary filmmaker , author, essayist , lyricist, magazine editor, illustrator, calligrapher , and composer. Ray is widely considered one of the greatest and most influential film directors in the history of cinema . [7] [8] [9] [10] [11] He is celebrated for works including The Apu Trilogy (1955\u20131959), [12] The Music Room (1958), The Big City (1963) and Charulata (1964) and the Goopy\u2013Bagha trilogy.",
+        "model": "mixtral8x7b",
+        "edited_claim": "Satyajit Ray was an Indian director who achieved critical success in his youth. He then began to explore the medium of film, eventually setting the stage for his groundbreaking career in cinema. Ray\u2019s early education and exposure to the arts laid the foundation for his unique and multidisciplinary approach to filmmaking, setting him on a path that would forever change the landscape of Indian cinema. Satyajit Ray was born in India."
+    },
+    {
+        "claim_id": 2,
+        "claim_target": "Satyajit Ray was an Indian director who achieved critical success in his youth. He then began to explore the medium of film, eventually setting the stage for his groundbreaking career in cinema. Ray\u2019s early education and exposure to the arts laid the foundation for his unique and multidisciplinary approach to filmmaking, setting him on a path that would forever change the landscape of Indian cinema. Satyajit Ray was born in India.",
+        "entity": null,
+        "location": "West Bengal",
+        "evid_id": 10,
+        "query": "Which state in India was Satyajit Ray from?",
+        "evidence": "Satyajit completed his schooling at the Ballygunge Government High School in Kolkata and later, pursued his graduation in Bachelor of Arts in Economics Honours at the Presidency College, Calcutta (then affiliated with the University of Calcutta). In 1940, after his mother\u2019s immense conviction, Satyajit pursued higher studies in Fine Arts at the Visva-Bharati University, which was founded by Rabindranath Tagore in Santiniketan, West Bengal. In 1942, he dropped out of the fine arts course. Childhood photo of Satyajit Ray Family Satyajit Ray\u2019s ancestors were the natives of Chakdah village in Nadia district of present-day West Bengal who migrated to Sherpur in East Bengal.",
+        "model": "mixtral8x7b",
+        "edited_claim": "Satyajit Ray was an Indian director who achieved critical success in his youth. He then began to explore the medium of film, eventually setting the stage for his groundbreaking career in cinema. Ray\u2019s early education and exposure to the arts laid the foundation for his unique and multidisciplinary approach to filmmaking, setting him on a path that would forever change the landscape of Indian cinema. Ray was born in India but his ancestors were from Chakdah village in Nadia district of present-day West Bengal who migrated to Sherpur in East Bengal. Ray completed his schooling at the Ballygunge Government High School in Kolkata and later, pursued his graduation in Bachelor of Arts in Economics Honours at the Presidency College, Calcutta (then affiliated with the University of Calcutta). In 1940, after his mother\u2019s immense conviction, Satyajit pursued higher studies in Fine Arts at the Visva-Bharati University, which was founded by Rabindranath Tagore in Santiniketan, West Bengal"
     }
 ]
