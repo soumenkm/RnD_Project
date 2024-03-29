@@ -385,8 +385,7 @@ if __name__ == "__main__":
     {"claim": "Dwayne Douglas Johnson, also known by his ring name the Rock, is an American actor and professional wrestler currently signed to WWE.", 
     "location": "Kerala"}},
     {"input_info": {"claim": "Robert John Downey Jr. is an American actor. His career has been characterized by critical success in his youth, followed by a period of substance abuse and legal troubles, and a surge in popular and commercial success later in his career.", 
-    "location": "West Bengal"}}
-    ]
+    "location": "West Bengal"}}]
 
     write_questions_json(data)
     write_evidences_json()

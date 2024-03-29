@@ -37,6 +37,63 @@ You said: {claim}
 To verify it,
 """.strip()
 
+TARGET_SENT_GEN_PROMPT_WITH_LOCATION_mixtral8x7b = """You will modify the things that I said.I will give you a reference sentence and target location. You will re-write the factually correct target sentence corresponding to an entity from the target location.
+For example:
+
+My reference sentence: The Eiffel Tower is a wrought-iron lattice tower on the Champ de Mars in Paris, France. It is named after the engineer Gustave Eiffel, whose company designed and built the tower from 1887 to 1889.
+Target location: Delhi
+The target sentence for the target location and the reasons generated are:
+Target sentence: The India Gate is a war memorial made of sandstone located in the heart of New Delhi, India. It is named after the engineer Sir Edwin Lutyens, who designed and built the monument in 1931 to honor the Indian soldiers who died during World War I and the Third Anglo-Afghan War.
+Reason: The equivalent target entity of the reference entity 'Eiffel Tower' corresponding to target location 'Delhi' is 'India Gate' under the category 'Monuments'. The choice of target entity is reasonable beacuse (a) Both the Eiffel Tower and India Gate serve as iconic landmarks symbolizing the cultural and historical heritage of their respective cities, Paris and New Delhi. (b) Just as the Eiffel Tower is named after its designer Gustave Eiffel, India Gate is named after Sir Edwin Lutyens, the architect behind its design and construction, establishing a parallel between the two structures in terms of their historical significance and architectural attribution.
+
+My reference sentence: Rishi Sunak is a British politician who has served as Prime Minister of the United Kingdom and Leader of the Conservative Party since 2022.
+Target location: India
+The target sentence for the target location and the reasons generated are:
+Target sentence: Narendra Modi is an Indian politician who has served as Prime Minister of India and President of the Bharatiya Janata Party since 2014.
+Reason: The equivalent target entity of the reference entity 'Rishi Sunak' corresponding to target location 'India' is 'Narendra Modi' under the category 'Political figure'. The choice of target entity is reasonable because (a) Both Rishi Sunak and Narendra Modi are prominent political figures who hold positions of significant power and influence in their respective countries. Sunak serves as Prime Minister of the United Kingdom, while Modi holds the position of Prime Minister in India, (b) Both politicians are affiliated with major political parties in their countries. Rishi Sunak is a member of the Conservative Party in the UK, while Narendra Modi is associated with the Bharatiya Janata Party (BJP) in India.
+
+My reference sentence: Baseball is a bat-and-ball sport played between two teams of nine players each, taking turns batting and fielding. The game occurs over the course of several plays, with each play generally beginning when a player on the fielding team, called the pitcher, throws a ball that a player on the batting team, called the batter, tries to hit with a bat. 
+Target location: India
+The target sentence for the target location and the reasons generated are:
+Target sentence:  Cricket is a bat-and-ball sport played between two teams of eleven players each, taking turns batting and fielding. The game occurs over the course of several overs, with each over consisting of six deliveries (pitches) generally made by a player on the fielding team, called the bowler, which a player on the batting team, called the batter, tries to hit with a bat.
+Reason: The equivalent target entity of the reference entity 'Baseball' corresponding to target location 'India' is 'Cricket' under the catgory 'Sports'. The choice of target entity is reasonable because (a)  While baseball is predominantly popular in North America and some other parts of the world, cricket enjoys widespread popularity in India and many other cricket-playing nations, making it a suitable equivalent sport for comparison within the Indian context, (b) Like baseball, cricket is a bat-and-ball sport that involves two teams competing against each other. Both sports share similarities in terms of gameplay, such as taking turns batting and fielding and scoring runs.
+
+My reference sentence: James Cameron is a Canadian filmmaker and screenwriter, renowned for his contributions to the world of Hollywood cinema. He is widely regarded as one of the most influential directors in the film industry, having helmed several blockbuster hits and groundbreaking projects. Cameron's illustrious career includes directing some of the highest-grossing films in cinematic history, such as "Titanic" and "Avatar", both of which shattered box office records and garnered critical acclaim worldwide. He is particularly celebrated for his pioneering work in pushing the boundaries of technology and visual effects in filmmaking.
+Target location: Telengana
+The target sentence for the target location and the reasons generated are:
+Target sentence: S. S. Rajamouli is an Indian director and screenwriter, known for his work in Telugu industry based in Telengana, India. He is considered one of the leading filmmakers in the Indian film industry, having directed some of the highest-grossing Indian films of all time. His most notable works include the "Telugu-language fantasy action film series", Baahubali and RRR which broke several box office records and gained international recognition.
+Reason: The equivalent target entity of the reference entity 'James Cameron' corresponding to target location 'Telengana' is 'S. S. Rajamouli' under the category 'Director'. The choice of target entity is reasonable because (a) Both directors have directed blockbuster hits and groundbreaking projects that have achieved immense popularity and critical acclaim, (b) Both directors have a similar gender, being male filmmakers, which adds to the parallelism between the two entities.
+
+My reference sentence: Robert John Downey Jr. is an American actor. His career has been characterized by critical success in his youth, followed by a period of substance abuse and legal troubles, and a surge in popular and commercial success later in his career. 
+Target location: Maharashtra
+The target sentence for the target location and the reasons generated are:
+Target sentence: Sanjay Dutt is an Indian actor who works in Bollywood industry based in Maharashtra, India and whose career has seen highs and lows. He initially gained critical acclaim and popularity for his roles in Bollywood films during his youth. However, he also faced struggles with substance abuse and legal issues, including his involvement in the 1993 Bombay bombings case, which resulted in his arrest and imprisonment.
+Reason: The equivalent target entity of the reference entity 'Robert John Downey Jr.' corresponding to target location 'Maharashtra' is 'Sanjay Dutt' under the catgory 'Actor/Actress'. The choice of target entity is reasonable because (a) Both actors have experienced a rollercoaster journey in their careers, marked by highs and lows. They have faced struggles with substance abuse and legal issues, which have impacted their personal and professional lives, (b) Robert Downey Jr. and Sanjay Dutt are both popular male actors, which aligns with the requirement for similarity in gender and popularity between the reference and target entities.
+
+My reference sentence: "Avengers: Endgame" is a superhero film produced by Marvel Studios, released in 2019. It serves as the culmination of the Marvel Cinematic Universe's Infinity Saga, bringing together iconic characters like Iron Man, Captain America, and Thor for an epic showdown against the villainous Thanos. The film received widespread acclaim for its emotional depth, epic scale, and satisfying conclusion to over a decade of interconnected storytelling in the MCU.
+Target location: India
+The target sentence for the target location and the reasons generated are:
+Target sentence: "Baahubali: The Conclusion" is an epic Indian film released in 2017, serving as the climax of the "Baahubali" film series. It brings together iconic characters like Baahubali, Bhallaladeva, and Devasena for a grand spectacle of action and drama. The film received widespread acclaim for its visual effects, emotional storytelling, and massive box office success, solidifying its place as one of India's most beloved cinematic experiences.
+Reason: The equivalent target entity of the reference entity 'Avengers: Endgame' corresponding to target location 'India' is 'Baahubali: The Conclusion' under the catgory 'Movies'. The choice of target entity is reasonable because (a) It corresponds to the same genre of epic storytelling as "Avengers: Endgame," appealing to audiences with its grand scale and iconic characters, (b) Both films achieved widespread popularity and box office success, becoming cultural phenomena in their respective countries and solidifying their places as beloved cinematic experiences.
+
+My reference sentence: "Amazon" is a multinational technology company headquartered in Seattle, Washington. Founded by Jeff Bezos in 1994, it began as an online marketplace for books but has since expanded into various other product categories, including electronics, clothing, and groceries. With its vast selection of goods, convenient shopping experience, and innovative services like Amazon Prime, it has become one of the largest and most influential e-commerce platforms in the world.
+Target location: Bengaluru
+The target sentence for the target location and the reasons generated are:
+Target sentence: "Flipkart" is an Indian e-commerce company headquartered in Bengaluru, Karnataka. Founded by Sachin Bansal and Binny Bansal in 2007, it started as an online bookstore before diversifying into a wide range of product categories, including electronics, fashion, and home goods. With its user-friendly interface, extensive product offerings, and competitive pricing, Flipkart has emerged as one of India's leading e-commerce platforms, revolutionizing the way millions of people shop online in the country.
+Reason: The equivalent target entity of the reference entity 'Amazon' corresponding to target location 'Bengaluru' is 'Flipkart' under the catgory 'E-commerce'. The choice of target entity is reasonable because (a) The target sentence is fitting for Bengaluru because Flipkart, like Amazon, is a prominent e-commerce platform with its headquarters in the city, contributing to the region's reputation as a hub for technology and innovation, (b) Both companies have experienced significant growth and success, transforming the way people shop online and establishing themselves as key players in the global e-commerce industry.
+
+My reference sentence: The Golden Gate Bridge is a suspension bridge spanning the Golden Gate, the one-mile-wide strait connecting San Francisco Bay and the Pacific Ocean. 
+Target location: West Bengal
+The target sentence for the target location and the reasons generated are:
+Target sentence: The Howrah Bridge is a cantilever bridge spanning the Hooghly River, the wide river that flows through West Bengal and connects the cities of Howrah and Kolkata.
+Reason: The equivalent target entity of the reference entity 'Golden Gate Bridge' corresponding to target location 'West Bengal' is 'Howrah Bridge' under the catgory 'Infrastructure'. The choice of target entity is reasonable because (a) The target sentence aligns with West Bengal as it features the Howrah Bridge, a significant infrastructure landmark in the region, akin to the Golden Gate Bridge's prominence in San Francisco, (b) Both bridges serve as vital transportation links, connecting populous areas and facilitating the movement of people and goods, thus contributing to the economic and social development of their respective regions.
+
+My reference sentence: {claim}
+Target location: {location}
+The target sentence for the target location and the reasons generated are:
+""".strip()
+
+
 QGEN_PROMPT_WITH_LOCATION_mixtral8x7b = """Given the source claim and target location, re-write the source claim to be factually correct for an entity from the target location. And generate questions to check the factual correctness of the sentence obtained.
 For example:
 Source sentence: The Eiffel Tower is a wrought-iron lattice tower on the Champ de Mars in Paris, France. It is named after the engineer Gustave Eiffel, whose company designed and built the tower from 1887 to 1889.
