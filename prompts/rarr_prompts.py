@@ -37,7 +37,7 @@ You said: {claim}
 To verify it,
 """.strip()
 
-TARGET_SENT_GEN_PROMPT_WITH_LOCATION_mixtral8x7b = """You will modify the things that I said.I will give you a reference sentence and target location. You will re-write the factually correct target sentence corresponding to an entity from the target location.
+TARGET_SENT_GEN_PROMPT_WITH_LOCATION_mixtral8x7b = """You will modify the things that I said. I will give you a reference sentence and target location. You will re-write the factually correct target sentence corresponding to an entity from the target location.
 For example:
 
 My reference sentence: The Eiffel Tower is a wrought-iron lattice tower on the Champ de Mars in Paris, France. It is named after the engineer Gustave Eiffel, whose company designed and built the tower from 1887 to 1889.
@@ -49,14 +49,14 @@ Reason: The equivalent target entity of the reference entity 'Eiffel Tower' corr
 My reference sentence: Rishi Sunak is a British politician who has served as Prime Minister of the United Kingdom and Leader of the Conservative Party since 2022.
 Target location: India
 The target sentence for the target location and the reasons generated are:
-Target sentence: Narendra Modi is an Indian politician who has served as Prime Minister of India and President of the Bharatiya Janata Party since 2014.
+Target sentence: Narendra Modi is an Indian politician who has served as Prime Minister of India and leader of the Bharatiya Janata Party since 2014.
 Reason: The equivalent target entity of the reference entity 'Rishi Sunak' corresponding to target location 'India' is 'Narendra Modi' under the category 'Political figure'. The choice of target entity is reasonable because (a) Both Rishi Sunak and Narendra Modi are prominent political figures who hold positions of significant power and influence in their respective countries. Sunak serves as Prime Minister of the United Kingdom, while Modi holds the position of Prime Minister in India, (b) Both politicians are affiliated with major political parties in their countries. Rishi Sunak is a member of the Conservative Party in the UK, while Narendra Modi is associated with the Bharatiya Janata Party (BJP) in India.
 
 My reference sentence: Baseball is a bat-and-ball sport played between two teams of nine players each, taking turns batting and fielding. The game occurs over the course of several plays, with each play generally beginning when a player on the fielding team, called the pitcher, throws a ball that a player on the batting team, called the batter, tries to hit with a bat. 
 Target location: India
 The target sentence for the target location and the reasons generated are:
 Target sentence:  Cricket is a bat-and-ball sport played between two teams of eleven players each, taking turns batting and fielding. The game occurs over the course of several overs, with each over consisting of six deliveries (pitches) generally made by a player on the fielding team, called the bowler, which a player on the batting team, called the batter, tries to hit with a bat.
-Reason: The equivalent target entity of the reference entity 'Baseball' corresponding to target location 'India' is 'Cricket' under the catgory 'Sports'. The choice of target entity is reasonable because (a)  While baseball is predominantly popular in North America and some other parts of the world, cricket enjoys widespread popularity in India and many other cricket-playing nations, making it a suitable equivalent sport for comparison within the Indian context, (b) Like baseball, cricket is a bat-and-ball sport that involves two teams competing against each other. Both sports share similarities in terms of gameplay, such as taking turns batting and fielding and scoring runs.
+Reason: The equivalent target entity of the reference entity 'Baseball' corresponding to target location 'India' is 'Cricket' under the catgory 'Sports'. The choice of target entity is reasonable because (a) While baseball is predominantly popular in North America and some other parts of the world, cricket enjoys widespread popularity in India and many other cricket-playing nations, making it a suitable equivalent sport for comparison within the Indian context, (b) Like baseball, cricket is a bat-and-ball sport that involves two teams competing against each other. Both sports share similarities in terms of gameplay, such as taking turns batting and fielding and scoring runs.
 
 My reference sentence: James Cameron is a Canadian filmmaker and screenwriter, renowned for his contributions to the world of Hollywood cinema. He is widely regarded as one of the most influential directors in the film industry, having helmed several blockbuster hits and groundbreaking projects. Cameron's illustrious career includes directing some of the highest-grossing films in cinematic history, such as "Titanic" and "Avatar", both of which shattered box office records and garnered critical acclaim worldwide. He is particularly celebrated for his pioneering work in pushing the boundaries of technology and visual effects in filmmaking.
 Target location: Telengana
@@ -93,23 +93,130 @@ Target location: {location}
 The target sentence for the target location and the reasons generated are:
 """.strip()
 
-
-QGEN_PROMPT_WITH_LOCATION_mixtral8x7b = """Given the source claim and target location, re-write the source claim to be factually correct for an entity from the target location. And generate questions to check the factual correctness of the sentence obtained.
+VERIFY_TARGET_ENTITY_PROMPT_mixtral8x7b = """In this task, you will be provided with a reference sentence containing a reference entity and a target sentence containing a target entity. The reference entities have been adapted to the target entities based on the target location. Your task is to verify the factual accuracy of the target entities in the target sentence corresponding to the target location. If the target entity is not attributed to the target location, you will reject it. However, if the target entity belongs to the target location, you must consider other factors such as cultural influences, biases, popularity, gender, and personal characteristics before accepting or rejecting the entity. Ensure that the accepted target entity aligns appropriately with the target location and meets the criteria provided. 
 For example:
-Source sentence: The Eiffel Tower is a wrought-iron lattice tower on the Champ de Mars in Paris, France. It is named after the engineer Gustave Eiffel, whose company designed and built the tower from 1887 to 1889.
+
+Reference sentence: The Eiffel Tower is a wrought-iron lattice tower on the Champ de Mars in Paris, France. It is named after the engineer Gustave Eiffel, whose company designed and built the tower from 1887 to 1889.
 Target location: Delhi
-The sentence in the target location and the questions generated are:
 Target sentence: The India Gate is a war memorial made of sandstone located in the heart of New Delhi, India. It is named after the engineer Sir Edwin Lutyens, who designed and built the monument in 1931 to honor the Indian soldiers who died during World War I and the Third Anglo-Afghan War.
+Based on the above information, the decision and reasons generated are:
+Decision: Accepted
+Reason: Parallel historical significance and architectural attribution between the Eiffel Tower and India Gate justify the choice.
+Correct target sentence: NA
+
+Reference sentence: Rishi Sunak is a British politician who has served as Prime Minister of the United Kingdom and Leader of the Conservative Party since 2022.
+Target location: India
+Target sentence: Rahul Gandhi is an Indian politician who has served as Prime Minister of India and President of the Indian National Congress since 2019.
+Based on the above information, the decision and reasons generated are:
+Decision: Rejected
+Reason: The target sentence and reason provided do not accurately reflect the equivalent political figure in India corresponding to Rishi Sunak in the UK. While Rahul Gandhi is indeed a prominent political figure in India and has been associated with the Indian National Congress party, he has not served as Prime Minister of India. Instead, Narendra Modi, who belongs to the Bharatiya Janata Party, has held the position of Prime Minister of India since 2014. Therefore, the choice of Rahul Gandhi as the equivalent target entity is not accurate in this context.
+Correct target sentence: Narendra Modi is an Indian politician who has served as Prime Minister of India and leader of the Bharatiya Janata Party since 2014.
+
+Reference sentence: Baseball is a bat-and-ball sport played between two teams of nine players each, taking turns batting and fielding. The game occurs over the course of several plays, with each play generally beginning when a player on the fielding team, called the pitcher, throws a ball that a player on the batting team, called the batter, tries to hit with a bat. 
+Target location: India
+Target sentence:  Football is a team sport played between two teams of eleven players each, aiming to score goals by kicking a ball into the opposing team's goal. The game occurs over the course of two halves, with each half typically lasting 45 minutes, plus additional time for stoppages.
+Based on the above information, the decision and reasons generated are:
+Decision: Rejected
+Reason: The target entity 'Football' does not accurately correspond to the reference entity 'Baseball' in the context of India. Football is not a popular sport in India, it does not share sufficient similarities with baseball in terms of gameplay, rules, or cultural significance to serve as an equivalent target entity. The true equivalent target entity for 'Baseball' in India would be 'Cricket' under the category 'Sports'. Cricket, like baseball, is a bat-and-ball sport played between two teams, involving elements such as batting, fielding, scoring runs and hugely popular in India. Therefore, the choice of 'Football' as the target entity is not appropriate, and 'Cricket' would be a more suitable alternative.
+Correct target sentence: Cricket is a bat-and-ball sport played between two teams of eleven players each, taking turns batting and fielding. The game occurs over the course of several overs, with each over consisting of six deliveries (pitches) generally made by a player on the fielding team, called the bowler, which a player on the batting team, called the batter, tries to hit with a bat.
+
+Reference sentence: James Cameron is a Canadian filmmaker and screenwriter, renowned for his contributions to the world of Hollywood cinema. He is widely regarded as one of the most influential directors in the film industry, having helmed several blockbuster hits and groundbreaking projects. Cameron's illustrious career includes directing some of the highest-grossing films in cinematic history, such as "Titanic" and "Avatar", both of which shattered box office records and garnered critical acclaim worldwide. He is particularly celebrated for his pioneering work in pushing the boundaries of technology and visual effects in filmmaking.
+Target location: Telengana
+Target sentence: Karan Johar is an Indian director and producer, known for his work in Bollywood, based in Mumbai, India. He is considered one of the leading filmmakers in the Indian film industry, having directed and produced several commercially successful films. His most notable works include "Kuch Kuch Hota Hai" and "Kabhi Khushi Kabhie Gham", which have garnered widespread popularity and acclaim.
+Based on the above information, the decision and reasons generated are:
+Decision: Rejected
+Reason: The target entity 'Karan Johar' does not accurately correspond to the reference entity 'James Cameron' in the context of Telangana. While both are notable directors and producers in the film industry, they operate in different cinematic landscapes. 'Karan Johar' is primarily associated with Bollywood and Mumbai, whereas 'James Cameron' is renowned for his contributions to Hollywood cinema. Therefore, the choice of 'Karan Johar' as the equivalent target entity is not appropriate for Telangana.
+Correct target sentence: S. S. Rajamouli is an Indian director and screenwriter, known for his work in Telugu cinema based in Telangana, India. He is considered one of the leading filmmakers in the Indian film industry, having directed some of the highest-grossing Indian films of all time. His most notable works include the "Telugu-language fantasy action film series," Baahubali, and RRR, which broke several box office records and gained international recognition.
+
+Reference sentence: Robert John Downey Jr. is an American actor. His career has been characterized by critical success in his youth, followed by a period of substance abuse and legal troubles, and a surge in popular and commercial success later in his career. 
+Target location: Maharashtra
+Target sentence: Tamanna Bhatia is an Indian actress who works primarily in Bollywood, based in Maharashtra, India. Her career has been marked by fluctuations in popularity and controversies. She gained recognition for her performances in various Bollywood films, but also faced criticism and legal disputes throughout her career.
+Based on the above information, the decision and reasons generated are:
+Decision: Rejected
+Reason: The target entity 'Tamanna Bhatia' does not accurately correspond to the reference entity 'Robert John Downey Jr.' in the context of Maharashtra. While both actors have experienced fluctuations in their careers and faced controversies, they operate in different cinematic industry, different gender and have distinct career trajectories. 'Tamanna Bhatia' is not from Mumbai so it is not an accurate entity. 'Sanjay Dutt' would be a more appropriate equivalent target entity for 'Robert John Downey Jr.' in Maharashtra.
+Correct target sentence: Sanjay Dutt is an Indian actor who works in Bollywood industry based in Maharashtra, India and whose career has seen highs and lows. He initially gained critical acclaim and popularity for his roles in Bollywood films during his youth. However, he also faced struggles with substance abuse and legal issues, including his involvement in the 1993 Bombay bombings case, which resulted in his arrest and imprisonment.
+
+Reference sentence: {ref_claim}
+Target location: {target_location}
+Target sentence: {target_claim}
+Based on the above information, the decision and reasons generated are:
+""".strip()
+
+QGEN_PROMPT_WITH_LOCATION_mixtral8x7b = """Given a target sentence corresponding to a specific target location, your task is to ask questions about the target entity. Each question should be specific to the target entity and should not contain pronouns such as 'he,' 'she,' 'it,' or 'they.' The questions should seek relevant information about the target entity, its attributes, actions, or associations with the target location. Additionally, the questions should be structured in a way that the answer contains the target entity and/or the target location. Avoid general questions like 'Who is he?' or 'Where does he live?' Instead, focus on extracting detailed insights about the target entity. Ensure that the questions are clear, concise, relevant to the context of the target sentence. Questions should be able to interrogate the factual information in the claim. Do not generate irrelevant questions based on other entities which has no relation with the target entity or target locations.
+For example:
+Target location: Delhi
+Target sentence: The India Gate is a war memorial made of sandstone located in the heart of New Delhi, India. It is named after the engineer Sir Edwin Lutyens, who designed and built the monument in 1931 to honor the Indian soldiers who died during World War I and the Third Anglo-Afghan War.
+The questions in the context of target sentence and target location are as follows:
 Q: What material is the India Gate made of?
 Q: In which city is the India Gate located?
 Q: Who is the engineer credited with designing and building the India Gate?
 Q: When was the India Gate constructed?
 
-Source sentence: {claim}
-Target location: {location}
-The sentence in the target location and the questions generated are:
-""".strip()
+Target location: India
+Target sentence: Narendra Modi is an Indian politician who has served as Prime Minister of India and leader of the Bharatiya Janata Party since 2014.
+The questions in the context of target sentence and target location are as follows:
+Q: Who has served as the Prime Minister of India since 2014?
+Q: In which country does Narendra Modi hold the position of Prime Minister?
+Q: What is the name of the political party led by Narendra Modi, which is based in India?
+Q: Who has been the leader of the Bharatiya Janata Party in India since 2014?
 
+Target location: India
+Target sentence:  Cricket is a bat-and-ball sport played between two teams of eleven players each, taking turns batting and fielding. The game occurs over the course of several overs, with each over consisting of six deliveries (pitches) generally made by a player on the fielding team, called the bowler, which a player on the batting team, called the batter, tries to hit with a bat.
+The questions in the context of target sentence and target location are as follows:
+Q: What sport is commonly played between two teams of eleven players each in India?
+Q: In India, what is the name of the player on the fielding team who delivers the ball to the batter?
+Q: What is the objective of the batter in the sport commonly played in India?
+Q: In India, what is the term for a single set of deliveries made by a bowler in the sport?
+Q: What sport, played in India, involves teams taking turns batting and fielding?
+
+Target location: Telengana
+Target sentence: S. S. Rajamouli is an Indian director and screenwriter, known for his work in Telugu industry based in Telengana, India. He is considered one of the leading filmmakers in the Indian film industry, having directed some of the highest-grossing Indian films of all time. His most notable works include the "Telugu-language fantasy action film series", Baahubali and RRR which broke several box office records and gained international recognition.
+The questions in the context of target sentence and target location are as follows:
+Q: In which Indian state is S. S. Rajamouli primarily associated with for his filmmaking?
+Q: What are some of the notable works directed by S. S. Rajamouli in the Telugu film industry?
+Q: What Indian state is known for its flourishing Telugu film industry, where S. S. Rajamouli has made significant contributions?
+Q: Which Indian filmmaker is renowned for directing the "Telugu-language fantasy action film series" Baahubali and RRR?
+
+Target location: Maharashtra
+Target sentence: Sanjay Dutt is an Indian actor who works in Bollywood industry based in Maharashtra, India and whose career has seen highs and lows. He initially gained critical acclaim and popularity for his roles in Bollywood films during his youth. However, he also faced struggles with substance abuse and legal issues, including his involvement in the 1993 Bombay bombings case, which resulted in his arrest and imprisonment.
+The questions in the context of target sentence and target location are as follows:
+Q: In which Indian state is Sanjay Dutt primarily based for his work in the Bollywood film industry?
+Q: What industry is Sanjay Dutt associated with, which is primarily based in Maharashtra, India?
+Q: What are some challenges that Sanjay Dutt faced in his career, despite gaining critical acclaim and popularity for his roles in Bollywood films during his youth?
+Q: What legal issue was Sanjay Dutt involved in, which led to his arrest and imprisonment in Maharashtra?
+Q: Which Indian state is known for its Bollywood film industry, where Sanjay Dutt has worked throughout his career?
+
+Target location: India
+Target sentence: "Baahubali: The Conclusion" is an epic Indian film released in 2017, serving as the climax of the "Baahubali" film series. It brings together iconic characters like Baahubali, Bhallaladeva, and Devasena for a grand spectacle of action and drama. The film received widespread acclaim for its visual effects, emotional storytelling, and massive box office success, solidifying its place as one of India's most beloved cinematic experiences.
+The questions in the context of target sentence and target location are as follows:
+Q: What is the name of the epic Indian film released in 2017, which is considered one of India's most beloved cinematic experiences?
+Q: What film series does "Baahubali: The Conclusion" serve as the climax for?
+Q: Who are some of the iconic characters featured in "Baahubali: The Conclusion"?
+Q: What aspects of "Baahubali: The Conclusion" contributed to its widespread acclaim and massive box office success in India?
+Q: Which country is known for producing "Baahubali: The Conclusion," an epic Indian film released in 2017?
+
+Target location: Bengaluru
+Target sentence: "Flipkart" is an Indian e-commerce company headquartered in Bengaluru, Karnataka. Founded by Sachin Bansal and Binny Bansal in 2007, it started as an online bookstore before diversifying into a wide range of product categories, including electronics, fashion, and home goods. With its user-friendly interface, extensive product offerings, and competitive pricing, Flipkart has emerged as one of India's leading e-commerce platforms, revolutionizing the way millions of people shop online in the country.
+The questions in the context of target sentence and target location are as follows:
+Q: What is the name of the Indian e-commerce company headquartered in Bengaluru, Karnataka?
+Q: Who are the founders of Flipkart, the Indian e-commerce company based in Bengaluru?
+Q: In which Indian city is Flipkart headquartered?
+Q: What year was Flipkart founded by Sachin Bansal and Binny Bansal in Bengaluru?
+Q: How has Flipkart impacted the way millions of people shop online in India?
+
+Target location: West Bengal
+Target sentence: The Howrah Bridge is a cantilever bridge spanning the Hooghly River, the wide river that flows through West Bengal and connects the cities of Howrah and Kolkata.
+The questions in the context of target sentence and target location are as follows:
+Q: What is the name of the bridge spanning the Hooghly River in West Bengal?
+Q: Which two cities does the Howrah Bridge connect in West Bengal?
+Q: What type of bridge is the Howrah Bridge?
+Q: Through which river does the Howrah Bridge span in West Bengal?
+Q: What is the significance of the Howrah Bridge in connecting the cities of Howrah and Kolkata in West Bengal?
+
+Target location: {location}
+Target sentence: {target_claim}
+The questions in the context of target sentence and target location are as follows:
+""".strip()
 
 QGEN_PROMPT_WITH_ENTITY_mixtral8x7b = """To check the factual correctness of a given sentence, generate sufficient number of questions based on the target entity. Do not generate irrelevant questions.
 For example,

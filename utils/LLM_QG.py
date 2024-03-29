@@ -37,6 +37,7 @@ def run_rarr_question_generation(
     model: str,
     prompt: str,
     entity: str = None,
+    num_rounds: int = 2
 ) -> List[str]:
     """Generates questions that interrogate the information in a claim.
 
@@ -78,10 +79,13 @@ def run_rarr_question_generation(
         llm_input = prompt.format(claim=claim).strip()
         
     # print("\nResponse: ")
-    
-    response = prompt_model(model = llm, prompt = llm_input)
-    questions = parse_api_response(response.strip())
-    questions = sorted(questions)
+    questions = set()
+    for _ in range(num_rounds):
+        response = prompt_model(model = llm, prompt = llm_input)
+        cur_round_questions = parse_api_response(response.strip())
+        questions.update(cur_round_questions)
+
+    questions = list(sorted(questions))
     return questions
 
 if __name__ == "__main__":
