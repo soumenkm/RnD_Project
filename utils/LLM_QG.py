@@ -1,15 +1,18 @@
 """Utils for running question generation."""
-import os
+import os, sys
 import time
 from typing import List
 from llama_cpp import Llama
+sys.path.append("/root/RnD_Project/prompts")
+import rarr_prompts
 
 def prompt_model(model, prompt):
+    prompt = "[INST]" + prompt + "[/INST]"
     output = model(prompt, max_tokens=256)
     return output['choices'][0]['text']
 
 def parse_api_response(api_response: str) -> List[str]:
-    """Extract questions from the GPT-3 API response.
+    """Extract questions from the mixtral response.
 
     Our prompt returns questions as a string with the format of an ordered list.
     This function parses this response in a list of questions.
@@ -19,29 +22,21 @@ def parse_api_response(api_response: str) -> List[str]:
     Returns:
         questions: A list of questions.
     """
-    Sent_search_string = "Target sentence:"
     Q_search_string = "Q:"
-    sentence = ""
     questions = []
     for response in api_response.split("\n"):
-        # Remove the search string from each question
-        if Sent_search_string in response:
-            sentence = response.split(Sent_search_string)[1].strip()
-        elif Q_search_string in response:
+        if Q_search_string in response:
             question = response.split(Q_search_string)[1].strip()
             questions.append(question)
 
-    return sentence, questions
+    return questions
 
 def run_rarr_question_generation(
-    claim: str,
+    target_claim: str,
+    location: str,
     model: str,
     prompt: str,
-    temperature: float,
-    num_rounds: int,
     entity: str = None,
-    location: str = None,
-    num_retries: int = 1,
 ) -> List[str]:
     """Generates questions that interrogate the information in a claim.
 
@@ -50,10 +45,8 @@ def run_rarr_question_generation(
 
     Args:
         claim: Text to generate questions off of.
-        model: Name of the OpenAI GPT-3 model to use.
-        prompt: The prompt template to query GPT-3 with.
-        temperature: Temperature to use for sampling questions. 0 represents greedy deconding.
-        num_rounds: Number of times to sample questions.
+        model: Name of the model to use.
+        prompt: The prompt template to query
     Returns:
         questions: A list of questions.
     """
@@ -80,21 +73,35 @@ def run_rarr_question_generation(
     if entity:
         llm_input = prompt.format(entity=entity, claim=claim).strip()
     elif location:
-        llm_input = prompt.format(location=location, claim=claim).strip()
+        llm_input = prompt.format(location=location, target_claim=target_claim).strip()
     else:
         llm_input = prompt.format(claim=claim).strip()
         
     # print("\nResponse: ")
     
-    questions = set()
-    for _ in range(num_rounds):
-        for _ in range(num_retries):
-            response = prompt_model(model = llm, prompt = llm_input)
-            sent, cur_round_questions = parse_api_response(response.strip())
-            questions.update(cur_round_questions)
+    response = prompt_model(model = llm, prompt = llm_input)
+    questions = parse_api_response(response.strip())
+    questions = sorted(questions)
+    return questions
 
-    questions = list(sorted(questions))
-    # print("Target Sentence: ",sent)
-    # print("Questions: ", questions)
+if __name__ == "__main__":
+
+    # target_sent = "Rajinikanth, often referred to as Thalaiva, is an Indian actor and cultural icon primarily working in Tamil cinema, known for his unique style and larger-than-life characters."
+
+    target_sent = "Shah Rukh Khan, often referred to as the King of Bollywood, is an Indian actor and film producer primarily working in Hindi cinema, recognized for his charm and romantic roles."
+    location = "Maharashtra"
+    t1 = time.time()
+    questions = run_rarr_question_generation(
+        target_claim=target_sent,
+        location=location,
+        model="mixtral8x7b",
+        prompt=rarr_prompts.QGEN_PROMPT_WITH_LOCATION_mixtral8x7b,
+        entity=None)
+    t2 = time.time()
+    print(f"Question generation module is run in {(t2-t1)/60:.2f} mint")
+    print(f"Target sentence: {target_sent}")
+    print(f"Questions: {questions}")
+
+
+
     
-    return sent, questions
