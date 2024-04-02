@@ -198,7 +198,7 @@ def run_search(
             filter_sentence_len=filter_sentence_len,
             sliding_distance=sliding_distance,
         )
-        # passages = passages[:max_passages_per_search_result_to_score]
+        passages = passages[:max_passages_per_search_result_to_score]
         if not passages:
             continue
 
@@ -236,7 +236,7 @@ def run_search(
 if __name__ == "__main__":
 
     max_search_results_per_query = 5
-    max_sentences_per_passage = 1
+    max_sentences_per_passage = 4
     sliding_distance = 1
     max_passages_per_search_result = 1
     max_evidences_per_question = 1
@@ -270,10 +270,9 @@ if __name__ == "__main__":
     ]
 
     output = {
-        "claim_id": claim_id,
-        "claim_target": claim,
-        "entity": entity,
-        "location": location,
+        "claim_target": target_sent,
         "questions": questions,
         "evidences": used_evidences
     }
+
+    print(output)

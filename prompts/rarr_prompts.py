@@ -573,3 +573,17 @@ CONTEXTUAL_EDITOR_PROMPT = """I will fix some things you said.
 4. I found this article: {evidence}
 5. This suggests
 """.strip()
+
+EVAL_BY_COMMON_QUES_PROMPT = """Suppose I will give you a target sentence, target location and a list of common questions. Your task is to verify whether the answer to this common questions in the context of the target location can be the target sentence? If you think that the target sentence can be a potential answer for this common question in the context of target location then assign a score of 1 and else assign the score of 0. For each common question, you will calculate the score. For example:
+
+Target sentence: A train derailment occurred on February 3, 2023, at 8:55 p.m. IST, when 38 cars of a Vizianagaram freight train carrying hazardous materials derailed in Andhra Pradesh, India.
+Target Location: Andhra Pradesh
+Common Questions: {"ques_0": "Can you mention a train accident?", "ques_1": "Name an accident which occured due to train derailment?"}
+Scores: {"ques_0": 1, "ques_1": 1}
+
+Target sentence: The Indian Institute of Science is a prestigious research university located in Bangalore, India. Established in 1909, the Indian Institute of Science was the first Indian university based on the European research institution model.
+Target Location: India
+Common Questions: {"ques_0": "Can you give an example of a research university?", "ques_1": "Can you provide name of a university which introduced something new?"}
+Scores: {"ques_0": 1, "ques_1": 0}
+
+"""

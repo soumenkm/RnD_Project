@@ -23,8 +23,10 @@ from utils import (
     LLM_QG,
     api,
     LLM_target_sent_gen,
-    LLM_verify_target_sent
+    LLM_verify_target_sent,
+    chatgpt_prompt
 )
+import pandas as pd
 
 path_name = "/root/RnD_Project/"
 
@@ -85,7 +87,7 @@ def get_questions(
         location=location
     )
     
-    decision, reason_for_entity, correct_target_sent = LLM_verify_target_sent.verify_rarr_target_sentence(
+    decision, reason_for_entity, correct_target_sent, response = LLM_verify_target_sent.verify_rarr_target_sentence(
         ref_claim=claim,
         target_claim=target_sent,
         target_location=location,
@@ -101,18 +103,21 @@ def get_questions(
         prompt=prompt_ques_gen,
         entity=entity
     )
-
+    
     if "na" in correct_target_sent.lower():
+        sent = target_sent
+    elif correct_target_sent == "":
         sent = target_sent
     else:
         sent = correct_target_sent
-    
+        
     output = {
         "claim_id": claim_id,
         "claim_ref": claim,
         "entity": entity,
         "location": location,
         "model": model,
+        "response": response,
         "claim_target": target_sent,
         "reason_for_target_sent": reason_for_target_sent,
         "claim_target_correct": sent,
@@ -282,7 +287,7 @@ def write_evidences_json():
     num_claims = len(data)
     output_list = []
     for claim_id, item in enumerate(data):
-        claim = item["claim_target"]
+        claim = item["claim_target_correct"]
         entity = None
         location = item["location"]
         questions = item["questions"]
@@ -390,7 +395,10 @@ def write_edits_json():
         
         results = {
             "claim_id": ques_data[claim_id]["claim_id"],
-            "claim_target": ques_data[claim_id]["claim_target_correct"],
+            "claim_ref": ques_data[claim_id]["claim_ref"],
+            "claim_target": ques_data[claim_id]["claim_target"],
+            "is_target_claim_ok": ques_data[claim_id]["decision_for_entity_verification"],
+            "claim_target_correct": ques_data[claim_id]["claim_target_correct"],
             "questions": ques_data[claim_id]["questions"],
             "edit_revisions": edit_rev_list,
             "claim_ref": ques_data[claim_id]["claim_ref"],
@@ -407,18 +415,30 @@ def write_edits_json():
     with open(results_output_path.replace(".json","_final.json"), 'w') as json_file:
         json.dump(results_list, json_file, indent=4)
 
+def evaluate_target_sent_by_common_ques():
+    
+    pass
+
 if __name__ == "__main__":
 
-    data = [{"input_info": 
-    {"claim": "Angelina Jolie is an American actress, filmmaker and humanitarian. The recipient of numerous accolades, including an Academy Award and three Golden Globe Awards, she has been named Hollywood's highest-paid actress multiple times.", 
-    "location": "Maharashtra"}},
-    {"input_info": 
-    {"claim": "Dwayne Douglas Johnson, also known by his ring name the Rock, is an American actor and professional wrestler currently signed to WWE.", 
-    "location": "Kerala"}},
-    {"input_info": {"claim": "Robert John Downey Jr. is an American actor. His career has been characterized by critical success in his youth, followed by a period of substance abuse and legal troubles, and a surge in popular and commercial success later in his career.", 
-    "location": "West Bengal"}}]
+    eval_data_df = pd.read_csv("/root/RnD_Project/inputs/Amazon RnD_ Evaluation Dataset - Updated 200 samples with Qs _V3.csv")
+    data = []
+    for i in range(eval_data_df.shape[0]):
+        elem_dict = {"input_info": 
+        {"claim": eval_data_df.loc[i, "Reference Sentence"], 
+        "location": eval_data_df.loc[i, "Target Location"]}}
+        data.append(elem_dict)
+    
+    # data = [{"input_info": 
+    # {"claim": "Angelina Jolie is an American actress, filmmaker and humanitarian. The recipient of numerous accolades, including an Academy Award and three Golden Globe Awards, she has been named Hollywood's highest-paid actress multiple times.", 
+    # "location": "Maharashtra"}},
+    # {"input_info": 
+    # {"claim": "Dwayne Douglas Johnson, also known by his ring name the Rock, is an American actor and professional wrestler currently signed to WWE.", 
+    # "location": "Kerala"}},
+    # {"input_info": {"claim": "Robert John Downey Jr. is an American actor. His career has been characterized by critical success in his youth, followed by a period of substance abuse and legal troubles, and a surge in popular and commercial success later in his career.", 
+    # "location": "West Bengal"}}]
 
-    write_questions_json(data)
+    # write_questions_json(data[0:10])
     # write_evidences_json()
     # write_agreements_json()
     # write_edits_json()

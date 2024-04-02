@@ -79,7 +79,7 @@ def verify_rarr_target_sentence(
     response = prompt_model(model = llm, prompt = llm_input)
     decision, reason, correct_target_sent = parse_api_response(response.strip())
 
-    return decision, reason, correct_target_sent
+    return decision, reason, correct_target_sent, response.strip()
 
 
 if __name__ == "__main__":
