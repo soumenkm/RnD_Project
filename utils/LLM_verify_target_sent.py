@@ -68,7 +68,7 @@ def verify_rarr_target_sentence(
     
     if entity:
         llm_input = prompt.format(entity=entity, claim=claim).strip()
-    elif location:
+    elif target_location:
         llm_input = prompt.format(target_location=target_location, 
             ref_claim=ref_claim, target_claim=target_claim).strip()
     else:

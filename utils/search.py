@@ -1,7 +1,8 @@
 """Utils for searching a query and returning top passages from search results."""
 import concurrent.futures
 import itertools
-import os
+import os, sys
+sys.path.append("/root/RnD_Project/utils")
 import random
 from typing import Any, Dict, List, Tuple
 
@@ -10,6 +11,7 @@ import requests
 import spacy
 import torch
 from sentence_transformers import CrossEncoder
+import api
 
 PASSAGE_RANKER = CrossEncoder(
     "cross-encoder/ms-marco-MiniLM-L-6-v2",
@@ -196,7 +198,7 @@ def run_search(
             filter_sentence_len=filter_sentence_len,
             sliding_distance=sliding_distance,
         )
-        passages = passages[:max_passages_per_search_result_to_score]
+        # passages = passages[:max_passages_per_search_result_to_score]
         if not passages:
             continue
 
@@ -230,3 +232,48 @@ def run_search(
             passage["score"] = prob
 
     return retrieved_passages
+
+if __name__ == "__main__":
+
+    max_search_results_per_query = 5
+    max_sentences_per_passage = 1
+    sliding_distance = 1
+    max_passages_per_search_result = 1
+    max_evidences_per_question = 1
+
+    target_sent = "Shah Rukh Khan, often referred to as the King of Bollywood, is an Indian actor and film producer primarily working in Hindi cinema, recognized for his charm and romantic roles."
+
+    questions = ['For which film industry does Shah Rukh Khan primarily work in Maharashtra, India?', 
+    'In which Indian state does Shah Rukh Khan primarily work for his Bollywood career?', 
+    "What are some notable attributes associated with Shah Rukh Khan's career in Bollywood?", 
+    "What is the primary focus of Shah Rukh Khan's work in Hindi cinema in Maharashtra?", 
+    'What nickname is Shah Rukh Khan often referred to in the Indian film industry?']
+
+    # Run search on generated question for the claim
+    evidences_for_questions = [
+        run_search(
+            query=query,
+            max_search_results_per_query=max_search_results_per_query,
+            max_sentences_per_passage=max_sentences_per_passage,
+            sliding_distance=sliding_distance,
+            max_passages_per_search_result_to_return=max_passages_per_search_result,
+            sub_key = api.SUBSCRIPTION_KEY
+        )
+        for query in questions
+    ]
+
+    # Flatten the evidences per question into a single list.
+    used_evidences = [
+        e
+        for cur_evids in evidences_for_questions
+        for e in cur_evids[:max_evidences_per_question]
+    ]
+
+    output = {
+        "claim_id": claim_id,
+        "claim_target": claim,
+        "entity": entity,
+        "location": location,
+        "questions": questions,
+        "evidences": used_evidences
+    }

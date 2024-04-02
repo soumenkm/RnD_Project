@@ -37,7 +37,7 @@ def run_rarr_question_generation(
     model: str,
     prompt: str,
     entity: str = None,
-    num_rounds: int = 2
+    num_rounds: int = 1
 ) -> List[str]:
     """Generates questions that interrogate the information in a claim.
 

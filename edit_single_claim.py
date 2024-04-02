@@ -21,7 +21,9 @@ from utils import (
     search,
     question_generation,
     LLM_QG,
-    api
+    api,
+    LLM_target_sent_gen,
+    LLM_verify_target_sent
 )
 
 path_name = "/root/RnD_Project/"
@@ -58,35 +60,64 @@ def get_questions(
     context: str = None,
     model: str = "mixtral8x7b",
     temperature_qgen: float = 0.7,
-    num_rounds_qgen: int = 2,
+    num_rounds_qgen: int = 1,
 ):
 
     # Generate questions for the claim
     if entity:
         model_prompt = "QGEN_PROMPT_WITH_ENTITY_"+model
     elif location:
-        model_prompt = "QGEN_PROMPT_WITH_LOCATION_"+model
+        ques_gen_prompt = "QGEN_PROMPT_WITH_LOCATION_"+model
+        target_sent_gen_prompt = "TARGET_SENT_GEN_PROMPT_WITH_LOCATION_"+model
+        verify_entity_prompt = "VERIFY_TARGET_ENTITY_PROMPT_"+model
     else:
         model_prompt = "QGEN_PROMPT_"+model
 
-    prompt = getattr(rarr_prompts, model_prompt)
-    sent, questions = LLM_QG.run_rarr_question_generation(
+    prompt_target_sent = getattr(rarr_prompts, target_sent_gen_prompt)
+    prompt_entity_verify = getattr(rarr_prompts, verify_entity_prompt)
+    prompt_ques_gen = getattr(rarr_prompts, ques_gen_prompt)
+    
+    target_sent, reason_for_target_sent = LLM_target_sent_gen.run_rarr_target_sentence_generation(
         claim=claim,
+        model=model,
+        prompt=prompt_target_sent,
         entity=entity,
+        location=location
+    )
+    
+    decision, reason_for_entity, correct_target_sent = LLM_verify_target_sent.verify_rarr_target_sentence(
+        ref_claim=claim,
+        target_claim=target_sent,
+        target_location=location,
+        model=model,
+        prompt=prompt_entity_verify,
+        entity=entity
+    )
+    
+    questions = LLM_QG.run_rarr_question_generation(
+        target_claim=target_sent,
         location=location,
         model=model,
-        prompt=prompt,
-        temperature=temperature_qgen,
-        num_rounds=num_rounds_qgen,
+        prompt=prompt_ques_gen,
+        entity=entity
     )
 
+    if "na" in correct_target_sent.lower():
+        sent = target_sent
+    else:
+        sent = correct_target_sent
+    
     output = {
         "claim_id": claim_id,
-        "claim": claim,
+        "claim_ref": claim,
         "entity": entity,
         "location": location,
         "model": model,
-        "claim_target": sent,
+        "claim_target": target_sent,
+        "reason_for_target_sent": reason_for_target_sent,
+        "claim_target_correct": sent,
+        "decision_for_entity_verification": decision,
+        "reason_for_entity_verification": reason_for_entity,
         "questions": questions
     }
 
@@ -359,10 +390,10 @@ def write_edits_json():
         
         results = {
             "claim_id": ques_data[claim_id]["claim_id"],
-            "claim_target": ques_data[claim_id]["claim_target"],
+            "claim_target": ques_data[claim_id]["claim_target_correct"],
             "questions": ques_data[claim_id]["questions"],
             "edit_revisions": edit_rev_list,
-            "claim_ref": ques_data[claim_id]["claim"],
+            "claim_ref": ques_data[claim_id]["claim_ref"],
             "entity": ques_data[claim_id]["entity"],
             "location": ques_data[claim_id]["location"],
             "claim_original": original_claim,
@@ -388,6 +419,6 @@ if __name__ == "__main__":
     "location": "West Bengal"}}]
 
     write_questions_json(data)
-    write_evidences_json()
-    write_agreements_json()
-    write_edits_json()
+    # write_evidences_json()
+    # write_agreements_json()
+    # write_edits_json()

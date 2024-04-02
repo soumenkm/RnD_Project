@@ -1,0 +1,58 @@
+[
+    {
+        "claim_id": 0,
+        "claim_ref": "Angelina Jolie is an American actress, filmmaker and humanitarian. The recipient of numerous accolades, including an Academy Award and three Golden Globe Awards, she has been named Hollywood's highest-paid actress multiple times.",
+        "entity": null,
+        "location": "Maharashtra",
+        "model": "mixtral8x7b",
+        "claim_target": "Deepika Padukone is an Indian actress who has made significant contributions to the world of Bollywood cinema. She has received numerous awards, including three Filmfare Awards, and has been recognized as one of India's highest-paid actresses.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Angelina Jolie' corresponding to target location 'Maharashtra' is 'Deepika Padukone' under the category 'Actress'. The choice of target entity is reasonable because (a) Both actresses have achieved significant success in their respective film industries, garnering critical acclaim, numerous awards, and recognition as one of the highest-paid in their field, (b) Both are also known for their philanthropic efforts, aligning with Jolie's humanitarian work, as Padukone has been involved in various charitable initiatives focusing on mental health awareness in India.",
+        "claim_target_correct": "",
+        "decision_for_entity_verification": "Accepted",
+        "reason_for_entity_verification": "Both Angelina Jolie and Deepika Padukone are highly accomplished actresses in their respective film industries, having received numerous accolades and recognition for their work. They are also both humanitarians who use their platforms for good causes. Deepika Padukone's contributions to Bollywood cinema and her status as one of India's highest-paid actresses make her an appropriate equivalent target entity for Angelina Jolie in the context of Maharashtra.",
+        "questions": [
+            "For which film did Deepika Padukone receive a Filmfare Award, while working in Bollywood industry based in Maharashtra?",
+            "In which Indian state has Deepika Padukone made significant contributions to Bollywood cinema?",
+            "What are some of the awards received by Deepika Padukone in her acting career based in Maharashtra?",
+            "Which Indian actress has been recognized as one of the highest-paid actresses in Maharashtra?"
+        ]
+    },
+    {
+        "claim_id": 1,
+        "claim_ref": "Dwayne Douglas Johnson, also known by his ring name the Rock, is an American actor and professional wrestler currently signed to WWE.",
+        "entity": null,
+        "location": "Kerala",
+        "model": "mixtral8x7b",
+        "claim_target": "Mohanlal Viswanathan, also known as Lalettan, is an Indian actor and producer predominantly working in the Malayalam film industry based in Kerala.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Dwayne Douglas Johnson' corresponding to target location 'Kerala' is 'Mohanlal Viswanathan' under the category 'Actor/Producer'. The choice of target entity is reasonable because (a) Both individuals have enjoyed successful careers in their respective fields, with Dwayne Douglas Johnson excelling in acting and professional wrestling, and Mohanlal Viswanathan being a prominent figure in Malayalam cinema, (b) Both are also known by their ring names or nicknames, with Johnson being known as 'The Rock' and Mohanlal being referred to as 'Lalettan' by his fans.",
+        "claim_target_correct": "",
+        "decision_for_entity_verification": "Accepted",
+        "reason_for_entity_verification": "Both Dwayne Douglas Johnson (the Rock) and Mohanlal Viswanathan (Lalettan) are renowned figures in their respective industries, entertainment and film industry. They are both actors and have achieved significant success and popularity in their careers, with a notable presence in their respective cinematic landscapes - WWE for Johnson and Malayalam film industry for Mohanlal. Furthermore, they are both recognized by their ring names (the Rock for Johnson and Lalettan for Mohanlal). Thus, the target entity accurately corresponds to the reference entity in the context of Kerala.",
+        "questions": [
+            "In which Indian state does the Malayalam film industry, where Mohanlal predominantly works, flourish?",
+            "What is the name of the Indian actor and producer who is widely known as Lalettan and primarily works in the Malayalam film industry in Kerala?",
+            "Which South Indian state is renowned for its thriving Malayalam film industry, where Mohanlal has made significant contributions?",
+            "Which film industry is Mohanlal associated with, which is based in Kerala?",
+            "Who is the prominent Indian figure known for his work in the Malayalam film industry in Kerala?"
+        ]
+    },
+    {
+        "claim_id": 2,
+        "claim_ref": "Robert John Downey Jr. is an American actor. His career has been characterized by critical success in his youth, followed by a period of substance abuse and legal troubles, and a surge in popular and commercial success later in his career.",
+        "entity": null,
+        "location": "West Bengal",
+        "model": "mixtral8x7b",
+        "claim_target": "Prosenjit Chatterjee is a popular Indian actor, primarily working in Bengali cinema based in West Bengal, India. His career has been marked by critical success in his early years, followed by a lull, and a resurgence in popularity and commercial success later in his career.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Robert John Downey Jr.' corresponding to target location 'West Bengal' is 'Prosenjit Chatterjee' under the category 'Actor/Actress'. The choice of target entity is reasonable because (a) Both actors have experienced highs and lows in their careers, with early success, personal struggles, and later resurgences, (b) Robert Downey Jr. and Prosenjit Chatterjee are both popular male actors, which aligns with the requirement for similarity in gender and popularity between the reference and target entities, and (c) Prosenjit Chatterjee's contributions to Bengali cinema make him a fitting target for West Bengal, which is known for its rich film industry and vibrant cultural scene.",
+        "claim_target_correct": "Prosenjit Chatterjee is a popular Indian actor, primarily working in Bengali cinema based in West Bengal, India. His career has been marked by critical success in his early years, followed by a lull, and a resurgence in popularity and commercial success later in his career.",
+        "decision_for_entity_verification": "Accepted",
+        "reason_for_entity_verification": "The target entity 'Prosenjit Chatterjee' aligns appropriately with the reference entity 'Robert John Downey Jr.' in the context of West Bengal. Both actors share similar career trajectories, having experienced critical success in their youth followed by personal struggles and later resurging in popularity and commercial success.",
+        "questions": [
+            "In which Indian state is Prosenjit Chatterjee's Bengali cinema primarily based?",
+            "What is the nature of Prosenjit Chatterjee's resurgence in popularity and commercial success later in his career?",
+            "What type of career success has Prosenjit Chatterjee experienced in his early years?",
+            "Which language of cinema does Prosenjit Chatterjee primarily work in, which is based in West Bengal?",
+            "Which phase of Prosenjit Chatterjee's career was marked by a lull in his popularity and success?"
+        ]
+    }
+]

@@ -1,0 +1,212 @@
+[
+    {
+        "claim_id": 0,
+        "claim_target": "Deepika Padukone is an Indian actress who has made significant contributions to the world of Bollywood cinema. She has received numerous awards, including three Filmfare Awards, and has been recognized as one of India's highest-paid actresses.",
+        "entity": null,
+        "location": "Maharashtra",
+        "evid_id": 0,
+        "query": "For which film did Deepika Padukone receive a Filmfare Award, while working in Bollywood industry based in Maharashtra?",
+        "evidence": "Deepika Padukone is an Indian actress who prominently works in Hindi films . Padukone has received 57 accolades and honors throughout her career which includes three Filmfare Awards , seven IIFA , five Producers Guild Film Awards , ten Screen Awards , three Stardust Awards and seven Zee Cine Awards . [2] At the 3rd Asian Film Awards , she received a nomination for Best Actress for her role in the action comedy Chandni Chowk to China (2009). Her performances in the romantic comedy-dramas Love Aaj Kal (2009) and Cocktail (2012) earned her recognition at various award ceremonies, including nominations for Best Actress at Filmfare and IIFA.",
+        "model": "mixtral8x7b",
+        "gate": {
+            "is_open": false,
+            "reason": "The article mentioned that Deepika Padukone received three Filmfare Awards for her performances in Love Aaj Kal (2009) and Cocktail (2012) and you said Deepika Padukone has received three Filmfare Awards.",
+            "decision": "This agrees with what you said."
+        }
+    },
+    {
+        "claim_id": 0,
+        "claim_target": "Deepika Padukone is an Indian actress who has made significant contributions to the world of Bollywood cinema. She has received numerous awards, including three Filmfare Awards, and has been recognized as one of India's highest-paid actresses.",
+        "entity": null,
+        "location": "Maharashtra",
+        "evid_id": 1,
+        "query": "In which Indian state has Deepika Padukone made significant contributions to Bollywood cinema?",
+        "evidence": "Deepika Padukone is an acclaimed Indian actress and producer who has made significant contributions to the Bollywood film industry. Born on January 5, 1986, in Copenhagen, Denmark, she moved to India in her childhood. Deepika gained widespread recognition for her debut film \u201cOm Shanti Om\u201d (2007) and has since delivered numerous successful performances in films like \u201cPadmaavat,\u201d \u201cChennai Express,\u201d and \u201cPiku.\u201d Apart from her acting career, she is also known for her philanthropic work and advocacy for mental health awareness.",
+        "model": "mixtral8x7b",
+        "gate": {
+            "is_open": false,
+            "reason": "The article doesn't answer my question, and you didn't specify which Indian state Deepika Padukone made significant contributions to Bollywood cinema.",
+            "decision": "This is irrelevant to what you said."
+        }
+    },
+    {
+        "claim_id": 0,
+        "claim_target": "Deepika Padukone is an Indian actress who has made significant contributions to the world of Bollywood cinema. She has received numerous awards, including three Filmfare Awards, and has been recognized as one of India's highest-paid actresses.",
+        "entity": null,
+        "location": "Maharashtra",
+        "evid_id": 2,
+        "query": "What are some of the awards received by Deepika Padukone in her acting career based in Maharashtra?",
+        "evidence": "For simplification and to avoid errors, each award in this list has been presumed to have had a prior nomination. Deepika Padukone is an Indian actress who prominently works in Hindi films . Padukone has received 57 accolades and honors throughout her career which includes three Filmfare Awards , seven IIFA , five Producers Guild Film Awards , ten Screen Awards , three Stardust Awards and seven Zee Cine Awards . [2] At the 3rd Asian Film Awards , she received a nomination for Best Actress for her role in the action comedy Chandni Chowk to China (2009).",
+        "model": "mixtral8x7b",
+        "gate": {
+            "is_open": false,
+            "reason": "The article said Deepika Padukone has received 57 accolades and honors throughout her career which includes three Filmfare Awards and you said Deepika Padukone has received numerous awards, including three Filmfare Awards.",
+            "decision": "This agrees with what you said."
+        }
+    },
+    {
+        "claim_id": 0,
+        "claim_target": "Deepika Padukone is an Indian actress who has made significant contributions to the world of Bollywood cinema. She has received numerous awards, including three Filmfare Awards, and has been recognized as one of India's highest-paid actresses.",
+        "entity": null,
+        "location": "Maharashtra",
+        "evid_id": 3,
+        "query": "Which Indian actress has been recognized as one of the highest-paid actresses in Maharashtra?",
+        "evidence": "Highest Paid Bollywood Actress According to IMDb, Deepika Padukone currently holds the title of the highest-paid actress in India. Her journey in Bollywood began with the film \u2018Om Shanti Om\u2019 in 2007, and since then, she has risen to become one of the industry\u2019s most sought-after actresses. Notably, for her role in Sanjay Leela Bhansali\u2019s \u2018Padmaavat,\u2019 she received a fee of Rs. 13 crores, surpassing her male co-stars who were paid Rs. 10 crores. This groundbreaking achievement made her the first Indian actress to reach such a milestone.",
+        "model": "mixtral8x7b",
+        "gate": {
+            "is_open": false,
+            "reason": "The article said Deepika Padukone is recognized as one of the highest-paid actresses in India and you said she has been recognized as one of India's highest-paid actresses.",
+            "decision": "This agrees with what you said."
+        }
+    },
+    {
+        "claim_id": 1,
+        "claim_target": "Mohanlal Viswanathan, also known as Lalettan, is an Indian actor and producer predominantly working in the Malayalam film industry based in Kerala.",
+        "entity": null,
+        "location": "Kerala",
+        "evid_id": 0,
+        "query": "In which Indian state does the Malayalam film industry, where Mohanlal predominantly works, flourish?",
+        "evidence": "Next Article Mohanlal is an Indian actor, producer, playback singer, blogger, column writer, and director with significant works in the Malayalam film industry (Mollywood). As of 2023, Mohanlal has appeared in more than 350 films in different languages. His films in the 100-crore club are Pulimurugan (2016), Kayamkulam Kochunni (2018), and Lucifer (2019). Mohanlal is also known for hosting the television reality show Bigg Boss Malayalam.",
+        "model": "mixtral8x7b",
+        "gate": {
+            "is_open": false,
+            "reason": "The article doesn't say in which Indian state the Malayalam film industry flourishes and you said that Mohanlal predominantly works in the Malayalam film industry based in Kerala.",
+            "decision": "This is irrelevant to what you said."
+        }
+    },
+    {
+        "claim_id": 1,
+        "claim_target": "Mohanlal Viswanathan, also known as Lalettan, is an Indian actor and producer predominantly working in the Malayalam film industry based in Kerala.",
+        "entity": null,
+        "location": "Kerala",
+        "evid_id": 1,
+        "query": "What is the name of the Indian actor and producer who is widely known as Lalettan and primarily works in the Malayalam film industry in Kerala?",
+        "evidence": "M. P. Michael (2 December 1958), better known by his stage name Lal, is an Indian film director, actor, script writer, producer, and film distributor widely known for his work in Malayalam cinema. 14. Manoj K. Jayan Actor | Dhrona 2010 Manoj K. Jayan was born on March 15, 1966 in Kochi, Kerala, India. He is an actor and director, known for Dhrona 2010 (2010), Kerala Varma Pazhassi Raja (2009) and Bheesmacharya (1994).",
+        "model": "mixtral8x7b",
+        "gate": {
+            "is_open": true,
+            "reason": "The article said Lal is widely known as Lalettan but you said Mohanlal Viswanathan is widely known as Lalettan.",
+            "decision": "This disagrees with what you said."
+        }
+    },
+    {
+        "claim_id": 1,
+        "claim_target": "Mohanlal Viswanathan, also known as Lalettan, is an Indian actor and producer predominantly working in the Malayalam film industry based in Kerala.",
+        "entity": null,
+        "location": "Kerala",
+        "evid_id": 2,
+        "query": "Which South Indian state is renowned for its thriving Malayalam film industry, where Mohanlal has made significant contributions?",
+        "evidence": "So is content really king as filmmakers and exhibitors are fond of saying? Tovino Thomas in 2018 movie Most Malayalam producers prefer to distribute their own films within Kerala, the south Indian state with the lowest population. The industry has also built a market for itself in the Gulf Cooperation Council (GCC) region because of the state\u2019s significant immigrant population. But, it\u2019s a different story in the ROI market.",
+        "model": "mixtral8x7b",
+        "gate": {
+            "is_open": false,
+            "reason": "The article mentioned that Malayalam film industry is based in Kerala and you said Mohanlal works in Malayalam film industry based in Kerala.",
+            "decision": "This agrees with what you said."
+        }
+    },
+    {
+        "claim_id": 1,
+        "claim_target": "Mohanlal Viswanathan, also known as Lalettan, is an Indian actor and producer predominantly working in the Malayalam film industry based in Kerala.",
+        "entity": null,
+        "location": "Kerala",
+        "evid_id": 3,
+        "query": "Which film industry is Mohanlal associated with, which is based in Kerala?",
+        "evidence": "Mohanlal's association with Padmarajan was very well noted because their films told stories that were well and truly ahead of their times and broke many conventional stereotypes prevailing during that time in the Malayalam film industry. In 1986 alone, Mohanlal appeared in 36 Malayalam films. [39] The following year, Mohanlal starred with Sreenivasan and Shobana in the Sathyan Anthikad comedy Nadodikkattu , which became a box office success.",
+        "model": "mixtral8x7b",
+        "gate": {
+            "is_open": false,
+            "reason": "The article said Mohanlal starred in Malayalam films in 1986, 1987 and he had an association with Padmarajan in Malayalam films. The article also said that Mohanlal is associated with Malayalam film industry.",
+            "decision": "This agrees with what you said."
+        }
+    },
+    {
+        "claim_id": 1,
+        "claim_target": "Mohanlal Viswanathan, also known as Lalettan, is an Indian actor and producer predominantly working in the Malayalam film industry based in Kerala.",
+        "entity": null,
+        "location": "Kerala",
+        "evid_id": 4,
+        "query": "Who is the prominent Indian figure known for his work in the Malayalam film industry in Kerala?",
+        "evidence": "For Chemmeen. Manuel Sathyaneshan Nadar (9 November 1912 \u2013 15 June 1971), commonly known by his stage name Sathyan, was an Indian film actor known for his work in Malayalam cinema. Widely considered as one of the greatest actors in India,He is also regarded as the toughest actor in the Malayalam film industry personally and professionally, and respectfully called as 'Sathyan Master' by everyone. 4. Mammootty Actor | Oru Vadakkan Veeragatha",
+        "model": "mixtral8x7b",
+        "gate": {
+            "is_open": false,
+            "reason": "The article didn't answer the question directly and you said that Mohanlal Viswanathan is an Indian actor and producer predominantly working in the Malayalam film industry based in Kerala.",
+            "decision": "This is irrelevant to what you said."
+        }
+    },
+    {
+        "claim_id": 2,
+        "claim_target": "Prosenjit Chatterjee is a popular Indian actor, primarily working in Bengali cinema based in West Bengal, India. His career has been marked by critical success in his early years, followed by a lull, and a resurgence in popularity and commercial success later in his career.",
+        "entity": null,
+        "location": "West Bengal",
+        "evid_id": 0,
+        "query": "In which Indian state is Prosenjit Chatterjee's Bengali cinema primarily based?",
+        "evidence": "Prosenjit Chatterjee (born 30 September 1962) is an Indian actor and producer. He is widely regarded as one of the leading actors in modern Bengali cinema. He predominantly works in Bengali cinema . He is the son of veteran Bollywood actor Biswajit Chatterjee .",
+        "model": "mixtral8x7b",
+        "gate": {
+            "is_open": false,
+            "reason": "The article said Prosenjit Chatterjee predominantly works in Bengali cinema in India and you said Prosenjit Chatterjee primarily works in Bengali cinema based in West Bengal, India.",
+            "decision": "This agrees with what you said."
+        }
+    },
+    {
+        "claim_id": 2,
+        "claim_target": "Prosenjit Chatterjee is a popular Indian actor, primarily working in Bengali cinema based in West Bengal, India. His career has been marked by critical success in his early years, followed by a lull, and a resurgence in popularity and commercial success later in his career.",
+        "entity": null,
+        "location": "West Bengal",
+        "evid_id": 1,
+        "query": "What is the nature of Prosenjit Chatterjee's resurgence in popularity and commercial success later in his career?",
+        "evidence": "The second turning point in Prosenjit\u2019s career came with Srijit Mukherjee\u2019s Autograph (2010). A tribute to Satyajit Ray\u2019s 1966 film Nayak and Bengali superstar Uttam Kumar, the movie was a perfect blend between commercial and cerebral cinema. Prosenjit played an ageing superstar working with an ambitious director (Indraneil Sengupta), who would go to any length to make his film successful. It crossed more than 100 days of screening in West Bengal, Delhi, Mumbai, and Bengaluru.",
+        "model": "mixtral8x7b",
+        "gate": {
+            "is_open": true,
+            "reason": "The article said that Prosenjit Chatterjee's resurgence in popularity came with Srijit Mukherjee\u2019s Autograph (2010) and you said that Prosenjit Chatterjee's resurgence in popularity came later in his career.",
+            "decision": "This disagrees with what you said because later in his career can mean many years later after Autograph (2010)."
+        }
+    },
+    {
+        "claim_id": 2,
+        "claim_target": "Prosenjit Chatterjee is a popular Indian actor, primarily working in Bengali cinema based in West Bengal, India. His career has been marked by critical success in his early years, followed by a lull, and a resurgence in popularity and commercial success later in his career.",
+        "entity": null,
+        "location": "West Bengal",
+        "evid_id": 2,
+        "query": "What type of career success has Prosenjit Chatterjee experienced in his early years?",
+        "evidence": "What is it and how to cut down on its intake Scroll interview Forty years of Prosenjit Chatterjee: The superstar on his 15 best roles The Bengali icon, most recently seen in \u2018Jubilee\u2019 and \u2018Shesh Pata\u2019, offers a survey of his luminous career. Devarsi Ghosh Apr 15, 2023 \u00b7 12:56 pm Prosenjit Chatterjee in Jubilee (2023) | Photo by Ishika Mohan Motwane We suddenly have two back-to-back great Prosenjit Chatterjee performances.",
+        "model": "mixtral8x7b",
+        "gate": {
+            "is_open": false,
+            "reason": "The article doesn't answer the question and you said Prosenjit Chatterjee had critical success in his early years.",
+            "decision": "This is irrelevant to what you said."
+        }
+    },
+    {
+        "claim_id": 2,
+        "claim_target": "Prosenjit Chatterjee is a popular Indian actor, primarily working in Bengali cinema based in West Bengal, India. His career has been marked by critical success in his early years, followed by a lull, and a resurgence in popularity and commercial success later in his career.",
+        "entity": null,
+        "location": "West Bengal",
+        "evid_id": 3,
+        "query": "Which language of cinema does Prosenjit Chatterjee primarily work in, which is based in West Bengal?",
+        "evidence": "Prosenjit Chatterjee is an Indian actor, producer and television presenter, who works predominantly in Bengali and Hindi language films. He debuted as a child actor in the Hrishikesh Mukherjee -directorial Chotto Jigyasa , for which he has won the Bengal Film Journalists' Association \u2013 Most Outstanding Work of the Year Award . After a string of films where he acted as a child actor, he made his debut as a lead actor in Duti Pata , which was a critically and commercially unsuccessful. In 1987, Prosenjit's breakthrough role came opposite Vijeta Pandit in Amar Sangi ; a highly successful romantic drama directed by Sujit Guha.",
+        "model": "mixtral8x7b",
+        "gate": {
+            "is_open": false,
+            "reason": "The article said Prosenjit Chatterjee works in Bengali and Hindi language films and you said Prosenjit Chatterjee primarily works in Bengali cinema based in West Bengal.",
+            "decision": "This agrees with what you said."
+        }
+    },
+    {
+        "claim_id": 2,
+        "claim_target": "Prosenjit Chatterjee is a popular Indian actor, primarily working in Bengali cinema based in West Bengal, India. His career has been marked by critical success in his early years, followed by a lull, and a resurgence in popularity and commercial success later in his career.",
+        "entity": null,
+        "location": "West Bengal",
+        "evid_id": 4,
+        "query": "Which phase of Prosenjit Chatterjee's career was marked by a lull in his popularity and success?",
+        "evidence": "What is it and how to cut down on its intake Scroll interview Forty years of Prosenjit Chatterjee: The superstar on his 15 best roles The Bengali icon, most recently seen in \u2018Jubilee\u2019 and \u2018Shesh Pata\u2019, offers a survey of his luminous career. Devarsi Ghosh Apr 15, 2023 \u00b7 12:56 pm Prosenjit Chatterjee in Jubilee (2023) | Photo by Ishika Mohan Motwane We suddenly have two back-to-back great Prosenjit Chatterjee performances.",
+        "model": "mixtral8x7b",
+        "gate": {
+            "is_open": false,
+            "reason": "The article said Prosenjit Chatterjee's career had a luminous period after two great performances in Jubilee (2023) and Shesh Pata. However, there are no details about when this period of luminous performance occurred in his career.",
+            "decision": "This does not answer my question about which phase of Prosenjit Chatterjee's career was marked by a lull in his popularity and success."
+        }
+    }
+]
