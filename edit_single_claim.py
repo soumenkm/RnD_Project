@@ -415,10 +415,6 @@ def write_edits_json():
     with open(results_output_path.replace(".json","_final.json"), 'w') as json_file:
         json.dump(results_list, json_file, indent=4)
 
-def evaluate_target_sent_by_common_ques():
-    
-    pass
-
 if __name__ == "__main__":
 
     eval_data_df = pd.read_csv("/root/RnD_Project/inputs/Amazon RnD_ Evaluation Dataset - Updated 200 samples with Qs _V3.csv")
@@ -438,7 +434,10 @@ if __name__ == "__main__":
     # {"input_info": {"claim": "Robert John Downey Jr. is an American actor. His career has been characterized by critical success in his youth, followed by a period of substance abuse and legal troubles, and a surge in popular and commercial success later in his career.", 
     # "location": "West Bengal"}}]
 
-    # write_questions_json(data[0:10])
+    write_questions_json(data[40:60])
     # write_evidences_json()
     # write_agreements_json()
     # write_edits_json()
+    
+    # DONE
+    # 0-10, 20-40
