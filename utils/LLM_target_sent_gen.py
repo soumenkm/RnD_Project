@@ -34,7 +34,6 @@ def run_rarr_target_sentence_generation(
     claim: str,
     model: str,
     prompt: str,
-    entity: str = None,
     location: str = None,
 ) -> List[str]:
     """Generates target sentence based on target location in a claim.
@@ -60,13 +59,7 @@ def run_rarr_target_sentence_generation(
     else:
         print("Model not found!")
     
-    if entity:
-        llm_input = prompt.format(entity=entity, claim=claim).strip()
-    elif location:
-        llm_input = prompt.format(location=location, claim=claim).strip()
-    else:
-        llm_input = prompt.format(claim=claim).strip()
-        
+    llm_input = prompt.format(location=location, claim=claim).strip()
     # print("\nResponse: ")
     
     response = prompt_model(model = llm, prompt = llm_input)

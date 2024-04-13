@@ -1,7 +1,7 @@
 """Utils for searching a query and returning top passages from search results."""
 import concurrent.futures
 import itertools
-import os, sys
+import os, sys, time
 sys.path.append("/root/RnD_Project/utils")
 import random
 from typing import Any, Dict, List, Tuple
@@ -12,6 +12,7 @@ import spacy
 import torch
 from sentence_transformers import CrossEncoder
 import api
+import cohere_call
 
 PASSAGE_RANKER = CrossEncoder(
     "cross-encoder/ms-marco-MiniLM-L-6-v2",
@@ -101,7 +102,7 @@ def scrape_url(url: str, timeout: float = 3) -> Tuple[str, str]:
     # Extract out all text from the tags
     try:
         soup = bs4.BeautifulSoup(response.text, "html.parser")
-        texts = soup.findAll(text=True)
+        texts = soup.findAll(string=True)
         # Filter out invisible text from the page.
         visible_text = filter(is_tag_visible, texts)
     except Exception as _:
@@ -153,8 +154,9 @@ def run_search(
     timeout: float = 3,
     randomize_num_sentences: bool = False,
     filter_sentence_len: int = 250,
-    max_passages_per_search_result_to_score: int = 30,
-    sub_key: str = None
+    max_passages_per_search_result_to_score: int = None,
+    sub_key: str = None,
+    ranking_model: str = None
 ) -> List[Dict[str, Any]]:
     """Searches the query on a search engine and returns the most relevant information.
 
@@ -198,12 +200,17 @@ def run_search(
             filter_sentence_len=filter_sentence_len,
             sliding_distance=sliding_distance,
         )
+        passages.append("dummy")
         passages = passages[:max_passages_per_search_result_to_score]
         if not passages:
             continue
 
         # Score the passages by relevance to the query using a cross-encoder.
-        scores = PASSAGE_RANKER.predict([(query, p) for p in passages]).tolist()
+        if ranking_model == "cross_encoder":
+            scores = PASSAGE_RANKER.predict([(query, p) for p in passages]).tolist()
+        elif ranking_model == "cohere":
+            scores = cohere_call.get_passage_ranking_score(query, passages)
+           
         passage_scores = list(zip(passages, scores))
 
         # Take the top passages_per_search passages for the current search result.
@@ -250,6 +257,7 @@ if __name__ == "__main__":
     'What nickname is Shah Rukh Khan often referred to in the Indian film industry?']
 
     # Run search on generated question for the claim
+    t1 = time.time()
     evidences_for_questions = [
         run_search(
             query=query,
@@ -257,11 +265,14 @@ if __name__ == "__main__":
             max_sentences_per_passage=max_sentences_per_passage,
             sliding_distance=sliding_distance,
             max_passages_per_search_result_to_return=max_passages_per_search_result,
-            sub_key = api.SUBSCRIPTION_KEY
+            sub_key = api.SUBSCRIPTION_KEY,
+            max_passages_per_search_result_to_score=30,
+            ranking_model="cohere"
         )
         for query in questions
     ]
-
+    t2 = time.time()
+    print(f"Time taken: {(t2-t1)/60:.2f} mint")
     # Flatten the evidences per question into a single list.
     used_evidences = [
         e

@@ -23,7 +23,7 @@ def parse_api_response(api_response: str) -> List[str]:
     """
     Decision_search_string = "Decision:"
     Sent_search_string = "Correct target sentence:"
-    Reason_search_string = "Reason:"
+    Reason_search_string = "Reasons:"
     sentence = ""
     for response in api_response.split("\n"):
         if Decision_search_string in response:
@@ -41,7 +41,6 @@ def verify_rarr_target_sentence(
     target_location: str,
     model: str,
     prompt: str,
-    entity: str = None
 ) -> List[str]:
     """Verifies target sentence based on target location in a claim.
 
@@ -66,20 +65,15 @@ def verify_rarr_target_sentence(
     else:
         print("Model not found!")
     
-    if entity:
-        llm_input = prompt.format(entity=entity, claim=claim).strip()
-    elif target_location:
-        llm_input = prompt.format(target_location=target_location, 
+    llm_input = prompt.format(target_location=target_location, 
             ref_claim=ref_claim, target_claim=target_claim).strip()
-    else:
-        llm_input = prompt.format(claim=claim).strip()
-        
     # print("\nResponse: ")
     
     response = prompt_model(model = llm, prompt = llm_input)
+    # print(response)
     decision, reason, correct_target_sent = parse_api_response(response.strip())
 
-    return decision, reason, correct_target_sent, response.strip()
+    return decision, reason, correct_target_sent
 
 
 if __name__ == "__main__":

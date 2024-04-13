@@ -93,7 +93,7 @@ Target location: {location}
 The target sentence for the target location and the reasons generated are:
 """.strip()
 
-VERIFY_TARGET_ENTITY_PROMPT_mixtral8x7b = """In this task, you will be provided with a reference sentence containing a reference entity and a target sentence containing a target entity. The reference entities have been adapted to the target entities based on the target location. Your task is to verify the factual accuracy of the target entities in the target sentence corresponding to the target location. If the target entity is not attributed to the target location, you will reject it. However, if the target entity belongs to the target location, you must consider other factors such as cultural influences, biases, popularity, gender, and personal characteristics before accepting or rejecting the entity. Ensure that the accepted target entity aligns appropriately with the target location and meets the criteria provided. 
+VERIFY_TARGET_ENTITY_PROMPT_mixtral8x7b = """In this task, you will be provided with a reference sentence containing a reference entity and a target sentence containing a target entity. The reference entities have been adapted to the target entities based on the target location. Your task is to verify the factual accuracy of the target entities in the target sentence corresponding to the target location. If the target entity is not attributed to the target location, you will reject it. However, if the target entity belongs to the target location, you must consider other factors such as cultural influences, biases, popularity, gender, and personal characteristics before accepting or rejecting the entity. Ensure that the accepted target entity aligns appropriately with the target location and meets the criteria provided. Do not change the target sentence if the decision is 'Accepted'.
 For example:
 
 Reference sentence: The Eiffel Tower is a wrought-iron lattice tower on the Champ de Mars in Paris, France. It is named after the engineer Gustave Eiffel, whose company designed and built the tower from 1887 to 1889.
@@ -102,7 +102,7 @@ Target sentence: The India Gate is a war memorial made of sandstone located in t
 Based on the above information, the decision and reasons generated are:
 Decision: Accepted
 Reason: Parallel historical significance and architectural attribution between the Eiffel Tower and India Gate justify the choice.
-Correct target sentence: NA
+Correct target sentence: The India Gate is a war memorial made of sandstone located in the heart of New Delhi, India. It is named after the engineer Sir Edwin Lutyens, who designed and built the monument in 1931 to honor the Indian soldiers who died during World War I and the Third Anglo-Afghan War.
 
 Reference sentence: Rishi Sunak is a British politician who has served as Prime Minister of the United Kingdom and Leader of the Conservative Party since 2022.
 Target location: India
@@ -139,7 +139,10 @@ Correct target sentence: Sanjay Dutt is an Indian actor who works in Bollywood i
 Reference sentence: {ref_claim}
 Target location: {target_location}
 Target sentence: {target_claim}
-Based on the above information, the decision and reasons generated are:
+Based on the above information, the decision, reasons and correct target sentence generated are (fill in the blanks):
+Decision: _______________
+Reasons: ________________
+Correct target sentence: ____________________
 """.strip()
 
 QGEN_PROMPT_WITH_LOCATION_mixtral8x7b = """Given a target sentence corresponding to a specific target location, your task is to ask questions about the target entity. Each question should be specific to the target entity and should not contain pronouns such as 'he,' 'she,' 'it,' or 'they.' The questions should seek relevant information about the target entity, its attributes, actions, or associations with the target location. Additionally, the questions should be structured in a way that the answer contains the target entity and/or the target location. Avoid general questions like 'Who is he?' or 'Where does he live?' Instead, focus on extracting detailed insights about the target entity. Ensure that the questions are clear, concise, relevant to the context of the target sentence. Questions should be able to interrogate the factual information in the claim. Do not generate irrelevant questions based on other entities which has no relation with the target entity or target locations.
@@ -595,4 +598,47 @@ Target sentence: {target_claim}
 Target location: {target_location}
 Common questions: {common_ques}
 For the abpve target sentence, target location and common questions, the score would be:
+""".strip()
+
+SINGLE_EDITOR_PROMPT = """This task involves processing a claim by attributing it based on a set of evidences. The aim is to refine the initial claim into an attributed claim that incorporates insights from all provided evidences.
+
+Instructions:
+
+1. Identify the main entity discussed in the provided claim. Carefully review all associated evidences. Note that the evidences may or may not be relevant to the main entity of the claim. 
+2. Determine the relevance of each piece of evidence to the main entity in the claim. Synthesize the factual information from relevant evidences to assess how they support, refute, or modify the initial claim. 
+3. Generate an attributed claim that effectively integrates the initial claim with the relevant evidences, ensuring that the main entity of the claim remains unchanged, especially in the context of any irrelevant evidence. 
+4. Do not include unnecessary evidence sentences in the modified claim which were not present in the original claim. You are required to check only the factual correctness of the claim without adding extra information to the claim. 
+
+Example:
+
+Claim: Tata Motors is an Indian multinational automobile manufacturing company headquartered in Mumbai, Maharashtra, India. It was established in 1954.
+Evidences:
+1. Mahindra & Mahindra Limited (M&M) is an Indian multinational automotive manufacturing corporation headquartered in Mumbai. It was established in 1945 as Mahindra & Mohammed and later renamed Mahindra & Mahindra.
+2. Tata Motors was founded in 1945, as a locomotive manufacturer. Tata Group entered the commercial vehicle sector in 1954 after forming a joint venture with Daimler-Benz of Germany in which Tata developed a manufacturing facility in Jamshedpur for Daimler lorries.
+Attributed Claim: Tata Motors is an Indian multinational automobile manufacturing company headquartered in Mumbai, Maharashtra, India. It was established in 1945.
+
+Claim: Feluda is a detective novel written by renowned Bengali actor Sandip Ray, first published in West Bengal in 1965 by Ananda Publishers. The book has been adapted into a film and several television series.
+Evidences:
+1. Feluda is an Indian-Bengali detective media franchise created by Indian-Bengali film director and writer Satyajit Ray, featuring the character, Feluda.
+2. In 1965, at the age of 44, soon after the release of his landmark film Charulata, Satyajit Ray wrote the first draft of a short story, which featured a young boy, barely into his teens, describing the superlative analytical and detection powers of his older cousin brother."
+Attributed Claim: "Feluda is a detective novel written by renowned Bengali author Satyajit Ray, first published in West Bengal in 1965 by Ananda Publishers. The book has been adapted into a film and several television series.
+
+Claim: Leonardo DiCaprio won his first Oscar for Best Actor for his role in the film 'Titanic' in 1996.
+Evidences:
+1. Leonardo DiCaprio has been nominated for the Best Actor Oscar multiple times, beginning with his role in 'What's Eating Gilbert Grape' in 1993.
+2. DiCaprio's performance in 'The Revenant' was universally acclaimed, and he won the Academy Award for Best Actor in 2016, which was his first Oscar win.
+3. Leonardo DiCaprio is an active environmentalist who has donated millions to conservation efforts.
+Attributed Claim: Leonardo DiCaprio won his first Oscar for Best Actor for his role in 'The Revenant' in 2016, after several nominations for other films including his first for 'What's Eating Gilbert Grape.' 
+
+Claim: Avengers: Endgame was released worldwide in April 2018 and became the highest-grossing film of all time by surpassing 'Titanic'.
+Evidences:
+1. Avengers: Endgame was released in April 2019. It quickly garnered acclaim for its dramatic conclusion of the Infinity Saga."
+2. In July 2019, 'Avengers: Endgame' surpassed 'Avatar' to become the highest-grossing film ever, a record it held until 'Avatar' reclaimed the title after a re-release."
+3. The soundtrack for 'Avengers: Endgame' was composed by Alan Silvestri, who also composed music for 'Back to the Future.'"
+Attributed Claim: Avengers: Endgame was released worldwide in April 2019 and became the highest-grossing film of all time by surpassing 'Avatar' in July of that year, although 'Avatar' later reclaimed the top spot.
+
+For this claim and evidences, generate the attributed claim as instructed.
+Claim: {claim}
+Evidences: {evidences}
+Attributed Claim: 
 """.strip()

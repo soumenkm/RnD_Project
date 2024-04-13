@@ -36,7 +36,6 @@ def run_rarr_question_generation(
     location: str,
     model: str,
     prompt: str,
-    entity: str = None,
     num_rounds: int = 1
 ) -> List[str]:
     """Generates questions that interrogate the information in a claim.
@@ -71,12 +70,7 @@ def run_rarr_question_generation(
     else:
         print("Model not found!")
     
-    if entity:
-        llm_input = prompt.format(entity=entity, claim=claim).strip()
-    elif location:
-        llm_input = prompt.format(location=location, target_claim=target_claim).strip()
-    else:
-        llm_input = prompt.format(claim=claim).strip()
+    llm_input = prompt.format(location=location, target_claim=target_claim).strip()
         
     # print("\nResponse: ")
     questions = set()

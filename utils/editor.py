@@ -83,7 +83,6 @@ def run_rarr_editor(
     evidence: str,
     model: str,
     prompt: str,
-    context: str = None,
     num_retries: int = 5,
 ) -> Dict[str, str]:
     """Runs a GPT-3 editor on the claim given a query and evidence to support the edit.
@@ -98,12 +97,7 @@ def run_rarr_editor(
     Returns:
         edited_claim: The edited claim.
     """
-    if context:
-        llm_input = prompt.format(
-            context=context, claim=claim, query=query, evidence=evidence
-        ).strip()
-    else:
-        llm_input = prompt.format(claim=claim, query=query, evidence=evidence).strip()
+    llm_input = prompt.format(claim=claim, query=query, evidence=evidence).strip()
 
     llm = Llama(
         model_path="/root/llama.cpp/models/mixtral-8x7b-instruct-v0.1.Q4_K_M.gguf",  

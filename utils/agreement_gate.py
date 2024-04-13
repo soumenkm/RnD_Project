@@ -114,7 +114,6 @@ def run_agreement_gate(
     evidence: str,
     model: str,
     prompt: str,
-    context: str = None,
     num_retries: int = 1,
 ) -> Dict[str, Any]:
     """Checks if a provided evidence contradicts the claim given a query.
@@ -133,12 +132,7 @@ def run_agreement_gate(
     Returns:
         gate: A dictionary with the status of the gate and reasoning for decision.
     """
-    if context:
-        llm_input = prompt.format(
-            context=context, claim=claim, query=query, evidence=evidence
-        ).strip()
-    else:
-        llm_input = prompt.format(claim=claim, query=query, evidence=evidence).strip()
+    llm_input = prompt.format(claim=claim, query=query, evidence=evidence).strip()
 
     llm = Llama(
         model_path="/root/llama.cpp/models/mixtral-8x7b-instruct-v0.1.Q4_K_M.gguf",  
