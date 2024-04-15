@@ -1,0 +1,906 @@
+[
+    {
+        "claim_id": 0,
+        "claim_ref": "On July 10, 2006, concrete ceiling panels and debris fell on a car traveling on the two-lane ramp connecting northbound I-93 to eastbound I-90 in South Boston, killing the passenger and injuring her husband, who was driving.",
+        "location": "Uttarakhand",
+        "model": "mixtral8x7b",
+        "claim_target": "On April 29, 2018, a portion of the NH-74 highway near Rudrapur in Uttarakhand collapsed due to heavy rain, killing 2 people and injuring several others traveling in a bus that fell into the gorge as a result.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'concrete ceiling panels and debris falling on a car' is 'a portion of the highway collapsing and causing a bus to fall into a gorge' under the category 'Infrastructure Accidents'. The choice of target entity is reasonable because (a) Both incidents involve infrastructure failure resulting in fatalities and injuries, (b) Both situations highlight the importance of maintaining and upgrading transportation infrastructure to ensure public safety.",
+        "claim_target_correct": "On April 29, 2018, a portion of the NH-74 highway near Rudrapur in Uttarakhand collapsed due to heavy rain, killing 2 people and injuring several others traveling in a bus that fell into the gorge as a result.",
+        "decision_for_entity_verification": "Accepted",
+        "reason_for_entity_verification": "Both instances involve infrastructure failures resulting in loss of life and injuries, which is a parallel comparison between the two events.",
+        "questions": [
+            "How many people were injured due to the collapse of NH-74 near Rudrapur in Uttarakhand on April 29, 2018?",
+            "How many people were reported dead as a result of the NH-74 collapse near Rudrapur in Uttarakhand on April 29, 2018?",
+            "What Uttarakhand city is near the site where a portion of NH-74 collapsed due to heavy rain on April 29, 2018?",
+            "What caused the collapse of a portion of NH-74 near Rudrapur in Uttarakhand on April 29, 2018?",
+            "What mode of transportation was affected by the collapse of",
+            "What type of accident occurred on NH-74 in Uttarakhand on April 29, 2018, due to a collapsed portion of the highway?",
+            "Which highway in Uttarakhand, NH-74, experienced a portion of its road collapsing due to heavy rain on April 29, 2018?"
+        ]
+    },
+    {
+        "claim_id": 1,
+        "claim_ref": "A train derailment occurred on February 3, 2023, at 8:55 p.m. EST, when 38 cars of a Norfolk Southern freight train carrying hazardous materials derailed in East Palestine, Ohio, United States.",
+        "location": "Andhra Pradesh",
+        "model": "mixtral8x7b",
+        "claim_target": "A cargo train derailment took place on February 4, 2023, at 7:25 IST, when 27 wagons of a South Central Railway freight train carrying fertilizers derailed in Kothavalasa, Andhra Pradesh, India.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Norfolk Southern freight train' corresponding to target location 'Andhra Pradesh' is 'South Central Railway freight train' under the catgory 'Train Transportation'. The choice of target entity is reasonable because (a) Both are instances of train derailments, which is a global issue, (b) Both trains were carrying different types of cargo, with one carrying hazardous materials in the US and the other carrying fertilizers in India, allowing for a comparison between the potential impacts of derailments in different contexts, (c) By using the specific time zone for Andhra Pradesh, it helps maintain the chronological order of events in the respective locations.",
+        "claim_target_correct": "A cargo train derailment took place on February 4, 2023, at 7:25 IST, when 27 wagons of a South Central Railway freight train carrying fertilizers derailed in Kothavalasa, Andhra Pradesh, India.",
+        "decision_for_entity_verification": "Accepted",
+        "reason_for_entity_verification": "Both events are train derailments carrying different types of cargo, and both incidents occurred at specific dates and times in their respective locations.",
+        "questions": [
+            "At what time did the cargo train derailment take place on February 4, 2023, in Kothavalasa, Andhra Pradesh, India?",
+            "What type of railway accident occurred on February 4, 2023, in Kothavalasa, Andhra Pradesh, India?",
+            "What was the cargo being transported by the South Central Railway freight train that derailed in Kothavalasa, Andhra Pradesh, India?",
+            "Where in Andhra Pradesh did the South Central Railway freight train derailment happen on February 4, 2023?",
+            "Which railway's freight train derailed on February 4, 2023, in Kothavalasa, Andhra Pradesh, India?"
+        ]
+    },
+    {
+        "claim_id": 2,
+        "claim_ref": "Angelina Jolie is an American actress, filmmaker and humanitarian. The recipient of numerous accolades, including an Academy Award and three Golden Globe Awards, she has been named Hollywood's highest-paid actress multiple times.",
+        "location": "Kerala",
+        "model": "mixtral8x7b",
+        "claim_target": "Revathy is an Indian actress, filmmaker, and humanitarian, who has worked predominantly in the South Indian film industry. She has received numerous accolades, including six National Film Awards, for her versatile acting skills and contributions to cinema.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Angelina Jolie' corresponding to target location 'Kerala' is 'Revathy' under the category 'Actress/Filmmaker/Humanitarian'. The choice of target entity is reasonable because (a) Both individuals have achieved success in their respective film industries, with Angeline Jolie's career spanning Hollywood and Revathy's career predominantly in South Indian cinema, (b) Both women have made significant contributions to cinema through their acting, filmmaking, and humanitarian efforts, (c) They have both been recognized with numerous awards and accolades, including National Film Awards for Revathy and Academy Awards for Angelina Jolie, and (d) They are both renowned for their humanitarian work, making them fitting equivalents in this context.",
+        "claim_target_correct": "Revathy is an Indian actress, filmmaker, and humanitarian, who has worked predominantly in the South Indian film industry. She has received numerous accolades, including six National Film Awards, for her versatile acting skills and contributions to cinema.",
+        "decision_for_entity_verification": "Accepted",
+        "reason_for_entity_verification": "Both Angelina Jolie and Revathy are accomplished actresses, filmmakers, and humanitarians in their respective film industries. They have received numerous accolades for their contributions to cinema, making Revathy an appropriate equivalent target entity for Angelina Jolie in Kerala.",
+        "questions": [
+            "In Kerala, which industry does Revathy contribute to as an actress, filmmaker, and humanitarian?",
+            "In which South Indian film industry does Revathy predominantly work?",
+            "What are some of the accolades received by Revathy for her acting skills and contributions to cinema in the South Indian film industry?",
+            "What are some of the achievements of Revathy in Kerala's film industry?",
+            "What is the name of the Indian actress, filmmaker, and humanitarian who has received six National Film Awards for her contributions to cinema in Kerala?"
+        ]
+    },
+    {
+        "claim_id": 3,
+        "claim_ref": "Dwayne Douglas Johnson, also known by his ring name the Rock, is an American actor and professional wrestler currently signed to WWE.",
+        "location": "Kerala",
+        "model": "mixtral8x7b",
+        "claim_target": "Priya Prakash Varrier is an Indian actress and model, known for her work in Malayalam cinema, based in Kerala, India.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Dwayne Douglas Johnson' corresponding to target location 'Kerala' is 'Priya Prakash Varrier' under the category 'Entertainment'. The choice of target entity is reasonable because (a) Both individuals are prominent figures in their respective entertainment industries, with Dwayne Douglas Johnson being a successful actor and professional wrestler in Hollywood, while Priya Prakash Varrier has gained popularity as an actress and model in Malayalam cinema, (b) Both entities have achieved significant recognition in their fields, with Johnson's global fame as a WWE superstar and Varrier's viral rise to fame due to her wink in a song sequence from her debut film, making them culturally relevant figures in their respective regions.",
+        "claim_target_correct": "Priya Prakash Varrier is an Indian actress and model, known for her work in Malayalam cinema, based in Kerala, India.",
+        "decision_for_entity_verification": "Accepted",
+        "reason_for_entity_verification": "Both Dwayne Douglas Johnson and Priya Prakash Varrier are popular figures in their respective fields - entertainment - but they operate in different industries (wrestling vs. Malayalam cinema) and countries (US vs. India). There are no direct parallels to draw between them that would allow for an accurate comparison or rejection. Therefore, based on the given target location (Kerala), the decision is to accept the target sentence as it accurately describes the Indian actress and model known for her work in Malayalam cinema.",
+        "questions": [
+            "In which Indian state does Malayalam cinema industry, where Priya Prakash Varrier works, primarily belong?",
+            "What industry is Priya Prakash Varrier associated with, which is primarily based in Kerala?",
+            "Which field is Priya Prakash Varrier known for, being based in Kerala, India?",
+            "Who is Priya Prakash Varrier, an actress and model from Kerala, India?"
+        ]
+    },
+    {
+        "claim_id": 4,
+        "claim_ref": "Robert John Downey Jr. is an American actor. His career has been characterized by critical success in his youth, followed by a period of substance abuse and legal troubles, and a surge in popular and commercial success later in his career.",
+        "location": "West Bengal",
+        "model": "mixtral8x7b",
+        "claim_target": "Prosenjit Chatterjee is a renowned Indian actor, mostly active in Bengali cinema, based in West Bengal. He has experienced highs and lows in his career, with initial critical acclaim and popularity during his youth, followed by fluctuations in his career due to personal issues, before making a comeback with successful films later in his career.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Robert John Downey Jr.' corresponding to target location 'West Bengal' is 'Prosenjit Chatterjee' under the category 'Actor/Actress'. The choice of target entity is reasonable because (a) Both actors have experienced a rollercoaster journey in their careers, marked by highs and lows, with personal struggles affecting their career trajectories, (b) Robert Downey Jr. and Prosenjit Chatterjee are both popular male actors, which aligns with the requirement for similarity in gender and popularity between the reference and target entities, with Prosenjit Chatterjee being one of the most celebrated actors in Bengali cinema based in West Bengal.",
+        "claim_target_correct": "Prosenjit Chatterjee is a renowned Indian actor, mostly active in Bengali cinema, based in West Bengal. He has experienced highs and lows in his career, with initial critical acclaim and popularity during his youth, followed by fluctuations in his career due to personal issues, before making a comeback with successful films later in his career.",
+        "decision_for_entity_verification": "Accepted",
+        "reason_for_entity_verification": "Both Robert John Downey Jr. and Prosenjit Chatterjee share similar career trajectories - initial success, followed by personal struggles, and a resurgence in their careers later on. This parallel makes Prosenjit Chatterjee an appropriate equivalent for Robert John Downey Jr. in the context of West Bengal.",
+        "questions": [
+            "In which Indian state is Prosenjit Chatterjee primarily associated with for his work in Bengali cinema?",
+            "In which film industry is Prosenjit Chatterjee mostly active, based in West Bengal?",
+            "What are some of the successful films that marked Prosenjit Chatterjee's comeback in his career later in life?",
+            "What career challenges did Prosenjit Chatterjee face due to personal issues before his successful comeback in Bengali cinema?",
+            "Which Indian state is known for its thriving Bengali film industry, where Prosenjit Chatterjee has made significant contributions?"
+        ]
+    },
+    {
+        "claim_id": 5,
+        "claim_ref": "Lupita Amondi Nyong'o is a Mexican-Kenyan actress. She is the recipient of several accolades, including an Academy Award and a Daytime Emmy Award with nominations for a Tony Award and a Golden Globe Award.",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "Priyanka Chopra Jonas is an Indian actress who has achieved success in both Bollywood and Hollywood, as well as in television and music. She has won several accolades, including a National Film Award, five Filmfare Awards, and a People's Choice Award.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Lupita Amondi Nyong'o' corresponding to target location 'India' is 'Priyanka Chopra Jonas' under the category 'Actress'. The choice of target entity is reasonable because (a) Both actresses have gained international recognition for their work in film, television, and other media, (b) They have both received numerous awards and nominations for their performances, showcasing their versatility and talent, (c) Both Priyanka Chopra Jonas and Lupita Amondi Nyong'o have used their platforms to promote inclusivity, diversity, and social change, making them influential figures in their respective industries.",
+        "claim_target_correct": "Priyanka Chopra Jonas is an Indian actress who has achieved success in both Bollywood and Hollywood, as well as in television and music. She has won several accolades, including a National Film Award, five Filmfare Awards, and a People's Choice Award.",
+        "decision_for_entity_verification": "Accepted",
+        "reason_for_entity_verification": "Both Lupita Amondi Nyong'o and Priyanka Chopra Jonas are accomplished actresses who have received several accolades for their work in film and television, including prestigious awards such as an Academy Award and a National Film Award. Their success spans across different industries and continents, making them parallel figures in their respective domains.",
+        "questions": [
+            "In which country was Priyanka Chopra Jonas born and raised before achieving global success?",
+            "In which film industry did Priyanka Chopra Jonas first achieve success before venturing into Hollywood?",
+            "What are some of the fields in which Priyanka Chopra Jonas has found success apart from Bollywood and Hollywood?",
+            "What type of accolades has Priyanka Chopra Jonas won in India, including a National Film Award and five Filmfare Awards?",
+            "Which Hollywood industry did Priyanka Chopra Jonas enter after achieving success in Bollywood?"
+        ]
+    },
+    {
+        "claim_id": 6,
+        "claim_ref": "Hidetoshi Nishijima is a Japanese actor model. He is widely regarded as one of Japan's leading actors, having appeared in a wide range of films from science fiction films such as Shin Ultraman to small-scale art films such as Dolls.",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "Nawazuddin Siddiqui is an Indian actor who has established himself as one of the leading actors in both mainstream and independent cinema in India, known for his versatile performances in films like \"Gangs of Wasseypur\" and \"The Lunchbox.\"",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Hidetoshi Nishijima' corresponding to target location 'India' is 'Nawazuddin Siddiqui' under the category 'Actor'. The choice of target entity is reasonable because (a) Both actors are highly regarded as leading figures in their respective film industries, known for their versatile acting abilities and having appeared in a variety of film genres, (b) Both actors have gained recognition for their work in both mainstream and independent productions, showcasing their talent and range in different cinematic contexts.",
+        "claim_target_correct": "Nawazuddin Siddiqui is an Indian actor who has established himself as one of the leading actors in both mainstream and independent cinema in India, known for his versatile performances in films like \"Gangs of Wasseypur\" and \"The Lunchbox.\"",
+        "decision_for_entity_verification": "Accepted",
+        "reason_for_entity_verification": "Both Hidetoshi Nishijima and Nawazuddin Siddiqui are widely regarded as leading actors in their respective countries, Japan and India, known for their versatile performances across various genres of films.",
+        "questions": [
+            "In which country has Nawazuddin Siddiqui established himself as one of the leading actors in both mainstream and independent cinema?",
+            "In which sector of Indian cinema is Nawazuddin Siddiqui recognized for his contributions, including both mainstream and independent cinema?",
+            "What are some of Nawazuddin Siddiqui's notable performances that highlight his versatility in Indian cinema?",
+            "What is the profession of Nawazuddin Siddiqui in Indian cinema?",
+            "Which films, like \"Gangs of Wasseypur\" and \"The Lunchbox,\" showcase Nawazuddin Siddiqui's versatile performances in Indian cinema?"
+        ]
+    },
+    {
+        "claim_id": 7,
+        "claim_ref": "Rodrigo Junqueira Reis Santoro is a Brazilian actor. He is perhaps best known for his portrayal of Persian King Xerxes in the film 300 and its sequel 300: Rise of an Empire.",
+        "location": "Karnataka",
+        "model": "mixtral8x7b",
+        "claim_target": "Prakash Raj is an Indian actor, director, and producer who works predominantly in the Kannada film industry based in Karnataka, India. He is best known for his versatile performances in various languages, including Tamil, Telugu, Hindi, and Malayalam films, and has won several accolades for his work in the Indian film industry.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Rodrigo Junqueira Reis Santoro' corresponding to target location 'Karnataka' is 'Prakash Raj' under the category 'Actor'. The choice of target entity is reasonable because (a) Both actors are prominent figures in their respective film industries, with Santoro being known for his work in Hollywood and Prakash Raj for his contributions to the Indian film industry, (b) Both actors have received recognition for their versatile performances in various roles, showcasing their talent and adaptability in different linguistic and cultural contexts, (c) Prakash Raj's association with the Kannada film industry in Karnataka aligns with the requirement for a target entity relevant to the specified location.",
+        "claim_target_correct": "Prakash Raj is an Indian actor, director, and producer who works predominantly in the Kannada film industry based in Karnataka, India. He is best known for his versatile performances in various languages, including Tamil, Telugu, Hindi, and Malayalam films, and has won several accolades for his work in the Indian film industry.",
+        "decision_for_entity_verification": "Accepted",
+        "reason_for_entity_verification": "Both Rodrigo Junqueira Reis Santoro and Prakash Raj are well-known actors in their respective cinematic industries. They have both gained popularity and critical acclaim for their versatile performances across various film industries and languages. While Santoro is recognized for his role as Persian King Xerxes in 300 and its sequel, Prakash Raj's work spans across various languages, including Tamil, Telugu, Hindi, and Malayalam films. Moreover, Prakash Raj's contributions extend beyond acting as he has also directed and produced films, demonstrating his influence and significance in Kannada cinema based in Karnataka, India.",
+        "questions": [
+            "How many accolades has Prakash Raj won for his work in the Indian film industry?",
+            "In which Indian state is Prakash Raj primarily associated with for his work in the Kannada film industry?",
+            "What is Prakash Raj best known for in his career in the Indian film industry?",
+            "Which Indian state is known for its flourishing Kannada film industry, where Prakash Raj has made significant contributions?",
+            "Which languages does Prakash Raj have versatile performances in, apart from Kannada?"
+        ]
+    },
+    {
+        "claim_id": 8,
+        "claim_ref": "Mohd Syamsul Mohd Yusof is a Malaysian actor, film director, writer, producer and singer. He is the son of producer and director Yusof Haslam.",
+        "location": "Tmil nadu",
+        "model": "mixtral8x7b",
+        "claim_target": "Vijay is an Indian actor, playback singer, and producer who works in Tamil cinema. He is the son of producer and director S. A. Chandrasekhar.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Mohd Syamsul Mohd Yusof' corresponding to target location 'Tamil Nadu' is 'Vijay' under the category 'Actor/Actress'. The choice of target entity is reasonable because (a) Both individuals are popular figures in their respective film industries, with Mohd Syamsul Mohd Yusof in Malaysia and Vijay in Tamil Nadu, (b) They both share a similar background as their fathers are also involved in film production, contributing to their artistic upbringing, and (c) They are both sons of established filmmakers, with Mohd Syamsul Mohd Yusof's father being Yusof Haslam, and Vijay's father being S. A. Chandrasekhar, adding to the parallelism between the two entities.",
+        "claim_target_correct": "Vijay is an Indian actor, playback singer, and producer who works in Tamil cinema. He is the son of producer and director S. A. Chandrasekhar.",
+        "decision_for_entity_verification": "Accepted",
+        "reason_for_entity_verification": "Both Mohd Syamsul Mohd Yusof and Vijay are involved in the film industry as actors, directors, writers, producers and singers. They both have connections to their fathers who are also involved in film production. This parallel between their careers and familial relationships justifies the choice.",
+        "questions": [
+            "In which industry does Vijay primarily work in Tamil Nadu?",
+            "What is the profession of Vijay in Tamil Nadu's film industry?",
+            "Which nationality does Vijay hold, working in Tamil cinema in Tamil Nadu?",
+            "Who is Vijay's father, S. A. Chandrasekhar, in relation to the Tamil film industry based in Tamil Nadu?",
+            "Who is the father of Vijay, known for his work as a producer and director in Tamil cinema?"
+        ]
+    },
+    {
+        "claim_id": 9,
+        "claim_ref": "Park Shin-hye is a South Korean actress and singer. She gained recognition as a child actress on TV shows such as Stairway to Heaven and Tree of Heaven.",
+        "location": "West Bengal",
+        "model": "mixtral8x7b",
+        "claim_target": "Rituparna Sengupta is a prominent Bengali actress who gained recognition as a child artist in films like Uttoran and Protidan.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Park Shin-hye' corresponding to target location 'West Bengal' is 'Rituparna Sengupta' under the category 'Actress'. The choice of target entity is reasonable because (a) Both actresses gained recognition as child artists in popular TV shows or films, establishing their acting careers at a young age, (b) They have both continued to have successful acting careers in their respective film industries, becoming prominent figures in Korean and Bengali cinema, respectively.",
+        "claim_target_correct": "Rituparna Sengupta is a prominent Bengali actress who gained recognition as a child artist in films like Uttoran and Protidan.",
+        "decision_for_entity_verification": "Accepted",
+        "reason_for_entity_verification": "Both Park Shin-hye and Rituparna Sengupta gained recognition as child artists in their respective television shows and film industries, which warrants acceptance as equivalent target entities.",
+        "questions": [
+            "In which film did Rituparna Sengupta, the Bengali actress, first gain recognition as a child artist in West Bengal?",
+            "Which language's film industry does Rituparna Sengupta primarily contribute to, being based in West Bengal?",
+            "Who is the Bengali actress that gained recognition as a child artist in movies like Uttoran and Protidan in West Bengal?"
+        ]
+    },
+    {
+        "claim_id": 10,
+        "claim_ref": "American Airlines is a major US-based airline headquartered in Fort Worth, Texas, within the Dallas\u00c3\u00a2\u00e2\u201a\u00ac\u00e2\u20ac\u0153Fort Worth metroplex. It is the largest airline in the world when measured by scheduled passengers carried, revenue passenger mile, and fleet size.",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "IndiGo is a low-cost airline headquartered in Gurgaon, India, and is the country's largest airline when measured by domestic market share, fleet size, and passengers carried.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'American Airlines' corresponding to target location 'India' is 'IndiGo' under the category 'Airlines'. The choice of target entity is reasonable because (a) Both airlines hold significant positions in their respective aviation markets, with American Airlines being the world's largest airline, and IndiGo being India's largest domestic carrier, (b) Both companies are known for their extensive fleet sizes, demonstrating their operational scale and influence within their respective markets.",
+        "claim_target_correct": "IndiGo is a low-cost airline headquartered in Gurgaon, India, and is the country's largest airline when measured by domestic market share, fleet size, and passengers carried.",
+        "decision_for_entity_verification": "Accepted",
+        "reason_for_entity_verification": "Both American Airlines and IndiGo are major airlines in their respective countries, holding significant market shares and fleet sizes. They are equivalent in terms of their status as leading airlines within their respective domestic markets.",
+        "questions": [
+            "In India, which airline has the most significant fleet size and carries the highest number of passengers, headquartered in Gurgaon?",
+            "What is the name of the largest airline in India in terms of domestic market share, fleet size, and passengers carried, which is headquartered in Gurgaon?",
+            "What is the name of the leading low-cost airline in India, headquartered in Gurgaon, that has made a significant impact on the country's aviation sector?",
+            "Which Indian city serves as the headquarters for the country's largest airline in terms of domestic market share, fleet size, and passengers carried?",
+            "Which low-cost airline, based in India and headquartered in Gurgaon, has the largest domestic market share?"
+        ]
+    },
+    {
+        "claim_id": 11,
+        "claim_ref": "Qatar Airways Company Q.C.S.C., operating as Qatar Airways, is the flag carrier of Qatar. Headquartered in the Qatar Airways Tower in Doha, the airline operates a hub-and-spoke network, flying to over 150 international destinations across Africa, Asia, Europe, the Americas, and Oceania from its base at Hamad International Airport, using a fleet of more than 200 aircraft.",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "Air India Limited, operating as Air India, is the flag carrier of India. Headquartered in New Delhi, the airline operates a hub-and-spoke network, flying to over 100 domestic and international destinations across Asia, Europe, and North America from its base at Indira Gandhi International Airport, using a fleet of more than 120 aircraft.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Qatar Airways' corresponding to target location 'India' is 'Air India' under the category 'Airlines'. The choice of target entity is reasonable because (a) Both Qatar Airways and Air India serve as national flag carriers for their respective countries, (b) Both airlines operate hub-and-spoke networks, connecting numerous destinations through their respective hubs, (c) Air India's base at Indira Gandhi International Airport in New Delhi aligns with the requirement for a target entity within India, and (d) Both airlines maintain large fleets, reflecting their scale and significance within the global airline industry.",
+        "claim_target_correct": "Air India Limited, operating as Air India, is the flag carrier of India. Headquartered in New Delhi, the airline operates a hub-and-spoke network, flying to over 100 domestic and international destinations across Asia, Europe, and North America from its base at Indira Gandhi International Airport, using a fleet of more than 120 aircraft.",
+        "decision_for_entity_verification": "Accepted",
+        "reason_for_entity_verification": "Both Qatar Airways and Air India are flag carriers for their respective countries, Qatar and India, and operate hub-and-spoke networks with a large fleet size. They both serve international destinations across multiple continents, making Air India an accurate equivalent target entity for Qatar Airways in the context of India.",
+        "questions": [
+            "From which airport does Air India, the flag carrier of India, operate its hub-and-spoke network of flights across Asia, Europe, and North America?",
+            "How many aircraft are part of Air India's fleet, enabling it to serve over 100 domestic and international destinations?",
+            "What is the name of the Indian airline that operates more than 120 aircraft, flying to over 100 domestic and international destinations across multiple continents?",
+            "Which airline serves as the flag carrier of India and operates a hub-and-spoke network from Indira Gandhi International Airport in New Delhi?",
+            "Which country's national airline is Air India, headquartered in New Delhi and known for its extensive operations in multiple regions?"
+        ]
+    },
+    {
+        "claim_id": 12,
+        "claim_ref": "Arik Air is a Nigerian airline operating mainly from two hubs at Murtala Muhammed International Airport in Lagos and Nnamdi Azikiwe International Airport in Abuja. Arik Air's head office is the Arik Air Aviation Center on the grounds of Murtala Muhammed International Airport in Ikeja. It serves a network of regional and mid-haul destinations within Africa.",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "IndiGo is an Indian airline with its hub at Delhi's Indira Gandhi International Airport, serving a network of domestic and international destinations across Asia. Its head office is located in Gurgaon, Haryana.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Arik Air' corresponding to target location 'India' is 'IndiGo' under the category 'Airlines'. The choice of target entity is reasonable because (a) Both Arik Air and IndiGo are major airlines operating in their respective countries, providing essential air transportation services to millions of passengers, (b) Both airlines have their hubs at important international airports, Murtala Muhammed International Airport for Arik Air and Indira Gandhi International Airport for IndiGo, making them critical contributors to their respective nations' aviation networks.",
+        "claim_target_correct": "IndiGo is an Indian airline with its hub at Delhi's Indira Gandhi International Airport, serving a network of domestic and international destinations across Asia. Its head office is located in Gurgaon, Haryana.",
+        "decision_for_entity_verification": "Accepted",
+        "reason_for_entity_verification": "Both Arik Air and IndiGo are major airlines in their respective countries, Nigeria and India, with significant operations at major international airports. They both serve as hubs for their networks of regional and mid-haul destinations within their respective continents.",
+        "questions": [
+            "In which Indian city is the hub of IndiGo airline located?",
+            "To which domestic and international destinations does IndiGo airline offer services across Asia?",
+            "Where is the head office of IndiGo airline situated in India?",
+            "Which airport in Delhi serves as the hub for IndiGo airline?",
+            "Which low-cost airline, based in India, has its hub at Delhi's Indira Gandhi International Airport?"
+        ]
+    },
+    {
+        "claim_id": 13,
+        "claim_ref": "Spirit Airlines, Inc. is a major United States ultra-low cost airline headquartered in Miramar, Florida, in the Miami metropolitan area. Spirit operates scheduled flights throughout the United States, the Caribbean and Latin America.",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "IndiGo is a major Indian low-cost airline headquartered in Gurgaon, Haryana. IndiGo operates scheduled flights throughout India and to several international destinations in Asia and the Middle East.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Spirit Airlines' corresponding to target location 'India' is 'IndiGo' under the category 'Airlines'. The choice of target entity is reasonable because (a) Both IndiGo and Spirit Airlines are major carriers in their respective countries, providing low-cost air travel options for passengers, (b) Both airlines operate flights domestically as well as to international destinations, connecting various cities and contributing to the growth of air transportation in their respective regions.",
+        "claim_target_correct": "IndiGo is a major Indian low-cost airline headquartered in Gurgaon, Haryana. IndiGo operates scheduled flights throughout India and to several international destinations in Asia and the Middle East.",
+        "decision_for_entity_verification": "Accepted",
+        "reason_for_entity_verification": "Both Spirit Airlines and IndiGo are major low-cost airlines operating in their respective countries, serving both domestic and international destinations. They share similarities in their roles as budget carriers that provide affordable air travel options for passengers.",
+        "questions": [
+            "In which Indian city does IndiGo, a prominent low-cost airline, have its headquarters?",
+            "To which countries does IndiGo, India's low-cost airline, offer scheduled flights apart from various domestic destinations?",
+            "What type of airline is IndiGo, known for its operations in Gurgaon, Haryana and providing low-cost services?",
+            "Which airline, IndiGo, has established itself as a significant player in India's aviation sector while being headquartered in Gurgaon, Haryana?",
+            "Which major Indian low-cost airline is headquartered in Gurgaon, Haryana and operates scheduled flights both domestically and internationally?"
+        ]
+    },
+    {
+        "claim_id": 14,
+        "claim_ref": "London Gatwick, also known as Gatwick Airport, is the secondary international airport serving London, England, United Kingdom. It is located near Crawley, West Sussex, England 29.5 miles south of Central London.",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "Indira Gandhi International Airport is the primary international airport serving New Delhi, India's capital, and is located in Palam, 15 kilometers southwest of the city center.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'London Gatwick' corresponding to target location 'India' is 'Indira Gandhi International Airport' under the category 'Airports'. The choice of target entity is reasonable because (a) Both are primary air transportation hubs for their respective capital cities, (b) They are both international airports, accommodating travelers from around the world, and (c) They are located near their respective city centers, ensuring convenient access for travelers visiting these metropolitan areas.",
+        "claim_target_correct": "Indira Gandhi International Airport is the primary international airport serving New Delhi, India's capital, and is located in Palam, 15 kilometers southwest of the city center.",
+        "decision_for_entity_verification": "Accepted",
+        "reason_for_entity_verification": "Both airports are primary international airports serving their respective capital cities, London and New Delhi, with similar functions and significance in their respective regions.",
+        "questions": [
+            "How far is Indira Gandhi International Airport from New Delhi's city center in India?",
+            "In which Indian city is the Palam area located, where Indira Gandhi International Airport is situated?",
+            "In which city is Indira Gandhi International Airport located in India?",
+            "What is the name of the primary international airport serving New Delhi, India's capital?",
+            "Which airport in India serves as the primary international airport for New Delhi?"
+        ]
+    },
+    {
+        "claim_id": 15,
+        "claim_ref": "Moorabbin Airport is a mostly general aviation airport for light aircraft located in between the southern Melbourne suburbs of Heatherton, Cheltenham, Dingley Village and Mentone. It also receives commercial airline service.",
+        "location": "Karnataka",
+        "model": "mixtral8x7b",
+        "claim_target": "Hindustan Aeronautics Limited Airport, also known as HAL Airport, is a general aviation airport for light aircraft located in Bangalore, Karnataka, which also serves domestic commercial flights.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Moorabbin Airport' corresponding to target location 'Karnataka' is 'Hindustan Aeronautics Limited Airport' under the category 'Airports'. The choice of target entity is reasonable because (a) Both airports primarily serve general aviation and light aircraft, with Moorabbin Airport also receiving commercial airline service, while HAL Airport serves both general aviation and domestic commercial flights, (b) Both airports hold significant importance in their respective regions, contributing to the aviation infrastructure and supporting various aviation-related activities, including flight training, recreational flying, and air transportation services.",
+        "claim_target_correct": "Hindustan Aeronautics Limited Airport, also known as HAL Airport, is a general aviation airport for light aircraft located in Bangalore, Karnataka, which also serves domestic commercial flights.",
+        "decision_for_entity_verification": "Accepted",
+        "reason_for_entity_verification": "Both Moorabbin Airport and Hindustan Aeronautics Limited Airport are general aviation airports for light aircraft that also serve commercial flights, making them parallel entities.",
+        "questions": [
+            "In which Indian state is the HAL Airport, serving general aviation for light aircraft and domestic commercial flights, located?",
+            "What are some of the flight services offered at the Hindustan Aeronautics Limited Airport in Bangalore?",
+            "What is the name of the general aviation airport for light aircraft in Bangalore, Karnataka, which also serves domestic commercial flights?",
+            "What other name is commonly used for the Hindustan Aeronautics Limited Airport in Bangalore?",
+            "Which type of aircraft is primarily served by the HAL Airport in Bangalore, Karnataka?"
+        ]
+    },
+    {
+        "claim_id": 16,
+        "claim_ref": "Kuala Lumpur International Airport is Malaysia's main international airport. It is located in the Sepang District of Selangor, approximately 45 kilometres south of Kuala Lumpur and serves the city's greater conurbation.",
+        "location": "Kerala",
+        "model": "mixtral8x7b",
+        "claim_target": "Cochin International Airport is Kerala's primary international airport, located in Nedumbassery, approximately 25 kilometers northeast of Kochi (Cochin), serving the city's metropolitan area and surrounding regions.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Kuala Lumpur International Airport' corresponding to target location 'Kerala' is 'Cochin International Airport' under the category 'Airports'. The choice of target entity is reasonable because (a) Both airports serve as the primary international gateways for their respective regions, Kuala Lumpur for Malaysia and Cochin for Kerala, (b) Both airports are located at a considerable distance from their respective cities, with Kuala Lumpur International Airport situated about 45 kilometers south of Kuala Lumpur and Cochin International Airport approximately 25 kilometers northeast of Kochi (Cochin). This highlights the role of these airports in providing accessibility to their respective metropolitan areas and surrounding regions, thus fostering connectivity and economic growth.",
+        "claim_target_correct": "Cochin International Airport is Kerala's primary international airport, located in Nedumbassery, approximately 25 kilometers northeast of Kochi (Cochin), serving the city's metropolitan area and surrounding regions.",
+        "decision_for_entity_verification": "Accepted",
+        "reason_for_entity_verification": "Both Kuala Lumpur International Airport and Cochin International Airport are main international airports for their respective regions, serving the respective major cities and their metropolitan areas.",
+        "questions": [
+            "How far is Cochin International Airport from Kochi (Cochin) in Kerala?",
+            "In which city is Cochin International Airport located, approximately 25 kilometers northeast of?",
+            "What is the name of Kerala's primary international airport?",
+            "What regions does Cochin International Airport serve in Kerala?",
+            "Which airport in Kerala is known for being a significant international airport serving the metropolitan area of Kochi?"
+        ]
+    },
+    {
+        "claim_id": 17,
+        "claim_ref": "Jewel Changi Airport is a nature-themed entertainment and retail complex surrounded by and linked to one of the passenger terminals of Changi Airport, Singapore.",
+        "location": "Bengaluru",
+        "model": "mixtral8x7b",
+        "claim_target": "The Kempegowda International Airport's Terminal 2 is a state-of-the-art facility in Bengaluru, India, featuring modern amenities, retail outlets, and entertainment options for passengers, providing a seamless travel experience.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Jewel Changi Airport' corresponding to target location 'Bengaluru' is 'The Kempegowda International Airport's Terminal 2' under the category 'Airport Facilities'. The choice of target entity is reasonable because (a) Both are significant infrastructure projects in their respective cities, contributing to the growth of tourism and commerce, (b) Both offer unique experiences beyond their primary functions as transportation hubs, incorporating retail, dining, and entertainment options for passengers, enhancing overall customer satisfaction.",
+        "claim_target_correct": "The Kempegowda International Airport's Terminal 2 is a state-of-the-art facility in Bengaluru, India, featuring modern amenities, retail outlets, and entertainment options for passengers, providing a seamless travel experience.",
+        "decision_for_entity_verification": "Accepted",
+        "reason_for_entity_verification": "Both Jewel Changi Airport and Kempegowda International Airport's Terminal 2 serve as entertainment and retail complexes linked to their respective airports, providing modern amenities and a seamless travel experience for passengers.",
+        "questions": [
+            "What facilities and amenities does Terminal 2 at Kempegowda International Airport in Bengaluru offer to passengers?",
+            "What is the name of the state-of-the-art terminal facility at the international airport in Bengaluru, India?",
+            "Where can passengers find Terminal 2 with its modern features in Bengaluru's international airport?",
+            "Which Indian city's international airport features the Kempegowda International Airport's Terminal 2?",
+            "Which terminal at Bengaluru's international airport provides a seamless travel experience with modern amenities, retail outlets, and entertainment options?"
+        ]
+    },
+    {
+        "claim_id": 18,
+        "claim_ref": "Dreamworld is a theme park and zoo situated on the Gold Coast in Queensland. It is Australia's biggest theme park with over 40 rides and attractions.",
+        "location": "Tamilnadu",
+        "model": "mixtral8x7b",
+        "claim_target": "MGM Dizzee World is a theme park located in Chennai, Tamil Nadu, known as one of the largest amusement parks in South India with over 50 rides and attractions.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Dreamworld' corresponding to target location 'Tamilnadu' is 'MGM Dizzee World' under the category 'Theme parks'. The choice of target entity is reasonable because (a) Both Dreamworld and MGM Dizzee World are significant recreational destinations in their respective regions, offering numerous rides and attractions, (b) MGM Dizzee World's location in Tamil Nadu, specifically in Chennai, ensures relevance and alignment with the target location, thus making it a suitable target entity for comparison within the given context.",
+        "claim_target_correct": "MGM Dizzee World is a theme park located in Chennai, Tamil Nadu, known as one of the largest amusement parks in South India with over 50 rides and attractions.",
+        "decision_for_entity_verification": "Accepted",
+        "reason_for_entity_verification": "Both Dreamworld and MGM Dizzee World are theme parks with a significant number of rides and attractions, making them equivalent target entities in the context of Tamilnadu.",
+        "questions": [
+            "Approximately how many rides and attractions does MGM Dizzee World in Chennai have?",
+            "In which city in Tamilnadu is MGM Dizzee World, one of South India's largest amusement parks, situated?",
+            "What is the significance of MGM Dizzee World in terms of its size and popularity in South India's amusement park industry?",
+            "Where can visitors find MGM Dizzee World in Tamilnadu?",
+            "Which state in South India does MGM Dizzee World call its home, offering over 50 rides and attractions?"
+        ]
+    },
+    {
+        "claim_id": 19,
+        "claim_ref": "Disneyland Paris is an entertainment resort in Chessy, France, 32 kilometres east of Paris. It encompasses two theme parks, resort hotels, a shopping, dining and entertainment complex, and a golf course.",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "Disneyland India is an entertainment resort in Mumbai, Maharashtra, featuring two theme parks, resort hotels, a shopping, dining, and entertainment complex, and a golf course.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Disneyland Paris' corresponding to target location 'India' is 'Disneyland India' under the category 'Entertainment Resort'. Although there is no existing Disneyland in India, this hypothetical creation of one would align with India's significance in the global entertainment industry. This choice of target entity allows for an analogy between France's Disneyland Paris and India's potential Disneyland, which would further emphasize India's importance as a thriving market for entertainment, tourism, and hospitality.",
+        "claim_target_correct": "Disneyland India is an entertainment resort in Mumbai, Maharashtra, featuring two theme parks, resort hotels, a shopping, dining, and entertainment complex, and a golf course.",
+        "decision_for_entity_verification": "Rejected",
+        "reason_for_entity_verification": "While Disneyland India is an accurate adaptation of Disneyland Paris in terms of concept and components, there is currently no Disneyland resort in India. Therefore, the choice of 'Disneyland India' as the equivalent target entity is not accurate for India.",
+        "questions": [
+            "How does Disneyland India contribute to entertainment and tourism in Mumbai, Maharashtra?",
+            "What attractions does Disneyland India offer, including two theme parks and resort hotels?",
+            "What is the name of the entertainment resort in Mumbai, Maharashtra, featuring theme parks, resort hotels, and a shopping complex?",
+            "What natural environment does Kerala offer that makes it ideal for Ayurved",
+            "What traditional healing practices is Ayurveda in Kerala, India famous for using natural herbs and plants?",
+            "Where in India is Disneyland India located, specifically in Mumbai, Maharashtra?",
+            "Which Indian city does Disneyland India call home in Maharashtra?"
+        ]
+    },
+    {
+        "claim_id": 20,
+        "claim_ref": "Ferrari World Abu Dhabi is a mostly indoors theme park located on Yas Island in Abu Dhabi, United Arab Emirates. It is the world's first Ferrari-themed park and features Formula Rossa, the world's fastest roller coaster.",
+        "location": "Maharashtra",
+        "model": "mixtral8x7b",
+        "claim_target": "Adlabs Imagica is a theme park located in Khopoli, Maharashtra, India. It features various themed rides, attractions, and entertainment options, including India's first roller coaster, the Scream Machine, and the country's largest wave pool.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Ferrari World Abu Dhabi' corresponding to target location 'Maharashtra' is 'Adlabs Imagica' under the category 'Theme Parks'. The choice of target entity is reasonable because (a) Both parks serve as popular entertainment destinations, offering a variety of thrilling rides, attractions, and experiences for visitors, (b) While Ferrari World Abu Dhabi focuses on the Ferrari brand, Adlabs Imagica features various themed attractions, providing diverse experiences for visitors, making it a suitable alternative in Maharashtra's context.",
+        "claim_target_correct": "Adlabs Imagica is a theme park located in Khopoli, Maharashtra, India. It features various themed rides, attractions, and entertainment options, including India's first roller coaster, the Scream Machine, and the country's largest wave pool.",
+        "decision_for_entity_verification": "Accepted",
+        "reason_for_entity_verification": "Both entities are theme parks located in their respective regions, offering various themed rides and attractions for entertainment.",
+        "questions": [
+            "What is one of the largest entertainment options available at Adlabs Imagica in Maharashtra?",
+            "What is the name of the theme park situated in Khopoli, Maharashtra, India, which features India's first roller coaster?",
+            "What type of attraction is Adlabs Imagica in Khopoli, Maharashtra?",
+            "Where is the country's largest wave pool located in India?",
+            "Which themed ride in Adlabs Imagica is known as India's first roller coaster?"
+        ]
+    },
+    {
+        "claim_id": 21,
+        "claim_ref": "Dream Island is an amusement park in Moscow that opened on 29 February 2020. It is the largest indoor theme park in Europe.",
+        "location": "Maharashtra",
+        "model": "mixtral8x7b",
+        "claim_target": "Imagicaa is an amusement and water park located in Khopoli, Maharashtra, which opened in April 2013. It is one of the largest theme parks in India.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Dream Island' corresponding to target location 'Maharashtra' is 'Imagicaa' under the category 'Amusement Parks'. The choice of target entity is reasonable because (a) Both Dream Island and Imagicaa serve as popular entertainment destinations, providing unique experiences for visitors through various themed attractions, (b) Dream Island is the largest indoor theme park in Europe, while Imagicaa is one of the largest theme parks in India, showcasing their significant roles as entertainment hubs in their respective regions.",
+        "claim_target_correct": "Imagicaa is an amusement and water park located in Khopoli, Maharashtra, which opened in April 2013. It is one of the largest theme parks in India.",
+        "decision_for_entity_verification": "Accepted",
+        "reason_for_entity_verification": "Both Dream Island and Imagicaa are amusement parks located indoors, making them equivalent target entities in the context of Maharashtra.",
+        "questions": [
+            "In which city in Maharashtra is Imagicaa, one of India's largest theme parks, situated?",
+            "What is the name of the amusement and water park established in April 2013 in Khopoli, Maharashtra?",
+            "What type of recreational facility is Imagicaa in Khopoli, Maharashtra?",
+            "When was Imagicaa, an amusement and water park in Maharashtra, opened for visitors?",
+            "Which Indian state is Imagicaa, one of the largest theme parks in India, located in?"
+        ]
+    },
+    {
+        "claim_id": 22,
+        "claim_ref": "Ford Motor Company is an American multinational automobile manufacturer headquartered in Dearborn, Michigan, United States. It was founded by Henry Ford and incorporated on June 16, 1903.",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "Tata Motors is an Indian multinational automobile manufacturer headquartered in Mumbai, Maharashtra, India. It was founded by Jamsetji Tata in 1945 and was incorporated as Tata Engineering and Locomotive Company (TELCO) before being renamed Tata Motors in 2003.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Ford Motor Company' corresponding to target location 'India' is 'Tata Motors' under the category 'Automobile Manufacturer'. The choice of target entity is reasonable because (a) Both companies are multinational automobile manufacturers with significant influence in their respective countries, (b) Tata Motors, like Ford, has a rich history, being founded by Jamsetji Tata, a prominent Indian industrialist, and has since grown into one of India's leading automobile manufacturers, contributing to the country's industrial growth.",
+        "claim_target_correct": "Tata Motors is an Indian multinational automobile manufacturer headquartered in Mumbai, Maharashtra, India. It was founded by Jamsetji Tata in 1945 and was incorporated as Tata Engineering and Locomotive Company (TELCO) before being renamed Tata Motors in 2003.",
+        "decision_for_entity_verification": "Accepted",
+        "reason_for_entity_verification": "Both Ford Motor Company and Tata Motors are multinational automobile manufacturers with historical significance in their respective countries. They share similarities in terms of their industries, scale of operations, and global influence.",
+        "questions": [
+            "In which city is Tata Motors, the Indian multinational automobile manufacturer, headquartered?",
+            "What is the name of the Indian multinational automobile manufacturer headquartered in Mumbai, Maharashtra?",
+            "What was the original name of Tata Motors before it was renamed in 2003?",
+            "When was Tata Motors founded by Jamsetji Tata in India?",
+            "Who was the founder of Tata Motors in India?"
+        ]
+    },
+    {
+        "claim_id": 23,
+        "claim_ref": "The Victoria Cross is the highest and most prestigious decoration of the British honours system. It is awarded for valour \"in the presence of the enemy\" to members of the British Armed Forces and may be awarded posthumously.",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "The Param Vir Chakra is the highest military decoration in India, awarded for the most conspicuous bravery or some daring or pre-eminent act of valor or self-sacrifice in the face of the enemy.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Victoria Cross' corresponding to target location 'India' is 'Param Vir Chakra' under the category 'Military Decorations'. The choice of target entity is reasonable because (a) Both decorations are the highest military honors in their respective countries, signifying exceptional bravery in the face of enemy forces, (b) Both awards are given posthumously in case of the death of the recipient during the act of valor, highlighting their selfless sacrifice for their nation.",
+        "claim_target_correct": "The Param Vir Chakra is the highest military decoration in India, awarded for the most conspicuous bravery or some daring or pre-eminent act of valor or self-sacrifice in the face of the enemy.",
+        "decision_for_entity_verification": "Accepted",
+        "reason_for_entity_verification": "Both the Victoria Cross and the Param Vir Chakra are highest military decorations in their respective countries, awarded for acts of valor and conspicuous bravery in the face of the enemy, making them parallel equivalents.",
+        "questions": [
+            "For what acts of courage is the Param Vir Chakra awarded in India?",
+            "What are the criteria for receiving the Param Vir Chakra in India?",
+            "What is the name of the highest military decoration in India?",
+            "Which country's military decoration system includes the Param Vir Chakra?",
+            "Which type of honor is the Param Vir Chakra given for in India?"
+        ]
+    },
+    {
+        "claim_id": 24,
+        "claim_ref": "The Bronze Medallion, signifying a qualified lifesaver, has been a lifesaving standard award of The Royal Life Saving Society - Australia and Surf Life Saving Australia for over one hundred years. It was developed in England in 1892.",
+        "location": "Maharastra",
+        "model": "mixtral8x7b",
+        "claim_target": "The Honorary General Secretary's Gold Life Saving Medal, established in 1917, is a prestigious recognition awarded by the Royal Life Saving Society of India, based in Maharashtra, to individuals who have demonstrated exceptional courage and skill in saving lives from drowning emergencies.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'The Bronze Medallion' corresponding to target location 'Maharashtra' is 'The Honorary General Secretary's Gold Life Saving Medal' under the category 'Lifesaving Awards' in the context of the Royal Life Saving Society of India, headquartered in Maharashtra. The choice of target entity is reasonable because (a) Both awards are given in recognition of acts of bravery, skill, and dedication in saving lives, particularly in aquatic environments, (b) Both awards have historical significance, with the Bronze Medallion having been established in England in 1892 and the Honorary General Secretary's Gold Life Saving Medal being introduced in India in 1917, reflecting their longstanding commitment to promoting water safety, and (c) Both awards share similar values of",
+        "claim_target_correct": "The Honorary General Secretary's Gold Life Saving Medal, established in 1917, is a prestigious recognition awarded by the Royal Life Saving Society of India, based in Maharashtra, to individuals who have demonstrated exceptional courage and skill in saving lives from drowning emergencies.",
+        "decision_for_entity_verification": "Accepted",
+        "reason_for_entity_verification": "Both the Bronze Medallion and the Honorary General Secretary's Gold Life Saving Medal are prestigious awards given for exceptional courage and skill in saving lives from drowning emergencies in their respective countries, making them parallel equivalents in this context.",
+        "questions": [
+            "How does the Royal Life Saving Society of India contribute to water safety through awards like the Honorary General Secretary's Gold Life Saving Medal?",
+            "What are the criteria for receiving the Honorary General Secretary's Gold Life Saving Medal in Maharashtra?",
+            "What kind of prestigious recognition is the Honorary General Secretary's Gold Life Saving Medal in India?",
+            "When was the Honorary General Secretary's Gold Life Saving Medal established in Maharashtra?",
+            "Which Indian organization based in Maharashtra presents the Honorary General Secretary's Gold Life Saving Medal?"
+        ]
+    },
+    {
+        "claim_id": 25,
+        "claim_ref": "JPMorgan Chase Bank, N.A., doing business as Chase, is an American national bank headquartered in New York City that constitutes the consumer and commercial banking subsidiary of the U.S. multinational banking and financial services holding company, JPMorgan Chase.",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "The State Bank of India (SBI) is an Indian multinational public sector bank headquartered in Mumbai, Maharashtra, which constitutes one of the largest banking and financial services companies in India.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'JPMorgan Chase Bank, N.A.' corresponding to target location 'India' is 'The State Bank of India (SBI)' under the category 'Banks'. The choice of target entity is reasonable because (a) Both entities are major financial institutions, offering consumer and commercial banking services, (b) While JPMorgan Chase Bank, N.A. is a significant player in the American banking sector, State Bank of India (SBI) holds a similar position in India, providing financial services to millions of customers and contributing significantly to the country's economy.",
+        "claim_target_correct": "The State Bank of India (SBI) is an Indian multinational public sector bank headquartered in Mumbai, Maharashtra, which constitutes one of the largest banking and financial services companies in India.",
+        "decision_for_entity_verification": "Accepted",
+        "reason_for_entity_verification": "Both JPMorgan Chase Bank, N.A. and The State Bank of India (SBI) are multinational banking institutions with significant market shares in their respective countries, making 'The State Bank of India (SBI)' an appropriate equivalent target entity for 'JPMorgan Chase Bank, N.A.' in India.",
+        "questions": [
+            "In which Indian city is the headquarters of the State Bank of India (SBI) located?",
+            "What is the name of the Indian multinational public sector bank headquartered in Mumbai, Maharashtra?",
+            "What significant role does the State Bank of India (SBI) play in the banking and financial services sector in India?",
+            "What type of institution is the State Bank of India (SBI) in India, being a multinational public sector bank?",
+            "Which banking and financial services company in India is one of the largest, being constituted by the State Bank of India (SBI)?"
+        ]
+    },
+    {
+        "claim_id": 26,
+        "claim_ref": "Saudi National Bank (SNB), also known as SNB AlAhli, is the largest commercial bank in Saudi Arabia. In April 2021, National Commercial Bank merged with Samba Financial Group under the name of Saudi National Bank.",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "State Bank of India (SBI) is the largest commercial bank in India, with a significant presence in both domestic and international markets.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Saudi National Bank (SNB)' corresponding to target location 'India' is 'State Bank of India (SBI)' under the category 'Banks'. The choice of target entity is reasonable because (a) Both SNB and SBI are the largest commercial banks in their respective countries, indicating their significant roles in the financial sectors of Saudi Arabia and India, (b) Both banks have undergone mergers \u2013 SNB with Samba Financial Group and SBI with several state-owned banks \u2013 to strengthen their positions in the market and expand their services, (c) Both SNB and SBI cater to diverse customer needs, including retail, corporate, and investment banking, and have a substantial impact on their respective countries' economies, making them suitable equivalents for comparison within the Indian context.",
+        "claim_target_correct": "State Bank of India (SBI) is the largest commercial bank in India, with a significant presence in both domestic and international markets.",
+        "decision_for_entity_verification": "Accepted",
+        "reason_for_entity_verification": "Both Saudi National Bank (SNB) and State Bank of India (SBI) are largest commercial banks in their respective countries, Saudi Arabia and India. They both have significant presence in domestic and international markets.",
+        "questions": [
+            "In which country is State Bank of India (SBI) based, being the largest commercial bank?",
+            "What can you tell me about the size and reach of State Bank of India (SBI) in the Indian banking industry?",
+            "What is the name of the largest commercial bank in India, which has a substantial presence in domestic and international markets?",
+            "What markets, both domestic and international, does State Bank of India (SBI) have a significant presence in?",
+            "Which type of bank in India is the largest, having extensive domestic and international operations?"
+        ]
+    },
+    {
+        "claim_id": 27,
+        "claim_ref": "Harry Potter and the Philosopher's Stone is a fantasy novel written by British author J. K. Rowling. The book was first published in the United Kingdom on 26 June 1997 by Bloomsbury. The novel has been adapted into a film.",
+        "location": "West Bengal",
+        "model": "mixtral8x7b",
+        "claim_target": "Goopi Gayen Bagha Bayen is a popular Bengali folktale, first published as a book by Upendrakishore Ray Chowdhury in 1919. The story has been adapted into various forms of media, including films and stage productions in West Bengal.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Harry Potter and the Philosopher\u2019s Stone' corresponding to target location 'West Bengal' is 'Goopi Gayen Bagha Bayen' under the category 'Literature'. The choice of target entity is reasonable because (a) Both stories are popular within their respective regions, with 'Harry Potter' being widely read in the UK and 'Goopi Gayen Bagha Bayen' being a beloved folktale in West Bengal, (b) Both works have been adapted into various forms of media, such as films and stage productions, showcasing their cultural significance in their respective regions and appealing to diverse audiences.",
+        "claim_target_correct": "Goopi Gayen Bagha Bayen is a popular Bengali folktale, first published as a book by Upendrakishore Ray Chowdhury in 1919. The story has been adapted into various forms of media, including films and stage productions in West Bengal.",
+        "decision_for_entity_verification": "Accepted",
+        "reason_for_entity_verification": "Both Harry Potter and the Philosopher's Stone and Goopi Gayen Bagha Bayen are popular works of fiction that have been adapted into various forms of media. They share a similar cultural significance as influential stories within their respective regions, making Goopi Gayen Bagha Bayen an appropriate equivalent for Harry Potter and the Philosopher's Stone in West Bengal.",
+        "questions": [
+            "How has Goopi Gayen Bagha Bayen been adapted in various forms of media in West Bengal?",
+            "In which year was Goopi Gayen Bagha Bayen first published as a book in West Bengal?",
+            "What is the name of the popular Bengali folktale first published as a book in 1919 by Upendrakishore Ray Chowdhury in West Bengal?",
+            "Which Indian state is associated with the popular Bengali folktale Goopi Gayen Bagha Bayen?",
+            "Who is the author of the Goopi Gayen Bagha Bayen folktale, which has its origins in West Bengal?"
+        ]
+    },
+    {
+        "claim_id": 28,
+        "claim_ref": "Norwegian Wood is a 1987 novel by Japanese author Haruki Murakami. The novel is a nostalgic story of loss. It is told from the first-person perspective of Toru Watanabe, who looks back on his days as a college student living in Tokyo.",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "The God of Small Things is a 1997 novel by Indian author Arundhati Roy. The novel explores themes of loss, identity, and societal norms through the experiences of fraternal twins Rahel and Estha, who grow up in Kerala, India.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Norwegian Wood' corresponding to target location 'India' is 'The God of Small Things' under the category 'Literature'. The choice of target entity is reasonable because (a) Both are critically acclaimed novels written by prominent authors, Haruki Murakami and Arundhati Roy, respectively, (b) Both novels delve into themes of loss, identity, and societal expectations, albeit in different cultural contexts, providing insight into the human condition through narrative storytelling, (c) By choosing 'The God of Small Things', we maintain the focus on Indian literature, as Arundhati Roy is a Man Booker Prize-winning author from India, allowing for a relevant comparison within the specified target location.",
+        "claim_target_correct": "The God of Small Things is a 1997 novel by Indian author Arundhati Roy. The novel explores themes of loss, identity, and societal norms through the experiences of fraternal twins Rahel and Estha, who grow up in Kerala, India.",
+        "decision_for_entity_verification": "Accepted",
+        "reason_for_entity_verification": "Both Norwegian Wood and The God of Small Things are critically acclaimed novels that explore themes of loss from the first-person perspective, with Toru Watanabe in Norwegian Wood and Rahel and Estha in The God of Small Things. They are parallel in their literary significance and exploration of personal experiences, making them equivalent target entities.",
+        "questions": [
+            "In which year was \"The God of Small Things,\" a novel by Indian author Arundhati Roy, published?",
+            "What are the names of the fraternal twins around whose experiences the novel \"The God of Small Things\" revolves?",
+            "Which Indian state serves as the setting for \"The God of Small Things\"?",
+            "Which themes does \"The God of Small Things\" explore through the lives of Rahel and Estha in Kerala, India?",
+            "Who is the author of \"The God of Small Things,\" a novel set in Kerala, India?"
+        ]
+    },
+    {
+        "claim_id": 29,
+        "claim_ref": "The Friendly Ghost is a Famous Studios cartoon released on 16 November 1945 as part of its Noveltoons series of animated short films. It is the first cartoon to feature the character Casper the Friendly Ghost.",
+        "location": "Kerala",
+        "model": "mixtral8x7b",
+        "claim_target": "The Malayalam movie \"Vadakkan Veeragaatha\" is a Malayalam-language period drama film released on 14 April 1989, directed by Hariharan and written by M.T. Vasudevan Nair. It is based on the life of the legendary figure Aromal Chekavar, who was a central character in the northern ballads of Kerala, India.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'The Friendly Ghost' corresponding to target location 'Kerala' is 'The Malayalam movie \"Vadakkan Veeragaatha\"' under the category 'Movies'. The choice of target entity is reasonable because (a) While \"The Friendly Ghost\" is an animated short film, \"Vadakkan Veeragaatha\" is a period drama film, both represent different forms of storytelling within their respective mediums, (b) Both works are based on fictional characters, Casper the Friendly Ghost in animation and Aromal Chekavar in live-action, making them equivalent in terms of their fictional nature.",
+        "claim_target_correct": "The Malayalam movie \"Vadakkan Veeragaatha\" is a Malayalam-language period drama film released on 14 April 1989, directed by Hariharan and written by M.T. Vasudevan Nair. It is based on the life of the legendary figure Aromal Chekavar, who was a central character in the northern ballads of Kerala, India.",
+        "decision_for_entity_verification": "Accepted",
+        "reason_for_entity_verification": "The entities are not directly comparable as one is a cartoon from Famous Studios and the other is a Malayalam-language period drama film. However, both are notable works in their respective fields.",
+        "questions": [
+            "In which Indian state is the setting for the life of the legendary figure, Aromal Chekavar, portrayed in the Malayalam movie \"Vadakkan Veeragaatha\"?",
+            "What type of film is \"Vadakkan Veeragaatha\" in terms of genre and language?",
+            "Which Malayalam-language movie was released on 14 April 1989 and written by M.T. Vasudevan Nair, based on the life of Aromal Chekavar?",
+            "Who directed the Malayalam period drama film \"Vadakkan Veeragaatha\", which was released in Kerala in 1989?",
+            "Who is the central character in the northern ballads of Kerala and the basis for the Malayalam movie \"Vadakkan Veeragaatha\"?"
+        ]
+    },
+    {
+        "claim_id": 30,
+        "claim_ref": "Laurel and Hardy were a British-American comedy team during the early Classical Hollywood era of American cinema, consisting of Englishman Stan Laurel and American Oliver Hardy.",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "Gutthi and Kapil are an Indian comedy duo, popular during the early 21st century in Indian television, consisting of Indian actress Gutthi and Indian comedian Kapil Sharma.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Laurel and Hardy' corresponding to target location 'India' is 'Gutthi and Kapil' under the category 'Comedy duo'. The choice of target entity is reasonable because (a) Both comedy teams have achieved significant popularity in their respective regions, entertaining audiences through their unique comedic styles, (b) Both duos consist of members with diverse backgrounds \u2013 Laurel and Hardy were a British-American team, while Gutthi and Kapil are both Indian, adding to the cultural representation within their comedy performances.",
+        "claim_target_correct": "Gutthi and Kapil Sharma are an Indian comedy duo, popular during the early 21st century in Indian television, consisting of Indian actress Gutthi and Indian comedian Kapil Sharma.",
+        "decision_for_entity_verification": "Accepted",
+        "reason_for_entity_verification": "Both Laurel and Hardy and Gutthi and Kapil are comedy duos who gained significant popularity during their respective eras and regions. They consist of one person from each country, which parallels the British-American nature of Laurel and Hardy and the Indian backgrounds of Gutthi and Kapil Sharma.",
+        "questions": [
+            "Can you name the Indian actress and comedian that make up the comedy duo Gutthi and Kapil Sharma?",
+            "In which century did Gutthi and Kapil Sharma become popular in Indian television?",
+            "In which country did the Indian comedy duo Gutthi and Kapil Sharma gain popularity in television?",
+            "Who are Gutthi and Kapil Sharma, referring to the Indian comedy duo popular during the early 21st century in Indian television?",
+            "Who are the two members of the Indian comedy duo Gutthi and Kapil Sharma?"
+        ]
+    },
+    {
+        "claim_id": 31,
+        "claim_ref": "Superman is a superhero who appears in American comic books published by DC Comics. The character was created by writer Jerry Siegel and artist Joe Shuster, and debuted in the comic book Action Comics #1 (cover-dated June 1938 and published April 18, 1938). Superman has been adapted to a number of other media, which includes radio serials, novels, films, television shows, theater, and video games.",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "Nagina is a superhero who appears in Indian television shows. The character was created by writer Raman Kumar and director Rajiv Rai, and debuted in the TV series Nagin (aired in 1986). Nagina has been adapted to various other media, which includes films, music albums, and comics.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Superman' corresponding to target location 'India' is 'Nagina' under the catgory 'Superhero'. The choice of target entity is reasonable because (a) Both Superman and Nagina are superheroes who have captured the imagination of their respective audiences, (b) Both characters have been adapted into various media formats, showcasing their enduring popularity and versatility, (c) Nagina, as a shape-shifting snake woman, offers a unique cultural perspective within the superhero genre, reflecting India's rich mythological heritage.",
+        "claim_target_correct": "Nagina is a superhero who appears in Indian television shows. The character was created by writer Raman Kumar and director Rajiv Rai, and debuted in the TV series Nagin (aired in 1986). Nagina has been adapted to various other media, which includes films, music albums, and comics.",
+        "decision_for_entity_verification": "Rejected",
+        "reason_for_entity_verification": "The target entity 'Nagina' does not accurately correspond to the reference entity 'Superman' in the context of India. While both are superheroes, they differ significantly in their origin, powers, and the medium they appear in. Superman is a character from American comic books published by DC Comics, while Nagina is a character from an Indian television series. Furthermore, Superman has been adapted to various media types such as films, television shows, video games, and radio serials, whereas Nagina has been primarily adapted to Indian films, music albums, and comics.",
+        "questions": [
+            "In what media formats has Nagina been adapted in India, apart from television shows?",
+            "In which year did Nagina debut in the Indian TV series Nagin?",
+            "Which Indian writer and director are credited with creating the Nagina character?",
+            "Which country is known for producing the superhero character Nagina for television shows?",
+            "Who is the creator of the superhero character Nagina that appears in Indian television shows?"
+        ]
+    },
+    {
+        "claim_id": 32,
+        "claim_ref": "Starbucks Corporation is an American multinational chain of coffeehouses and roastery reserves headquartered in Seattle, Washington. It was founded in 1971, and is currently the world's largest coffeehouse chain.\n  As of November 2022, the company had 35,711 stores in 80 countries, 15,873 of which were located in the United States. Of Starbucks' U.S.-based stores, over 8,900 are company-operated, while the remainder are licensed.",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "Caf\u00e9 Coffee Day (CCD) is an Indian multinational chain of coffeehouses headquartered in Bengaluru, Karnataka. It was founded in 1996, and as of November 2022, it had over 2,000 stores in 240 cities across India, making it the largest coffee chain in the country.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Starbucks Corporation' corresponding to target location 'India' is 'Caf\u00e9 Coffee Day (CCD)' under the category 'Coffeehouse chain'. The choice of target entity is reasonable because (a) Both Starbucks and CCD are multinational chains of coffeehouses with significant presence in their respective countries, (b) As of November 2022, both companies have a substantial number of stores in their respective markets, with Starbucks operating 15,873 stores worldwide, while CCD has over 2,000 stores across India, (c) Both companies have a mix of company-operated and licensed stores, with Starbucks having over 8,900 company-operated stores",
+        "claim_target_correct": "Caf\u00e9 Coffee Day (CCD) is an Indian multinational chain of coffeehouses headquartered in Bengaluru, Karnataka. It was founded in 1996, and as of November 2022, it had over 2,000 stores in 240 cities across India, making it the largest coffee chain in the country.",
+        "decision_for_entity_verification": "Accepted",
+        "reason_for_entity_verification": "Both Starbucks Corporation and Caf\u00e9 Coffee Day (CCD) are multinational chains of coffeehouses with significant presence in their respective countries. They were both founded around the same time (Starbucks in 1971 and CCD in 1996) and have grown to become leading coffeehouse chains in their respective markets (Starbucks being the largest globally, and CCD being the largest in India).",
+        "questions": [
+            "As of November 2022, how many stores did Caf\u00e9 Coffee Day (CCD) have in India?",
+            "In how many cities across India did Caf\u00e9 Coffee Day (CCD) have its presence as of November 2022?",
+            "What is the name of the Indian multinational chain of coffeehouses, headquartered in Bengaluru, Karnataka, that was founded in 1996?",
+            "What position does Caf\u00e9 Coffee Day (CCD) hold in terms of coffeehouse chains in India in terms of number of stores?",
+            "Which Indian city is the headquarters of Caf\u00e9 Coffee Day (CCD) located in?"
+        ]
+    },
+    {
+        "claim_id": 33,
+        "claim_ref": "State Farm Insurance is a group of mutual insurance companies throughout the United States with corporate headquarters in Bloomington, Illinois. Founded in 1922, it is the largest property, casualty, and auto insurance provider in the United States.",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "Life Insurance Corporation of India (LIC) is a state-owned insurance group and the largest financial institution in India, with its corporate office located in Mumbai, Maharashtra. Founded in 1956, LIC provides various insurance products, including life, health, and general insurance, making it the largest insurer in India.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'State Farm Insurance' corresponding to target location 'India' is 'Life Insurance Corporation of India (LIC)' under the category 'Insurance'. The choice of target entity is reasonable because (a) Both entities are the largest providers of insurance services in their respective countries, (b) State Farm Insurance is a mutual insurance company, and LIC, being state-owned, also operates as a public sector enterprise, allowing for a comparison between two large and prominent insurance providers with similar operating structures but distinct cultural contexts.",
+        "claim_target_correct": "Life Insurance Corporation of India (LIC) is a state-owned insurance group and the largest financial institution in India, with its corporate office located in Mumbai, Maharashtra. Founded in 1956, LIC provides various insurance products, including life, health, and general insurance, making it the largest insurer in India.",
+        "decision_for_entity_verification": "Accepted",
+        "reason_for_entity_verification": "Both State Farm Insurance and Life Insurance Corporation of India (LIC) are large financial institutions that serve as the largest property, casualty, and auto insurance providers in their respective countries, making LIC an accurate target entity in the context of India.",
+        "questions": [
+            "In which year was Life Insurance Corporation of India (LIC) founded in Mumbai, Maharashtra?",
+            "What are some of the insurance products offered by Life Insurance Corporation of India (LIC) in India?",
+            "What type of institution is Life Insurance Corporation of India (LIC), and what is its significance in India's financial landscape?",
+            "Where is the corporate office of Life Insurance Corporation of India (LIC) located in India?",
+            "Which state-owned insurance group is considered the largest financial institution in India?"
+        ]
+    },
+    {
+        "claim_id": 34,
+        "claim_ref": "Robinhood Markets, Inc. is an American financial services company headquartered in Menlo Park, California. It operates an electronic trading platform that facilitates commission-free trades of stocks, exchange-traded funds and cryptocurrencies as well as individual retirement accounts via a mobile app introduced in March 2015.",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "Zerodha is an Indian financial services company headquartered in Bengaluru, Karnataka. It operates a discount brokerage platform that facilitates commission-free trades of stocks, exchange-traded funds, currencies, and commodities via its mobile app, Kite, introduced in 2015.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Robinhood Markets, Inc.' corresponding to target location 'India' is 'Zerodha' under the category 'Financial services'. The choice of target entity is reasonable because (a) Both companies operate electronic trading platforms with a focus on commission-free trades, appealing to cost-conscious retail investors, (b) Both Zerodha and Robinhood have experienced significant growth in their respective markets, disrupting traditional financial services with their innovative business models, and (c) Zerodha's headquarters in Bengaluru, Karnataka aligns with the requirement for a target entity in India, making it a fitting comparison in the context of the Indian market.",
+        "claim_target_correct": "Zerodha is an Indian financial services company headquartered in Bengaluru, Karnataka. It operates a discount brokerage platform that facilitates commission-free trades of stocks, exchange-traded funds, currencies, and commodities via its mobile app, Kite, introduced in 2015.",
+        "decision_for_entity_verification": "Accepted",
+        "reason_for_entity_verification": "Both Robinhood Markets, Inc. and Zerodha are financial services companies that operate electronic trading platforms facilitating commission-free trades of various financial instruments, including stocks, ETFs, and cryptocurrencies (Robinhood) or currencies and commodities (Zerodha) via their mobile apps. Both companies have disrupted traditional brokerage models by eliminating trading fees, thereby increasing accessibility for retail investors.",
+        "questions": [
+            "In which year did Zerodha introduce its mobile app, Kite, for commission-free trading in India?",
+            "What is the name of the Indian financial services company that operates a discount brokerage platform, with its headquarters in Bengaluru, Karnataka?",
+            "What kind of financial services company is Zerodha, headquartered in Bengaluru, Karnataka, India?",
+            "Which mobile app does Zerodha use to facilitate commission-free trades of stocks, exchange-traded funds, currencies, and commodities in India?",
+            "Which types of financial assets can be traded commission-free via Zerodha's Kite app in India?"
+        ]
+    },
+    {
+        "claim_id": 35,
+        "claim_ref": "Olay or Olaz, previously Oil of Olay, Oil of Olaz, Oil of Ulan or Oil of Ulay, is an American skin care brand owned by Procter &amp; Gamble. For the 2009 fiscal year, which ended on June 30, Olay accounted for an estimated $2.8 billion of P&amp;G's revenue.",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "Biotique, an Indian skin care brand, is owned by the Bio Veda Action Group. With its wide range of products, Biotique has gained significant popularity in the Indian market and has been estimated to generate annual revenues of around INR 15 billion (equivalent to approximately $2 billion USD), contributing significantly to the country's beauty and personal care industry.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Olay or Olaz' corresponding to target location 'India' is 'Biotique' under the category 'Skin care brand'. The choice of target entity is reasonable because (a) Both Olay and Biotique are prominent skin care brands with substantial market shares in their respective regions, (b) Both brands have experienced considerable growth and revenue generation, with Olay accounting for $2.8 billion in P&G's revenue and Biotique contributing around INR 15 billion (equivalent to approximately $2 billion USD) to India's beauty and personal care industry, establishing their significance as key players in their respective markets.",
+        "claim_target_correct": "Biotique, an Indian skin care brand, is owned by the Bio Veda Action Group. With its wide range of products, Biotique has gained significant popularity in the Indian market and has been estimated to generate annual revenues of around INR 15 billion (equivalent to approximately $2 billion USD), contributing significantly to the country's beauty and personal care industry.",
+        "decision_for_entity_verification": "Accepted",
+        "reason_for_entity_verification": "Both Olay/Olaz and Biotique are skin care brands that have gained significant popularity and contribute significantly to their respective markets, generating substantial revenues.",
+        "questions": [
+            "How much revenue, in INR, does Biotique generate annually, contributing significantly to India's beauty and personal care industry?",
+            "In which sector does Biotique, the Indian brand with an estimated annual revenue of INR 15 billion, contribute significantly?",
+            "What is the name of the Indian skin care brand that has gained significant popularity in the country's market?",
+            "Which Indian skin care brand is owned by the Bio Veda Action Group and has an estimated annual revenue of INR 15 billion?",
+            "Which group owns Biotique, the Indian skin care brand estimated to generate annual revenues of around INR 15 billion?"
+        ]
+    },
+    {
+        "claim_id": 36,
+        "claim_ref": "The som, sum, or soum is a unit of currency used in Turkic-speaking countries in Central Asia. Its name comes from words in the respective languages for \"pure\", referring to historical coins of pure gold.",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "The rupee is the official currency of India, used throughout the country for all financial transactions. Its name comes from the Sanskrit word \" r\u016bpa\" meaning \"shaped\" or \"stamped\", indicating its use as a currency with a standardized value.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'som, sum, or soum' corresponding to target location 'India' is 'rupee' under the category 'Currency'. The choice of target entity is reasonable because (a) Both the som/sum/soum and the rupee are units of currency used in their respective regions, serving as a medium of exchange for goods and services, (b) Both currency names have historical significance, with the som/sum/soum deriving from words for pure gold, while the rupee's name originates from a Sanskrit word indicating its use as a stamped or standardized currency, reflecting their cultural importance in their respective regions.",
+        "claim_target_correct": "The rupee is the official currency of India, used throughout the country for all financial transactions. Its name comes from the Sanskrit word \"r\u016bpa\" meaning \"shaped\" or \"stamped\", indicating its use as a currency with a standardized value.",
+        "decision_for_entity_verification": "Accepted",
+        "reason_for_entity_verification": "The som, sum, or soum and the rupee are both units of currency used in their respective regions, Central Asia and India. Both names have historical etymologies related to their purity and standardized value.",
+        "questions": [
+            "From which language does the term \"rupee\" originate, and what does it signify in relation to its use as a currency in India?",
+            "In what form is the rupee used for financial transactions throughout India?",
+            "What is the name of the official currency used in India for all financial transactions?",
+            "What is the significance of the rupee as the standardized currency in India?"
+        ]
+    },
+    {
+        "claim_id": 37,
+        "claim_ref": "Steven Spielberg is an American director, writer, and producer. He is considered one of the founding pioneers of the New Hollywood era, as well as one of the most popular directors and producers in film history. He is also one of the co-founders of Amblin Entertainment, DreamWorks Pictures, and DreamWorks Animation.",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "Sanjay Leela Bhansali is an Indian director, producer, and writer, known for his work in Bollywood cinema based in Mumbai, India. He is celebrated as one of the leading filmmakers in the Indian film industry, known for his visually stunning films, grand set designs, and captivating storytelling. Bhansali also founded his own production company, Bhansali Productions, which has produced many of his most notable works.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Steven Spielberg' corresponding to target location 'India' is 'Sanjay Leela Bhansali' under the category 'Director, Producer, Writer'. The choice of target entity is reasonable because (a) Both directors are celebrated as pioneers in their respective film industries, Spielberg being one of the founding pioneers of the New Hollywood era, while Bhansali has significantly contributed to the evolution of Bollywood cinema, (b) Both directors are known for their strong visual styles, with Spielberg excelling in creating iconic visuals in films like Jaws, Jurassic Park, and Schindler's List, and Bhansali being celebrated for his visually",
+        "claim_target_correct": "Sanjay Leela Bhansali is an Indian director, producer, and writer, known for his work in Bollywood cinema based in Mumbai, India. He is celebrated as one of the leading filmmakers in the Indian film industry, known for his visually stunning films, grand set designs, and captivating storytelling. Bhansali also founded his own production company, Bhansali Productions, which has produced many of his most notable works.",
+        "decision_for_entity_verification": "Accepted",
+        "reason_for_entity_verification": "Both Steven Spielberg and Sanjay Leela Bhansali are renowned directors, writers, and producers in their respective cinematic landscapes - American and Indian. They are both considered as pioneers and leading figures in their fields, having co-founded successful production companies that have produced many notable works.",
+        "questions": [
+            "In which Indian city is Sanjay Leela Bhansali's production company, Bhansali Productions, based?",
+            "In which country does Sanjay Leela Bhansali, a renowned director and producer, create visually stunning films for Bollywood cinema?",
+            "What is the name of the leading filmmaker in the Indian film industry, based in Mumbai, India, who is known for his captivating storytelling?",
+            "Which production company was founded by Sanjay Leela Bhansali, who is known for his grand set designs in Indian cinema?",
+            "Who is the Indian director and producer known for his visually stunning films in Bollywood cinema based in Mumbai, India?"
+        ]
+    },
+    {
+        "claim_id": 38,
+        "claim_ref": "Poshmark is a social commerce marketplace where users can buy and sell new and secondhand fashion, home goods, and electronics. The platform has over 80 million users, with over 200M available listings. The company is headquartered in Redwood City, California, with offices in Canada, Australia, and India. The company operates as an independent subsidiary of Naver Corporation since January 2023.",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "Melorra is an online fashion jewelry marketplace based in Bengaluru, India, offering a wide range of gold and diamond jewelry for women. With over 4,000 designs, Melorra caters to the fashion needs of modern women, enabling them to buy designer jewelry at affordable prices. The company has experienced significant growth, with a user base of over 1 million and plans for expansion in international markets. Melorra operates as an independent subsidiary of NSE listed W Sudhakar Group since its inception in 2016.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Poshmark' corresponding to target location 'India' is 'Melorra' under the category 'E-commerce'. The choice of target entity is reasonable because (a) Both platforms operate as social commerce marketplaces, connecting users for buying and selling, though in different product categories, (b) Both companies are headquartered in their respective regions, Poshmark in Redwood City, California, and Melorra in Bengaluru, India, contributing to their regions' reputations as hubs for technology and innovation, (c) Both companies have achieved significant growth, expanding",
+        "claim_target_correct": "Melorra is an online fashion jewelry marketplace based in Bengaluru, India, offering a wide range of gold and diamond jewelry for women. With over 4,000 designs, Melorra caters to the fashion needs of modern women, enabling them to buy designer jewelry at affordable prices. The company has experienced significant growth, with a user base of over 1 million and plans for expansion in international markets. Melorra operates as an independent subsidiary of NSE listed W Sudhakar Group since its inception in 2016.",
+        "decision_for_entity_verification": "Accepted",
+        "reason_for_entity_verification": "Both Poshmark and Melorra are social commerce platforms that operate in similar ways, providing users the ability to buy and sell products online, albeit in different categories (fashion, home goods, electronics for Poshmark vs fashion jewelry for Melorra). Both companies are also headquartered in their respective countries, with Poshmark operating in multiple countries including India as an independent subsidiary, while Melorra is based solely in India and also operates as an independent subsidiary.",
+        "questions": [
+            "How has Melorra's growth been in terms of user base since its inception in 2016?",
+            "How many jewelry designs does Melorra offer for women on its platform?",
+            "In which Indian city is Melorra's headquarters located?",
+            "What is Melorra's position in the Indian jewelry market in terms of user base?",
+            "What type of jewelry does Melorra primarily deal with in its online marketplace?",
+            "What type of marketplace is Melorra, based in Bengaluru, India, that specializes in?",
+            "Where does Melorra plan to expand its operations beyond India?",
+            "Which company is Melorra's parent organization, and when was it listed on the NSE in India?",
+            "Who are Melorra's target customers in India?"
+        ]
+    },
+    {
+        "claim_id": 39,
+        "claim_ref": "The University of Miami (UM, UMiami, Miami, U of M, and The U) is a private research university in Coral Gables, Florida. As of 2022, the university enrolled 19,402 students in 12 colleges and schools across nearly 350 academic majors and programs.",
+        "location": "Tiruchirappali",
+        "model": "mixtral8x7b",
+        "claim_target": "The National Institute of Technology, Tiruchirappalli (NITT) is a public engineering institution of national importance located in Tiruchirappalli, Tamil Nadu, India. It offers undergraduate and postgraduate programs in various engineering, science, and humanities disciplines to approximately 6,000 students across its 16 academic departments.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'University of Miami' corresponding to target location 'Tiruchirappalli' is 'National Institute of Technology, Tiruchirappalli' under the category 'Higher Education'. The choice of target entity is reasonable because (a) Both institutions are well-known for their educational offerings, with the University of Miami being a private research university in Florida, while NITT is a public engineering institution in Tiruchirappalli, (b) Both institutions enroll thousands of students across various disciplines, providing them with quality education and opportunities for academic growth, making them significant contributors to their respective regions' educational landscape.",
+        "claim_target_correct": "The National Institute of Technology, Tiruchirappalli (NITT) is a public engineering institution of national importance located in Tiruchirappalli, Tamil Nadu, India. It offers undergraduate and postgraduate programs in various engineering, science, and humanities disciplines to approximately 6,000 students across its 16 academic departments.",
+        "decision_for_entity_verification": "Accepted",
+        "reason_for_entity_verification": "Both entities are public engineering institutions of national importance that offer undergraduate and postgraduate programs in various disciplines. They both enroll thousands of students across their academic departments.",
+        "questions": [
+            "Approximately how many students does NITT in Tiruchirappalli accommodate across its 16 academic departments?",
+            "In which Indian state and city is the National Institute of Technology, Tiruchirappalli (NITT) situated?",
+            "What is the significance of NITT in Tiruchirappalli as an esteemed engineering institution in India?",
+            "What public engineering institution of national importance is located in Tiruchirappalli, Tamil Nadu, India?",
+            "Which educational institution in Tiruchirappalli offers undergraduate and postgraduate programs in various engineering, science, and humanities disciplines?"
+        ]
+    },
+    {
+        "claim_id": 40,
+        "claim_ref": "Johns Hopkins University is a private research university in Baltimore, Maryland. Founded in 1876, Johns Hopkins was the first U.S. university based on the European research institution model.",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "The Indian Institute of Science (IISc) is a public research university located in Bengaluru, India. Established in 1909, IISc was the first institution in India dedicated solely to research and higher education in science and engineering.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Johns Hopkins University' corresponding to target location 'India' is 'The Indian Institute of Science (IISc)' under the category 'Universities'. The choice of target entity is reasonable because (a) Both entities are prominent research universities, with Johns Hopkins being a private institution in the United States and IISc being a public institution in India, (b) Both institutions were pioneers in their respective countries, with Johns Hopkins being the first U.S. university based on the European research institution model and IISc being India's first institution dedicated solely to research and higher education in science and engineering.",
+        "claim_target_correct": "The Indian Institute of Science (IISc) is a public research university located in Bengaluru, India. Established in 1909, IISc was the first institution in India dedicated solely to research and higher education in science and engineering.",
+        "decision_for_entity_verification": "Accepted",
+        "reason_for_entity_verification": "Both Johns Hopkins University and IISc are prestigious research institutions established with a focus on fostering research and higher education in their respective countries. They share similarities in their roles as leading research universities, albeit in different regions and eras.",
+        "questions": [
+            "In which city is the Indian Institute of Science (IISc) located in India?",
+            "What are the fields of study at the Indian Institute of Science (IISc) in India?",
+            "What is the name of the public research university founded in 1909 in India, dedicated solely to research and higher education in science and engineering?",
+            "When was IISc established in India, making it the first institution dedicated to research and higher education in science and engineering?",
+            "Which country's education system does IISc contribute to as a public research university?"
+        ]
+    },
+    {
+        "claim_id": 41,
+        "claim_ref": "New York Fashion Week, held in February and September of each year, is a semi-annual series of events in Manhattan typically spanning seven to nine days when international fashion collections are shown to buyers, the press, and the general public.",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "Lakm\u00e9 Fashion Week, held biannually in Mumbai, India, is a series of events showcasing both national and international fashion collections to buyers, the press, and the general public.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'New York Fashion Week' corresponding to target location 'India' is 'Lakm\u00e9 Fashion Week' under the category 'Fashion'. The choice of target entity is reasonable because (a) Both are renowned fashion events held biannually, contributing significantly to their respective country's fashion industry, (b) Both events attract international attention, facilitating networking, collaboration, and showcasing new fashion trends, making them influential platforms in the global fashion scene.",
+        "claim_target_correct": "Lakm\u00e9 Fashion Week, held biannually in Mumbai, India, is a series of events showcasing both national and international fashion collections to buyers, the press, and the general public.",
+        "decision_for_entity_verification": "Accepted",
+        "reason_for_entity_verification": "Both New York Fashion Week and Lakm\u00e9 Fashion Week are prestigious events in their respective fashion industries, showcasing international and national collections to buyers, the press, and the general public. They share similar purposes, though Lakm\u00e9 Fashion Week is specific to India and takes place in Mumbai, showcasing Indian fashion while also welcoming international designers.",
+        "questions": [
+            "How often is Lakm\u00e9 Fashion Week, an event showcasing fashion collections in India, held in Mumbai?",
+            "What type of event is Lakm\u00e9 Fashion Week in Mumbai, India?",
+            "Where in India is Lakm\u00e9 Fashion Week held biannually?",
+            "Which country's national and international fashion collections are presented at Lakm\u00e9 Fashion Week?",
+            "Who are the intended audiences of Lakm\u00e9 Fashion Week in Mumbai, India?"
+        ]
+    },
+    {
+        "claim_id": 42,
+        "claim_ref": "Miss USA is an American beauty pageant that has been held annually since 1952 to select the entrant from United States in the Miss Universe pageant.",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "Miss Diva is an Indian beauty pageant established in 2013 to select India's representative in the Miss Universe pageant.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Miss USA' corresponding to target location 'India' is 'Miss Diva' under the category 'Beauty Pageants'. The choice of target entity is reasonable because (a) Both pageants serve as national contests to select representatives for the international Miss Universe competition, (b) Both Miss USA and Miss Diva are annual events focused on showcasing talent, beauty, and personality of contestants, and (c) Establishing this connection allows for a parallel understanding of beauty pageants in different cultural contexts.",
+        "claim_target_correct": "Miss Diva is an Indian beauty pageant established in 2013 to select India's representative in the Miss Universe pageant.",
+        "decision_for_entity_verification": "Accepted",
+        "reason_for_entity_verification": "Both pageants serve similar purposes of selecting their respective country's representative for the Miss Universe pageant, and both are established and held annually for that purpose.",
+        "questions": [
+            "What is the name of the Indian beauty pageant founded in 2013 to select India's representative for Miss Universe?",
+            "What is the significance of Miss Diva in promoting India's presence in international beauty pageants?",
+            "When was Miss Diva established in India?",
+            "Which international beauty pageant does Miss Diva aim to select a representative for India?",
+            "Which organization is responsible for managing and conducting Miss Diva in India?"
+        ]
+    },
+    {
+        "claim_id": 43,
+        "claim_ref": "The Dakar Biennale, or Dak'Art - Biennale de l'Art Africain Contemporain, is a major contemporary art exhibition that takes place once every two years in Dakar, Senegal. Dak'Art's focus has been on Contemporary African Art since 1996.",
+        "location": "Mumbai",
+        "model": "mixtral8x7b",
+        "claim_target": "The Kala Ghoda Arts Festival is an annual multi-art festival that takes place in Mumbai, India, showcasing various forms of visual and performing arts. The festival has been running since 1999, focusing on promoting local and national artists and their works in contemporary art.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Dakar Biennale' corresponding to target location 'Mumbai' is 'Kala Ghoda Arts Festival' under the category 'Art Exhibitions'. The choice of target entity is reasonable because (a) Both events are significant in their respective regions, with Dakar Biennale focusing on contemporary African art while Kala Ghoda Arts Festival showcases various forms of visual and performing arts, highlighting local and national talent, (b) Both events contribute to the cultural richness of their cities, promoting artistic expression, creativity, and dialogue between artists, audiences, and communities.",
+        "claim_target_correct": "The Kala Ghoda Arts Festival is an annual multi-art festival that takes place in Mumbai, India, showcasing various forms of visual and performing arts. The festival has been running since 1999, focusing on promoting local and national artists and their works in contemporary art.",
+        "decision_for_entity_verification": "Accepted",
+        "reason_for_entity_verification": "Both the Dakar Biennale and Kala Ghoda Arts Festival share similar characteristics such as being a major exhibition for contemporary art, promoting local and national artists, and having a specific focus (African Art for Dakar Biennale and various forms of visual and performing arts for Kala Ghoda Arts Festival). They occur annually, although the Dakar Biennale is every two years. However, the focus on contemporary art and promoting local/national artists aligns well between both entities.",
+        "questions": [
+            "Since when has the Kala Ghoda Arts Festival been showcasing various forms of visual and performing arts in Mumbai?",
+            "What is the primary focus of the Kala Ghoda Arts Festival in Mumbai, India?",
+            "What kind of event is the Kala Ghoda Arts Festival, which takes place annually in Mumbai, India?",
+            "Which artists does the Kala Ghoda Arts Festival in Mumbai aim to promote - local, national or international?",
+            "Which city in India hosts the Kala Ghoda Arts Festival, an annual multi-art festival?"
+        ]
+    },
+    {
+        "claim_id": 44,
+        "claim_ref": "Thai New Year or Songkran is the Thai New Year's national holiday. Songkran is on 13 April every year, but the holiday period extends from 14 to 15 April.",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "Vaisakhi is the Indian New Year's national holiday celebrated in various parts of India, particularly in Punjab. Vaisakhi takes place on 13 or 14 April every year, depending on the lunisolar calendar, and marks the beginning of the new year in the Sikh community.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Thai New Year or Songkran' corresponding to target location 'India' is 'Vaisakhi' under the category 'Festivals'. The choice of target entity is reasonable because (a) Both Vaisakhi and Songkran are important new year celebrations in their respective cultures, (b) Both festivals take place around the same time of the year, contributing to a parallelism between the two events, (c) By associating Vaisakhi with Punjab, where it is widely celebrated, the target sentence acknowledges the cultural diversity of India, thus enhancing its relevance to the given target location.",
+        "claim_target_correct": "Vaisakhi is the Indian New Year's national holiday celebrated in various parts of India, particularly in Punjab. Vaisakhi takes place on 13 or 14 April every year, depending on the lunisolar calendar, and marks the beginning of the new year in the Sikh community.",
+        "decision_for_entity_verification": "Accepted",
+        "reason_for_entity_verification": "Both Thai New Year (Songkran) and Vaisakhi are significant new year celebrations in their respective cultures, Thai and Sikh, and they both take place around the same time of the year. Vaisakhi also holds national holiday status in India, similar to how Songkran is celebrated in Thailand.",
+        "questions": [
+            "In which month does Vaisakhi, the Indian New Year's national holiday, fall?",
+            "What is the name of the Indian national holiday celebrated in various parts of India, particularly in Punjab, that marks the beginning of the new year in the Sikh community?",
+            "What is the significance of Vaisakhi in Punjab, India?",
+            "When does the Indian New Year's national holiday, Vaisakhi, take place annually?",
+            "Which Indian community does Vaisakhi mark the beginning of the new year for?"
+        ]
+    },
+    {
+        "claim_id": 45,
+        "claim_ref": "The Super Bowl is the annual league championship game of the National Football League of the United States. It has served as the final game of every NFL season since 1966, replacing the NFL Championship Game.",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "The Indian Premier League (IPL) Final is the annual championship match of the Indian Premier League, India's premier Twenty20 cricket league. It has served as the culmination of every IPL season since its inception in 2008.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Super Bowl' corresponding to target location 'India' is 'The Indian Premier League (IPL) Final' under the category 'Sports'. The choice of target entity is reasonable because (a) Both are annual championship events, marking the conclusion of their respective sports leagues, (b) Both events have gained immense popularity, attracting millions of viewers and becoming cultural phenomena in their respective countries, (c) Cricket is the most popular sport in India, making IPL Final a fitting equivalent for Super Bowl in the Indian context, as it showcases the best of Indian cricket talent competing for the ultimate prize in domestic cricket.",
+        "claim_target_correct": "The Indian Premier League (IPL) Final is the annual championship match of the Indian Premier League, India's premier Twenty20 cricket league. It has served as the culmination of every IPL season since its inception in 2008.",
+        "decision_for_entity_verification": "Accepted",
+        "reason_for_entity_verification": "Both the Super Bowl and the IPL Final are annual championship events in their respective sports leagues (American football and cricket) and mark the finale of each season. They both attract significant attention, viewership, and cultural relevance within their respective countries and regions.",
+        "questions": [
+            "In which country is the Indian Premier League Final held annually?",
+            "Since when has the Indian Premier League Final been held in India every year?",
+            "What format of cricket does the Indian Premier League Final follow?",
+            "What is the name of the annual championship match of the Indian Premier League, which has taken place in India since 2008?",
+            "Which cricket league does the Indian Premier League Final serve as the culmination for in India?"
+        ]
+    },
+    {
+        "claim_id": 46,
+        "claim_ref": "The National Football League is a professional American football league that consists of 32 teams, divided equally between the American Football Conference and the National Football Conference.",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "The Indian Premier League (IPL) is a professional Twenty20 cricket league in India, featuring ten teams, representing various cities across the country.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'National Football League' corresponding to target location 'India' is 'Indian Premier League (IPL)' under the category 'Sports League'. The choice of target entity is reasonable because (a) Both leagues are professional sports leagues with multiple teams representing different regions, (b) While NFL is based in America and features American football, IPL is based in India and features cricket, which is the most popular sport in India, thus providing a similar context in terms of cultural significance and popularity in their respective countries.",
+        "claim_target_correct": "The Indian Premier League (IPL) is a professional Twenty20 cricket league in India, featuring eight teams, representing various cities across the country.",
+        "decision_for_entity_verification": "Accepted",
+        "reason_for_entity_verification": "Both the National Football League (NFL) and Indian Premier League (IPL) are professional sports leagues in their respective countries, featuring multiple teams representing different regions. They share similarities in structure and organization, despite differences in sport and cultural context.",
+        "questions": [
+            "How many teams participate in the Indian Premier League (IPL) representing various cities across India?",
+            "In India, which league represents various cities with eight teams playing the Twenty20 format?",
+            "What is the name of the professional cricket league in India that features eight teams from various cities?",
+            "What type of cricket league is the Indian Premier League (IPL) based in India?",
+            "Which professional cricket league in India features the Twenty20 format?"
+        ]
+    },
+    {
+        "claim_id": 47,
+        "claim_ref": "Mardi Gras refers to events of the Carnival celebration, beginning on or after the Christian feasts of the Epiphany and culminating on the day before Ash Wednesday, which is known as Shrove Tuesday.",
+        "location": "Tamil Nadu",
+        "model": "mixtral8x7b",
+        "claim_target": "Pongal is a four-day harvest festival celebrated in Tamil Nadu, India, dedicated to the Sun God and held during the Tamil month of Thai (mid-January to mid-February).",
+        "reason_for_target_sent": "The equivalent target entity of the reference event 'Mardi Gras' corresponding to target location 'Tamil Nadu' is 'Pongal' under the category 'Festivals'. The choice of target entity is reasonable because (a) Both Mardi Gras and Pongal are celebrations with deep cultural significance, marking important periods in their respective religious calendars - Mardi Gras being the precursor to Lent in Christianity, while Pongal honors the harvest season in Tamil tradition, (b) Both festivals involve communal gatherings, feasting, and unique traditions, such as parades during Mardi Gras and cooking rice in earthen pots during Pongal, which highlight their importance as social occasions and community bonding experiences.",
+        "claim_target_correct": "Pongal is a four-day harvest festival celebrated in Tamil Nadu, India, dedicated to the Sun God and held during the Tamil month of Thai (mid-January to mid-February).",
+        "decision_for_entity_verification": "Accepted",
+        "reason_for_entity_verification": "Both Mardi Gras and Pongal are festive celebrations that mark important events in their respective cultures. Mardi Gras is a Christian celebration that concludes the Christmas-Epiphany season and Pongal is a harvest festival dedicated to the Sun God. They both occur during specific periods and have cultural significance for their regions.",
+        "questions": [
+            "During which Tamil month does the Pongal festival take place in Tamil Nadu?",
+            "In which Indian state is the four-day harvest festival of Pongal celebrated?",
+            "What is the significance of Pongal in Tamil Nadu's cultural and agricultural calendar?",
+            "Which Hindu god is honored during the Pongal festival in Tamil Nadu?",
+            "Who is the Pongal festival dedicated to in Tamil Nadu?"
+        ]
+    },
+    {
+        "claim_id": 48,
+        "claim_ref": "Mardi Gras refers to events of the Carnival celebration, beginning on or after the Christian feasts of the Epiphany and culminating on the day before Ash Wednesday, which is known as Shrove Tuesday.",
+        "location": "Kerala",
+        "model": "mixtral8x7b",
+        "claim_target": "Thiruvathira refers to a festive event in the traditional Malayali culture of Kerala, celebrated on the day of the brightest star, Mrigasira, in the Dhanu rasi (Capricorn) constellation, which usually falls in mid-December or January, marking the beginning of the festive season.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Mardi Gras' corresponding to target location 'Kerala' is 'Thiruvathira' under the category 'Cultural festivals'. The choice of target entity is reasonable because (a) Both Mardi Gras and Thiruvathira are traditional celebrations that mark the beginning of festive seasons, (b) Both festivals have deep cultural significance within their respective communities, (c) Thiruvathira, like Mardi Gras, is celebrated with specific rituals, music, and dance, which adds to its cultural richness and appeal, making it a suitable equivalent in the Kerala context.",
+        "claim_target_correct": "Thiruvathira refers to a festive event in the traditional Malayali culture of Kerala, celebrated on the day of the brightest star, Mrigasira, in the Dhanu rasi (Capricorn) constellation, which usually falls in mid-December or January, marking the beginning of the festive season.",
+        "decision_for_entity_verification": "Accepted",
+        "reason_for_entity_verification": "Both Mardi Gras and Thiruvathira are cultural and religious events that mark the beginning of a festive season in their respective regions, hence they share parallel cultural significance which justifies the choice.",
+        "questions": [
+            "Can you name the festive event in Kerala's traditional Malayali culture that is celebrated on Mrigasira star's brightest day in Dhanu rasi constellation?",
+            "What marks the beginning of the festive season in Kerala according to the traditional Malayali culture?",
+            "When does the Thiruvathira festive event take place in the traditional Malayali culture of Kerala?",
+            "Which month in mid-December or January does Thiruvathira usually occur in Kerala's traditional Malayali culture?",
+            "Which star and constellation is Thiruvathira celebrated on in the Malayali culture of Kerala?"
+        ]
+    },
+    {
+        "claim_id": 49,
+        "claim_ref": "The New Year is the time or day at which a new calendar year begins and the calendar's year count increments by one. Many cultures celebrate the event in some manner.",
+        "location": "Andhra Pradesh",
+        "model": "mixtral8x7b",
+        "claim_target": "Ugadi is the New Year festival celebrated by the people of Andhra Pradesh, India, marking the beginning of a new Hindu lunisolar calendar year. It is observed with cultural festivities, special meals, and the exchange of well wishes.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'The New Year' corresponding to target location 'Andhra Pradesh' is 'Ugadi' under the category 'Festivals'. The choice of target entity is reasonable because (a) Ugadi, like the New Year, is a celebration of the start of a new calendar year, providing a cultural parallel between the two, (b) Both Ugadi and the New Year are occasions for joy, renewal, and community gatherings, highlighting their shared importance as cultural touchstones in their respective communities.",
+        "claim_target_correct": "Ugadi is the New Year festival celebrated by the people of Andhra Pradesh, India, marking the beginning of a new Hindu lunisolar calendar year. It is observed with cultural festivities, special meals, and the exchange of well wishes.",
+        "decision_for_entity_verification": "Accepted",
+        "reason_for_entity_verification": "Both the New Year and Ugadi signify the beginning of a new calendar year, albeit from different cultural and religious perspectives. Ugadi, specifically, is celebrated by the people of Andhra Pradesh, India, marking the start of a new Hindu lunisolar calendar year. The New Year concept shares similarities cross-culturally as a time to celebrate and welcome new beginnings, making Ugadi an appropriate equivalent target entity for 'The New Year' in Andhra Pradesh.",
+        "questions": [
+            "How do people of Andhra Pradesh observe Ugadi, the New Year festival?",
+            "What cultural festivities, special meals, and well wishes are exchanged during Ugadi in Andhra Pradesh?",
+            "What is the name of the New Year festival celebrated by the people of Andhra Pradesh, India?",
+            "What significance does Ugadi have in Andhra Pradesh as it marks the beginning of a new Hindu lunisolar calendar year?",
+            "Which Indian state celebrates Ugadi as their New Year festival, marking the beginning of a new Hindu lunisolar calendar year?"
+        ]
+    }
+]

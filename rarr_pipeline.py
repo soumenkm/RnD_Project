@@ -249,9 +249,15 @@ def write_evidences_json(
         print(f"Claim: {claim_id}, Question is taken from file")
     
         t1 = time.time()
-        output_list.append(get_evidence(claim_id, claim, location, questions,
-                                        max_passages_per_search_result_to_score,
-                                        ranking_model)[-1])
+        try:
+            res = get_evidence(claim_id, claim, location, questions,
+                                max_passages_per_search_result_to_score,
+                                ranking_model)[-1]
+        except Exception as e:
+            print(e)
+            res = e
+        
+        output_list.append(res)
         t2 = time.time()
         print(f"Claim: {claim_id}, Evidence module is run in {(t2-t1)/60:.2f} mint")
 
@@ -460,10 +466,10 @@ if __name__ == "__main__":
         "location": eval_data_df.loc[i, "Target Location"]}}
         data.append(elem_dict)
     
-    write_questions_json(data[0:4], is_verify=True)
+    # write_questions_json(data[0:50], is_verify=True)
     write_evidences_json(max_passages_per_search_result_to_score=-1,
                          ranking_model="cohere")
-    write_agreements_json()
-    write_edits_json(is_sequential_edit=False)
+    # write_agreements_json()
+    # write_edits_json(is_sequential_edit=False)
     
     # DONE
