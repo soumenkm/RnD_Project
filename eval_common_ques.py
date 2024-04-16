@@ -46,9 +46,9 @@ if __name__ == "__main__":
             continue
         
     # Read the results.json file
-    with open("/root/RnD_Project/outputs_0-10/results_final.json", 'r') as json_file:
+    with open("/root/RnD_Project/outputs/results.json", 'r') as json_file:
         res_data_1 = json.load(json_file)
-    with open("/root/RnD_Project/outputs_20-40/results_final.json", 'r') as json_file:
+    with open("/root/RnD_Project/outputs/results.json", 'r') as json_file:
         res_data_2 = json.load(json_file)
     
     res_data = res_data_1 + res_data_2

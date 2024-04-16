@@ -6,8 +6,26 @@
             "ques_0": "Can you give an instance when infrastructure failure led to people getting injured?",
             "ques_1": "Can you name an accident which occured due to infrastructure failure?"
         },
-        "target_claim_mixtral": "On April 23, 2018, a portion of the NH-707A highway near Chamoli district in Uttarakhand collapsed, causing a bus full of passengers to fall into a gorge, resulting in several fatalities and injuries.",
-        "target_claim_rarr": "On April 23, 2018, traffic was briefly suspended after stones slipped down the hill in Karnaprayag town in Chamoli district due to heavy rainfall. No bus fell into a gorge or any fatalities reported. But on February 7, 2021, a massive flash flood ravaged through the valleys of the Rishi Ganga, Dhauliganga and Alaknanda rivers in Uttarakhand, resulting in more than 70 deaths and another 134 people reported missing due to glacier collapse. The flood swept away the unfinished Tapovan Vishnugad Hydropower Project and inflicted substantial damage on the Rishi Ganga Hydropower Project.",
+        "target_claim_mixtral": "On April 29, 2018, a portion of the NH-74 highway near Rudrapur in Uttarakhand collapsed due to heavy rain, killing 2 people and injuring several others traveling in a bus that fell into the gorge as a result.",
+        "target_claim_rarr": "On April 29, 2018, a portion of the NH-74 highway near Rudrapur in Uttarakhand collapsed due to heavy rain, killing 2 people and injuring several others traveling in a bus that fell into the gorge as a result. This collapse occurred before the proposed construction of the Rudrapur bypass, which aimed to connect NH-74 at Radha Swami Satsang Bhawan in Shimla Pistaur on Kichha road to villages in Rampur district and further connect to the Pantnagar industrial area, reducing congestion in Rudrapur city.",
+        "mixtral": {
+            "ques_0": 1,
+            "ques_1": 1
+        },
+        "rarr": {
+            "ques_0": 1,
+            "ques_1": 1
+        }
+    },
+    {
+        "ref_claim": "On July 10, 2006, concrete ceiling panels and debris fell on a car traveling on the two-lane ramp connecting northbound I-93 to eastbound I-90 in South Boston, killing the passenger and injuring her husband, who was driving.",
+        "target_location": "Uttarakhand",
+        "common_ques": {
+            "ques_0": "Can you give an instance when infrastructure failure led to people getting injured?",
+            "ques_1": "Can you name an accident which occured due to infrastructure failure?"
+        },
+        "target_claim_mixtral": "On April 29, 2018, a portion of the NH-74 highway near Rudrapur in Uttarakhand collapsed due to heavy rain, killing 2 people and injuring several others traveling in a bus that fell into the gorge as a result.",
+        "target_claim_rarr": "On April 29, 2018, a portion of the NH-74 highway near Rudrapur in Uttarakhand collapsed due to heavy rain, killing 2 people and injuring several others traveling in a bus that fell into the gorge as a result. This collapse occurred before the proposed construction of the Rudrapur bypass, which aimed to connect NH-74 at Radha Swami Satsang Bhawan in Shimla Pistaur on Kichha road to villages in Rampur district and further connect to the Pantnagar industrial area, reducing congestion in Rudrapur city.",
         "mixtral": {
             "ques_0": 1,
             "ques_1": 1
@@ -24,8 +42,26 @@
             "ques_0": "Can you mention a train accident?",
             "ques_1": "Name an accident which occured due to train derailment?"
         },
-        "target_claim_mixtral": "A cargo train derailment took place on March 10, 2023, at 11:20 p.m. IST, when 27 wagons of a South Central Railways freight train carrying fertilizers derailed in Vijayawada, Andhra Pradesh, India.",
-        "target_claim_rarr": "A cargo train derailment took place on March 10, 2023, at 11:20 p.m. IST, when 27 wagons of a South Central Railways freight train carrying fertilizers derailed in Vizianagaram, Andhra Pradesh, India.",
+        "target_claim_mixtral": "A cargo train derailment took place on February 4, 2023, at 7:25 IST, when 27 wagons of a South Central Railway freight train carrying fertilizers derailed in Kothavalasa, Andhra Pradesh, India.",
+        "target_claim_rarr": "A cargo train derailment occurred on February 4, 2023, at 7:25 IST, when 27 wagons of a South Central Railway freight train carrying fertilizers derailed in Kothavalasa, Andhra Pradesh, India.",
+        "mixtral": {
+            "ques_0": 1,
+            "ques_1": 1
+        },
+        "rarr": {
+            "ques_0": 1,
+            "ques_1": 1
+        }
+    },
+    {
+        "ref_claim": "A train derailment occurred on February 3, 2023, at 8:55 p.m. EST, when 38 cars of a Norfolk Southern freight train carrying hazardous materials derailed in East Palestine, Ohio, United States.",
+        "target_location": "Andhra Pradesh",
+        "common_ques": {
+            "ques_0": "Can you mention a train accident?",
+            "ques_1": "Name an accident which occured due to train derailment?"
+        },
+        "target_claim_mixtral": "A cargo train derailment took place on February 4, 2023, at 7:25 IST, when 27 wagons of a South Central Railway freight train carrying fertilizers derailed in Kothavalasa, Andhra Pradesh, India.",
+        "target_claim_rarr": "A cargo train derailment occurred on February 4, 2023, at 7:25 IST, when 27 wagons of a South Central Railway freight train carrying fertilizers derailed in Kothavalasa, Andhra Pradesh, India.",
         "mixtral": {
             "ques_0": 1,
             "ques_1": 1
@@ -42,14 +78,32 @@
             "ques_0": "Can you name an actress who has received many Awards?",
             "ques_1": "Tell me about an individual who has been recognized as a high-earning actress."
         },
-        "target_claim_mixtral": "Priyanka Chopra is an Indian actress, producer, and philanthropist. She has won several accolades, including a National Film Award and five Filmfare Awards, and has been recognized as one of India's highest-paid actresses.",
-        "target_claim_rarr": "Priyanka Chopra is an Indian actress, producer, and philanthropist. She has won several accolades, including a National Film Award and five Filmfare Awards, and has been recognized as one of India's highest-paid actresses.",
+        "target_claim_mixtral": "Revathy is an Indian actress, filmmaker, and humanitarian, who has worked predominantly in the South Indian film industry. She has received numerous accolades, including six National Film Awards, for her versatile acting skills and contributions to cinema.",
+        "target_claim_rarr": "Revathy is an Indian actress, filmmaker, and humanitarian, who has received numerous accolades, including six National Film Awards, for her versatile acting skills and contributions to the South Indian film industry. She expressed her happiness for bagging her first Kerala Film State Award in the Best Actress category for her gripping performance in Bhoothakaalam after 40 years in the film industry.",
         "mixtral": {
             "ques_0": 0,
             "ques_1": 0
         },
         "rarr": {
+            "ques_0": 1,
+            "ques_1": 0
+        }
+    },
+    {
+        "ref_claim": "Angelina Jolie is an American actress, filmmaker and humanitarian. The recipient of numerous accolades, including an Academy Award and three Golden Globe Awards, she has been named Hollywood's highest-paid actress multiple times.",
+        "target_location": "Kerala",
+        "common_ques": {
+            "ques_0": "Can you name an actress who has received many Awards?",
+            "ques_1": "Tell me about an individual who has been recognized as a high-earning actress."
+        },
+        "target_claim_mixtral": "Revathy is an Indian actress, filmmaker, and humanitarian, who has worked predominantly in the South Indian film industry. She has received numerous accolades, including six National Film Awards, for her versatile acting skills and contributions to cinema.",
+        "target_claim_rarr": "Revathy is an Indian actress, filmmaker, and humanitarian, who has received numerous accolades, including six National Film Awards, for her versatile acting skills and contributions to the South Indian film industry. She expressed her happiness for bagging her first Kerala Film State Award in the Best Actress category for her gripping performance in Bhoothakaalam after 40 years in the film industry.",
+        "mixtral": {
             "ques_0": 0,
+            "ques_1": 0
+        },
+        "rarr": {
+            "ques_0": 1,
             "ques_1": 0
         }
     },
@@ -60,11 +114,47 @@
             "ques_0": "Can you give an example of an actor who professionally holds another title as well?",
             "ques_1": "Can you provide the name of an actor who is well-known in the entertainment industry by another name?"
         },
-        "target_claim_mixtral": "Siddique is a Malayalam film actor, known for his work in the Indian film industry based in Kerala, India.",
-        "target_claim_rarr": "Siddique Ismail (born March 25, 1954) was an Indian film director, producer, screenwriter and actor who predominantly worked in Malayalam cinema. He was born in Kochi, Kerala, India. Siddique made his directorial debut with the Malayalam film Ramji Rao Speaking (1989). His screenwriting debut came with the Malayalam film Pappan Priyappetta Pappan (1986).",
+        "target_claim_mixtral": "Priya Prakash Varrier is an Indian actress and model, known for her work in Malayalam cinema, based in Kerala, India.",
+        "target_claim_rarr": "Priya Prakash Varrier is an Indian actress and model, known for her work in Malayalam cinema, based in Kerala, India.",
         "mixtral": {
             "ques_0": 1,
+            "ques_1": 0
+        },
+        "rarr": {
+            "ques_0": 1,
+            "ques_1": 0
+        }
+    },
+    {
+        "ref_claim": "Dwayne Douglas Johnson, also known by his ring name the Rock, is an American actor and professional wrestler currently signed to WWE.",
+        "target_location": "Kerala",
+        "common_ques": {
+            "ques_0": "Can you give an example of an actor who professionally holds another title as well?",
+            "ques_1": "Can you provide the name of an actor who is well-known in the entertainment industry by another name?"
+        },
+        "target_claim_mixtral": "Priya Prakash Varrier is an Indian actress and model, known for her work in Malayalam cinema, based in Kerala, India.",
+        "target_claim_rarr": "Priya Prakash Varrier is an Indian actress and model, known for her work in Malayalam cinema, based in Kerala, India.",
+        "mixtral": {
+            "ques_0": 1,
+            "ques_1": 0
+        },
+        "rarr": {
+            "ques_0": 1,
             "ques_1": 1
+        }
+    },
+    {
+        "ref_claim": "Robert John Downey Jr. is an American actor. His career has been characterized by critical success in his youth, followed by a period of substance abuse and legal troubles, and a surge in popular and commercial success later in his career.",
+        "target_location": "West Bengal",
+        "common_ques": {
+            "ques_0": "Can you name an actor whose career has been characterized by critical success?",
+            "ques_1": "Can you name an actor who have worked in commercial films?"
+        },
+        "target_claim_mixtral": "Prosenjit Chatterjee is a renowned Indian actor, mostly active in Bengali cinema, based in West Bengal. He has experienced highs and lows in his career, with initial critical acclaim and popularity during his youth, followed by fluctuations in his career due to personal issues, before making a comeback with successful films later in his career.",
+        "target_claim_rarr": "Prosenjit Chatterjee, one of Bengali cinema's most celebrated stars, experienced highs and lows in his career, with initial critical acclaim and popularity during his youth, followed by fluctuations due to personal issues, before making a comeback with successful films later in his career, which included back-to-back OTT series 'Jubilee' and 'Scoop' released in 2023.",
+        "mixtral": {
+            "ques_0": 1,
+            "ques_1": 0
         },
         "rarr": {
             "ques_0": 1,
@@ -78,8 +168,8 @@
             "ques_0": "Can you name an actor whose career has been characterized by critical success?",
             "ques_1": "Can you name an actor who have worked in commercial films?"
         },
-        "target_claim_mixtral": "Prosenjit Chatterjee is a renowned Indian actor in the Bengali film industry, based in West Bengal, India. He has experienced critical acclaim in his youth, faced struggles with personal issues, and made a comeback with successful films later in his career.",
-        "target_claim_rarr": "Prosenjit Chatterjee is a well-known Indian actor based in Kolkata, West Bengal, India. He has gained critical acclaim in his youth, faced struggles with personal issues, and made a comeback with successful films later in his career. He predominantly works in Bengali cinema. He is the son of veteran Bollywood actor Biswajit Chatterjee.",
+        "target_claim_mixtral": "Prosenjit Chatterjee is a renowned Indian actor, mostly active in Bengali cinema, based in West Bengal. He has experienced highs and lows in his career, with initial critical acclaim and popularity during his youth, followed by fluctuations in his career due to personal issues, before making a comeback with successful films later in his career.",
+        "target_claim_rarr": "Prosenjit Chatterjee, one of Bengali cinema's most celebrated stars, experienced highs and lows in his career, with initial critical acclaim and popularity during his youth, followed by fluctuations due to personal issues, before making a comeback with successful films later in his career, which included back-to-back OTT series 'Jubilee' and 'Scoop' released in 2023.",
         "mixtral": {
             "ques_0": 1,
             "ques_1": 0
@@ -90,14 +180,14 @@
         }
     },
     {
-        "ref_claim": "Lupita Amondi Nyong'o is a Mexican-Kenyan actress. She is the recipient of several accolades, including an Academy Award and a Daytime Emmy Award with nominations for a Tony Award and a Golden Globe Award.",
+        "ref_claim": "Hidetoshi Nishijima is a Japanese actor model. He is widely regarded as one of Japan's leading actors, having appeared in a wide range of films from science fiction films such as Shin Ultraman to small-scale art films such as Dolls.",
         "target_location": "India",
         "common_ques": {
-            "ques_0": "Can you name an actress who is recipient of several accolades?",
-            "ques_1": "Can you name an actress?"
+            "ques_0": "Can you name an actor who is widely regarded as one of the country's leading actors?",
+            "ques_1": "Name an actor who has appeared in a wide range of films."
         },
-        "target_claim_mixtral": "Priyanka Chopra Jonas is an Indian actress who has received numerous accolades, including a National Film Award and five Filmfare Awards, as well as nominations for a People's Choice Award and a Primetime Emmy Award.",
-        "target_claim_rarr": "Priyanka Chopra Jonas is an Indian actress who has received numerous accolades, including a National Film Award for best actress for her performance in Fashion (2008) and five Filmfare Awards for best actress for different films. She has also been recognized internationally with nominations for prestigious awards like the People's Choice Award for Favorite Dramatic TV Actress in Quantico and International Emmy Directorate Award for executive producing Unbelievable series.",
+        "target_claim_mixtral": "Nawazuddin Siddiqui is an Indian actor who has established himself as one of the leading actors in both mainstream and independent cinema in India, known for his versatile performances in films like \"Gangs of Wasseypur\" and \"The Lunchbox.\"",
+        "target_claim_rarr": "Nawazuddin Siddiqui is an Indian actor who has established himself as one of the leading actors in both mainstream and independent cinema in India, known for his versatile performances.",
         "mixtral": {
             "ques_0": 1,
             "ques_1": 1
@@ -114,8 +204,8 @@
             "ques_0": "Can you name an actor who is widely regarded as one of the country's leading actors?",
             "ques_1": "Name an actor who has appeared in a wide range of films."
         },
-        "target_claim_mixtral": "Nawazuddin Siddiqui is an Indian actor who has established himself as one of the most versatile performers in the Indian film industry, appearing in a diverse range of films from commercial potboilers like Bajrangi Bhaijaan to independent art films such as The Lunchbox and Raman Raghav 2.0.",
-        "target_claim_rarr": "Nawazuddin Siddiqui is an Indian actor who has established himself as one of the most versatile performers in the Indian film industry, appearing in a diverse range of films from commercial potboilers like Bajrangi Bhaijaan to independent art films such as The Lunchbox and Raman Raghav 2.0.",
+        "target_claim_mixtral": "Nawazuddin Siddiqui is an Indian actor who has established himself as one of the leading actors in both mainstream and independent cinema in India, known for his versatile performances in films like \"Gangs of Wasseypur\" and \"The Lunchbox.\"",
+        "target_claim_rarr": "Nawazuddin Siddiqui is an Indian actor who has established himself as one of the leading actors in both mainstream and independent cinema in India, known for his versatile performances.",
         "mixtral": {
             "ques_0": 1,
             "ques_1": 1
@@ -132,15 +222,33 @@
             "ques_0": "Can you name an actor best known for the roles portrayed by them?",
             "ques_1": "Can you name an actor?"
         },
-        "target_claim_mixtral": "Prakash Raj is an Indian actor, known for his work in the Kannada film industry based in Karnataka, India. He is best known for his portrayal of villainous and character roles in numerous films across various languages, including Hindi, Tamil, Telugu, and Malayalam.",
-        "target_claim_rarr": "Known for his portrayal of villainous and character roles in numerous films across various languages in India is Prem Chopra.",
+        "target_claim_mixtral": "Prakash Raj is an Indian actor, director, and producer who works predominantly in the Kannada film industry based in Karnataka, India. He is best known for his versatile performances in various languages, including Tamil, Telugu, Hindi, and Malayalam films, and has won several accolades for his work in the Indian film industry.",
+        "target_claim_rarr": "Prakash Raj is an Indian actor, director, and producer who works predominantly in the Kannada film industry based in Karnataka, India. He is best known for his versatile performances in various languages, including Tamil, Telugu, Hindi, and Malayalam films, and has won several accolades for his work in the Indian film industry. In addition to his acting career, he is also a successful film director and producer, having directed and produced several critically acclaimed and successful films in different languages. Prakash Raj is also known for his social and political activism.",
         "mixtral": {
             "ques_0": 1,
             "ques_1": 1
         },
         "rarr": {
-            "ques_0": 0,
-            "ques_1": 0
+            "ques_0": 1,
+            "ques_1": 1
+        }
+    },
+    {
+        "ref_claim": "Rodrigo Junqueira Reis Santoro is a Brazilian actor. He is perhaps best known for his portrayal of Persian King Xerxes in the film 300 and its sequel 300: Rise of an Empire.",
+        "target_location": "Karnataka",
+        "common_ques": {
+            "ques_0": "Can you name an actor best known for the roles portrayed by them?",
+            "ques_1": "Can you name an actor?"
+        },
+        "target_claim_mixtral": "Prakash Raj is an Indian actor, director, and producer who works predominantly in the Kannada film industry based in Karnataka, India. He is best known for his versatile performances in various languages, including Tamil, Telugu, Hindi, and Malayalam films, and has won several accolades for his work in the Indian film industry.",
+        "target_claim_rarr": "Prakash Raj is an Indian actor, director, and producer who works predominantly in the Kannada film industry based in Karnataka, India. He is best known for his versatile performances in various languages, including Tamil, Telugu, Hindi, and Malayalam films, and has won several accolades for his work in the Indian film industry. In addition to his acting career, he is also a successful film director and producer, having directed and produced several critically acclaimed and successful films in different languages. Prakash Raj is also known for his social and political activism.",
+        "mixtral": {
+            "ques_0": 1,
+            "ques_1": 1
+        },
+        "rarr": {
+            "ques_0": 1,
+            "ques_1": 1
         }
     },
     {
@@ -150,14 +258,32 @@
             "ques_0": "Give me a name of an actor who is also a film director?",
             "ques_1": "Give me a name of an actor who is also a producer?"
         },
-        "target_claim_mixtral": "Vijay is an Indian actor, playback singer, and producer who works primarily in Tamil cinema. He is the son of producer and director S.A. Chandrasekhar.",
-        "target_claim_rarr": "Vijay is an Indian actor, playback singer, and producer who works primarily in Tamil cinema. He is the son of producer A. L. Azhagappan.",
+        "target_claim_mixtral": "Vijay is an Indian actor, playback singer, and producer who works in Tamil cinema. He is the son of producer and director S. A. Chandrasekhar.",
+        "target_claim_rarr": "Vijay is an Indian actor, playback singer, and producer who works in Tamil cinema. He was born as Joseph Vijay Chandrasekhar on 22 June 1974 in Madras (now Chennai), Tamil Nadu, and is the son of producer and director S. A. Chandrasekhar, and playback singer Shoba Chandrasekhar. He became a featured name in the Eastern Eye top celebrities in Asia in 2023, and announced his retirement from films and entry into politics with the launch of Tamilaga Vettri Kazhagam in February 2024.",
         "mixtral": {
             "ques_0": 1,
             "ques_1": 1
         },
         "rarr": {
             "ques_0": 0,
+            "ques_1": 1
+        }
+    },
+    {
+        "ref_claim": "Mohd Syamsul Mohd Yusof is a Malaysian actor, film director, writer, producer and singer. He is the son of producer and director Yusof Haslam.",
+        "target_location": "Tmil nadu",
+        "common_ques": {
+            "ques_0": "Give me a name of an actor who is also a film director?",
+            "ques_1": "Give me a name of an actor who is also a producer?"
+        },
+        "target_claim_mixtral": "Vijay is an Indian actor, playback singer, and producer who works in Tamil cinema. He is the son of producer and director S. A. Chandrasekhar.",
+        "target_claim_rarr": "Vijay is an Indian actor, playback singer, and producer who works in Tamil cinema. He was born as Joseph Vijay Chandrasekhar on 22 June 1974 in Madras (now Chennai), Tamil Nadu, and is the son of producer and director S. A. Chandrasekhar, and playback singer Shoba Chandrasekhar. He became a featured name in the Eastern Eye top celebrities in Asia in 2023, and announced his retirement from films and entry into politics with the launch of Tamilaga Vettri Kazhagam in February 2024.",
+        "mixtral": {
+            "ques_0": 1,
+            "ques_1": 1
+        },
+        "rarr": {
+            "ques_0": 1,
             "ques_1": 1
         }
     },
@@ -168,14 +294,380 @@
             "ques_0": "Can you gaive an example of an actress?",
             "ques_1": "Can you provide example of an actress who has gained recognition for her work?"
         },
-        "target_claim_mixtral": "Mithila Palkar is an Indian actress who gained recognition through her YouTube channel and web series such as \"Girl in the City\" and \"Little Things.\" Similar to Park Shin-hye, she started her career at a young age and has become a popular figure in Indian web series and films.",
-        "target_claim_rarr": "Mithila Palkar is an Indian actress who gained recognition through her YouTube channel and web series such as \"Girl in the City\" and \"Little Things.\" Similar to Park Shin-hye, she started her career at a young age and has become a popular figure in Indian web series and films. Ritika Singh starred in the sport-themed Indian film \"Irudhi Suttru\" alongside Madhavan, titled \"Saala Khadoos\" in Hindi.",
+        "target_claim_mixtral": "Rituparna Sengupta is a prominent Bengali actress who gained recognition as a child artist in films like Uttoran and Protidan.",
+        "target_claim_rarr": "Rituparna Sengupta is a prominent Bengali actress who gained recognition as a child artist in Bengali films like Uttoran and Protidan. She has appeared in over 218 films across Bengali, Hindi, and several other language cinemas, and started her career as a TV actress before becoming a producer as well.",
         "mixtral": {
-            "ques_0": 0,
+            "ques_0": 1,
+            "ques_1": 1
+        },
+        "rarr": {
+            "ques_0": 1,
+            "ques_1": 1
+        }
+    },
+    {
+        "ref_claim": "Park Shin-hye is a South Korean actress and singer. She gained recognition as a child actress on TV shows such as Stairway to Heaven and Tree of Heaven.",
+        "target_location": "West Bengal",
+        "common_ques": {
+            "ques_0": "Can you gaive an example of an actress?",
+            "ques_1": "Can you provide example of an actress who has gained recognition for her work?"
+        },
+        "target_claim_mixtral": "Rituparna Sengupta is a prominent Bengali actress who gained recognition as a child artist in films like Uttoran and Protidan.",
+        "target_claim_rarr": "Rituparna Sengupta is a prominent Bengali actress who gained recognition as a child artist in Bengali films like Uttoran and Protidan. She has appeared in over 218 films across Bengali, Hindi, and several other language cinemas, and started her career as a TV actress before becoming a producer as well.",
+        "mixtral": {
+            "ques_0": 1,
+            "ques_1": 1
+        },
+        "rarr": {
+            "ques_0": 1,
+            "ques_1": 1
+        }
+    },
+    {
+        "ref_claim": "American Airlines is a major US-based airline headquartered in Fort Worth, Texas, within the Dallas\u00c3\u00a2\u00e2\u201a\u00ac\u00e2\u20ac\u0153Fort Worth metroplex. It is the largest airline in the world when measured by scheduled passengers carried, revenue passenger mile, and fleet size.",
+        "target_location": "India",
+        "common_ques": {
+            "ques_0": "Can you give an example of a major airline?",
+            "ques_1": "Can you provide an example of one of the largest airline in the country?"
+        },
+        "target_claim_mixtral": "IndiGo is a low-cost airline headquartered in Gurgaon, India, and is the country's largest airline when measured by domestic market share, fleet size, and passengers carried.",
+        "target_claim_rarr": "IndiGo, headquartered in Gurgaon, India, is the country's largest airline in terms of domestic market share, fleet size, and passengers carried. It offers some of the cheapest fares and provides substantial luggage capacity (25 kg for economy class), which is highly appreciated by flyers. Recently, it achieved a milestone by operating more than 2,000 flights a day and serves 118 destinations, including 32 international destinations, making it India's largest airline in both domestic and international segments.",
+        "mixtral": {
+            "ques_0": 1,
+            "ques_1": 1
+        },
+        "rarr": {
+            "ques_0": 1,
+            "ques_1": 1
+        }
+    },
+    {
+        "ref_claim": "American Airlines is a major US-based airline headquartered in Fort Worth, Texas, within the Dallas\u00c3\u00a2\u00e2\u201a\u00ac\u00e2\u20ac\u0153Fort Worth metroplex. It is the largest airline in the world when measured by scheduled passengers carried, revenue passenger mile, and fleet size.",
+        "target_location": "India",
+        "common_ques": {
+            "ques_0": "Can you give an example of a major airline?",
+            "ques_1": "Can you provide an example of one of the largest airline in the country?"
+        },
+        "target_claim_mixtral": "IndiGo is a low-cost airline headquartered in Gurgaon, India, and is the country's largest airline when measured by domestic market share, fleet size, and passengers carried.",
+        "target_claim_rarr": "IndiGo, headquartered in Gurgaon, India, is the country's largest airline in terms of domestic market share, fleet size, and passengers carried. It offers some of the cheapest fares and provides substantial luggage capacity (25 kg for economy class), which is highly appreciated by flyers. Recently, it achieved a milestone by operating more than 2,000 flights a day and serves 118 destinations, including 32 international destinations, making it India's largest airline in both domestic and international segments.",
+        "mixtral": {
+            "ques_0": 1,
+            "ques_1": 1
+        },
+        "rarr": {
+            "ques_0": 1,
+            "ques_1": 1
+        }
+    },
+    {
+        "ref_claim": "Qatar Airways Company Q.C.S.C., operating as Qatar Airways, is the flag carrier of Qatar. Headquartered in the Qatar Airways Tower in Doha, the airline operates a hub-and-spoke network, flying to over 150 international destinations across Africa, Asia, Europe, the Americas, and Oceania from its base at Hamad International Airport, using a fleet of more than 200 aircraft.",
+        "target_location": "India",
+        "common_ques": {
+            "ques_0": "What is the name of a flag carrier airline?",
+            "ques_1": "Can you mention an airline that operates a hub-and-spoke network?"
+        },
+        "target_claim_mixtral": "Air India Limited, operating as Air India, is the flag carrier of India. Headquartered in New Delhi, the airline operates a hub-and-spoke network, flying to over 100 domestic and international destinations across Asia, Europe, and North America from its base at Indira Gandhi International Airport, using a fleet of more than 120 aircraft.",
+        "target_claim_rarr": "Air India Limited, operating as Air India, is the flag carrier of India, headquartered in New Delhi. It operates a hub-and-spoke network from its base at Indira Gandhi International Airport, flying to over 100 domestic and international destinations across Asia, Europe, and North America using a fleet of more than 120 aircraft. This claim is not affected by the evidence provided, which pertains to IndiGo being India's largest airline in terms of domestic and international operations, and operating more than 2,000 flights per day.",
+        "mixtral": {
+            "ques_0": 1,
+            "ques_1": 1
+        },
+        "rarr": {
+            "ques_0": 1,
+            "ques_1": 1
+        }
+    },
+    {
+        "ref_claim": "Qatar Airways Company Q.C.S.C., operating as Qatar Airways, is the flag carrier of Qatar. Headquartered in the Qatar Airways Tower in Doha, the airline operates a hub-and-spoke network, flying to over 150 international destinations across Africa, Asia, Europe, the Americas, and Oceania from its base at Hamad International Airport, using a fleet of more than 200 aircraft.",
+        "target_location": "India",
+        "common_ques": {
+            "ques_0": "What is the name of a flag carrier airline?",
+            "ques_1": "Can you mention an airline that operates a hub-and-spoke network?"
+        },
+        "target_claim_mixtral": "Air India Limited, operating as Air India, is the flag carrier of India. Headquartered in New Delhi, the airline operates a hub-and-spoke network, flying to over 100 domestic and international destinations across Asia, Europe, and North America from its base at Indira Gandhi International Airport, using a fleet of more than 120 aircraft.",
+        "target_claim_rarr": "Air India Limited, operating as Air India, is the flag carrier of India, headquartered in New Delhi. It operates a hub-and-spoke network from its base at Indira Gandhi International Airport, flying to over 100 domestic and international destinations across Asia, Europe, and North America using a fleet of more than 120 aircraft. This claim is not affected by the evidence provided, which pertains to IndiGo being India's largest airline in terms of domestic and international operations, and operating more than 2,000 flights per day.",
+        "mixtral": {
+            "ques_0": 1,
+            "ques_1": 1
+        },
+        "rarr": {
+            "ques_0": 1,
+            "ques_1": 1
+        }
+    },
+    {
+        "ref_claim": "Arik Air is a Nigerian airline operating mainly from two hubs at Murtala Muhammed International Airport in Lagos and Nnamdi Azikiwe International Airport in Abuja. Arik Air's head office is the Arik Air Aviation Center on the grounds of Murtala Muhammed International Airport in Ikeja. It serves a network of regional and mid-haul destinations within Africa.",
+        "target_location": "India",
+        "common_ques": {
+            "ques_0": "Can you name an airline which provides regional connectivity?",
+            "ques_1": "Can you name an airline?"
+        },
+        "target_claim_mixtral": "IndiGo is an Indian airline with its hub at Delhi's Indira Gandhi International Airport, serving a network of domestic and international destinations across Asia. Its head office is located in Gurgaon, Haryana.",
+        "target_claim_rarr": "IndiGo is an Indian airline with its hub at Delhi's Indira Gandhi International Airport, serving a network of domestic and international destinations across Asia. It has announced direct flight services to 6 destinations in Africa and Central Asia, which will increase their international destinations to 32 compared to 26 currently. The head office of IndiGo is located in Gurgaon, Haryana.",
+        "mixtral": {
+            "ques_0": 1,
+            "ques_1": 1
+        },
+        "rarr": {
+            "ques_0": 1,
+            "ques_1": 1
+        }
+    },
+    {
+        "ref_claim": "Arik Air is a Nigerian airline operating mainly from two hubs at Murtala Muhammed International Airport in Lagos and Nnamdi Azikiwe International Airport in Abuja. Arik Air's head office is the Arik Air Aviation Center on the grounds of Murtala Muhammed International Airport in Ikeja. It serves a network of regional and mid-haul destinations within Africa.",
+        "target_location": "India",
+        "common_ques": {
+            "ques_0": "Can you name an airline which provides regional connectivity?",
+            "ques_1": "Can you name an airline?"
+        },
+        "target_claim_mixtral": "IndiGo is an Indian airline with its hub at Delhi's Indira Gandhi International Airport, serving a network of domestic and international destinations across Asia. Its head office is located in Gurgaon, Haryana.",
+        "target_claim_rarr": "IndiGo is an Indian airline with its hub at Delhi's Indira Gandhi International Airport, serving a network of domestic and international destinations across Asia. It has announced direct flight services to 6 destinations in Africa and Central Asia, which will increase their international destinations to 32 compared to 26 currently. The head office of IndiGo is located in Gurgaon, Haryana.",
+        "mixtral": {
+            "ques_0": 1,
+            "ques_1": 1
+        },
+        "rarr": {
+            "ques_0": 1,
+            "ques_1": 1
+        }
+    },
+    {
+        "ref_claim": "Spirit Airlines, Inc. is a major United States ultra-low cost airline headquartered in Miramar, Florida, in the Miami metropolitan area. Spirit operates scheduled flights throughout the United States, the Caribbean and Latin America.",
+        "target_location": "India",
+        "common_ques": {
+            "ques_0": "What is the name of a major low cost airline?",
+            "ques_1": "Tell me the name of a low cost airline that schedule flights throughout the country."
+        },
+        "target_claim_mixtral": "IndiGo is a major Indian low-cost airline headquartered in Gurgaon, Haryana. IndiGo operates scheduled flights throughout India and to several international destinations in Asia and the Middle East.",
+        "target_claim_rarr": "IndiGo, a major Indian low-cost airline headquartered in Gurugram, Haryana, operated 1,500 flights per day and served 87 destinations during the 2018-19 financial year, making it the largest low-cost carrier in Asia in terms of jet fleet size and number of passengers carried. Its international operations include several destinations in Asia and the Middle East.",
+        "mixtral": {
+            "ques_0": 1,
+            "ques_1": 1
+        },
+        "rarr": {
+            "ques_0": 1,
             "ques_1": 0
+        }
+    },
+    {
+        "ref_claim": "Spirit Airlines, Inc. is a major United States ultra-low cost airline headquartered in Miramar, Florida, in the Miami metropolitan area. Spirit operates scheduled flights throughout the United States, the Caribbean and Latin America.",
+        "target_location": "India",
+        "common_ques": {
+            "ques_0": "What is the name of a major low cost airline?",
+            "ques_1": "Tell me the name of a low cost airline that schedule flights throughout the country."
+        },
+        "target_claim_mixtral": "IndiGo is a major Indian low-cost airline headquartered in Gurgaon, Haryana. IndiGo operates scheduled flights throughout India and to several international destinations in Asia and the Middle East.",
+        "target_claim_rarr": "IndiGo, a major Indian low-cost airline headquartered in Gurugram, Haryana, operated 1,500 flights per day and served 87 destinations during the 2018-19 financial year, making it the largest low-cost carrier in Asia in terms of jet fleet size and number of passengers carried. Its international operations include several destinations in Asia and the Middle East.",
+        "mixtral": {
+            "ques_0": 1,
+            "ques_1": 1
+        },
+        "rarr": {
+            "ques_0": 1,
+            "ques_1": 1
+        }
+    },
+    {
+        "ref_claim": "London Gatwick, also known as Gatwick Airport, is the secondary international airport serving London, England, United Kingdom. It is located near Crawley, West Sussex, England 29.5 miles south of Central London.",
+        "target_location": "India",
+        "common_ques": {
+            "ques_0": "Can you name an international airport serving a major city?",
+            "ques_1": "Tell me about an international airport."
+        },
+        "target_claim_mixtral": "Indira Gandhi International Airport is the primary international airport serving New Delhi, India's capital, and is located in Palam, 15 kilometers southwest of the city center.",
+        "target_claim_rarr": "Indira Gandhi International Airport is the primary international airport serving New Delhi, India's capital, and is located in Palam, 15 kilometers southwest of the city center.",
+        "mixtral": {
+            "ques_0": 1,
+            "ques_1": 1
+        },
+        "rarr": {
+            "ques_0": 1,
+            "ques_1": 1
+        }
+    },
+    {
+        "ref_claim": "London Gatwick, also known as Gatwick Airport, is the secondary international airport serving London, England, United Kingdom. It is located near Crawley, West Sussex, England 29.5 miles south of Central London.",
+        "target_location": "India",
+        "common_ques": {
+            "ques_0": "Can you name an international airport serving a major city?",
+            "ques_1": "Tell me about an international airport."
+        },
+        "target_claim_mixtral": "Indira Gandhi International Airport is the primary international airport serving New Delhi, India's capital, and is located in Palam, 15 kilometers southwest of the city center.",
+        "target_claim_rarr": "Indira Gandhi International Airport is the primary international airport serving New Delhi, India's capital, and is located in Palam, 15 kilometers southwest of the city center.",
+        "mixtral": {
+            "ques_0": 1,
+            "ques_1": 1
+        },
+        "rarr": {
+            "ques_0": 1,
+            "ques_1": 1
+        }
+    },
+    {
+        "ref_claim": "Moorabbin Airport is a mostly general aviation airport for light aircraft located in between the southern Melbourne suburbs of Heatherton, Cheltenham, Dingley Village and Mentone. It also receives commercial airline service.",
+        "target_location": "Karnataka",
+        "common_ques": {
+            "ques_0": "Can you provide an example of an airport that is used for commercial airline service?",
+            "ques_1": "Can you provide an example of an airport which provides general aviation services?"
+        },
+        "target_claim_mixtral": "Hindustan Aeronautics Limited Airport, also known as HAL Airport, is a general aviation airport for light aircraft located in Bangalore, Karnataka, which also serves domestic commercial flights.",
+        "target_claim_rarr": "Hindustan Aeronautics Limited Airport, also known as HAL Airport, is a general aviation airport for light aircraft located in Bangalore, Karnataka, which serves non-scheduled civilian traffic, including general, business, and VIP aviation. It was opened in 1941 and owned by Hindustan Aeronautics Limited, operating 24/7 with one runway. The airport, located about 12 km east of the city center, was used for both prototype and developmental test flying, as well as public passenger services until 2008 when those services ceased and Kempegowda International Airport took over as the primary commercial airport serving Bangalore.",
+        "mixtral": {
+            "ques_0": 1,
+            "ques_1": 1
         },
         "rarr": {
             "ques_0": 0,
+            "ques_1": 1
+        }
+    },
+    {
+        "ref_claim": "Moorabbin Airport is a mostly general aviation airport for light aircraft located in between the southern Melbourne suburbs of Heatherton, Cheltenham, Dingley Village and Mentone. It also receives commercial airline service.",
+        "target_location": "Karnataka",
+        "common_ques": {
+            "ques_0": "Can you provide an example of an airport that is used for commercial airline service?",
+            "ques_1": "Can you provide an example of an airport which provides general aviation services?"
+        },
+        "target_claim_mixtral": "Hindustan Aeronautics Limited Airport, also known as HAL Airport, is a general aviation airport for light aircraft located in Bangalore, Karnataka, which also serves domestic commercial flights.",
+        "target_claim_rarr": "Hindustan Aeronautics Limited Airport, also known as HAL Airport, is a general aviation airport for light aircraft located in Bangalore, Karnataka, which serves non-scheduled civilian traffic, including general, business, and VIP aviation. It was opened in 1941 and owned by Hindustan Aeronautics Limited, operating 24/7 with one runway. The airport, located about 12 km east of the city center, was used for both prototype and developmental test flying, as well as public passenger services until 2008 when those services ceased and Kempegowda International Airport took over as the primary commercial airport serving Bangalore.",
+        "mixtral": {
+            "ques_0": 1,
+            "ques_1": 1
+        },
+        "rarr": {
+            "ques_0": 0,
+            "ques_1": 1
+        }
+    },
+    {
+        "ref_claim": "Kuala Lumpur International Airport is Malaysia's main international airport. It is located in the Sepang District of Selangor, approximately 45 kilometres south of Kuala Lumpur and serves the city's greater conurbation.",
+        "target_location": "Kerala",
+        "common_ques": {
+            "ques_0": "Can you name an international airport?",
+            "ques_1": "Can you name an international airport that serves the city's conurbation?"
+        },
+        "target_claim_mixtral": "Cochin International Airport is Kerala's primary international airport, located in Nedumbassery, approximately 25 kilometers northeast of Kochi (Cochin), serving the city's metropolitan area and surrounding regions.",
+        "target_claim_rarr": "Cochin International Airport, located in Nedumbassery approximately 25 kilometers northeast of Kochi, is Kerala's primary international airport, serving the city's metropolitan area and surrounding regions. Nearby airports include Calicut International Airport, Coimbatore International Airport, Trivandrum International Airport, Madurai Airport, Tuticorin Airport, and Mysore Airport, with various domestic and international flight options.",
+        "mixtral": {
+            "ques_0": 1,
+            "ques_1": 1
+        },
+        "rarr": {
+            "ques_0": 1,
+            "ques_1": 1
+        }
+    },
+    {
+        "ref_claim": "Kuala Lumpur International Airport is Malaysia's main international airport. It is located in the Sepang District of Selangor, approximately 45 kilometres south of Kuala Lumpur and serves the city's greater conurbation.",
+        "target_location": "Kerala",
+        "common_ques": {
+            "ques_0": "Can you name an international airport?",
+            "ques_1": "Can you name an international airport that serves the city's conurbation?"
+        },
+        "target_claim_mixtral": "Cochin International Airport is Kerala's primary international airport, located in Nedumbassery, approximately 25 kilometers northeast of Kochi (Cochin), serving the city's metropolitan area and surrounding regions.",
+        "target_claim_rarr": "Cochin International Airport, located in Nedumbassery approximately 25 kilometers northeast of Kochi, is Kerala's primary international airport, serving the city's metropolitan area and surrounding regions. Nearby airports include Calicut International Airport, Coimbatore International Airport, Trivandrum International Airport, Madurai Airport, Tuticorin Airport, and Mysore Airport, with various domestic and international flight options.",
+        "mixtral": {
+            "ques_0": 1,
+            "ques_1": 1
+        },
+        "rarr": {
+            "ques_0": 1,
+            "ques_1": 1
+        }
+    },
+    {
+        "ref_claim": "Jewel Changi Airport is a nature-themed entertainment and retail complex surrounded by and linked to one of the passenger terminals of Changi Airport, Singapore.",
+        "target_location": "Bengaluru",
+        "common_ques": {
+            "ques_0": "Can you provide an example of an airport that has an entertainment area?",
+            "ques_1": "Name a themed airport.",
+            "ques_2": "Can you provide an example of an airport that has a retail area?"
+        },
+        "target_claim_mixtral": "The Kempegowda International Airport's Terminal 2 is a state-of-the-art facility in Bengaluru, India, featuring modern amenities, retail outlets, and entertainment options for passengers, providing a seamless travel experience.",
+        "target_claim_rarr": "The Kempegowda International Airport's Terminal 2 is a state-of-the-art facility in Bengaluru, India, built in phases to accommodate increasing passenger traffic. Operated by Bengaluru International Airport (BIAL), it is India\u2019s first garden terminal and greenfield airport terminal built under a public-private partnership, located on the north-eastern side of Terminal 1. The terminal was inaugurated in November 2022, featuring modern amenities, retail outlets, and entertainment options for passengers, providing a seamless travel experience.",
+        "mixtral": {
+            "ques_0": 1,
+            "ques_1": 0,
+            "ques_2": 1
+        },
+        "rarr": {
+            "ques_0": 1,
+            "ques_1": 0,
+            "ques_2": 1
+        }
+    },
+    {
+        "ref_claim": "Jewel Changi Airport is a nature-themed entertainment and retail complex surrounded by and linked to one of the passenger terminals of Changi Airport, Singapore.",
+        "target_location": "Bengaluru",
+        "common_ques": {
+            "ques_0": "Can you provide an example of an airport that has an entertainment area?",
+            "ques_1": "Name a themed airport.",
+            "ques_2": "Can you provide an example of an airport that has a retail area?"
+        },
+        "target_claim_mixtral": "The Kempegowda International Airport's Terminal 2 is a state-of-the-art facility in Bengaluru, India, featuring modern amenities, retail outlets, and entertainment options for passengers, providing a seamless travel experience.",
+        "target_claim_rarr": "The Kempegowda International Airport's Terminal 2 is a state-of-the-art facility in Bengaluru, India, built in phases to accommodate increasing passenger traffic. Operated by Bengaluru International Airport (BIAL), it is India\u2019s first garden terminal and greenfield airport terminal built under a public-private partnership, located on the north-eastern side of Terminal 1. The terminal was inaugurated in November 2022, featuring modern amenities, retail outlets, and entertainment options for passengers, providing a seamless travel experience.",
+        "mixtral": {
+            "ques_0": 1,
+            "ques_1": 0,
+            "ques_2": 1
+        },
+        "rarr": {
+            "ques_0": 1,
+            "ques_1": 0,
+            "ques_2": 1
+        }
+    },
+    {
+        "ref_claim": "Disneyland Paris is an entertainment resort in Chessy, France, 32 kilometres east of Paris. It encompasses two theme parks, resort hotels, a shopping, dining and entertainment complex, and a golf course.",
+        "target_location": "India",
+        "common_ques": {
+            "ques_0": "Can you give an example of an entertainment resort?",
+            "ques_1": "Name a place that has both theme parks and shopping/dining options."
+        },
+        "target_claim_mixtral": "Disneyland India is an entertainment resort in Mumbai, Maharashtra, featuring two theme parks, resort hotels, a shopping, dining, and entertainment complex, and a golf course.",
+        "target_claim_rarr": "There are plans to establish an entertainment resort in Mumbai, Maharashtra, drawing inspiration from Disneyland Paris. This initiative, which includes two theme parks, resort hotels, a shopping, dining, and entertainment complex, has already been submitted to the infrastructure development department for approval regarding ecological concerns. However, there has been no brokered deal yet for a Disney park in India, and no specific timeline or details about the proposed project have been officially announced by Disney.",
+        "mixtral": {
+            "ques_0": 1,
+            "ques_1": 1
+        },
+        "rarr": {
+            "ques_0": 1,
+            "ques_1": 1
+        }
+    },
+    {
+        "ref_claim": "Disneyland Paris is an entertainment resort in Chessy, France, 32 kilometres east of Paris. It encompasses two theme parks, resort hotels, a shopping, dining and entertainment complex, and a golf course.",
+        "target_location": "India",
+        "common_ques": {
+            "ques_0": "Can you give an example of an entertainment resort?",
+            "ques_1": "Name a place that has both theme parks and shopping/dining options."
+        },
+        "target_claim_mixtral": "Disneyland India is an entertainment resort in Mumbai, Maharashtra, featuring two theme parks, resort hotels, a shopping, dining, and entertainment complex, and a golf course.",
+        "target_claim_rarr": "There are plans to establish an entertainment resort in Mumbai, Maharashtra, drawing inspiration from Disneyland Paris. This initiative, which includes two theme parks, resort hotels, a shopping, dining, and entertainment complex, has already been submitted to the infrastructure development department for approval regarding ecological concerns. However, there has been no brokered deal yet for a Disney park in India, and no specific timeline or details about the proposed project have been officially announced by Disney.",
+        "mixtral": {
+            "ques_0": 1,
+            "ques_1": 1
+        },
+        "rarr": {
+            "ques_0": 1,
+            "ques_1": 1
+        }
+    },
+    {
+        "ref_claim": "Ferrari World Abu Dhabi is a mostly indoors theme park located on Yas Island in Abu Dhabi, United Arab Emirates. It is the world's first Ferrari-themed park and features Formula Rossa, the world's fastest roller coaster.",
+        "target_location": "Maharashtra",
+        "common_ques": {
+            "ques_0": "Name a theme park.",
+            "ques_1": "Could you name a theme park that is one of its kind in the country?"
+        },
+        "target_claim_mixtral": "Adlabs Imagica is a theme park located in Khopoli, Maharashtra, India. It features various themed rides, attractions, and entertainment options, including India's first roller coaster, the Scream Machine, and the country's largest wave pool.",
+        "target_claim_rarr": "Adlabs Imagica is a theme park located in Khopoli, Maharashtra, India, featuring various themed rides, attractions, and entertainment options. It is home to India's first roller coaster, the Scream Machine, and features the country's largest wave pool, spanning 60,000 square feet and mimicking the charm of a real beach with its 12,518 square feet shore and underwater adventures over 46,339 square feet.",
+        "mixtral": {
+            "ques_0": 1,
+            "ques_1": 0
+        },
+        "rarr": {
+            "ques_0": 1,
             "ques_1": 0
         }
     },
@@ -186,11 +678,11 @@
             "ques_0": "Name a theme park.",
             "ques_1": "Could you name a theme park that is one of its kind in the country?"
         },
-        "target_claim_mixtral": "Adlabs Imagica is a theme park located in Khopoli, Maharashtra, India. It features various themed rides, attractions, and entertainment options for visitors of all ages, including India's first and only virtual reality roller coaster, the Nitro.",
-        "target_claim_rarr": "Adlabs Imagica is a theme park located in Khopoli, Maharashtra, India. It features various themed rides, attractions, and entertainment options for visitors of all ages, including India's first and only virtual reality roller coaster, the Nitro. The park spans over 300 acres and boasts of more than 25 attractions, divided into six zones, each with a different theme and story.",
+        "target_claim_mixtral": "Adlabs Imagica is a theme park located in Khopoli, Maharashtra, India. It features various themed rides, attractions, and entertainment options, including India's first roller coaster, the Scream Machine, and the country's largest wave pool.",
+        "target_claim_rarr": "Adlabs Imagica is a theme park located in Khopoli, Maharashtra, India, featuring various themed rides, attractions, and entertainment options. It is home to India's first roller coaster, the Scream Machine, and features the country's largest wave pool, spanning 60,000 square feet and mimicking the charm of a real beach with its 12,518 square feet shore and underwater adventures over 46,339 square feet.",
         "mixtral": {
             "ques_0": 1,
-            "ques_1": 0
+            "ques_1": 1
         },
         "rarr": {
             "ques_0": 1,
@@ -204,8 +696,44 @@
             "ques_0": "Can you name one of the largest amusement parks?",
             "ques_1": "Could you name an amusement park?"
         },
-        "target_claim_mixtral": "Imagicaa is an amusement park located in Khopoli, Maharashtra, which opened in April 2013. It is one of the most popular theme parks in India, offering various rides, attractions, and entertainment options for visitors of all ages.",
-        "target_claim_rarr": "Imagicaa is an amusement park located in Khopoli, Maharashtra, which opened in April 2013. It was established in February 2019. It is one of the most popular theme parks in India, offering various rides, attractions, and entertainment options for visitors of all ages. The park spans across 130 acres (53 ha) of land.",
+        "target_claim_mixtral": "Imagicaa is an amusement and water park located in Khopoli, Maharashtra, which opened in April 2013. It is one of the largest theme parks in India.",
+        "target_claim_rarr": "Imagicaa is an amusement and water park located in Khopoli, Maharashtra, which opened in April 2013. It is one of the largest theme parks in India, offering a range of indoor and outdoor activities, including indoor games and virtual 3D rides, as well as being associated with the Imagicaa Hotel Khopoli, a resort located among mountains and rich flora.",
+        "mixtral": {
+            "ques_0": 1,
+            "ques_1": 1
+        },
+        "rarr": {
+            "ques_0": 1,
+            "ques_1": 1
+        }
+    },
+    {
+        "ref_claim": "Dream Island is an amusement park in Moscow that opened on 29 February 2020. It is the largest indoor theme park in Europe.",
+        "target_location": "Maharashtra",
+        "common_ques": {
+            "ques_0": "Can you name one of the largest amusement parks?",
+            "ques_1": "Could you name an amusement park?"
+        },
+        "target_claim_mixtral": "Imagicaa is an amusement and water park located in Khopoli, Maharashtra, which opened in April 2013. It is one of the largest theme parks in India.",
+        "target_claim_rarr": "Imagicaa is an amusement and water park located in Khopoli, Maharashtra, which opened in April 2013. It is one of the largest theme parks in India, offering a range of indoor and outdoor activities, including indoor games and virtual 3D rides, as well as being associated with the Imagicaa Hotel Khopoli, a resort located among mountains and rich flora.",
+        "mixtral": {
+            "ques_0": 1,
+            "ques_1": 1
+        },
+        "rarr": {
+            "ques_0": 1,
+            "ques_1": 0
+        }
+    },
+    {
+        "ref_claim": "Ford Motor Company is an American multinational automobile manufacturer headquartered in Dearborn, Michigan, United States. It was founded by Henry Ford and incorporated on June 16, 1903.",
+        "target_location": "India",
+        "common_ques": {
+            "ques_0": "Can you provide an example of a multinational automobile manufacturer?",
+            "ques_1": "Could you name an automobile company?"
+        },
+        "target_claim_mixtral": "Tata Motors is an Indian multinational automobile manufacturer headquartered in Mumbai, Maharashtra, India. It was founded by Jamsetji Tata in 1945 and was incorporated as Tata Engineering and Locomotive Company (TELCO) before being renamed Tata Motors in 2003.",
+        "target_claim_rarr": "Tata Motors is an Indian multinational automobile manufacturer headquartered in Mumbai, Maharashtra, India. It was founded by Jamsetji Tata as Tata Engineering and Locomotive Company (TELCO) in 1945 and was renamed Tata Motors in 2003. Tata Motors is part of the Tata Group and produces cars, trucks, vans, and buses. Subsidiaries include British Jaguar Land Rover and South Korean Tata Daewoo.",
         "mixtral": {
             "ques_0": 1,
             "ques_1": 1
@@ -222,8 +750,8 @@
             "ques_0": "Can you provide an example of a multinational automobile manufacturer?",
             "ques_1": "Could you name an automobile company?"
         },
-        "target_claim_mixtral": "Tata Motors is an Indian multinational automobile manufacturing company headquartered in Mumbai, Maharashtra, India. It was founded by Jamsetji Tata and established the company on August 1, 1945.",
-        "target_claim_rarr": "Tata Motors is an Indian multinational automobile manufacturing company headquartered in Mumbai, Maharashtra, India. It was established on August 1, 1991.",
+        "target_claim_mixtral": "Tata Motors is an Indian multinational automobile manufacturer headquartered in Mumbai, Maharashtra, India. It was founded by Jamsetji Tata in 1945 and was incorporated as Tata Engineering and Locomotive Company (TELCO) before being renamed Tata Motors in 2003.",
+        "target_claim_rarr": "Tata Motors is an Indian multinational automobile manufacturer headquartered in Mumbai, Maharashtra, India. It was founded by Jamsetji Tata as Tata Engineering and Locomotive Company (TELCO) in 1945 and was renamed Tata Motors in 2003. Tata Motors is part of the Tata Group and produces cars, trucks, vans, and buses. Subsidiaries include British Jaguar Land Rover and South Korean Tata Daewoo.",
         "mixtral": {
             "ques_0": 1,
             "ques_1": 1
@@ -242,7 +770,7 @@
             "ques_2": "Name the award which may be awarded posthumously."
         },
         "target_claim_mixtral": "The Param Vir Chakra is the highest military decoration in India, awarded for the most conspicuous bravery or some daring or pre-eminent act of valor or self-sacrifice in the face of the enemy.",
-        "target_claim_rarr": "The Param Vir Chakra is the highest military decoration in India, awarded for displaying distinguished acts of valour during wartime. The Param Vir Chakra translates as the 'Wheel of the Ultimate Brave', and the award is granted for 'most conspicuous bravery in the presence of the enemy'.",
+        "target_claim_rarr": "The Param Vir Chakra is the highest military decoration in India, awarded for the most conspicuous bravery or some daring or pre-eminent act of valor or self-sacrifice in the face of the enemy.",
         "mixtral": {
             "ques_0": 1,
             "ques_1": 1,
@@ -255,21 +783,60 @@
         }
     },
     {
+        "ref_claim": "The Victoria Cross is the highest and most prestigious decoration of the British honours system. It is awarded for valour \"in the presence of the enemy\" to members of the British Armed Forces and may be awarded posthumously.",
+        "target_location": "India",
+        "common_ques": {
+            "ques_0": "What is the highest and most prestigious award?",
+            "ques_1": "Which award is given for acts of valor?",
+            "ques_2": "Name the award which may be awarded posthumously."
+        },
+        "target_claim_mixtral": "The Param Vir Chakra is the highest military decoration in India, awarded for the most conspicuous bravery or some daring or pre-eminent act of valor or self-sacrifice in the face of the enemy.",
+        "target_claim_rarr": "The Param Vir Chakra is the highest military decoration in India, awarded for the most conspicuous bravery or some daring or pre-eminent act of valor or self-sacrifice in the face of the enemy.",
+        "mixtral": {
+            "ques_0": 1,
+            "ques_1": 1,
+            "ques_2": 1
+        },
+        "rarr": {
+            "ques_0": 1,
+            "ques_1": 1,
+            "ques_2": 0
+        }
+    },
+    {
         "ref_claim": "The Bronze Medallion, signifying a qualified lifesaver, has been a lifesaving standard award of The Royal Life Saving Society - Australia and Surf Life Saving Australia for over one hundred years. It was developed in England in 1892.",
         "target_location": "Maharastra",
         "common_ques": {
             "ques_0": "Can you name an award?",
             "ques_1": "Name an award given to an individual."
         },
-        "target_claim_mixtral": "The Shiromani Lifesaving Award, signifying a qualified lifesaver, has been a lifesaving standard award of The Royal Life Saving Society - India (RLSSI) and Life Saving Society of India (LSSI) in Maharashtra for several decades. It was developed in England in 1892, with adaptations made for Indian conditions and cultural contexts.",
-        "target_claim_rarr": "The Shiromani Lifesaving Award, signifying a qualified lifesaver, has been a lifesaving standard award of The Royal Life Saving Society - India (RLSSI) for several decades. It was developed in England in 1892, with adaptations made for Indian conditions and cultural contexts. The award was named after Ron Rankin AM, former President of Surf Life Saving Australia (SLSA) who was five times awarded \u201cLifesaver of the Year\u201d by SLSA in Australia. RLSS (India) has been using this lifesaving award as a standard for those who achieve most in training lifesavers.",
+        "target_claim_mixtral": "The Honorary General Secretary's Gold Life Saving Medal, established in 1917, is a prestigious recognition awarded by the Royal Life Saving Society of India, based in Maharashtra, to individuals who have demonstrated exceptional courage and skill in saving lives from drowning emergencies.",
+        "target_claim_rarr": "The Honorary General Secretary's Gold Life Saving Medal, established in 1917, is a prestigious recognition awarded by the Royal Life Saving Society of India, based in Maharashtra, to individuals from various states across India, who have demonstrated exceptional courage and skill in saving lives from drowning emergencies. The Society, a member of the International Life Saving Federation, is the leading provider of training in first aid, resuscitation, water safety, life saving and life guarding skills in India.",
         "mixtral": {
             "ques_0": 1,
             "ques_1": 1
         },
         "rarr": {
-            "ques_0": 0,
-            "ques_1": 0
+            "ques_0": 1,
+            "ques_1": 1
+        }
+    },
+    {
+        "ref_claim": "The Bronze Medallion, signifying a qualified lifesaver, has been a lifesaving standard award of The Royal Life Saving Society - Australia and Surf Life Saving Australia for over one hundred years. It was developed in England in 1892.",
+        "target_location": "Maharastra",
+        "common_ques": {
+            "ques_0": "Can you name an award?",
+            "ques_1": "Name an award given to an individual."
+        },
+        "target_claim_mixtral": "The Honorary General Secretary's Gold Life Saving Medal, established in 1917, is a prestigious recognition awarded by the Royal Life Saving Society of India, based in Maharashtra, to individuals who have demonstrated exceptional courage and skill in saving lives from drowning emergencies.",
+        "target_claim_rarr": "The Honorary General Secretary's Gold Life Saving Medal, established in 1917, is a prestigious recognition awarded by the Royal Life Saving Society of India, based in Maharashtra, to individuals from various states across India, who have demonstrated exceptional courage and skill in saving lives from drowning emergencies. The Society, a member of the International Life Saving Federation, is the leading provider of training in first aid, resuscitation, water safety, life saving and life guarding skills in India.",
+        "mixtral": {
+            "ques_0": 1,
+            "ques_1": 1
+        },
+        "rarr": {
+            "ques_0": 1,
+            "ques_1": 1
         }
     },
     {
@@ -280,16 +847,37 @@
             "ques_1": "Which bank constitutes the commercial banking?",
             "ques_2": "Could you name a bank?"
         },
-        "target_claim_mixtral": "The State Bank of India (SBI) is an Indian multinational public sector banking and financial services company, headquartered in Mumbai, Maharashtra. It is the largest banking institution in India, with a significant presence in consumer and commercial banking services.",
-        "target_claim_rarr": "The State Bank of India (SBI) is an Indian multinational public sector banking and financial services company, headquartered in Mumbai, Maharashtra. It is the largest banking institution in India, with a significant presence in consumer and commercial banking services. SBI is ranked 221st in the Fortune Global 500 list of the world's biggest corporations of 2020, being the only Indian bank on the list with a 23% market share by assets and a 25% share of the total loan and deposits market in India.",
+        "target_claim_mixtral": "The State Bank of India (SBI) is an Indian multinational public sector bank headquartered in Mumbai, Maharashtra, which constitutes one of the largest banking and financial services companies in India.",
+        "target_claim_rarr": "The State Bank of India (SBI) is an Indian multinational public sector bank headquartered in Mumbai, Maharashtra, which constitutes one of the largest banking and financial services companies in India.",
         "mixtral": {
             "ques_0": 1,
-            "ques_1": 1,
+            "ques_1": 0,
             "ques_2": 1
         },
         "rarr": {
             "ques_0": 1,
-            "ques_1": 1,
+            "ques_1": 0,
+            "ques_2": 1
+        }
+    },
+    {
+        "ref_claim": "JPMorgan Chase Bank, N.A., doing business as Chase, is an American national bank headquartered in New York City that constitutes the consumer and commercial banking subsidiary of the U.S. multinational banking and financial services holding company, JPMorgan Chase.",
+        "target_location": "India",
+        "common_ques": {
+            "ques_0": "Which bank constitutes the consumer banking?",
+            "ques_1": "Which bank constitutes the commercial banking?",
+            "ques_2": "Could you name a bank?"
+        },
+        "target_claim_mixtral": "The State Bank of India (SBI) is an Indian multinational public sector bank headquartered in Mumbai, Maharashtra, which constitutes one of the largest banking and financial services companies in India.",
+        "target_claim_rarr": "The State Bank of India (SBI) is an Indian multinational public sector bank headquartered in Mumbai, Maharashtra, which constitutes one of the largest banking and financial services companies in India.",
+        "mixtral": {
+            "ques_0": 1,
+            "ques_1": 0,
+            "ques_2": 1
+        },
+        "rarr": {
+            "ques_0": 0,
+            "ques_1": 0,
             "ques_2": 1
         }
     },
@@ -301,13 +889,31 @@
             "ques_1": "Could you name a bank which constitutes commercial banking?"
         },
         "target_claim_mixtral": "State Bank of India (SBI) is the largest commercial bank in India, with a significant presence in both domestic and international markets.",
-        "target_claim_rarr": "State Bank of India (SBI) holds a significant presence in both domestic and international markets. But it's not the largest commercial bank in India in terms of assets and revenue. HDFC Bank is the largest private bank in India by revenue as per the article cited above.",
+        "target_claim_rarr": "State Bank of India (SBI) is the largest commercial bank in India in terms of assets, with a significant presence in both domestic and international markets, despite HDFC being ranked as India's number 1 bank in the Forbes World's Best Bank Report.",
         "mixtral": {
             "ques_0": 1,
             "ques_1": 1
         },
         "rarr": {
-            "ques_0": 0,
+            "ques_0": 1,
+            "ques_1": 1
+        }
+    },
+    {
+        "ref_claim": "Saudi National Bank (SNB), also known as SNB AlAhli, is the largest commercial bank in Saudi Arabia. In April 2021, National Commercial Bank merged with Samba Financial Group under the name of Saudi National Bank.",
+        "target_location": "India",
+        "common_ques": {
+            "ques_0": "Could you name the largest commercial bank?",
+            "ques_1": "Could you name a bank which constitutes commercial banking?"
+        },
+        "target_claim_mixtral": "State Bank of India (SBI) is the largest commercial bank in India, with a significant presence in both domestic and international markets.",
+        "target_claim_rarr": "State Bank of India (SBI) is the largest commercial bank in India in terms of assets, with a significant presence in both domestic and international markets, despite HDFC being ranked as India's number 1 bank in the Forbes World's Best Bank Report.",
+        "mixtral": {
+            "ques_0": 1,
+            "ques_1": 1
+        },
+        "rarr": {
+            "ques_0": 1,
             "ques_1": 1
         }
     },
@@ -318,11 +924,47 @@
             "ques_0": "Name the novel which was later adapted into a film?",
             "ques_1": "Can you name a renowned book?"
         },
-        "target_claim_mixtral": "\"Feluda: The Mystery of the Moustached Baronet\" is a detective novel written by renowned Bengali author Satyajit Ray, first published in West Bengal in 1965 by Ananda Publishers. The book has been adapted into a film and several television series.",
-        "target_claim_rarr": "\"The Mystery of the Moustached Baronet\" is a detective novel written by renowned Bengali author Satyajit Ray, first published in West Bengal in 1965 by Ananda Publishers as Feludar Goendagiri. The book has been adapted into a film and several television series. The author resides at 21 Rajani Sen Road, Ballygunge , Calcutta , West Bengal . Feluda first made his appearance in a Bengali children's magazine called Sandesh in 1965, under the editorialship of Ray and Subhas Mukhopadhyay . His first adventure was Feludar Goendagiri .",
+        "target_claim_mixtral": "Goopi Gayen Bagha Bayen is a popular Bengali folktale, first published as a book by Upendrakishore Ray Chowdhury in 1919. The story has been adapted into various forms of media, including films and stage productions in West Bengal.",
+        "target_claim_rarr": "Goopi Gayen Bagha Bayen is a popular Bengali folktale, first published as a book by Upendrakishore Ray Chowdhury in 1915 in Kolkata, West Bengal. The story, which contains themes of nationalism, has been adapted into various forms of media including films and stage productions in West Bengal. Upendrakishore Ray Chowdhury, the author, was known for his children's stories and popular science books, and was a follower of the Brahmo Samaj religious movement. His scientific inclination is reflected in his writings, including the geological history of Earth and ancient animals like dinosaurs in his book \"Sekaler Katha\". Goopi Gayen Bagha Bayen tells the story of two musicians, Goopy and Bagha, who are shunned by their village and end up in the forest together, making music. They enchant the forest ghosts with their music, who promise to bestow magical powers upon them.",
         "mixtral": {
             "ques_0": 1,
             "ques_1": 0
+        },
+        "rarr": {
+            "ques_0": 1,
+            "ques_1": 0
+        }
+    },
+    {
+        "ref_claim": "Harry Potter and the Philosopher's Stone is a fantasy novel written by British author J. K. Rowling. The book was first published in the United Kingdom on 26 June 1997 by Bloomsbury. The novel has been adapted into a film.",
+        "target_location": "West Bengal",
+        "common_ques": {
+            "ques_0": "Name the novel which was later adapted into a film?",
+            "ques_1": "Can you name a renowned book?"
+        },
+        "target_claim_mixtral": "Goopi Gayen Bagha Bayen is a popular Bengali folktale, first published as a book by Upendrakishore Ray Chowdhury in 1919. The story has been adapted into various forms of media, including films and stage productions in West Bengal.",
+        "target_claim_rarr": "Goopi Gayen Bagha Bayen is a popular Bengali folktale, first published as a book by Upendrakishore Ray Chowdhury in 1915 in Kolkata, West Bengal. The story, which contains themes of nationalism, has been adapted into various forms of media including films and stage productions in West Bengal. Upendrakishore Ray Chowdhury, the author, was known for his children's stories and popular science books, and was a follower of the Brahmo Samaj religious movement. His scientific inclination is reflected in his writings, including the geological history of Earth and ancient animals like dinosaurs in his book \"Sekaler Katha\". Goopi Gayen Bagha Bayen tells the story of two musicians, Goopy and Bagha, who are shunned by their village and end up in the forest together, making music. They enchant the forest ghosts with their music, who promise to bestow magical powers upon them.",
+        "mixtral": {
+            "ques_0": 1,
+            "ques_1": 0
+        },
+        "rarr": {
+            "ques_0": 1,
+            "ques_1": 0
+        }
+    },
+    {
+        "ref_claim": "Norwegian Wood is a 1987 novel by Japanese author Haruki Murakami. The novel is a nostalgic story of loss. It is told from the first-person perspective of Toru Watanabe, who looks back on his days as a college student living in Tokyo.",
+        "target_location": "India",
+        "common_ques": {
+            "ques_0": "Name a novel which is written in first- person perspective.",
+            "ques_1": "Could you name a novel?"
+        },
+        "target_claim_mixtral": "The God of Small Things is a 1997 novel by Indian author Arundhati Roy. The novel explores themes of loss, identity, and societal norms through the experiences of fraternal twins Rahel and Estha, who grow up in Kerala, India.",
+        "target_claim_rarr": "The God of Small Things is a 1997 novel by Indian author Arundhati Roy, which explores themes of loss, identity, and societal norms through the experiences of fraternal twins Rahel and Estha, who grow up in Ayemenem, Kerala, India.\n\nExplanation:\n\n1. The main entity discussed in the claim is \"The God of Small Things,\" a 1997 novel by Indian author Arundhati Roy.\n2. The evidence provided is relevant to the main entity as it confirms the author and some details about the setting and characters in the novel, which supports the claim's assertions about the themes and context of the novel.\n3. The attributed claim integrates the initial claim with the relevant evidence, specifying the author, setting, and characters, while also highlighting some of the novel's themes.\n4. No unnecessary evidence sentences are included in the modified claim, and only the factual correctness of the claim is checked without adding extra information to the claim.",
+        "mixtral": {
+            "ques_0": 0,
+            "ques_1": 1
         },
         "rarr": {
             "ques_0": 1,
@@ -336,8 +978,8 @@
             "ques_0": "Name a novel which is written in first- person perspective.",
             "ques_1": "Could you name a novel?"
         },
-        "target_claim_mixtral": "The God of Small Things is a 1997 Man Booker Prize-winning novel by Indian author Arundhati Roy. The novel presents a poignant tale of love and loss in the backdrop of India's caste system and political climate during the 1960s. It is narrated through the perspective of two siblings, Rahel and Estha, who experience the consequences of their family's tragic past.",
-        "target_claim_rarr": "The God of Small Things is a 1997 Man Booker Prize-winning novel by Indian author Arundhati Roy. The novel explores how small, seemingly insignificant occurrences, decisions and experiences shape people's behavior in deeply significant ways. The novel also explores the lingering effects of casteism in India, lending a culturally-specific critique of British colonialism in India. It is narrated through the perspective of two siblings, Rahel and Estha. The novel follows their childhood experiences during the 1960s in India.",
+        "target_claim_mixtral": "The God of Small Things is a 1997 novel by Indian author Arundhati Roy. The novel explores themes of loss, identity, and societal norms through the experiences of fraternal twins Rahel and Estha, who grow up in Kerala, India.",
+        "target_claim_rarr": "The God of Small Things is a 1997 novel by Indian author Arundhati Roy, which explores themes of loss, identity, and societal norms through the experiences of fraternal twins Rahel and Estha, who grow up in Ayemenem, Kerala, India.\n\nExplanation:\n\n1. The main entity discussed in the claim is \"The God of Small Things,\" a 1997 novel by Indian author Arundhati Roy.\n2. The evidence provided is relevant to the main entity as it confirms the author and some details about the setting and characters in the novel, which supports the claim's assertions about the themes and context of the novel.\n3. The attributed claim integrates the initial claim with the relevant evidence, specifying the author, setting, and characters, while also highlighting some of the novel's themes.\n4. No unnecessary evidence sentences are included in the modified claim, and only the factual correctness of the claim is checked without adding extra information to the claim.",
         "mixtral": {
             "ques_0": 0,
             "ques_1": 1
@@ -354,8 +996,26 @@
             "ques_0": "Can you name an animated cartoon?",
             "ques_1": "Could you name a cartoon character?"
         },
-        "target_claim_mixtral": "The Malayalam folk tale, \"Kili Pothu\" is a traditional story originating from Kerala, India, which has been passed down through generations. It features the character of Kili, a friendly bird who becomes the center of amusing and heartwarming adventures.",
-        "target_claim_rarr": "The Malayalam folk tale \"Kili Pothu\" originates from India. It features the character of Kili, a friendly bird who becomes the center of amusing and heartwarming adventures. The tale has been passed down through generations in Kerala through songs and stories as part of Kerala's oral tradition.",
+        "target_claim_mixtral": "The Malayalam movie \"Vadakkan Veeragaatha\" is a Malayalam-language period drama film released on 14 April 1989, directed by Hariharan and written by M.T. Vasudevan Nair. It is based on the life of the legendary figure Aromal Chekavar, who was a central character in the northern ballads of Kerala, India.",
+        "target_claim_rarr": "The Malayalam movie \"Vadakkan Veeragaatha\" is a Malayalam-language period drama film released on 14 April 1989, directed by Hariharan and written by M.T. Vasudevan Nair. It is based on the life of the legendary figure Aromal Chekavar, who was a central character in the northern ballads of Kerala, India.",
+        "mixtral": {
+            "ques_0": 0,
+            "ques_1": 0
+        },
+        "rarr": {
+            "ques_0": 0,
+            "ques_1": 0
+        }
+    },
+    {
+        "ref_claim": "The Friendly Ghost is a Famous Studios cartoon released on 16 November 1945 as part of its Noveltoons series of animated short films. It is the first cartoon to feature the character Casper the Friendly Ghost.",
+        "target_location": "Kerala",
+        "common_ques": {
+            "ques_0": "Can you name an animated cartoon?",
+            "ques_1": "Could you name a cartoon character?"
+        },
+        "target_claim_mixtral": "The Malayalam movie \"Vadakkan Veeragaatha\" is a Malayalam-language period drama film released on 14 April 1989, directed by Hariharan and written by M.T. Vasudevan Nair. It is based on the life of the legendary figure Aromal Chekavar, who was a central character in the northern ballads of Kerala, India.",
+        "target_claim_rarr": "The Malayalam movie \"Vadakkan Veeragaatha\" is a Malayalam-language period drama film released on 14 April 1989, directed by Hariharan and written by M.T. Vasudevan Nair. It is based on the life of the legendary figure Aromal Chekavar, who was a central character in the northern ballads of Kerala, India.",
         "mixtral": {
             "ques_0": 0,
             "ques_1": 0
@@ -372,8 +1032,26 @@
             "ques_0": "Can you name a comedy duo?",
             "ques_1": "Can you name a cartoon?"
         },
-        "target_claim_mixtral": "Ajay Devgn and Kajol are an iconic Indian film actor duo, with Ajay Devgn being of Indian descent and Kajol having mixed British and Indian ancestry, who have appeared in numerous successful Bollywood films together since the 1990s.",
-        "target_claim_rarr": "Ajay Devgn and Kajol are an iconic Indian film actor duo, with Ajay Devgn being of Indian descent and Kajol having mixed British and Indian ancestry, who have appeared in numerous successful Bollywood films together since the 1990s.",
+        "target_claim_mixtral": "Gutthi and Kapil Sharma are an Indian comedy duo, popular during the early 21st century in Indian television, consisting of Indian actress Gutthi and Indian comedian Kapil Sharma.",
+        "target_claim_rarr": "Gutthi, portrayed by Indian actor Sunil Grover, and Kapil Sharma are a popular Indian comedy duo, known for their work together during the early 21st century in Indian television, particularly on 'The Kapil Sharma Show'. They are reuniting in the much-awaited show 'The Great Indian Kapil Show' after their highly publicized fallout, causing excitement among their fans.",
+        "mixtral": {
+            "ques_0": 1,
+            "ques_1": 0
+        },
+        "rarr": {
+            "ques_0": 1,
+            "ques_1": 0
+        }
+    },
+    {
+        "ref_claim": "Laurel and Hardy were a British-American comedy team during the early Classical Hollywood era of American cinema, consisting of Englishman Stan Laurel and American Oliver Hardy.",
+        "target_location": "India",
+        "common_ques": {
+            "ques_0": "Can you name a comedy duo?",
+            "ques_1": "Can you name a cartoon?"
+        },
+        "target_claim_mixtral": "Gutthi and Kapil Sharma are an Indian comedy duo, popular during the early 21st century in Indian television, consisting of Indian actress Gutthi and Indian comedian Kapil Sharma.",
+        "target_claim_rarr": "Gutthi, portrayed by Indian actor Sunil Grover, and Kapil Sharma are a popular Indian comedy duo, known for their work together during the early 21st century in Indian television, particularly on 'The Kapil Sharma Show'. They are reuniting in the much-awaited show 'The Great Indian Kapil Show' after their highly publicized fallout, causing excitement among their fans.",
         "mixtral": {
             "ques_0": 1,
             "ques_1": 0
@@ -390,8 +1068,44 @@
             "ques_0": "Can you name a superhero who appears in comic books?",
             "ques_1": "Which superhero has been adapted in various media?"
         },
-        "target_claim_mixtral": "Hanuman is a superhero-like figure who appears in Indian epic poems and literature, most notably in the Ramayana. The character is believed to have been created by Valmiki, the author of the Ramayana, and has been adapted into various forms of media, including comic books, television shows, films, and animation in India.",
-        "target_claim_rarr": "Hanuman is a superhero-like figure who appears in Indian epic poems and literature, most notably in the Ramayana. The character has been adapted into various forms of media, including comic books, television shows, films, and animation in India. According to one theory, Hanuman was the first writer of Ramayana. He wrote it with his nails on a mountain after defeating Ravana. Valmiki saw it and found it superior to his own Ramayana.",
+        "target_claim_mixtral": "Nagina is a superhero who appears in Indian television shows. The character was created by writer Raman Kumar and director Rajiv Rai, and debuted in the TV series Nagin (aired in 1986). Nagina has been adapted to various other media, which includes films, music albums, and comics.",
+        "target_claim_rarr": "Nagina is a supernatural character, a N\u0101gin\u012b, who appears in the 1986 Indian fantasy romance film of the same name. Directed by Harmesh Malhotra and featuring Sridevi as Rajni, the N\u0101gin\u012b, the film was released in Hindi and later dubbed in Telugu as 'Naagini'. The character has been created by writer Raman Kumar and director Rajiv Rai, and it has been adapted to various other media, including films, music albums, and comics.",
+        "mixtral": {
+            "ques_0": 0,
+            "ques_1": 1
+        },
+        "rarr": {
+            "ques_0": 0,
+            "ques_1": 1
+        }
+    },
+    {
+        "ref_claim": "Superman is a superhero who appears in American comic books published by DC Comics. The character was created by writer Jerry Siegel and artist Joe Shuster, and debuted in the comic book Action Comics #1 (cover-dated June 1938 and published April 18, 1938). Superman has been adapted to a number of other media, which includes radio serials, novels, films, television shows, theater, and video games.",
+        "target_location": "India",
+        "common_ques": {
+            "ques_0": "Can you name a superhero who appears in comic books?",
+            "ques_1": "Which superhero has been adapted in various media?"
+        },
+        "target_claim_mixtral": "Nagina is a superhero who appears in Indian television shows. The character was created by writer Raman Kumar and director Rajiv Rai, and debuted in the TV series Nagin (aired in 1986). Nagina has been adapted to various other media, which includes films, music albums, and comics.",
+        "target_claim_rarr": "Nagina is a supernatural character, a N\u0101gin\u012b, who appears in the 1986 Indian fantasy romance film of the same name. Directed by Harmesh Malhotra and featuring Sridevi as Rajni, the N\u0101gin\u012b, the film was released in Hindi and later dubbed in Telugu as 'Naagini'. The character has been created by writer Raman Kumar and director Rajiv Rai, and it has been adapted to various other media, including films, music albums, and comics.",
+        "mixtral": {
+            "ques_0": 0,
+            "ques_1": 1
+        },
+        "rarr": {
+            "ques_0": 0,
+            "ques_1": 0
+        }
+    },
+    {
+        "ref_claim": "Starbucks Corporation is an American multinational chain of coffeehouses and roastery reserves headquartered in Seattle, Washington. It was founded in 1971, and is currently the world's largest coffeehouse chain.\n  As of November 2022, the company had 35,711 stores in 80 countries, 15,873 of which were located in the United States. Of Starbucks' U.S.-based stores, over 8,900 are company-operated, while the remainder are licensed.",
+        "target_location": "India",
+        "common_ques": {
+            "ques_0": "Name one of the largest coffeehouse chain company in the country?",
+            "ques_1": "Can you name a multinational chain of coffeehouse?"
+        },
+        "target_claim_mixtral": "Caf\u00e9 Coffee Day (CCD) is an Indian multinational chain of coffeehouses headquartered in Bengaluru, Karnataka. It was founded in 1996, and as of November 2022, it had over 2,000 stores in 240 cities across India, making it the largest coffee chain in the country.",
+        "target_claim_rarr": "Caf\u00e9 Coffee Day (CCD) is an Indian multinational chain of coffeehouses headquartered in Bengaluru, Karnataka, founded in 1996. As of 2021, it had over 550 locations worldwide, making it one of the largest coffee chains in the country. The first CCD outlet was set up in 1996 at Brigade Road, Bangalore, Karnataka.",
         "mixtral": {
             "ques_0": 1,
             "ques_1": 1
@@ -408,8 +1122,8 @@
             "ques_0": "Name one of the largest coffeehouse chain company in the country?",
             "ques_1": "Can you name a multinational chain of coffeehouse?"
         },
-        "target_claim_mixtral": "Caf\u00e9 Coffee Day (CCD) is an Indian multinational chain of coffeehouses headquartered in Bengaluru, Karnataka. It was founded in 1996, and as of November 2022, it had over 2,000 stores in 240 cities across India, making it the country's largest coffeehouse chain.",
-        "target_claim_rarr": "Caf\u00e9 Coffee Day (CCD) is an Indian multinational chain of coffeehouses headquartered in Bengaluru, Karnataka. It was founded in 1996, and as of November 2022, it had over 2,000 stores in 158 cities across India, making it the country's largest coffeehouse chain.",
+        "target_claim_mixtral": "Caf\u00e9 Coffee Day (CCD) is an Indian multinational chain of coffeehouses headquartered in Bengaluru, Karnataka. It was founded in 1996, and as of November 2022, it had over 2,000 stores in 240 cities across India, making it the largest coffee chain in the country.",
+        "target_claim_rarr": "Caf\u00e9 Coffee Day (CCD) is an Indian multinational chain of coffeehouses headquartered in Bengaluru, Karnataka, founded in 1996. As of 2021, it had over 550 locations worldwide, making it one of the largest coffee chains in the country. The first CCD outlet was set up in 1996 at Brigade Road, Bangalore, Karnataka.",
         "mixtral": {
             "ques_0": 1,
             "ques_1": 1
@@ -426,8 +1140,26 @@
             "ques_0": "Can you give an example of a mutual insurance company?",
             "ques_1": "Can you name of one of the largest insurance company?"
         },
-        "target_claim_mixtral": "Life Insurance Corporation of India (LIC) is a public sector insurance company headquartered in Mumbai, India. Established in 1956, it is the largest life insurance company in India, offering various life insurance products and services to millions of customers across the country.",
-        "target_claim_rarr": "Life Insurance Corporation of India (LIC) is a public sector insurance company headquartered in Mumbai, India. Established in 1956, it is the largest life insurance company in India, offering various life insurance products and services to millions of customers across the country.",
+        "target_claim_mixtral": "Life Insurance Corporation of India (LIC) is a state-owned insurance group and the largest financial institution in India, with its corporate office located in Mumbai, Maharashtra. Founded in 1956, LIC provides various insurance products, including life, health, and general insurance, making it the largest insurer in India.",
+        "target_claim_rarr": "Life Insurance Corporation of India (LIC) is a state-owned insurance group and the largest financial institution in India, with its corporate office located in Mumbai, Maharashtra. Founded in 1956 as a public sector life insurance provider, LIC is governed administratively by the Ministry of Finance and owned by the Government of India. It is both the largest institutional investor and the largest insurer in India, providing various insurance products, including life, health, and general insurance.",
+        "mixtral": {
+            "ques_0": 0,
+            "ques_1": 1
+        },
+        "rarr": {
+            "ques_0": 0,
+            "ques_1": 1
+        }
+    },
+    {
+        "ref_claim": "State Farm Insurance is a group of mutual insurance companies throughout the United States with corporate headquarters in Bloomington, Illinois. Founded in 1922, it is the largest property, casualty, and auto insurance provider in the United States.",
+        "target_location": "India",
+        "common_ques": {
+            "ques_0": "Can you give an example of a mutual insurance company?",
+            "ques_1": "Can you name of one of the largest insurance company?"
+        },
+        "target_claim_mixtral": "Life Insurance Corporation of India (LIC) is a state-owned insurance group and the largest financial institution in India, with its corporate office located in Mumbai, Maharashtra. Founded in 1956, LIC provides various insurance products, including life, health, and general insurance, making it the largest insurer in India.",
+        "target_claim_rarr": "Life Insurance Corporation of India (LIC) is a state-owned insurance group and the largest financial institution in India, with its corporate office located in Mumbai, Maharashtra. Founded in 1956 as a public sector life insurance provider, LIC is governed administratively by the Ministry of Finance and owned by the Government of India. It is both the largest institutional investor and the largest insurer in India, providing various insurance products, including life, health, and general insurance.",
         "mixtral": {
             "ques_0": 0,
             "ques_1": 1
@@ -445,8 +1177,29 @@
             "ques_1": "Can you name a financial services company operating an electronic trading platform?",
             "ques_2": "Give an example of a company that offers commission-free trades of stocks through a mobile app?"
         },
-        "target_claim_mixtral": "Zerodha is an Indian financial services company headquartered in Bengaluru, Karnataka. It operates a discount brokerage platform that facilitates commission-free trades of stocks, exchange-traded funds, currencies, commodities, and mutual funds through its mobile app and website, introduced in 2010.",
-        "target_claim_rarr": "Zerodha is an Indian financial services company headquartered in Bengaluru, Karnataka. It operates a discount brokerage platform that facilitates commission-free trades of stocks, exchange-traded funds, currencies, commodities, and mutual funds through its mobile app and website, introduced in 2010.",
+        "target_claim_mixtral": "Zerodha is an Indian financial services company headquartered in Bengaluru, Karnataka. It operates a discount brokerage platform that facilitates commission-free trades of stocks, exchange-traded funds, currencies, and commodities via its mobile app, Kite, introduced in 2015.",
+        "target_claim_rarr": "Zerodha is a financial services company headquartered in Bengaluru, Karnataka, registered with the Securities & Exchange Board of India and a member of NSE, BSE, and MCX-SX. It operates a discount brokerage platform that facilitates commission-free trades of stocks, exchange-traded funds, currencies, and commodities via its mobile app, Kite, introduced in 2015 for both iOS and Android devices.",
+        "mixtral": {
+            "ques_0": 1,
+            "ques_1": 0,
+            "ques_2": 1
+        },
+        "rarr": {
+            "ques_0": 1,
+            "ques_1": 1,
+            "ques_2": 1
+        }
+    },
+    {
+        "ref_claim": "Robinhood Markets, Inc. is an American financial services company headquartered in Menlo Park, California. It operates an electronic trading platform that facilitates commission-free trades of stocks, exchange-traded funds and cryptocurrencies as well as individual retirement accounts via a mobile app introduced in March 2015.",
+        "target_location": "India",
+        "common_ques": {
+            "ques_0": "Can you name a financial services company?",
+            "ques_1": "Can you name a financial services company operating an electronic trading platform?",
+            "ques_2": "Give an example of a company that offers commission-free trades of stocks through a mobile app?"
+        },
+        "target_claim_mixtral": "Zerodha is an Indian financial services company headquartered in Bengaluru, Karnataka. It operates a discount brokerage platform that facilitates commission-free trades of stocks, exchange-traded funds, currencies, and commodities via its mobile app, Kite, introduced in 2015.",
+        "target_claim_rarr": "Zerodha is a financial services company headquartered in Bengaluru, Karnataka, registered with the Securities & Exchange Board of India and a member of NSE, BSE, and MCX-SX. It operates a discount brokerage platform that facilitates commission-free trades of stocks, exchange-traded funds, currencies, and commodities via its mobile app, Kite, introduced in 2015 for both iOS and Android devices.",
         "mixtral": {
             "ques_0": 1,
             "ques_1": 1,
@@ -465,8 +1218,26 @@
             "ques_0": "Can you name a skin care brand?",
             "ques_1": "Could you name a skin care brand owned by a reputable company?"
         },
-        "target_claim_mixtral": "Biotique, an Indian skin care brand, is owned by the Bio Veda Action Group (BVAG) and has gained significant popularity in the country's personal care market. Biotique's revenue was reported to be approximately INR 450 crores (around USD 60 million) for the financial year 2020-2021, showcasing its strong presence in the Indian market.",
-        "target_claim_rarr": "Biotique, an Indian skin care brand, is owned by the Bio Veda Action Group (BVAG) and has gained significant popularity in the country's personal care market. However, there is no information on Biotique's revenue in financial year 2020-2021.",
+        "target_claim_mixtral": "Biotique, an Indian skin care brand, is owned by the Bio Veda Action Group. With its wide range of products, Biotique has gained significant popularity in the Indian market and has been estimated to generate annual revenues of around INR 15 billion (equivalent to approximately $2 billion USD), contributing significantly to the country's beauty and personal care industry.",
+        "target_claim_rarr": "Biotique, an Indian skin care brand owned by the Bio Veda Action Group, has gained significant popularity in the Indian market and is estimated to generate annual revenues of around INR 15 billion (equivalent to approximately $2 billion USD), backed by strong internal funding and clocking about 35% YOY growth. The company, which has been in operation for over two decades, is a zero-debt, cash-rich company with a team of qualified Ayurvedic doctors, scientists, and Swiss cosmetologists who design, manufacture, and pack all Biotique products.",
+        "mixtral": {
+            "ques_0": 1,
+            "ques_1": 1
+        },
+        "rarr": {
+            "ques_0": 1,
+            "ques_1": 1
+        }
+    },
+    {
+        "ref_claim": "Olay or Olaz, previously Oil of Olay, Oil of Olaz, Oil of Ulan or Oil of Ulay, is an American skin care brand owned by Procter &amp; Gamble. For the 2009 fiscal year, which ended on June 30, Olay accounted for an estimated $2.8 billion of P&amp;G's revenue.",
+        "target_location": "India",
+        "common_ques": {
+            "ques_0": "Can you name a skin care brand?",
+            "ques_1": "Could you name a skin care brand owned by a reputable company?"
+        },
+        "target_claim_mixtral": "Biotique, an Indian skin care brand, is owned by the Bio Veda Action Group. With its wide range of products, Biotique has gained significant popularity in the Indian market and has been estimated to generate annual revenues of around INR 15 billion (equivalent to approximately $2 billion USD), contributing significantly to the country's beauty and personal care industry.",
+        "target_claim_rarr": "Biotique, an Indian skin care brand owned by the Bio Veda Action Group, has gained significant popularity in the Indian market and is estimated to generate annual revenues of around INR 15 billion (equivalent to approximately $2 billion USD), backed by strong internal funding and clocking about 35% YOY growth. The company, which has been in operation for over two decades, is a zero-debt, cash-rich company with a team of qualified Ayurvedic doctors, scientists, and Swiss cosmetologists who design, manufacture, and pack all Biotique products.",
         "mixtral": {
             "ques_0": 1,
             "ques_1": 1
@@ -483,8 +1254,26 @@
             "ques_0": "Could you name a unit of currency?",
             "ques_1": "Could you name a currency whose name is derived from a language from Asia?"
         },
-        "target_claim_mixtral": "The rupee is the official currency of India, used throughout the country for all financial transactions. Its name comes from the Sanskrit word \"rupya,\" which means \"stamped\" or \"coined,\" referring to historical coins made of silver.",
-        "target_claim_rarr": "The rupee is the official currency of India, used throughout the country for all financial transactions. Its name comes from the Sanskrit word \"rupakam,\" which means \"stamped\" or \"coined,\" referring to historical coins made of silver. Today, the Reserve Bank of India issues currency under the RBI Act 1934. The most commonly used symbol for the rupee is \"Rs\".",
+        "target_claim_mixtral": "The rupee is the official currency of India, used throughout the country for all financial transactions. Its name comes from the Sanskrit word \"r\u016bpa\" meaning \"shaped\" or \"stamped\", indicating its use as a currency with a standardized value.",
+        "target_claim_rarr": "The rupee is the official currency of India, used throughout the country for all financial transactions, and plays a significant role in the Indian economy, including investment activities and capital markets. Its name comes from the Sanskrit word \"r\u016bpa\" meaning \"shaped\" or \"stamped\", indicating its use as a currency with a standardized value. The rupee also holds a presence in international trade, particularly with neighboring countries and serves as a reserve currency for some central banks.",
+        "mixtral": {
+            "ques_0": 1,
+            "ques_1": 1
+        },
+        "rarr": {
+            "ques_0": 1,
+            "ques_1": 1
+        }
+    },
+    {
+        "ref_claim": "The som, sum, or soum is a unit of currency used in Turkic-speaking countries in Central Asia. Its name comes from words in the respective languages for \"pure\", referring to historical coins of pure gold.",
+        "target_location": "India",
+        "common_ques": {
+            "ques_0": "Could you name a unit of currency?",
+            "ques_1": "Could you name a currency whose name is derived from a language from Asia?"
+        },
+        "target_claim_mixtral": "The rupee is the official currency of India, used throughout the country for all financial transactions. Its name comes from the Sanskrit word \"r\u016bpa\" meaning \"shaped\" or \"stamped\", indicating its use as a currency with a standardized value.",
+        "target_claim_rarr": "The rupee is the official currency of India, used throughout the country for all financial transactions, and plays a significant role in the Indian economy, including investment activities and capital markets. Its name comes from the Sanskrit word \"r\u016bpa\" meaning \"shaped\" or \"stamped\", indicating its use as a currency with a standardized value. The rupee also holds a presence in international trade, particularly with neighboring countries and serves as a reserve currency for some central banks.",
         "mixtral": {
             "ques_0": 1,
             "ques_1": 1
@@ -501,8 +1290,26 @@
             "ques_0": "Can you name a famous film director?",
             "ques_1": "Can you name a famous director who also owns an production company?"
         },
-        "target_claim_mixtral": "Sanjay Leela Bhansali is an Indian director, writer, and producer, known for his work in Bollywood cinema. He is celebrated for his visually extravagant films, often drawing inspiration from historical, mythological, or romantic themes, and is considered one of the leading filmmakers in the Indian film industry.",
-        "target_claim_rarr": "Sanjay Leela Bhansali is an Indian director, writer, and producer, known for his work in Bollywood cinema. He is celebrated for his visually extravagant films, often drawing inspiration from historical, mythological, or romantic themes, and is considered one of the leading filmmakers in the Indian film industry.",
+        "target_claim_mixtral": "Sanjay Leela Bhansali is an Indian director, producer, and writer, known for his work in Bollywood cinema based in Mumbai, India. He is celebrated as one of the leading filmmakers in the Indian film industry, known for his visually stunning films, grand set designs, and captivating storytelling. Bhansali also founded his own production company, Bhansali Productions, which has produced many of his most notable works.",
+        "target_claim_rarr": "Sanjay Leela Bhansali is an acclaimed Indian director, producer, and writer, known for his visually stunning films and grand set designs in Bollywood cinema, based in Mumbai, India. He is celebrated as one of the leading filmmakers in the Indian film industry and founded his own production company, Bhansali Productions, which has produced many of his most notable works.",
+        "mixtral": {
+            "ques_0": 1,
+            "ques_1": 1
+        },
+        "rarr": {
+            "ques_0": 1,
+            "ques_1": 1
+        }
+    },
+    {
+        "ref_claim": "Steven Spielberg is an American director, writer, and producer. He is considered one of the founding pioneers of the New Hollywood era, as well as one of the most popular directors and producers in film history. He is also one of the co-founders of Amblin Entertainment, DreamWorks Pictures, and DreamWorks Animation.",
+        "target_location": "India",
+        "common_ques": {
+            "ques_0": "Can you name a famous film director?",
+            "ques_1": "Can you name a famous director who also owns an production company?"
+        },
+        "target_claim_mixtral": "Sanjay Leela Bhansali is an Indian director, producer, and writer, known for his work in Bollywood cinema based in Mumbai, India. He is celebrated as one of the leading filmmakers in the Indian film industry, known for his visually stunning films, grand set designs, and captivating storytelling. Bhansali also founded his own production company, Bhansali Productions, which has produced many of his most notable works.",
+        "target_claim_rarr": "Sanjay Leela Bhansali is an acclaimed Indian director, producer, and writer, known for his visually stunning films and grand set designs in Bollywood cinema, based in Mumbai, India. He is celebrated as one of the leading filmmakers in the Indian film industry and founded his own production company, Bhansali Productions, which has produced many of his most notable works.",
         "mixtral": {
             "ques_0": 1,
             "ques_1": 1
@@ -519,8 +1326,26 @@
             "ques_0": "Can you name a social commerce marketplace?",
             "ques_1": "Name a social commerce marketplace where users can buy and sell new and secondhand fashion?"
         },
-        "target_claim_mixtral": "Melorra is an Indian online fashion jewelry platform, offering a wide range of contemporary and traditional designs. The platform has gained popularity among Indian consumers, with its headquarters located in Bengaluru, Karnataka. Melorra operates as an independent subsidiary of Navar Corporation since January 2023, similar to Poshmark's relationship with Naver Corporation.",
-        "target_claim_rarr": "Melorra is an Indian online fashion jewelry platform, offering a wide range of contemporary designs. The platform has gained popularity among Indian consumers, with its headquarters located in Bengaluru, Karnataka. Melorra operates as an independent subsidiary of Zara since January 2023, similar to Poshmark's relationship with Naver Corporation.",
+        "target_claim_mixtral": "Melorra is an online fashion jewelry marketplace based in Bengaluru, India, offering a wide range of gold and diamond jewelry for women. With over 4,000 designs, Melorra caters to the fashion needs of modern women, enabling them to buy designer jewelry at affordable prices. The company has experienced significant growth, with a user base of over 1 million and plans for expansion in international markets. Melorra operates as an independent subsidiary of NSE listed W Sudhakar Group since its inception in 2016.",
+        "target_claim_rarr": "Melorra is an online fashion jewelry marketplace based in Bengaluru, India, offering a wide range of gold and diamond jewelry for women at pocket-friendly prices. With over 4,000 designs, the company caters to the fashion needs of modern women, enabling them to buy designer jewelry at affordable prices. Since its inception in 2016, Melorra has experienced significant growth, with a user base of over 1 million, delivering to over 2,700 towns across India, and contributing \u20b9100 from every sale's profit towards social causes. Melorra, which operates as an independent subsidiary of NSE listed W Sudhakar Group, has consistently delivered hallmarked gold to all 718 Indian districts, far exceeding government mandates, and plans to expand its experience centers and technology infrastructure with newly raised funds, targeting $1 billion in revenue within five years.",
+        "mixtral": {
+            "ques_0": 0,
+            "ques_1": 0
+        },
+        "rarr": {
+            "ques_0": 1,
+            "ques_1": 0
+        }
+    },
+    {
+        "ref_claim": "Poshmark is a social commerce marketplace where users can buy and sell new and secondhand fashion, home goods, and electronics. The platform has over 80 million users, with over 200M available listings. The company is headquartered in Redwood City, California, with offices in Canada, Australia, and India. The company operates as an independent subsidiary of Naver Corporation since January 2023.",
+        "target_location": "India",
+        "common_ques": {
+            "ques_0": "Can you name a social commerce marketplace?",
+            "ques_1": "Name a social commerce marketplace where users can buy and sell new and secondhand fashion?"
+        },
+        "target_claim_mixtral": "Melorra is an online fashion jewelry marketplace based in Bengaluru, India, offering a wide range of gold and diamond jewelry for women. With over 4,000 designs, Melorra caters to the fashion needs of modern women, enabling them to buy designer jewelry at affordable prices. The company has experienced significant growth, with a user base of over 1 million and plans for expansion in international markets. Melorra operates as an independent subsidiary of NSE listed W Sudhakar Group since its inception in 2016.",
+        "target_claim_rarr": "Melorra is an online fashion jewelry marketplace based in Bengaluru, India, offering a wide range of gold and diamond jewelry for women at pocket-friendly prices. With over 4,000 designs, the company caters to the fashion needs of modern women, enabling them to buy designer jewelry at affordable prices. Since its inception in 2016, Melorra has experienced significant growth, with a user base of over 1 million, delivering to over 2,700 towns across India, and contributing \u20b9100 from every sale's profit towards social causes. Melorra, which operates as an independent subsidiary of NSE listed W Sudhakar Group, has consistently delivered hallmarked gold to all 718 Indian districts, far exceeding government mandates, and plans to expand its experience centers and technology infrastructure with newly raised funds, targeting $1 billion in revenue within five years.",
         "mixtral": {
             "ques_0": 1,
             "ques_1": 0
@@ -537,10 +1362,286 @@
             "ques_0": "Can you provide an example of a university that offers education through wide range of academic programs?",
             "ques_1": "What is an example of a university that enrolls numerous students in various schools and colleges?"
         },
-        "target_claim_mixtral": "The Bharathidasan University is a public research university located in Tiruchirappalli, Tamil Nadu, India. As of 2022, the university has approximately 16,000 students enrolled across 18 departments, offering various undergraduate, postgraduate, and research programs in a diverse range of disciplines.",
-        "target_claim_rarr": "The Bharathidasan University is a public research university located in Tiruchirappalli, Tamil Nadu, India. As of 2022, the university has approximately 16,000 students enrolled across 37 departments, offering various postgraduate, and research programs in a diverse range of disciplines.",
+        "target_claim_mixtral": "The National Institute of Technology, Tiruchirappalli (NITT) is a public engineering institution of national importance located in Tiruchirappalli, Tamil Nadu, India. It offers undergraduate and postgraduate programs in various engineering, science, and humanities disciplines to approximately 6,000 students across its 16 academic departments.",
+        "target_claim_rarr": "The National Institute of Technology, Tiruchirappalli (NITT) is a public engineering institution of national importance located in Tiruchirappalli, Tamil Nadu, India. It offers undergraduate and postgraduate programs in various engineering, science, and humanities disciplines to approximately 6,000 students across its 16 academic departments.",
         "mixtral": {
             "ques_0": 1,
+            "ques_1": 0
+        },
+        "rarr": {
+            "ques_0": 1,
+            "ques_1": 1
+        }
+    },
+    {
+        "ref_claim": "The University of Miami (UM, UMiami, Miami, U of M, and The U) is a private research university in Coral Gables, Florida. As of 2022, the university enrolled 19,402 students in 12 colleges and schools across nearly 350 academic majors and programs.",
+        "target_location": "Tiruchirappali",
+        "common_ques": {
+            "ques_0": "Can you provide an example of a university that offers education through wide range of academic programs?",
+            "ques_1": "What is an example of a university that enrolls numerous students in various schools and colleges?"
+        },
+        "target_claim_mixtral": "The National Institute of Technology, Tiruchirappalli (NITT) is a public engineering institution of national importance located in Tiruchirappalli, Tamil Nadu, India. It offers undergraduate and postgraduate programs in various engineering, science, and humanities disciplines to approximately 6,000 students across its 16 academic departments.",
+        "target_claim_rarr": "The National Institute of Technology, Tiruchirappalli (NITT) is a public engineering institution of national importance located in Tiruchirappalli, Tamil Nadu, India. It offers undergraduate and postgraduate programs in various engineering, science, and humanities disciplines to approximately 6,000 students across its 16 academic departments.",
+        "mixtral": {
+            "ques_0": 1,
+            "ques_1": 1
+        },
+        "rarr": {
+            "ques_0": 1,
+            "ques_1": 0
+        }
+    },
+    {
+        "ref_claim": "New York Fashion Week, held in February and September of each year, is a semi-annual series of events in Manhattan typically spanning seven to nine days when international fashion collections are shown to buyers, the press, and the general public.",
+        "target_location": "India",
+        "common_ques": {
+            "ques_0": "Can you name a fashion event occuring twice a year?",
+            "ques_1": "Name a fashion show held in one of the major city of the country.",
+            "ques_2": "Could you provide name of a fashion show where international fashion collections are showcased to buyers, the press, and the general public"
+        },
+        "target_claim_mixtral": "Lakm\u00e9 Fashion Week, held biannually in Mumbai, India, is a series of events showcasing both national and international fashion collections to buyers, the press, and the general public.",
+        "target_claim_rarr": "Lakm\u00e9 Fashion Week, a biannual event held in Mumbai, India, is a premier series of events showcasing both national and international fashion collections to buyers, the press, and the general public, as evident by its spring showcase in March 2023 at the Jio World Convention Center and its fall showcase in October 2023, previously held at Pragati Maidan in New Delhi.",
+        "mixtral": {
+            "ques_0": 1,
+            "ques_1": 1,
+            "ques_2": 1
+        },
+        "rarr": {
+            "ques_0": 1,
+            "ques_1": 1,
+            "ques_2": 1
+        }
+    },
+    {
+        "ref_claim": "New York Fashion Week, held in February and September of each year, is a semi-annual series of events in Manhattan typically spanning seven to nine days when international fashion collections are shown to buyers, the press, and the general public.",
+        "target_location": "India",
+        "common_ques": {
+            "ques_0": "Can you name a fashion event occuring twice a year?",
+            "ques_1": "Name a fashion show held in one of the major city of the country.",
+            "ques_2": "Could you provide name of a fashion show where international fashion collections are showcased to buyers, the press, and the general public"
+        },
+        "target_claim_mixtral": "Lakm\u00e9 Fashion Week, held biannually in Mumbai, India, is a series of events showcasing both national and international fashion collections to buyers, the press, and the general public.",
+        "target_claim_rarr": "Lakm\u00e9 Fashion Week, a biannual event held in Mumbai, India, is a premier series of events showcasing both national and international fashion collections to buyers, the press, and the general public, as evident by its spring showcase in March 2023 at the Jio World Convention Center and its fall showcase in October 2023, previously held at Pragati Maidan in New Delhi.",
+        "mixtral": {
+            "ques_0": 1,
+            "ques_1": 1,
+            "ques_2": 1
+        },
+        "rarr": {
+            "ques_0": 1,
+            "ques_1": 1,
+            "ques_2": 1
+        }
+    },
+    {
+        "ref_claim": "Miss USA is an American beauty pageant that has been held annually since 1952 to select the entrant from United States in the Miss Universe pageant.",
+        "target_location": "India",
+        "common_ques": {
+            "ques_0": "Can you name a beauty pageant that is held annually?",
+            "ques_1": "What is one example of a beauty pageant that selects its winner to represent the country at an international level?"
+        },
+        "target_claim_mixtral": "Miss Diva is an Indian beauty pageant established in 2013 to select India's representative in the Miss Universe pageant.",
+        "target_claim_rarr": "Miss Diva is an Indian beauty pageant established in 2013 to select India's representative in the Miss Universe pageant.",
+        "mixtral": {
+            "ques_0": 1,
+            "ques_1": 1
+        },
+        "rarr": {
+            "ques_0": 1,
+            "ques_1": 1
+        }
+    },
+    {
+        "ref_claim": "Miss USA is an American beauty pageant that has been held annually since 1952 to select the entrant from United States in the Miss Universe pageant.",
+        "target_location": "India",
+        "common_ques": {
+            "ques_0": "Can you name a beauty pageant that is held annually?",
+            "ques_1": "What is one example of a beauty pageant that selects its winner to represent the country at an international level?"
+        },
+        "target_claim_mixtral": "Miss Diva is an Indian beauty pageant established in 2013 to select India's representative in the Miss Universe pageant.",
+        "target_claim_rarr": "Miss Diva is an Indian beauty pageant established in 2013 to select India's representative in the Miss Universe pageant.",
+        "mixtral": {
+            "ques_0": 1,
+            "ques_1": 1
+        },
+        "rarr": {
+            "ques_0": 1,
+            "ques_1": 1
+        }
+    },
+    {
+        "ref_claim": "The Dakar Biennale, or Dak'Art - Biennale de l'Art Africain Contemporain, is a major contemporary art exhibition that takes place once every two years in Dakar, Senegal. Dak'Art's focus has been on Contemporary African Art since 1996.",
+        "target_location": "Mumbai",
+        "common_ques": {
+            "ques_0": "Can you name a major contemporary art exhibition?",
+            "ques_1": "Name an art exhibition that focuses on the contemporary Art of the country."
+        },
+        "target_claim_mixtral": "The Kala Ghoda Arts Festival is an annual multi-art festival that takes place in Mumbai, India, showcasing various forms of visual and performing arts. The festival has been running since 1999, focusing on promoting local and national artists and their works in contemporary art.",
+        "target_claim_rarr": "The Kala Ghoda Arts Festival is an annual 9-day event that takes place in Mumbai, India, showcasing a diverse range of art forms such as paintings, sculptures, installations, photography, music, dance, and theater. The festival, which has been running since 1999, aims to promote local and national artists and their works in contemporary art, and contributes to preserving and maintaining art, culture, and heritage in South Mumbai's Colaba Art District. After a two-year hiatus due to COVID-19, the festival returned in its vibrant form, allowing attendees to immerse themselves in the beauty and depths of art for nine days, momentarily forgetting their daily hustles.",
+        "mixtral": {
+            "ques_0": 1,
+            "ques_1": 1
+        },
+        "rarr": {
+            "ques_0": 1,
+            "ques_1": 1
+        }
+    },
+    {
+        "ref_claim": "The Dakar Biennale, or Dak'Art - Biennale de l'Art Africain Contemporain, is a major contemporary art exhibition that takes place once every two years in Dakar, Senegal. Dak'Art's focus has been on Contemporary African Art since 1996.",
+        "target_location": "Mumbai",
+        "common_ques": {
+            "ques_0": "Can you name a major contemporary art exhibition?",
+            "ques_1": "Name an art exhibition that focuses on the contemporary Art of the country."
+        },
+        "target_claim_mixtral": "The Kala Ghoda Arts Festival is an annual multi-art festival that takes place in Mumbai, India, showcasing various forms of visual and performing arts. The festival has been running since 1999, focusing on promoting local and national artists and their works in contemporary art.",
+        "target_claim_rarr": "The Kala Ghoda Arts Festival is an annual 9-day event that takes place in Mumbai, India, showcasing a diverse range of art forms such as paintings, sculptures, installations, photography, music, dance, and theater. The festival, which has been running since 1999, aims to promote local and national artists and their works in contemporary art, and contributes to preserving and maintaining art, culture, and heritage in South Mumbai's Colaba Art District. After a two-year hiatus due to COVID-19, the festival returned in its vibrant form, allowing attendees to immerse themselves in the beauty and depths of art for nine days, momentarily forgetting their daily hustles.",
+        "mixtral": {
+            "ques_0": 1,
+            "ques_1": 1
+        },
+        "rarr": {
+            "ques_0": 1,
+            "ques_1": 1
+        }
+    },
+    {
+        "ref_claim": "Thai New Year or Songkran is the Thai New Year's national holiday. Songkran is on 13 April every year, but the holiday period extends from 14 to 15 April.",
+        "target_location": "India",
+        "common_ques": {
+            "ques_0": "Can you name a festival for which national holiday is given?",
+            "ques_1": "Name a festival which is celebrated for multiple days."
+        },
+        "target_claim_mixtral": "Vaisakhi is the Indian New Year's national holiday celebrated in various parts of India, particularly in Punjab. Vaisakhi takes place on 13 or 14 April every year, depending on the lunisolar calendar, and marks the beginning of the new year in the Sikh community.",
+        "target_claim_rarr": "Vaisakhi is a harvest festival celebrated on the 13th or 14th of April, depending on the lunisolar calendar, in various parts of India, particularly in Punjab. It marks the beginning of the new year for both Sikhs and Hindus, including the Sindhi community who celebrate it as Cheti Chand. The festival holds special significance for Sikhs as it commemorates the formation of the Sikh Khalsa in 1699. Vaisakhi is also celebrated by Hindu communities, including the Indian and Nepalese diaspora in the United States, and the Bengali Hindu community who observe their new year 'Pohela Baisakh' on this day.",
+        "mixtral": {
+            "ques_0": 1,
+            "ques_1": 0
+        },
+        "rarr": {
+            "ques_0": 1,
+            "ques_1": 0
+        }
+    },
+    {
+        "ref_claim": "Thai New Year or Songkran is the Thai New Year's national holiday. Songkran is on 13 April every year, but the holiday period extends from 14 to 15 April.",
+        "target_location": "India",
+        "common_ques": {
+            "ques_0": "Can you name a festival for which national holiday is given?",
+            "ques_1": "Name a festival which is celebrated for multiple days."
+        },
+        "target_claim_mixtral": "Vaisakhi is the Indian New Year's national holiday celebrated in various parts of India, particularly in Punjab. Vaisakhi takes place on 13 or 14 April every year, depending on the lunisolar calendar, and marks the beginning of the new year in the Sikh community.",
+        "target_claim_rarr": "Vaisakhi is a harvest festival celebrated on the 13th or 14th of April, depending on the lunisolar calendar, in various parts of India, particularly in Punjab. It marks the beginning of the new year for both Sikhs and Hindus, including the Sindhi community who celebrate it as Cheti Chand. The festival holds special significance for Sikhs as it commemorates the formation of the Sikh Khalsa in 1699. Vaisakhi is also celebrated by Hindu communities, including the Indian and Nepalese diaspora in the United States, and the Bengali Hindu community who observe their new year 'Pohela Baisakh' on this day.",
+        "mixtral": {
+            "ques_0": 1,
+            "ques_1": 0
+        },
+        "rarr": {
+            "ques_0": 1,
+            "ques_1": 0
+        }
+    },
+    {
+        "ref_claim": "The Super Bowl is the annual league championship game of the National Football League of the United States. It has served as the final game of every NFL season since 1966, replacing the NFL Championship Game.",
+        "target_location": "India",
+        "common_ques": {
+            "ques_0": "What is the name of an annual league championship game ?",
+            "ques_1": "Can you mention a popular sports league's annual championship game?"
+        },
+        "target_claim_mixtral": "The Indian Premier League (IPL) Final is the annual championship match of the Indian Premier League, India's premier Twenty20 cricket league. It has served as the culmination of every IPL season since its inception in 2008.",
+        "target_claim_rarr": "The Indian Premier League (IPL) Final is the annual championship match of India's premier Twenty20 cricket league, the Indian Premier League, which has served as the culmination of every IPL season since its inception in 2008. The final is played between the winners of Qualifier 1 and Qualifier 2, and the conquering team etches their name on the IPL title. For instance, in 2023, the Chennai Super Kings won the IPL for a record-equaling fifth time by securing a last-ball, five-wicket victory over the defending champion Gujarat Titans in a final that was delayed and stretched over three days due to weather constraints.",
+        "mixtral": {
+            "ques_0": 1,
+            "ques_1": 1
+        },
+        "rarr": {
+            "ques_0": 1,
+            "ques_1": 1
+        }
+    },
+    {
+        "ref_claim": "The Super Bowl is the annual league championship game of the National Football League of the United States. It has served as the final game of every NFL season since 1966, replacing the NFL Championship Game.",
+        "target_location": "India",
+        "common_ques": {
+            "ques_0": "What is the name of an annual league championship game ?",
+            "ques_1": "Can you mention a popular sports league's annual championship game?"
+        },
+        "target_claim_mixtral": "The Indian Premier League (IPL) Final is the annual championship match of the Indian Premier League, India's premier Twenty20 cricket league. It has served as the culmination of every IPL season since its inception in 2008.",
+        "target_claim_rarr": "The Indian Premier League (IPL) Final is the annual championship match of India's premier Twenty20 cricket league, the Indian Premier League, which has served as the culmination of every IPL season since its inception in 2008. The final is played between the winners of Qualifier 1 and Qualifier 2, and the conquering team etches their name on the IPL title. For instance, in 2023, the Chennai Super Kings won the IPL for a record-equaling fifth time by securing a last-ball, five-wicket victory over the defending champion Gujarat Titans in a final that was delayed and stretched over three days due to weather constraints.",
+        "mixtral": {
+            "ques_0": 1,
+            "ques_1": 1
+        },
+        "rarr": {
+            "ques_0": 1,
+            "ques_1": 1
+        }
+    },
+    {
+        "ref_claim": "The National Football League is a professional American football league that consists of 32 teams, divided equally between the American Football Conference and the National Football Conference.",
+        "target_location": "India",
+        "common_ques": {
+            "ques_0": "What is an example of a sports league?",
+            "ques_1": "Can you namr a sports league that consists of various teams?"
+        },
+        "target_claim_mixtral": "The Indian Premier League (IPL) is a professional Twenty20 cricket league in India, featuring eight teams, representing various cities across the country.",
+        "target_claim_rarr": "The Indian Premier League (IPL) is a professional Twenty20 cricket league in India, featuring eight teams representing various cities across the country. As of May 2022, there have been fifteen seasons of the IPL tournament, with the inaugural season won by Rajasthan Royals. The league currently consists of ten teams in ten cities across India. There are also several significant regional leagues, including the Karnataka Premier League, Tamil Nadu Premier League, and Saurashtra Premier League, among others, in countries like Nepal, Sri Lanka, Ireland, and the Netherlands.",
+        "mixtral": {
+            "ques_0": 1,
+            "ques_1": 1
+        },
+        "rarr": {
+            "ques_0": 1,
+            "ques_1": 1
+        }
+    },
+    {
+        "ref_claim": "The National Football League is a professional American football league that consists of 32 teams, divided equally between the American Football Conference and the National Football Conference.",
+        "target_location": "India",
+        "common_ques": {
+            "ques_0": "What is an example of a sports league?",
+            "ques_1": "Can you namr a sports league that consists of various teams?"
+        },
+        "target_claim_mixtral": "The Indian Premier League (IPL) is a professional Twenty20 cricket league in India, featuring eight teams, representing various cities across the country.",
+        "target_claim_rarr": "The Indian Premier League (IPL) is a professional Twenty20 cricket league in India, featuring eight teams representing various cities across the country. As of May 2022, there have been fifteen seasons of the IPL tournament, with the inaugural season won by Rajasthan Royals. The league currently consists of ten teams in ten cities across India. There are also several significant regional leagues, including the Karnataka Premier League, Tamil Nadu Premier League, and Saurashtra Premier League, among others, in countries like Nepal, Sri Lanka, Ireland, and the Netherlands.",
+        "mixtral": {
+            "ques_0": 1,
+            "ques_1": 1
+        },
+        "rarr": {
+            "ques_0": 1,
+            "ques_1": 1
+        }
+    },
+    {
+        "ref_claim": "Mardi Gras refers to events of the Carnival celebration, beginning on or after the Christian feasts of the Epiphany and culminating on the day before Ash Wednesday, which is known as Shrove Tuesday.",
+        "target_location": "Tamil Nadu",
+        "common_ques": {
+            "ques_0": "Can you give an example of a cultural celebration?",
+            "ques_1": "Name a festival where the day of its culmination is assigned a specific name."
+        },
+        "target_claim_mixtral": "Pongal is a four-day harvest festival celebrated in Tamil Nadu, India, dedicated to the Sun God and held during the Tamil month of Thai (mid-January to mid-February).",
+        "target_claim_rarr": "Pongal is a four-day harvest festival celebrated in Tamil Nadu, India, dedicated to the Sun God and usually held between 13 and 16 January, marking the Sun's journey northward, Uttarayan, during the Tamil month of Thai (mid-January to mid-February).",
+        "mixtral": {
+            "ques_0": 1,
+            "ques_1": 1
+        },
+        "rarr": {
+            "ques_0": 1,
+            "ques_1": 1
+        }
+    },
+    {
+        "ref_claim": "Mardi Gras refers to events of the Carnival celebration, beginning on or after the Christian feasts of the Epiphany and culminating on the day before Ash Wednesday, which is known as Shrove Tuesday.",
+        "target_location": "Tamil Nadu",
+        "common_ques": {
+            "ques_0": "Can you give an example of a cultural celebration?",
+            "ques_1": "Name a festival where the day of its culmination is assigned a specific name."
+        },
+        "target_claim_mixtral": "Thiruvathira refers to a festive event in the traditional Malayali culture of Kerala, celebrated on the day of the brightest star, Mrigasira, in the Dhanu rasi (Capricorn) constellation, which usually falls in mid-December or January, marking the beginning of the festive season.",
+        "target_claim_rarr": "Thiruvathira refers to a festive event in the traditional Malayali culture of Kerala, celebrated on a day marked by the brightest star, Mrigasira, in the Dhanu rasi (Capricorn) constellation, which typically occurs in mid-December or January, and involves creating intricate flower arrangements called pookkalam (flower carpets) in front of homes to welcome King Mahabali. However, it does not mark the beginning of the harvest season or Malayalam New Year, which is Chingam 1, celebrated in mid-August.",
+        "mixtral": {
+            "ques_0": 0,
             "ques_1": 0
         },
         "rarr": {
@@ -549,7 +1650,151 @@
         }
     },
     {
-        "rarr_metric": 0.7777777777777778,
-        "mixtral_metric": 0.6825396825396826
+        "ref_claim": "Mardi Gras refers to events of the Carnival celebration, beginning on or after the Christian feasts of the Epiphany and culminating on the day before Ash Wednesday, which is known as Shrove Tuesday.",
+        "target_location": "Tamil Nadu",
+        "common_ques": {
+            "ques_0": "Can you give an example of a cultural celebration?",
+            "ques_1": "Name a festival where the day of its culmination is assigned a specific name."
+        },
+        "target_claim_mixtral": "Pongal is a four-day harvest festival celebrated in Tamil Nadu, India, dedicated to the Sun God and held during the Tamil month of Thai (mid-January to mid-February).",
+        "target_claim_rarr": "Pongal is a four-day harvest festival celebrated in Tamil Nadu, India, dedicated to the Sun God and usually held between 13 and 16 January, marking the Sun's journey northward, Uttarayan, during the Tamil month of Thai (mid-January to mid-February).",
+        "mixtral": {
+            "ques_0": 1,
+            "ques_1": 1
+        },
+        "rarr": {
+            "ques_0": 1,
+            "ques_1": 1
+        }
+    },
+    {
+        "ref_claim": "Mardi Gras refers to events of the Carnival celebration, beginning on or after the Christian feasts of the Epiphany and culminating on the day before Ash Wednesday, which is known as Shrove Tuesday.",
+        "target_location": "Tamil Nadu",
+        "common_ques": {
+            "ques_0": "Can you give an example of a cultural celebration?",
+            "ques_1": "Name a festival where the day of its culmination is assigned a specific name."
+        },
+        "target_claim_mixtral": "Thiruvathira refers to a festive event in the traditional Malayali culture of Kerala, celebrated on the day of the brightest star, Mrigasira, in the Dhanu rasi (Capricorn) constellation, which usually falls in mid-December or January, marking the beginning of the festive season.",
+        "target_claim_rarr": "Thiruvathira refers to a festive event in the traditional Malayali culture of Kerala, celebrated on a day marked by the brightest star, Mrigasira, in the Dhanu rasi (Capricorn) constellation, which typically occurs in mid-December or January, and involves creating intricate flower arrangements called pookkalam (flower carpets) in front of homes to welcome King Mahabali. However, it does not mark the beginning of the harvest season or Malayalam New Year, which is Chingam 1, celebrated in mid-August.",
+        "mixtral": {
+            "ques_0": 0,
+            "ques_1": 0
+        },
+        "rarr": {
+            "ques_0": 0,
+            "ques_1": 0
+        }
+    },
+    {
+        "ref_claim": "Mardi Gras refers to events of the Carnival celebration, beginning on or after the Christian feasts of the Epiphany and culminating on the day before Ash Wednesday, which is known as Shrove Tuesday.",
+        "target_location": "Kerala",
+        "common_ques": {
+            "ques_0": "Name a festival.",
+            "ques_1": "Can you name a traditional festival?"
+        },
+        "target_claim_mixtral": "Pongal is a four-day harvest festival celebrated in Tamil Nadu, India, dedicated to the Sun God and held during the Tamil month of Thai (mid-January to mid-February).",
+        "target_claim_rarr": "Pongal is a four-day harvest festival celebrated in Tamil Nadu, India, dedicated to the Sun God and usually held between 13 and 16 January, marking the Sun's journey northward, Uttarayan, during the Tamil month of Thai (mid-January to mid-February).",
+        "mixtral": {
+            "ques_0": 0,
+            "ques_1": 0
+        },
+        "rarr": {
+            "ques_0": 0,
+            "ques_1": 0
+        }
+    },
+    {
+        "ref_claim": "Mardi Gras refers to events of the Carnival celebration, beginning on or after the Christian feasts of the Epiphany and culminating on the day before Ash Wednesday, which is known as Shrove Tuesday.",
+        "target_location": "Kerala",
+        "common_ques": {
+            "ques_0": "Name a festival.",
+            "ques_1": "Can you name a traditional festival?"
+        },
+        "target_claim_mixtral": "Thiruvathira refers to a festive event in the traditional Malayali culture of Kerala, celebrated on the day of the brightest star, Mrigasira, in the Dhanu rasi (Capricorn) constellation, which usually falls in mid-December or January, marking the beginning of the festive season.",
+        "target_claim_rarr": "Thiruvathira refers to a festive event in the traditional Malayali culture of Kerala, celebrated on a day marked by the brightest star, Mrigasira, in the Dhanu rasi (Capricorn) constellation, which typically occurs in mid-December or January, and involves creating intricate flower arrangements called pookkalam (flower carpets) in front of homes to welcome King Mahabali. However, it does not mark the beginning of the harvest season or Malayalam New Year, which is Chingam 1, celebrated in mid-August.",
+        "mixtral": {
+            "ques_0": 1,
+            "ques_1": 1
+        },
+        "rarr": {
+            "ques_0": 1,
+            "ques_1": 1
+        }
+    },
+    {
+        "ref_claim": "Mardi Gras refers to events of the Carnival celebration, beginning on or after the Christian feasts of the Epiphany and culminating on the day before Ash Wednesday, which is known as Shrove Tuesday.",
+        "target_location": "Kerala",
+        "common_ques": {
+            "ques_0": "Name a festival.",
+            "ques_1": "Can you name a traditional festival?"
+        },
+        "target_claim_mixtral": "Pongal is a four-day harvest festival celebrated in Tamil Nadu, India, dedicated to the Sun God and held during the Tamil month of Thai (mid-January to mid-February).",
+        "target_claim_rarr": "Pongal is a four-day harvest festival celebrated in Tamil Nadu, India, dedicated to the Sun God and usually held between 13 and 16 January, marking the Sun's journey northward, Uttarayan, during the Tamil month of Thai (mid-January to mid-February).",
+        "mixtral": {
+            "ques_0": 0,
+            "ques_1": 0
+        },
+        "rarr": {
+            "ques_0": 0,
+            "ques_1": 0
+        }
+    },
+    {
+        "ref_claim": "Mardi Gras refers to events of the Carnival celebration, beginning on or after the Christian feasts of the Epiphany and culminating on the day before Ash Wednesday, which is known as Shrove Tuesday.",
+        "target_location": "Kerala",
+        "common_ques": {
+            "ques_0": "Name a festival.",
+            "ques_1": "Can you name a traditional festival?"
+        },
+        "target_claim_mixtral": "Thiruvathira refers to a festive event in the traditional Malayali culture of Kerala, celebrated on the day of the brightest star, Mrigasira, in the Dhanu rasi (Capricorn) constellation, which usually falls in mid-December or January, marking the beginning of the festive season.",
+        "target_claim_rarr": "Thiruvathira refers to a festive event in the traditional Malayali culture of Kerala, celebrated on a day marked by the brightest star, Mrigasira, in the Dhanu rasi (Capricorn) constellation, which typically occurs in mid-December or January, and involves creating intricate flower arrangements called pookkalam (flower carpets) in front of homes to welcome King Mahabali. However, it does not mark the beginning of the harvest season or Malayalam New Year, which is Chingam 1, celebrated in mid-August.",
+        "mixtral": {
+            "ques_0": 1,
+            "ques_1": 1
+        },
+        "rarr": {
+            "ques_0": 1,
+            "ques_1": 1
+        }
+    },
+    {
+        "ref_claim": "The New Year is the time or day at which a new calendar year begins and the calendar's year count increments by one. Many cultures celebrate the event in some manner.",
+        "target_location": "Andhra Pradesh",
+        "common_ques": {
+            "ques_0": "Could you name a festival that many cultures celebrate in some manner?",
+            "ques_1": "Could you provide a name of a festival which is celebrated at the beginning of a calendar year?"
+        },
+        "target_claim_mixtral": "Ugadi is the New Year festival celebrated by the people of Andhra Pradesh, India, marking the beginning of a new Hindu lunisolar calendar year. It is observed with cultural festivities, special meals, and the exchange of well wishes.",
+        "target_claim_rarr": "Ugadi is the New Year festival celebrated by the people of Andhra Pradesh, India, marking the beginning of a new Hindu lunisolar calendar year. It is observed with cultural festivities, special meals, and the exchange of well wishes.",
+        "mixtral": {
+            "ques_0": 1,
+            "ques_1": 1
+        },
+        "rarr": {
+            "ques_0": 1,
+            "ques_1": 1
+        }
+    },
+    {
+        "ref_claim": "The New Year is the time or day at which a new calendar year begins and the calendar's year count increments by one. Many cultures celebrate the event in some manner.",
+        "target_location": "Andhra Pradesh",
+        "common_ques": {
+            "ques_0": "Could you name a festival that many cultures celebrate in some manner?",
+            "ques_1": "Could you provide a name of a festival which is celebrated at the beginning of a calendar year?"
+        },
+        "target_claim_mixtral": "Ugadi is the New Year festival celebrated by the people of Andhra Pradesh, India, marking the beginning of a new Hindu lunisolar calendar year. It is observed with cultural festivities, special meals, and the exchange of well wishes.",
+        "target_claim_rarr": "Ugadi is the New Year festival celebrated by the people of Andhra Pradesh, India, marking the beginning of a new Hindu lunisolar calendar year. It is observed with cultural festivities, special meals, and the exchange of well wishes.",
+        "mixtral": {
+            "ques_0": 1,
+            "ques_1": 1
+        },
+        "rarr": {
+            "ques_0": 1,
+            "ques_1": 1
+        }
+    },
+    {
+        "rarr_metric": 0.7961165048543689,
+        "mixtral_metric": 0.7864077669902912
     }
 ]

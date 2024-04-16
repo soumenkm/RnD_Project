@@ -255,7 +255,7 @@ def write_evidences_json(
                                 ranking_model)[-1]
         except Exception as e:
             print(e)
-            res = e
+            res = f"error: {e}"
         
         output_list.append(res)
         t2 = time.time()
@@ -274,6 +274,9 @@ def write_agreements_json():
     num_claims = len(data)
     output_list = []
     for claim_id, item in enumerate(data):
+        if type(item) == str:
+            output_list.append(item)
+            continue
         claim = item["claim_target"]
         location = item["location"]
         evidence_data = item["evidences"]
@@ -311,6 +314,8 @@ def write_edits_json(
     for i in range(num_claims):
         evids = []
         for item in data:
+            if type(item) == str:
+                continue
             if item["claim_id"] == i:
                 evids.append(item)      
         agreement_data[i] = evids
@@ -382,6 +387,12 @@ def write_edits_json(
     else:
         evid_dict = {}
         for claim_id, ag_item in enumerate(agreement_data):
+            if type(ag_item) == str:
+                continue
+            if type(evid_data) == str:
+                continue
+            if type(evid_data[claim_id]) == str:
+                continue
             original_claim = evid_data[claim_id]["claim_target"]
             claim = original_claim
 
@@ -467,9 +478,9 @@ if __name__ == "__main__":
         data.append(elem_dict)
     
     # write_questions_json(data[0:50], is_verify=True)
-    write_evidences_json(max_passages_per_search_result_to_score=-1,
-                         ranking_model="cohere")
+    # write_evidences_json(max_passages_per_search_result_to_score=-1,
+    #                     ranking_model="cohere")
     # write_agreements_json()
-    # write_edits_json(is_sequential_edit=False)
+    write_edits_json(is_sequential_edit=False)
     
     # DONE
