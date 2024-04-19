@@ -1,3 +1,11 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Fri April 12 21:03:28 2024
+
+@author: soumensmacbookair
+"""
+
 # This snippet shows and example how to use the Cohere Embed V3 models for semantic search.
 # Make sure to have the Cohere SDK in at least v4.30 install: pip install -U cohere 
 # Get your API key from: www.cohere.com

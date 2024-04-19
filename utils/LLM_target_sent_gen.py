@@ -1,3 +1,11 @@
+ #!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Fri March 29 08:18:57 2024
+
+@author: soumensmacbookair
+"""
+
 """Utils for running target sentence generation."""
 import os, sys
 import time
@@ -72,10 +80,10 @@ if __name__ == "__main__":
 
     data = [{"input_info": 
     {"claim": "Angelina Jolie is an American actress, filmmaker and humanitarian. The recipient of numerous accolades, including an Academy Award and three Golden Globe Awards, she has been named Hollywood's highest-paid actress multiple times.", 
-    "location": "Maharashtra"}},
-    {"input_info": 
-    {"claim": "Dwayne Douglas Johnson, also known by his ring name the Rock, is an American actor and professional wrestler currently signed to WWE.", 
     "location": "Kerala"}},
+    {"input_info": 
+    {"claim": "On July 10, 2006, concrete ceiling panels and debris fell on a car traveling on the two-lane ramp connecting northbound I-93 to eastbound I-90 in South Boston, killing the passenger and injuring her husband, who was driving.", 
+    "location": "Uttarakhand"}},
     {"input_info": {"claim": "Robert John Downey Jr. is an American actor. His career has been characterized by critical success in his youth, followed by a period of substance abuse and legal troubles, and a surge in popular and commercial success later in his career.", 
     "location": "West Bengal"}}]
 
@@ -89,11 +97,9 @@ if __name__ == "__main__":
         claim=claim,
         model="mixtral8x7b",
         prompt=rarr_prompts.TARGET_SENT_GEN_PROMPT_WITH_LOCATION_mixtral8x7b,
-        entity=entity,
         location=location)
     t2 = time.time()
     print(f"Claim: {claim_id}, Target sentence generation module is run in {(t2-t1)/60:.2f} mint")
     print(target_sent)
-    print(reason)
 
     

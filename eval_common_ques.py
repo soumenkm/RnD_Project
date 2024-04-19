@@ -1,3 +1,11 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Sum March 24 05:19:45 2024
+
+@author: soumensmacbookair
+"""
+
 import json, ast
 import os, time
 import json
@@ -46,12 +54,13 @@ if __name__ == "__main__":
             continue
         
     # Read the results.json file
-    with open("/root/RnD_Project/outputs/results.json", 'r') as json_file:
+    with open("/root/RnD_Project/outputs_0-10/results.json", 'r') as json_file:
         res_data_1 = json.load(json_file)
-    with open("/root/RnD_Project/outputs/results.json", 'r') as json_file:
+    with open("/root/RnD_Project/outputs_20-40/results.json", 'r') as json_file:
         res_data_2 = json.load(json_file)
     
-    res_data = res_data_1 + res_data_2
+    res_data = res_data_1 + res_data_2 # if multiple file is there
+    # res_data = res_data_1 # if only 1 file is there
     claim_data = []
 
     for i,elem in enumerate(eval_data):
@@ -86,7 +95,7 @@ if __name__ == "__main__":
     print("rarr", rarr_metric)
     print("mixtral", mixtral_metric)
     
-    with open("eval_results.json", 'w') as json_file:
+    with open("/root/RnD_Project/outputs/eval_results.json", 'w') as json_file:
         json.dump(output_list, json_file, indent=4)
     
     

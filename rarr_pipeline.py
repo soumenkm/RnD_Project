@@ -1,3 +1,11 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Fri April 12 06:46:37 2024
+
+@author: soumensmacbookair
+"""
+
 import json
 import os, time
 from typing import Any, Dict, Tuple, List
@@ -479,8 +487,8 @@ if __name__ == "__main__":
     
     # write_questions_json(data[0:50], is_verify=True)
     # write_evidences_json(max_passages_per_search_result_to_score=-1,
-    #                     ranking_model="cohere")
+    #                     ranking_model="cohere") # 30, "cross_encoder"
     # write_agreements_json()
-    write_edits_json(is_sequential_edit=False)
+    # write_edits_json(is_sequential_edit=False)
     
     # DONE

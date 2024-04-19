@@ -1,3 +1,11 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Fri April 12 08:18:57 2024
+
+@author: soumensmacbookair
+"""
+
 """Utils for running question generation."""
 import os, sys
 import time

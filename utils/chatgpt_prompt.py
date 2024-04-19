@@ -1,3 +1,11 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Tue April 02 17:47:04 2024
+
+@author: soumensmacbookair
+"""
+
 import os
 import openai
 from openai import OpenAI
