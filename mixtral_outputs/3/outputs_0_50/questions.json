@@ -1,0 +1,893 @@
+[
+    {
+        "claim_id": 0,
+        "claim_ref": "On July 10, 2006, concrete ceiling panels and debris fell on a car traveling on the two-lane ramp connecting northbound I-93 to eastbound I-90 in South Boston, killing the passenger and injuring her husband, who was driving.",
+        "location": "Uttarakhand",
+        "model": "mixtral8x7b",
+        "claim_target": "On April 24, 2018, a portion of an under-construction bridge collapsed on vehicles traveling on the National Highway 34 in Moradabad, Uttarakhand, resulting in the death of 24 people and leaving many more injured.",
+        "reason_for_target_sent": "The equivalent target entity of the reference event 'concrete ceiling panels and debris falling on a car' corresponding to target location 'Uttarakhand' is 'a portion of an under-construction bridge collapsing on vehicles'. The choice of target entity is reasonable because (a) Both events involve infrastructure failures leading to tragic consequences, aligning with the context of catastrophic accidents and their impact, (b) The Uttarakhand-based event allows for a better understanding of local issues related to infrastructure and safety concerns within the region.",
+        "claim_target_correct": "On April 24, 2018, a portion of an under-construction bridge collapsed on vehicles traveling on the National Highway 34 in Moradabad, Uttarakhand, resulting in the death of 24 people and leaving many more injured.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "On which highway did a portion of an under-construction bridge collapse in Uttarakhand, leading to fatalities and injuries?",
+            "What was the number of reported deaths due to the collapse of the under-construction bridge on National Highway 34 in Uttarakhand?",
+            "What were the consequences of the bridge collapse on National Highway 34 in terms of injuries and fatalities in Uttarakhand?",
+            "Where did the bridge collapse happen in Uttarakhand that resulted in the death of 24 people and left many more injured?",
+            "Which month and year did the incident of the bridge collapse occur in Moradabad, Uttarakhand?"
+        ]
+    },
+    {
+        "claim_id": 1,
+        "claim_ref": "A train derailment occurred on February 3, 2023, at 8:55 p.m. EST, when 38 cars of a Norfolk Southern freight train carrying hazardous materials derailed in East Palestine, Ohio, United States.",
+        "location": "Andhra Pradesh",
+        "model": "mixtral8x7b",
+        "claim_target": "A railway accident took place on February 4, 2023, at 7:25 IST when 27 wagons of a freight train operated by South Central Railway carrying fertilizers derailed in Kothavalasa, Andhra Pradesh, India.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Norfolk Southern freight train' corresponding to target location 'Andhra Pradesh' is 'South Central Railway freight train' under the category 'Trains'. The choice of target entity is reasonable because (a) Both are instances of transportation accidents involving trains, (b) The cargo being transported differs, with hazardous materials in the US reference and fertilizers in the Indian context, reflecting the diverse nature of goods carried by railways in different regions. The focus remains on the accident itself rather than the specific contents of each train.",
+        "claim_target_correct": "A railway accident took place on February 4, 2023, at 7:25 IST when 27 wagons of a freight train operated by South Central Railway carrying fertilizers derailed in Kothavalasa, Andhra Pradesh, India.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "At what specific time did the railway accident occur on February 4, 2023, in Kothavalasa, Andhra Pradesh?",
+            "What type of railway accident occurred on February 4, 2023, in Kothavalasa, Andhra Pradesh, involving a freight train operated by South Central Railway?",
+            "What was the cargo being transported by the freight train that derailed in Kothavalasa, Andhra Pradesh?",
+            "Where exactly did the railway accident happen in Andhra Pradesh on February 4, 2023?",
+            "Which rail network is responsible for operating the freight train that derailed in Kothavalasa, Andhra Pradesh?"
+        ]
+    },
+    {
+        "claim_id": 2,
+        "claim_ref": "The Higashi-Ikebukuro runaway car crash was a traffic crash that occurred on April 19, 2019, in Higashi Ikebukuro, Toshima, Tokyo, resulting in 2 deaths and 9 injuries.",
+        "location": "Mumbai",
+        "model": "mixtral8x7b",
+        "claim_target": "The Andheri-Kurla Road pedestrian bridge collapse was an infrastructure accident that occurred on March 14, 2018, in Andheri East, Mumbai, resulting in 6 fatalities and 31 injuries.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Higashi-Ikebukuro runaway car crash' corresponding to target location 'Mumbai' is 'Andheri-Kurla Road pedestrian bridge collapse' under the category 'Infrastructure accidents'. The choice of target entity is reasonable because (a) Both incidents are significant events that had severe consequences in terms of loss of life and injuries, (b) They both occurred in densely populated urban areas with high traffic and footfall, affecting the daily lives of city residents.",
+        "claim_target_correct": "The Andheri-Kurla Road pedestrian bridge collapse was an infrastructure accident that occurred on March 14, 2018, in Andheri East, Mumbai, resulting in 6 fatalities and 31 injuries.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "How many fatalities and injuries were reported due to the pedestrian bridge collapse in Andheri East, Mumbai?",
+            "In which specific area of Mumbai did the pedestrian bridge collapse accident happen on March 14, 2018?",
+            "What type of incident is described as the 'Andheri-Kurla Road pedestrian bridge collapse' in Mumbai?",
+            "What was the outcome of the Andheri-Kurla Road pedestrian bridge collapse in Mumbai in terms of casualties and injuries?",
+            "When did the infrastructure accident involving the pedestrian bridge collapse occur in Mumbai?"
+        ]
+    },
+    {
+        "claim_id": 3,
+        "claim_ref": "The Karamay fire of 8 December 1994 at the Friendship Theatre in Karamay, Xinjiang, China, was among the most notorious fires in China.",
+        "location": "Sirsa",
+        "model": "mixtral8x7b",
+        "claim_target": "The Uphaar cinema tragedy of 13 June 1997 in Delhi, India, is considered one of the most infamous fire incidents in the country's history.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Karamay fire' corresponding to target location 'Sirsa' is 'Uphaar cinema tragedy' under the category 'Disasters'. The choice of target entity is reasonable because (a) Both are significant fire incidents that resulted in a large number of casualties and had a profound impact on their respective communities, (b) The Uphaar cinema tragedy occurred in Delhi, India, which aligns with the requirement for a target location connection.",
+        "claim_target_correct": "The Uphaar cinema tragedy of 13 June 1997 in Delhi, India, is considered one of the most infamous fire incidents in the country's history.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "In which city was the Uphaar cinema tragedy, one of India's most infamous fire incidents, situated?",
+            "What is the name of the location in Sirsa where the Uphaar cinema tragedy took place?",
+            "Where did the Uphaar cinema tragedy occur on 13th June 1997?",
+            "Where in India did one of the most infamous fire incidents, the Uphaar cinema tragedy, happen, as per the target sentence?"
+        ]
+    },
+    {
+        "claim_id": 4,
+        "claim_ref": "The Seveso disaster was an industrial accident that occurred around 12:37 pm on 10 July 1976, in a small chemical manufacturing plant approximately 20 kilometres north of Milan in the Lombardy region of Italy.",
+        "location": "Bhopal",
+        "model": "mixtral8x7b",
+        "claim_target": "The Bhopal disaster was a catastrophic industrial accident that took place at the Union Carbide India Limited pesticide plant on the night of 2-3 December 1984, in the city of Bhopal, Madhya Pradesh, India.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Seveso disaster' corresponding to target location 'Bhopal' is 'Bhopal disaster' under the category 'Industrial Accidents'. The choice of target entity is reasonable because (a) Both disasters are significant industrial accidents that resulted in numerous casualties and environmental damage, (b) By referencing the Bhopal disaster, the modified sentence directly connects to a tragic event that occurred in the specified location, creating an appropriate context for the reader.",
+        "claim_target_correct": "The Bhopal disaster was a catastrophic industrial accident that took place at the Union Carbide India Limited pesticide plant on the night of 2-3 December 1984, in the city of Bhopal, Madhya Pradesh, India.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "What company owned the pesticide plant where the Bhopal disaster occurred in Bhopal, Madhya Pradesh, India?",
+            "What type of accident occurred at the Union Carbide India Limited pesticide plant in Bhopal, Madhya Pradesh, India on the night of 2-3 December 1984?",
+            "What was the impact of the Bhopal disaster on the city of Bhopal and surrounding areas in Madhya Pradesh, India?",
+            "When did the catastrophic industrial accident happen at the Union Carbide India Limited pesticide plant in Bhopal?",
+            "Where did the Bhopal disaster take place in India?"
+        ]
+    },
+    {
+        "claim_id": 5,
+        "claim_ref": "The Grafton bus crash killed 21 people and injured 22 on the Pacific Highway near Grafton, Australia on 20 October 1989 when a semi-trailer truck collided with a Sunliner Express coach operating an express service from Sydney to Brisbane.",
+        "location": "Barabanki",
+        "model": "mixtral8x7b",
+        "claim_target": "The Kanpur train collision resulted in 151 fatalities and over 400 injuries on 28 August 2017, when two trains collided near Kanpur, India on the Mughalsarai railway junction.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Grafton bus crash' corresponding to target location 'Barabanki' is 'Kanpur train collision' under the category 'Transportation accidents'. The choice of target entity is reasonable because (a) Both incidents are significant transportation accidents resulting in numerous fatalities and injuries, making them relevant to the target location, (b) By comparing a bus crash in Australia with a train collision in India, it highlights how these types of accidents can have devastating consequences regardless of location or mode of transport.",
+        "claim_target_correct": "The Kanpur train collision resulted in 151 fatalities and over 400 injuries on 28 August 2017, when two trains collided near Kanpur, India on the Mughalsarai railway junction.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "How many people died in the Kanpur train collision that took place near the Mughalsarai railway junction in Barabanki?",
+            "In which Indian state did the Kanpur train collision occur resulting in 151 fatalities and over 400 injuries on 28 August 2017?",
+            "What was the number of reported injuries in the train collision that occurred near Kanpur, India on the Mughalsarai railway junction in Barabanki?",
+            "Where near Kanpur, India did two trains collide on the Mughalsarai railway junction causing numerous casualties?"
+        ]
+    },
+    {
+        "claim_id": 6,
+        "claim_ref": "SS Norge was a transatlantic ocean liner that was launched in 1881 in Scotland, and lost in 1904 off Rockall with a great loss of life.",
+        "location": "Mumbai",
+        "model": "mixtral8x7b",
+        "claim_target": "SS Kyarra was a transatlantic ocean liner that was launched in 1902 in Scotland, and sank in 1922 off the coast of Cape Agulhas with significant loss of life.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'SS Norge' corresponding to target location 'Mumbai' is 'SS Kyarra' under the category 'Maritime history'. The choice of target entity is reasonable because (a) Both ships were transatlantic ocean liners launched in Scotland, establishing a parallel in their origins and function, (b) Both SS Norge and SS Kyarra met with tragic ends off remote coastal regions, resulting in significant loss of life. While the SS Norge sank near Rockall, the SS Kyarra was lost off Cape Agulhas, which is closer to Mumbai in terms of geographical proximity.",
+        "claim_target_correct": "SS Kyarra was a transatlantic ocean liner that was launched in 1902 in Scotland, and sank in 1922 off the coast of Cape Agulhas with significant loss of life.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "In which country was the transatlantic ocean liner SS Kyarra launched in 1902?",
+            "What is the name of the ocean liner that sank off the coast of Cape Agulhas with significant loss of life in 1922 and was launched in Scotland in 1902?",
+            "What type of water body is Cape Agulhas located next to, where the SS Kyarra sank in 1922?",
+            "When did the SS Kyarra sink off the coast of Cape Agulhas, causing significant loss of life?",
+            "Why is the SS Kyarra significant in the maritime history of Mumbai, given that it sank off the coast of Cape Agulhas in 1922?"
+        ]
+    },
+    {
+        "claim_id": 7,
+        "claim_ref": "Air France Flight 406 was a Lockheed L-1649 Starliner that crashed in French Algeria on May 10, 1961, after a bomb exploded on board. All 78 passengers and crew on board were killed. It was the deadliest aviation disaster involving a Lockheed Starliner.",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "Air India Flight 855 was a Boeing 707 that crashed into the Arabian Sea on January 3, 1966, due to an unexplained navigational error. All 122 passengers and crew on board were killed. It remains the deadliest aviation disaster in Indian history.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Air France Flight 406' corresponding to target location 'India' is 'Air India Flight 855' under the catgory 'Aviation Disasters'. The choice of target entity is reasonable because (a) Both entities are airplane crashes that resulted in a significant loss of life, making them relevant to the topic of aviation disasters, (b) The target sentence provides context specific to India by featuring an Air India flight, thus ensuring the continuity and relevance of the topic to the target location.",
+        "claim_target_correct": "Air India Flight 855 was a Boeing 707 that crashed into the Arabian Sea on January 3, 1966, due to an unexplained navigational error. All 122 passengers and crew on board were killed. It remains the deadliest aviation disaster in Indian history.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "How many passengers and crew members were on board Air India Flight 855 when it crashed?",
+            "In which body of water did Air India Flight 855 crash due to an unexplained navigational error on January 3, 1966, in India?",
+            "What is the name of the Boeing 707 flight that crashed into the Arabian Sea on January 3, 1966, due to an unexplained navigational error?",
+            "What was the tragic outcome of the incident involving Air India Flight 855 in 1966?",
+            "Which aviation disaster in Indian history resulted in the highest number of fatalities, as seen in the case of Air India Flight 855?"
+        ]
+    },
+    {
+        "claim_id": 8,
+        "claim_ref": "Aeroflot Flight 141 was an international flight from Moscow to Prague. On 19 February 1973, the Tupolev Tu-154 crashed 1.5 kilometres short of runway 25 of Prague Ruzyn\u011b Airport.",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "Air India Express Flight 812 was a international flight from Dubai to Mangalore, India. On 22 May 2010, the Boeing 737-800 overshot the runway during landing and crashed at the edge of the airport.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Aeroflot Flight 141' corresponding to target location 'India' is 'Air India Express Flight 812' under the category 'Aviation incidents'. The choice of target entity is reasonable because (a) Both flights experienced accidents during landing, resulting in significant consequences and loss of life, (b) They both are international commercial aviation incidents which led to investigations, improvements in safety measures, and changes in aviation regulations.",
+        "claim_target_correct": "Air India Express Flight 812 was a international flight from Dubai to Mangalore, India. On 22 May 2010, the Boeing 737-800 overshot the runway during landing and crashed at the edge of the airport.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "What unfortunate event happened to Air India Express Flight 812 on 22 May 2010, while it was attempting to land at Mangalore, India?",
+            "What was the destination of Air India Express Flight 812, which crashed during landing in Mangalore, India?",
+            "Where did Air India Express Flight 812 overshoot the runway and crash during landing on 22 May 2010?",
+            "Which aircraft model, a Boeing 737-800, was involved in the accident during landing at Mangalore, India in 2010?",
+            "Which international flight, originating from Dubai, met with an accident while landing at Mangalore, India on 22 May 2010?"
+        ]
+    },
+    {
+        "claim_id": 9,
+        "claim_ref": "Mih\u0103ilesti is a commune in Buz\u0103u County, Muntenia, Romania. It is composed of four villages: Col\u00c8\u203a\u00c4\u0192neni, M\u00c4\u0192rgineanu, Mih\u0103ilesti and Satu Nou . The Mih\u0103ilesti explosion took place there in 2004.",
+        "location": "Kerala",
+        "model": "mixtral8x7b",
+        "claim_target": "Kozhikode is a city in the state of Kerala, India, and is composed of several neighborhoods and areas, such as Feroke, Koduvally, and Kozhikode City. The Kozhikode airport runway disaster took place near the city in 1987.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Mih\u0103ilesti' corresponding to target location 'Kerala' is 'Kozhikode' under the category 'Location'. The choice of target entity is reasonable because (a) Both Mih\u0103ilesti and Kozhikode are places with administrative divisions, like communes and cities, respectively. This parallelism allows for a suitable comparison between the two entities. (b) While the reference sentence describes an explosion in Mih\u0103ilesti, the target sentence mentions a notable disaster in Kozhikode \u2013 the runway disaster at the airport, drawing a connection between the two locations based on historical events that have garnered significant attention within their respective regions.",
+        "claim_target_correct": "Kozhikode is a city in the state of Kerala, India, and is composed of several neighborhoods and areas, such as Feroke, Koduvally, and Kozhikode City. The Kozhikode airport runway disaster took place near the city in 1987.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "Can you name a city in Kerala, India, where neighborhoods like Feroke and Koduvally are located, and which was involved in a significant aviation incident in 1987?",
+            "In which state of India is the city of Kozhikode located?",
+            "What is the name of the city in Kerala, India, that consists of neighborhoods and areas like Feroke, Koduvally, and Kozhikode City?",
+            "What notable event took place near the city of Kozhikode, involving an airport runway in 1987?",
+            "Which airport runway disaster occurred near the city of Kozhikode in 1987?"
+        ]
+    },
+    {
+        "claim_id": 10,
+        "claim_ref": "Angelina Jolie is an American actress, filmmaker and humanitarian. The recipient of numerous accolades, including an Academy Award and three Golden Globe Awards, she has been named Hollywood's highest-paid actress multiple times.",
+        "location": "Kerala",
+        "model": "mixtral8x7b",
+        "claim_target": "Priyanka Chopra is an Indian actress, film producer, and former Miss World. She has won several accolades, including a National Film Award and five Filmfare Awards, and was once named as India's highest-paid actress.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Angelina Jolie' corresponding to target location 'Kerala' is 'Priyanka Chopra' under the category 'Entertainment'. The choice of target entity is reasonable because (a) Both individuals are accomplished and acclaimed artists in their respective countries, having achieved success in various entertainment fields such as acting and film production, (b) Both have been recognized for their contributions to the industry with numerous awards and accolades, including national and international honors, and (c) They have both been listed among the highest-paid celebrities in their respective industries.",
+        "claim_target_correct": "Priyanka Chopra is an Indian actress, film producer, and former Miss World. She has won several accolades, including a National Film Award and five Filmfare Awards, and was once named as India's highest-paid actress.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "In which Indian state does the actress Priyanka Chopra hail from?",
+            "What is the name of the Indian actress who was once recognized as India's highest-paid actress?",
+            "Where was the former Miss World and acclaimed Indian actress, Priyanka Chopra, born?",
+            "Which Indian state is known for producing the accomplished actress, film producer, and former Miss World, Priyanka Chopra?",
+            "Which notable titles has Priyanka Chopra won in her career, including a National Film Award and five Filmfare Awards?"
+        ]
+    },
+    {
+        "claim_id": 11,
+        "claim_ref": "Dwayne Douglas Johnson, also known by his ring name the Rock, is an American actor and professional wrestler currently signed to WWE.",
+        "location": "Kerala",
+        "model": "mixtral8x7b",
+        "claim_target": "Mohanlal Viswanathan is an Indian actor and producer who primarily works in the Malayalam film industry, based in Kerala, India.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Dwayne Douglas Johnson' corresponding to target location 'Kerala' is 'Mohanlal Viswanathan' under the category 'Actor/Actress'. The choice of target entity is reasonable because (a) Both individuals are well-known for their acting careers and have achieved significant success in their respective industries, (b) They both share a similarity in being versatile performers who excel in various roles, straddling multiple genres and mediums such as film, television, and even wrestling in Dwayne Johnson's case.",
+        "claim_target_correct": "Mohanlal Viswanathan is an Indian actor and producer who primarily works in the Malayalam film industry, based in Kerala, India.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "In which Indian state does Mohanlal Viswanathan primarily work for the Malayalam film industry?",
+            "In which film industry is Mohanlal Viswanathan a prominent figure, located in the Indian state of Kerala?",
+            "What is the profession of Mohanlal Viswanathan in the Kerala-based film industry?",
+            "Who is an Indian actor and producer named Mohanlal Viswanathan, primarily working in the Malayalam film industry based in Kerala?"
+        ]
+    },
+    {
+        "claim_id": 12,
+        "claim_ref": "Robert John Downey Jr. is an American actor. His career has been characterized by critical success in his youth, followed by a period of substance abuse and legal troubles, and a surge in popular and commercial success later in his career.",
+        "location": "West Bengal",
+        "model": "mixtral8x7b",
+        "claim_target": "Prosenjit Chatterjee is a renowned Indian actor who has worked predominantly in the Bengali film industry based in West Bengal, India. His career has been marked by critical acclaim, commercial success, and occasional setbacks, including personal challenges.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Robert John Downey Jr.' corresponding to target location 'West Bengal' is 'Prosenjit Chatterjee' under the category 'Actor/Actress'. The choice of target entity is reasonable because (a) Both actors have experienced a mix of highs and lows in their careers, with early success followed by personal challenges such as substance abuse and legal issues, and later resurgence in popularity and commercial success, (b) Prosenjit Chatterjee, being a prominent actor in the Bengali film industry based in West Bengal, adds relevance to the target location.",
+        "claim_target_correct": "Prosenjit Chatterjee is a renowned Indian actor who has worked predominantly in the Bengali film industry based in West Bengal, India. His career has been marked by critical acclaim, commercial success, and occasional setbacks, including personal challenges.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "In which Indian state is Prosenjit Chatterjee primarily associated with for his work in the film industry?",
+            "What is the nature of Prosenjit Chatterjee's career in the Bengali film industry based in West Bengal, India?",
+            "What is the significance of West Bengal for Prosenjit Chatterjee's acting career?",
+            "What kind of challenges has Prosenjit Chatterjee faced in his career and personal life?",
+            "Which film industry does Prosenjit Chatterjee primarily work in, which is based in West Bengal?"
+        ]
+    },
+    {
+        "claim_id": 13,
+        "claim_ref": "Lupita Amondi Nyong'o is a Mexican-Kenyan actress. She is the recipient of several accolades, including an Academy Award and a Daytime Emmy Award with nominations for a Tony Award and a Golden Globe Award.",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "Priyanka Chopra Jonas is an Indian actress who has achieved success in both national and international film industries, as well as in television. She is the recipient of several accolades, including a National Film Award and five Filmfare Awards in India, along with nominations for a People's Choice Award and a Primetime Emmy Award in the United States.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Lupita Amondi Nyong'o' corresponding to target location 'India' is 'Priyanka Chopra Jonas' under the category 'Actress'. The choice of target entity is reasonable because (a) Both Lupita Amondi Nyong'o and Priyanka Chopra Jonas have achieved significant recognition in their respective film industries, with multiple awards and nominations, (b) Both actresses have also successfully ventured into international projects and television, demonstrating versatility and adaptability in their careers.",
+        "claim_target_correct": "Priyanka Chopra Jonas is an Indian actress who has achieved success in both national and international film industries, as well as in television. She is the recipient of several accolades, including a National Film Award and five Filmfare Awards in India, along with nominations for a People's Choice Award and a Primetime Emmy Award in the United States.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "In which country did Priyanka Chopra Jonas receive nominations for a People's Choice Award and a Primetime Emmy Award?",
+            "In which film industries has Priyanka Chopra Jonas found success, both in India and internationally?",
+            "What are some accolades that Priyanka Chopra Jonas has received in India for her work in films?",
+            "What is the name of the Indian actress who has been successful in both national and international film industries, as well as in television?",
+            "Which American award nominations has Priyanka Chopra Jonas received during her career, apart from her success in India?"
+        ]
+    },
+    {
+        "claim_id": 14,
+        "claim_ref": "Hidetoshi Nishijima is a Japanese actor model. He is widely regarded as one of Japan's leading actors, having appeared in a wide range of films from science fiction films such as Shin Ultraman to small-scale art films such as Dolls.",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "Nawazuddin Siddiqui is an Indian actor who works in both mainstream and independent cinema. He is widely regarded as one of India's most versatile actors, having appeared in a wide range of films from commercial blockbusters like \"Gangs of Wasseypur\" to small-scale art films such as \"The Lunchbox.\"",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Hidetoshi Nishijima' corresponding to target location 'India' is 'Nawazuddin Siddiqui' under the category 'Actor'. The choice of target entity is reasonable because (a) Both actors have appeared in a wide range of films from commercial to art-house productions, showcasing their versatility and adaptability as performers, (b) Both Nishijima and Siddiqui are highly acclaimed for their acting skills and have earned recognition and awards for their work, establishing themselves as leading actors in their respective industries.",
+        "claim_target_correct": "Nawazuddin Siddiqui is an Indian actor who works in both mainstream and independent cinema. He is widely regarded as one of India's most versatile actors, having appeared in a wide range of films from commercial blockbusters like \"Gangs of Wasseypur\" to small-scale art films such as \"The Lunchbox.\"",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "In what film did Nawazuddin Siddiqui appear alongside Irrfan Khan in a small-scale art film?",
+            "In which film did Nawazuddin Siddiqui gain widespread recognition for his role in mainstream Indian cinema?",
+            "What is the nationality of Nawazuddin Siddiqui, an actor known for his versatile performances in Indian cinema?",
+            "Which genre of films, besides commercial blockbusters, is Nawazuddin Siddiqui known for appearing in?",
+            "Which industry does Nawazuddin Siddiqui primarily work in, as one of India's most versatile actors?"
+        ]
+    },
+    {
+        "claim_id": 15,
+        "claim_ref": "Rodrigo Junqueira Reis Santoro is a Brazilian actor. He is perhaps best known for his portrayal of Persian King Xerxes in the film 300 and its sequel 300: Rise of an Empire.",
+        "location": "Karnataka",
+        "model": "mixtral8x7b",
+        "claim_target": "Prakash Raj is an Indian actor, director, and producer who works predominantly in the South Indian film industry based in Karnataka. He is best known for his versatile acting roles in various languages, including Kannada, Telugu, Tamil, and Hindi films.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Rodrigo Junqueira Reis Santoro' corresponding to target location 'Karnataka' is 'Prakash Raj' under the category 'Actor'. The choice of target entity is reasonable because (a) Both actors are well-known for their versatile acting skills and have played a variety of roles in different films, genres, and languages, (b) Rodrigo Santoro gained popularity for his role as Persian King Xerxes, while Prakash Raj is renowned for his diverse roles in South Indian cinema, making them equivalent entities in terms of their acting careers and impact on the film industry within their respective regions.",
+        "claim_target_correct": "Prakash Raj is an Indian actor, director, and producer who works predominantly in the South Indian film industry based in Karnataka. He is best known for his versatile acting roles in various languages, including Kannada, Telugu, Tamil, and Hindi films.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "For which languages is Prakash Raj best known for his versatile acting roles in the South Indian film industry based in Karnataka?",
+            "In which Indian state is Prakash Raj primarily associated with for his work in the South Indian film industry?",
+            "What is the profession of Prakash Raj, who works predominantly in the South Indian film industry based in Karnataka?",
+            "Which Indian actor has gained popularity through his work in various languages in the South Indian film industry based in Karnataka?"
+        ]
+    },
+    {
+        "claim_id": 16,
+        "claim_ref": "Mohd Syamsul Mohd Yusof is a Malaysian actor, film director, writer, producer and singer. He is the son of producer and director Yusof Haslam.",
+        "location": "Tamil Nadu",
+        "model": "mixtral8x7b",
+        "claim_target": "Vijay is an Indian actor and playback singer who works predominantly in Tamil cinema, hailing from the state of Tamil Nadu. He is the son of film producer and director S. A. Chandrasekhar.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Mohd Syamsul Mohd Yusof' corresponding to target location 'Tamil Nadu' is 'Vijay' under the category 'Actor/Director'. The choice of target entity is reasonable because (a) Both individuals are prominent figures in their respective film industries, with Mohd Syamsul Mohd Yusof contributing significantly to Malaysian cinema and Vijay being a popular actor in Tamil Nadu's thriving movie scene, (b) They both share a similar background, as they are sons of renowned filmmakers who have had successful careers in their own right, which adds to the parallelism between the two entities.",
+        "claim_target_correct": "Vijay is an Indian actor and playback singer who works predominantly in Tamil cinema, hailing from the state of Tamil Nadu. He is the son of film producer and director S. A. Chandrasekhar.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "In which Indian state does the actor Vijay mainly work, associated with Tamil cinema?",
+            "What is the profession of Vijay in Indian cinema, predominantly working in Tamil films?",
+            "Where is Vijay from, indicating the state in India known for its thriving Tamil film industry?",
+            "Which industry is Vijay associated with, based in Tamil Nadu, India?",
+            "Who is the father of Vijay, being a film producer and director in the same Indian state?"
+        ]
+    },
+    {
+        "claim_id": 17,
+        "claim_ref": "Park Shin-hye is a South Korean actress and singer. She gained recognition as a child actress on TV shows such as Stairway to Heaven and Tree of Heaven.",
+        "location": "West Bengal",
+        "model": "mixtral8x7b",
+        "claim_target": "Prosenjit Chatterjee is an Indian actor who works in the Bengali film industry based in West Bengal. He gained recognition as a child artist in films such as Chotto Jigyasa and Padma Nadir Majhi.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Park Shin-hye' corresponding to target location 'West Bengal' is 'Prosenjit Chatterjee' under the category 'Actor/Actress'. The choice of target entity is reasonable because (a) Both actors gained recognition in their childhood, with Park Shin-hye starting as a child actress on TV shows and Prosenjit Chatterjee working as a child artist in films, (b) They both have had long and successful careers in their respective film industries.",
+        "claim_target_correct": "Prosenjit Chatterjee is an Indian actor who works in the Bengali film industry based in West Bengal. He gained recognition as a child artist in films such as Chotto Jigyasa and Padma Nadir Majhi.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "In which Indian state is Prosenjit Chatterjee primarily associated with for his film career?",
+            "What is the profession of Prosenjit Chatterjee, who works in the Bengali film industry based in West Bengal?",
+            "Which films did Prosenjit Chatterjee gain recognition as a child artist in, while working in the Bengali film industry in West Bengal?",
+            "Who is an Indian actor that gained recognition as a child artist in films such as Chotto Jigyasa and Padma Nadir Majhi in the Bengali film industry based in West Bengal?"
+        ]
+    },
+    {
+        "claim_id": 18,
+        "claim_ref": "Willard Carroll Smith II is an American actor, rapper and film producer. He has received multiple accolades, including an Academy Award, a Golden Globe Award, a Screen Actors Guild Award, a BAFTA Award, and four Grammy Awards.",
+        "location": "Mumbai",
+        "model": "mixtral8x7b",
+        "claim_target": "Aamir Khan is an Indian actor, producer, and television personality who has received numerous accolades, including four National Film Awards, eight Filmfare Awards, and a Padma Shri award.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Willard Carroll Smith II' corresponding to target location 'Mumbai' is 'Aamir Khan' under the category 'Entertainment'. The choice of target entity is reasonable because (a) Both individuals are highly acclaimed in their respective fields, with Will Smith achieving success in acting, rap, and film production, while Aamir Khan excels in acting, producing, and television hosting, (b) Both have received multiple awards recognizing their contributions to entertainment, showcasing their influence and impact on popular culture.",
+        "claim_target_correct": "Aamir Khan is an Indian actor, producer, and television personality who has received numerous accolades, including four National Film Awards, eight Filmfare Awards, and a Padma Shri award.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "In which city in India does the Indian actor, producer, and television personality, Aamir Khan, primarily work?",
+            "In which city in India is Aamir Khan's production company, Aamir Khan Productions, headquartered?",
+            "What are some of the awards won by Aamir Khan in his career, including four National Film Awards, eight Filmfare Awards, and a Padma Shri award in India?",
+            "Which Indian film industry is Aamir Khan associated with, based in Mumbai?"
+        ]
+    },
+    {
+        "claim_id": 19,
+        "claim_ref": "Ludivine Sagnier is a French actress. She was nominated three times for the C\u00e9sar Award for Best Supporting Actress for Swimming Pool, Peter Pan, and A Secret.",
+        "location": "Kolkata",
+        "model": "mixtral8x7b",
+        "claim_target": "The Chhat",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Ludivine Sagnier' corresponding to target location 'Kolkata' is 'Konkona Sen Sharma' under the category 'Actress'. The choice of target entity is reasonable because (a) Both actresses have been recognized for their exceptional acting abilities, with multiple nominations for prestigious awards, (b) Konkona Sen Sharma is a prominent figure in Indian cinema, particularly known for her work in art-house and independent films, much like Ludivine Sagnier's contributions to French cinema.",
+        "claim_target_correct": "The Chhat",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "In which Indian city does the Chhat Puja take place, a prominent Hindu festival celebrating the Sun God's powers?",
+            "What is the name of the grand fair held annually in Kolkata, dedicated to Goddess Durga?",
+            "What is the significance of the Chhat festival in Kolkata as a major event for Hindu devotees?",
+            "When is the Chaturthi celebrated in Kolkata, during which the Chhat festival is observed?",
+            "Which deity is primarily worshipped during the Chhat Puja in Kolkata?"
+        ]
+    },
+    {
+        "claim_id": 20,
+        "claim_ref": "Morgan Freeman is an American actor, producer, and narrator known for his distinctive, deep voice. Throughout a career spanning five decades and multiple film genres, he has received numerous accolades, including an Academy Award, a Golden Globe Award, and a Screen Actors Guild Award as well as a nomination for a Tony Award.",
+        "location": "Thanjavur",
+        "model": "mixtral8x7b",
+        "claim_target": "Kamal Haasan is an Indian actor, producer, and director known for his versatile roles in various film genres over a career spanning five decades. He has received numerous accolades, including four National Film Awards, three Filmfare Awards, and a Padma Shri, as well as being nominated for a Padma Bhushan.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Morgan Freeman' corresponding to target location 'Thanjavur' is 'Kamal Haasan' under the category 'Actor/Director'. The choice of target entity is reasonable because (a) Both individuals have enjoyed long and distinguished careers in their respective film industries, with multiple accolades and nominations for prestigious awards, (b) They are both celebrated for their versatility in portraying diverse roles and contributing to various film genres, making them well-respected figures within the international cinema landscape.",
+        "claim_target_correct": "Kamal Haasan is an Indian actor, producer, and director known for his versatile roles in various film genres over a career spanning five decades. He has received numerous accolades, including four National Film Awards, three Filmfare Awards, and a Padma Shri, as well as being nominated for a Padma Bhushan.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "In which Indian state is Kamal Haasan primarily associated with for his film career spanning five decades?",
+            "In which city in Thanjavur, India, was Kamal Haasan nominated for a Padma Bhushan?",
+            "What are some of the accolades received by Kamal Haasan over his five-decade film career in Thanjavur, India?",
+            "What is the name of the Indian actor, producer, and director who has received four National Film Awards and three Filmfare Awards over his five-decade film career based in Thanjavur?",
+            "Who is an Indian actor, producer, and director known for his versatile roles in various film genres, hailing from Thanjavur?"
+        ]
+    },
+    {
+        "claim_id": 21,
+        "claim_ref": "American Airlines is a major US-based airline headquartered in Fort Worth, Texas, within the Dallas/Fort Worth metroplex. It is the largest airline in the world when measured by scheduled passengers carried, revenue passenger mile, and fleet size.",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "IndiGo is a leading Indian airline headquartered in Gurgaon, Haryana. It is the largest airline in India when measured by domestic market share, fleet size, and number of passengers carried.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'American Airlines' corresponding to target location 'India' is 'IndiGo' under the category 'Airlines'. The choice of target entity is reasonable because (a) Both airlines hold significant positions in their respective countries, with American Airlines being the largest in the US and IndiGo being the largest in India, (b) They both have substantial fleets and serve large numbers of passengers, making them important contributors to the aviation industry in their regions.",
+        "claim_target_correct": "IndiGo is a leading Indian airline headquartered in Gurgaon, Haryana. It is the largest airline in India when measured by domestic market share, fleet size, and number of passengers carried.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "In which Indian city is IndiGo's headquarters located?",
+            "What is IndiGo's position in terms of being the largest airline in India?",
+            "What is the name of the leading Indian airline that is headquartered in Gurgaon, Haryana?",
+            "Which airline is considered the largest in India when measuring domestic market share, fleet size, and number of passengers carried?",
+            "Which country does IndiGo belong to, as it is a leading airline based in Gurgaon, Haryana?"
+        ]
+    },
+    {
+        "claim_id": 22,
+        "claim_ref": "Qatar Airways Company Q.C.S.C., operating as Qatar Airways, is the flag carrier of Qatar. Headquartered in the Qatar Airways Tower in Doha, the airline operates a hub-and-spoke network, flying to over 150 international destinations across Africa, Asia, Europe, the Americas, and Oceania from its base at Hamad International Airport, using a fleet of more than 200 aircraft.",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "Air India Limited, operating as Air India, is the flag carrier of India. Headquartered in New Delhi, the airline operates a hub-and-spoke network, flying to over 100 domestic and international destinations across Asia, Europe, Australia, and North America from its base at Indira Gandhi International Airport, using a fleet of more than 120 aircraft.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Qatar Airways' corresponding to target location 'India' is 'Air India' under the category 'Airlines'. The choice of target entity is reasonable because (a) Both Qatar Airways and Air India are national flag carriers, operating flights domestically and internationally to various continents, (b) Both airlines operate out of major hub airports, with Qatar Airways using Hamad International Airport and Air India utilizing Indira Gandhi International Airport.",
+        "claim_target_correct": "Air India Limited, operating as Air India, is the flag carrier of India. Headquartered in New Delhi, the airline operates a hub-and-spoke network, flying to over 100 domestic and international destinations across Asia, Europe, Australia, and North America from its base at Indira Gandhi International Airport, using a fleet of more than 120 aircraft.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "From which airport does Air India, the flag carrier of India, operate its main hub?",
+            "How many domestic and international destinations does Air India serve across various continents?",
+            "What is the name of the flag carrier airline of India, headquartered in New Delhi?",
+            "What is the size of Air India's fleet, consisting of aircraft that fly to over 100 destinations?",
+            "Which airport in New Delhi serves as the base for Air India's hub-and-spoke network operations?"
+        ]
+    },
+    {
+        "claim_id": 23,
+        "claim_ref": "Arik Air is a Nigerian airline operating mainly from two hubs at Murtala Muhammed International Airport in Lagos and Nnamdi Azikiwe International Airport in Abuja. Arik Air's head office is the Arik Air Aviation Center on the grounds of Murtala Muhammed International Airport in Ikeja. It serves a network of regional and mid-haul destinations within Africa.",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "IndiGo is an Indian airline headquartered in Gurgaon, Haryana, with its main hub at Delhi's Indira Gandhi International Airport. It operates a vast domestic network within India and also serves several international destinations in the Asia-Pacific region.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Arik Air' corresponding to target location 'India' is 'IndiGo' under the category 'Airlines'. The choice of target entity is reasonable because (a) Both airlines operate as major carriers in their respective countries, serving a wide range of domestic and international destinations, (b) Their head offices are located near the primary airports they operate from, contributing to the development of aviation infrastructure in their regions.",
+        "claim_target_correct": "IndiGo is an Indian airline headquartered in Gurgaon, Haryana, with its main hub at Delhi's Indira Gandhi International Airport. It operates a vast domestic network within India and also serves several international destinations in the Asia-Pacific region.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "In which Asian-Pacific regions does IndiGo operate its international flights from India?",
+            "What is the name of the Indian airline headquartered in Gurgaon, Haryana, with its main hub at Delhi's Indira Gandhi International Airport?",
+            "What type of network does IndiGo mainly operate within India?",
+            "Where is the headquarters of IndiGo, one of India's leading airlines, located in Haryana?",
+            "Which airport serves as the main hub for IndiGo in India's capital city, Delhi?"
+        ]
+    },
+    {
+        "claim_id": 24,
+        "claim_ref": "Spirit Airlines, Inc. is a major United States ultra-low cost airline headquartered in Miramar, Florida, in the Miami metropolitan area. Spirit operates scheduled flights throughout the United States, the Caribbean and Latin America.",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "IndiGo is a low-cost airline headquartered in Gurgaon, India, operating both domestic and international flights. It is currently the largest airline in India in terms of fleet size and passengers carried.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Spirit Airlines' corresponding to target location 'India' is 'IndiGo' under the category 'Airlines'. The choice of target entity is reasonable because (a) Both airlines operate as low-cost carriers, providing affordable travel options for customers, (b) IndiGo and Spirit Airlines both have significant presence in their respective markets, with IndiGo being the largest airline in India and Spirit being one of the major ultra-low cost airlines in the United States.",
+        "claim_target_correct": "IndiGo is a low-cost airline headquartered in Gurgaon, India, operating both domestic and international flights. It is currently the largest airline in India in terms of fleet size and passengers carried.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "How many aircraft does IndiGo have in its fleet size, making it the largest airline in India?",
+            "In what Indian city is the headquarters of IndiGo, the country's largest airline, located?",
+            "What is the name of the largest low-cost airline in India, based in Gurgaon, which operates both domestic and international flights?",
+            "What type of operational flights does IndiGo offer - domestic or international or both?",
+            "Which airline leads in terms of fleet size and passengers carried among all Indian airlines, headquartered in Gurgaon?"
+        ]
+    },
+    {
+        "claim_id": 25,
+        "claim_ref": "Delta Air Lines is one of the major airlines of the United States and a legacy carrier headquartered in Atlanta, Georgia. The United States' oldest operating airline and the seventh oldest operating worldwide, Delta along with its subsidiaries and regional affiliates, including Delta Connection, operates over 5,400 flights daily and serves 325 destinations in 52 countries on six continents.",
+        "location": "Gurugram",
+        "model": "mixtral8x7b",
+        "claim_target": "",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Delta Air Lines' corresponding to target location 'Gurugram' is 'IndiGo' under the category 'Airlines'. The choice of target entity is reasonable because (a) Both airlines are major carriers that hold significant market shares and serve large customer bases in their respective countries, (b) IndiGo, headquartered in Gurugram, aligns with the requirement for a local connection to the target location, and (c) Both airlines have multiple subsidiaries and affiliates, which contribute to their extensive network of operations.",
+        "claim_target_correct": "",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "What is a prominent Indian city, known for being home to numerous multinational corporations and IT companies, including many located in Gurugram?",
+            "What is the name of the Indian city that has experienced significant growth and development in recent years, becoming a hub for various industries with many companies located in Gurugram?",
+            "Which major Indian city is often referred to as the Cyber City due to the presence of various information technology (IT) companies, many of which are headquartered in Gurugram?",
+            "Which well-known Indian city shares its border with the national capital territory of Delhi and is famous for hosting numerous corporate offices, malls, and residential complexes situated in Gurugram?"
+        ]
+    },
+    {
+        "claim_id": 26,
+        "claim_ref": "Egyptair is the state-owned flag carrier of Egypt. The airline is headquartered at Cairo International Airport, its main hub, operating scheduled passenger and freight services to 81 destinations in Africa, Europe, Asia, and The Americas.",
+        "location": "Gurugram",
+        "model": "mixtral8x7b",
+        "claim_target": "Vistara is a domestic airline based in Gurugram, India, operating scheduled passenger services to 43 destinations within the country. It is a joint venture between Tata Sons and Singapore Airlines.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Egyptair' corresponding to target location 'Gurugram' is 'Vistara' under the category 'Airlines'. The choice of target entity is reasonable because (a) Both are airlines, with Egyptair being a state-owned flag carrier and Vistara being a domestic airline, (b) While Egyptair operates internationally, Vistara primarily focuses on domestic services within India, reflecting the difference in their respective operational scopes but still maintaining the core similarity of providing air travel services. Moreover, Gurugram is highlighted as it is the base for Vistara, contributing to the city's reputation as a hub for various businesses and industries, including aviation.",
+        "claim_target_correct": "Vistara is a domestic airline based in Gurugram, India, operating scheduled passenger services to 43 destinations within the country. It is a joint venture between Tata Sons and Singapore Airlines.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "How many destinations within India does Vistara operate scheduled passenger services to?",
+            "In which Indian city is Vistara, the domestic airline based?",
+            "What is the name of the domestic airline that operates scheduled passenger services to 43 destinations within India and is headquartered in Gurugram?",
+            "What type of services does Vistara, the airline based in Gurugram, provide?",
+            "Who are the partners in the joint venture that established Vistara, the domestic airline based in Gurugram?"
+        ]
+    },
+    {
+        "claim_id": 27,
+        "claim_ref": "Qantas Airways Limited is the flag carrier of Australia. It is the largest airline by fleet size, international flights, and international destinations in Australia and Oceania.",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "Air India Limited is the flag carrier of India. It is the largest airline by fleet size, domestic flights, and international destinations within the country.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Qantas Airways Limited' corresponding to target location 'India' is 'Air India Limited' under the category 'Airlines'. The choice of target entity is reasonable because (a) Both airlines serve as flag carriers for their respective countries, representing them on international stages and providing crucial air connectivity, (b) Both Qantas Airways and Air India are significant players in their regions with large fleets and extensive domestic and international operations.",
+        "claim_target_correct": "Air India Limited is the flag carrier of India. It is the largest airline by fleet size, domestic flights, and international destinations within the country.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "How many international destinations does Air India serve within India, making it the airline with the most such destinations in the country?",
+            "In which country is Air India based and operates as the flag carrier?",
+            "What is a significant aspect of Air India that makes it stand out in the Indian aviation industry?",
+            "What is the name of the flag carrier airline of India?",
+            "Which airline is the largest in India in terms of fleet size and domestic flights served?"
+        ]
+    },
+    {
+        "claim_id": 28,
+        "claim_ref": "United Airlines, Inc. is a major American airline headquartered at the Willis Tower in Chicago, Illinois. United operates an extensive domestic and international route network across the United States and all six inhabited continents primarily out of its eight hubs, with Chicago O'Hare having the largest number of daily flights and Denver carrying the most passengers in 2023.",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "Air India Limited is a major Indian airline headquartered in New Delhi, India. Air India operates a comprehensive domestic and international route network primarily out of its four hubs, with Delhi carrying the most passengers in 2023.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'United Airlines' corresponding to target location 'India' is 'Air India' under the category 'Airlines'. The choice of target entity is reasonable because (a) Both airlines serve as major carriers in their respective countries, operating extensive route networks and providing essential air transportation services for passengers, (b) Air India has its headquarters in New Delhi, making it a fitting equivalent for the Indian context, and (c) By highlighting Delhi as the busiest hub for Air India, the target sentence emphasizes the importance of this city within the Indian aviation industry.",
+        "claim_target_correct": "Air India Limited is a major Indian airline headquartered in New Delhi, India. Air India operates a comprehensive domestic and international route network primarily out of its four hubs, with Delhi carrying the most passengers in 2023.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "Which major Indian airline is headquartered in New Delhi, India and operated the highest number of passengers from its Delhi hub in 2"
+        ]
+    },
+    {
+        "claim_id": 29,
+        "claim_ref": "Allegiant Air is an ultra low-cost U.S. carrier that operates scheduled and charter flights. It is a major air carrier, the fourteenth-largest commercial airline in North America.",
+        "location": "Bengaluru",
+        "model": "mixtral8x7b",
+        "claim_target": "IndiGo is a low-cost Indian airline that operates both domestic and international flights. It is the largest airline in India by passenger market share, making it a major player in the country's aviation industry.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Allegiant Air' corresponding to target location 'Bengaluru' is 'IndiGo' under the category 'Airlines'. The choice of target entity is reasonable because (a) Both Allegiant Air and IndiGo are major air carriers in their respective regions, with significant market shares and large-scale operations, (b) IndiGo, as a prominent Indian airline based in Bengaluru, aligns well with the target location requirement.",
+        "claim_target_correct": "IndiGo is a low-cost Indian airline that operates both domestic and international flights. It is the largest airline in India by passenger market share, making it a major player in the country's aviation industry.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "How does IndiGo's market share compare to other airlines in India's aviation industry, with its headquarters in Bengaluru?",
+            "In which city is IndiGo, the leading airline in India by market share, based?",
+            "What is the name of the largest low-cost airline in India, operating both domestic and international flights and based in Bengaluru?",
+            "What type of airline is IndiGo, known for its low-cost operations and significant presence in both domestic and international flights in Bengaluru?",
+            "Which airline has the highest passenger market share in India's aviation industry and is headquartered in Bengaluru?"
+        ]
+    },
+    {
+        "claim_id": 30,
+        "claim_ref": "EasyJet plc is a British multinational low-cost airline group headquartered at London Luton Airport. It operates domestic and international scheduled services on 927 routes in more than 34 countries via its affiliate airlines EasyJet UK, EasyJet Switzerland, and EasyJet Europe.",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "IndiGo is an Indian low-cost airline headquartered in Gurgaon, Haryana. It operates domestic and international scheduled services on over 1500 routes, making it one of the largest airlines in India by passenger numbers.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'EasyJet plc' corresponding to target location 'India' is 'IndiGo' under the category 'Airlines'. The choice of target entity is reasonable because (a) Both EasyJet and IndiGo are low-cost airlines, making them similar in their business model and approach to air travel, (b) They both operate domestic and international services, connecting various cities within their respective countries and beyond, contributing to the growth and development of the aviation industry.",
+        "claim_target_correct": "IndiGo is an Indian low-cost airline headquartered in Gurgaon, Haryana. It operates domestic and international scheduled services on over 1500 routes, making it one of the largest airlines in India by passenger numbers.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "How many scheduled services does IndiGo operate on both domestic and international routes, making it one of the largest airlines in India by passenger numbers?",
+            "In which city is the headquarters of IndiGo, one of the largest airlines in India by passenger numbers, located?",
+            "What is the name of the Indian low-cost airline headquartered in Gurgaon, Haryana?",
+            "What type of airline is IndiGo in terms of cost and services offered to passengers?",
+            "Which country does IndiGo, one of the largest airlines by passenger numbers, belong to?"
+        ]
+    },
+    {
+        "claim_id": 31,
+        "claim_ref": "London Gatwick, also known as Gatwick Airport, is the secondary international airport serving London, England, United Kingdom. It is located near Crawley, West Sussex, England 29.5 miles south of Central London.",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "Indira Gandhi International Airport is the secondary international airport serving Delhi, India. It is located in Palam, Delhi, 10.2 miles southwest of New Delhi's city center.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'London Gatwick' corresponding to target location 'India' is 'Indira Gandhi International Airport' under the category 'Airports'. The choice of target entity is reasonable because (a) Both entities serve as secondary international airports in their respective regions, (b) They are both significant transportation hubs that connect their cities and countries with various international destinations.",
+        "claim_target_correct": "Indira Gandhi International Airport is the secondary international airport serving Delhi, India. It is located in Palam, Delhi, 10.2 miles southwest of New Delhi's city center.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "How many miles away from New Delhi's city center is Indira Gandhi International Airport situated?",
+            "In which Indian city is Indira Gandhi International Airport physically located, specifically in Palam?",
+            "What is the name of the secondary international airport serving Delhi, India?",
+            "Where is Indira Gandhi International Airport located in relation to Delhi's city center?",
+            "Which city does Indira Gandhi International Airport serve primarily in India?"
+        ]
+    },
+    {
+        "claim_id": 32,
+        "claim_ref": "Moorabbin Airport is a mostly general aviation airport for light aircraft located in between the southern Melbourne suburbs of Heatherton, Cheltenham, Dingley Village and Mentone. It also receives commercial airline service.",
+        "location": "Karnataka",
+        "model": "mixtral8x7b",
+        "claim_target": "Hindustan Aeronautics Limited Airport is a military and general aviation airport located in the town of Nashik, in the northwestern part of Karnataka state. It serves as a base for the Indian Air Force and also provides facilities for civil aviation purposes.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Moorabbin Airport' corresponding to target location 'Karnataka' is 'Hindustan Aeronautics Limited Airport' under the category 'Airports'. The choice of target entity is reasonable because (a) Both airports serve as bases for aviation activities, with Moorabbin focusing on general aviation and Hindustan Aeronautics Limited Airport catering to both military and civil purposes, (b) By highlighting Nashik's Hindustan Aeronautics Limited Airport, the target sentence emphasizes an important aviation hub within Karnataka, similar to Moorabbin Airport in Melbourne's southern suburbs.",
+        "claim_target_correct": "Hindustan Aeronautics Limited Airport is a military and general aviation airport located in the town of Nashik, in the northwestern part of Karnataka state. It serves as a base for the Indian Air Force and also provides facilities for civil aviation purposes.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "In which town of Karnataka is Hindustan Aeronautics Limited Airport situated?",
+            "What is the name of the airport located in Nashik, serving as a base for the Indian Air Force and offering facilities for civil aviation in Karnataka?",
+            "What is the role of Hindustan Aeronautics Limited Airport regarding civil aviation in the northwestern part of Karnataka state?",
+            "What types of aviation does Hindustan Aeronautics Limited Airport accommodate in Nashik, Karnataka?",
+            "Which military force utilizes Hindustan Aeronautics Limited Airport as a base in Karnataka?"
+        ]
+    },
+    {
+        "claim_id": 33,
+        "claim_ref": "Kuala Lumpur International Airport is Malaysia's main international airport. It is located in the Sepang District of Selangor, approximately 45 kilometres south of Kuala Lumpur and serves the city's greater conurbation.",
+        "location": "Kerala",
+        "model": "mixtral8x7b",
+        "claim_target": "Cochin International Airport is Kerala's primary international airport, located in Nedumbassery, about 25 kilometers north of Kochi (Cochin), serving the city's metropolitan area.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Kuala Lumpur International Airport' corresponding to target location 'Kerala' is 'Cochin International Airport' under the category 'Airports'. The choice of target entity is reasonable because (a) Both airports serve as key transportation hubs for their respective regions, connecting millions of passengers and facilitating trade and tourism, (b) Cochin International Airport is India's first fully solar-powered airport, which highlights its significance in terms of sustainability and technological innovation within the aviation sector.",
+        "claim_target_correct": "Cochin International Airport is Kerala's primary international airport, located in Nedumbassery, about 25 kilometers north of Kochi (Cochin), serving the city's metropolitan area.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "How far is Cochin International Airport from Kochi (Cochin) in kilometers?",
+            "In which Indian state would you find Kerala's primary international airport, Cochin International Airport?",
+            "What is the name of Kerala's primary international airport?",
+            "Where is Cochin International Airport located in relation to Kochi (Cochin)?",
+            "Which city's metropolitan area does Cochin International Airport serve?"
+        ]
+    },
+    {
+        "claim_id": 34,
+        "claim_ref": "Jewel Changi Airport is a nature-themed entertainment and retail complex surrounded by and linked to one of the passenger terminals of Changi Airport, Singapore.",
+        "location": "Bengaluru",
+        "model": "mixtral8x7b",
+        "claim_target": "Kempegowda International Airport's Terminal 2 is a nature-inspired entertainment and retail complex integrated within one of the passenger terminals in Bengaluru, India.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Jewel Changi Airport' corresponding to target location 'Bengaluru' is 'Kempegowda International Airport's Terminal 2' under the category 'Airport Terminals'. The choice of target entity is reasonable because (a) Both entities are integrated retail and entertainment complexes situated within airport terminals, providing passengers with unique experiences before or after their flights, (b) Kempegowda International Airport's Terminal 2 was inaugurated in 2013, making it a relatively new addition to Bengaluru's transportation infrastructure, showcasing the region's growth and modernization efforts.",
+        "claim_target_correct": "Kempegowda International Airport's Terminal 2 is a nature-inspired entertainment and retail complex integrated within one of the passenger terminals in Bengaluru, India.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "In which Indian city is Kempegowda International Airport located, featuring an integrated nature-inspired terminal?",
+            "What elements does Terminal 2 at Kempegowda International Airport incorporate to create a nature-inspired experience for passengers?",
+            "What is the name of the airport in Bengaluru, India, that features Terminal 2 as a nature-inspired entertainment and retail complex?",
+            "What type of facility is Terminal 2 at Kempegowda International Airport in Bengaluru, India?",
+            "Which terminal of Kempegowda International Airport has a nature-inspired entertainment and retail complex?"
+        ]
+    },
+    {
+        "claim_id": 35,
+        "claim_ref": "Suvarnabhumi Airport, also known unofficially as Bangkok International Airport, is the main international airport serving Bangkok, Thailand.",
+        "location": "Port Blair",
+        "model": "mixtral8x7b",
+        "claim_target": "Veer Savarkar International Airport is the primary airport serving the city of Port Blair and the Andaman and Nicobar Islands, an Indian union territory.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Suvarnabhumi Airport' corresponding to target location 'Port Blair' is 'Veer Savarkar International Airport' under the category 'Airports'. The choice of target entity is reasonable because (a) Both airports serve as major transportation hubs for their respective regions, providing crucial connections to domestic and international destinations, (b) Veer Savarkar International Airport is the only airport in Port Blair, making it an essential point of entry for tourists and locals alike, similar to Suvarnabhumi Airport's role in serving Bangkok.",
+        "claim_target_correct": "Veer Savarkar International Airport is the primary airport serving the city of Port Blair and the Andaman and Nicobar Islands, an Indian union territory.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "In which city is the Veer Savarkar International Airport located?",
+            "What are some of the services provided by the Veer Savarkar International Airport in Port Blair?",
+            "What is the name of the primary airport serving Port Blair and the Andaman and Nicobar Islands?",
+            "What is the significance of the Veer Savarkar International Airport for travelers visiting the Andaman and Nicobar Islands?",
+            "Which union territory does the Veer Savarkar International Airport serve in India?"
+        ]
+    },
+    {
+        "claim_id": 36,
+        "claim_ref": "Galatina Air Base is an airbase near Galatina, south of the city of Lecce in the Apulia region of Italy. Currently the Italian Air Force's 10th Aircraft Maintenance Unit is based there, which maintains the air force's MB-339 training and light attack jets.",
+        "location": "Tezpur",
+        "model": "mixtral8x7b",
+        "claim_target": "Tezpur Air Force Station is an airbase located in Tezpur, near the city of Guwahati in the northeastern state of Assam, India. Currently, the Indian Air Force's Central Workshop Unit is based there, responsible for maintaining the air force's MiG-21 trainer and fighter jets.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Galatina Air Base' corresponding to target location 'Tezpur' is 'Tezpur Air Force Station' under the category 'Military Infrastructure'. The choice of target entity is reasonable because (a) Both airbases serve as vital maintenance and support facilities for their respective country's air force, housing units responsible for maintaining military aircraft, and (b) Both Tezpur Air Force Station and Galatina Air Base contribute significantly to the defense capabilities of their respective nations.",
+        "claim_target_correct": "Tezpur Air Force Station is an airbase located in Tezpur, near the city of Guwahati in the northeastern state of Assam, India. Currently, the Indian Air Force's Central Workshop Unit is based there, responsible for maintaining the air force's MiG-21 trainer and fighter jets.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "Can you name the northeastern state in India where the Tezpur Air Force Station and its Central Workshop Unit are located?",
+            "For which specific aircraft models is the Central Workshop Unit at Tezpur Air Force Station responsible for maintenance?",
+            "What is the name of the city where the Tezpur Air Force Station is situated, close to a major city in Assam?",
+            "What type of facility is the Tezpur Air Force Station located in Tezpur, near Guwahati, Assam, India?",
+            "Which Indian Air Force unit is based at the Tezpur Air Force Station, maintaining MiG-21 trainer and fighter jets?"
+        ]
+    },
+    {
+        "claim_id": 37,
+        "claim_ref": "Meadows Field is a public airport in Kern County, California, United States, three miles northwest of downtown Bakersfield. It is the main airport for the Bakersfield area, and one of the two international airports in the San Joaquin Valley, the other Fresno Yosemite International Airport.",
+        "location": "Chhattisgarh",
+        "model": "mixtral8x7b",
+        "claim_target": "Swami Vivekananda Airport is a public airport located in Naya Raipur, Chhattisgarh, India, six miles south of Raipur city center. It serves as the primary airport for the Raipur area, and it is the only international airport in the region.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Meadows Field' corresponding to target location 'Chhattisgarh' is 'Swami Vivekananda Airport' under the category 'Airports'. The choice of target entity is reasonable because (a) Both airports serve as the main hubs for their respective regions, providing accessibility and connectivity for passengers traveling domestically and internationally, (b) Swami Vivekananda Airport is located in Naya Raipur, which is a developing urban area similar to Bakersfield's downtown, and serves as the capital city of Chhattisgarh, thus solidifying its importance within the region.",
+        "claim_target_correct": "Swami Vivekananda Airport is a public airport located in Naya Raipur, Chhattisgarh, India, six miles south of Raipur city center. It serves as the primary airport for the Raipur area, and it is the only international airport in the region.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "How many miles away from Raipur city center is Swami Vivekananda Airport situated in Naya Raipur, Chhattisgarh?",
+            "What is the name of the public airport located in Naya Raipur, Chhattisgarh, six miles south of Raipur city center?",
+            "What is the status of Swami Vivekananda Airport in terms of international connectivity in the Chhattisgarh region?",
+            "When did Swami Vivekananda Airport start serving as the primary airport for the Raipur area?",
+            "Which Indian city does Swami Vivekananda Airport primarily serve in the region of Chhattisgarh?"
+        ]
+    },
+    {
+        "claim_id": 38,
+        "claim_ref": "Mehrabad Airport, is an airport serving Tehran, the capital city of Iran. Prior to the construction of the larger Imam Khomeini International Airport in 2007, Mehrabad was Tehran's primary airport in both international and domestic traffic, but now serves only domestic flights.",
+        "location": "Karnataka",
+        "model": "mixtral8x7b",
+        "claim_target": "HAL Airport, also known as Hindustan Aeronautics Limited Airport, is a military airbase serving Bangalore, the capital city of Karnataka, India. Before the establishment of Kempegowda International Airport in 2008, HAL Airport was Bangalore's primary airport for both international and domestic flights, but now serves only select defense-related and VIP flights.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Mehrabad Airport' corresponding to target location 'Karnataka' is 'HAL Airport' under the category 'Airports'. The choice of target entity is reasonable because (a) Both Mehrabad Airport and HAL Airport were once their respective cities' primary airports, handling international and domestic traffic before new airports took over those roles, (b) Both airports have served as significant transportation hubs for their respective regions, playing crucial roles in the development of the local economy and tourism industry.",
+        "claim_target_correct": "HAL Airport, also known as Hindustan Aeronautics Limited Airport, is a military airbase serving Bangalore, the capital city of Karnataka, India. Before the establishment of Kempegowda International Airport in 2008, HAL Airport was Bangalore's primary airport for both international and domestic flights, but now serves only select defense-related and VIP flights.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "Before the establishment of Kempegowda International Airport in 2008, what role did HAL Airport play for Bangalore's air traffic in Karnataka?",
+            "For what type of flights does HAL Airport currently operate within Karnataka?",
+            "What is the current operational status and purpose of HAL Airport in Bangalore, Karnataka?",
+            "What is the name of the military airbase located in Bangalore, Karnataka, initially serving as Bangalore's primary airport before 2008?",
+            "Which Indian city does HAL Airport serve, located in Karnataka?"
+        ]
+    },
+    {
+        "claim_id": 39,
+        "claim_ref": "Paris Charles de Gaulle Airport, also known as Roissy Airport or simply Paris CDG, is the main international airport serving Paris, France. Opened in 1974, it is in Roissy-en-France, 23 km (14 mi) northeast of Paris and is named after World War II statesman Charles de Gaulle (1890-1970), whose initials (CDG) are used as its IATA airport code.",
+        "location": "Guwahati",
+        "model": "mixtral8x7b",
+        "claim_target": "Lokpriya Gopinath Bordoloi International Airport, also known as Guwahati Airport or IATA: GAU, is the primary international airport serving Guwahati, the largest city in the Indian state of Assam. Opened in 1958, it is located in Borjhar, 20 km (12.4 mi) west of Guwahati and is named after the first Chief Minister of Assam, Lokpriya Gopinath Bordoloi (1890-1950).",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Paris Charles de Gaulle Airport' corresponding to target location 'Guwahati' is 'Lokpriya Gopinath Bordoloi International Airport' under the catgory 'Airports'. The choice of target entity is reasonable because (a) Both airports serve as the main international gateways for their respective cities, Paris and Guwahati, ( (b) They are named after significant historical figures, Charles de Gaulle in France and Lokpriya Gopinath Bordoloi in India. Moreover, both",
+        "claim_target_correct": "Lokpriya Gopinath Bordoloi International Airport, also known as Guwahati Airport or IATA: GAU, is the primary international airport serving Guwahati, the largest city in the Indian state of Assam. Opened in 1958, it is located in Borjhar, 20 km (12.4 mi) west of Guwahati and is named after the first Chief Minister of Assam, Lokpriya Gopinath Bordoloi (1890-1950).",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "In which year was the Lokpriya Gopinath Bordoloi International Airport opened?",
+            "What is the name of the primary international airport serving Guwahati, the largest city in Assam?",
+            "Where is the Lokpriya Gopinath Bordoloi International Airport located in relation to Guwahati?",
+            "Which Indian state does the Lokpriya Gopinath Bordoloi International Airport serve?",
+            "Who is the airport named after, and what is their significance in Assam's history?"
+        ]
+    },
+    {
+        "claim_id": 40,
+        "claim_ref": "Amelia Earhart Airport is a city-owned airport two miles west of Atchison, in Atchison County, Kansas, United States. It is named for Atchison native Amelia Earhart.",
+        "location": "Indore",
+        "model": "mixtral8x7b",
+        "claim_target": "Devi Ahilyabai Holkar Airport is a public airport located 8 kilometers west of Indore, in Madhya Pradesh, India. It is named after the 18th-century ruler and philanthropist, Maharani Devi Ahilyabai Holkar of Indore.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Amelia Earhart Airport' corresponding to target location 'Indore' is 'Devi Ahilyabai Holkar Airport' under the category 'Airports'. The choice of target entity is reasonable because (a) Both airports are named after notable women who have made significant contributions in their respective fields \u2013 Amelia Earhart in aviation and Maharani Devi Ahilyabai Holkar in rulership and philanthropy, (b) Both airports serve as important transportation hubs for their respective regions, facilitating travel and economic development.",
+        "claim_target_correct": "Devi Ahilyabai Holkar Airport is a public airport located 8 kilometers west of Indore, in Madhya Pradesh, India. It is named after the 18th-century ruler and philanthropist, Maharani Devi Ahilyabai Holkar of Indore.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "After whom is Devi Ahilyabai Holkar Airport named?",
+            "How far is Devi Ahilyabai Holkar Airport from the city center of Indore?",
+            "In which Indian state is Devi Ahilyabai Holkar Airport situated?",
+            "What is the name of the public airport located 8 kilometers west of Indore in Madhya Pradesh, India?",
+            "Who was Maharani Devi Ahilyabai Holkar, the person after whom the airport is named?"
+        ]
+    },
+    {
+        "claim_id": 41,
+        "claim_ref": "Dreamworld is a theme park and zoo situated on the Gold Coast in Queensland. It is Australia's biggest theme park with over 40 rides and attractions.",
+        "location": "Tamil Nadu",
+        "model": "mixtral8x7b",
+        "claim_target": "MGM Dizzee World is a popular amusement park located in Chennai, Tamil Nadu. It features over 40 rides and attractions, making it one of the largest theme parks in the region.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Dreamworld' corresponding to target location 'Tamil Nadu' is 'MGM Dizzee World' under the category 'Theme Parks'. The choice of target entity is reasonable because (a) Both Dreamworld and MGM Dizzee World are well-known amusement parks that attract visitors with their diverse range of rides and attractions, (b) They are both significant contributors to the tourism industry in their respective regions, offering entertainment options for families and thrill-seekers alike.",
+        "claim_target_correct": "MGM Dizzee World is a popular amusement park located in Chennai, Tamil Nadu. It features over 40 rides and attractions, making it one of the largest theme parks in the region.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "How many rides and attractions does MGM Dizzee World feature in Chennai, Tamil Nadu?",
+            "In which city in Tamil Nadu is MGM Dizzee World, a popular amusement park, situated?",
+            "What is the name of the amusement park with over 40 rides and attractions, located in Chennai, Tamil Nadu?",
+            "What kind of entertainment venue is MGM Dizzee World, located in Chennai, Tamil Nadu?",
+            "Which Indian state is home to the large theme park, MGM Dizzee World?"
+        ]
+    },
+    {
+        "claim_id": 42,
+        "claim_ref": "Disneyland Paris is an entertainment resort in Chessy, France, 32 kilometres east of Paris. It encompasses two theme parks, resort hotels, a shopping, dining and entertainment complex, and a golf course.",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "Kingdom of Dreams is an entertainment destination in Gurgaon, India, located 25 kilometers southwest of Delhi. It features two main sections: Culture Gully, which showcases various Indian cultures and cuisines, and Nautanki Mahal, an auditorium for live shows and performances.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Disneyland Paris' corresponding to target location 'India' is 'Kingdom of Dreams' under the category 'Entertainment Resort'. The choice of target entity is reasonable because (a) Both establishments serve as entertainment hubs offering a variety of experiences, attractions, and dining options, (b) They both showcase elements of their respective cultures: Disneyland Paris features popular Disney stories and characters, while Kingdom of Dreams highlights the rich cultural diversity found throughout India.",
+        "claim_target_correct": "Kingdom of Dreams is an entertainment destination in Gurgaon, India, located 25 kilometers southwest of Delhi. It features two main sections: Culture Gully, which showcases various Indian cultures and cuisines, and Nautanki Mahal, an auditorium for live shows and performances.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "How far is Kingdom of Dreams, an entertainment destination in Gurgaon, India, from Delhi?",
+            "In which auditorium at Kingdom of Dreams can visitors watch live shows and performances?",
+            "What is the name of the entertainment destination located 25 kilometers southwest of Delhi, in Gurgaon, India?",
+            "What two main sections does Kingdom of Dreams consist of, showcasing various aspects of Indian culture and entertainment?",
+            "Where can one find a variety of Indian cultures and cuisines on display at Kingdom of Dreams?"
+        ]
+    },
+    {
+        "claim_id": 43,
+        "claim_ref": "Ferrari World Abu Dhabi is a mostly indoors theme park located on Yas Island in Abu Dhabi, United Arab Emirates. It is the world's first Ferrari-themed park and features Formula Rossa, the world's fastest roller coaster.",
+        "location": "Maharashtra",
+        "model": "mixtral8x7b",
+        "claim_target": "Adlabs Imagica is a theme park located in Khopoli, Maharashtra, India. It features various rides and attractions, including Nitro, one of India's fastest roller coasters.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Ferrari World Abu Dhabi' corresponding to target location 'Maharashtra' is 'Adlabs Imagica' under the category 'Theme Parks'. The choice of target entity is reasonable because (a) Both are theme parks with various rides and attractions, providing entertainment and recreational experiences for visitors, (b) Both parks boast having one of the fastest roller coasters in their respective regions, establishing a parallel between the two entities in terms of offering thrilling experiences for visitors.",
+        "claim_target_correct": "Adlabs Imagica is a theme park located in Khopoli, Maharashtra, India. It features various rides and attractions, including Nitro, one of India's fastest roller coasters.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "How does Adlabs Imagica contribute to the tourism and entertainment industry in Maharashtra with its rides and attractions?",
+            "In which city of Maharashtra can visitors find the Adlabs Imagica theme park?",
+            "What is the name of the theme park situated in Khopoli, Maharashtra, which features rides like Nitro?",
+            "What kind of attraction is Nitro, located in Adlabs Imagica, Maharashtra?",
+            "Which Indian state is home to Adlabs Imagica, a theme park with various attractions?"
+        ]
+    },
+    {
+        "claim_id": 44,
+        "claim_ref": "Dream Island is an amusement park in Moscow that opened on 29 February 2020. It is the largest indoor theme park in Europe.",
+        "location": "Maharashtra",
+        "model": "mixtral8x7b",
+        "claim_target": "Adlabs Imagica is a theme park located in Khopoli, Maharashtra, which opened on 18 April 2013. It is one of the largest amusement parks in India.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Dream Island' corresponding to target location 'Maharashtra' is 'Adlabs Imagica' under the category 'Theme Parks'. The choice of target entity is reasonable because (a) Both Dream Island and Adlabs Imagica serve as popular recreational destinations, offering visitors a variety of entertaining attractions and experiences, (b) Both are among the largest indoor theme parks in their respective regions, showcasing impressive scale and infrastructure.",
+        "claim_target_correct": "Adlabs Imagica is a theme park located in Khopoli, Maharashtra, which opened on 18 April 2013. It is one of the largest amusement parks in India.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "How many amongst the largest amusement parks in India is Adlabs Imagica located in Khopoli, Maharashtra?",
+            "What is the name of the theme park situated in Khopoli, Maharashtra?",
+            "What type of attraction is Adlabs Imagica in Khopoli, Maharashtra?",
+            "When did Adlabs Imagica open to the public in Maharashtra?",
+            "Which Indian state is home to Adlabs Imagica, one of the largest amusement parks in India?"
+        ]
+    },
+    {
+        "claim_id": 45,
+        "claim_ref": "Efteling is a fantasy-themed amusement park in Kaatsheuvel, the Netherlands. The attractions reflect elements from ancient myths and legends, fairy tales, fables, and folklore. The park was opened on May 31, 1952.",
+        "location": "Hyderabad",
+        "model": "mixtral8x7b",
+        "claim_target": "Ramoji Film City is a cinematic theme park in Hyderabad, India, offering an immersive experience into the world of filmmaking. The attractions include replicas of iconic movie sets, behind-the-scenes looks at production processes, and various entertainment options inspired by popular Indian films and folklore. Ramoji Film City was established on August 29, 1996.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Efteling' corresponding to target location 'Hyderabad' is 'Ramoji Film City' under the category 'Theme parks'. The choice of target entity is reasonable because (a) Both Efteling and Ramoji Film City offer immersive experiences based on storytelling, with Efteling focusing on ancient myths, legends, fairy tales, fables, and folklore, while Ramoji Film City emphasizes cinematic themes, movie sets, and the filmmaking process, (b) Both parks cater to visitors' interests in entertainment and education, making them popular tourist destinations in their respective regions.",
+        "claim_target_correct": "Ramoji Film City is a cinematic theme park in Hyderabad, India, offering an immersive experience into the world of filmmaking. The attractions include replicas of iconic movie sets, behind-the-scenes looks at production processes, and various entertainment options inspired by popular Indian films and folklore. Ramoji Film City was established on August 29, 1996.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "What is the name of the cinematic theme park located in Hyderabad, India?",
+            "What kind of entertainment options inspired by popular Indian films and folklore does Ramoji Film City provide in Hyderabad?",
+            "When was Ramoji Film City established in Hyderabad?",
+            "Where can one find replicas of iconic movie sets and behind-the-scenes looks at production processes in Hyderabad?",
+            "Which type of attractions does Ramoji Film City offer to its visitors in Hyderabad?"
+        ]
+    },
+    {
+        "claim_id": 46,
+        "claim_ref": "Fuji-Q Highland is an amusement park in Fujiyoshida, Yamanashi, Japan, owned and operated by the namesake Fuji Kyuko Co. it was opened on 2 March 1968. The theme park is near the base of Mount Fuji.",
+        "location": "Pahalgam",
+        "model": "mixtral8x7b",
+        "claim_target": "Pahalgam Amusement Park is a popular recreational facility located in the town of Pahalgam, Jammu and Kashmir, India, established in the late 20th century. Nestled in the picturesque landscape of the Lidder Valley, it offers various entertaining attractions for visitors of all ages.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Fuji-Q Highland' corresponding to target location 'Pahalgam' is 'Pahalgam Amusement Park' under the category 'Amusement Parks'. The choice of target entity is reasonable because (a) Both entities serve as recreational facilities catering to visitors seeking entertainment and leisure activities, (b) Pahalgam Amusement Park, like Fuji-Q Highland, is situated in a scenic location near natural attractions, providing an appealing backdrop for visitors to enjoy their experiences at the park.",
+        "claim_target_correct": "Pahalgam Amusement Park is a popular recreational facility located in the town of Pahalgam, Jammu and Kashmir, India, established in the late 20th century. Nestled in the picturesque landscape of the Lidder Valley, it offers various entertaining attractions for visitors of all ages.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "In which picturesque landscape of Jammu and Kashmir is the Pahalgam Amusement Park situated?",
+            "In which town is the Pahalgam Amusement Park situated in Jammu and Kashmir?",
+            "What is the name of the recreational facility located in Pahalgam, Jammu and Kashmir, India?",
+            "What type of attractions does the Pahalgam Amusement Park offer to visitors of all ages?",
+            "When was the Pahalgam Amusement Park established in Pahalgam?"
+        ]
+    },
+    {
+        "claim_id": 47,
+        "claim_ref": "Typhoon Texas is a series of water parks in Texas. The company currently operates two locations in Austin and in Katy.",
+        "location": "Patna",
+        "model": "mixtral8x7b",
+        "claim_target": "Shankar Water Park is a popular amusement and water park located in Patna, Bihar.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Typhoon Texas' corresponding to target location 'Patna' is 'Shankar Water Park' under the category 'Recreational facilities'. The choice of target entity is reasonable because (a) Both entities represent recreational spaces where visitors can enjoy water-based activities and attractions, (b) Shankar Water Park is a well-known establishment in Patna, making it a suitable equivalent for Typhoon Texas within the local context.",
+        "claim_target_correct": "Shankar Water Park is a popular amusement and water park located in Patna, Bihar.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "In which city is Shankar Water Park situated in Bihar?",
+            "What activities can one enjoy at Shankar Water Park in Patna, Bihar?",
+            "What is the name of the amusement and water park that attracts many visitors in Patna?",
+            "What type of establishment is Shankar Water Park located in Patna, Bihar?",
+            "Which Indian state is home to Shankar Water Park in its capital city, Patna?"
+        ]
+    },
+    {
+        "claim_id": 48,
+        "claim_ref": "Gardaland Resort is a fantasy- amusement park resort located in northeastern Italy. It has more than 40 rides including water rides and shows to satisfy the needs of everyone: families with children, young adrenaline lovers and adults who love to dive into a fantasy world",
+        "location": "Mysore",
+        "model": "mixtral8x7b",
+        "claim_target": "The Wonderla Karnataka is an amusement park located on the outskirts of Bangalore, Karnataka, India. It features over 60 rides and attractions, including water rides, catering to the diverse preferences of visitors - families with children, thrill-seekers, and those who enjoy immersive experiences.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Gardaland Resort' corresponding to target location 'Mysore' is 'The Wonderla Karnataka' under the category 'Amusement Parks'. The choice of target entity is reasonable because (a) Both are amusement parks that offer a wide range of rides and attractions, appealing to various age groups and preferences, (b) The Wonderla Karnataka is located in Karnataka, making it a suitable equivalent for Mysore, as both are popular tourist destinations within the same state.",
+        "claim_target_correct": "The Wonderla Karnataka is an amusement park located on the outskirts of Bangalore, Karnataka, India. It features over 60 rides and attractions, including water rides, catering to the diverse preferences of visitors - families with children, thrill-seekers, and those who enjoy immersive experiences.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "How many rides and attractions does the Wonderla Karnataka amusement park offer to its visitors?",
+            "In which Indian state is the Wonderla Karnataka amusement park situated?",
+            "What is the name of the amusement park located on the outskirts of Bangalore, Karnataka, featuring over 60 rides and attractions?",
+            "Whereabouts in Karnataka is the Wonderla Karnataka amusement park specifically located?",
+            "Who can enjoy their visit to the Wonderla Karnataka amusement park, considering its diverse range of rides and attractions?"
+        ]
+    },
+    {
+        "claim_id": 49,
+        "claim_ref": "Wonderland is an amusement park located In Dubai, UAE. It is designed for kids of all ages. Wonderland includes both the Wonderland Theme Park and Splashland\u2014a water park spanning 22 acres. It offers more than 30 rides and attractions.",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "EsselWorld is an amusement park located in Mumbai, Maharashtra, India. Designed for visitors of all ages, it consists of two parks - EsselWorld and Water Kingdom - spanning over 64 acres. With more than 70 attractions and rides, the park offers thrilling experiences and family-friendly entertainment.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Wonderland' corresponding to target location 'India' is 'EsselWorld' under the category 'Amusement Park'. The choice of target entity is reasonable because (a) Both EsselWorld and Wonderland serve as recreational spaces for people of all ages, offering entertainment and fun through a variety of rides and attractions, (b) Both parks are significant contributors to their respective regions' tourism sectors, attracting visitors from within the country and abroad.",
+        "claim_target_correct": "EsselWorld is an amusement park located in Mumbai, Maharashtra, India. Designed for visitors of all ages, it consists of two parks - EsselWorld and Water Kingdom - spanning over 64 acres. With more than 70 attractions and rides, the park offers thrilling experiences and family-friendly entertainment.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "How many acres does the EsselWorld amusement park span in India?",
+            "How many parks does the entertainment complex consisting of EsselWorld and Water Kingdom span over in Mumbai, Maharashtra, India?",
+            "What are the age groups targeted by the EsselWorld amusement park in Mumbai, Maharashtra, India?",
+            "What is the name of the amusement park located in Mumbai, Maharashtra, India that consists of two parks - EsselWorld and Water Kingdom?",
+            "What is the total number of attractions and rides available at EsselWorld in India?",
+            "What type of experiences does EsselWorld offer to its visitors in Mumbai, Maharashtra, India?",
+            "Which Indian city is home to the EsselWorld amusement park and Water Kingdom?"
+        ]
+    }
+]

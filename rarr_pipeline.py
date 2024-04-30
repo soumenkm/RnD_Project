@@ -25,18 +25,20 @@ from utils import (
     api,
     LLM_target_sent_gen,
     LLM_verify_target_sent,
-    chatgpt_prompt,
     LLM_edit_claim
 )
 import pandas as pd
+from pathlib import Path
 
-path_name = "/root/RnD_Project/"
+number = str(1)
+output_name = "50_100"
 
-questions_output_path = path_name + "outputs/questions.json"
-evidences_output_path = path_name +  "outputs/evidences.json"
-agreements_output_path = path_name +  "outputs/agreements.json"
-edits_output_path = path_name +  "outputs/edits.json"
-results_output_path = path_name +  "outputs/results.json"
+path_name = "/root/RnD_Project/rarr_with_non_seq/"+number+"/"
+questions_output_path = "/root/RnD_Project/mixtral_outputs/"+number+"/outputs_"+output_name+"/questions.json"
+evidences_output_path = path_name +  "outputs_"+output_name+"/evidences.json"
+agreements_output_path = path_name +  "outputs_"+output_name+"/agreements.json"
+edits_output_path = path_name +  "outputs_"+output_name+"/edits.json"
+results_output_path = path_name +  "outputs_"+output_name+"/results.json"
 
 def get_questions(
     claim_id: int,
@@ -44,8 +46,7 @@ def get_questions(
     location: str,
     is_verify: bool,
     model: str = "mixtral8x7b",
-    temperature_qgen: float = 0.7
-):
+    temperature_qgen: float = 0.7):
 
     # Generate questions for the claim
     ques_gen_prompt = "QGEN_PROMPT_WITH_LOCATION_"+model
@@ -118,8 +119,7 @@ def get_evidence(
     max_sentences_per_passage: int = 4,
     sliding_distance: int = 1,
     max_passages_per_search_result: int = 1,
-    max_evidences_per_question: int = 1
-):
+    max_evidences_per_question: int = 1):
 
     # Run search on generated question for the claim
     evidences_for_questions = [
@@ -160,8 +160,7 @@ def check_agreement(
     evid_id: int,
     query: str,
     evidence: str,
-    model: str = "mixtral8x7b",
-):
+    model: str = "mixtral8x7b",):
 
     # Run the agreement gate on the current (claim, context, query, evidence) tuple
     prompt = rarr_prompts.AGREEMENT_GATE_PROMPT
@@ -193,8 +192,7 @@ def edit_claim(
     evid_id: int,
     query: str,
     evidence: str,
-    model: str = "mixtral8x7b",
-):
+    model: str = "mixtral8x7b",):
 
     # Run the editor gate
     prompt = rarr_prompts.EDITOR_PROMPT
@@ -221,8 +219,7 @@ def edit_claim(
 
 def write_questions_json(
     data: dict,
-    is_verify: bool
-):
+    is_verify: bool):
 
     num_claims = len(data)
     output_list = []
@@ -234,21 +231,24 @@ def write_questions_json(
         output_list.append(get_questions(claim_id, claim, location, is_verify)[-1])
         t2 = time.time()
         print(f"Claim: {claim_id}, Question generation module is run in {(t2-t1)/60:.2f} mint")
+        break
 
     # Dump the list into the JSON file
-    with open(questions_output_path, 'w') as json_file:
-        json.dump(output_list, json_file, indent=4)
-
+    # output_file = Path(questions_output_path)
+    # output_file.parent.mkdir(exist_ok=True, parents=True)
+    # with open(questions_output_path, 'w+') as json_file:
+    #     json.dump(output_list, json_file, indent=4)
+ 
 def write_evidences_json(
     max_passages_per_search_result_to_score: int,
-    ranking_model: str
-):
+    ranking_model: str):
     
     # Read the questions.json file
     with open(questions_output_path, 'r') as json_file:
         data = json.load(json_file)
 
     num_claims = len(data)
+    print(num_claims)
     output_list = []
     for claim_id, item in enumerate(data):
         claim = item["claim_target_correct"]
@@ -270,6 +270,8 @@ def write_evidences_json(
         print(f"Claim: {claim_id}, Evidence module is run in {(t2-t1)/60:.2f} mint")
 
     # Dump the list into the JSON file
+    output_file = Path(evidences_output_path)
+    output_file.parent.mkdir(exist_ok=True, parents=True)
     with open(evidences_output_path, 'w') as json_file:
         json.dump(output_list, json_file, indent=4)
 
@@ -297,12 +299,13 @@ def write_agreements_json():
             print(f"Claim: {claim_id}, Evidence: {evid_id}, Agreement module is run in {(t2-t1)/60:.2f} mint")
 
     # Dump the list into the JSON file
+    output_file = Path(agreements_output_path)
+    output_file.parent.mkdir(exist_ok=True, parents=True)
     with open(agreements_output_path, 'w') as json_file:
         json.dump(output_list, json_file, indent=4)
 
 def write_edits_json(
-    is_sequential_edit: bool
-):
+    is_sequential_edit: bool):
 
     # Read the questions.json file
     with open(questions_output_path, 'r') as json_file:
@@ -333,42 +336,53 @@ def write_edits_json(
         results_list = []
 
         for claim_id, ag_item in enumerate(agreement_data):
-            original_claim = evid_data[claim_id]["claim_target"]
+            flag = 1
+            claim = ""
+            original_claim = ""
+            if type(ag_item) == str:
+                flag = 0
+            elif type(evid_data) == str:
+                flag = 0
+            elif type(evid_data[claim_id]) == str:
+                flag = 0
+            
             edit_rev_list = []
-            claim = original_claim
+            if(flag == 1):
+                original_claim = evid_data[claim_id]["claim_target"]
+                claim = original_claim
+                for evid_id, evid_item in enumerate(ag_item):
+                    location = evid_item["location"]
+                    evid = evid_item["evidence"]
+                    query = evid_item["query"]
+                    gate = evid_item["gate"]
+                    print(f"Claim: {claim_id}, Evidence: {evid_id}, Agreement is taken from file")
 
-            for evid_id, evid_item in enumerate(ag_item):
-                location = evid_item["location"]
-                evid = evid_item["evidence"]
-                query = evid_item["query"]
-                gate = evid_item["gate"]
-                print(f"Claim: {claim_id}, Evidence: {evid_id}, Agreement is taken from file")
+                    # Run the editor gate if the agreement gate is open
+                    claim_input = claim
+                    if gate["is_open"]:
+                        t1 = time.time()
+                        edited_claim, output = edit_claim(claim_id, claim, location, evid_id, query, evid)
+                        t2 = time.time()
 
-                # Run the editor gate if the agreement gate is open
-                claim_input = claim
-                if gate["is_open"]:
-                    t1 = time.time()
-                    edited_claim, output = edit_claim(claim_id, claim, location, evid_id, query, evid)
-                    t2 = time.time()
+                        # Don't keep the edit if the editor makes a huge change
+                        max_edit_ratio = 50
+                        if(len(claim) > 0):
+                            if Levenshtein.distance(claim, edited_claim) / len(claim) <= max_edit_ratio:
+                                claim = edited_claim
+                    
+                        print(f"Claim: {claim_id}, Evidence: {evid_id}, Editor module is run in {(t2-t1)/60:.2f} mint")
+                    else:
+                        output = None
+                        print(f"Claim: {claim_id}, Evidence: {evid_id}, Editor module is skipped")
 
-                    # Don't keep the edit if the editor makes a huge change
-                    max_edit_ratio = 50
-                    if Levenshtein.distance(claim, edited_claim) / len(claim) <= max_edit_ratio:
-                        claim = edited_claim
-                
-                    print(f"Claim: {claim_id}, Evidence: {evid_id}, Editor module is run in {(t2-t1)/60:.2f} mint")
-                else:
-                    output = None
-                    print(f"Claim: {claim_id}, Evidence: {evid_id}, Editor module is skipped")
-
-                edit_rev_list.append({
-                    "claim": claim_input,
-                    "query": query,
-                    "evidence": evid,
-                    "is_open": gate["is_open"],
-                    "decision": gate["decision"],
-                    "edited_claim": claim
-                })
+                    edit_rev_list.append({
+                        "claim": claim_input,
+                        "query": query,
+                        "evidence": evid,
+                        "is_open": gate["is_open"],
+                        "decision": gate["decision"],
+                        "edited_claim": claim
+                    })
             
             results = {
                 "claim_id": ques_data[claim_id]["claim_id"],
@@ -387,8 +401,12 @@ def write_edits_json(
             results_list.append(results)
 
         # Dump the list into the JSON file
+        output_file = Path(edits_output_path)
+        output_file.parent.mkdir(exist_ok=True, parents=True)
         with open(edits_output_path, 'w') as json_file:
             json.dump(output_list, json_file, indent=4)
+        output_file = Path(results_output_path)
+        output_file.parent.mkdir(exist_ok=True, parents=True)
         with open(results_output_path, 'w') as json_file:
             json.dump(results_list, json_file, indent=4)
     
@@ -440,8 +458,9 @@ def write_edits_json(
                 )
                 # Don't keep the edit if the editor makes a huge change
                 max_edit_ratio = 100
-                if not Levenshtein.distance(claim, attributed_target_sent) / len(claim) <= max_edit_ratio:
-                    attributed_target_sent = claim
+                if(len(claim)> 0):
+                    if not Levenshtein.distance(claim, attributed_target_sent) / len(claim) <= max_edit_ratio:
+                        attributed_target_sent = claim
                     
             else:
                 attributed_target_sent = claim
@@ -477,7 +496,7 @@ def write_edits_json(
                         
 if __name__ == "__main__":
 
-    eval_data_df = pd.read_csv("/root/RnD_Project/inputs/Amazon RnD_ Evaluation Dataset - Updated 200 samples with Qs _V3.csv")
+    eval_data_df = pd.read_csv("/root/RnD_Project/inputs/revised_final_dataset_200.csv")
     data = []
     for i in range(eval_data_df.shape[0]):
         elem_dict = {"input_info": 
@@ -485,7 +504,13 @@ if __name__ == "__main__":
         "location": eval_data_df.loc[i, "Target Location"]}}
         data.append(elem_dict)
     
-    # write_questions_json(data[0:50], is_verify=True)
+    write_questions_json(data[50:100], is_verify=False)
+    write_evidences_json(max_passages_per_search_result_to_score=30,
+                        ranking_model="cross_encoder")
+    write_agreements_json()
+    write_edits_json(is_sequential_edit=False)
+    
+    # write_questions_json(data[0:30], is_verify=True)
     # write_evidences_json(max_passages_per_search_result_to_score=-1,
     #                     ranking_model="cohere") # 30, "cross_encoder"
     # write_agreements_json()

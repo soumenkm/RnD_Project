@@ -221,6 +221,44 @@ Target sentence: {target_claim}
 The questions in the context of target sentence and target location are as follows:
 """.strip()
 
+TARGET_SENT_GEN_PROMPT_WITH_LOCATION_ZERO_SHOT_mixtral8x7b = """You are a localization assistant. Convert the reference entity sentence from English to the Indian domain by replacing the source entity with the target entity. Make the needed modifications in the sentence to make it factually correct for the target entity. Output answers in English using multi-entity localization in the following format. Target sentence: <localized target sent> \n Reason: <reason for the localization>.
+My reference sentence: {claim}
+Target location: {location}
+Target sentence: 
+Reason:
+""".strip()
+
+TARGET_SENT_REGEN_PROMPT_WITH_LOCATION_ZERO_SHOT_mixtral8x7b = """The sentence wrongly answered the given question for the target location, so edit the sentence such that it correctly answers the question and still have the full content in the input sentence. Only make necessary edits. Output answers in the following format. Target sentence: <revised sent> \n Reason: <reason for the revision>.
+Sentence: {target_sent}
+Target location: {location}
+Question: {question}
+Target sentence: 
+Reason:
+""".strip()
+
+TARGET_SENT_CHECK_PROMPT_WITH_LOCATION_mixtral8x7b = """Given a target sentence, target location and a question, check if the entity in the target sentence correctly answers the question for the given target location. Note that there could be multiple correct answers to the question in the context of the target location. If you think that the target sentence contains the answer for this question in the context of target location then assign a score of 1 and else assign the score of 0. For example:
+
+Target sentence: A train derailment occurred on February 3, 2023, at 8:55 p.m. IST, when 38 cars of a Vizianagaram freight train carrying hazardous materials derailed in Andhra Pradesh, India.
+Target location: Andhra Pradesh
+Question: Name an accident which occured due to train derailment?
+Score: 1
+
+Target sentence: The Indian Institute of Science is a prestigious research university specially in the field of science located in Bangalore, India. Established in 1909, the Indian Institute of Science was the second Indian university based on the European research institution model.
+Target location: India
+Question: Can you give an example of a engineering research focused university
+Score: 0
+
+Target sentence: Amitabh Bachchan is an Indian actor and producer. He is widely regarded as one of India's leading actors, having appeared in a wide range of films in the protagonist role.
+Target location: India
+Question: Can you name an actor who is widely regarded as one of the country's leading actors?
+Score: 1
+
+Target sentence: {target_claim}
+Target location: {target_location}
+Question: {question}
+For the above target sentence, target location and common questions, the score would be:
+""".strip()
+
 QGEN_PROMPT_WITH_ENTITY_mixtral8x7b = """To check the factual correctness of a given sentence, generate sufficient number of questions based on the target entity. Do not generate irrelevant questions.
 For example,
 Sentence: The India Gate is a war memorial made of sandstone located in the heart of New Delhi, India. It is named after the engineer Sir Edwin Lutyens, who designed and built the monument in 1931 to honor the Indian soldiers who died during World War I and the Third Anglo-Afghan War.

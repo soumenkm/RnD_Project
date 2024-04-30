@@ -1,0 +1,876 @@
+[
+    {
+        "ref_claim": "On July 10, 2006, concrete ceiling panels and debris fell on a car traveling on the two-lane ramp connecting northbound I-93 to eastbound I-90 in South Boston, killing the passenger and injuring her husband, who was driving.",
+        "target_location": "Uttarakhand",
+        "common_ques": {
+            "ques_0": "Can you give an instance when infrastructure failure led to people getting injured?",
+            "ques_1": "Can you name an accident which occured due to infrastructure failure?"
+        },
+        "target_claim_mixtral": "On April 27, 2018, a portion of the NH-74 highway near Kumaon region in Uttarakhand collapsed due to a landslide, causing a vehicle to fall into a gorge, resulting in the death of a passenger and injuries to several others.",
+        "target_claim_rarr": "On April 27, 2018, a passenger vehicle fell into a 300-feet deep gorge at Battery Cheshma in Ramban district due to heavy rains. Ten people died and eleven were injured. The victims are migrant workers who were on their way to Srinagar. Amid heavy rains, rescue operations were launched by state disaster management workers and police to retrieve the bodies and injured.",
+        "mixtral": {
+            "ques_0": 1,
+            "ques_1": 1
+        },
+        "rarr": {
+            "ques_0": 0,
+            "ques_1": 0
+        }
+    },
+    {
+        "ref_claim": "A train derailment occurred on February 3, 2023, at 8:55 p.m. EST, when 38 cars of a Norfolk Southern freight train carrying hazardous materials derailed in East Palestine, Ohio, United States.",
+        "target_location": "Andhra Pradesh",
+        "common_ques": {
+            "ques_0": "Name an accident which occured due to train derailment?"
+        },
+        "target_claim_mixtral": "A train accident took place on February 4, 2023, at 7:25 IST when 26 coaches of a Visakhapatnam-Secunderabad passenger train derailed in Kothavalasa, Andhra Pradesh, India.",
+        "target_claim_rarr": "A train accident took place on October 30, 2023, at around 19:44 IST when 26 coaches of a Visakhapatnam-Secunderabad passenger train derailed in Kothavalasa, Andhra Pradesh, India.",
+        "mixtral": {
+            "ques_0": 1
+        },
+        "rarr": {
+            "ques_0": 1
+        }
+    },
+    {
+        "ref_claim": "The Higashi-Ikebukuro runaway car crash was a traffic crash that occurred on April 19, 2019, in Higashi Ikebukuro, Toshima, Tokyo, resulting in 2 deaths and 9 injuries.",
+        "target_location": "Mumbai",
+        "common_ques": {
+            "ques_0": "Can you mention a traffic accident?",
+            "ques_1": "Can you mention a car accident that resulted in fatalities?"
+        },
+        "target_claim_mixtral": "The Andheri-Kurla Road pedestrian bridge collapse was an infrastructure accident that occurred on March 14, 2018, in Andheri East, Mumbai, resulting in 6 fatalities and 34 injuries.",
+        "target_claim_rarr": "The Gokhale bridge at Andheri station in Mumbai collapsed following hours of unabated rain on September 4, 2012. One person was killed and five were injured as a result of the incident. Six Western Railway officials and the BMC are responsible for the collapse, according to a probe by the Commissioner of Railway Safety.",
+        "mixtral": {
+            "ques_0": 1,
+            "ques_1": 0
+        },
+        "rarr": {
+            "ques_0": 0,
+            "ques_1": 0
+        }
+    },
+    {
+        "ref_claim": "The Karamay fire of 8 December 1994 at the Friendship Theatre in Karamay, Xinjiang, China, was among the most notorious fires in China.",
+        "target_location": "Sirsa",
+        "common_ques": {
+            "ques_0": "Can you provide an example of a notable fire accident that occurred in history?"
+        },
+        "target_claim_mixtral": "The Uphaar cinema fire of 13 June 1997 in Delhi, India, is considered one of the deadliest tragedies in Indian history.",
+        "target_claim_rarr": "The Mundka metro station fire tragedy on May 13, 1997 in Delhi, India is considered one of the deadliest tragedies in Indian history.",
+        "mixtral": {
+            "ques_0": 0
+        },
+        "rarr": {
+            "ques_0": 0
+        }
+    },
+    {
+        "ref_claim": "The Seveso disaster was an industrial accident that occurred around 12:37 pm on 10 July 1976, in a small chemical manufacturing plant approximately 20 kilometres north of Milan in the Lombardy region of Italy.",
+        "target_location": "Bhopal",
+        "common_ques": {
+            "ques_0": "Can you give an example of an industrial accident?"
+        },
+        "target_claim_mixtral": "The Bhopal disaster was a catastrophic industrial accident that took place at the Union Carbide India Limited pesticide plant on the night of December 2-3, 1984, in the city of Bhopal, Madhya Pradesh, India.",
+        "target_claim_rarr": "The Bhopal disaster was a catastrophic industrial accident that took place at the Union Carbide India Limited pesticide plant on the night of December 2-3, 1984, in the city of Bhopal, Madhya Pradesh, India.",
+        "mixtral": {
+            "ques_0": 1
+        },
+        "rarr": {
+            "ques_0": 1
+        }
+    },
+    {
+        "ref_claim": "The Grafton bus crash killed 21 people and injured 22 on the Pacific Highway near Grafton, Australia on 20 October 1989 when a semi-trailer truck collided with a Sunliner Express coach operating an express service from Sydney to Brisbane.",
+        "target_location": "Barabanki",
+        "common_ques": {
+            "ques_0": "What was the unfortunate bus accident?",
+            "ques_1": "Name an accident caused by a bus and truck collision which caused multiple fatalities?"
+        },
+        "target_claim_mixtral": "The Kanpur train derailment resulted in 150 fatalities and over 200 injuries on the Muzaffarnagar-Howrah route near Kanpur, India, on 20 November 2016, when an express train derailed due to a fractured railway track.",
+        "target_claim_rarr": "The Kanpur train derailment resulted in over 140 fatalities and over 200 injuries when an express train traveling between Sealdah and Ajmer derailed at approximately 5:20 AM near Rura -Metha, 50 km from Kanpur on November 20th, 2016. The cause of the incident remains unknown.",
+        "mixtral": {
+            "ques_0": 0,
+            "ques_1": 0
+        },
+        "rarr": {
+            "ques_0": 0,
+            "ques_1": 0
+        }
+    },
+    {
+        "ref_claim": "SS Norge was a transatlantic ocean liner that was launched in 1881 in Scotland, and lost in 1904 off Rockall with a great loss of life.",
+        "target_location": "Mumbai",
+        "common_ques": {
+            "ques_0": "Can you give an instance of an accident occurred in sea?",
+            "ques_1": "Name an accident which caused great loss of life."
+        },
+        "target_claim_mixtral": "SS Khukri was a British built frigate that served in the Indian Navy, launched in 1958 and tragically sunk in 1971 during the Indo-Pakistani War with the loss of lives.",
+        "target_claim_rarr": "SS Khukri was a British built frigate that served in the Indian Navy, launched in 1958 and tragically sunk in 1971 during the Indo-Pakistani War with the loss of lives.",
+        "mixtral": {
+            "ques_0": 1,
+            "ques_1": 1
+        },
+        "rarr": {
+            "ques_0": 0,
+            "ques_1": 1
+        }
+    },
+    {
+        "ref_claim": "Air France Flight 406 was a Lockheed L-1649 Starliner that crashed in French Algeria on May 10, 1961, after a bomb exploded on board. All 78 passengers and crew on board were killed. It was the deadliest aviation disaster involving a Lockheed Starliner.",
+        "target_location": "India",
+        "common_ques": {
+            "ques_0": "Can you name a Lockheed aircraft that was involved in a disaster?",
+            "ques_1": "Can you mention a plane crash where all the people on board died?"
+        },
+        "target_claim_mixtral": "Air India Flight 855 was a Boeing 707 that crashed into the Arabian Sea near Mumbai, India on January 3, 1966, after experiencing navigational issues. All 122 passengers and crew on board were killed. It remains the deadliest aviation disaster in Indian civil aviation history.",
+        "target_claim_rarr": "Air India Flight 855 was an aircraft that crashed into the Arabian Sea near Mumbai, India on January 3, 1966, after experiencing navigational issues. All 213 passengers and crew on board were killed. It remains the deadliest aviation disaster in Indian civil aviation history.",
+        "mixtral": {
+            "ques_0": 0,
+            "ques_1": 1
+        },
+        "rarr": {
+            "ques_0": 0,
+            "ques_1": 1
+        }
+    },
+    {
+        "ref_claim": "Aeroflot Flight 141 was an international flight from Moscow to Prague. On 19 February 1973, the Tupolev Tu-154 crashed 1.5 kilometres short of runway 25 of Prague Ruzyn\u011b Airport.",
+        "target_location": "India",
+        "common_ques": {
+            "ques_0": "Can you provide an example of a flight that crashed short of its destination runway?",
+            "ques_1": "Name an accident which occured long time ago."
+        },
+        "target_claim_mixtral": "Air India Flight 855 was a domestic flight from Bombay to New Delhi. On 1 January 1966, the Boeing 707 crashed into the Arabian Sea near Goa.",
+        "target_claim_rarr": "Air India Flight 855 was a domestic flight from Bombay (now Mumbai) to Dubai. On 1 January 1978, the Boeing 747 operating the flight crashed about 3 km (1.9 mi; 1.6 nmi) off the coast of Bandra, less than two minutes after take-off. All 213 passengers and crew on board died. An investigation into the crash determined the most likely probable cause was the captain becoming spatially disoriented and losing control of the aircraft after the failure of one of the flight instruments .",
+        "mixtral": {
+            "ques_0": 1,
+            "ques_1": 1
+        },
+        "rarr": {
+            "ques_0": 1,
+            "ques_1": 1
+        }
+    },
+    {
+        "ref_claim": "Mih\u0103ilesti is a commune in Buz\u0103u County, Muntenia, Romania. It is composed of four villages: Col\u00c8\u203a\u00c4\u0192neni, M\u00c4\u0192rgineanu, Mih\u0103ilesti and Satu Nou . The Mih\u0103ilesti explosion took place there in 2004.",
+        "target_location": "Kerala",
+        "common_ques": {
+            "ques_0": "Can you provide with an example of a place where a major explosion took place?",
+            "ques_1": "Can you name an accident caused due to explosion?"
+        },
+        "target_claim_mixtral": "Thiruvananthapuram is the capital city of Kerala, India, and serves as the administrative center of the state. It is composed of several districts, including Thiruvananthapuram, Kollam, Alappuzha, and Ernakulam. The devastating floods that occurred in 2018 significantly affected the region.",
+        "target_claim_rarr": "Thiruvananthapuram, the capital city of Kerala, India, was significantly affected by the devastating floods that occurred in 2018. The districts including Kollam, Alappuzha, and Ernakulam were also affected. It was the worst flood in Kerala in nearly a century with over 483 people died and about a million people were evacuated.",
+        "mixtral": {
+            "ques_0": 0,
+            "ques_1": 0
+        },
+        "rarr": {
+            "ques_0": 0,
+            "ques_1": 0
+        }
+    },
+    {
+        "ref_claim": "Angelina Jolie is an American actress, filmmaker and humanitarian. The recipient of numerous accolades, including an Academy Award and three Golden Globe Awards, she has been named Hollywood's highest-paid actress multiple times.",
+        "target_location": "Kerala",
+        "common_ques": {
+            "ques_0": "Can you name an actress who has received many Awards?",
+            "ques_1": "Tell me about an individual who has been recognized as a high-earning actress."
+        },
+        "target_claim_mixtral": "Priyadarshan is a Indian filmmaker who works in various language cinemas including Malayalam, Hindi, and Tamil. He has won several accolades, including five National Film Awards and numerous state film awards, for his contributions to the Indian film industry.",
+        "target_claim_rarr": "Priyadarshan is a Indian filmmaker who works in various language cinemas including Malayalam, Hindi, and Tamil. He has won several accolades, including four National Film Awards and numerous state film awards, for his contributions to the Indian film industry.",
+        "mixtral": {
+            "ques_0": 0,
+            "ques_1": 0
+        },
+        "rarr": {
+            "ques_0": 0,
+            "ques_1": 0
+        }
+    },
+    {
+        "ref_claim": "Dwayne Douglas Johnson, also known by his ring name the Rock, is an American actor and professional wrestler currently signed to WWE.",
+        "target_location": "Kerala",
+        "common_ques": {
+            "ques_0": "Can you give an example of an actor who professionally holds another title as well?",
+            "ques_1": "Can you provide the name of an actor who is well-known in the entertainment industry by another name?"
+        },
+        "target_claim_mixtral": "Suresh Gopi is an Indian actor and politician who has worked predominantly in the Malayalam film industry based in Kerala, India.",
+        "target_claim_rarr": "There are many Indian actors and politicians that have worked predominantly in the Malayalam film industry based in Kerala, India. Suresh Gopi is one of them.",
+        "mixtral": {
+            "ques_0": 1,
+            "ques_1": 0
+        },
+        "rarr": {
+            "ques_0": 1,
+            "ques_1": 0
+        }
+    },
+    {
+        "ref_claim": "Robert John Downey Jr. is an American actor. His career has been characterized by critical success in his youth, followed by a period of substance abuse and legal troubles, and a surge in popular and commercial success later in his career.",
+        "target_location": "West Bengal",
+        "common_ques": {
+            "ques_0": "Can you name an actor whose career has been characterized by critical success?",
+            "ques_1": "Can you name an actor who has achieved commercial success in their career?"
+        },
+        "target_claim_mixtral": "Prosenjit Chatterjee is a renowned Indian actor from West Bengal, who has had a successful career with ups and downs. He gained critical acclaim and popularity during his early years in the film industry. However, he also faced struggles with personal issues including legal battles, which affected his career for a brief period. Nonetheless, Prosenjit made a strong comeback and remains a prominent figure in the Bengali film industry.",
+        "target_claim_rarr": "Prosenjit Chatterjee is a renowned Indian actor from West Bengal, who has had a successful career with ups and downs. He gained critical acclaim and popularity during his early years in the film industry. However, he also faced struggles with personal issues including legal battles, which affected his career briefly but Prosenjit Chatterjee made a strong comeback and remains a prominent figure in Bengali cinema industry.",
+        "mixtral": {
+            "ques_0": 1,
+            "ques_1": 0
+        },
+        "rarr": {
+            "ques_0": 1,
+            "ques_1": 0
+        }
+    },
+    {
+        "ref_claim": "Lupita Amondi Nyong'o is a Mexican-Kenyan actress. She is the recipient of several accolades, including an Academy Award and a Daytime Emmy Award with nominations for a Tony Award and a Golden Globe Award.",
+        "target_location": "India",
+        "common_ques": {
+            "ques_0": "Can you name an actress who is the recipient of several accolades?"
+        },
+        "target_claim_mixtral": "Priyanka Chopra Jonas is an Indian actress who has achieved success in both Bollywood and Hollywood. She is the recipient of several accolades, including a National Film Award, five Filmfare Awards, and a People's Choice Award.",
+        "target_claim_rarr": "Priyanka Chopra Jonas is an Indian actress who has achieved success in both Bollywood and Hollywood. She is the recipient of several accolades, including a National Film Award, five Filmfare Awards, and a People\u2019s Choice Award.",
+        "mixtral": {
+            "ques_0": 1
+        },
+        "rarr": {
+            "ques_0": 1
+        }
+    },
+    {
+        "ref_claim": "Hidetoshi Nishijima is a Japanese actor model. He is widely regarded as one of Japan's leading actors, having appeared in a wide range of films from science fiction films such as Shin Ultraman to small-scale art films such as Dolls.",
+        "target_location": "India",
+        "common_ques": {
+            "ques_0": "Can you name an actor who is widely regarded as one of the country's leading actors?",
+            "ques_1": "Name an actor who has appeared in a wide range of films."
+        },
+        "target_claim_mixtral": "Irrfan Khan was an Indian actor, known for his work in both mainstream and independent cinema. He is widely regarded as one of India's most versatile actors, having appeared in a wide range of films from commercially successful projects like \"Slumdog Millionaire\" and \"The Lunchbox\" to critically acclaimed art-house films such as \"Maqbool\" and \"Paan Singh Tomar.\"",
+        "target_claim_rarr": "Anil Kapoor was an Indian actor, known for his work in both mainstream and independent cinema. He is widely regarded as one of India's most versatile actors, having appeared in a wide range of films from commercially successful projects like \"Slumdog Millionaire\" and \"The Lunchbox\" to critically acclaimed art-house films such as \"Maqbool\" and \"Paan Singh Tomar.\" He established his reputation not just in India but also in TV and Hollywood.",
+        "mixtral": {
+            "ques_0": 1,
+            "ques_1": 1
+        },
+        "rarr": {
+            "ques_0": 1,
+            "ques_1": 1
+        }
+    },
+    {
+        "ref_claim": "Rodrigo Junqueira Reis Santoro is a Brazilian actor. He is perhaps best known for his portrayal of Persian King Xerxes in the film 300 and its sequel 300: Rise of an Empire.",
+        "target_location": "Karnataka",
+        "common_ques": {
+            "ques_0": "Can you name an actor who is best known for the roles portrayed by him?"
+        },
+        "target_claim_mixtral": "Prakash Raj is an Indian actor, known for his work in multiple languages including Kannada, Telugu, Tamil, and Hindi. He is best known for his role as villainous businessman Ramappa in the film Kantha and as the compassionate father Sivarama in the movie Ananthu Vishwanatha.",
+        "target_claim_rarr": "Prakash Raj is an Indian actor, known for his work in multiple languages including Kannada, Telugu, Tamil, and Hindi. He has acted in numerous successful films across different languages, including \u201cIruvar\u201d (1997), \u201cGhilli\u201d (2004), \u201cKanchivaram\u201d (2008), \u201cSingham\u201d (2011), and \u201cBommarillu\u201d (2006).",
+        "mixtral": {
+            "ques_0": 1
+        },
+        "rarr": {
+            "ques_0": 1
+        }
+    },
+    {
+        "ref_claim": "Mohd Syamsul Mohd Yusof is a Malaysian actor, film director, writer, producer and singer. He is the son of producer and director Yusof Haslam.",
+        "target_location": "Tamil Nadu",
+        "common_ques": {
+            "ques_0": "Give me a name of an actor who is also a film director?",
+            "ques_1": "Give me a name of an actor who is also a producer?"
+        },
+        "target_claim_mixtral": "Vijay is an Indian actor and playback singer who works predominantly in Tamil cinema. He is the son of film producer and director S.A. Chandrasekhar.",
+        "target_claim_rarr": "Vijay is an Indian actor and playback singer who works predominantly in Tamil cinema. He is the son of film producer and director A. L. Azhagappan.",
+        "mixtral": {
+            "ques_0": 1,
+            "ques_1": 1
+        },
+        "rarr": {
+            "ques_0": 1,
+            "ques_1": 1
+        }
+    },
+    {
+        "ref_claim": "Park Shin-hye is a South Korean actress and singer. She gained recognition as a child actress on TV shows such as Stairway to Heaven and Tree of Heaven.",
+        "target_location": "West Bengal",
+        "common_ques": {
+            "ques_0": "Can you provide example of an actress who has gained recognition from their work?"
+        },
+        "target_claim_mixtral": "Rituparna Sengupta is a renowned Indian actress from West Bengal, known for her work in both Bengali-language films and national cinema. She gained recognition as a child artist in the film \"Shwet Patharer Thala\" and has since become one of the leading figures in the region's film industry.",
+        "target_claim_rarr": "Rituparna Sengupta is a renowned Indian actress from West Bengal, known for her work in both Bengali-language films and national cinema. She gained recognition as an adult artist in the film \"Kotia Manish Gotiye Jaga\" and has since become one of the leading figures in the region's film industry.",
+        "mixtral": {
+            "ques_0": 1
+        },
+        "rarr": {
+            "ques_0": 1
+        }
+    },
+    {
+        "ref_claim": "Willard Carroll Smith II is an American actor, rapper and film producer. He has received multiple accolades, including an Academy Award, a Golden Globe Award, a Screen Actors Guild Award, a BAFTA Award, and four Grammy Awards.",
+        "target_location": "Mumbai",
+        "common_ques": {
+            "ques_0": "Can you name an actor who has won many accolades?",
+            "ques_1": "Can you name an actor who has worked in other fields in the film industry as well?"
+        },
+        "target_claim_mixtral": "Aamir Khan is an Indian actor, filmmaker, and television personality who has received numerous accolades, including four National Film Awards, eight Filmfare Awards, and a Padma Shri Award.",
+        "target_claim_rarr": "Shah Rukh Khan is an Indian actor, filmmaker, and television personality based in Mumbai, Maharashtra, India who has received numerous accolades, including nine National Film Awards, eight Filmfare Awards, and an AACTA Award. He primarily works in Mumbai, Maharashtra, India where he has earned four National Film Awards, eight Filmfare Awards, and a Padma Shri Award.",
+        "mixtral": {
+            "ques_0": 1,
+            "ques_1": 1
+        },
+        "rarr": {
+            "ques_0": 1,
+            "ques_1": 0
+        }
+    },
+    {
+        "ref_claim": "Ludivine Sagnier is a French actress. She was nominated three times for the C\u00e9sar Award for Best Supporting Actress for Swimming Pool, Peter Pan, and A Secret.",
+        "target_location": "Kolkata",
+        "common_ques": {
+            "ques_0": "Can you provide with an example of an actress nominated for a prestigious award?"
+        },
+        "target_claim_mixtral": "Konkona Sen Sharma is an Indian actress who works in both Bengali and Hindi cinema. She has been nominated for the National Film Award for Best Actress twice, for her roles in Mr. and Mrs. Iyer and Omkara, and won the award for her performance in Omkara.",
+        "target_claim_rarr": "Konkona Sen Sharma is an Indian actress who works in both Bengali and Hindi cinema. She has been nominated for the National Film Award for Best Actress, for her roles in Page 3 and Omkara, and won the award for her performance in Omkara.",
+        "mixtral": {
+            "ques_0": 0
+        },
+        "rarr": {
+            "ques_0": 0
+        }
+    },
+    {
+        "ref_claim": "Morgan Freeman is an American actor, producer, and narrator known for his distinctive, deep voice. Throughout a career spanning five decades and multiple film genres, he has received numerous accolades, including an Academy Award, a Golden Globe Award, and a Screen Actors Guild Award as well as a nomination for a Tony Award.",
+        "target_location": "Thanjavur",
+        "common_ques": {
+            "ques_0": "Name an actor who has worked for more than two decades.",
+            "ques_1": "What is an example of an actor who has worked in multiple film genres?",
+            "ques_2": "Mention an actor who has received numerous accolades."
+        },
+        "target_claim_mixtral": "Kamal Haasan is an Indian actor, director, producer, and screenwriter known for his versatile performances in various film genres throughout a career spanning over five decades. He has received numerous accolades, including four National Film Awards, three Kerala State Film Awards, and seventeen Filmfare Awards.",
+        "target_claim_rarr": "Kamal Haasan is an Indian actor, director, producer, and screenwriter known for his versatile performances in various film genres throughout a career spanning over five decades. He has received numerous accolades, including four National Film Awards, three Kerala State Film Awards, and nineteen Filmfare Awards. He primarily works in the Tamil cinema and Bollywood. The Government of Tamil Nadu honoured him with the Kalaimamani in 1980 for his contribution to the Tamil film industry. In 2010 Haasan was honoured by the Government of Kerala upon his completion of 50 years in Indian cinema. In 2000 March 7, Kamal Haasan was honoured by the Government of West Bengal upon his film Hey Ram screened at Netaji Indoor Stadium, West Bengal.",
+        "mixtral": {
+            "ques_0": 1,
+            "ques_1": 1,
+            "ques_2": 0
+        },
+        "rarr": {
+            "ques_0": 1,
+            "ques_1": 1,
+            "ques_2": 1
+        }
+    },
+    {
+        "ref_claim": "American Airlines is a major US-based airline headquartered in Fort Worth, Texas, within the Dallas/Fort Worth metroplex. It is the largest airline in the world when measured by scheduled passengers carried, revenue passenger mile, and fleet size.",
+        "target_location": "India",
+        "common_ques": {
+            "ques_0": "Can you give an example of a major airline?",
+            "ques_1": "Can you provide an example of a large airline in the country when measured by scheduled passengers carried?"
+        },
+        "target_claim_mixtral": "IndiGo is a major Indian low-cost airline headquartered in Gurgaon, Haryana. It is the largest airline in India when measured by fleet size and market share, offering both domestic and international services.",
+        "target_claim_rarr": "IndiGo is a major Indian low-cost airline headquartered in Gurgaon, Haryana. It is the largest airline in India when measured by fleet size and market share, offering both domestic and international services.",
+        "mixtral": {
+            "ques_0": 1,
+            "ques_1": 1
+        },
+        "rarr": {
+            "ques_0": 1,
+            "ques_1": 1
+        }
+    },
+    {
+        "ref_claim": "Qatar Airways Company Q.C.S.C., operating as Qatar Airways, is the flag carrier of Qatar. Headquartered in the Qatar Airways Tower in Doha, the airline operates a hub-and-spoke network, flying to over 150 international destinations across Africa, Asia, Europe, the Americas, and Oceania from its base at Hamad International Airport, using a fleet of more than 200 aircraft.",
+        "target_location": "India",
+        "common_ques": {
+            "ques_0": "What is the name of a flag carrier airline?",
+            "ques_1": "Can you mention an airline that operates a hub-and-spoke network?",
+            "ques_2": "Name an airline which flies to international destinations."
+        },
+        "target_claim_mixtral": "Air India Limited, operating as Air India, is the flag carrier of India. Headquartered in New Delhi, the airline operates a hub-and-spoke network, flying to over 100 domestic and international destinations across Asia, Europe, North America, and the Middle East from its base at Indira Gandhi International Airport, using a fleet of more than 120 aircraft.",
+        "target_claim_rarr": "Air India, operating as Air India, is the flag carrier of India. Headquartered in New Delhi, the airline operates a hub-and-spoke network, flying to over 100 domestic and international destinations across Asia, Europe, North America, and the Middle East from its base at Indira Gandhi International Airport, using a fleet of more than 120 aircraft. The airline has its hub at Indira Gandhi International Airport, New Delhi, alongside several focus cities across India. It is owned by Air India Limited of Talace Private Limited, an SPV of Tata Sons and operates a fleet of Airbus and Boeing aircraft serving 102 domestic and international destinations. History Early years (1932\u20131945) As Tata Airlines Air India had its origin as Tata Air Services later renamed to Tata Airlines founded by J.R.D. Tata of Tata Sons, an Indian aviator and business tycoon.",
+        "mixtral": {
+            "ques_0": 1,
+            "ques_1": 1,
+            "ques_2": 1
+        },
+        "rarr": {
+            "ques_0": 1,
+            "ques_1": 1,
+            "ques_2": 1
+        }
+    },
+    {
+        "ref_claim": "Arik Air is a Nigerian airline operating mainly from two hubs at Murtala Muhammed International Airport in Lagos and Nnamdi Azikiwe International Airport in Abuja. Arik Air's head office is the Arik Air Aviation Center on the grounds of Murtala Muhammed International Airport in Ikeja. It serves a network of regional and mid-haul destinations within Africa.",
+        "target_location": "India",
+        "common_ques": {
+            "ques_0": "Can you name an airline which provides regional connectivity?"
+        },
+        "target_claim_mixtral": "IndiGo is an Indian airline headquartered in Gurgaon, Haryana, with its main hub at Delhi's Indira Gandhi International Airport. It operates a vast domestic network within India and also serves several international destinations in the Asia-Pacific region.",
+        "target_claim_rarr": "IndiGo is an Indian airline headquartered in Gurgaon, Haryana, with its main hub at Delhi's Indira Gandhi International Airport. It operates a vast domestic network within India and also serves several international destinations in the Asia-Pacific region.",
+        "mixtral": {
+            "ques_0": 1
+        },
+        "rarr": {
+            "ques_0": 1
+        }
+    },
+    {
+        "ref_claim": "Spirit Airlines, Inc. is a major United States ultra-low cost airline headquartered in Miramar, Florida, in the Miami metropolitan area. Spirit operates scheduled flights throughout the United States, the Caribbean and Latin America.",
+        "target_location": "India",
+        "common_ques": {
+            "ques_0": "What is the name of a major low cost airline?",
+            "ques_1": "Tell me the name of an airline that schedule flights throughout the country."
+        },
+        "target_claim_mixtral": "IndiGo is a major Indian low-cost airline headquartered in Gurgaon, Haryana. It operates scheduled flights throughout India and to various international destinations in Asia and the Middle East.",
+        "target_claim_rarr": "IndiGo is a major Indian low-cost airline headquartered in Gurgaon, Haryana. It operates scheduled flights throughout India and to various international destinations in Asia and the Middle East.",
+        "mixtral": {
+            "ques_0": 1,
+            "ques_1": 1
+        },
+        "rarr": {
+            "ques_0": 1,
+            "ques_1": 1
+        }
+    },
+    {
+        "ref_claim": "Delta Air Lines is one of the major airlines of the United States and a legacy carrier headquartered in Atlanta, Georgia. The United States' oldest operating airline and the seventh oldest operating worldwide, Delta along with its subsidiaries and regional affiliates, including Delta Connection, operates over 5,400 flights daily and serves 325 destinations in 52 countries on six continents.",
+        "target_location": "Gurugram",
+        "common_ques": {
+            "ques_0": "Mention one of the major airlines that operates in international destinations?",
+            "ques_1": "Can you name an airline that operates numerous number of flights daily?"
+        },
+        "target_claim_mixtral": "",
+        "target_claim_rarr": "",
+        "mixtral": {
+            "ques_0": 0,
+            "ques_1": 0
+        },
+        "rarr": {
+            "ques_0": 0,
+            "ques_1": 0
+        }
+    },
+    {
+        "ref_claim": "Egyptair is the state-owned flag carrier of Egypt. The airline is headquartered at Cairo International Airport, its main hub, operating scheduled passenger and freight services to 81 destinations in Africa, Europe, Asia, and The Americas.",
+        "target_location": "Gurugram",
+        "common_ques": {
+            "ques_0": "Can you provide name of an airline which operates scheduled passenger services?",
+            "ques_1": "Name an airline which is headquartered at an international airport."
+        },
+        "target_claim_mixtral": "Vistara is a domestic airline based in Gurugram, Haryana, co-owned by Tata Sons and Singapore Airlines. The airline operates scheduled passenger services to 43 destinations within India and a few international destinations from its hubs at Delhi's Indira Gandhi International Airport and Mumbai's Chhatrapati Shivaji Maharaj International Airport.",
+        "target_claim_rarr": "Vistara is a domestic airline based in New Delhi, co-owned by Tata Sons and Singapore Airlines. The airline operates scheduled passenger services to 49 destinations within India and abroad from its hubs at Delhi's Indira Gandhi International Airport and Mumbai's Chhatrapati Shivaji Maharaj International Airport.",
+        "mixtral": {
+            "ques_0": 1,
+            "ques_1": 0
+        },
+        "rarr": {
+            "ques_0": 0,
+            "ques_1": 0
+        }
+    },
+    {
+        "ref_claim": "Qantas Airways Limited is the flag carrier of Australia. It is the largest airline by fleet size, international flights, and international destinations in Australia and Oceania.",
+        "target_location": "India",
+        "common_ques": {
+            "ques_0": "Can you name a flag carrier airline for a country?"
+        },
+        "target_claim_mixtral": "Air India Limited is the flag carrier of India. It is the largest airline by fleet size, domestic flights, and international destinations within the country.",
+        "target_claim_rarr": "Air India Limited used to be a flag carrier of India and once the largest airline by several measures, but now IndiGo holds over 60% of the market and is growing rapidly. Despite challenges from the COVID-19 pandemic, the Indian aviation market remains one of the most dynamic sectors globally, with predictions suggesting that it could overtake the UK, becoming the third largest market for air passengers globally by the end of 2024. Air India Limited has recently placed an order for 470 aircrafts from Airbus and Boeing. The number of airports in India is also set to climb to 200 over the next five years from 150 today, as the government looks to connect the country\u2019s remotest areas by air.",
+        "mixtral": {
+            "ques_0": 1
+        },
+        "rarr": {
+            "ques_0": 1
+        }
+    },
+    {
+        "ref_claim": "United Airlines, Inc. is a major American airline headquartered at the Willis Tower in Chicago, Illinois. United operates an extensive domestic and international route network across the United States and all six inhabited continents primarily out of its eight hubs, with Chicago O'Hare having the largest number of daily flights and Denver carrying the most passengers in 2023.",
+        "target_location": "India",
+        "common_ques": {
+            "ques_0": "Can you think of an airline that operates multiple hubs for their flight network?",
+            "ques_1": "Name an airline which operates a domestic route network.",
+            "ques_2": "Mention an arline which is headquartered in a major city of the country."
+        },
+        "target_claim_mixtral": "Air India Limited is a major Indian airline headquartered in New Delhi, India. Air India operates a vast domestic and international route network across India and other countries primarily out of its four hubs, with Mumbai having the largest number of daily flights and Delhi carrying the most passengers in 2023.",
+        "target_claim_rarr": "IndiGo and Akasa Air are the two major Indian airlines headquartered in New Delhi, India. IndiGo operates a vast domestic and international route network across India and other countries primarily out of its two hubs, with Mumbai carrying the most passengers in 2023. Akasa Air has firm position as a huge trailblazer in the Indian aviation sector with the order of 226 Boeing 737 MAX aircraft, valued at approximately $20 billion. The total air passenger traffic in India reached more than 190 million passengers in financial year 2023. It was a huge increase comparing to the previous year. The domestic passenger traffic saw a compound annual growth rate (CAGR) of 8.9 percent from 2013 to 2023, while the international passenger traffic saw a 3.1 percent CAGR during the same period of time.",
+        "mixtral": {
+            "ques_0": 1,
+            "ques_1": 1,
+            "ques_2": 1
+        },
+        "rarr": {
+            "ques_0": 1,
+            "ques_1": 1,
+            "ques_2": 1
+        }
+    },
+    {
+        "ref_claim": "Allegiant Air is an ultra low-cost U.S. carrier that operates scheduled and charter flights. It is a major air carrier, the fourteenth-largest commercial airline in North America.",
+        "target_location": "Bengaluru",
+        "common_ques": {
+            "ques_0": "Can you give an example of a low-cost airline?",
+            "ques_1": "Name an airline that operates scheduled and charter flights?"
+        },
+        "target_claim_mixtral": "IndiGo is a low-cost Indian airline that operates both domestic and international flights. It is the largest airline in India by passengers carried and fleet size, making it a major player in the Asian market.",
+        "target_claim_rarr": "IndiGo is a low-cost Indian airline that operates both domestic and international flights. It is the largest airline in India by passengers carried and fleet size, making it a major player in the Asian market.",
+        "mixtral": {
+            "ques_0": 1,
+            "ques_1": 0
+        },
+        "rarr": {
+            "ques_0": 1,
+            "ques_1": 0
+        }
+    },
+    {
+        "ref_claim": "EasyJet plc is a British multinational low-cost airline group headquartered at London Luton Airport. It operates domestic and international scheduled services on 927 routes in more than 34 countries via its affiliate airlines EasyJet UK, EasyJet Switzerland, and EasyJet Europe.",
+        "target_location": "India",
+        "common_ques": {
+            "ques_0": "Can you provide an example of a low-cost airline headquarted in a prominent city?",
+            "ques_1": "Name an airline that operates domestic and international scheduled services on several routes."
+        },
+        "target_claim_mixtral": "IndiGo is an Indian low-cost airline headquartered in Gurgaon, Haryana. It operates domestic and international scheduled services on over 1500 routes to more than 60 destinations in India and abroad.",
+        "target_claim_rarr": "IndiGo is an Indian low-cost airline headquartered in Gurgaon, Haryana. It operates domestic and international scheduled services on over 1500 routes to more than 88 domestic and 30 international destinations in 23 countries as of February 2023.",
+        "mixtral": {
+            "ques_0": 1,
+            "ques_1": 1
+        },
+        "rarr": {
+            "ques_0": 1,
+            "ques_1": 1
+        }
+    },
+    {
+        "ref_claim": "London Gatwick, also known as Gatwick Airport, is the secondary international airport serving London, England, United Kingdom. It is located near Crawley, West Sussex, England 29.5 miles south of Central London.",
+        "target_location": "India",
+        "common_ques": {
+            "ques_0": "Can you name an international airport serving a major city?"
+        },
+        "target_claim_mixtral": "Indira Gandhi International Airport is the secondary international airport serving Delhi, India. It is located in Palam, Delhi, approximately 10 miles southwest of the city center.",
+        "target_claim_rarr": "Indira Gandhi International Airport is one of two international airports serving Delhi, India. It is located in Palam, Delhi, approximately 16 kilometers southwest of New Delhi railway station and 16 kilometers from New Delhi city center.",
+        "mixtral": {
+            "ques_0": 1
+        },
+        "rarr": {
+            "ques_0": 1
+        }
+    },
+    {
+        "ref_claim": "Moorabbin Airport is a mostly general aviation airport for light aircraft located in between the southern Melbourne suburbs of Heatherton, Cheltenham, Dingley Village and Mentone. It also receives commercial airline service.",
+        "target_location": "Karnataka",
+        "common_ques": {
+            "ques_0": "Can you provide an example of an airport that is used for commercial airline service?",
+            "ques_1": "Can you provide an example of an airport which provides general aviation services?"
+        },
+        "target_claim_mixtral": "The Hindustan Aeronautics Limited Airport (HAL Airport) is a military and civilian airport located in the southern part of Bangalore, Karnataka. It primarily serves as a base for the Indian Air Force but also receives domestic commercial airline service.",
+        "target_claim_rarr": "Hindustan Aeronautics Limited Airport (HAL Airport) is a military and civilian airport located in southern Bangalore, Karnataka. It was established in 1942 for military and defence purposes, but began domestic operations for the first time in the late 1970s. The unexpected popularity of the newly offered domestic flights encouraged rapid expansion of the airport. HAL Airport ( ICAO : VOBG ) is an airport that serves Bangalore , the capital of the Indian state of Karnataka . Located about 12 km east of the city centre, it has one runway and operates 24/7. Hindustan Aeronautics Limited (HAL), a state-owned defence company, owns the airfield and runs a testing facility in conjunction with the Indian Armed Forces.",
+        "mixtral": {
+            "ques_0": 1,
+            "ques_1": 0
+        },
+        "rarr": {
+            "ques_0": 1,
+            "ques_1": 0
+        }
+    },
+    {
+        "ref_claim": "Kuala Lumpur International Airport is Malaysia's main international airport. It is located in the Sepang District of Selangor, approximately 45 kilometres south of Kuala Lumpur and serves the city's greater conurbation.",
+        "target_location": "Kerala",
+        "common_ques": {
+            "ques_0": "Can you name an international airport?",
+            "ques_1": "Can you name an international airport that serves the city's conurbation?"
+        },
+        "target_claim_mixtral": "Cochin International Airport is India's first fully solar-powered airport, located in Nedumbassery, about 25 kilometers northeast of Kochi (Cochin), in the state of Kerala.",
+        "target_claim_rarr": "Cochin International Airport is India's first fully solar-powered airport located about 28 kilometers northeast of Kochi (Cochin), in Nedumbassery, Kerala state. It has gained recognition for its eco-friendly and sustainable energy practices and won UN \u2018Champions of the Earth\u2019 award.",
+        "mixtral": {
+            "ques_0": 1,
+            "ques_1": 0
+        },
+        "rarr": {
+            "ques_0": 1,
+            "ques_1": 0
+        }
+    },
+    {
+        "ref_claim": "Jewel Changi Airport is a nature-themed entertainment and retail complex surrounded by and linked to one of the passenger terminals of Changi Airport, Singapore.",
+        "target_location": "Bengaluru",
+        "common_ques": {
+            "ques_0": "Can you provide an example of an airport that has an entertainment area?",
+            "ques_1": "Name a themed airport.",
+            "ques_2": "Can you provide an example of an airport that has a retail area?"
+        },
+        "target_claim_mixtral": "The Kempegowda International Airport's Terminal 2 is a modern terminal complex in Bengaluru, India, featuring a range of retail, dining, and entertainment options for passengers.",
+        "target_claim_rarr": "The Kempegowda International Airport's Terminal 2 is a garden terminal that was built in phases at Kempegowda International Airport in Bengaluru, India. It features a range of retail, dining, and entertainment options for passengers. The airport is one of the biggest airports in India. Operated by Bengaluru International Airport (BIAL), it is claimed to be India\u2019s first greenfield airport terminal to be built under a public-private partnership.",
+        "mixtral": {
+            "ques_0": 1,
+            "ques_1": 0,
+            "ques_2": 1
+        },
+        "rarr": {
+            "ques_0": 1,
+            "ques_1": 0,
+            "ques_2": 1
+        }
+    },
+    {
+        "ref_claim": "Suvarnabhumi Airport, also known unofficially as Bangkok International Airport, is the main international airport serving Bangkok, Thailand.",
+        "target_location": "Port Blair",
+        "common_ques": {
+            "ques_0": "Can you name a main international airport for a city?",
+            "ques_1": "Can you name an international airport with a famous unofficial name."
+        },
+        "target_claim_mixtral": "Veer Savarkar International Airport is the primary airport serving the city of Port Blair and the Andaman and Nicobar Islands, an Indian union territory.",
+        "target_claim_rarr": "Veer Savarkar International Airport is the primary airport serving the city of Port Blair and the Andaman and Nicobar Islands, an Indian union territory.",
+        "mixtral": {
+            "ques_0": 1,
+            "ques_1": 0
+        },
+        "rarr": {
+            "ques_0": 1,
+            "ques_1": 0
+        }
+    },
+    {
+        "ref_claim": "Galatina Air Base is an airbase near Galatina, south of the city of Lecce in the Apulia region of Italy. Currently the Italian Air Force's 10th Aircraft Maintenance Unit is based there, which maintains the air force's MB-339 training and light attack jets.",
+        "target_location": "Tezpur",
+        "common_ques": {
+            "ques_0": "Which airport has nation's Air Force currently stationed there?"
+        },
+        "target_claim_mixtral": "The Advanced Landing Ground (ALG) Tezpur is an airbase located in Tezpur, a city in the northeastern state of Assam, India. Currently, the Indian Air Force's No. 106 Helicopter Unit is stationed there, operating the HAL Dhruv advanced light helicopters for various missions, including transportation and reconnaissance duties.",
+        "target_claim_rarr": "The Advanced Landing Ground (ALG) Nyoma is an airbase located in Nyoma, a town in the western part of Ladakh, India. Currently, no Indian Air Force Unit operates from there.",
+        "mixtral": {
+            "ques_0": 1
+        },
+        "rarr": {
+            "ques_0": 0
+        }
+    },
+    {
+        "ref_claim": "Meadows Field is a public airport in Kern County, California, United States, three miles northwest of downtown Bakersfield. It is the main airport for the Bakersfield area, and one of the two international airports in the San Joaquin Valley, the other Fresno Yosemite International Airport.",
+        "target_location": "Chhattisgarh",
+        "common_ques": {
+            "ques_0": "Can you name a public airport?",
+            "ques_1": "Tell me about an airport which serves as the main airport for the region?"
+        },
+        "target_claim_mixtral": "Swami Vivekananda Airport is a public airport located in Naya Raipur, Chhattisgarh, India, six kilometers south of Raipur city center. It serves as the main airport for the Raipur area and is the only international airport in the state of Chhattisgarh.",
+        "target_claim_rarr": "Swami Vivekananda International Airport is a public airport located in Mana, Chhattisgarh, India, 16 kilometers south of Raipur city center. It serves as the main airport for the Raipur area and is the only international airport in the state of Chhattisgarh.",
+        "mixtral": {
+            "ques_0": 1,
+            "ques_1": 1
+        },
+        "rarr": {
+            "ques_0": 1,
+            "ques_1": 1
+        }
+    },
+    {
+        "ref_claim": "Mehrabad Airport, is an airport serving Tehran, the capital city of Iran. Prior to the construction of the larger Imam Khomeini International Airport in 2007, Mehrabad was Tehran's primary airport in both international and domestic traffic, but now serves only domestic flights.",
+        "target_location": "Karnataka",
+        "common_ques": {
+            "ques_0": "Can you name an airport serving in the capital city?",
+            "ques_1": "Name an airport that served both international and domestic flight prior to construction of a larger airpport in that city?"
+        },
+        "target_claim_mixtral": "HAL Airport, also known as Hindustan Airport, is an airport serving Bengaluru, the capital city of Karnataka. Prior to the construction of the larger Kempegowda International Airport in 2008, HAL was Bengaluru's primary airport for both international and domestic traffic, but now serves only select domestic flights and general aviation purposes.",
+        "target_claim_rarr": "Kempegowda International Airport, also known as Bengaluru International Airport, is an airport serving Bangalore, the capital city of Karnataka. Prior to the construction of the larger Kempegowda International Airport in 2008, HAL Bangalore International Airport was Bengaluru's primary airport for both international and domestic traffic. It now serves military aircraft, VIP and chartered flights. The facility is owned by Hindustan Aeronautics Limited (HAL) and operated by the Airports Authority of India (AAI).",
+        "mixtral": {
+            "ques_0": 1,
+            "ques_1": 1
+        },
+        "rarr": {
+            "ques_0": 1,
+            "ques_1": 1
+        }
+    },
+    {
+        "ref_claim": "Paris Charles de Gaulle Airport, also known as Roissy Airport or simply Paris CDG, is the main international airport serving Paris, France. Opened in 1974, it is in Roissy-en-France, 23 km (14 mi) northeast of Paris and is named after World War II statesman Charles de Gaulle (1890-1970), whose initials (CDG) are used as its IATA airport code.",
+        "target_location": "Guwahati",
+        "common_ques": {
+            "ques_0": "Can you name a main international airport serving a city?",
+            "ques_1": "Can you name an airport which is named after a prominent person?"
+        },
+        "target_claim_mixtral": "Lokpriya Gopinath Bordoloi International Airport, also known as Guwahati Airport or IATA code GAU, is the primary international airport serving Guwahati, Assam. Opened in 1958, it is located in Borjhar, 20 km (12.4 mi) west of Guwahati and is named after the first Chief Minister of Assam, Lokpriya Gopinath Bordoloi (1890-1950).",
+        "target_claim_rarr": "I have no changes to suggest for this statement.",
+        "mixtral": {
+            "ques_0": 1,
+            "ques_1": 1
+        },
+        "rarr": {
+            "ques_0": 0,
+            "ques_1": 0
+        }
+    },
+    {
+        "ref_claim": "Amelia Earhart Airport is a city-owned airport two miles west of Atchison, in Atchison County, Kansas, United States. It is named for Atchison native Amelia Earhart.",
+        "target_location": "Indore",
+        "common_ques": {
+            "ques_0": "Can you name an airport located in the west of the city?",
+            "ques_1": "Mention the name of the airport which is named after a prominent female figure of that region."
+        },
+        "target_claim_mixtral": "Rajabhoj Airport is a government-owned airport located in Indore, Madhya Pradesh, India. It is named after the Indian freedom fighter, Rafi Ahmed Kidwai, who hailed from the region.",
+        "target_claim_rarr": "The airport, located in Indore, Madhya Pradesh, India, is named after Rajmata Ahilyabai Holkar, a notable freedom fighter from the region. It\u2019s called Devi Ahilyabai Holkar Airport (Indore Airport).",
+        "mixtral": {
+            "ques_0": 1,
+            "ques_1": 0
+        },
+        "rarr": {
+            "ques_0": 1,
+            "ques_1": 1
+        }
+    },
+    {
+        "ref_claim": "Dreamworld is a theme park and zoo situated on the Gold Coast in Queensland. It is Australia's biggest theme park with over 40 rides and attractions.",
+        "target_location": "Tamil Nadu",
+        "common_ques": {
+            "ques_0": "Can you name a theme park with numerous rides?",
+            "ques_1": "Could you provide the name of one of the biggest amusement park of the region?"
+        },
+        "target_claim_mixtral": "MGM Studio Theme Park is a movie-based theme park located in Chennai, Tamil Nadu, featuring over 25 rides and attractions based on iconic films.",
+        "target_claim_rarr": "VGP Universal Kingdom is an amusement park located in SH 49, Muthukadu, Chennai, Tamil Nadu, featuring over 25 rides and attractions including Rolling Thunder and Rainbow Coaster. The park also features multiple restaurants serving a variety of cuisines.",
+        "mixtral": {
+            "ques_0": 1,
+            "ques_1": 1
+        },
+        "rarr": {
+            "ques_0": 1,
+            "ques_1": 1
+        }
+    },
+    {
+        "ref_claim": "Disneyland Paris is an entertainment resort in Chessy, France, 32 kilometres east of Paris. It encompasses two theme parks, resort hotels, a shopping, dining and entertainment complex, and a golf course.",
+        "target_location": "India",
+        "common_ques": {
+            "ques_0": "Can you give an example of an entertainment resort?",
+            "ques_1": "Name a place that has both theme park and shopping/dining options."
+        },
+        "target_claim_mixtral": "Disneyland Delhi is an entertainment resort in Gurgaon, India, 32 kilometers southwest of New Delhi. It encompasses two theme parks, resort hotels, a shopping, dining and entertainment complex, and a golf course.",
+        "target_claim_rarr": "No such water park as \"Oysters Beach Waterpark in Gurgaon, India\" exists. Instead, Disneyland Delhi is being built by Reliance Industries and The Walt Disney Company to serve the Indian market.",
+        "mixtral": {
+            "ques_0": 1,
+            "ques_1": 1
+        },
+        "rarr": {
+            "ques_0": 0,
+            "ques_1": 1
+        }
+    },
+    {
+        "ref_claim": "Ferrari World Abu Dhabi is a mostly indoors theme park located on Yas Island in Abu Dhabi, United Arab Emirates. It is the world's first Ferrari-themed park and features Formula Rossa, the world's fastest roller coaster.",
+        "target_location": "Maharashtra",
+        "common_ques": {
+            "ques_0": "Could you name a theme park that is first of its kind in the country?"
+        },
+        "target_claim_mixtral": "Imagicaa is an indoor and outdoor theme park located in Khopoli, Maharashtra, India. It features a variety of thrill rides, attractions, and experiences, including Nitro, one of the largest roller coasters in the country.",
+        "target_claim_rarr": "Imagicaa is an indoor and outdoor theme park located in Khopoli, Maharashtra, India. It features a variety of thrill rides, attractions, and experiences, including Nitro, one of the roller coasters with maximum height of 40 meters (132 feet) and a maximum speed of 65.2 miles per hour (104.9 km/h) in the country.",
+        "mixtral": {
+            "ques_0": 1
+        },
+        "rarr": {
+            "ques_0": 1
+        }
+    },
+    {
+        "ref_claim": "Dream Island is an amusement park in Moscow that opened on 29 February 2020. It is the largest indoor theme park in Europe.",
+        "target_location": "Maharashtra",
+        "common_ques": {
+            "ques_0": "Can you name one of the largest amusement parks of the region?"
+        },
+        "target_claim_mixtral": "Imagicaa is a popular amusement and water park located in Khopoli, Maharashtra, which opened in April 2013. It is one of the largest theme parks in India.",
+        "target_claim_rarr": "Imagicaa is a popular amusement and water park located in Khopoli, Maharashtra, which opened in April 2013. It is one of the largest theme parks in India.",
+        "mixtral": {
+            "ques_0": 1
+        },
+        "rarr": {
+            "ques_0": 1
+        }
+    },
+    {
+        "ref_claim": "Efteling is a fantasy-themed amusement park in Kaatsheuvel, the Netherlands. The attractions reflect elements from ancient myths and legends, fairy tales, fables, and folklore. The park was opened on May 31, 1952.",
+        "target_location": "Hyderabad",
+        "common_ques": {
+            "ques_0": "Tell me about a themed amusement park which reflects attractions from ancient elements?"
+        },
+        "target_claim_mixtral": "Ramoji Film City is a large film studio and theme park located in Hyderabad, India. It offers visitors a chance to explore various movie sets and attractions inspired by Indian mythology, folklore, and cinema. The studio was established in 1996 by Ramoji Rao, an Indian media entrepreneur.",
+        "target_claim_rarr": "Ramoji Film City is a large film studio and theme park located in Hyderabad, India. It offers visitors a chance to explore various movie sets and attractions inspired by Indian mythology, folklore, and cinema. The studio was established in 1996 by Ramoji Rao, an Indian media entrepreneur.",
+        "mixtral": {
+            "ques_0": 1
+        },
+        "rarr": {
+            "ques_0": 1
+        }
+    },
+    {
+        "ref_claim": "Fuji-Q Highland is an amusement park in Fujiyoshida, Yamanashi, Japan, owned and operated by the namesake Fuji Kyuko Co. it was opened on 2 March 1968. The theme park is near the base of Mount Fuji.",
+        "target_location": "Pahalgam",
+        "common_ques": {
+            "ques_0": "Can you name an amusement park which has the same name as a natural feature in that area?"
+        },
+        "target_claim_mixtral": "The Pahalgam Amusement Park is a popular recreational spot in Pahalgam, Jammu and Kashmir, India, established in 1980. Nestled in the picturesque landscape of the Lidder Valley, it offers various entertaining rides and activities for visitors of all ages.",
+        "target_claim_rarr": "The name of the recreational spot located in the Anantnag district of Jammu and Kashmir, India where Pahalgam literally means a village of shepherds in the Kashmiri language is Pahalgam. It attracts roughly around 70% of visitors to the valley because of its religious significance, natural beauty, and role as a base camp for Amarnath Yatra.",
+        "mixtral": {
+            "ques_0": 1
+        },
+        "rarr": {
+            "ques_0": 1
+        }
+    },
+    {
+        "ref_claim": "Typhoon Texas is a series of water parks in Texas. The company currently operates two locations in Austin and in Katy.",
+        "target_location": "Patna",
+        "common_ques": {
+            "ques_0": "Can you give an example of a water park?",
+            "ques_1": "Can you give an example of an amusement park which is located in the state capital?"
+        },
+        "target_claim_mixtral": "Sharky's Water Park is a popular water park in Patna, Bihar, serving as a premier destination for locals and tourists looking to beat the heat.",
+        "target_claim_rarr": "Sharky's Water Park, situated in Patna, is a popular water park in the capital city of Bihar. It offers a water-based recreational experience for locals and visitors. The park is well-known for its assortment of water features, which include pools, slides, and other aquatic games made to accommodate a range of age groups.",
+        "mixtral": {
+            "ques_0": 1,
+            "ques_1": 1
+        },
+        "rarr": {
+            "ques_0": 1,
+            "ques_1": 1
+        }
+    },
+    {
+        "ref_claim": "Gardaland Resort is a fantasy- amusement park resort located in northeastern Italy. It has more than 40 rides including water rides and shows to satisfy the needs of everyone: families with children, young adrenaline lovers and adults who love to dive into a fantasy world",
+        "target_location": "Mysore",
+        "common_ques": {
+            "ques_0": "Can you name a fantasy-themed amusement park that has water rides?",
+            "ques_1": "Which fantasy park satisfy the needs of everyone: families with children, young adrenaline lovers and adults?"
+        },
+        "target_claim_mixtral": "The Wonderla Karnataka is an amusement park located on the outskirts of Bangalore, Karnataka, in India. It offers over 60 rides and attractions, including water rides and live shows, designed to cater to a wide range of visitors, from families with children to thrill-seekers and those who enjoy immersive experiences.",
+        "target_claim_rarr": "The Wonderla Karnataka is an amusement park located on the outskirts of Bengaluru in Ramanagara district, Karnataka, India. It offers over 60 rides and attractions, including water rides and live shows, designed to cater to a wide range of visitors, from families with children to thrill-seekers and those who enjoy immersive experiences.",
+        "mixtral": {
+            "ques_0": 0,
+            "ques_1": 0
+        },
+        "rarr": {
+            "ques_0": 0,
+            "ques_1": 0
+        }
+    },
+    {
+        "ref_claim": "Wonderland is an amusement park located In Dubai, UAE. It is designed for kids of all ages. Wonderland includes both the Wonderland Theme Park and Splashland\u2014a water park spanning 22 acres. It offers more than 30 rides and attractions.",
+        "target_location": "India",
+        "common_ques": {
+            "ques_0": "Can you give example of an amusement park designed for all ages?",
+            "ques_1": "Name an amusement park that has a water park?",
+            "ques_2": "Which amusement park offers many rides and attractions?"
+        },
+        "target_claim_mixtral": "EsselWorld is an amusement park located in Mumbai, Maharashtra, India. It caters to visitors of all ages with its wide range of offerings. EsselWorld includes both the EsselWorld amusement park and Water Kingdom \u2013 a water park spanning 64 acres. It offers over 50 rides and attractions.",
+        "target_claim_rarr": "EsselWorld is an amusement park located in Mumbai, Maharashtra, India. It caters to visitors of all ages with its wide range of offerings. EsselWorld includes both the EsselWorld amusement park and Water Kingdom \u2013 a water park spanning 65 acres. It offers over 70 rides and attractions.",
+        "mixtral": {
+            "ques_0": 1,
+            "ques_1": 1,
+            "ques_2": 1
+        },
+        "rarr": {
+            "ques_0": 1,
+            "ques_1": 1,
+            "ques_2": 1
+        }
+    },
+    {
+        "rarr_metric": 0.6444444444444445,
+        "mixtral_metric": 0.7333333333333333
+    }
+]
