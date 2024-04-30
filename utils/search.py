@@ -12,7 +12,7 @@ import spacy
 import torch
 from sentence_transformers import CrossEncoder
 import api
-import cohere_call
+# import cohere_call
 
 PASSAGE_RANKER = CrossEncoder(
     "cross-encoder/ms-marco-MiniLM-L-6-v2",
@@ -208,8 +208,8 @@ def run_search(
         # Score the passages by relevance to the query using a cross-encoder.
         if ranking_model == "cross_encoder":
             scores = PASSAGE_RANKER.predict([(query, p) for p in passages]).tolist()
-        elif ranking_model == "cohere":
-            scores = cohere_call.get_passage_ranking_score(query, passages)
+        # elif ranking_model == "cohere":
+        #     scores = cohere_call.get_passage_ranking_score(query, passages)
            
         passage_scores = list(zip(passages, scores))
 

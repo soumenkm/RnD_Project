@@ -30,12 +30,12 @@ def parse_api_response(api_response: str) -> List[str]:
     Sent_search_string = "Target sentence:"
     Reason_search_string = "Reason:"
     sentence = ""
+    reason = ""
     for response in api_response.split("\n"):
         if Sent_search_string in response:
             sentence = response.split(Sent_search_string)[1].strip()
         elif Reason_search_string in response:
             reason = response.split(Reason_search_string)[1].strip()
-
     return sentence, reason
 
 def run_rarr_target_sentence_generation(
@@ -53,7 +53,7 @@ def run_rarr_target_sentence_generation(
         model: Name of the OpenAI GPT-3 model to use.
         prompt: The prompt template to query GPT-3 with.
     Returns:
-        questions: A list of questions.
+        target sentence and reason
     """
     
     if(model == "mixtral8x7b"):
@@ -68,11 +68,47 @@ def run_rarr_target_sentence_generation(
         print("Model not found!")
     
     llm_input = prompt.format(location=location, claim=claim).strip()
-    # print("\nResponse: ")
-    
     response = prompt_model(model = llm, prompt = llm_input)
     target_sent, reason = parse_api_response(response.strip())
+    return target_sent, reason
 
+def run_rarr_target_sentence_regeneration(
+    claim: str,
+    model: str,
+    prompt: str,
+    target_sent: str,
+    location: str = None,
+    question: str = None
+) -> List[str]:
+    """Re-generates target sentence based on target location in a claim and common questions.
+
+    Given a piece of text (claim) and common question, we use Mixtral to re-generate target sentence.
+
+    Args:
+        claim: Text to generate questions off of.
+        model: Name of the OpenAI GPT-3 model to use.
+        prompt: The prompt template to query GPT-3 with.
+        target_sent: The target sentence to be re-generated.
+        location: target location
+        question: common question
+    Returns:
+        revised target sentence, reason
+    """
+    
+    if(model == "mixtral8x7b"):
+        llm = Llama(
+        model_path="/root/llama.cpp/models/mixtral-8x7b-instruct-v0.1.Q4_K_M.gguf",  
+        n_ctx=32768,  # The max sequence length to use - note that longer sequence lengths require much more resources
+        n_threads=8,            # The number of CPU threads to use, tailor to your system and the resulting performance
+        n_gpu_layers=35 ,        # The number of layers to offload to GPU, if you have GPU acceleration available
+        verbose=False
+        ) 
+    else:
+        print("Model not found!")
+    
+    llm_input = prompt.format(target_sent = target_sent, location=location, claim=claim, question=question).strip()
+    response = prompt_model(model = llm, prompt = llm_input)
+    target_sent, reason = parse_api_response(response.strip())
     return target_sent, reason
 
 

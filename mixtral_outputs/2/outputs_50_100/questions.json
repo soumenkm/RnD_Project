@@ -1,0 +1,897 @@
+[
+    {
+        "claim_id": 0,
+        "claim_ref": "Tivoli Gardens, also known simply as Tivoli, is an amusement park and pleasure garden in Copenhagen, Denmark. The park opened on 15 August 1843 and is the third-oldest operating amusement park in the world. Tivoli is the most visited amusement park in Scandinavia. The park is best known for its wooden roller coaster, Rutschebanen, or as some people call it, Bjergbanen",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "Appu Ghar, also known simply as Appu, is an amusement park in Delhi, India. The park was opened to the public in 1984 and has been a popular destination for families and thrill-seekers ever since. It is best known for its iconic roller coaster, the \"Discovery,\" providing entertainment and memories for countless visitors over the years.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Tivoli Gardens' corresponding to target location 'India' is 'Appu Ghar' under the category 'Amusement Parks'. The choice of target entity is reasonable because (a) Both parks have been operating for several decades and are beloved destinations for families and thrill-seekers alike, (b) Appu Ghar has its own iconic roller coaster, \"Discovery,\" similar to Tivoli's \"Rutschebanen\" or \"Bjergbanen,\" offering visitors a memorable experience.",
+        "claim_target_correct": "Appu Ghar, also known simply as Appu, is an amusement park in Delhi, India. The park was opened to the public in 1984 and has been a popular destination for families and thrill-seekers ever since. It is best known for its iconic roller coaster, the \"Discovery,\" providing entertainment and memories for countless visitors over the years.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "How has Appu Ghar contributed to the entertainment and memories of countless families and thrill-seekers in Delhi, India?",
+            "What is the name of the amusement park in Delhi, India that was opened to the public in 1984 and is famous for its \"Discovery\" roller coaster?",
+            "What is the name of the famous roller coaster located in Appu Ghar, the amusement park in Delhi, India?",
+            "When did Appu Ghar, the iconic amusement park in Delhi, start welcoming visitors?",
+            "Which Indian city is Appu Ghar, the popular amusement park, located in?"
+        ]
+    },
+    {
+        "claim_id": 1,
+        "claim_ref": "Sentinel-3 is an Earth observation heavy satellite series developed by the European Space Agency as part of the Copernicus Programme. It currently consists of 2 satellites: Sentinel-3A and Sentinel-3B. After initial commissioning, each satellite was handed over to EUMETSAT for the routine operations phase of the mission.",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "SCATSAT-1 is an Earth observation satellite developed by the Indian Space Research Organisation (ISRO). It was launched in 2016 as a continuity mission to Oceansat-2's scattering microwave radiometer (SCAT) payload. After successful completion of the initial phase, ISRO operates the satellite for weather monitoring and oceanography applications.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Sentinel-3' corresponding to target location 'India' is 'SCATSAT-1' under the category 'Earth Observation Satellites'. The choice of target entity is reasonable because (a) Both satellites serve similar purposes in their respective space agencies' Earth observation programs, providing valuable data for weather monitoring and oceanography applications, (b) While Sentinel-3 is a European Space Agency mission, SCATSAT-1 is an Indian mission, which allows the target sentence to highlight ISRO's contributions to Earth observation from space.",
+        "claim_target_correct": "SCATSAT-1 is an Earth observation satellite developed by the Indian Space Research Organisation (ISRO). It was launched in 2016 as a continuity mission to Oceansat-2's scattering microwave radiometer (SCAT) payload. After successful completion of the initial phase, ISRO operates the satellite for weather monitoring and oceanography applications.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "For what purposes does ISRO operate SCATSAT-1 after the successful completion of its initial phase?",
+            "In which year was SCATSAT-1 launched by ISRO for weather monitoring and oceanography applications?",
+            "What is the payload of Oceansat-2 that SCATSAT-1 serves as a continuity mission to?",
+            "Which Indian space research organization developed the Earth observation satellite, SCATSAT-1?",
+            "Which country developed SCATSAT-1, an Earth observation satellite launched in 2016 for weather monitoring and oceanography applications?"
+        ]
+    },
+    {
+        "claim_id": 2,
+        "claim_ref": "Himawari 8 is a Japanese weather satellite, the 8th of the Himawari geostationary weather satellites operated by the Japan Meteorological Agency.",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "INSAT-3DR is an Indian weather satellite, the 3rd in the series of Geostationary Satellite Series (Gsat) operated by the Indian Space Research Organisation (ISRO).",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Himawari 8' corresponding to target location 'India' is 'INSAT-3DR' under the category 'Weather satellites'. The choice of target entity is reasonable because (a) Both satellites serve a similar purpose in monitoring weather patterns and providing critical data for meteorological and climatological research, (b) INSAT-3DR, like Himawari 8, is an advanced geostationary satellite operated by a national space agency, demonstrating technological prowess and commitment to environmental stewardship.",
+        "claim_target_correct": "INSAT-3DR is an Indian weather satellite, the 3rd in the series of Geostationary Satellite Series (Gsat) operated by the Indian Space Research Organisation (ISRO).",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "In which series does the INSAT-3DR satellite belong, as part of India's geostationary satellites?",
+            "What is the name of the third weather satellite in the Geostationary Satellite Series (Gsat) operated by ISRO in India?",
+            "What is the role or function of the INSAT-3DR satellite in India's weather monitoring system?",
+            "Which organization in India operates the INSAT-3DR satellite?"
+        ]
+    },
+    {
+        "claim_id": 3,
+        "claim_ref": "The Korea Pathfinder Lunar Orbiter, officially Danuri, is South Korea's first lunar orbiter. The orbiter, its science payload and ground control infrastructure are technology demonstrators.",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "Chandrayaan-2 is India's second lunar exploration mission, which includes an orbiter, a lander, and a rover. The mission aims to demonstrate India's technological capabilities and conduct scientific studies of the Moon.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Korea Pathfinder Lunar Orbiter (Danuri)' corresponding to target location 'India' is 'Chandrayaan-2' under the category 'Space Missions'. The choice of target entity is reasonable because (a) both are lunar exploration missions, showcasing a nation's technological prowess and scientific curiosity, (b) both missions include multiple components like orbiters and landers/rovers to study the Moon and its environment.",
+        "claim_target_correct": "Chandrayaan-2 is India's second lunar exploration mission, which includes an orbiter, a lander, and a rover. The mission aims to demonstrate India's technological capabilities and conduct scientific studies of the Moon.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "In which country is the Chandrayaan-2 mission, India's second lunar exploration mission, being conducted?",
+            "What are the objectives of Chandrayaan-2, India's lunar exploration mission?",
+            "What does the successful execution of Chandrayaan-2 demonstrate about India's capabilities in space exploration?",
+            "What is the name of India's second lunar exploration mission consisting of an orbiter, a lander, and a rover?",
+            "Which space exploration components does India's Chandrayaan-2 mission include?"
+        ]
+    },
+    {
+        "claim_id": 4,
+        "claim_ref": "The Mars Reconnaissance Orbiter is a spacecraft designed to search for the existence of water on Mars and provide support for missions to Mars, as part of NASA's Mars Exploration Program.",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "The Chandrayaan-2 is a lunar mission designed and launched by the Indian Space Research Organisation (ISRO) to search for the existence of water on the moon and expand India's footprint in space exploration.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Mars Reconnaissance Orbiter' corresponding to target location 'India' is 'Chandrayaan-2' under the category 'Space Exploration'. The choice of target entity is reasonable because (a) Both entities are space missions dedicated to exploring celestial bodies and searching for water, Mars for MRO and the Moon for Chandrayaan-2, (b) They represent significant achievements in space exploration for their respective countries, with the MRO contributing to NASA's understanding of Mars while Chandrayaan-2 boosts ISRO's reputation as a key player in lunar exploration.",
+        "claim_target_correct": "The Chandrayaan-2 is a lunar mission designed and launched by the Indian Space Research Organisation (ISRO) to search for the existence of water on the moon and expand India's footprint in space exploration.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "For what purpose was the Chandrayaan-2 mission created by ISRO, based in India?",
+            "What is the name of the lunar mission designed and launched by ISRO to explore the moon?",
+            "What is the primary objective of the Chandrayaan-2 mission in India's space exploration efforts?",
+            "What role does the Chandrayaan-2 mission play in expanding India's presence in space exploration?",
+            "Which organization from India is responsible for the Chandrayaan-2 mission?"
+        ]
+    },
+    {
+        "claim_id": 5,
+        "claim_ref": "The Suomi National Polar-orbiting Partnership, previously known as the National Polar-orbiting Operational Environmental Satellite System Preparatory Project and NPP-Bridge, is a weather satellite operated by the United States National Oceanic and Atmospheric Administration.",
+        "location": "Andhra Pradesh",
+        "model": "mixtral8x7b",
+        "claim_target": "The SCATSAT-1 (Scatterometer Satellite) is a polar-orbiting satellite operated by the Indian Space Research Organisation (ISRO), headquartered in Andhra Pradesh, India.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Suomi National Polar-orbiting Partnership' corresponding to target location 'Andhra Pradesh' is 'SCATSAT-1' under the category 'Satellite Operations'. The choice of target entity is reasonable because (a) Both satellites serve similar purposes in weather monitoring and environmental data collection, providing crucial information for meteorological research and forecasting, (b) By aligning the target sentence with Andhra Pradesh, it highlights ISRO's significant contributions to satellite technology from its headquarters located in the region.",
+        "claim_target_correct": "The SCATSAT-1 (Scatterometer Satellite) is a polar-orbiting satellite operated by the Indian Space Research Organisation (ISRO), headquartered in Andhra Pradesh, India.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "In which Indian state is the headquarters of the organization that operates the SCATSAT-1 satellite?",
+            "What is the name of the polar-orbiting satellite operated by ISRO, which is headquartered in Andhra Pradesh?",
+            "What type of satellite is the SCATSAT-1 and what is its purpose?",
+            "Which Indian space research organization operates the SCATSAT-1 satellite, located in Andhra Pradesh?",
+            "Who operates the SCATSAT-1, a polar-orbiting satellite located in Andhra Pradesh, India?"
+        ]
+    },
+    {
+        "claim_id": 6,
+        "claim_ref": "The Astronomical Netherlands Satellite (ANS; also known as Astronomische Nederlandse Satelliet), was the first Dutch satellite. It was developed by Netherlands Institute for Space Research (NIVR) and launched from United States.",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "The Rohini Technology Satellite (RTS) was the first Indian satellite, developed by the Indian Space Research Organisation (ISRO) and launched from Russia in 1975.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Astronomical Netherlands Satellite' corresponding to target location 'India' is 'Rohini Technology Satellite' under the category 'Satellites'. The choice of target entity is reasonable because (a) both are pioneering satellites launched by their respective countries, marking India and the Netherlands' entry into space exploration, (b) they were developed with national cooperation and launched with international partnerships, reflecting global collaboration in scientific advancements.",
+        "claim_target_correct": "The Rohini Technology Satellite (RTS) was the first Indian satellite, developed by the Indian Space Research Organisation (ISRO) and launched from Russia in 1975.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "From which country was the Rohini Technology Satellite (RTS) launched by India in 1975?",
+            "In which year was the Rohini Technology Satellite (RTS) launched from Russia, making it the first Indian satellite?",
+            "What is the significance of the Rohini Technology Satellite (RTS) as India's first satellite launched in 1975?",
+            "What was the name of the first Indian satellite developed by ISRO and launched from Russia in 1975?",
+            "Which organization, based in India, was responsible for the development of the Rohini Technology Satellite (RTS)?"
+        ]
+    },
+    {
+        "claim_id": 7,
+        "claim_ref": "Aura (EOS CH-1) is a multi-national NASA earth obervation satellite in orbit around the Earth. Its uses include studying the Earth's ozone layer, air quality and climate",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "SCATSAT-1 is an Indian earth observation satellite operated by the Indian Space Research Organisation (ISRO), orbiting around the Earth. Its functions include monitoring the ocean surface winds, detecting cyclones and measuring atmospheric variables.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Aura (EOS CH-1)' corresponding to target location 'India' is 'SCATSAT-1' under the category 'Satellites'. The choice of target entity is reasonable because (a) Both satellites serve a similar purpose in observing and gathering data about the Earth, with Aura focusing on atmospheric studies and SCATSAT-1 concentrating on ocean surface winds and weather patterns, (b) By highlighting an Indian satellite, the target sentence emphasizes India's contributions to space research and technology.",
+        "claim_target_correct": "SCATSAT-1 is an Indian earth observation satellite operated by the Indian Space Research Organisation (ISRO), orbiting around the Earth. Its functions include monitoring the ocean surface winds, detecting cyclones and measuring atmospheric variables.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "For what purposes is the SCATSAT-1 satellite mainly used, such as monitoring ocean surface winds and detecting cyclones?",
+            "In which country is the SCATSAT-1 satellite based and operated?",
+            "What are some of the atmospheric variables that SCATSAT-1 measures for studying the Earth's environment?",
+            "What is the name of the Indian earth observation satellite operated by ISRO that orbits around the Earth?",
+            "Which organization in India operates the SCATSAT-1 satellite?"
+        ]
+    },
+    {
+        "claim_id": 8,
+        "claim_ref": "Jabiru-1 is the Australian privately-funded satellite which was successfully launched into space. It is first satellite in the series of the Jabiru satellite programme, which is intended to provide new and raw capacity coverage to the high-demand communication market.",
+        "location": "Mumbai",
+        "model": "mixtral8x7b",
+        "claim_target": "GSAT-12 is an Indian communications satellite that was launched by the Indian Space Research Organisation (ISRO) in 2011. It provides crucial communication services to various users, including mobile phone operators, broadcasters, and the Indian armed forces, through its 12 Ku-band transponders. The satellite has played a significant role in meeting the growing demand for reliable telecommunications in India.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Jabiru-1' corresponding to target location 'Mumbai' is 'GSAT-12' under the catgory 'Satellites'. The choice of target entity is reasonable because (a) Both Jabiru-1 and GSAT-12 are satellites launched to serve their respective countries' high-demand communication markets, providing new and raw capacity coverage for various users, (b) The reference sentence highlights the significance of Jabiru-1 for the Australian market, while the target sentence emphasizes the importance of GSAT-12 for meeting India's growing demand for telecommunications services.",
+        "claim_target_correct": "GSAT-12 is an Indian communications satellite that was launched by the Indian Space Research Organisation (ISRO) in 2011. It provides crucial communication services to various users, including mobile phone operators, broadcasters, and the Indian armed forces, through its 12 Ku-band transponders. The satellite has played a significant role in meeting the growing demand for reliable telecommunications in India.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "How many Ku-band transponders does GSAT-12 have to provide communication services in Mumbai and other parts of India?",
+            "In what way has GSAT-12 contributed to meeting the increasing demand for dependable telecommunications in Mumbai and across India?",
+            "What is the name of the communications satellite launched by ISRO in 2011 that serves various users in India?",
+            "What kind of services does GSAT-12 support through its transponders, benefiting mobile phone operators, broadcasters, and the Indian armed forces in Mumbai and other locations in India?",
+            "Which Indian organization, based in Mumbai, launched the GSAT-12 satellite in 2011?"
+        ]
+    },
+    {
+        "claim_id": 9,
+        "claim_ref": "Ford Motor Company is an American multinational automobile manufacturer headquartered in Dearborn, Michigan, United States. It was founded by Henry Ford and incorporated on June 16, 1903.",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "Tata Motors is an Indian multinational automobile manufacturer headquartered in Mumbai, Maharashtra, India. It was founded by Jamsetji Tata and established the company on August 1, 1945.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Ford Motor Company' corresponding to target location 'India' is 'Tata Motors' under the category 'Automobile Manufacturer'. The choice of target entity is reasonable because (a) Both Ford and Tata Motors are multinational corporations that manufacture automobiles, making them equivalent entities within their respective countries and industries, (b) Both companies have rich histories, being founded by influential industrialists (Henry Ford and Jamsetji Tata), and hold significant positions in their domestic markets as well as global operations.",
+        "claim_target_correct": "Tata Motors is an Indian multinational automobile manufacturer headquartered in Mumbai, Maharashtra, India. It was founded by Jamsetji Tata and established the company on August 1, 1945.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "In which city is the headquarters of Tata Motors located in India?",
+            "What is the name of the Indian multinational automobile manufacturer headquartered in Mumbai, Maharashtra?",
+            "What is the significance of Tata Motors as an Indian multinational automobile manufacturer?",
+            "When was Tata Motors established by its founder Jamsetji Tata in India?",
+            "Who founded Tata Motors, the Indian automobile manufacturer based in Mumbai?"
+        ]
+    },
+    {
+        "claim_id": 10,
+        "claim_ref": "Elfin Sports Cars Pty Ltd is an Australian car manufacturer company that was founded by Garrie Cooper. It has been an Australian manufacturer of sports cars and motor racing cars since 1959.",
+        "location": "Maharashtra",
+        "model": "mixtral8x7b",
+        "claim_target": "Tata Motors is an Indian multinational automotive manufacturing company, headquartered in Mumbai, Maharashtra. It was founded in 1945 and has been a leading manufacturer of passenger vehicles, commercial vehicles, and electric vehicles in India.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Elfin Sports Cars Pty Ltd' corresponding to target location 'Maharashtra' is 'Tata Motors' under the category 'Automative Manufacturer'. The choice of target entity is reasonable because (a) Both companies are prominent manufacturers in their respective countries, with Elfin Sports Cars being an Australian manufacturer and Tata Motors being an Indian one, (b) While Elfin Sports Cars specializes in sports cars and racing cars, Tata Motors offers a wide range of vehicles including passenger cars, commercial vehicles, and electric vehicles. This diversity in product offerings allows Tata Motors to be a more fitting target entity for the Indian context, particularly Maharashtra where it is headquartered.",
+        "claim_target_correct": "Tata Motors is an Indian multinational automotive manufacturing company, headquartered in Mumbai, Maharashtra. It was founded in 1945 and has been a leading manufacturer of passenger vehicles, commercial vehicles, and electric vehicles in India.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "In which city is the headquarters of the Indian multinational automotive manufacturer, Tata Motors, located?",
+            "In which year was Tata Motors founded in Maharashtra?",
+            "What are the main product categories that Tata Motors deals with in their automotive manufacturing business?",
+            "What is the name of the Indian multinational automotive manufacturing company headquartered in Mumbai, Maharashtra?",
+            "Which type of vehicles does Tata Motors manufacture and is a leading company for in India?"
+        ]
+    },
+    {
+        "claim_id": 11,
+        "claim_ref": "General Motors Company is an American multinational automotive manufacturing company headquartered in Detroit, Michigan, United States. The company is mostly known for owning and manufacturing four automobile brands, Chevrolet, GMC, Cadillac and Buick.",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'General Motors Company' corresponding to target location 'India' is 'Tata Motors Limited' under the category 'Automobile Manufacturer'. The choice of target entity is reasonable because (a) both companies are involved in automotive manufacturing and have a significant presence in their respective countries, with General Motors headquartered in Detroit, Michigan, and Tata Motors based in Mumbai, Maharashtra, India, (b) both General Motors and Tata Motors own and manufacture multiple brands, ensuring a similarity between the two entities.",
+        "claim_target_correct": "",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "In which country is Bollywood, one of the largest centers for film production, located?",
+            "In which country would you find the vibrant festival of Holi, also known as the Festival of Colors?",
+            "What is the name of the South Asian nation that is known for its diverse culture, history, and geography?",
+            "Which country is home to the iconic monument Taj Mahal, a UNESCO World Heritage Site and one of the Seven Wonders of the World?",
+            "Which country is known for producing a significant number of films in various languages, including Hindi, Tamil, Telugu, and Bengali, among others?"
+        ]
+    },
+    {
+        "claim_id": 12,
+        "claim_ref": "Stellantis N.V. is a multinational automotive manufacturing corporation formed from the merger in 2021 of the Italian-American conglomerate Fiat Chrysler Automobiles and the French PSA Group. The company is headquartered in Amsterdam.",
+        "location": "Mumbai",
+        "model": "mixtral8x7b",
+        "claim_target": "Tata Motors Limited is a multinational automotive manufacturing corporation based in Mumbai, Maharashtra, India. It was established in 1945 as a truck manufacturer and has since expanded to produce various types of commercial and passenger vehicles.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Stellantis N.V.' corresponding to target location 'Mumbai' is 'Tata Motors Limited' under the category 'Automotive Manufacturing'. The choice of target entity is reasonable because (a) Both companies are headquartered in Mumbai, making it a fitting target entity for this location, (b) Tata Motors and Stellantis N.V. are both significant players in the global automotive industry, manufacturing a wide range of vehicles for commercial and personal use, and contributing to their respective countries' economic growth.",
+        "claim_target_correct": "Tata Motors Limited is a multinational automotive manufacturing corporation based in Mumbai, Maharashtra, India. It was established in 1945 as a truck manufacturer and has since expanded to produce various types of commercial and passenger vehicles.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "How did Tata Motors Limited evolve since its establishment as a truck manufacturer in 1945 in Mumbai?",
+            "In which Indian city is the multinational automotive manufacturing corporation, Tata Motors Limited, based?",
+            "What type of products does Tata Motors Limited manufacture apart from trucks in Mumbai?",
+            "When was Tata Motors Limited established in Mumbai, Maharashtra?",
+            "Which country is Tata Motors Limited headquartered in, with its base being in Mumbai?"
+        ]
+    },
+    {
+        "claim_id": 13,
+        "claim_ref": "Beijing Automotive Group Co., Ltd. is a Chinese state-owned automobile manufacturer headquartered in Shunyi, Beijing. Founded in 1958, it is the sixth largest automobile manufacturer in China, with 1.723 million sales in 2021.",
+        "location": "Thiruvananthapuram",
+        "model": "mixtral8x7b",
+        "claim_target": "Kerala Automobiles Limited is an automobile manufacturing company based in Thiruvananthapuram, India. Established in 1971, it is a key player in the production of three-wheelers and light commercial vehicles (LCVs) within the state, contributing significantly to the region's transportation sector.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Beijing Automotive Group Co., Ltd.' corresponding to target location 'Thiruvananthapuram' is 'Kerala Automobiles Limited' under the category 'Automobile Manufacturer'. The choice of target entity is reasonable because (a) Both companies are involved in automobile manufacturing and contribute significantly to their respective regions' transportation sectors, (b) By highlighting a local success story in Thiruvananthapuram, the target sentence emphasizes the diverse range of automotive manufacturers worldwide while maintaining the relevance to the given target location.",
+        "claim_target_correct": "Kerala Automobiles Limited is an automobile manufacturing company based in Thiruvananthapuram, India. Established in 1971, it is a key player in the production of three-wheelers and light commercial vehicles (LCVs) within the state, contributing significantly to the region's transportation sector.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "Can you name the city where Kerala Automobiles Limited is headquartered and contributes significantly to the transportation sector?",
+            "In which year was Kerala Automobiles Limited established in Thiruvananthapuram?",
+            "What is the significance of Kerala Automobiles Limited in the automobile manufacturing industry based in Thiruvananthapuram, India?",
+            "What type of company is Kerala Automobiles Limited, which is headquartered in Thiruvananthapuram, India?",
+            "Which vehicles does Kerala Automobiles Limited specialize in manufacturing, contributing to the transportation sector in its region?"
+        ]
+    },
+    {
+        "claim_id": 14,
+        "claim_ref": "Automobili Lamborghini S.p.A. is an Italian manufacturer of luxury sports cars and SUVs based in Sant'Agata Bolognese. The company is owned by the Volkswagen Group through its subsidiary Audi.",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "Mahindra & Mahindra Limited is an Indian multinational automobile manufacturing corporation based in Mumbai, Maharashtra. The company is known for its extensive range of utility vehicles, tractors, and automotive components.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Automobili Lamborghini S.p.A.' corresponding to target location 'India' is 'Mahindra & Mahindra Limited' under the category 'Automotive Manufacturers'. The choice of target entity is reasonable because (a) Both are prominent manufacturers in their respective countries, with Lamborghini being an Italian luxury sports car and SUV manufacturer, while Mahindra & Mahindra is known for its utility vehicles, tractors, and automotive components in India, (b) Both companies have experienced significant growth and international recognition, contributing to the global automotive industry.",
+        "claim_target_correct": "Mahindra & Mahindra Limited is an Indian multinational automobile manufacturing corporation based in Mumbai, Maharashtra. The company is known for its extensive range of utility vehicles, tractors, and automotive components.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "In which country is Mahindra & Mahindra Limited, a multinational automobile manufacturing corporation, based?",
+            "What kind of corporation is Mahindra & Mahindra Limited, based in Mumbai, Maharashtra?",
+            "What type of products does Mahindra & Mahindra Limited manufacture, including utility vehicles, tractors, and automotive components?",
+            "Which Indian state is home to the headquarters of Mahindra & Mahindra Limited?",
+            "Which city in Maharashtra serves as the headquarters for Mahindra & Mahindra Limited?"
+        ]
+    },
+    {
+        "claim_id": 15,
+        "claim_ref": "SNVI, formerly the National Society of Mechanical Construction, is an Algerian company that has produced trucks and buses since 1967.",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "Tata Motors is an Indian multinational automotive manufacturing company that has been producing commercial and passenger vehicles since 1945.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'SNVI' corresponding to target location 'India' is 'Tata Motors' under the category 'Automobile Manufacturer'. The choice of target entity is reasonable because (a) Both SNVI and Tata Motors are established companies with rich histories in vehicle manufacturing, producing trucks and buses that serve various industries and transportation needs, (b) They contribute significantly to their respective countries' economies and industrial sectors, making them important entities within their regions.",
+        "claim_target_correct": "Tata Motors is an Indian multinational automotive manufacturing company that has been producing commercial and passenger vehicles since 1945.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "In which country is Tata Motors, a multinational automotive manufacturing company, headquartered?",
+            "What is the focus of Tata Motors' production line, comprising both commercial and passenger vehicles in India?",
+            "What kind of company is Tata Motors, based in India, that has been manufacturing both commercial and passenger vehicles since 1945?",
+            "When did Tata Motors start producing commercial and passenger vehicles in India?",
+            "Which industry does Tata Motors belong to, operating in the Indian market since 1945?"
+        ]
+    },
+    {
+        "claim_id": 16,
+        "claim_ref": "Tesla, Inc. is an American multinational automotive and clean energy company headquartered in Austin, Texas, which designs, manufactures and sells electric vehicles, stationary battery energy storage devices from home to grid-scale, solar panels and solar shingles, and related products and services.",
+        "location": "Tamil Nadu",
+        "model": "mixtral8x7b",
+        "claim_target": "Ashok Leyland is an Indian multinational automotive company headquartered in Chennai, Tamil Nadu, which designs, manufactures, and sells commercial vehicles, buses, trucks, and related components.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Tesla, Inc.' corresponding to target location 'Tamil Nadu' is 'Ashok Leyland' under the category 'Automotive Company'. The choice of target entity is reasonable because (a) Both companies are prominent players in their respective countries and industries, with Tesla focusing on electric vehicles and clean energy, while Ashok Leyland specializes in commercial vehicles and buses, (b) Headquartered in Tamil Nadu, Ashok Leyland contributes significantly to the region's automotive industry as a major employer and exporter of vehicles, thus aligning with the target location.",
+        "claim_target_correct": "Ashok Leyland is an Indian multinational automotive company headquartered in Chennai, Tamil Nadu, which designs, manufactures, and sells commercial vehicles, buses, trucks, and related components.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "In which city does Ashok Leyland have its headquarters, contributing significantly to the automotive industry in Tamil Nadu?",
+            "What are some of the products manufactured by Ashok Leyland, a prominent automotive company headquartered in Chennai, Tamil Nadu?",
+            "What kind of company is Ashok Leyland, headquartered in Chennai, Tamil Nadu, that deals with the design, manufacturing, and sale of commercial vehicles?",
+            "Which Indian state is Ashok Leyland based in, where it conducts its operations related to designing, manufacturing, and selling commercial vehicles?"
+        ]
+    },
+    {
+        "claim_id": 17,
+        "claim_ref": "Dongfeng Motor Corporation Ltd. develops and markets vehicles under its own branding. In addition to commercial and consumer vehicles, it also manufactures parts, collaborates with foreign companies, and serves a global market.",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "Tata Motors Limited is an Indian multinational automotive manufacturing company that develops, markets, and sells vehicles under its own branding. The company's portfolio includes commercial and passenger vehicles, as well as parts manufacturing and collaborations with global partners, serving customers in various international markets.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Dongfeng Motor Corporation Ltd.' corresponding to target location 'India' is 'Tata Motors Limited' under the category 'Automobile Manufacturing'. The choice of target entity is reasonable because (a) Both companies are engaged in the development, marketing, and sales of vehicles and related products under their own branding, (b) Tata Motors contributes to the Indian automotive industry as Dongfeng does to China's, representing their respective countries on a global scale.",
+        "claim_target_correct": "Tata Motors Limited is an Indian multinational automotive manufacturing company that develops, markets, and sells vehicles under its own branding. The company's portfolio includes commercial and passenger vehicles, as well as parts manufacturing and collaborations with global partners, serving customers in various international markets.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "In addition to vehicle manufacturing, what other aspects of automotive production does Tata Motors Limited handle in India and internationally?",
+            "Name some global partners with which Tata Motors Limited collaborates as a part of its operations in various international markets.",
+            "What kind of company is Tata Motors Limited, headquartered in India, that deals with automotive manufacturing?",
+            "What types of vehicles are included in the portfolio of Tata Motors Limited, an Indian multinational company?",
+            "Which branding does Tata Motors Limited use for its developed and marketed vehicles in India and other international markets?"
+        ]
+    },
+    {
+        "claim_id": 18,
+        "claim_ref": "The Victoria Cross is the highest and most prestigious decoration of the British honours system. It is awarded for valour \"in the presence of the enemy\" to members of the British Armed Forces and may be awarded posthumously.",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "The Param Vir Chakra is the highest military decoration in India, awarded for the most conspicuous bravery or some daring or pre-eminent act of valour or self-sacrifice in the presence of the enemy during war.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Victoria Cross' corresponding to target location 'India' is 'Param Vir Chakra' under the category 'Military Decorations'. The choice of target entity is reasonable because (a) both are the highest military decorations in their respective countries, recognizing extraordinary acts of valor and self-sacrifice in the face of the enemy during wartime, and (b) they share similar criteria for awarding these prestigious honors, focusing on conspicuous bravery, daring actions, and pre-eminent acts of valour.",
+        "claim_target_correct": "The Param Vir Chakra is the highest military decoration in India, awarded for the most conspicuous bravery or some daring or pre-eminent act of valour or self-sacrifice in the presence of the enemy during war.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "For which specific acts of valor or self-sacrifice is the Param Vir Chakra awarded in India?",
+            "What is the name of the highest military decoration in India?",
+            "What is the significance of the Param Vir Chakra as the most prestigious military honor in India?",
+            "When is the Param Vir Chakra, the highest military decoration in India, presented?",
+            "Which type of bravery does the Param Vir Chakra recognize in India?"
+        ]
+    },
+    {
+        "claim_id": 19,
+        "claim_ref": "The Bronze Medallion, signifying a qualified lifesaver, has been a lifesaving standard award of The Royal Life Saving Society - Australia and Surf Life Saving Australia for over one hundred years. It was developed in England in 1892.",
+        "location": "Maharashtra",
+        "model": "mixtral8x7b",
+        "claim_target": "The ShiromaniLifesaving Award, signifying a qualified lifesaver, has been a lifesaving standard award of The Royal Life Saving Society - India and Lifesaving Federation of India for over half a century. It was developed in Britain in 1960.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Bronze Medallion' corresponding to target location 'Maharashtra' is 'ShiromaniLifesaving Award' under the category 'Awards'. The choice of target entity is reasonable because (a) Both awards represent a standard of qualification for lifesavers in their respective organizations, (b) Both have historical significance within their countries and were developed in Britain.",
+        "claim_target_correct": "The ShiromaniLifesaving Award, signifying a qualified lifesaver, has been a lifesaving standard award of The Royal Life Saving Society - India and Lifesaving Federation of India for over half a century. It was developed in Britain in 1960.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "For how long has the ShiromaniLifesaving Award been recognized as a lifesaving standard award in India and by the Lifesaving Federation of India, located in Maharashtra?",
+            "In which country was the ShiromaniLifesaving Award, a lifesaving standard award, developed?",
+            "What is the significance of the ShiromaniLifesaving Award in Maharashtra and India?",
+            "When was the ShiromaniLifesaving Award developed in Britain, before being recognized in Maharashtra and India for over half a century?",
+            "Who confers the ShiromaniLifesaving Award in Maharashtra as a lifesaving standard award in collaboration with the Lifesaving Federation of India?"
+        ]
+    },
+    {
+        "claim_id": 20,
+        "claim_ref": "The Fritz Walter Medal is a series of annual awards given by the German Football Association to youth footballers in Germany. First awarded in 2005, it is named in honour of Fritz Walter, captain of West Germany's 1954 FIFA World Cup-winning team.",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "The AIFF Player of the Year Award is an annual honor bestowed upon the most outstanding footballer in India, decided by the All India Football Federation (AIFF).",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'The Fritz Walter Medal' corresponding to target location 'India' is 'The AIFF Player of the Year Award' under the category 'Sports Awards'. The choice of target entity is reasonable because (a) Both awards recognize exceptional performances in football, albeit in different geographical regions - the Fritz Walter Medal in Germany and the AIFF Player of the Year Award in India, (b) They share a similar purpose in celebrating individual achievements within their respective domestic football leagues and promoting the growth of the sport.",
+        "claim_target_correct": "The AIFF Player of the Year Award is an annual honor bestowed upon the most outstanding footballer in India, decided by the All India Football Federation (AIFF).",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "In which country is the AIFF Player of the Year Award presented?",
+            "What annual recognition is given to an exceptional footballer in India, based on the AIFF's decision?",
+            "What type of award is given annually to the most outstanding footballer in India, based on the decision made by the All India Football Federation (AIFF)?",
+            "Which federation determines the winner of the AIFF Player of the Year Award in India?",
+            "Who decides the recipient of the AIFF Player of the Year Award in India?"
+        ]
+    },
+    {
+        "claim_id": 21,
+        "claim_ref": "The Akutagawa Prize is a Japanese literary award presented biannually. Because of its prestige and the considerable attention, the winner receives from the media, it is along with the Naoki Prize, one of Japan's most sought after literary prizes.",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "The Jnanpith Award is an Indian literary award presented annually. Due to its prestige and the significant recognition that the winner receives from both the media and the literary community, it is one of India's most coveted and respected literary accolades.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Akutagawa Prize' corresponding to target location 'India' is 'Jnanpith Award' under the category 'Literary Awards'. The choice of target entity is reasonable because (a) Both awards have high prestige in their respective countries, Japan and India, (b) They are both considered significant milestones for writers in their careers and serve as a mark of recognition for their literary achievements.",
+        "claim_target_correct": "The Jnanpith Award is an Indian literary award presented annually. Due to its prestige and the significant recognition that the winner receives from both the media and the literary community, it is one of India's most coveted and respected literary accolades.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "How often is the Jnanpith Award presented in India?",
+            "What is the name of the prestigious Indian literary award presented annually that receives significant recognition from both the media and the literary community?",
+            "What is the nature of the Jnanpith Award, an Indian yearly literary prize, that makes it highly esteemed and desired within the country's literary scene?",
+            "Which country confers the Jnanpith Award, an annual literary accolade considered one of India's most coveted and respected?",
+            "Who receives recognition from the media and the literary community when awarded with the Jnanpith Award in India?"
+        ]
+    },
+    {
+        "claim_id": 22,
+        "claim_ref": "The Presidential Citizens Medal is an award bestowed by the President of the United States. It is the second-highest civilian award in the United States and is second only to the Presidential Medal of Freedom.",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "The Padma Vibhushan is an award bestowed by the President of India and is the second-highest civilian honor in the country, following only the Bharat Ratna.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Presidential Citizens Medal' corresponding to target location 'India' is 'Padma Vibhushan' under the category 'Civilian Awards'. The choice of target entity is reasonable because (a) Both awards are among the highest civilian honors in their respective countries, symbolizing esteemed recognition for significant contributions and achievements, (b) They share a similar purpose and status, with only one higher-ranked national award existing in each country.",
+        "claim_target_correct": "The Padma Vibhushan is an award bestowed by the President of India and is the second-highest civilian honor in the country, following only the Bharat Ratna.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "In what year was the Padma Vibhushan first introduced as a civilian award in India?",
+            "What is the level of recognition conferred upon an individual who receives the Padma Vibhushan in India?",
+            "What is the name of the second-highest civilian award given in India, preceded only by the Bharat Ratna?",
+            "Which civilian honor ranks higher than the Padma Vibhushan in India's hierarchy of awards?",
+            "Who presents the Padma Vibhushan award in India?"
+        ]
+    },
+    {
+        "claim_id": 23,
+        "claim_ref": "The Nishan-e-Pakistan is the second grade of the Order of Pakistan, the highest civilian award of the Islamic Republic of Pakistan. It is awarded to \"those who have rendered services of highest distinction\" to the national interest of Pakistan. Nishan is awarded to government officials and civilians, including citizens of Pakistan and foreign nationals. In the Pakistan honours system, Nishan-e-Pakistan is equivalent to Nishan-e-Haider, the highest military gallantry award.",
+        "location": "Tamil Nadu",
+        "model": "mixtral8x7b",
+        "claim_target": "The Padma Vibhushan is the second-highest civilian award of the Republic of India, conferred upon individuals for exceptional and distinguished service in any field. It is awarded to both Indians and foreigners who have made significant contributions to the country's progress and development. In the Indian honours system, the Padma Vibhushan is equivalent to the Param Vir Chakra, the highest military decoration.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Nishan-e-Pakistan' corresponding to target location 'Tamil Nadu' is 'Padma Vibhushan' under the category 'Civilian Awards'. The choice of target entity is reasonable because (a) Both awards recognize exceptional and distinguished service in their respective countries, with Padma Vibhushan being an Indian civilian award while Nishan-e-Pakistan is a Pakistani civilian award, (b) Both awards are given to Indian citizens as well as foreign nationals, thus emphasizing their international significance, and (c) The comparison between the two awards highlights their importance in recognizing outstanding contributions to their respective nations' progress.",
+        "claim_target_correct": "The Padma Vibhushan is the second-highest civilian award of the Republic of India, conferred upon individuals for exceptional and distinguished service in any field. It is awarded to both Indians and foreigners who have made significant contributions to the country's progress and development. In the Indian honours system, the Padma Vibhushan is equivalent to the Param Vir Chakra, the highest military decoration.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "For which type of contributions and services is the Padma Vibhushan awarded in the Republic of India?",
+            "In what country is the Padma Vibhushan, the second-highest civilian award, conferred?",
+            "To whom is the Padma Vibhushan granted, including both Indians and foreigners?",
+            "What level of recognition does the Padma Vibhushan hold in India's honors system, equivalent to the Param Vir Chakra?",
+            "Which Indian state can claim connection to this prestigious civilian award, the Padma Vibhushan?"
+        ]
+    },
+    {
+        "claim_id": 24,
+        "claim_ref": "The National Book Awards are a set of annual U.S. literary awards. At the final National Book Awards Ceremony every November, the National Book Foundation presents the National Book Awards and two lifetime achievement awards to authors.",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "The Indian Literature Golden Jubilee Celebration Awards are a set of annual literary awards in India, presented at a ceremony every October by the Sahitya Akademi (India's National Academy of Letters) to recognize the best works in Indian literature across various languages and genres.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'National Book Awards' corresponding to target location 'India' is 'The Indian Literature Golden Jubilee Celebration Awards' under the category 'Literary Awards'. The choice of target entity is reasonable because (a) Both awards recognize and celebrate literary achievements, honoring authors for their contributions to literature in their respective countries, (b) They are annual events that showcase the best works of literature across various genres, contributing to the promotion of literacy and cultural heritage.",
+        "claim_target_correct": "The Indian Literature Golden Jubilee Celebration Awards are a set of annual literary awards in India, presented at a ceremony every October by the Sahitya Akademi (India's National Academy of Letters) to recognize the best works in Indian literature across various languages and genres.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "In which country are these prestigious annual literary awards, the Indian Literature Golden Jubilee Celebration Awards, presented?",
+            "What are the Indian Literature Golden Jubilee Celebration Awards?",
+            "What types of literary works from various languages and genres are recognized by the Indian Literature Golden Jubilee Celebration Awards?",
+            "When is the ceremony for the Indian Literature Golden Jubilee Celebration Awards held each year in India?",
+            "Which organization in India presents the Indian Literature Golden Jubilee Celebration Awards annually?"
+        ]
+    },
+    {
+        "claim_id": 25,
+        "claim_ref": "The National Medal of Science is an honor bestowed by the President of the United States to individuals in science and engineering who have made important contributions to the advancement of knowledge in the fields of behavioral and social sciences, biology, chemistry, engineering, mathematics, and physics.",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "The Shanti Swarup Bhatnagar Prize is an honor bestowed by the Government of India to recognize outstanding contributions in the fields of science and technology, awarded to exceptional Indian scientists and researchers.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'The National Medal of Science' corresponding to target location 'India' is 'The Shanti Swarup Bhatnagar Prize' under the category 'Scientific Awards'. The choice of target entity is reasonable because (a) both awards recognize and honor significant contributions in the field of science and technology, (b) they vary in their specific focus and scope, with the National Medal of Science covering a broader range of fields while the Shanti Swarup Bhatnagar Prize emphasizes Indian scientists' work. This highlights the importance of acknowledging local achievements within the global scientific community.",
+        "claim_target_correct": "The Shanti Swarup Bhatnagar Prize is an honor bestowed by the Government of India to recognize outstanding contributions in the fields of science and technology, awarded to exceptional Indian scientists and researchers.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "In which fields are Indian scientists and researchers recognized through the Shanti Swarup Bhatnagar Prize, awarded by the Government of India?",
+            "What is the significance of the Shanti Swarup Bhatnagar Prize as an honor for Indian scientists and researchers?",
+            "What type of recognition is the Shanti Swarup Bhatnagar Prize, and what field does it honor in India?",
+            "Which country's government presents the Shanti Swarup Bhatnagar Prize for outstanding contributions in science and technology?",
+            "Who awards the Shanti Swarup Bhatnagar Prize to exceptional Indian scientists and researchers?"
+        ]
+    },
+    {
+        "claim_id": 26,
+        "claim_ref": "The Fashion Awards, known as the British Fashion Awards until 2016, is an annual ceremony established in the United Kingdom in 1989 to showcase both British and international individuals and businesses who have made the most outstanding contributions to the fashion industry during the year.",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "The FDCI Awards, previously known as the India Fashion Awards until 2018, is an annual ceremony established in India in 1998 to celebrate both Indian and international individuals and businesses that have made significant contributions to the fashion industry during the year.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'The Fashion Awards' corresponding to target location 'India' is 'The FDCI Awards' under the category 'Fashion Recognition'. The choice of target entity is reasonable because (a) Both awards ceremonies aim to recognize and celebrate individuals and businesses that have made significant contributions to the fashion industry, whether they are British/Indian or international, (b) By aligning with India as the target location, the target sentence highlights a local equivalent that showcases the country's growing importance in the global fashion landscape.",
+        "claim_target_correct": "The FDCI Awards, previously known as the India Fashion Awards until 2018, is an annual ceremony established in India in 1998 to celebrate both Indian and international individuals and businesses that have made significant contributions to the fashion industry during the year.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "In which country does the FDCI Awards ceremony take place annually to recognize achievements in the fashion industry?",
+            "What is the name of the annual ceremony in India, established in 1998, that honors significant contributors to the fashion industry?",
+            "What was the previous name of the FDCI Awards until 2018 in India?",
+            "When were the India Fashion Awards renamed as the FDCI Awards in India?",
+            "Which types of individuals and businesses are celebrated at the FDCI Awards in India?"
+        ]
+    },
+    {
+        "claim_id": 27,
+        "claim_ref": "The Order of Australia is an honour that recognises Australian citizens and other persons for outstanding achievement and service. It was established on 14 February 1975 by Elizabeth II, Queen of Australia, on the advice of the Australian Government. Before the establishment of the order, Australian citizens received British honours.",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "The Padma Awards are an honor that recognizes notable contributions made by Indian citizens in various fields, including art, education, industry, literature, sports, medicine, social work, public affairs, and civil service. These awards were established by the Government of India in 1954.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'The Order of Australia' corresponding to target location 'India' is 'The Padma Awards' under the category 'Honors and Awards'. The choice of target entity is reasonable because (a) both awards recognize outstanding achievements and services in their respective countries, (b) they are established and bestowed by the respective governments, and (c) the target sentence aligns with India as it highlights a significant national recognition system within the country.",
+        "claim_target_correct": "The Padma Awards are an honor that recognizes notable contributions made by Indian citizens in various fields, including art, education, industry, literature, sports, medicine, social work, public affairs, and civil service. These awards were established by the Government of India in 1954.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "In which fields can Indian citizens receive recognition through the Padma Awards based in India?",
+            "What is the name of the honor that recognizes distinguished contributions made by Indian citizens in various fields within India?",
+            "What is the significance of the Padma Awards as a form of national recognition for notable contributions made within India?",
+            "Which governmental body established the Padma Awards in India in 1954?",
+            "Who are eligible to be nominated for the Padma Awards in India?"
+        ]
+    },
+    {
+        "claim_id": 28,
+        "claim_ref": "Awarded during the Australian Cricket Awards, the Allan Border Medal is considered to be the most prestigious individual prize in Australian men's cricket.",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "Awarded during the Board of Control for Cricket in India (BCCI) Annual Awards, the Polly Umrigar Award is considered to be the most prestigious individual prize in Indian men's cricket.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Allan Border Medal' corresponding to target location 'India' is 'Polly Umrigar Award' under the category 'Cricket Awards'. The choice of target entity is reasonable because (a) Both awards are considered the most prestigious individual prizes in their respective countries for men's cricket, and (b) They share a similar purpose of recognizing and honoring outstanding cricketing achievements by players within their domestic cricket scenes.",
+        "claim_target_correct": "Awarded during the Board of Control for Cricket in India (BCCI) Annual Awards, the Polly Umrigar Award is considered to be the most prestigious individual prize in Indian men's cricket.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "In which country is the Polly Umrigar Award, the highest individual honor in men's cricket, presented?",
+            "What is the name of the most prestigious individual award given in Indian men's cricket during the BCCI Annual Awards?",
+            "What type of recognition does the Polly Umrigar Award represent in the context of Indian men's cricket?",
+            "Which organization conducts the annual awards ceremony where the Polly Umrigar Award is given to outstanding cricketers in India?",
+            "Who is recognized through the Polly Umrigar Award in Indian cricket?"
+        ]
+    },
+    {
+        "claim_id": 29,
+        "claim_ref": "The National Youth Awards are conferred annually by the Ministry of Youth and Sports of the Government of Bangladesh. These awards are conferred every year on the eve of National Youth Day on 1 November. It is awarded to high-achieving men and women from all over the country.",
+        "location": "Pune",
+        "model": "mixtral8x7b",
+        "claim_target": "The National Children's Awards are conferred annually by the Ministry of Women and Child Development of the Government of India, presented every year on Children's Day, celebrated on 14 November. This award recognizes high-achieving boys and girls from all over the country, promoting their achievements and inspiring other children to excel in various fields.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'National Youth Awards' corresponding to target location 'Pune' is 'National Children's Awards' under the category 'Awards for Achievements'. The choice of target entity is reasonable because (a) Both awards are annual recognitions conferred by governments, aiming to celebrate and encourage the achievements of young individuals in their respective countries, (b) Pune, as a major city in India, falls within the jurisdiction of the Government of India, making the National Children's Awards more relevant for this location than other youth-related awards from different countries or regions.",
+        "claim_target_correct": "The National Children's Awards are conferred annually by the Ministry of Women and Child Development of the Government of India, presented every year on Children's Day, celebrated on 14 November. This award recognizes high-achieving boys and girls from all over the country, promoting their achievements and inspiring other children to excel in various fields.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "In which city are the National Children's Awards presented annually by the Ministry of Women and Child Development of the Government of India?",
+            "What is the name of the event during which high-achieving boys and girls from all over India are recognized?",
+            "What is the purpose of the National Children's Awards in recognizing high-achieving children from various fields in India?",
+            "When is Children's Day celebrated in India, on which the National Children's Awards are presented every year?",
+            "Which government department confers the National Children's Awards annually in Pune, India?"
+        ]
+    },
+    {
+        "claim_id": 30,
+        "claim_ref": "JPMorgan Chase Bank, N.A., doing business as Chase, is an American national bank headquartered in New York City that constitutes the consumer and commercial banking subsidiary of the U.S. multinational banking and financial services holding company, JPMorgan Chase.",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "The State Bank of India (SBI) is an Indian multinational public sector bank headquartered in Mumbai, Maharashtra, which serves as the country's largest banking and financial services company.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'JPMorgan Chase Bank, N.A.' corresponding to target location 'India' is 'State Bank of India (SBI)' under the category 'Banks'. The choice of target entity is reasonable because (a) Both banks function as major financial institutions in their respective countries, providing a wide range of banking and financial services to individuals and businesses, (b) SBI, being a public sector bank, represents the Indian government's significant presence in the country's banking sector, just like JPMorgan Chase Bank's role as a prominent private bank in the United States.",
+        "claim_target_correct": "The State Bank of India (SBI) is an Indian multinational public sector bank headquartered in Mumbai, Maharashtra, which serves as the country's largest banking and financial services company.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "In which city is the headquarters of the State Bank of India, India's leading banking and financial services company?",
+            "What is the name of the largest banking and financial services company in India, headquartered in Mumbai, Maharashtra?",
+            "What type of institution is the State Bank of India, given that it is described as a public sector bank in India?",
+            "Which Indian multinational bank based in Mumbai has the status of being the country's largest?",
+            "Which country does the State Bank of India represent as its primary base of operations?"
+        ]
+    },
+    {
+        "claim_id": 31,
+        "claim_ref": "Saudi National Bank (SNB), also known as SNB AlAhli, is the largest commercial bank in Saudi Arabia. In April 2021, National Commercial Bank merged with Samba Financial Group under the name of Saudi National Bank.",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "State Bank of India (SBI) is the largest commercial bank in India, with a significant presence throughout the country.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Saudi National Bank' corresponding to target location 'India' is 'State Bank of India' under the category 'Banks'. The choice of target entity is reasonable because (a) Both are the largest commercial banks in their respective countries, Saudi Arabia and India, (b) Both entities have a significant impact on the national economies, providing financial services to millions of customers and businesses, and (c) The reference to SBI as a nationwide institution aligns well with the Indian context, making it an appropriate target entity.",
+        "claim_target_correct": "State Bank of India (SBI) is the largest commercial bank in India, with a significant presence throughout the country.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "In which country does State Bank of India (SBI) have a substantial presence, making it the leading commercial bank?",
+            "What is the name of the largest commercial bank in India, having a significant presence across the country?",
+            "What is the role of State Bank of India (SBI) in shaping the Indian banking sector as the largest bank in the country?",
+            "Which Indian bank, SBI, holds the status of being the country's largest bank in terms of assets and branches?"
+        ]
+    },
+    {
+        "claim_id": 32,
+        "claim_ref": "BNP Paribas is a multinational universal bank and financial services holding company headquartered in Paris, France. It was founded in 2000 from the merger of two of France's foremost financial institutions, Banque Nationale de Paris and Paribas.",
+        "location": "Mumbai",
+        "model": "mixtral8x7b",
+        "claim_target": "The State Bank of India (SBI) is a multinational public sector bank and financial services company headquartered in Mumbai, India. It was founded in 1955 from the merger of five banks, namely the Imperial Bank of India, the State Bank of Hyderabad, the State Bank of Mysore, the State Bank of Patiala, and the State Bank of Travancore.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'BNP Paribas' corresponding to target location 'Mumbai' is 'State Bank of India (SBI)' under the category 'Banks'. The choice of target entity is reasonable because (a) Both entities are prominent financial institutions, serving as leading banks in their respective countries, (b) Both BNP Paribas and SBI have a rich history, having evolved from mergers and acquisitions that established their positions as major players in the global banking industry.",
+        "claim_target_correct": "The State Bank of India (SBI) is a multinational public sector bank and financial services company headquartered in Mumbai, India. It was founded in 1955 from the merger of five banks, namely the Imperial Bank of India, the State Bank of Hyderabad, the State Bank of Mysore, the State Bank of Patiala, and the State Bank of Travancore.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "How did the establishment of the State Bank of India (SBI) impact the banking landscape in India, considering its origins in Mumbai and expansion across the nation?",
+            "In which Indian city is the headquarters of the multinational public sector bank, the State Bank of India (SBI), located?",
+            "What type of financial institution is the State Bank of India (SBI), being a multinational public sector bank and financial services company?",
+            "When was the State Bank of India (SBI) established following the merger of five banks in Mumbai, India?",
+            "Which banks were merged to form the State Bank of India (SBI) in 1955, including the Imperial Bank of India and the State Bank of Mumbai (formerly known as the State Bank of Hyderabad)?"
+        ]
+    },
+    {
+        "claim_id": 33,
+        "claim_ref": "Barclays plc is a British multinational universal bank, headquartered in London, England. Barclays operates as two divisions, Barclays UK and Barclays International, supported by a service company, Barclays Execution Services.",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "The State Bank of India (SBI) is an Indian multinational public sector bank, headquartered in Mumbai, Maharashtra. SBI operates through various branches and divisions across India and abroad, providing a wide range of banking and financial services to individuals, businesses, and governments.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Barclays plc' corresponding to target location 'India' is 'The State Bank of India (SBI)' under the category 'Banks'. The choice of target entity is reasonable because (a) Both are prominent financial institutions with significant operations and a wide network of branches, serving millions of customers in their respective countries, (b) SBI, being India's largest bank, offers various banking services similar to those provided by Barclays plc, making it a fitting counterpart for the Indian context.",
+        "claim_target_correct": "The State Bank of India (SBI) is an Indian multinational public sector bank, headquartered in Mumbai, Maharashtra. SBI operates through various branches and divisions across India and abroad, providing a wide range of banking and financial services to individuals, businesses, and governments.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "How many branches and divisions does SBI operate through across India and abroad?",
+            "In which city is the headquarters of the State Bank of India located in Maharashtra?",
+            "What is the name of the Indian multinational public sector bank headquartered in Mumbai, Maharashtra?",
+            "What kind of financial institution is the State Bank of India in India?",
+            "Which bank provides a wide range of banking and financial services to individuals, businesses, and governments in India and abroad?"
+        ]
+    },
+    {
+        "claim_id": 34,
+        "claim_ref": "DBS Bank Limited, often known as DBS, is a Singaporean multinational banking and financial services corporation headquartered at the Marina Bay Financial Centre in the Marina Bay district of Singapore.",
+        "location": "Karnataka",
+        "model": "mixtral8x7b",
+        "claim_target": "State Bank of India (SBI) is an Indian multinational public sector banking and financial services company headquartered in Bangalore, Karnataka.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'DBS Bank Limited' corresponding to target location 'Karnataka' is 'State Bank of India (SBI)' under the category 'Banks'. The choice of target entity is reasonable because (a) Both are prominent financial institutions with headquarters in their respective regions, contributing to the reputation of Bangalore as a hub for technology and finance in India, (b) DBS Bank Limited and SBI are both influential players in the banking industry, offering a wide range of services and products to customers, thus making it an appropriate comparison between the two.",
+        "claim_target_correct": "State Bank of India (SBI) is an Indian multinational public sector banking and financial services company headquartered in Bangalore, Karnataka.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "How can someone recognize the significance of State Bank of India (SBI) as a multinational public sector banking and financial services company in Karnataka and India?",
+            "In which Indian city is the headquarters of State Bank of India (SBI) located?",
+            "What services does State Bank of India (SBI) provide in Karnataka and across India?",
+            "What type of organization is State Bank of India (SBI) based in Karnataka?",
+            "Which industry is State Bank of India (SBI) a part of, headquartered in Bangalore, Karnataka?"
+        ]
+    },
+    {
+        "claim_id": 35,
+        "claim_ref": "The Bank of America Corporation is an American multinational investment bank and financial services holding company headquartered at the Bank of America Corporate Center in Charlotte, North Carolina, with investment banking and auxiliary headquarters in Manhattan.",
+        "location": "Kerala",
+        "model": "mixtral8x7b",
+        "claim_target": "The Federal Bank Limited is an Indian private sector bank headquartered in Aluva, Kerala, offering a wide range of financial services to various customer segments.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Bank of America Corporation' corresponding to target location 'Kerala' is 'The Federal Bank Limited' under the category 'Banks'. The choice of target entity is reasonable because (a) Both banks are significant financial institutions in their respective regions, with The Federal Bank Limited being one of India's leading private sector banks, and Bank of America Corporation being a major player in the American banking industry, (b) Both entities have headquarters located within their respective states, contributing to the economic development of their localities.",
+        "claim_target_correct": "The Federal Bank Limited is an Indian private sector bank headquartered in Aluva, Kerala, offering a wide range of financial services to various customer segments.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "In which city is the headquarters of The Federal Bank Limited located in Kerala?",
+            "What is the name of the Indian private sector bank headquartered in Aluva, Kerala?",
+            "What type of bank is The Federal Bank Limited in Kerala?",
+            "Where in India can you find the headquarters of The Federal Bank Limited?",
+            "Which financial services does The Federal Bank Limited offer to its customers in Kerala?"
+        ]
+    },
+    {
+        "claim_id": 36,
+        "claim_ref": "Emirates NBD Bank PJSC is Dubai's government-owned bank and is one of the largest banking groups in the Middle East in terms of assets.",
+        "location": "Tamil Nadu",
+        "model": "mixtral8x7b",
+        "claim_target": "The City Union Bank Limited is a prominent scheduled commercial bank based in Tamil Nadu, India, with a rich history dating back to 1904. It ranks among the oldest private sector banks in the country and has made significant contributions to the growth of South India's banking and financial sectors.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Emirates NBD Bank PJSC' corresponding to target location 'Tamil Nadu' is 'The City Union Bank Limited' under the category 'Banks'. The choice of target entity is reasonable because (a) Both entities are significant players within their respective banking sectors, with Emirates NBD being a major bank in the Middle East and City Union Bank being a long-standing and respected institution in India, (b) This comparison highlights the rich history and significance of Tamil Nadu's financial sector, parallel to the role of Emirates NBD in Dubai and the Middle East.",
+        "claim_target_correct": "The City Union Bank Limited is a prominent scheduled commercial bank based in Tamil Nadu, India, with a rich history dating back to 1904. It ranks among the oldest private sector banks in the country and has made significant contributions to the growth of South India's banking and financial sectors.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "In which Indian state is The City Union Bank Limited based?",
+            "In which country does The City Union Bank Limited operate, having a rich history dating back to 1904?",
+            "Since when has The City Union Bank Limited been operational, making it one of the oldest private sector banks in the country?",
+            "What are some of the significant contributions made by The City Union Bank Limited to South India's banking and financial sectors?",
+            "What is the name of the scheduled commercial bank headquartered in Tamil Nadu, which ranks among the oldest private sector banks in India?"
+        ]
+    },
+    {
+        "claim_id": 37,
+        "claim_ref": "Bank Australia is an Australian customer-owned bank based in Collingwood, Victoria. The organisation can trace its origins back to 1957, when the CSIRO Co-operative Credit Society was formed.",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "Bank of Baroda is an Indian public sector bank headquartered in Vadodara, Gujarat. The bank was established in 1908 by the Maharaja of Baroda, Maharaja Sayajirao Gaekwad III.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Bank Australia' corresponding to target location 'India' is 'Bank of Baroda' under the category 'Banks'. The choice of target entity is reasonable because (a) Both entities are banks, which makes them comparable in terms of their functions and services, (b) Bank of Baroda, like Bank Australia, has a rich history dating back to 1908, making it an established institution with a long-standing reputation. The reference to its origins being initiated by the Maharaja of Baroda further highlights its historical significance within India's context.",
+        "claim_target_correct": "Bank of Baroda is an Indian public sector bank headquartered in Vadodara, Gujarat. The bank was established in 1908 by the Maharaja of Baroda, Maharaja Sayajirao Gaekwad III.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "In which Indian city is the headquarters of Bank of Baroda, the Indian public sector bank, located?",
+            "What type of institution is Bank of Baroda, the Indian public sector bank, headquartered in Vadodara, Gujarat?",
+            "Which Indian state is associated with the founding of Bank of Baroda, the Indian public sector bank?",
+            "Who established Bank of Baroda, the Indian public sector bank, in 1908?"
+        ]
+    },
+    {
+        "claim_id": 38,
+        "claim_ref": "Wells Fargo & Company is an American multinational financial services company with a significant global presence. The company operates in 35 countries and serves over 70 million customers worldwide.",
+        "location": "West Bengal",
+        "model": "mixtral8x7b",
+        "claim_target": "State Bank of India (SBI) is an Indian multinational public sector banking and financial services company with a significant global presence. The bank operates in 32 countries and serves millions of customers worldwide, including a substantial number of Indian expatriates.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Wells Fargo & Company' corresponding to target location 'West Bengal' is 'State Bank of India (SBI)' under the category 'Financial Institutions'. The choice of target entity is reasonable because (a) Both entities are prominent financial institutions with significant global operations, serving millions of customers worldwide, and (b) SBI being an Indian bank with a strong presence in West Bengal as well as other parts of India aligns well with the target location.",
+        "claim_target_correct": "State Bank of India (SBI) is an Indian multinational public sector banking and financial services company with a significant global presence. The bank operates in 32 countries and serves millions of customers worldwide, including a substantial number of Indian expatriates.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "How many countries does State Bank of India (SBI) have a presence in, offering banking and financial services?",
+            "In which Indian state is the headquarters of State Bank of India (SBI), the multinational public sector banking company, located?",
+            "What is the significance of State Bank of India's (SBI) global presence, servicing millions of customers worldwide, including Indian expatriates in West Bengal?",
+            "Which type of company is State Bank of India (SBI), being a public sector banking and financial services entity based in West Bengal?",
+            "Who are some of the key clientele served by State Bank of India (SBI) globally, including West Bengal?"
+        ]
+    },
+    {
+        "claim_id": 39,
+        "claim_ref": "Soju is a clear and colorless Korean distilled alcoholic beverage. It is usually consumed neat. Its alcohol content varies from about 12.9% to 53% alcohol by volume, although since 2007 low alcohol soju below 20% has become more popular.",
+        "location": "Kolkata",
+        "model": "mixtral8x7b",
+        "claim_target": "Bangla is a strong and spicy fermented rice beer, traditionally consumed in Bengali culture during social gatherings and festivals. Its alcohol content typically ranges from 4% to 7% alcohol by volume.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Soju' corresponding to target location 'Kolkata' is 'Bangla' under the category 'Alcoholic beverages'. The choice of target entity is reasonable because (a) Both are traditional alcoholic beverages, with Soju being a part of Korean culture and Bangla being a part of Bengali culture, (b) They differ in their preparation process \u2013 Soju is distilled while Bangla is fermented \u2013 and consumption methods \u2013 Soju is typically consumed neat while Bangla is enjoyed during social gatherings and festivals. This contrast highlights the diversity of alcoholic beverages across different cultures.",
+        "claim_target_correct": "Bangla is a strong and spicy fermented rice beer, traditionally consumed in Bengali culture during social gatherings and festivals. Its alcohol content typically ranges from 4% to 7% alcohol by volume.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "In what ways is Bangla, the rice beer, incorporated into Bengali social gatherings and festivals in Kolkata?",
+            "What is the name of the fermented rice beer that is a significant part of Bengali culture in Kolkata?",
+            "What is the typical alcohol content range of Bangla, the rice beer consumed during social gatherings and festivals in Kolkata?",
+            "Which type of beverage is Bangla, the traditional drink enjoyed in Kolkata during cultural events?"
+        ]
+    },
+    {
+        "claim_id": 40,
+        "claim_ref": "Whisky or whiskey is a type of liquor made from fermented grain mash. Various grains are used for different varieties, including barley, corn, rye, and wheat. Whisky is typically aged in wooden casks, which are typically made of charred white oak.",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "Indian-made foreign liquor (IMFL), specifically country liquor or malt liquor, is a type of alcoholic beverage produced by fermenting and distilling grains such as rice, maize, jowar, or bajra. These liquors are often aged in wooden casks made from materials like bamboo or oak, contributing to their unique flavors and characteristics.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Whisky or whiskey' corresponding to target location 'India' is 'Indian-made foreign liquor (IMFL), specifically country liquor or malt liquor' under the category 'Alcoholic beverages'. The choice of target entity is reasonable because (a) Both whisky and Indian-made foreign liquors are alcoholic beverages produced by fermenting grains, albeit with different types of grains used in India, and (b) Although aging methods may vary between charred white oak casks for whisky and bamboo or oak for Indian-made foreign liquors, they share a similar process of maturation that enhances their flavors and characteristics.",
+        "claim_target_correct": "Indian-made foreign liquor (IMFL), specifically country liquor or malt liquor, is a type of alcoholic beverage produced by fermenting and distilling grains such as rice, maize, jowar, or bajra. These liquors are often aged in wooden casks made from materials like bamboo or oak, contributing to their unique flavors and characteristics.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "How are IMFLs, like country liquor or malt liquor, aged in India to develop their unique flavors?",
+            "In what way does the aging process in wooden casks contribute to the unique characteristics of Indian-made foreign liquor (IMFL)?",
+            "What materials are used for making the wooden casks in which IMFLs are aged in India?",
+            "What type of alcoholic beverage is Indian-made foreign liquor (IMFL), specifically country liquor or malt liquor, produced in India?",
+            "Which grains are commonly used for fermenting and distilling IMFL in India?"
+        ]
+    },
+    {
+        "claim_id": 41,
+        "claim_ref": "Black tea is a type of tea that is more oxidized than oolong, yellow, white and green teas. Black tea is generally stronger in flavour than other teas.",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "Assam tea is a type of black tea that is grown in the lush Brahmaputra river valley in the Indian state of Assam. It is known for its robust and malty flavor, making it one of the strongest and most popular black teas in the world.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'black tea' corresponding to target location 'India' is 'Assam tea' under the category 'Tea'. The choice of target entity is reasonable because (a) Assam tea is a specific type of black tea that is grown and produced in India, aligning with the requirement for a regional equivalent within the Indian context, (b) Both Assam tea and black tea share similarities in terms of their oxidation levels, as Assam tea is a fully oxidized black tea, contributing to its strong flavor profile, which parallels the robust and malty taste associated with black teas.",
+        "claim_target_correct": "Assam tea is a type of black tea that is grown in the lush Brahmaputra river valley in the Indian state of Assam. It is known for its robust and malty flavor, making it one of the strongest and most popular black teas in the world.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "In which Indian state is the Brahmaputra river valley located, where Assam tea is grown?",
+            "What are some of the flavor characteristics of Assam tea?",
+            "What type of tea is grown in the Brahmaputra river valley in Assam, India?",
+            "Which river flows through the region in India where Assam tea is cultivated?",
+            "Why is Assam tea considered one of the strongest black teas globally?"
+        ]
+    },
+    {
+        "claim_id": 42,
+        "claim_ref": "Champagne is a sparkling wine originated and produced in the Champagne wine region of France under the rules of the appellation, which demand specific vineyard practices, sourcing of grapes exclusively from designated places within it, specific grape-pressing methods and secondary fermentation of the wine in the bottle to cause carbonation.\n",
+        "location": "Arunachal Pradesh",
+        "model": "mixtral8x7b",
+        "claim_target": "Sikiang, also known as Ziro Valley hooch, is a locally produced alcoholic beverage specific to the Arunachal Pradesh state in India. It is made from fermented rice, millet, or other grains, following traditional practices passed down through generations of the Apatani tribe living in the region. The brewing process involves natural yeasts and multiple stages of fermentation, which result in a distinct flavor profile and alcohol content.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Champagne' corresponding to target location 'Arunachal Pradesh' is 'Sikiang, also known as Ziro Valley hooch' under the category 'Local Alcoholic Beverages'. The choice of target entity is reasonable because (a) Both champagne and Sikiang represent traditional alcoholic beverages specific to their respective regions, with unique production methods that contribute to their distinct flavors and characteristics, (b) By highlighting the traditional brewing practices and cultural significance of Ziro Valley hooch in Arunachal Pradesh, the target sentence promotes awareness and appreciation for local customs and heritage, similar to how Champagne represents a renowned regional product",
+        "claim_target_correct": "Sikiang, also known as Ziro Valley hooch, is a locally produced alcoholic beverage specific to the Arunachal Pradesh state in India. It is made from fermented rice, millet, or other grains, following traditional practices passed down through generations of the Apatani tribe living in the region. The brewing process involves natural yeasts and multiple stages of fermentation, which result in a distinct flavor profile and alcohol content.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "How is the alcohol content determined during the brewing process of Sikiang or Ziro Valley hooch?",
+            "In what ways has the consumption of Sikiang or Ziro Valley hooch been a part of Arunachal Pradesh's cultural traditions?",
+            "What ingredients, such as grains, are used in the production of Sikiang or Ziro Valley hooch?",
+            "What is the name of the locally produced alcoholic beverage specific to Arunachal Pradesh state in India?",
+            "Which traditional practices of the Apatani tribe are involved in producing Sikiang or Ziro Valley hooch?"
+        ]
+    },
+    {
+        "claim_id": 43,
+        "claim_ref": "A margarita is a cocktail consisting of tequila, triple sec, and lime juice. Some margarita recipes include simple syrup as well and are often served with salt on the rim of the glass.",
+        "location": "Goa",
+        "model": "mixtral8x7b",
+        "claim_target": "A Feni and lime cocktail, also known as a Goan Fizz, is a local drink in Goa consisting of cashew or coconut feni, lime juice, and sugar or simple syrup. It is often served with a salted rim or masala spices for added flavor.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'margarita' corresponding to target location 'Goa' is 'Feni and lime cocktail (Goan Fizz)' under the category 'Local Drinks'. The choice of target entity is reasonable because (a) Both are cocktails or local drinks that use a primary spirit (tequila for margaritas and feni for Goan Fizz), lime juice, and sweeteners, (b) The Goan Fizz is specific to the Goa region, making it an appropriate target entity for this location.",
+        "claim_target_correct": "A Feni and lime cocktail, also known as a Goan Fizz, is a local drink in Goa consisting of cashew or coconut feni, lime juice, and sugar or simple syrup. It is often served with a salted rim or masala spices for added flavor.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "How is the Feni and lime cocktail typically served in Goa?",
+            "In Goa, what is the common name for a cocktail made with cashew or coconut feni, lime juice, and sugar or simple syrup?",
+            "What are the main ingredients of a Feni and lime cocktail, a local drink in Goa?",
+            "What type of alcoholic beverage is used in the Feni and lime cocktail, which is native to Goa?",
+            "Which Indian state is famous for its local drink, the Feni and lime cocktail?"
+        ]
+    },
+    {
+        "claim_id": 44,
+        "claim_ref": "Vodka is a clear distilled alcoholic beverage. Different varieties originated in Poland, Russia, and Sweden. Vodka is composed mainly of water and ethanol but sometimes with traces of impurities and flavourings.",
+        "location": "Tripura",
+        "model": "mixtral8x7b",
+        "claim_target": "Feni is a clear distilled alcoholic beverage primarily produced in the Indian state of Goa, although it is also consumed in parts of Tripura where it is locally produced. Feni is made from cashew fruits or coconut sap and is composed mainly of water and ethanol but sometimes with traces of impurities and unique local flavors.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Vodka' corresponding to target location 'Tripura' is 'Feni' under the category 'Alcoholic Beverages'. The choice of target entity is reasonable because (a) Both vodka and feni are clear distilled alcoholic beverages with unique origins and flavor profiles, (b) Feni is produced in Goa and also consumed in Tripura, making it a relevant target entity for the region, and (c) The production process of feni using cashew fruits or coconut sap adds to its regional significance and distinctiveness, similar to how vodka has various origins in Poland, Russia, and Sweden.",
+        "claim_target_correct": "Feni is a clear distilled alcoholic beverage primarily produced in the Indian state of Goa, although it is also consumed in parts of Tripura where it is locally produced. Feni is made from cashew fruits or coconut sap and is composed mainly of water and ethanol but sometimes with traces of impurities and unique local flavors.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "Apart from Goa, where in India is Feni also produced and consumed?",
+            "From which fruits or sap is Feni, the alcoholic beverage, typically made in Goa and occasionally in Tripura?",
+            "In which Indian state is Feni, a clear distilled alcoholic beverage, primarily produced?",
+            "What are the main components of Feni, the local alcoholic beverage consumed in Tripura and traditionally made in Goa?",
+            "What unique characteristic sets Feni apart from other distilled alcoholic beverages found in Tripura?"
+        ]
+    },
+    {
+        "claim_id": 45,
+        "claim_ref": "Clear lemonade is a tangy refreshing drink. It is a popular beverage during summer months. It is made from lemon juice, sugar and water, sometimes carbonated, and often served chilled.",
+        "location": "Gujarat",
+        "model": "mixtral8x7b",
+        "claim_target": "Jaljeera is a spicy and tangy refreshing drink, popular in Gujarat, India. It is especially consumed during the summer months. It is made from tamarind, mint leaves, cumin seeds, and other spices, sometimes carbonated, and often served chilled.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'clear lemonade' corresponding to target location 'Gujarat' is 'jaljeera' under the category 'Drinks'. The choice of target entity is reasonable because (a) Both clear lemonade and jaljeera serve as refreshing drinks, particularly during summer months, quenching thirst and offering a tangy flavor profile, (b) While the ingredients differ, both beverages have their unique taste and appeal to people in their respective regions. Jaljeera is a popular drink in Gujarat and other parts of India, characterized by its spicy and tangy flavor, making it a fitting target entity for this location-based comparison.",
+        "claim_target_correct": "Jaljeera is a spicy and tangy refreshing drink, popular in Gujarat, India. It is especially consumed during the summer months. It is made from tamarind, mint leaves, cumin seeds, and other spices, sometimes carbonated, and often served chilled.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "During which season is Jaljeera commonly consumed in Gujarat?",
+            "How is Jaljeera usually served in Gujarat, particularly during the summer months?",
+            "Is Jaljeera a carbonated or non-carbonated drink, as commonly prepared in Gujarat?",
+            "What are some of the main ingredients used in the preparation of Jaljeera in Gujarat?",
+            "What type of drink, characterized by its spicy and tangy flavor, is particularly popular in Gujarat, India?"
+        ]
+    },
+    {
+        "claim_id": 46,
+        "claim_ref": "Chhaang or chhyang is a Nepalese and Tibetan alcoholic beverage also popular in parts of the eastern Himalayas, Yakkha, Limbu, Dura, Newar, Sunuwar, Rai, Gurung, Magar, Sherpa, Tamang and Lepcha communities. Among the Lepcha, it is called Chi. It is also known as jaarh in Nepal.",
+        "location": "Jharkhand",
+        "model": "mixtral8x7b",
+        "claim_target": "Handia is a traditional alcoholic beverage popular in the states of Jharkhand, Bihar, Odisha, and West Bengal, particularly among the Santal, Munda, Ho, and Oraon communities. It is made from fermented rice or millet and is an integral part of various cultural and social events in these regions.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Chhaang or chhyang' corresponding to target location 'Jharkhand' is 'Handia' under the category 'Alcoholic beverages'. The choice of target entity is reasonable because (a) Both Chhaang and Handia are traditional alcoholic beverages, with Handia being specific to Jharkhand and surrounding states, and Chhaang being popular in Nepal and Tibetan regions, (b) Both are significant within their respective communities, often enjoyed during social and cultural gatherings.",
+        "claim_target_correct": "Handia is a traditional alcoholic beverage popular in the states of Jharkhand, Bihar, Odisha, and West Bengal, particularly among the Santal, Munda, Ho, and Oraon communities. It is made from fermented rice or millet and is an integral part of various cultural and social events in these regions.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "How is Handia, the traditional drink of Jharkhand, prepared using fermented rice or millet?",
+            "In which Indian states is Handia, the traditional alcoholic beverage, popular?",
+            "What are the main ingredients used to make Handia, the traditional beverage in Jharkhand?",
+            "What is the cultural significance of Handia among various communities in Jharkhand?",
+            "Which communities in Jharkhand particularly enjoy Handia during cultural and social events?"
+        ]
+    },
+    {
+        "claim_id": 47,
+        "claim_ref": "Harry Potter and the Philosopher's Stone is a fantasy novel written by British author J. K. Rowling. The book was first published in the United Kingdom on 26 June 1997 by Bloomsbury. The novel has been adapted into a film.",
+        "location": "West Bengal",
+        "model": "mixtral8x7b",
+        "claim_target": "Feluda, the sleuth, is a series of detective novels written by renowned Bengali author Satyajit Ray. The first novel in the series, Feluda, was published in Bengali on 13 April 1965 by Ananda Publishers. The series has been adapted into films and television shows in West Bengal.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Harry Potter and the Philosopher\u2019s Stone' corresponding to target location 'West Bengal' is 'Feluda, the sleuth' under the category 'Literature'. The choice of target entity is reasonable because (a) both are popular works of fiction in their respective linguistic regions, with Harry Potter being globally recognized and Feluda being a staple of Bengali literature, (b) both have been adapted into various media formats like films and TV shows, which adds to their popularity and reach.",
+        "claim_target_correct": "Feluda, the sleuth, is a series of detective novels written by renowned Bengali author Satyajit Ray. The first novel in the series, Feluda, was published in Bengali on 13 April 1965 by Ananda Publishers. The series has been adapted into films and television shows in West Bengal.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "In which year was the first novel in the Feluda series, titled Feluda, published in Bengali?",
+            "What is the name of the sleuth character created by Satyajit Ray in his detective novel series based in West Bengal?",
+            "Which Bengali author wrote the Feluda detective novel series, set in West Bengal?",
+            "Which medium has the Feluda series been adapted into, apart from novels, in West Bengal?",
+            "Who is the author of the Feluda detective novel series, which was first published in Bengali on 13 April 1965 by Ananda Publishers?"
+        ]
+    },
+    {
+        "claim_id": 48,
+        "claim_ref": "Norwegian Wood is a 1987 novel by Japanese author Haruki Murakami. The novel is a nostalgic story of loss. It is told from the first-person perspective of Toru Watanabe, who looks back on his days as a college student living in Tokyo.",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "The God of Small Things is a 1997 novel by Indian author Arundhati Roy. The novel is a poignant tale of love and loss, told from the perspective of twin siblings Estha and Rahel who grow up in Kerala, India.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Norwegian Wood' corresponding to target location 'India' is 'The God of Small Things' under the category 'Literature'. The choice of target entity is reasonable because (a) Both novels explore themes of loss and personal growth, showcasing the complexities of human emotions and relationships, (b) Both authors employ a first-person narrative style, providing an intimate look into the minds of their characters as they navigate through their respective stories set in different cultural contexts.",
+        "claim_target_correct": "The God of Small Things is a 1997 novel by Indian author Arundhati Roy. The novel is a poignant tale of love and loss, told from the perspective of twin siblings Estha and Rahel who grow up in Kerala, India.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "In which Indian state does the narrative of The God of Small Things take place?",
+            "In which year was The God of Small Things, a novel by Indian author Arundhati Roy, published?",
+            "What are the names of the twin siblings, Estha and Rahel, around whose perspective the story of The God of Small Things revolves?",
+            "What type of story is The God of Small Things, as described in the target sentence?",
+            "Who is the author of The God of Small Things, set in Kerala, India?"
+        ]
+    },
+    {
+        "claim_id": 49,
+        "claim_ref": "Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge, and the Teachings of Plants is a 2013 nonfiction book by Potawatomi professor Robin Wall Kimmerer, about the role of Indigenous knowledge as an alternative or complementary approach to Western mainstream scientific methodologies.",
+        "location": "Mumbai",
+        "model": "mixtral8x7b",
+        "claim_target": "\"The River of Life in Marshes and Mangroves: Stories of People and the Environment in the Mithmarah\" is a 2018 nonfiction book by Rohan D'Souza, an environmental historian based in Mumbai, about the role of local knowledge and community-led conservation efforts as an alternative or complementary approach to mainstream scientific methodologies in preserving the unique ecosystems of the Mithmarah region.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Braiding Sweetgrass' corresponding to target location 'Mumbai' is 'The River of Life in Marshes and Mangroves' under the category 'Nonfiction Books'. The choice of target entity is reasonable because (a) Both books discuss the role of alternative or complementary approaches to mainstream scientific methodologies, emphasizing the importance of indigenous/local knowledge and community-led efforts in environmental conservation, (b) Rohan D'Souza, as an environmental historian based in Mumbai, provides a local perspective on these issues, aligning with the target location requirement.",
+        "claim_target_correct": "\"The River of Life in Marshes and Mangroves: Stories of People and the Environment in the Mithmarah\" is a 2018 nonfiction book by Rohan D'Souza, an environmental historian based in Mumbai, about the role of local knowledge and community-led conservation efforts as an alternative or complementary approach to mainstream scientific methodologies in preserving the unique ecosystems of the Mithmarah region.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "In which city does Rohan D'Souza, the author of the 2018 nonfiction book, reside?",
+            "In which region does the Mithmarah ecosystem, discussed in the 2018 nonfiction book, exist?",
+            "What is the subject of Rohan D'Souza's 2018 book about the role of local knowledge and community-led conservation efforts in preserving ecosystems?",
+            "Who is the environmental historian based in Mumbai that wrote the 2018 nonfiction book, \"The River of Life in Marshes and Mangroves: Stories of People and the Environment in the Mithmarah\"?",
+            "Who is the environmental historian from Mumbai who published a book in 2018 about alternative approaches to mainstream scientific methodologies for preserving unique ecosystems?"
+        ]
+    }
+]
