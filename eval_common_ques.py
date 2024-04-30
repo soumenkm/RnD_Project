@@ -15,12 +15,14 @@ from utils import (
 )
 import pandas as pd
 
+number = str(2)
 def evaluate_target_sent_by_common_ques(claim, model):
     """model = rarr or mixtral"""
     prompt = rarr_prompts.EVAL_BY_COMMON_QUES_PROMPT
     prompt = prompt.format(target_location=claim["target_location"],
                            target_claim=claim[f"target_claim_{model}"],
                            common_ques=claim["common_ques"])
+    
     response = chatgpt_prompt.chat_gpt(prompt)
     response = response.lower().replace("scores:","").strip()
     response_dict = ast.literal_eval(response.strip())
@@ -28,7 +30,7 @@ def evaluate_target_sent_by_common_ques(claim, model):
 
 if __name__ == "__main__":
     
-    eval_data_df = pd.read_csv("/root/RnD_Project/inputs/Amazon RnD_ Evaluation Dataset - Updated 200 samples with Qs _V3.csv")
+    eval_data_df = pd.read_csv("/root/RnD_Project/inputs/revised_final_dataset_200.csv")
     eval_data = []
     for i in range(eval_data_df.shape[0]):
         common_ques = eval_data_df.loc[i, "Correct Common Questions"]
@@ -54,23 +56,38 @@ if __name__ == "__main__":
             continue
         
     # Read the results.json file
-    with open("/root/RnD_Project/outputs_0-10/results.json", 'r') as json_file:
+    with open("/root/RnD_Project/rarr_with_non_seq/"+number+"/outputs_0_50/results.json", 'r') as json_file:
         res_data_1 = json.load(json_file)
-    with open("/root/RnD_Project/outputs_20-40/results.json", 'r') as json_file:
+    with open("/root/RnD_Project/rarr_with_non_seq/"+number+"/outputs_50_100/results.json", 'r') as json_file:
         res_data_2 = json.load(json_file)
-    
-    res_data = res_data_1 + res_data_2 # if multiple file is there
-    # res_data = res_data_1 # if only 1 file is there
+    with open("/root/RnD_Project/rarr_with_non_seq/"+number+"/outputs_100_200/results.json", 'r') as json_file:
+        res_data_3 = json.load(json_file)
+    res_data = res_data_1 + res_data_2 +res_data_3 # if multiple file is there
+    # res_data = res_data_3 # if only 1 file is there
     claim_data = []
 
     for i,elem in enumerate(eval_data):
         for j,item in enumerate(res_data):
             if elem["input_info"]["ref_claim"].strip() == item["claim_ref"].strip():
-                elem_dict = {**elem["input_info"], **{
-                    "target_claim_mixtral": item["claim_original"],
-                    "target_claim_rarr": item["claim_attributed"]}
-                }
-                claim_data.append(elem_dict)
+                if elem["input_info"]["target_location"].strip() == item["location"].strip():
+                    elem_dict = {**elem["input_info"], **{
+                        "target_claim_mixtral": item["claim_original"],
+                        "target_claim_rarr": item["claim_attributed"]}
+                    }
+                    claim_data.append(elem_dict)
+
+    # index=0
+    # df = pd.read_csv('chatgpt.csv')
+    # sent= df["chatgpt"]
+    # for i,elem in enumerate(eval_data):
+    #     elem_dict = {**elem["input_info"], **{
+    #                 "target_claim_mixtral": "",
+    #                 "target_claim_rarr": sent[index]}
+    #             }
+    #     index += 1
+    #     if(index ==49):
+    #         break
+    #     claim_data.append(elem_dict)
     
     output_list = []
     rarr_list = []
@@ -78,8 +95,21 @@ if __name__ == "__main__":
     
     for i,item in enumerate(claim_data):
 
-        res_dict_mixtral, rarr_val = evaluate_target_sent_by_common_ques(item, "mixtral")
-        res_dict_rarr, mixtral_val = evaluate_target_sent_by_common_ques(item, "rarr")
+        for _ in range(2):  # try 3 times
+            try:
+                res_dict_mixtral, mixtral_val = evaluate_target_sent_by_common_ques(item, "mixtral")
+                break       # as soon as it works, break out of the loop
+            except Exception as e:
+                print(e)
+                continue    
+        for _ in range(2):  # try 3 times
+            try:
+                res_dict_rarr, rarr_val = evaluate_target_sent_by_common_ques(item, "rarr")
+                break       # as soon as it works, break out of the loop
+            except Exception as e:
+                print(e)
+                continue    
+        
 
         output_list.append({**item, 
                             **{"mixtral": res_dict_mixtral}, 
@@ -90,12 +120,14 @@ if __name__ == "__main__":
     
     rarr_metric = sum(rarr_list)/len(rarr_list)
     mixtral_metric = sum(mixtral_list)/len(mixtral_list)
+    output_list.append({"rarr_count": sum(rarr_list), "mixtral_count": sum(mixtral_list)})
+    output_list.append({"rarr_len": len(rarr_list), "mixtral_len": len(mixtral_list)})
     output_list.append({"rarr_metric": rarr_metric, "mixtral_metric": mixtral_metric})
     
     print("rarr", rarr_metric)
     print("mixtral", mixtral_metric)
     
-    with open("/root/RnD_Project/outputs/eval_results.json", 'w') as json_file:
+    with open("/root/RnD_Project/rarr_with_non_seq/"+number+"/outputs_100_200/eval_results_3.json", 'w') as json_file:
         json.dump(output_list, json_file, indent=4)
     
     
