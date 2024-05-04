@@ -55,7 +55,7 @@ if __name__ == "__main__":
             continue
         
     # Read the results.json file
-    path = "/root/RnD_Project/mixtral_zero_shot/"+number+"/"
+    path = "/root/RnD_Project/outputs/mixtral_zero_shot_QG_revised/"+number+"/"
     with open(path+"outputs_0_100/results.json", 'r') as json_file:
         res_data_1 = json.load(json_file)
     with open(path+"outputs_100_200/results.json", 'r') as json_file:
@@ -69,7 +69,7 @@ if __name__ == "__main__":
             if elem["input_info"]["ref_claim"].strip() == item["claim_ref"].strip():
                 if elem["input_info"]["target_location"].strip() == item["location"].strip():
                     elem_dict = {**elem["input_info"], **{
-                        "target_claim_mixtral": item["claim_target"]}
+                        "target_claim_mixtral": item["claim_target_revised"]}
                     }
                     claim_data.append(elem_dict)
     
@@ -96,7 +96,7 @@ if __name__ == "__main__":
     
     print("mixtral", mixtral_metric)
     
-    with open(path+"outputs_100_200/eval_results_2.json", 'w') as json_file:
+    with open(path+"outputs_100_200/eval_results_1.json", 'w') as json_file:
         json.dump(output_list, json_file, indent=4)
     
     

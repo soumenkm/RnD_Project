@@ -13,6 +13,7 @@ from typing import List
 from llama_cpp import Llama
 sys.path.append("/root/RnD_Project/prompts")
 import rarr_prompts
+import re
 
 def prompt_model(model, prompt):
     prompt = "[INST]" + prompt + "[/INST]"
@@ -36,16 +37,70 @@ def parse_api_response(api_response: str) -> List[str]:
         if Q_search_string in response:
             question = response.split(Q_search_string)[1].strip()
             questions.append(question)
-
     return questions
 
+def parse_api_response_dict(api_response: str) -> List[str]:
+    search_string = "Revised question:"
+    question = ""
+    for response in api_response.split("\n"):
+        if search_string in response:
+            question = response.split(search_string)[1].strip()
+            break
+    return question
+
+def run_common_ques_gen(
+        claim: str,
+        model: str,
+        prompt: str,
+        target_sent: str
+    ):
+    if(model == "mixtral8x7b"):
+        llm = Llama(
+        model_path="/root/llama.cpp/models/mixtral-8x7b-instruct-v0.1.Q4_K_M.gguf",  
+        n_ctx=32768,  # The max sequence length to use - note that longer sequence lengths require much more resources
+        n_threads=8,            # The number of CPU threads to use, tailor to your system and the resulting performance
+        n_gpu_layers=35 ,        # The number of layers to offload to GPU, if you have GPU acceleration available
+        verbose=False
+        ) 
+    else:
+        print("Model not found!")
+    llm_input = prompt.format(claim=claim, target_claim = target_sent).strip()
+    response = prompt_model(model = llm, prompt = llm_input)
+    cq = parse_api_response(response.strip())
+    common_ques = {}
+    for i in range(len(cq)):
+        common_ques['ques_'+str(i)] = cq[i]
+    return common_ques
+
+def revise_common_ques_gen(
+        question: str,
+        prompt: str,
+        model: str
+    ):
+    if(model == "mixtral8x7b"):
+        llm = Llama(
+        model_path="/root/llama.cpp/models/mixtral-8x7b-instruct-v0.1.Q4_K_M.gguf",  
+        n_ctx=32768,  # The max sequence length to use - note that longer sequence lengths require much more resources
+        n_threads=8,            # The number of CPU threads to use, tailor to your system and the resulting performance
+        n_gpu_layers=35 ,        # The number of layers to offload to GPU, if you have GPU acceleration available
+        verbose=False
+        ) 
+    else:
+        print("Model not found!")
+    llm_input = prompt.format(question = question).strip()
+    response = prompt_model(model = llm, prompt = llm_input)
+    cq = parse_api_response_dict(response.strip())
+    if(cq == ""):
+        cq = question
+    return cq
+    
 def run_rarr_question_generation(
     target_claim: str,
     location: str,
     model: str,
     prompt: str,
     num_rounds: int = 1
-) -> List[str]:
+    ) -> List[str]:
     """Generates questions that interrogate the information in a claim.
 
     Given a piece of text (claim), we use GPT-3 to generate questions that question the

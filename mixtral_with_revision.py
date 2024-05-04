@@ -31,12 +31,12 @@ import pandas as pd
 from pathlib import Path
 
 number = str(1)
-output_name = "0_100"
+output_name = "100_200"
 
-path_name = "/root/RnD_Project/mixtral_zero_shot_revisied/"+number+"/"
+path_name = "/root/RnD_Project/mixtral_zero_shot_revised/"+number+"/"
 results_output_path = path_name + "outputs_"+output_name+"/results.json"
 
-def get_mixtral_output(
+def get_mixtral_revision(
     claim_id: int,
     claim: str,
     location: str,
@@ -45,46 +45,43 @@ def get_mixtral_output(
     target_sent: str,
     model: str = "mixtral8x7b",
     temperature_qgen: float = 0.7):
-
-    # target_sent_gen_prompt = "TARGET_SENT_GEN_PROMPT_WITH_LOCATION"+model
-    # prompt_target_sent = getattr(rarr_prompts, target_sent_gen_prompt)
-    # target_sent, reason_for_target_sent = LLM_target_sent_gen.run_rarr_target_sentence_generation(
-    #     claim=claim,
-    #     model=model,
-    #     prompt=prompt_target_sent,
-    #     location=location
-    # )
     
     score_list = []
-    for ques in common_ques:
+    target_sent_revised = target_sent
+    reason_for_target_sent = ""
+    for ques_n in common_ques.keys():
         # prompt for the common ques
         target_sent_check_prompt = "TARGET_SENT_CHECK_PROMPT_WITH_LOCATION_"+model
         prompt_target_sent_check = getattr(rarr_prompts, target_sent_check_prompt)
     
         # run mixtral model
-        score = LLM_check_target_sent.run_rarr_target_sentence_cq(
+        score, reason = LLM_check_target_sent.run_rarr_target_sentence_cq(
             claim=claim,
             model=model,
             prompt=prompt_target_sent_check,
-            target_sent= target_sent,
+            target_sent= target_sent_revised,
             location=location,
-            question= ques
+            question= common_ques[ques_n]
         )
-        score_list.append(score)
+        score_dict = {
+        "question": common_ques[ques_n],
+        "score": score,
+        "reason": reason
+        }
+        score_list.append(score_dict)
         
-        target_sent_revised = target_sent
-        reason_for_target_sent = ""
         if score != 1:
             target_sent_regen_prompt = "TARGET_SENT_REGEN_PROMPT_WITH_LOCATION_ZERO_SHOT_"+model
             prompt_target_sent_regen = getattr(rarr_prompts, target_sent_regen_prompt)
-            target_sent_revised, reason_for_target_sent = LLM_target_sent_gen.run_rarr_target_sentence_regeneration(
+            target_sent_revised, reason = LLM_target_sent_gen.run_rarr_target_sentence_regeneration(
                 claim=claim,
                 model=model,
                 prompt=prompt_target_sent_regen,
-                target_sent= target_sent,
+                target_sent= target_sent_revised,
                 location=location,
-                question= ques
+                question= common_ques[ques_n]
             )
+            reason_for_target_sent =  reason_for_target_sent + "; " +reason
     
     output = {
         "claim_id": claim_id,
@@ -116,7 +113,7 @@ def write_results_json(data, mixtral_data):
                     
         print("Claim: ", claim_id)
         t1 = time.time()
-        output_list.append(get_mixtral_output(claim_id, claim, location, hyperlocality, common_ques, target_sent))
+        output_list.append(get_mixtral_revision(claim_id, claim, location, hyperlocality, common_ques, target_sent))
         t2 = time.time()
     # Dump the list into the JSON file
     output_file = Path(results_output_path)
@@ -156,4 +153,4 @@ if __name__ == "__main__":
         mixtral_data_2 = json.load(json_file)
     mixtral_data = mixtral_data_1 + mixtral_data_2
        
-    write_results_json(data[0:10], mixtral_data)
+    write_results_json(data[100:200], mixtral_data)

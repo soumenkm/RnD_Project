@@ -1,0 +1,802 @@
+[
+    {
+        "claim_id": 0,
+        "claim_ref": "A Tale of Two Cities is a historical novel published in 1859 by Charles Dickens, set in London and Paris before and during the French Revolution.",
+        "location": "Cheruvathur",
+        "hyperlocal score": 3,
+        "claim_target": "A Tale of Two Cities is a historical novel published in 1859 by Charles Dickens, set in London and Paris before and during the French Revolution.",
+        "reason": "Thiruvananthapuram is a significant city in India, so it is used as the target location."
+    },
+    {
+        "claim_id": 1,
+        "claim_ref": "The Lightning Thief is a 2005 American fantasy adventure novel based on Greek mythology, the first young adult novel by Rick Riordan.",
+        "location": "Mumbai",
+        "hyperlocal score": 3,
+        "claim_target": "The Lightning Thief is a 2005 American fantasy adventure novel based on Greek mythology, the first young adult novel by Rick Riordan, which has gained popularity among readers in Mumbai.",
+        "reason": "Mumbai is a diverse city with a large population of readers who enjoy fantasy novels, making it a relevant location for mentioning the book's popularity."
+    },
+    {
+        "claim_id": 2,
+        "claim_ref": "Sh\u014dgun is a 1975 historical novel by James Clavell, set during the late Sengoku period in Japan. It serves as the first novel in the internal chronology of the author's Asian Saga.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "The God of Small Things is a 1997 novel by Arundhati Roy, set in Kerala, India. It serves as the debut novel of the author's literary career.",
+        "reason": "The reference entity \"Sh\u014dgun\" has been replaced with the Indian novel \"The God of Small Things\" by Arundhati Roy to localize the sentence for India."
+    },
+    {
+        "claim_id": 3,
+        "claim_ref": "If This Is a Man is a nonfiction and a memoir by Jewish Italian writer Primo Levi, first published in 1947. It describes his arrest as a member of the Italian anti-fascist resistance during the Second World War, and his incarceration in the Auschwitz concentration camp from February 1944 until the camp was liberated on 27 January 1945.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "If This Is a Man is a nonfiction and a memoir by Jewish Indian writer Primo Levi, first published in 1947. It describes his arrest as a member of the Indian anti-colonial movement during the Second World War, and his incarceration in a British prison from February 1944 until India gained independence on 15 August 1947.",
+        "reason": "The source author's nationality and the historical context have been adapted to fit the Indian domain, making the references factually accurate for the target location."
+    },
+    {
+        "claim_id": 4,
+        "claim_ref": "Jasper Jones is a 2009 fiction novel by Australian writer Craig Silvey. The novel explores themes of friendship, courage, racism, and the complexities of small-town dynamics. It has won and been shortlisted for several major awards",
+        "location": "Kerala",
+        "hyperlocal score": 2,
+        "claim_target": "\"The White Tiger\" is a 2009 fiction novel by Indian writer Aravind Adiga. The novel explores themes of social class, corruption, and ambition in modern-day India. It has won and been shortlisted for several major literary awards.",
+        "reason": "The reference sentence has been localized to feature an Indian author and themes relevant to Indian society and culture."
+    },
+    {
+        "claim_id": 5,
+        "claim_ref": "Americanah is a 2013 novel by Nigeran author Chimamanda Ngozi Adichie, for which Adichie won the 2013 National Book Critics Circle Award for fiction. It tells the story of a young Nigerian woman, Ifemelu, who immigrates to the United States to attend university.",
+        "location": "New Delhi",
+        "hyperlocal score": 3,
+        "claim_target": "Americanah is a 2013 novel by Nigeran author Chimamanda Ngozi Adichie, for which Adichie won the 2013 National Book Critics Circle Award for fiction. It tells the story of a young Nigerian woman, Ifemelu, who immigrates to New Delhi to attend university.",
+        "reason": "Adapting the location to New Delhi makes the sentence factually correct for the Indian context."
+    },
+    {
+        "claim_id": 6,
+        "claim_ref": "The Last Undercover is a gripping nonfiction book by Bob Hamer that chronicles the true story of an FBI agent's daring undercover operations. The book explores experiences and challenges faced by him.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "The Last Undercover is a gripping nonfiction book by Bob Hamer that chronicles the true story of an Indian police officer's daring undercover operations. The book explores experiences and challenges faced by him.",
+        "reason": "The reference entity \"FBI agent\" is replaced with the target entity \"Indian police officer\" to make it factually accurate and relevant to the Indian context."
+    },
+    {
+        "claim_id": 7,
+        "claim_ref": "Majid Al Futtaim was an Emirati billionaire businessman, and the founder and owner of the Majid Al Futtaim Group, an Emirati real estate and retail conglomerate, with projects in Asia and Africa.",
+        "location": "Karnataka",
+        "hyperlocal score": 2,
+        "claim_target": "Ravi Kumar was a billionaire businessman from Karnataka, and the founder and owner of the Ravi Kumar Group, a real estate and retail conglomerate based in Karnataka, with projects in Asia and Africa.",
+        "reason": "Modifying the names, nationality, and location to be relevant to Karnataka, India."
+    },
+    {
+        "claim_id": 8,
+        "claim_ref": "William Henry Gates III is an American businessman, investor, philanthropist, and writer best known for co-founding the software giant Microsoft, along with his childhood friend Paul Allen.",
+        "location": "Bengaluru",
+        "hyperlocal score": 3,
+        "claim_target": "Mukesh Ambani is an Indian businessman, investor, philanthropist, and writer best known for leading Reliance Industries, along with his brother Anil Ambani.",
+        "reason": "Bill Gates is replaced with Mukesh Ambani, who is an appropriate Indian counterpart known for similar professional achievements. Mumbai is an important business hub in India."
+    },
+    {
+        "claim_id": 9,
+        "claim_ref": "Andrew Carnegie was a Scottish-American industrialist and philanthropist. Carnegie led the expansion of the American steel industry in the late 19th century and became one of the richest Americans in history.",
+        "location": "Rajasthan",
+        "hyperlocal score": 2,
+        "claim_target": "Jodhpur was a prominent Rajasthani industrialist and philanthropist. He led the expansion of the steel industry in Rajasthan during the late 19th century and became one of the wealthiest people in Rajasthani history.",
+        "reason": "Andrew Carnegie is replaced with a fictional character named Jodhpur who is associated with Rajasthan to localize the sentence for the Indian domain. This modification accurately reflects the change in location and maintains the overall context of the sentence."
+    },
+    {
+        "claim_id": 10,
+        "claim_ref": "Fran\u00e7oise Bettencourt Meyers is a French businesswoman, philanthropist, writer, billionaire heiress, and the richest woman in the world, with an estimated net worth of US$100 billion as of December 2023, according to Forbes.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "Roshni Nadar Malhotra is an Indian businesswoman, philanthropist, writer, billionaire heiress, and one of the wealthiest women in India, with an estimated net worth of US$100 billion as of December 2023, according to Forbes.",
+        "reason": "Localization to reflect an Indian context by replacing the original French individual with a prominent Indian figure."
+    },
+    {
+        "claim_id": 11,
+        "claim_ref": "Soichiro Honda was a Japanese engineer and industrialist. In 1948, he established Honda Motor Co., Ltd. and oversaw its expansion from a wooden shack manufacturing bicycle motors to a multinational automobile and motorcycle manufacturer.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "J.R.D. Tata was an Indian entrepreneur and aviator. In 1945, he founded Tata Motors and played a key role in transforming it from a small locomotive manufacturer to India's largest automobile company.",
+        "reason": "The localization replaces the original Japanese reference entity with an Indian one to make the sentence relevant to the Indian audience."
+    },
+    {
+        "claim_id": 12,
+        "claim_ref": "Jack Ma Yun is a Chinese business magnate, investor and philanthropist. He is the co-founder of Alibaba Group, a multinational technology conglomerate. In addition, Ma is also the co-founder of Yunfeng Capital, a Chinese private equity firm.",
+        "location": "Chennai",
+        "hyperlocal score": 3,
+        "claim_target": "Mukesh Ambani is an Indian business magnate, investor and philanthropist. He is the chairman and largest shareholder of Reliance Industries, a multinational conglomerate. In addition, Ambani is also the founder of Reliance Capital, an Indian financial services company.",
+        "reason": "Mukesh Ambani is a well-known figure in India known for his business ventures, similar to Jack Ma's reputation in China. This change localizes the information for the Indian audience."
+    },
+    {
+        "claim_id": 13,
+        "claim_ref": "Ma Huateng is a Chinese business magnate, investor, and philanthropist. He is the co-founder and chief executive officer of Tencent, one of the most valuable companies in East Asia, one of the largest internet and technology companies, and one of the biggest investment, gaming, and entertainment conglomerates in the world.",
+        "location": "Aligarh",
+        "hyperlocal score": 3,
+        "claim_target": "Ratan Kumar Sharma is an Indian business magnate, investor, and philanthropist. He is the co-founder and chief executive officer of Aligarh Technologies, one of the most valuable companies in India, one of the largest internet and technology companies in the region, and one of the biggest investment, gaming, and entertainment conglomerates globally.",
+        "reason": "Localization changes the location to Aligarh in India to make the sentence more relevant and factually correct for the Indian audience."
+    },
+    {
+        "claim_id": 14,
+        "claim_ref": "Elon Reeve Musk is a businessman and investor. He is the founder, chairman, CEO, and CTO of SpaceX; angel investor, CEO, product architect, and former chairman of Tesla, Inc. He is one of the wealthiest person in the world",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "Mukesh Dhirubhai Ambani is a businessman and investor. He is the chairman and largest shareholder of Reliance Industries Limited; founder and chairman of Reliance Jio Infocomm. He is one of the wealthiest persons in India.",
+        "reason": "Mukesh Ambani is a well-known Indian business magnate, and his companies are prominent in the Indian business landscape."
+    },
+    {
+        "claim_id": 15,
+        "claim_ref": "Warren Edward Buffett, born on August 30, 1930, is an American businessman, investor, and philanthropist who currently serves as the co-founder, chairman and CEO of Berkshire Hathaway. As of March 2024, he had a net worth of $134 billion, making him the seventh-richest person in the world.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "Mukesh Dhirubhai Ambani, born on April 19, 1957, is an Indian businessman, investor, and philanthropist who currently serves as the chairman and managing director of Reliance Industries. As of March 2024, he had a net worth of $90 billion, making him the wealthiest person in India.",
+        "reason": "Warren Buffett is replaced with Mukesh Ambani, as an Indian counterpart. The updated information is specific to India and reflects the wealth ranking within the Indian context."
+    },
+    {
+        "claim_id": 16,
+        "claim_ref": "Maxjenny Forslund is a prominent Swedish designer and the creative force behind the luxury Copenhagen-based clothing brand, maxjenny! She is known for her innovative approach to fashion, combining clean lines, bright colors, and unique handmade prints.",
+        "location": "Mumbai",
+        "hyperlocal score": 3,
+        "claim_target": "Anita Dongre is a prominent Indian designer and the creative force behind the luxury Mumbai-based clothing brand, Anita Dongre! She is known for her innovative approach to fashion, combining traditional Indian textiles, intricate embroidery, and sustainable practices.",
+        "reason": "The reference entity is replaced with an Indian designer and brand located in Mumbai to localize the sentence to the Indian domain."
+    },
+    {
+        "claim_id": 17,
+        "claim_ref": "The Friendly Ghost is a Famous Studios cartoon released on 16 November 1945 as part of its Noveltoons series of animated short films. It is the first cartoon to feature the character Casper the Friendly Ghost.",
+        "location": "Kerala",
+        "hyperlocal score": 2,
+        "claim_target": "The Friendly Ghost is a famous cartoon produced by Mangalam Publications on 16 November 1945 as part of its animated short film series. It is the first cartoon to feature the character Friendly Bhootham.",
+        "reason": "Famous Studios is replaced by Mangalam Publications, and Casper the Friendly Ghost is replaced by Friendly Bhootham, to localize the reference sentence for the Indian market, particularly Kerala, where 'Bhootham' is a more commonly used term for a friendly ghost."
+    },
+    {
+        "claim_id": 18,
+        "claim_ref": "Laurel and Hardy were a British-American comedy team during the early Classical Hollywood era of American cinema, consisting of Englishman Stan Laurel and American Oliver Hardy.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "Laurel and Hardy were a British-American comedy team during the early years of Bollywood cinema, consisting of Indian Stan Laurel and American Oliver Hardy.",
+        "reason": "The modification is made to localize the information in the context of Indian cinema and to make it factually correct for the target audience in India."
+    },
+    {
+        "claim_id": 19,
+        "claim_ref": "Superman is a superhero who appears in American comic books published by DC Comics. The character was created by writer Jerry Siegel and artist Joe Shuster and debuted in the comic book Action Comics #1 (cover-dated June 1938 and published April 18, 1938). Superman has been adapted to a number of other media, which includes radio serials, novels, films, television shows, theater, and video games.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "Krishna is a deity who appears in Indian mythology and is worshiped by millions of Hindus. The character has been depicted in various forms of media, including television shows, movies, literature, and art.",
+        "reason": "The localization is not needed as the reference already pertains to Indian culture and religious beliefs."
+    },
+    {
+        "claim_id": 20,
+        "claim_ref": "Double Dragon is a 1994 American martial arts film, based on the video game series of the same name. The film was directed by James Yukich, whose previous credits include the Genesis music videos \"That's All\" and \"Invisible Touch\".\n",
+        "location": "Greater Noida",
+        "hyperlocal score": 3,
+        "claim_target": "Double Dragon is a 1994 Indian martial arts film, based on the video game series of the same name. The film was directed by James Yukich, whose previous credits include the Bollywood music videos \"That's All\" and \"Invisible Touch\".",
+        "reason": "The reference entity (American) is changed to the target entity (Indian) to localize the content for the Indian audience. The director's credits are replaced with Bollywood music videos to make the localization contextually accurate."
+    },
+    {
+        "claim_id": 21,
+        "claim_ref": "The Monkey King or Sun Wukong is a fictional character best known as one of the main players in the 16th-century Chinese novel Journey to the West, and many later stories and adaptations. In the novel, Sun Wukong is a monkey born from a stone who acquires supernatural powers through Taoist practices.",
+        "location": "West Bengal",
+        "hyperlocal score": 2,
+        "claim_target": "Hanuman or Maruti is a revered deity in Hindu mythology, known for his role in the Indian epic Ramayana. Hanuman is depicted as a monkey god who possesses immense strength and divine powers.",
+        "reason": "The reference entity \"Monkey King\" has been replaced with the target entity \"Hanuman\" to localize the sentence for the Indian domain and align with Indian mythology."
+    },
+    {
+        "claim_id": 22,
+        "claim_ref": "The Amazing World of Gumball is an animated sitcom created by Ben Bocquelet for Cartoon Network. The series concerns the lives of 12-year-old Gumball Watterson, an anthropomorphic blue cat, and adoptive goldfish brother Darwin, who attends middle school in the fictional city of Elmore, California. ",
+        "location": "Kerala",
+        "hyperlocal score": 2,
+        "claim_target": "The Amazing World of Gumball is an animated sitcom created by Ben Bocquelet for Cartoon Network. The series concerns the lives of 12-year-old Gumball Watterson, an anthropomorphic blue cat, and adoptive goldfish brother Darwin, who attends middle school in the fictional city of Elmore, Kerala.",
+        "reason": "The modification is made to localize the reference sentence to the Indian domain by replacing the target location with Kerala, which is a state in India."
+    },
+    {
+        "claim_id": 23,
+        "claim_ref": "Doraemon is a Japanese manga series written and illustrated by Fujiko F. Fujio. The manga was first serialized in December 1969. Its chapters were collected in 45 tank\u014dbon volumes published by Shogakukan from 1974 to 1996. It was made into an animated series.",
+        "location": "Mumbai",
+        "hyperlocal score": 3,
+        "claim_target": "An Indian comic book series written and illustrated by Raju Raja Ram. The comic was first serialized in May 1975. Its chapters were collected in 45 volumes published by Raj Comics from 1980 to 2005. It was made into an animated television series.",
+        "reason": "The localization changes the Japanese manga series Doraemon to an Indian comic book series by changing the creators and publishers to fit the Mumbai comics industry."
+    },
+    {
+        "claim_id": 24,
+        "claim_ref": "PJ Masks is an animated superhero children's television series based on the Les Pyjamasques book series by Romuald Racioppo. Produced by Frog Box, Entertainment One, Walt Disney EMEA Productions Limited and TeamTO, its production has the participation of France T\u00e9l\u00e9visions and Disney Junior. ",
+        "location": "Maharashtra",
+        "hyperlocal score": 2,
+        "claim_target": "PJ Masks is an animated superhero children's television series based on the Les Pyjamasques book series by Romuald Racioppo. Produced by Frog Box, Entertainment One, Walt Disney India Productions Limited, and TeamTO, its production has the participation of Doordarshan and Disney India Junior.",
+        "reason": "Walt Disney India Productions Limited and Doordarshan are more relevant in the Indian context compared to the original entities mentioned."
+    },
+    {
+        "claim_id": 25,
+        "claim_ref": "Tom and Jerry is an American animated media franchise and series of comedy short films created in 1940 by William Hanna and Joseph Barbera.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "Chhota Bheem is an Indian animated media franchise and series of comedy short films created in 2008 by Rajiv Chilaka.",
+        "reason": "To provide a culturally relevant reference by replacing the American animated series \"Tom and Jerry\" with the Indian animated series \"Chhota Bheem.\""
+    },
+    {
+        "claim_id": 26,
+        "claim_ref": "Bachon ki Duniya is a Pakistani animated comedy adventure television series. It features a cast of diverse characters namely Mudabbar Bhai, Dr. Bablu, Fateh, Zaki, Sona, and Mona. The cartoon provides elements of fun, adventure, educational content and moral lessons.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "Since the reference entity, \"Bachon ki Duniya\" is a Pakistani animated series, the target location needed to be changed to India to make the statement factually correct for the Indian domain. Additionally, the names of the characters were localized to Indian names to suit the target audience.",
+        "reason": ""
+    },
+    {
+        "claim_id": 27,
+        "claim_ref": "Aggtelek National Park is a national park in Northern Hungary, in the Aggtelek Karst region. The most significant values of the national park are the special surface formations and caves in this limestone landscape.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "Bandhavgarh National Park is a national park in Madhya Pradesh, in the Vindhya Hills region. The most significant values of the national park are the diverse flora and fauna in this dense forest landscape.",
+        "reason": "The reference to Aggtelek National Park in Hungary has been replaced with Bandhavgarh National Park in India, known for its unique biodiversity and natural beauty in the Indian context."
+    },
+    {
+        "claim_id": 28,
+        "claim_ref": "EGMA Sinkhole a.k.a. Peynirlik\u00f6n\u00fc Sinkhole, is a sinkhole and the deepest cave in Turkey. It is located at Sug\u00f6z\u00fc village of Anamur, Mersin. The sinkhole is 1,429 m (4,688 ft) deep and 3,118 m (10,230 ft) long. EGMA is an acronym that stands for Evren G\u00fcnay - Mehmet Ali \u00d6zel.",
+        "location": "Andhra Pradesh",
+        "hyperlocal score": 2,
+        "claim_target": "EGMA Sinkhole a.k.a. Peynirlik\u00f6n\u00fc Sinkhole, is a sinkhole and the deepest cave in Andhra Pradesh. It is located in the village of Sug\u00f6z\u00fc in the district of Anamur, Mersin. The sinkhole is 1,429 m (4,688 ft) deep and 3,118 m (10,230 ft) long. EGMA is an acronym that stands for Evren G\u00fcnay - Mehmet Ali \u00d6zel.",
+        "reason": "The localization changes the location of the sinkhole to Andhra Pradesh to make it factually correct for the Indian domain."
+    },
+    {
+        "claim_id": 29,
+        "claim_ref": "Postojna Cave (Slovene: Postojnska jama; German: Adelsberger Grotte; Italian: Grotte di Postumia) is a 24.34 km (15.12 mi) long karst cave system near Postojna, southwestern Slovenia. It is the second-longest cave system in the country (following the Migovec System) as well as one of its top tourism sites. The caves were created by the Pivka River.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "Belum Caves (Telugu: \u0c2c\u0c46\u0c32\u0c41\u0c02 \u0c17\u0c41\u0c39\u0c32\u0c41) is a 3.5 km long cave system located in Belum Village, Andhra Pradesh. It is the second-longest cave system in India (following the Krem Liat Prah cave) as well as one of its top tourism sites. The caves were created by the erosion of limestone deposits over thousands of years.",
+        "reason": "Adapting the information to the Indian context by replacing the reference entity with a well-known cave system in India and providing accurate details for the target audience."
+    },
+    {
+        "claim_id": 30,
+        "claim_ref": "The Mogao Caves, also known as the Thousand Buddha Grottoes or Caves of the Thousand Buddhas, form a system of 500 temples 25 km southeast of the center of Dunhuang, an oasis located at a religious and cultural crossroads on the Silk Road, in Gansu province, China.",
+        "location": "Madhya Pradesh",
+        "hyperlocal score": 2,
+        "claim_target": "The Ajanta Caves in Maharashtra, also known as the Buddhist Cave Temples, are a series of 30 rock-cut Buddhist cave monuments which date from the 2nd century BCE to about 480 CE.",
+        "reason": "The Ajanta Caves are a well-known UNESCO World Heritage site in India and are located in the state of Maharashtra, not Madhya Pradesh like the source entity mentioned."
+    },
+    {
+        "claim_id": 31,
+        "claim_ref": "Boybuloq is essentially a natural\u00a0limestone cave in Uzbekistan. The cave is located in Hisar mountain range in Southern Uzbekistan. This pre-historic cave has been explored and excavated by archaeologists and speleologists, who have discovered important artifacts and evidence of human habitation.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "Borra Caves is essentially a natural limestone cave in India. The cave is located in Araku Valley of Andhra Pradesh. This pre-historic cave has been explored and excavated by archaeologists and speleologists, who have discovered important artifacts and evidence of human habitation.",
+        "reason": "The reference entity \"Boybuloq\" has been replaced with the target entity \"Borra Caves,\" which is a well-known limestone cave in India. The location has been modified to fit accurately within the Indian domain."
+    },
+    {
+        "claim_id": 32,
+        "claim_ref": "Blue Cave is a waterlogged sea cave located in a small bay called Balun in Croatia. It is renowned for its impressive natural architecture. It has become a tourist spot and is visited by a large number of tourists.",
+        "location": "Karnataka",
+        "hyperlocal score": 2,
+        "claim_target": "Blue Cave is a waterlogged sea cave located in a small bay called Balun in Karnataka, India. It is renowned for its impressive natural architecture. It has become a tourist spot and is visited by a large number of tourists.",
+        "reason": "The localization changes the location from Croatia to Karnataka, India to make it factually correct for the Indian domain."
+    },
+    {
+        "claim_id": 33,
+        "claim_ref": "Gaping Gill is a natural cave in North Yorkshire, England. It is one of the unmistakable landmarks on the southern slopes of Ingleborough \u2013 a 98-metre deep pothole with the stream Fell Beck flowing into it.",
+        "location": "Surguja",
+        "hyperlocal score": 3,
+        "claim_target": "Cherrakal is a natural cave in Surguja, India. It is one of the unmistakable landmarks on the southern slopes of Cherrakal \u2013 a 98-metre deep pothole with the stream Fell Beck flowing into it.",
+        "reason": "The reference entity \"Gaping Gill\" has been replaced with the target entity \"Cherrakal\" in Surguja, India, to localize the sentence for the Indian domain."
+    },
+    {
+        "claim_id": 34,
+        "claim_ref": "Cadbury, formerly Cadbury's and Cadbury Schweppes, is a British multinational confectionery company owned by Mondelez International since 2010. It is the second-largest confectionery brand in the world, after Mars. Cadbury is internationally headquartered in Greater London and operates in more than 50 countries worldwide.",
+        "location": "Jaipur",
+        "hyperlocal score": 3,
+        "claim_target": "Cadbury, formerly Cadbury's and Cadbury Schweppes, is an Indian multinational confectionery company owned by Mondelez International since 2010. It is the second-largest confectionery brand in the world, after Mars. Cadbury is internationally headquartered in Mumbai and operates in more than 50 countries worldwide.",
+        "reason": "The reference entity Cadbury is changed to an Indian entity for localization and the headquarters location is changed to Mumbai to make the statement factually correct for the Indian domain."
+    },
+    {
+        "claim_id": 35,
+        "claim_ref": "Milka is a Swiss brand of chocolate confectionery. Originally made in Switzerland in 1901 by Suchard, it has been produced in L\u00f6rrach, Germany from 1901.",
+        "location": "Maharashtra",
+        "hyperlocal score": 2,
+        "claim_target": "Cadbury is an Indian brand of chocolate confectionery. Originally made in India, it has been produced in Maharashtra from the early 20th century.",
+        "reason": "Localizing the reference entity \"Milka\" to an Indian brand, Cadbury, and changing the production location to Maharashtra to reflect the Indian context."
+    },
+    {
+        "claim_id": 36,
+        "claim_ref": "The Hershey Company, often called just Hershey or Hershey's, is an American multinational confectionery company headquartered in Hershey, Pennsylvania, United States, which is also home to Hersheypark and Hershey's Chocolate World.",
+        "location": "Mumbai",
+        "hyperlocal score": 3,
+        "claim_target": "The Cadbury Company, often called just Cadbury, is an American multinational confectionery company headquartered in Mumbai, India, which is also home to Cadbury World.",
+        "reason": "The localization swaps the source entity \"Hershey Company\" with the target entity \"Cadbury Company\" and changes the location to Mumbai, India, which is known for its production of Cadbury chocolates."
+    },
+    {
+        "claim_id": 37,
+        "claim_ref": "Ferrero International SpA, more commonly known as Ferrero Group or simply Ferrero, is an Italian multinational company with headquarters in Alba.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "Ferrero International SpA, more commonly known as Ferrero Group or simply Ferrero, is an Indian multinational company with headquarters in Mumbai.",
+        "reason": "The source entity \"Ferrero International SpA\" is converted to an Indian entity, and the headquarters location is changed to Mumbai to reflect the Indian context."
+    },
+    {
+        "claim_id": 38,
+        "claim_ref": "The Ghirardelli Chocolate Company is an American confectioner, wholly owned by Swiss confectioner Lindt & Spr\u00fcngli. The company was founded by and is named after Italian chocolatier Domenico Ghirardelli, who, after working in South America, moved to California.",
+        "location": "Gujarat",
+        "hyperlocal score": 2,
+        "claim_target": "The Verka Milk Plant is an Indian dairy cooperative, headquartered in Amritsar, Punjab. The plant was established by the Punjab state government in 1973, with the aim of supporting local dairy farmers.",
+        "reason": "The reference sentence needed to be localized to Punjab to accurately reflect the location of the dairy cooperative being referenced."
+    },
+    {
+        "claim_id": 39,
+        "claim_ref": "The Guittard Chocolate Company is an American-based chocolate maker which produces couverture chocolate, using original formulas and traditional French methods. The company is headquartered in Burlingame, California.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "The Amul Chocolate Company is an Indian-based chocolate maker which produces couverture chocolate, using original formulas and traditional Indian methods. The company is headquartered in Anand, Gujarat.",
+        "reason": "The localization was done by replacing the source entity (Guittard Chocolate Company) with the target entity (Amul Chocolate Company) to make the sentence factually correct for the Indian domain."
+    },
+    {
+        "claim_id": 40,
+        "claim_ref": "Forrey & Galland was established during 1912, it is the leading Chocolate Artisan in the UAE. They produce handmade premium chocolates, macarons and dates.",
+        "location": "Mumbai",
+        "hyperlocal score": 3,
+        "claim_target": "Pastry Palace was established in 1912 and is the leading Chocolate Artisan in Mumbai. They specialize in handmade premium chocolates, macarons, and dates.",
+        "reason": "The localization is done to adapt the information according to the Indian context by replacing the source location with Mumbai."
+    },
+    {
+        "claim_id": 41,
+        "claim_ref": "Koko Black is a renowned brand known for its Australian-made gourmet chocolate bars, pralines, truffles, all handcrafted using premium natural ingredients and free from artificial colors and flavors.",
+        "location": "Kerala",
+        "hyperlocal score": 2,
+        "claim_target": "",
+        "reason": "The localization changes the source entity \"Koko Black\" to the target entity \"Mithai Corner\" and shifts the context from Australian gourmet chocolates to traditional Kerala sweets to make it factually correct for the Indian domain."
+    },
+    {
+        "claim_id": 42,
+        "claim_ref": "Blu Chocolate is a renowned artisan chocolate maker that specializes in creating bean-to-bar chocolates. It produces and sells chocolate and assortments",
+        "location": "Karnataka",
+        "hyperlocal score": 2,
+        "claim_target": "Mysore Chocolate is a renowned artisan chocolate maker that specializes in creating bean-to-bar chocolates. It produces and sells chocolate and assortments.",
+        "reason": "The reference entity \"Blu Chocolate\" has been replaced with the target entity \"Mysore Chocolate\" to localize the sentence for Karnataka, known for its chocolate-making industry."
+    },
+    {
+        "claim_id": 43,
+        "claim_ref": "Whittaker's is a well-established chocolate brand from New Zealand, known for its high-quality chocolate products crafted since 1896. They offer a variety of chocolate blocks, including flavors like Hazelnut and Peanut Butter, made with premium ingredients like whole milk and fine batch roasted West African cocoa beans.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "Amul is a well-known chocolate brand in India, recognized for its range of high-quality chocolate products produced since 1946. They offer a variety of chocolate bars, including flavors like Almond and Fruit & Nut, made with premium ingredients like pure cow's milk and fine-quality cocoa beans sourced from India.",
+        "reason": "Localization was done to replace the entity with a well-known and relevant chocolate brand in India, and to provide accurate information about the brand's history and product offerings suitable for the Indian market."
+    },
+    {
+        "claim_id": 44,
+        "claim_ref": "Starbucks Corporation is an American multinational chain of coffeehouses and roastery reserves headquartered in Seattle, Washington. It was founded in 1971 and is currently the world's largest coffeehouse chain.\n  As of November 2022, the company had 35,711 stores in 80 countries, 15,873 of which were located in the United States. Of Starbucks' U.S.-based stores, over 8,900 are company-operated, while the remainder are licensed.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "Caf\u00e9 Coffee Day is an Indian multinational chain of coffeehouses and roastery reserves headquartered in Bangalore, Karnataka. It was founded in 1996 and is currently the largest coffeehouse chain in India. As of November 2022, the company had 2,000 stores in 200 cities, with more than 1,000 stores located in India. Of Caf\u00e9 Coffee Day's Indian stores, over 600 are company-operated, while the remainder are franchised.",
+        "reason": "To provide relevant information about a popular coffeehouse chain in India for localization purposes."
+    },
+    {
+        "claim_id": 45,
+        "claim_ref": "Caribou Coffee Company is an American coffee company and coffeehouse chain. It was founded in Edina, Minnesota, in 1992. As of May 2015, the company operates 603 locations worldwide. It is headquartered in Brooklyn Center, Minnesota.",
+        "location": "New Delhi",
+        "hyperlocal score": 3,
+        "claim_target": "Cafe Coffee Day is an Indian coffee company and coffeehouse chain. It was founded in Bangalore, India, in 1996. As of May 2015, the company operates 1,454 locations in India. It is headquartered in New Delhi.",
+        "reason": "The target entity has been changed to \"Cafe Coffee Day,\" an Indian coffee company, to localize the reference sentence to the Indian domain. The founding location has been updated to Bangalore, India, and the headquarters have been changed to New Delhi to reflect the Indian context."
+    },
+    {
+        "claim_id": 46,
+        "claim_ref": "Caff\u00e8 Nero is a coffeehouse company headquartered in London, England. Established in 1997 by Gerry Ford, Caff\u00e8 Nero runs more than 1,000 coffee houses in eleven countries: the UK, Ireland, Sweden, Poland, Cyprus, Croatia, Turkey, the UAE, Oman, and the United States. ",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "Cafe Coffee Day is a coffeehouse chain headquartered in Bangalore, India. Established in 1996 by V. G. Siddhartha, Cafe Coffee Day runs more than 1,700 cafes across India.",
+        "reason": "The original company Caff\u00e8 Nero has been replaced with the popular Indian coffee chain Cafe Coffee Day, which accurately reflects the target location."
+    },
+    {
+        "claim_id": 47,
+        "claim_ref": "Caff\u00e8 Florian is a coffee house situated in the Procuratie Nuove of Piazza San Marco, Venice. It was established in 1720 and is the oldest coffee house in continuous operation in Italy, and one of the oldest in the world (the oldest being Caf\u00e9 Procope in Paris, founded in 1686).\n\n",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "Indian Coffee House is a chain of coffee houses in India with various outlets across the country. It is known for its traditional coffee and nostalgic ambiance.",
+        "reason": "The reference to Caff\u00e8 Florian in Venice is replaced with Indian Coffee House as a popular coffee house chain in India."
+    },
+    {
+        "claim_id": 48,
+        "claim_ref": "Tchibo is a German chain of coffee retailers and caf\u00e9s known for its range of non-coffee products that change weekly. The latter includes: clothing, furniture, household items, electronics and electrical appliances. ",
+        "location": "Bengaluru",
+        "hyperlocal score": 3,
+        "claim_target": "Cafe Coffee Day is an Indian chain of coffee retailers and cafes known for its range of non-coffee products that change regularly. The latter includes: sandwiches, wraps, pastries, and snacks.",
+        "reason": "Localization is necessary to replace the German coffee chain Tchibo with the Indian coffee chain Cafe Coffee Day to make the statement factually correct for the Indian audience."
+    },
+    {
+        "claim_id": 49,
+        "claim_ref": "Bean There is a coffee chain in South Africa. It has multiple cafes across the  country. The Bean There coffee chains provides different varieties of coffee blends while focusing on the tradition and culture.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "Caf\u00e9 Chai is a coffee chain in India. It has numerous cafes spread across the country. Caf\u00e9 Chai offers a wide range of coffee blends with a focus on local flavors and cultural influences.",
+        "reason": "The original coffee chain in South Africa was replaced with a fictional coffee chain in India to localize the information for the Indian audience. Additionally, the focus on tradition and culture was modified to reflect local flavors and cultural influences in India."
+    },
+    {
+        "claim_id": 50,
+        "claim_ref": "Rise Up Coffee is a coffee chain and it is headquartered in Easton, Maryland. It currently has operating cafes and an active online presence. It sources premium coffee beans and is known for their specialty coffee.",
+        "location": "Haryana",
+        "hyperlocal score": 2,
+        "claim_target": "Cafe Coffee Day is a coffee chain and it is headquartered in Chikkamagaluru, Karnataka. It currently has operating cafes across India and an active online presence. It sources premium coffee beans and is known for their specialty coffee.",
+        "reason": "Localizing to the Indian domain by substituting Rise Up Coffee with Cafe Coffee Day, changing the headquarters location to Chikkamagaluru, Karnataka, and mentioning the widespread presence in India."
+    },
+    {
+        "claim_id": 51,
+        "claim_ref": "Quists Coffee is a coffeehouse located in Melbourne, Australia. It was established in 1938 and has a rich history in the city. It is an iconic caf\u00e9 in Melbourne and serves variety of coffee blends to its customers.",
+        "location": "Vadodara",
+        "hyperlocal score": 3,
+        "claim_target": "Goodluck Cafe is a coffeehouse located in Vadodara, India. It was established in 1938 and has a rich history in the city. It is an iconic caf\u00e9 in Vadodara and serves a variety of coffee blends to its customers.",
+        "reason": "The source entity \"Quists Coffee\" has been changed to \"Goodluck Cafe\", the target location has been changed to Vadodara, India, and other details have been modified to accurately represent the Indian coffeehouse."
+    },
+    {
+        "claim_id": 52,
+        "claim_ref": "Munyaradzi Oliver Chawawa is a British-Zimbabwean actor, comedy rapper and comedian.",
+        "location": "Indore",
+        "hyperlocal score": 3,
+        "claim_target": "Munyaradzi Oliver Chawawa is a British-Zimbabwean actor, comedy rapper, and comedian.",
+        "reason": "Mumbai is a popular location for the entertainment industry in India, making it a suitable replacement for the reference to Hollywood."
+    },
+    {
+        "claim_id": 53,
+        "claim_ref": "William Frederick Burr is an American comedian, actor, writer, producer and podcaster. He has released multiple stand-up comedy specials, including You People Are All the Same, I'm Sorry You Feel That Way, Walk Your Way Out and Paper Tiger.",
+        "location": "Dehradun",
+        "hyperlocal score": 3,
+        "claim_target": "Rajesh Kumar Singh is an Indian comedian, actor, writer, producer and podcaster. He has released multiple stand-up comedy specials, including You People Are All the Same, I'm Sorry You Feel That Way, Walk Your Way Out and Paper Tiger.",
+        "reason": "Localization was done by replacing the source entity (William Frederick Burr) with an Indian name (Rajesh Kumar Singh) in order to make the information relevant to the target location (Dehradun)."
+    },
+    {
+        "claim_id": 54,
+        "claim_ref": "Abelard Piotr Giza is a comedian and screenwriter. He was a leader and founder of the Kabaret Limo, a cabaret group that existed between 1999 and 2014.",
+        "location": "Kanpur",
+        "hyperlocal score": 3,
+        "claim_target": "Abelard Piotr Giza is a comedian and screenwriter. He was a leader and founder of the Kabaret Limo, a cabaret group that existed between 1999 and 2014.",
+        "reason": "Mumbai is a prominent entertainment industry hub in India, making it a suitable replacement for the reference to maintain factual accuracy."
+    },
+    {
+        "claim_id": 55,
+        "claim_ref": "Christopher Julius Rock is an American comedian, actor, and filmmaker. Rock first gained prominence for his stand-up routines in the 1980s, where he tackled subjects including race relations, human sexuality, and observational comedy.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "Kapil Sharma is an Indian comedian, actor, and producer. Sharma rose to fame for his stand-up comedy shows on Indian television in the 2000s, where he discussed topics such as family life, relationships, and everyday situations.",
+        "reason": "Localizing the reference to India by replacing the American comedian with an Indian one."
+    },
+    {
+        "claim_id": 56,
+        "claim_ref": "Louis Alfred Sz\u00e9kely, known professionally as Louis C.K., is an American stand-up comedian, actor and filmmaker. C.K. has won three Peabody Awards, three Grammy Awards, six Primetime Emmy Awards, and a Screen Actors Guild Award as well as numerous awards for The Chris Rock Show, Louie, and his stand-up specials Live at the Beacon Theater and Oh My God.",
+        "location": "Amritsar",
+        "hyperlocal score": 3,
+        "claim_target": "Louis Alfred Sz\u00e9kely, known professionally as Louis C.K., is an Indian stand-up comedian, actor and filmmaker. C.K. has won three National Awards, three Filmfare Awards, six IIFA Awards, and a Screen Actors Guild Award as well as numerous awards for The Comedy Show, Louie, and his stand-up specials Live at the Golden Temple and Oh My God.",
+        "reason": "Adjusted the location to Amritsar and changed the awards to Indian film and TV awards to make the sentence factually correct for the target entity."
+    },
+    {
+        "claim_id": 57,
+        "claim_ref": "Kevin Darnell Hart is an American comedian and actor. After winning several stand-up comedy competitions, Hart had his first breakthrough when Judd Apatow cast him in a recurring role on the TV series Undeclared.",
+        "location": "Andhra Pradesh",
+        "hyperlocal score": 2,
+        "claim_target": "Kevin Darnell Hart is an Indian comedian and actor. After winning several stand-up comedy competitions, Hart had his first breakthrough when Raju Shrivastav cast him in a recurring role on the TV series The Great Indian Laughter Challenge.",
+        "reason": "The target location is changed to Telangana to localize the reference to the Indian domain. The names of entities involved are replaced with Indian equivalents to make the sentence factually correct for the target entity."
+    },
+    {
+        "claim_id": 58,
+        "claim_ref": "Anna Mazzamauro is an Italian actress, comedian and television personality.",
+        "location": "Punjab",
+        "hyperlocal score": 2,
+        "claim_target": "Neeru Bajwa is a Punjabi actress, comedian, and television personality.",
+        "reason": "To provide information about a well-known Punjabi actress instead of an Italian one in the Indian context."
+    },
+    {
+        "claim_id": 59,
+        "claim_ref": "Rafi Bastos is a Brazilian comedian, actor, journalist and Youtuber.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "Rafi Bastos is a Brazilian comedian, actor, journalist, and Youtuber.",
+        "reason": "The target location has been changed to Brazil to reflect the localization from India to the Brazilian domain."
+    },
+    {
+        "claim_id": 60,
+        "claim_ref": "Trevor Noah is a South African comedian, writer, producer, political commentator, actor, and television host. Noah has won various awards, including two Primetime Emmy Awards.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "Kapil Sharma is an Indian comedian, writer, producer, actor, and television host. Sharma has won various awards, including two Indian Television Academy Awards.",
+        "reason": "Trevor Noah has been replaced with Kapil Sharma, a well-known Indian comedian, to make the sentence relevant to the Indian audience. Also, the Primetime Emmy Awards have been replaced with Indian Television Academy Awards to accurately reflect the award system in India."
+    },
+    {
+        "claim_id": 61,
+        "claim_ref": "Tommy Tiernan (/\u02c8t\u026a\u0259rn\u0259n/; born 16 June 1969) is an Irish comedian, actor, and writer. He is best known for his stand-up career, hosting The Tommy Tiernan Show (2017\u2013present) and playing Gerry in the sitcom Derry Girls (2018\u20132022).",
+        "location": "Delhi",
+        "hyperlocal score": 3,
+        "claim_target": "Tommy Tiernan (/\u02c8t\u026a\u0259rn\u0259n/; born 16 June 1969) is an Indian comedian, actor, and writer. He is best known for his stand-up career, hosting The Tommy Tiernan Show (2017\u2013present) and playing Gerry in the sitcom Derry Girls (2018\u20132022).",
+        "reason": "In the Indian context, the reference to Tommy Tiernan is localized as an Indian comedian to fit the target location of Mumbai."
+    },
+    {
+        "claim_id": 62,
+        "claim_ref": "State Farm Insurance is a group of mutual insurance companies throughout the United States with corporate headquarters in Bloomington, Illinois. Founded in 1922, it is the largest property, casualty, and auto insurance provider in the United States.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "Wells Fargo & Company is a multinational financial services company headquartered in San Francisco, California. Founded in 1852, it is the fourth-largest bank in the United States by total assets and the third-largest by market capitalization.",
+        "reason": "Replacing State Bank of India with Wells Fargo & Company as the largest bank in the United States makes the statement factually correct and relevant for the American audience."
+    },
+    {
+        "claim_id": 63,
+        "claim_ref": "Robinhood Markets, Inc. is an American financial services company headquartered in Menlo Park, California. It operates an electronic trading platform that facilitates commission-free trades of stocks, exchange-traded funds and cryptocurrencies as well as individual retirement accounts via a mobile app introduced in March 2015.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "Zerodha is an Indian financial services company headquartered in Bengaluru, Karnataka. It operates an electronic trading platform that facilitates commission-free trades of stocks, exchange-traded funds and commodities as well as individual retirement accounts via a mobile app introduced in July 2010.",
+        "reason": "Zerodha is a popular Indian brokerage platform known for offering commission-free trades and is headquartered in Bengaluru, providing localized information to Indian users."
+    },
+    {
+        "claim_id": 64,
+        "claim_ref": "CF Industries Holdings, Inc. is an American manufacturer and distributor of agricultural fertilizers, including ammonia, urea, and ammonium nitrate products, based in Deerfield, Illinois, a suburb of Chicago. It was founded in 1946 as the Central Farmers Fertilizer Company.",
+        "location": "Mangalore",
+        "hyperlocal score": 3,
+        "claim_target": "Mangalore Fertilizers and Chemicals is an Indian manufacturer and distributor of agricultural fertilizers, including ammonia, urea, and ammonium nitrate products, based in Mangalore, Karnataka. It was founded in 1946 as the Mangalore Farmers Fertilizer Company.",
+        "reason": "The source entity, CF Industries Holdings, Inc., has been replaced with the target entity, Mangalore Fertilizers and Chemicals, to localize the sentence to the Indian domain. The location has been changed to Mangalore, Karnataka to reflect the new target entity's base of operations."
+    },
+    {
+        "claim_id": 65,
+        "claim_ref": "The Mott MacDonald Group is a management, engineering and development consultancy headquartered in the United Kingdom. It employs +18,000 staff in 150 countries. Mott MacDonald is one of the largest employee-owned companies in the world.",
+        "location": "Ranchi",
+        "hyperlocal score": 3,
+        "claim_target": "The Infosys Group is a management, engineering, and development consultancy headquartered in India. It employs +18,000 staff in 150 countries. Infosys is one of the largest employee-owned companies in the world.",
+        "reason": "Mott MacDonald Group is replaced with Infosys Group, United Kingdom replaced with India to localize the reference sentence for the Indian domain."
+    },
+    {
+        "claim_id": 66,
+        "claim_ref": "The Adelaide Steamship Company was an Australian shipping company, later a diversified industrial and logistics conglomerate. It was formed by a group of South Australian businessmen in 1875.",
+        "location": "Visakhapatnam",
+        "hyperlocal score": 3,
+        "claim_target": "The Mumbai Steamship Company was an Indian shipping company, later a diversified industrial and logistics conglomerate. It was formed by a group of businessmen in Mumbai in 1875.",
+        "reason": "The localization changes the country from Australia to India and the city from Adelaide to Mumbai to make the sentence factually correct for the target entity."
+    },
+    {
+        "claim_id": 67,
+        "claim_ref": "Fortescue is a global metal mining and green energy company headquartered in Australia. Fortescue focused on iron ore mining under the name of Fortescue Metals Group until July 2023.",
+        "location": "West Bengal",
+        "hyperlocal score": 2,
+        "claim_target": "Fortescue is a global metal mining and green energy company headquartered in Maharashtra. Fortescue focused on iron ore mining under the name of Fortescue Metals Group until July 2023.",
+        "reason": "The localization has been done to adapt the reference entity's location to a region in India, specifically Maharashtra, for better relevance in the Indian context."
+    },
+    {
+        "claim_id": 68,
+        "claim_ref": "The Chosun Ilbo is a daily newspaper in South Korea and the oldest active daily newspaper in the country. With a daily circulation of more than 1,800,000, the Chosun Ilbo has been audited annually since the Audit Bureau of Circulations was established in 1993.",
+        "location": "Kolkata",
+        "hyperlocal score": 3,
+        "claim_target": "The Anandabazar Patrika is a daily newspaper in Kolkata, India, and the oldest active daily newspaper in the region. With a daily circulation of more than 1,800,000, the Anandabazar Patrika has been audited annually since the Audit Bureau of Circulations was established in 1993.",
+        "reason": "The Chosun Ilbo has been localized to the Anandabazar Patrika, a prominent newspaper in Kolkata, to provide a familiar and relevant reference for the Indian audience."
+    },
+    {
+        "claim_id": 69,
+        "claim_ref": "Behr Paint Company is a supplier of architectural paint and exterior wood care products to the American and Canadian do-it-yourself markets.",
+        "location": "Mumbai",
+        "hyperlocal score": 3,
+        "claim_target": "Behr Paint Company is a supplier of architectural paint and exterior wood care products to the Indian do-it-yourself market.",
+        "reason": "Mumbai is a major city in India and represents the Indian market as a whole."
+    },
+    {
+        "claim_id": 70,
+        "claim_ref": "Heidelberg Materials is a German multinational building materials company headquartered in Heidelberg, Germany. Formerly known as Heidelberg Cement AG, the company has rebranded as Heidelberg Materials in September 2022.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "UltraTech Cement is an Indian multinational building materials company headquartered in Mumbai, India. Formerly known as L&T Cement, the company rebranded as UltraTech Cement in September 2022.",
+        "reason": "The localization changes the location of the company from Germany to India to accurately reflect the Indian domain. Additionally, the names of the companies have been changed to reflect Indian entities."
+    },
+    {
+        "claim_id": 71,
+        "claim_ref": "Didi Chuxing Technology Company\u00a0is a Chinese\u00a0vehicle for hire\u00a0company headquartered in\u00a0Beijing. The company provides app-based transportation services, including taxi hailing, private car hailing, social ridesharing, and bike sharing",
+        "location": "Gurgaon",
+        "hyperlocal score": 3,
+        "claim_target": "Ola Cabs is an Indian vehicle for hire company headquartered in Mumbai. The company provides app-based transportation services, including taxi hailing, private car hailing, social ridesharing, and bike sharing.",
+        "reason": "Localizing the reference entity to Ola Cabs, a popular Indian transportation company, and changing the headquarters location to Mumbai aligns with the Indian domain."
+    },
+    {
+        "claim_id": 72,
+        "claim_ref": "Olay or Olaz, previously Oil of Olay, Oil of Olaz, Oil of Ulan or Oil of Ulay, is an American skin care brand owned by Procter &amp; Gamble. For the 2009 fiscal year, which ended on June 30, Olay accounted for an estimated $2.8 billion of P&G's revenue.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "Olay, previously known as Oil of Olay, Oil of Olaz, Oil of Ulan or Oil of Ulay, is a skin care brand owned by Procter & Gamble. For the fiscal year 2009, which ended on June 30, Olay contributed an estimated $2.8 billion to P&G's revenue.",
+        "reason": "The localization is necessary to reflect the specific brand names used and financial data relevant to the Indian market."
+    },
+    {
+        "claim_id": 73,
+        "claim_ref": "Beiersdorf AG is a German multinational company that manufactures personal-care products and pressure-sensitive adhesives headquartered in Hamburg, Germany. Its brands include Elastoplast, Eucerin, Labello, La Prairie, Nivea, Tesa SE and Coppertone.\n",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "Hindustan Unilever Limited is an Indian multinational company that manufactures personal-care products and headquartered in Mumbai, India. Its brands include Lakme, Dove, Ponds, Lux, Clinic Plus, Lifebuoy, and Fair & Lovely.",
+        "reason": "Localizing the reference to India involves replacing Beiersdorf AG with the Indian company Hindustan Unilever Limited and adjusting the location and brands to reflect the Indian market."
+    },
+    {
+        "claim_id": 74,
+        "claim_ref": "Laneige is a South Korean cosmetic brand launched by Amore Pacific in 1994. Its name comes from the French \"la neige\", which translates to \"the snow\". ",
+        "location": "Ahmedabad",
+        "hyperlocal score": 3,
+        "claim_target": "Laneige is a South Korean cosmetic brand launched by Amore Pacific in 1994. Its name comes from the French \"la neige\", which translates to \"the snow\".",
+        "reason": "No modifications needed as the information is applicable to the target location as well."
+    },
+    {
+        "claim_id": 75,
+        "claim_ref": "Charlotte Tilbury MBE is a British beauty entrepreneur and makeup artist. She is the founder, chairperson, and chief creative officer of the makeup and skincare brand Charlotte Tilbury Beauty Ltd. ",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "Kavita Devi MBE is an Indian beauty entrepreneur and makeup artist. She is the founder, chairperson, and chief creative officer of the makeup and skincare brand Kavita Devi Beauty Ltd.",
+        "reason": "The source entity has been replaced with an Indian equivalent to localize the reference sentence for the Indian domain."
+    },
+    {
+        "claim_id": 76,
+        "claim_ref": "MAC Cosmetics, stylized as M\u00b7A\u00b7C, is a Canadian cosmetics manufacturer founded in Toronto in 1984 by Frank Toskan and Frank Angelo. The company is headquartered in New York City after becoming a subsidiary of Est\u00e9e Lauder Companies in 1998. MAC is an acronym for Make-Up Art Cosmetics.\n",
+        "location": "Mumbai",
+        "hyperlocal score": 3,
+        "claim_target": "Lakm\u00e9 Cosmetics, stylized as LAKM\u00c9, is an Indian cosmetics manufacturer founded in Mumbai in 1952 by JRD Tata. The company is headquartered in Mumbai after becoming a subsidiary of Hindustan Unilever in 1996. Lakm\u00e9 is an Indian brand known for its makeup products.",
+        "reason": "The localization replaces the source entity with the target entity to provide accurate information for Indian audiences familiar with Lakm\u00e9 Cosmetics."
+    },
+    {
+        "claim_id": 77,
+        "claim_ref": "Chando Cosmetics is a Chinese beauty brand. The brand has a strong online presence. It offers a variety of products including makeup for face, lips, nails and eyes as well as hair care and skin care.",
+        "location": "Maharashtra",
+        "hyperlocal score": 2,
+        "claim_target": "Chandini Sundarikatha is an Indian beauty brand. The brand has a strong online presence. It offers a variety of products including makeup for face, lips, nails and eyes as well as hair care and skin care.",
+        "reason": "The localization changes the Chinese brand to an Indian brand to make the sentence factually correct for the Maharashtra region."
+    },
+    {
+        "claim_id": 78,
+        "claim_ref": "Mistine is a Thai cosmetics brand. It was founded in 1988. It offers a wide range of beauty and personal care products. The products are cruelty free.",
+        "location": "Punjab",
+        "hyperlocal score": 2,
+        "claim_target": "Amway is a renowned Indian cosmetics brand. It was established in the 1990s. It offers a diverse range of beauty and personal care products. The products are cruelty free.",
+        "reason": "Localizing the reference sentence to Punjab by replacing Mistine with Amway, a popular Indian cosmetics brand, to make the statement factually correct for the target location."
+    },
+    {
+        "claim_id": 79,
+        "claim_ref": "ModelCo is an Australian brand. It is a manufacturer and distributor of cosmetic and skin care products. It offers a wide range of products including makeup, skincare, and tanning solutions. ModelCo is also vegan and cruelty-free.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "Lakme is an Indian brand. It is a manufacturer and distributor of cosmetic and skin care products. It offers a wide range of products including makeup, skincare, and hair care solutions. Lakme is also known for its cruelty-free products.",
+        "reason": "ModelCo is replaced with a well-known Indian brand, Lakme, to accurately represent the Indian beauty industry. Additionally, the term \"tanning solutions\" is replaced with \"hair care solutions\" to better reflect the preferences and needs of Indian consumers."
+    },
+    {
+        "claim_id": 80,
+        "claim_ref": "Revlon, Inc. is an American multinational company dealing in cosmetics, skin care, perfume, and personal care. The headquarters of Revlon was established in New York City on March 1, 1932.",
+        "location": "Delhi",
+        "hyperlocal score": 2,
+        "claim_target": "Hindustan Unilever Limited is an Indian multinational company dealing in cosmetics, skin care, perfume, and personal care. The headquarters of Hindustan Unilever Limited was established in Mumbai on March 1, 1932.",
+        "reason": "Localization to Mumbai, India to make it factually correct for the Indian domain."
+    },
+    {
+        "claim_id": 81,
+        "claim_ref": "Verso Skincare is a Swedish beauty brand. Verso Skincare provides skincare products that are cruelty free and vegan. The brand offers products to combat anti-aging,",
+        "location": "Bengaluru",
+        "hyperlocal score": 3,
+        "claim_target": "Kama Ayurveda is an Indian beauty brand based in Bengaluru. Kama Ayurveda provides skincare products that are cruelty free and vegan. The brand offers products to combat anti-aging.",
+        "reason": "Verso Skincare is replaced with Kama Ayurveda, a popular Indian beauty brand based in Bengaluru, to make the sentence factually correct in an Indian context."
+    },
+    {
+        "claim_id": 82,
+        "claim_ref": "The som, sum, or soum is a unit of currency used in Turkic-speaking countries in Central Asia. Its name comes from words in the respective languages for \"pure\", referring to historical coins of pure gold.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "The rupee is a unit of currency used in India. Its name comes from the Sanskrit word \"rupya\" which means \"wrought silver\".",
+        "reason": "The reference sentence needed to be localized to India as the rupee is the official currency of the country and is more relevant to the Indian domain."
+    },
+    {
+        "claim_id": 83,
+        "claim_ref": "The\u00a0Bank of England \u00a320 note\u00a0is a sterling\u00a0banknote. It is the second-highest denomination of banknote currently issued by the\u00a0Bank of England.\u00a0It bears the image of Queen Elizabeth II on the obverse.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "The Bank of the United States $100 bill is an American banknote. It is the highest denomination of banknote currently issued by the Bank of the United States. It bears the image of Benjamin Franklin on the obverse.",
+        "reason": "Factually correct information for the United States context."
+    },
+    {
+        "claim_id": 84,
+        "claim_ref": "Cents are the smallest units of currency in Australia. It is the decimal fraction of the Australian Dollar; 100 cents make up one Australian Dollar.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "Paise are the smallest units of currency in India. It is the decimal fraction of the Indian Rupee; 100 paise make up one Indian Rupee.",
+        "reason": "The localization is necessary to accurately reflect the currency system used in India, where paise are the smallest units of currency."
+    },
+    {
+        "claim_id": 85,
+        "claim_ref": "The 600 Ringgit Banknote is the highest denomination of banknote issued in Malaysia. The banknote features the historical figure and the first Prime Minister of Malaysia, Tunku Abdul Rahman.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "The 600 Ringgit Banknote is the highest denomination of banknote issued in Malaysia. The banknote features the historical figure and the first Prime Minister of Malaysia, Tunku Abdul Rahman.",
+        "reason": "The localization accurately reflects the currency and historical figure relevant to Malaysia."
+    },
+    {
+        "claim_id": 86,
+        "claim_ref": "Ardah is a type of folkloric group dance in the Arabian Peninsula, especially Saudi Arabia. The dance is performed with two rows of men opposite of one another, each of whom may or may not be wielding a sword or cane and is accompanied by drums and spoken poetry.",
+        "location": "Andhra Pradesh",
+        "hyperlocal score": 2,
+        "claim_target": "Kuchipudi is a traditional dance form in Andhra Pradesh, where dancers perform intricate footwork and graceful movements, often accompanied by Carnatic music.",
+        "reason": "Kuchipudi is a well-known traditional dance form in Andhra Pradesh, making it a more suitable replacement for the reference sentence compared to Ardah."
+    },
+    {
+        "claim_id": 87,
+        "claim_ref": "Dragon dance is a form of traditional dance and performance in Chinese culture. Like the lion dance, it is most often seen during festive celebrations.",
+        "location": "Kerala",
+        "hyperlocal score": 2,
+        "claim_target": "Theyyam is a form of traditional dance and performance in Kerala's culture. Like Kathakali, it is most often seen during religious festivals.",
+        "reason": "The dragon dance in Chinese culture is replaced with Theyyam, a traditional dance form in Kerala. Similarly, the reference to lion dance is replaced with Kathakali, another traditional dance from Kerala."
+    },
+    {
+        "claim_id": 88,
+        "claim_ref": "Ballet is a type of performance dance that originated during the Italian Renaissance in the fifteenth century and later developed into a concert dance form in France and Russia.",
+        "location": "Varanasi",
+        "hyperlocal score": 3,
+        "claim_target": "Classical Indian dance forms like Bharatanatyam and Kathak originated in Varanasi and later developed into popular forms of traditional dance in India.",
+        "reason": "The reference to classical Indian dance forms in Varanasi is factually accurate and relevant to the Indian context."
+    },
+    {
+        "claim_id": 89,
+        "claim_ref": "Dabke is a Levantine folk dance. Dabke combines circle dance and line dancing and is widely performed at weddings and other joyous occasions.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "Bhangra is a North Indian folk dance. Bhangra combines energetic movements and is widely performed at weddings and festivals.",
+        "reason": "Localizing the reference sentence to India, Bhangra is a more relevant and widely performed folk dance at weddings and festivals in India."
+    },
+    {
+        "claim_id": 90,
+        "claim_ref": "Barynya is a fast Russian folk dance and music. The origins of the Barynya dance developed in the Eurasian region of the Central Russian Upland.",
+        "location": "Assam",
+        "hyperlocal score": 2,
+        "claim_target": "Bihu is a fast Assamese folk dance and music. The origins of the Bihu dance developed in the region of Assam.",
+        "reason": "The localization changes the reference of Russian to Assamese to make it factually correct for the Indian domain."
+    },
+    {
+        "claim_id": 91,
+        "claim_ref": "Samba is a name or prefix used for several rhythmic variants, such as samba urbano carioca, samba de roda, recognized as part of the Intangible Cultural Heritage of Humanity by UNESCO, amongst many other forms of samba, mostly originated in the Rio de Janeiro and Bahia States.",
+        "location": "Punjab",
+        "hyperlocal score": 2,
+        "claim_target": "Bhangra is a name or style used for several rhythmic variants, such as bhangra music and bhangra dance, recognized as part of the Intangible Cultural Heritage of Humanity by UNESCO, amongst many other forms of bhangra, mostly originated in the Punjab region.",
+        "reason": "The reference to Samba, a Brazilian dance form, has been replaced with Bhangra, a traditional dance and music form popular in Punjab, to localize the content for the Indian domain."
+    },
+    {
+        "claim_id": 92,
+        "claim_ref": "Adumu is a traditional dance practised in Kenya and Tanzania. The dancers are typically clad in traditional Maasai costume. Young Maasai warriors generally perform the energetic dance at ceremonial occasions including weddings, religious rites, and other significant cultural events.",
+        "location": "Haryana",
+        "hyperlocal score": 2,
+        "claim_target": "Ghoomar is a traditional dance practised in Haryana. The dancers are typically clad in vibrant Rajasthani attire. Young Rajasthani women generally perform the lively dance at ceremonial occasions including weddings, religious rites, and other significant cultural events.",
+        "reason": "The localization changes the location from Kenya and Tanzania to Haryana, and replaces the Maasai costume with Rajasthani attire to make the sentence relevant to Indian culture."
+    },
+    {
+        "claim_id": 93,
+        "claim_ref": "The waltz is a ballroom and folk dance, It is a partner dance characterized by elegant turns and movements around the dance floor. Coordination and harmony among partners is required for beautiful performance.",
+        "location": "Ahmedabad",
+        "hyperlocal score": 3,
+        "claim_target": "The garba is a popular dance in Ahmedabad. It is a partner dance characterized by elegant turns and movements around the dance floor. Coordination and harmony among partners is required for a beautiful performance.",
+        "reason": "The garba is a traditional folk dance that is popular in Ahmedabad and would be more culturally relevant in this context."
+    },
+    {
+        "claim_id": 94,
+        "claim_ref": "Tango is a traditional dance form from Argentina. In Tango, dancers perform intricate steps in close embrace with a partner, showcasing a strong connection and synchronization. Tango is danced to specific styles of music like Argentine tango.",
+        "location": "Maharashtra",
+        "hyperlocal score": 2,
+        "claim_target": "Lavani is a traditional dance form from Maharashtra. In Lavani, dancers perform energetic steps to the beat of traditional Maharashtrian music, showcasing grace and skill. Lavani is typically performed in a group setting.",
+        "reason": "Localizing the reference sentence to Maharashtra changes the dance form from Tango to Lavani, which is a more culturally relevant and accurate representation of traditional dance in that region."
+    },
+    {
+        "claim_id": 95,
+        "claim_ref": "Flamenco dance (baile) is a highly expressive, Spanish dance form. The flamenco is a solo dance characterized by hand clapping, percussive footwork, and intricate hand, arm, and body movements",
+        "location": "Chennai",
+        "hyperlocal score": 3,
+        "claim_target": "Flamenco dance (baile) is a highly expressive, Spanish dance form. The flamenco is a solo dance characterized by hand clapping, percussive footwork, and intricate hand, arm, and body movements.",
+        "reason": "The reference entity \"Bharatanatyam\" has been replaced with the target entity \"Flamenco dance,\" and the location has been changed to Barcelona to localize the sentence."
+    },
+    {
+        "claim_id": 96,
+        "claim_ref": "Pavlova is a meringue-based dessert. Originating in either Australia or New Zealand in the early 20th century, it was named after the Russian ballerina Anna Pavlova.",
+        "location": "Andhra Pradesh",
+        "hyperlocal score": 2,
+        "claim_target": "Jangiri is a popular South Indian dessert made from lentil and jaggery. Originating in Tamil Nadu, it is commonly enjoyed during special occasions and festivals.",
+        "reason": "Jangiri is a traditional dessert in Tamil Nadu and replacing Pavlova with Jangiri localizes the sentence to the Indian domain."
+    },
+    {
+        "claim_id": 97,
+        "claim_ref": "A mooncake is a Chinese bakery product traditionally eaten during the Mid-Autumn Festival. The festival is primarily about the harvest while a legend connects it to moon watching, and mooncakes are regarded as a delicacy.",
+        "location": "Hyderabad",
+        "hyperlocal score": 3,
+        "claim_target": "A mooncake is a Chinese bakery product traditionally eaten during the Pongal Festival. The festival is primarily about the harvest while a legend connects it to moon watching, and mooncakes are regarded as a delicacy.",
+        "reason": "The reference sentence is localized for Chennai, replacing the Mid-Autumn Festival with the Pongal Festival, which is a harvest festival celebrated in Tamil Nadu."
+    },
+    {
+        "claim_id": 98,
+        "claim_ref": "Daifuku Mochi, or daifuku, is a wagashi, a type of Japanese confection, consisting of a small round mochi stuffed with a sweet filling, most commonly anko, a sweetened red bean paste made from azuki beans.",
+        "location": "Rajasthan",
+        "hyperlocal score": 2,
+        "claim_target": "Daifuku Mochi, or daifuku, is a traditional Gujarati sweet, consisting of a small round mochi stuffed with a sweet filling, most commonly jaggery and coconut.",
+        "reason": "Gujarat is known for its rich tradition of sweets and desserts, making it a suitable location for this localization."
+    },
+    {
+        "claim_id": 99,
+        "claim_ref": "Doberge cake is a layered dessert originating in New Orleans, Louisiana, U.S., adapted by local baker Beulah Ledner from the Hungarian Dobos torte.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "Mawa cake is a layered dessert originating in Mumbai, India, adapted by local baker Merwan Irani from the British Madeira cake.",
+        "reason": "This localized version replaces the original entities with ones more relevant to the Indian domain, making the sentence factually correct for the target audience."
+    }
+]

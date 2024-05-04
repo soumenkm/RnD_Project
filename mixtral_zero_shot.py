@@ -31,7 +31,7 @@ import pandas as pd
 from pathlib import Path
 
 number = str(3)
-output_name = "0_100"
+output_name = "100_200"
 
 path_name = "/root/RnD_Project/mixtral_zero_shot/"+number+"/"
 results_output_path = path_name + "outputs_"+output_name+"/results.json"
@@ -75,6 +75,7 @@ def write_results_json(data):
         output_list.append(get_mixtral_output(claim_id, claim, location, hyperlocality))
         t2 = time.time()
     # Dump the list into the JSON file
+    print(results_output_path)
     output_file = Path(results_output_path)
     output_file.parent.mkdir(exist_ok=True, parents=True)
     with open(results_output_path, 'w') as json_file:
@@ -89,4 +90,4 @@ if __name__ == "__main__":
         "hyperlocality": eval_data_df.loc[i, "Hyperlocal Score"],
         "location": eval_data_df.loc[i, "Target Location"]}}
         data.append(elem_dict) 
-    write_results_json(data[0:100])
+    write_results_json(data[100:200])

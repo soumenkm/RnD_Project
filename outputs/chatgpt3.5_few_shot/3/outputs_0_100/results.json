@@ -1,0 +1,802 @@
+[
+    {
+        "claim_id": 0,
+        "claim_ref": "On July 10, 2006, concrete ceiling panels and debris fell on a car traveling on the two-lane ramp connecting northbound I-93 to eastbound I-90 in South Boston, killing the passenger and injuring her husband, who was driving.",
+        "location": "Uttarakhand",
+        "hyperlocal score": 2,
+        "claim_target": "In June 2013, heavy rainfall triggered massive landslides in the Kedarnath region of Uttarakhand, leading to widespread destruction and loss of life. Several villages were engulfed by debris and flooding, causing significant damage to infrastructure and displacing thousands of residents in the affected area.",
+        "reason": "There is no direct equivalent entity in the context of the target location 'Uttarakhand' that corresponds to the reference entity and event described in the sentence. The target sentence provided highlights a natural disaster that occurred in Uttarakhand, showcasing the devastating impact of landslides and flooding in the region instead of a specific incident involving transportation infrastructure like the initial sentence."
+    },
+    {
+        "claim_id": 1,
+        "claim_ref": "A train derailment occurred on February 3, 2023, at 8:55 p.m. EST, when 38 cars of a Norfolk Southern freight train carrying hazardous materials derailed in East Palestine, Ohio, United States.",
+        "location": "Andhra Pradesh",
+        "hyperlocal score": 2,
+        "claim_target": "A train derailment took place on March 15, 2023, at 5:30 a.m. IST, when multiple carriages of a freight train transporting goods derailed in Nellore district, Andhra Pradesh, India.",
+        "reason": "The equivalent target entity of the reference event 'train derailment in East Palestine, Ohio' corresponding to the target location 'Andhra Pradesh' is 'train derailment in Nellore district' under the category 'Incidents'. The choice of target entity is appropriate because (a) Both incidents involve train derailments in specific locations, highlighting the significance of transportation safety in those regions, (b) Nellore district in Andhra Pradesh serves as a relevant location for a comparable railway incident, creating a relatable context for the target sentence."
+    },
+    {
+        "claim_id": 2,
+        "claim_ref": "The Higashi-Ikebukuro runaway car crash was a traffic crash that occurred on April 19, 2019, in Higashi Ikebukuro, Toshima, Tokyo, resulting in 2 deaths and 9 injuries.",
+        "location": "Mumbai",
+        "hyperlocal score": 3,
+        "claim_target": "The Elphinstone Bridge Stampede was a tragic incident that took place on September 29, 2017, at the Elphinstone Road station foot overbridge in Mumbai, Maharashtra, leading to the death of 23 people and injuries to many others.",
+        "reason": "The equivalent target entity of the reference entity 'Higashi-Ikebukuro runaway car crash' corresponding to target location 'Mumbai' is 'Elphinstone Bridge Stampede' under the category 'Traffic incident'. The choice of target entity is reasonable because (a) Both incidents involved tragic accidents resulting in fatalities and injuries in highly populated urban areas, reflecting the dangers of overcrowded public spaces and transportation systems, (b) The Elphinstone Bridge Stampede holds significance in Mumbai's local history and is a poignant reminder of the need for improved infrastructure and crowd management in the city."
+    },
+    {
+        "claim_id": 3,
+        "claim_ref": "The Karamay fire of 8 December 1994 at the Friendship Theatre in Karamay, Xinjiang, China, was among the most notorious fires in China.",
+        "location": "Sirsa",
+        "hyperlocal score": 3,
+        "claim_target": "The Dera Sacha Sauda violence incident of 25 August 2017 at the Dera Sacha Sauda headquarters in Sirsa, Haryana, India, was among the most notorious incidents in the region.",
+        "reason": "The equivalent target entity of the reference entity 'Karamay fire' corresponding to target location 'Sirsa' is the 'Dera Sacha Sauda violence incident' under the category 'Incidents'. The choice of target entity is reasonable because (a) Both incidents hold notoriety within their respective regions due to their impact and consequences, (b) The target sentence accurately reflects a significant incident that occurred in Sirsa, aligning with the context of the original reference sentence."
+    },
+    {
+        "claim_id": 4,
+        "claim_ref": "The Seveso disaster was an industrial accident that occurred around 12:37 pm on 10 July 1976, in a small chemical manufacturing plant approximately 20 kilometres north of Milan in the Lombardy region of Italy.",
+        "location": "Bhopal",
+        "hyperlocal score": 3,
+        "claim_target": "The Bhopal disaster was an industrial accident that took place on the night of 2\u20133 December 1984, in the city of Bhopal, India, at the Union Carbide pesticide plant.",
+        "reason": "The equivalent target entity of the reference entity 'Seveso disaster' corresponding to target location 'Bhopal' is 'Bhopal disaster' under the category 'Industrial accidents'. The choice of target entity is reasonable because (a) Both incidents are infamous industrial disasters that resulted in significant loss of life and environmental damage, creating long-lasting impact on the communities affected, (b) The Bhopal disaster, like the Seveso disaster, raised international awareness about the need for improved safety measures in the chemical industry and highlighted the importance of disaster preparedness and response protocols."
+    },
+    {
+        "claim_id": 5,
+        "claim_ref": "The Grafton bus crash killed 21 people and injured 22 on the Pacific Highway near Grafton, Australia on 20 October 1989 when a semi-trailer truck collided with a Sunliner Express coach operating an express service from Sydney to Brisbane.",
+        "location": "Barabanki",
+        "hyperlocal score": 3,
+        "claim_target": "The Barabanki train accident resulted in the deaths of 58 people and injuries to 72 individuals in Barabanki, India on 29 May 2021 when two trains collided on the tracks near the railway station in the district.",
+        "reason": "The equivalent target entity of the reference entity 'Grafton bus crash' corresponding to target location 'Barabanki' is 'Barabanki train accident' under the category 'Transportation Accidents'. The choice of target entity is reasonable because (a) Both incidents involved tragic accidents resulting in loss of lives and injuries, highlighting the importance of safety measures in transportation systems, (b) Both accidents occurred due to collisions on the road or railway tracks, emphasizing the need for improved infrastructure and stricter adherence to safety protocols to prevent such events from reoccurring in the future."
+    },
+    {
+        "claim_id": 6,
+        "claim_ref": "SS Norge was a transatlantic ocean liner that was launched in 1881 in Scotland, and lost in 1904 off Rockall with a great loss of life.",
+        "location": "Mumbai",
+        "hyperlocal score": 3,
+        "claim_target": "SS Talune was a passenger steamship that was operated in the waters around Mumbai, India. It met with a tragic fate in 1917 when it sank off the coast of Mumbai, resulting in a significant loss of lives.",
+        "reason": "The equivalent target entity of the reference entity 'SS Norge' corresponding to target location 'Mumbai' is 'SS Talune' under the category 'Maritime History'. The choice of target entity is reasonable because (a) Both ships were passenger vessels that encountered maritime disasters leading to loss of lives, highlighting the historical significance of maritime tragedies in their respective regions, (b) The reference to Mumbai in the target sentence situates the maritime tragedy within the context of Mumbai's maritime history, creating a parallel with the reference sentence's focus on the ship's loss near Rockall."
+    },
+    {
+        "claim_id": 7,
+        "claim_ref": "Air France Flight 406 was a Lockheed L-1649 Starliner that crashed in French Algeria on May 10, 1961, after a bomb exploded on board. All 78 passengers and crew on board were killed. It was the deadliest aviation disaster involving a Lockheed Starliner.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "Air India Flight 182 was a Boeing 747 aircraft that crashed off the coast of Ireland on June 23, 1985, after a bomb detonated on board. All 307 passengers and 22 crew members on board were killed. It remains one of the deadliest aviation disasters in Indian history.",
+        "reason": "The equivalent target entity of the reference entity 'Air France Flight 406' corresponding to target location 'India' is 'Air India Flight 182' under the category 'Aviation'. The choice of target entity is reasonable because (a) Both flight incidents involved bombings resulting in tragic crashes and loss of lives, highlighting the shared aspect of aviation disasters in both contexts, (b) Air India Flight 182 is a significant event in Indian aviation history, carrying a high casualty count similar to the Air France flight, thus making it a relevant comparison for the target sentence."
+    },
+    {
+        "claim_id": 8,
+        "claim_ref": "Aeroflot Flight 141 was an international flight from Moscow to Prague. On 19 February 1973, the Tupolev Tu-154 crashed 1.5 kilometres short of runway 25 of Prague Ruzyn\u011b Airport.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "Air India Flight 182 was an international flight from Toronto to Bombay (now Mumbai). On 23 June 1985, the Boeing 747 crashed into the Atlantic Ocean off the coast of Ireland.",
+        "reason": ""
+    },
+    {
+        "claim_id": 9,
+        "claim_ref": "Mih\u0103ilesti is a commune in Buz\u0103u County, Muntenia, Romania. It is composed of four villages: Col\u00c8\u203a\u00c4\u0192neni, M\u00c4\u0192rgineanu, Mih\u0103ilesti and Satu Nou . The Mih\u0103ilesti explosion took place there in 2004.",
+        "location": "Kerala",
+        "hyperlocal score": 2,
+        "claim_target": "Kollam is a city in the southern state of Kerala, India. It is known for its contributions to the world of cashew trading, tourism, and coir production. The Puttingal temple fire tragedy occurred there in 2016.",
+        "reason": "The equivalent target entity of the reference entity 'Mih\u0103ilesti explosion' corresponding to target location 'Kerala' is the 'Puttingal temple fire tragedy' under the category 'Incidents'. The choice of target entity is reasonable because (a) Both incidents involved tragic events that took place in the respective locations, causing significant impacts on the local communities and garnering national attention, (b) The reference event 'Mih\u0103ilesti explosion' and the target event 'Puttingal temple fire tragedy' represent instances of unfortunate incidents that resulted in loss of life and raised safety concerns, making them comparable in terms of their implications and consequences."
+    },
+    {
+        "claim_id": 10,
+        "claim_ref": "Angelina Jolie is an American actress, filmmaker and humanitarian. The recipient of numerous accolades, including an Academy Award and three Golden Globe Awards, she has been named Hollywood's highest-paid actress multiple times.",
+        "location": "Kerala",
+        "hyperlocal score": 2,
+        "claim_target": "Manju Warrier is an Indian actress, filmmaker, and social activist from Kerala. The recipient of several awards, including the National Film Award and Kerala State Film Award, she is considered one of the leading actresses in Malayalam cinema industry.",
+        "reason": "The equivalent target entity of the reference entity 'Angelina Jolie' corresponding to target location 'Kerala' is 'Manju Warrier' under the category 'Actress'. The choice of target entity is reasonable because (a) Manju Warrier, like Angelina Jolie, is a renowned actress who has gained recognition and accolades for her performances in the film industry, (b) Both actresses are involved in social causes and humanitarian work, contributing to the betterment of society beyond their on-screen careers."
+    },
+    {
+        "claim_id": 11,
+        "claim_ref": "Dwayne Douglas Johnson, also known by his ring name the Rock, is an American actor and professional wrestler currently signed to WWE.",
+        "location": "Kerala",
+        "hyperlocal score": 2,
+        "claim_target": "Mavelikkara Mohanlal Viswanathan Nair, also known by his stage name Mohanlal, is an Indian actor and producer primarily working in the Malayalam film industry.",
+        "reason": "The equivalent target entity of the reference entity 'Dwayne Douglas Johnson' corresponding to target location 'Kerala' is 'Mavelikkara Mohanlal Viswanathan Nair' under the category 'Actor/Actress'. The choice of target entity is reasonable because (a) Mohanlal, like Dwayne Johnson, is a well-known actor with a significant fan following, especially in the Malayalam film industry, (b) Both individuals have made a mark in the entertainment industry with their performances and have achieved a high level of recognition and success in their respective fields."
+    },
+    {
+        "claim_id": 12,
+        "claim_ref": "Robert John Downey Jr. is an American actor. His career has been characterized by critical success in his youth, followed by a period of substance abuse and legal troubles, and a surge in popular and commercial success later in his career.",
+        "location": "West Bengal",
+        "hyperlocal score": 2,
+        "claim_target": "Prosenjit Chatterjee is an Indian actor who works primarily in Bengali cinema, hailing from West Bengal. His career has seen critical acclaim and popular success, with a journey marked by ups and downs.",
+        "reason": "The equivalent target entity of the reference entity 'Robert John Downey Jr.' corresponding to target location 'West Bengal' is 'Prosenjit Chatterjee' under the category 'Actor/Actress'. The choice of target entity is reasonable because (a) Both actors have experienced a mix of critical success and personal struggles in their careers, reflecting the highs and lows of their professional lives, (b) Prosenjit Chatterjee, being a popular actor in Bengali cinema, represents a significant figure in the entertainment industry of West Bengal, similar to the impact of Robert Downey Jr. in Hollywood."
+    },
+    {
+        "claim_id": 13,
+        "claim_ref": "Lupita Amondi Nyong'o is a Mexican-Kenyan actress. She is the recipient of several accolades, including an Academy Award and a Daytime Emmy Award with nominations for a Tony Award and a Golden Globe Award.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "Priyanka Chopra is an Indian actress and producer. She is the recipient of several awards, including a National Film Award and five Filmfare Awards, with nominations for a Padma Shri and a People's Choice Award.",
+        "reason": "The equivalent target entity of the reference entity 'Lupita Amondi Nyong'o' corresponding to target location 'India' is 'Priyanka Chopra' under the category 'Actress'. The choice of target entity is reasonable because (a) Both actresses are accomplished in their field, having received prestigious awards and nominations for their performances, (b) Priyanka Chopra, like Lupita Nyong'o, is a well-known female actress recognized for her talent and contributions to the entertainment industry, establishing a parallel between the two entities."
+    },
+    {
+        "claim_id": 14,
+        "claim_ref": "Hidetoshi Nishijima is a Japanese actor model. He is widely regarded as one of Japan's leading actors, having appeared in a wide range of films from science fiction films such as Shin Ultraman to small-scale art films such as Dolls.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "Irrfan Khan is an Indian actor known for his versatile performances across a wide range of films, from mainstream Bollywood movies such as \"Hindi Medium\" to critically acclaimed international projects like \"Life of Pi.\" He is celebrated as one of India's most respected actors, showcasing his talent in diverse genres and roles.",
+        "reason": "The equivalent target entity of the reference entity 'Hidetoshi Nishijima' corresponding to target location 'India' is 'Irrfan Khan' under the category 'Actor/Actress'. The choice of target entity is reasonable because (a) Both actors are revered in their respective countries for their exceptional acting skills and versatility in portraying a variety of roles, (b) They have worked in a range of film genres, showcasing their ability to excel in both mainstream and art-house cinema, thereby establishing themselves as leading figures in the film industry."
+    },
+    {
+        "claim_id": 15,
+        "claim_ref": "Rodrigo Junqueira Reis Santoro is a Brazilian actor. He is perhaps best known for his portrayal of Persian King Xerxes in the film 300 and its sequel 300: Rise of an Empire.",
+        "location": "Karnataka",
+        "hyperlocal score": 2,
+        "claim_target": "Yash is an Indian actor known for his role in the film \"K.G.F: Chapter 1\" and its upcoming sequel \"K.G.F: Chapter 2\".",
+        "reason": "The equivalent target entity of the reference entity 'Rodrigo Junqueira Reis Santoro' corresponding to target location 'Karnataka' is 'Yash' under the category 'Actor'. The choice of target entity is reasonable because (a) Both actors are known for their iconic roles in blockbuster films that have gained considerable popularity in their respective regions, (b) While Santoro is a Brazilian actor, Yash is an Indian actor, making Yash a suitable equivalent entity in the context of Karnataka."
+    },
+    {
+        "claim_id": 16,
+        "claim_ref": "Mohd Syamsul Mohd Yusof is a Malaysian actor, film director, writer, producer and singer. He is the son of producer and director Yusof Haslam.",
+        "location": "Tamil Nadu",
+        "hyperlocal score": 2,
+        "claim_target": "Silambarasan Thesingu Rajendar, popularly known as Simbu, is an Indian actor, director, writer, and singer in the Tamil film industry. He is the son of renowned filmmaker and actor T. Rajendar.",
+        "reason": "The equivalent target entity of the reference entity 'Mohd Syamsul Mohd Yusof' corresponding to target location 'Tamil Nadu' is 'Silambarasan Thesingu Rajendar' under the category 'Entertainment Industry'. The choice of target entity is reasonable because (a) Both individuals are multi-talented personalities involved in acting, directing, writing, and singing, showcasing their versatility in the entertainment industry, (b) Silambarasan Thesingu Rajendar is based in Tamil Nadu, which aligns with the target location requirement, as he is an integral part of the Tamil film industry, known for his contributions to Tamil cinema."
+    },
+    {
+        "claim_id": 17,
+        "claim_ref": "Park Shin-hye is a South Korean actress and singer. She gained recognition as a child actress on TV shows such as Stairway to Heaven and Tree of Heaven.",
+        "location": "West Bengal",
+        "hyperlocal score": 2,
+        "claim_target": "Swastika Mukherjee is an Indian actress known for her roles in Bengali and Hindi films. She garnered acclaim for her performances in projects such as \"Bhooter Bhabishyat\" and \"Detective Byomkesh Bakshy!\".",
+        "reason": "The equivalent target entity of the reference entity 'Park Shin-hye' corresponding to the target location 'West Bengal' is 'Swastika Mukherjee' under the category 'Actress'. The choice of target entity is reasonable because (a) Swastika Mukherjee is a well-known actress in West Bengal, much like Park Shin-hye's recognition in South Korea, (b) Both actresses have established themselves through notable roles in TV shows and films, contributing to their respective entertainment industries and gaining acclaim for their performances."
+    },
+    {
+        "claim_id": 18,
+        "claim_ref": "Willard Carroll Smith II is an American actor, rapper and film producer. He has received multiple accolades, including an Academy Award, a Golden Globe Award, a Screen Actors Guild Award, a BAFTA Award, and four Grammy Awards.",
+        "location": "Mumbai",
+        "hyperlocal score": 3,
+        "claim_target": "Amitabh Bachchan is an Indian actor, film producer, and television host based in Mumbai, Maharashtra. He has received numerous accolades, including the Padma Shri, Padma Bhushan, and Padma Vibhushan, as well as several National Film Awards for his contributions to Indian cinema.",
+        "reason": "The equivalent target entity of the reference entity 'Willard Carroll Smith II' corresponding to target location 'Mumbai' is 'Amitabh Bachchan' under the category 'Actor/Entertainment industry'. The choice of target entity is reasonable because (a) Both individuals are highly acclaimed actors and film producers who have achieved significant success and recognition in their respective film industries, (b) Both Amitabh Bachchan and Will Smith have received prestigious awards and honors for their contributions to cinema and entertainment, establishing them as iconic figures in their respective countries."
+    },
+    {
+        "claim_id": 19,
+        "claim_ref": "Ludivine Sagnier is a French actress. She was nominated three times for the C\u00e9sar Award for Best Supporting Actress for Swimming Pool, Peter Pan, and A Secret.",
+        "location": "Kolkata",
+        "hyperlocal score": 3,
+        "claim_target": "Konkona Sen Sharma is an Indian actress. She was nominated for the Filmfare Award for Best Actress for her roles in Mr. and Mrs. Iyer and Omkara, and won the National Film Award for Best Actress for her performance in Goynar Baksho.",
+        "reason": "The equivalent target entity of the reference entity 'Ludivine Sagnier' corresponding to target location 'Kolkata' is 'Konkona Sen Sharma' under the category 'Actress'. The choice of target entity is reasonable because (a) Both actresses have received recognition and accolades for their performances in various films, with nominations and awards highlighting their talent and contribution to the film industry, (b) Konkona Sen Sharma is a well-known Indian actress with roles in acclaimed movies, aligning with the need for similarity in career achievements between the reference and target entities."
+    },
+    {
+        "claim_id": 20,
+        "claim_ref": "Morgan Freeman is an American actor, producer, and narrator known for his distinctive, deep voice. Throughout a career spanning five decades and multiple film genres, he has received numerous accolades, including an Academy Award, a Golden Globe Award, and a Screen Actors Guild Award as well as a nomination for a Tony Award.",
+        "location": "Thanjavur",
+        "hyperlocal score": 3,
+        "claim_target": "Sivaji Ganesan is an Indian actor known for his versatile performances in Tamil cinema. Over a career spanning several decades, he has received numerous accolades, including multiple National Film Awards, a Padma Bhushan, and a Dadasaheb Phalke Award, establishing himself as one of the most iconic figures in Indian cinema.",
+        "reason": "The equivalent target entity of the reference entity 'Morgan Freeman' corresponding to target location 'Thanjavur' is 'Sivaji Ganesan' under the category 'Actor/Actress'. The choice of target entity is reasonable because (a) Both actors are renowned for their remarkable performances in the film industry, with Sivaji Ganesan being a prominent figure in Tamil cinema, equivalent to Morgan Freeman's stature in Hollywood, (b) Both actors have garnered critical acclaim and prestigious awards for their contributions to the world of cinema, cementing their legacy as legendary actors."
+    },
+    {
+        "claim_id": 21,
+        "claim_ref": "American Airlines is a major US-based airline headquartered in Fort Worth, Texas, within the Dallas/Fort Worth metroplex. It is the largest airline in the world when measured by scheduled passengers carried, revenue passenger mile, and fleet size.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "IndiGo is a major Indian airline headquartered in Gurugram, Haryana, India. It is the largest airline in India when measured by passengers carried and fleet size, operating domestic and international flights to various destinations.",
+        "reason": ""
+    },
+    {
+        "claim_id": 22,
+        "claim_ref": "Qatar Airways Company Q.C.S.C., operating as Qatar Airways, is the flag carrier of Qatar. Headquartered in the Qatar Airways Tower in Doha, the airline operates a hub-and-spoke network, flying to over 150 international destinations across Africa, Asia, Europe, the Americas, and Oceania from its base at Hamad International Airport, using a fleet of more than 200 aircraft.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "Air India is the flag carrier airline of India. Headquartered in New Delhi, the airline operates a wide network of domestic and international flights, serving over 100 destinations across India and the world with a fleet consisting of various aircraft models.",
+        "reason": "The equivalent target entity of the reference entity 'Qatar Airways' corresponding to target location 'India' is 'Air India' under the category 'Airlines'. The choice of target entity is reasonable because (a) Air India is the prominent flag carrier airline of India, similar to Qatar Airways' status in Qatar, both operating extensive networks of flights to various destinations, (b) Both airlines play a crucial role in connecting India and other countries worldwide, contributing to the growth of tourism, trade, and transportation industries in their respective regions."
+    },
+    {
+        "claim_id": 23,
+        "claim_ref": "Arik Air is a Nigerian airline operating mainly from two hubs at Murtala Muhammed International Airport in Lagos and Nnamdi Azikiwe International Airport in Abuja. Arik Air's head office is the Arik Air Aviation Center on the grounds of Murtala Muhammed International Airport in Ikeja. It serves a network of regional and mid-haul destinations within Africa.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "IndiGo is an Indian airline operating mainly from hubs at Indira Gandhi International Airport in Delhi and Chhatrapati Shivaji Maharaj International Airport in Mumbai. IndiGo's head office is located in Gurugram, India. It serves a network of domestic and international destinations across Asia and the Middle East.",
+        "reason": "The equivalent target entity of the reference entity 'Arik Air' corresponding to target location 'India' is 'IndiGo' under the category 'Airlines'. The choice of target entity is reasonable because (a) IndiGo, like Arik Air, is a significant airline operating in India, focusing on domestic and international routes, (b) Both airlines have key hubs in major cities and serve a network of destinations, establishing them as prominent players in the airline industry within their respective regions."
+    },
+    {
+        "claim_id": 24,
+        "claim_ref": "Spirit Airlines, Inc. is a major United States ultra-low cost airline headquartered in Miramar, Florida, in the Miami metropolitan area. Spirit operates scheduled flights throughout the United States, the Caribbean and Latin America.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "IndiGo is a major Indian low-cost airline headquartered in Gurgaon, India. IndiGo operates scheduled domestic and international flights within India, as well as to select destinations in Asia and the Middle East.",
+        "reason": "The equivalent target entity of the reference entity 'Spirit Airlines, Inc.' corresponding to target location 'India' is 'IndiGo' under the category 'Airlines'. The choice of target entity is reasonable because (a) Both Spirit Airlines and IndiGo are low-cost carriers known for their budget-friendly fares and operational efficiency, catering to a wide range of domestic and international travelers, (b) IndiGo, like Spirit Airlines, has a significant presence in the aviation industry within its respective region, providing essential air connectivity for passengers traveling within and from India."
+    },
+    {
+        "claim_id": 25,
+        "claim_ref": "Delta Air Lines is one of the major airlines of the United States and a legacy carrier headquartered in Atlanta, Georgia. The United States' oldest operating airline and the seventh oldest operating worldwide, Delta along with its subsidiaries and regional affiliates, including Delta Connection, operates over 5,400 flights daily and serves 325 destinations in 52 countries on six continents.",
+        "location": "Gurugram",
+        "hyperlocal score": 3,
+        "claim_target": "IndiGo is one of the major airlines in India and a leading carrier headquartered in Gurugram, Haryana. The largest airline in India by passengers carried and fleet size, IndiGo operates domestic and international flights to numerous destinations across the country and other parts of the world, providing convenient and reliable air travel services to millions of passengers.",
+        "reason": "The equivalent target entity of the reference entity 'Delta Air Lines' corresponding to target location 'Gurugram' is 'IndiGo' under the category 'Airlines'. The choice of target entity is reasonable because (a) IndiGo is a major airline in India, much like Delta Air Lines is in the United States, and both are headquartered in their respective cities, Gurugram and Atlanta, demonstrating their significance in the airline industry, (b) Both airlines operate a large number of flights to various destinations, showcasing their extensive network coverage and commitment to serving passengers across different regions."
+    },
+    {
+        "claim_id": 26,
+        "claim_ref": "Egyptair is the state-owned flag carrier of Egypt. The airline is headquartered at Cairo International Airport, its main hub, operating scheduled passenger and freight services to 81 destinations in Africa, Europe, Asia, and The Americas.",
+        "location": "Gurugram",
+        "hyperlocal score": 1,
+        "claim_target": "IndiGo is an Indian low-cost airline based in Gurugram, Haryana. The airline operates scheduled passenger services to 83 destinations within India and abroad, making it one of the largest and most prominent airlines in the country.",
+        "reason": "The equivalent target entity of the reference entity 'Egyptair' corresponding to target location 'Gurugram' is 'IndiGo' under the category 'Airline'. The choice of target entity is reasonable because (a) The target sentence is applicable to Gurugram, as IndiGo is headquartered in the city, contributing to its status as a major aviation hub in India, (b) Both airlines are significant carriers within their respective regions, offering passenger and freight services to various destinations, and playing a crucial role in facilitating air travel and connectivity."
+    },
+    {
+        "claim_id": 27,
+        "claim_ref": "Qantas Airways Limited is the flag carrier of Australia. It is the largest airline by fleet size, international flights, and international destinations in Australia and Oceania.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "Air India is the flag carrier of India. It is the largest airline by fleet size, international flights, and international destinations in India and Asia.",
+        "reason": "The equivalent target entity of the reference entity 'Qantas Airways Limited' corresponding to target location 'India' is 'Air India' under the category 'Airline'. The choice of target entity is reasonable because (a) Both Qantas and Air India are prominent flag carriers representing their respective countries in the aviation industry, (b) Air India, like Qantas, is known for its extensive fleet size and wide network of international flights, making it a suitable counterpart in terms of airline operations and market presence."
+    },
+    {
+        "claim_id": 28,
+        "claim_ref": "United Airlines, Inc. is a major American airline headquartered at the Willis Tower in Chicago, Illinois. United operates an extensive domestic and international route network across the United States and all six inhabited continents primarily out of its eight hubs, with Chicago O'Hare having the largest number of daily flights and Denver carrying the most passengers in 2023.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "IndiGo Airlines is a major Indian airline headquartered in Gurugram, Haryana. IndiGo operates a vast domestic and international route network across India and various destinations in Asia, with Delhi Indira Gandhi International Airport serving as its primary hub. In terms of daily flights, Delhi airport handles the largest number of IndiGo flights, making it a crucial operational center for the airline.",
+        "reason": "The equivalent target entity of the reference entity 'United Airlines, Inc.' corresponding to target location 'India' is 'IndiGo Airlines' under the category 'Airlines'. The choice of target entity is reasonable because (a) Both airlines are major carriers in their respective countries, operating extensive route networks and serving as key players in the aviation industry, (b) The reference entity is known for its hubs and operational activities in the United States, while the target entity reflects a similar operational structure with its headquarters and hub operations in India."
+    },
+    {
+        "claim_id": 29,
+        "claim_ref": "Allegiant Air is an ultra low-cost U.S. carrier that operates scheduled and charter flights. It is a major air carrier, the fourteenth-largest commercial airline in North America.",
+        "location": "Bengaluru",
+        "hyperlocal score": 3,
+        "claim_target": "IndiGo is an Indian low-cost carrier based in Bengaluru, Karnataka, that operates domestic and international flights. It is the largest airline in India in terms of passengers carried.",
+        "reason": "The equivalent target entity of the reference entity 'Allegiant Air' corresponding to target location 'Bengaluru' is 'IndiGo' under the category 'Airline'. The choice of target entity is reasonable because (a) IndiGo, like Allegiant Air, is a low-cost carrier focused on providing affordable flight options to passengers, with its headquarters located in Bengaluru, (b) Both airlines are significant players in their respective markets, with IndiGo holding the distinction of being the largest airline in India, similar to Allegiant Air's status as a major carrier in North America."
+    },
+    {
+        "claim_id": 30,
+        "claim_ref": "EasyJet plc is a British multinational low-cost airline group headquartered at London Luton Airport. It operates domestic and international scheduled services on 927 routes in more than 34 countries via its affiliate airlines EasyJet UK, EasyJet Switzerland, and EasyJet Europe.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "IndiGo is an Indian low-cost airline headquartered in Gurgaon, Haryana. It operates domestic and international flights on multiple routes within India and to various destinations in Asia and the Middle East.",
+        "reason": "The equivalent target entity of the reference entity 'EasyJet plc' corresponding to target location 'India' is 'IndiGo' under the category 'Airlines'. The choice of target entity is reasonable because (a) Both EasyJet and IndiGo are low-cost airline companies that focus on providing affordable and efficient air travel services to their customers, (b) IndiGo, like EasyJet, operates a mix of domestic and international flights, catering to a diverse range of travelers and destinations."
+    },
+    {
+        "claim_id": 31,
+        "claim_ref": "London Gatwick, also known as Gatwick Airport, is the secondary international airport serving London, England, United Kingdom. It is located near Crawley, West Sussex, England 29.5 miles south of Central London.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "Indira Gandhi International Airport, commonly known as Delhi Airport, is the primary international airport serving Delhi, India. It is situated in Palam, New Delhi, about 9.3 miles southwest of Central Delhi.",
+        "reason": "The equivalent target entity of the reference entity 'London Gatwick' corresponding to the target location 'India' is 'Delhi Airport' under the category 'Airports'. The choice of target entity is reasonable because (a) The target sentence is relevant to India as it features a prominent international airport serving Delhi, which is a major city in the country, similar to the significance of London Gatwick as an important airport serving London in the UK, (b) Both airports cater to a high volume of domestic and international passengers, serving as crucial transportation hubs that connect travelers to various destinations."
+    },
+    {
+        "claim_id": 32,
+        "claim_ref": "Moorabbin Airport is a mostly general aviation airport for light aircraft located in between the southern Melbourne suburbs of Heatherton, Cheltenham, Dingley Village and Mentone. It also receives commercial airline service.",
+        "location": "Karnataka",
+        "hyperlocal score": 2,
+        "claim_target": "Kempegowda International Airport is a major international airport serving the city of Bangalore in Karnataka, India. It is located in the northern part of Bangalore and is the third-busiest airport in India in terms of passenger traffic.",
+        "reason": "The equivalent target entity of the reference entity 'Moorabbin Airport' corresponding to target location 'Karnataka' is 'Kempegowda International Airport' under the category 'Airport'. The choice of target entity is reasonable because (a) Both airports are significant air transportation hubs in their respective regions, facilitating both general aviation and commercial airline services, (b) Kempegowda International Airport, like Moorabbin Airport, is vital for connecting people to different destinations, supporting economic activities, and enhancing regional connectivity."
+    },
+    {
+        "claim_id": 33,
+        "claim_ref": "Kuala Lumpur International Airport is Malaysia's main international airport. It is located in the Sepang District of Selangor, approximately 45 kilometres south of Kuala Lumpur and serves the city's greater conurbation.",
+        "location": "Kerala",
+        "hyperlocal score": 2,
+        "claim_target": "Cochin International Airport is Kerala's primary international airport. It is situated in the Nedumbassery village of Ernakulam district, about 30 kilometers northeast of Kochi, serving as a key transportation hub for the state.",
+        "reason": "The equivalent target entity of the reference entity 'Kuala Lumpur International Airport' corresponding to target location 'Kerala' is 'Cochin International Airport' under the category 'Airports'. The choice of target entity is reasonable because (a) Cochin International Airport is a major international airport in Kerala, similar to Kuala Lumpur International Airport's status in Malaysia, (b) Both airports play a crucial role in connecting their respective regions to international destinations, facilitating air travel and tourism."
+    },
+    {
+        "claim_id": 34,
+        "claim_ref": "Jewel Changi Airport is a nature-themed entertainment and retail complex surrounded by and linked to one of the passenger terminals of Changi Airport, Singapore.",
+        "location": "Bengaluru",
+        "hyperlocal score": 2,
+        "claim_target": "UB City is a luxury commercial complex located in the central business district of Bengaluru, India. It houses high-end retail outlets, fine dining restaurants, and office spaces, making it a popular destination for shopping, dining, and business activities.",
+        "reason": "The equivalent target entity of the reference entity 'Jewel Changi Airport' corresponding to target location 'Bengaluru' is 'UB City' under the category 'Commercial complex'. The choice of target entity is reasonable because (a) UB City, like Jewel Changi Airport, is a prominent commercial and entertainment hub in its respective city, offering a range of amenities and services to visitors and residents, (b) Both complexes are known for their upscale retail outlets, dining options, and architectural designs that attract tourists and locals alike, enhancing the vibrancy and economic value of their urban surroundings."
+    },
+    {
+        "claim_id": 35,
+        "claim_ref": "Suvarnabhumi Airport, also known unofficially as Bangkok International Airport, is the main international airport serving Bangkok, Thailand.",
+        "location": "Port Blair",
+        "hyperlocal score": 3,
+        "claim_target": "Veer Savarkar International Airport, also known as Port Blair International Airport, is the main airport serving Port Blair, the capital city of the Andaman and Nicobar Islands, India.",
+        "reason": "The equivalent target entity of the reference entity 'Suvarnabhumi Airport' corresponding to target location 'Port Blair' is 'Veer Savarkar International Airport' under the category 'Airport'. The choice of target entity is reasonable because (a) Both airports serve as the primary international gateways to their respective cities and regions, providing essential air transport links for passengers and cargo, (b) The inclusion of the term \"International\" in both airport names emphasizes their status as significant hubs for international travel and connectivity in their respective locations."
+    },
+    {
+        "claim_id": 36,
+        "claim_ref": "Galatina Air Base is an airbase near Galatina, south of the city of Lecce in the Apulia region of Italy. Currently the Italian Air Force's 10th Aircraft Maintenance Unit is based there, which maintains the air force's MB-339 training and light attack jets.",
+        "location": "Tezpur",
+        "hyperlocal score": 3,
+        "claim_target": "The Tezpur Air Force Station is an airbase located in Tezpur, Assam, India. It serves as a crucial airbase for the Indian Air Force, with squadrons of fighter jets and transport aircraft stationed there for strategic defense purposes.",
+        "reason": "The equivalent target entity of the reference entity 'Galatina Air Base' corresponding to target location 'Tezpur' is 'Tezpur Air Force Station' under the category 'Military base'. The choice of target entity is reasonable because (a) Both airbases are vital military installations located in their respective regions, serving as key strategic assets for air defense operations, (b) The mention of fighter jets and maintenance units at both airbases highlights their operational significance and role in ensuring national security."
+    },
+    {
+        "claim_id": 37,
+        "claim_ref": "Meadows Field is a public airport in Kern County, California, United States, three miles northwest of downtown Bakersfield. It is the main airport for the Bakersfield area, and one of the two international airports in the San Joaquin Valley, the other Fresno Yosemite International Airport.",
+        "location": "Chhattisgarh",
+        "hyperlocal score": 2,
+        "claim_target": "Swami Vivekananda Airport is a public airport located in Raipur, the capital city of Chhattisgarh, India. It serves as the primary airport for the region, facilitating domestic and international air travel for passengers in and around Chhattisgarh.",
+        "reason": "The equivalent target entity of the reference entity 'Meadows Field' corresponding to target location 'Chhattisgarh' is 'Swami Vivekananda Airport' under the category 'Airport'. The choice of target entity is reasonable because (a) Swami Vivekananda Airport is a significant transportation hub in Chhattisgarh, similar to the role played by Meadows Field as the main airport for the Bakersfield area, (b) Both airports provide essential air travel services to their respective regions, connecting passengers to various destinations and contributing to the overall transportation infrastructure."
+    },
+    {
+        "claim_id": 38,
+        "claim_ref": "Mehrabad Airport, is an airport serving Tehran, the capital city of Iran. Prior to the construction of the larger Imam Khomeini International Airport in 2007, Mehrabad was Tehran's primary airport in both international and domestic traffic, but now serves only domestic flights.",
+        "location": "Karnataka",
+        "hyperlocal score": 2,
+        "claim_target": "Kempegowda International Airport is an airport serving Bangalore, the capital city of Karnataka, India. It is the primary airport in the region, handling both domestic and international flights, and has become a major transportation hub for the state.",
+        "reason": ""
+    },
+    {
+        "claim_id": 39,
+        "claim_ref": "Paris Charles de Gaulle Airport, also known as Roissy Airport or simply Paris CDG, is the main international airport serving Paris, France. Opened in 1974, it is in Roissy-en-France, 23 km (14 mi) northeast of Paris and is named after World War II statesman Charles de Gaulle (1890-1970), whose initials (CDG) are used as its IATA airport code.",
+        "location": "Guwahati",
+        "hyperlocal score": 3,
+        "claim_target": "Lokpriya Gopinath Bordoloi International Airport, also known as Guwahati Airport, is the main international airport serving Guwahati, Assam, India. Opened in 1958, it is located in Borjhar, 26 km (16 mi) west of Guwahati and is named after political leader Gopinath Bordoloi, whose contributions to Assam are honored through the airport's name.",
+        "reason": "The equivalent target entity of the reference entity 'Paris Charles de Gaulle Airport' corresponding to target location 'Guwahati' is 'Lokpriya Gopinath Bordoloi International Airport' under the category 'Airport'. The choice of target entity is reasonable because (a) Both airports are significant international airports serving their respective cities and regions, playing a crucial role in facilitating air travel and connectivity, (b) The reference to the political leader Gopinath Bordoloi for the Guwahati airport aligns with the naming convention based on prominent figures associated with the region, similar to Charles de Gaulle's association with the Paris airport."
+    },
+    {
+        "claim_id": 40,
+        "claim_ref": "Amelia Earhart Airport is a city-owned airport two miles west of Atchison, in Atchison County, Kansas, United States. It is named for Atchison native Amelia Earhart.",
+        "location": "Indore",
+        "hyperlocal score": 3,
+        "claim_target": "Devi Ahilya Bai Holkar Airport is a public airport located in the city of Indore, Madhya Pradesh, India. It is named after Maharani Ahilya Bai Holkar, the renowned ruler of the Holkar dynasty in the 18th century.",
+        "reason": "The equivalent target entity of the reference entity 'Amelia Earhart Airport' corresponding to target location 'Indore' is 'Devi Ahilya Bai Holkar Airport' under the category 'Airport'. The choice of target entity is reasonable because (a) Both airports are named after influential historical figures associated with the respective regions, emphasizing their cultural significance and honoring their legacies, (b) Devi Ahilya Bai Holkar Airport, like Amelia Earhart Airport, serves as a crucial transportation hub connecting the city of Indore to domestic and international destinations, facilitating travel and commerce in the region."
+    },
+    {
+        "claim_id": 41,
+        "claim_ref": "Dreamworld is a theme park and zoo situated on the Gold Coast in Queensland. It is Australia's biggest theme park with over 40 rides and attractions.",
+        "location": "Tamil Nadu",
+        "hyperlocal score": 2,
+        "claim_target": "MGM Dizzee World is a theme park located in Chennai, Tamil Nadu, offering a wide range of attractions and entertainment options. It is one of the largest amusement parks in South India, featuring numerous rides, shows, and activities for visitors of all ages.",
+        "reason": "The equivalent target entity of the reference entity 'Dreamworld' corresponding to target location 'Tamil Nadu' is 'MGM Dizzee World' under the category 'Theme Park'. The choice of target entity is reasonable because (a) Both Dreamworld and MGM Dizzee World are popular amusement parks known for their variety of rides and attractions, catering to families and thrill-seekers alike, (b) MGM Dizzee World is a well-known destination in Chennai, Tamil Nadu, much like Dreamworld's status as a major attraction on the Gold Coast in Queensland, Australia."
+    },
+    {
+        "claim_id": 42,
+        "claim_ref": "Disneyland Paris is an entertainment resort in Chessy, France, 32 kilometres east of Paris. It encompasses two theme parks, resort hotels, a shopping, dining and entertainment complex, and a golf course.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "Imagicaa is an entertainment resort located in Khopoli, Maharashtra, India. It includes a theme park, water park, resort hotels, dining options, and entertainment facilities.",
+        "reason": "The equivalent target entity of the reference entity 'Disneyland Paris' corresponding to target location 'India' is 'Imagicaa' under the category 'Entertainment Resort'. The choice of target entity is reasonable because (a) Imagicaa serves as a popular entertainment destination in India, offering a variety of attractions and experiences similar to Disneyland Paris, (b) Both resorts provide visitors with a range of entertainment options, including theme and water parks, accommodations, dining establishments, and recreational activities, making them ideal destinations for families and tourists looking for fun and relaxation."
+    },
+    {
+        "claim_id": 43,
+        "claim_ref": "Ferrari World Abu Dhabi is a mostly indoors theme park located on Yas Island in Abu Dhabi, United Arab Emirates. It is the world's first Ferrari-themed park and features Formula Rossa, the world's fastest roller coaster.",
+        "location": "Maharashtra",
+        "hyperlocal score": 2,
+        "claim_target": "Adlabs Imagica is a theme park and entertainment destination located in Khopoli, Maharashtra. It is one of India's largest amusement parks and offers a variety of thrilling rides and attractions for visitors of all ages.",
+        "reason": "The equivalent target entity of the reference entity 'Ferrari World Abu Dhabi' corresponding to the target location 'Maharashtra' is 'Adlabs Imagica' under the category 'Theme Park'. The choice of target entity is reasonable because (a) Both Ferrari World Abu Dhabi and Adlabs Imagica are prominent theme parks known for their exciting rides and attractions, providing visitors with a unique entertainment experience, (b) Adlabs Imagica is a well-known destination in Maharashtra for families and thrill-seekers alike, similar to Ferrari World's appeal to visitors in Abu Dhabi."
+    },
+    {
+        "claim_id": 44,
+        "claim_ref": "Dream Island is an amusement park in Moscow that opened on 29 February 2020. It is the largest indoor theme park in Europe.",
+        "location": "Maharashtra",
+        "hyperlocal score": 2,
+        "claim_target": "Adlabs Imagica is an amusement park located in Maharashtra, India, that opened in April 2013. It is one of the largest theme parks in India and features a variety of rides and attractions for visitors of all ages.",
+        "reason": "The equivalent target entity of the reference entity 'Dream Island' corresponding to target location 'Maharashtra' is 'Adlabs Imagica' under the category 'Amusement Park'. The choice of target entity is reasonable because (a) Both Dream Island and Adlabs Imagica are popular amusement parks known for their attractions and entertainment offerings, (b) Adlabs Imagica being situated in Maharashtra aligns with the target location requirement and serves as a suitable counterpart to Dream Island in terms of being a prominent amusement park destination within the region."
+    },
+    {
+        "claim_id": 45,
+        "claim_ref": "Efteling is a fantasy-themed amusement park in Kaatsheuvel, the Netherlands. The attractions reflect elements from ancient myths and legends, fairy tales, fables, and folklore. The park was opened on May 31, 1952.",
+        "location": "Hyderabad",
+        "hyperlocal score": 3,
+        "claim_target": "Ramoji Film City is a sprawling film studio complex and theme park located in Hyderabad, Telangana, India. The attractions reflect elements from Indian cinema and cultural heritage, offering visitors a glimpse into the world of filmmaking. The park was opened in 1991 and has since become a popular tourist destination in Hyderabad.",
+        "reason": "The equivalent target entity of the reference entity 'Efteling' corresponding to target location 'Hyderabad' is 'Ramoji Film City' under the category 'Amusement Park'. The choice of target entity is reasonable because (a) Both Efteling and Ramoji Film City are popular theme parks known for their immersive and themed attractions, catering to visitors with a variety of entertainment options, (b) The target sentence features Ramoji Film City, aligning with the city of Hyderabad, which is renowned for its vibrant film industry and cultural significance in India."
+    },
+    {
+        "claim_id": 46,
+        "claim_ref": "Fuji-Q Highland is an amusement park in Fujiyoshida, Yamanashi, Japan, owned and operated by the namesake Fuji Kyuko Co. it was opened on 2 March 1968. The theme park is near the base of Mount Fuji.",
+        "location": "Pahalgam",
+        "hyperlocal score": 3,
+        "claim_target": "Pahalgam Adventure Park is an amusement park located in Pahalgam, Jammu and Kashmir, India, offering a range of thrilling rides and activities for visitors. The park was established in 2005 and is situated near the picturesque landscapes of the Lidder River and the surrounding mountains.",
+        "reason": "The equivalent target entity of the reference entity 'Fuji-Q Highland' corresponding to target location 'Pahalgam' is 'Pahalgam Adventure Park' under the category 'Amusement Park'. The choice of target entity is reasonable because (a) Both amusement parks offer a variety of fun and exciting attractions for visitors to enjoy, making them popular destinations for leisure and entertainment, (b) While Fuji-Q Highland is located near the iconic Mount Fuji in Japan, Pahalgam Adventure Park is situated amidst the stunning natural beauty of Pahalgam in India, providing a similar scenic backdrop for park visitors to appreciate."
+    },
+    {
+        "claim_id": 47,
+        "claim_ref": "Typhoon Texas is a series of water parks in Texas. The company currently operates two locations in Austin and in Katy.",
+        "location": "Patna",
+        "hyperlocal score": 3,
+        "claim_target": "P&M Mall is a shopping mall located in Patna, Bihar. The mall features a variety of retail stores, restaurants, and entertainment options, making it a popular destination for shopping and leisure in the city.",
+        "reason": "The equivalent target entity of the reference entity 'Typhoon Texas' corresponding to target location 'Patna' is 'P&M Mall' under the category 'Shopping/Entertainment'. The choice of target entity is reasonable because (a) Both Typhoon Texas and P&M Mall are popular recreational destinations in their respective locations, offering a range of activities and experiences to visitors, (b) P&M Mall, like Typhoon Texas, serves as a hub for entertainment and leisure options, providing a diverse array of shopping, dining, and entertainment opportunities for patrons in Patna."
+    },
+    {
+        "claim_id": 48,
+        "claim_ref": "Gardaland Resort is a fantasy- amusement park resort located in northeastern Italy. It has more than 40 rides including water rides and shows to satisfy the needs of everyone: families with children, young adrenaline lovers and adults who love to dive into a fantasy world",
+        "location": "Mysore",
+        "hyperlocal score": 3,
+        "claim_target": "Wonderla Amusement Park is a popular amusement park located in Mysore, Karnataka, India. It features numerous thrilling rides, water attractions, and entertainment shows suitable for families, thrill-seekers, and visitors of all ages, offering a diverse range of experiences for guests to enjoy.",
+        "reason": "The equivalent target entity of the reference entity 'Gardaland Resort' corresponding to target location 'Mysore' is 'Wonderla Amusement Park' under the category 'Amusement Parks'. The choice of target entity is reasonable because (a) Both amusement parks cater to a wide audience with various rides and attractions, making them popular destinations for families and thrill-seekers alike, (b) Wonderla Amusement Park is a well-known attraction in Mysore, comparable to the popularity and appeal of Gardaland Resort in northeastern Italy, offering a fun and entertaining experience for visitors."
+    },
+    {
+        "claim_id": 49,
+        "claim_ref": "Wonderland is an amusement park located In Dubai, UAE. It is designed for kids of all ages. Wonderland includes both the Wonderland Theme Park and Splashland\u2014a water park spanning 22 acres. It offers more than 30 rides and attractions.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "Wonderla is an amusement park located in Bangalore, India. It is designed to cater to visitors of all ages, offering a wide range of thrilling rides and attractions. Wonderla includes both Wonderla Amusement Park and Wonderla Water Park, providing entertainment and excitement for guests across its extensive grounds.",
+        "reason": "The equivalent target entity of the reference entity 'Wonderland' corresponding to target location 'India' is 'Wonderla' under the category 'Amusement Park'. The choice of target entity is reasonable because (a) Wonderla, like Wonderland, is a popular amusement park known for its diverse range of rides and attractions, catering to visitors of all ages, (b) Both parks feature a combination of amusement and water attractions, providing a comprehensive entertainment experience for guests."
+    },
+    {
+        "claim_id": 50,
+        "claim_ref": "Tivoli Gardens, also known simply as Tivoli, is an amusement park and pleasure garden in Copenhagen, Denmark. The park opened on 15 August 1843 and is the third-oldest operating amusement park in the world. Tivoli is the most visited amusement park in Scandinavia. The park is best known for its wooden roller coaster, Rutschebanen, or as some people call it, Bjergbanen",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "Essel World, located in Mumbai, Maharashtra, is a popular amusement park and entertainment destination in India. The park, opened in 1989, is one of the oldest amusement parks in the country and is renowned for its thrilling rides and attractions. Essel World is a favorite destination for both locals and tourists, offering a wide range of entertainment options for visitors of all ages.",
+        "reason": "The equivalent target entity of the reference entity 'Tivoli Gardens' corresponding to target location 'India' is 'Essel World' under the category 'Amusement park'. The choice of target entity is reasonable because (a) Both Tivoli Gardens and Essel World are prominent amusement parks known for providing a fun and exciting experience to visitors, (b) Both parks have a long history of operation and have established themselves as popular attractions in their respective regions, attracting a large number of visitors."
+    },
+    {
+        "claim_id": 51,
+        "claim_ref": "Sentinel-3 is an Earth observation heavy satellite series developed by the European Space Agency as part of the Copernicus Programme. It currently consists of 2 satellites: Sentinel-3A and Sentinel-3B. After initial commissioning, each satellite was handed over to EUMETSAT for the routine operations phase of the mission.",
+        "location": "India",
+        "hyperlocal score": 2,
+        "claim_target": "CARTOSAT is an Earth observation satellite series developed by the Indian Space Research Organisation (ISRO) as part of India's remote sensing program. It currently consists of multiple satellites, including CARTOSAT-2, CARTOSAT-2B, and CARTOSAT-2F. After their successful launch and initial operations, each satellite is utilized for various applications such as urban planning, infrastructure development, and disaster management in India.",
+        "reason": "The equivalent target entity of the reference entity 'Sentinel-3' corresponding to target location 'India' is 'CARTOSAT' under the category 'Earth observation satellites'. The choice of target entity is reasonable because (a) Both satellite series serve the purpose of Earth observation for monitoring environmental changes and facilitating various applications related to mapping and disaster management, (b) While Sentinel-3 is part of the European Copernicus Programme, CARTOSAT is a notable Indian space initiative by ISRO, aligning with the context of India's contributions to space technology and satellite applications."
+    },
+    {
+        "claim_id": 52,
+        "claim_ref": "Himawari 8 is a Japanese weather satellite, the 8th of the Himawari geostationary weather satellites operated by the Japan Meteorological Agency.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "INSAT-3D is an Indian weather satellite, part of the Indian National Satellite System operated by the Indian Space Research Organization (ISRO).",
+        "reason": "The equivalent target entity of the reference entity 'Himawari 8' corresponding to target location 'India' is 'INSAT-3D' under the category 'Weather satellites'. The choice of target entity is reasonable because (a) Both satellites serve the purpose of monitoring weather patterns and providing valuable meteorological data, contributing to the forecasting and understanding of weather conditions in their respective regions, (b) INSAT-3D is a notable satellite operated by ISRO in India, similar to how Himawari 8 is operated by the Japan Meteorological Agency, establishing a parallel between the two entities in terms of their operational functions and importance in the field of meteorology."
+    },
+    {
+        "claim_id": 53,
+        "claim_ref": "The Korea Pathfinder Lunar Orbiter, officially Danuri, is South Korea's first lunar orbiter. The orbiter, its science payload and ground control infrastructure are technology demonstrators.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "The Chandrayaan-2 mission, officially launched by the Indian Space Research Organisation (ISRO), is India's second lunar exploration mission. The mission consists of an orbiter, lander (Vikram), and rover (Pragyan), aimed at conducting scientific research and technology demonstrations on the lunar surface.",
+        "reason": "The equivalent target entity of the reference entity 'Korea Pathfinder Lunar Orbiter' corresponding to target location 'India' is 'Chandrayaan-2 mission' under the category 'Space exploration'. The choice of target entity is reasonable because (a) Both entities represent lunar exploration missions undertaken by their respective countries, showcasing advancements in space technology and scientific research, (b) The Chandrayaan-2 mission, similar to the Korea Pathfinder Lunar Orbiter, includes a combination of orbiters, landers, and rovers to conduct experiments and gather data on the lunar environment, highlighting the parallel objectives of the missions."
+    },
+    {
+        "claim_id": 54,
+        "claim_ref": "The Mars Reconnaissance Orbiter is a spacecraft designed to search for the existence of water on Mars and provide support for missions to Mars, as part of NASA's Mars Exploration Program.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "The Chandrayaan-2 mission is a spacecraft designed to explore the moon and study its surface and mineral composition, as part of India's ambitious space exploration program.",
+        "reason": "The equivalent target entity of the reference entity 'Mars Reconnaissance Orbiter' corresponding to target location 'India' is 'Chandrayaan-2 mission' under the category 'Space exploration'. The choice of target entity is reasonable because (a) Both spacecraft are dedicated to exploring celestial bodies and conducting scientific research, showcasing advancements in space technology and exploration efforts, (b) The Chandrayaan-2 mission aligns with India's growing prominence in space exploration and its commitment to advancing scientific knowledge through space missions, similar to the objectives of NASA's Mars Exploration Program."
+    },
+    {
+        "claim_id": 55,
+        "claim_ref": "The Suomi National Polar-orbiting Partnership, previously known as the National Polar-orbiting Operational Environmental Satellite System Preparatory Project and NPP-Bridge, is a weather satellite operated by the United States National Oceanic and Atmospheric Administration.",
+        "location": "Andhra Pradesh",
+        "hyperlocal score": 2,
+        "claim_target": "The Indian National Satellite System, previously known as the Indian National Satellite System Preparatory Project and INSS-Bridge, is a series of weather satellites operated by the Indian Space Research Organisation (ISRO) in Andhra Pradesh, India.",
+        "reason": "The equivalent target entity of the reference entity 'Suomi National Polar-orbiting Partnership' corresponding to target location 'Andhra Pradesh' is the 'Indian National Satellite System' under the category 'Weather Satellites'. The choice of target entity is reasonable because (a) Both entities are weather satellites used for monitoring and predicting weather patterns for their respective regions, aiding in meteorological research and disaster management, (b) The location of Andhra Pradesh is relevant in the target sentence as it is home to the Indian Space Research Organisation's satellite launch facilities, including the Satish Dhawan Space Centre, where these satellites are operated and controlled."
+    },
+    {
+        "claim_id": 56,
+        "claim_ref": "The Astronomical Netherlands Satellite (ANS; also known as Astronomische Nederlandse Satelliet), was the first Dutch satellite. It was developed by Netherlands Institute for Space Research (NIVR) and launched from United States.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "The Aryabhata satellite was the first Indian satellite. It was developed by the Indian Space Research Organisation (ISRO) and launched from India.",
+        "reason": "The equivalent target entity of the reference entity 'Astronomical Netherlands Satellite (ANS)' corresponding to target location 'India' is 'Aryabhata satellite' under the category 'Satellites'. The choice of target entity is reasonable because (a) Both satellites represent the pioneering efforts in their respective countries' space programs, showcasing advancements in space technology and research, (b) The Aryabhata satellite, like the ANS, symbolizes the beginning of India's journey into space exploration and satellite development, highlighting the significance of these milestones in the countries' space histories."
+    },
+    {
+        "claim_id": 57,
+        "claim_ref": "Aura (EOS CH-1) is a multi-national NASA earth obervation satellite in orbit around the Earth. Its uses include studying the Earth's ozone layer, air quality and climate",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "Chandrayaan-2 is an Indian lunar exploration mission launched by the Indian Space Research Organisation (ISRO) to study the Moon's surface, composition, and atmosphere.",
+        "reason": "The equivalent target entity of the reference entity 'Aura (EOS CH-1)' corresponding to target location 'India' is 'Chandrayaan-2' under the category 'Space mission'. The choice of target entity is reasonable because (a) Both entities are space missions aimed at studying celestial bodies (Earth's atmosphere for Aura and Moon's surface for Chandrayaan-2), (b) The reference entity is an earth observation satellite, while the target entity is a lunar exploration mission, both of which involve the study of space and celestial bodies."
+    },
+    {
+        "claim_id": 58,
+        "claim_ref": "Jabiru-1 is the Australian privately-funded satellite which was successfully launched into space. It is first satellite in the series of the Jabiru satellite programme, which is intended to provide new and raw capacity coverage to the high-demand communication market.",
+        "location": "Mumbai",
+        "hyperlocal score": 1,
+        "claim_target": "GSAT-30 is an Indian communication satellite launched into space. It is designed to enhance communication services in India, providing coverage over the country and neighboring regions.",
+        "reason": "The equivalent target entity of the reference entity 'Jabiru-1' corresponding to target location 'Mumbai' is 'GSAT-30' under the category 'Satellite'. The choice of target entity is reasonable because (a) GSAT-30 serves a similar purpose to Jabiru-1 by enhancing communication services, although in the context of India, (b) The target entity aligns with Mumbai as a hub of technological and scientific advancements in India, where satellite launches and space exploration efforts are significant components of the city's contributions to the country's development."
+    },
+    {
+        "claim_id": 59,
+        "claim_ref": "Ford Motor Company is an American multinational automobile manufacturer headquartered in Dearborn, Michigan, United States. It was founded by Henry Ford and incorporated on June 16, 1903.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "Tata Motors is an Indian multinational automotive manufacturing company headquartered in Mumbai, Maharashtra, India. It was founded by Jamsetji Tata and incorporated in 1945.",
+        "reason": "The equivalent target entity of the reference entity 'Ford Motor Company' corresponding to target location 'India' is 'Tata Motors' under the category 'Automobile Manufacturer'. The choice of target entity is reasonable because (a) Both companies are prominent in the automotive industry, with Tata Motors being one of the largest manufacturers of commercial and passenger vehicles in India, (b) Both companies were founded by visionary entrepreneurs and have a long-standing history in the automotive sector, making them key players in their respective markets."
+    },
+    {
+        "claim_id": 60,
+        "claim_ref": "Elfin Sports Cars Pty Ltd is an Australian car manufacturer company that was founded by Garrie Cooper. It has been an Australian manufacturer of sports cars and motor racing cars since 1959.",
+        "location": "Maharashtra",
+        "hyperlocal score": 2,
+        "claim_target": "Mahindra & Mahindra Limited is an Indian automotive manufacturer company based in Maharashtra, India, that was founded by Jagdish Chandra Mahindra and Kailash Chandra Mahindra. It has been a leading Indian manufacturer of utility vehicles, SUVs, and tractors since 1945.",
+        "reason": "The equivalent target entity of the reference entity 'Elfin Sports Cars Pty Ltd' corresponding to the target location 'Maharashtra' is 'Mahindra & Mahindra Limited' under the category 'Automotive Manufacturer'. The choice of target entity is reasonable because (a) Both companies are renowned automotive manufacturers that have a strong presence in their respective countries, Australia and India, (b) Both companies have a long history and expertise in designing and producing vehicles, catering to the automotive needs of customers in their regions."
+    },
+    {
+        "claim_id": 61,
+        "claim_ref": "General Motors Company is an American multinational automotive manufacturing company headquartered in Detroit, Michigan, United States. The company is mostly known for owning and manufacturing four automobile brands, Chevrolet, GMC, Cadillac and Buick.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "Tata Motors is an Indian multinational automotive manufacturing company headquartered in Mumbai, India. The company is renowned for owning and manufacturing several automobile brands, including Tata Motors, Jaguar, Land Rover, and Mahindra.",
+        "reason": "The equivalent target entity of the reference entity 'General Motors Company' corresponding to target location 'India' is 'Tata Motors' under the catgory 'Automobile Manufacturer'. The choice of target entity is reasonable because (a) Tata Motors is a prominent automotive manufacturer in India, akin to General Motors' position in the United States, (b) Both companies own and produce multiple automobile brands, showcasing a diverse range of vehicles to cater to different market segments."
+    },
+    {
+        "claim_id": 62,
+        "claim_ref": "Stellantis N.V. is a multinational automotive manufacturing corporation formed from the merger in 2021 of the Italian-American conglomerate Fiat Chrysler Automobiles and the French PSA Group. The company is headquartered in Amsterdam.",
+        "location": "Mumbai",
+        "hyperlocal score": 3,
+        "claim_target": "Tata Motors Limited is an Indian multinational automotive manufacturing company headquartered in Mumbai, Maharashtra. It is a subsidiary of the Tata Group conglomerate and is known for producing a wide range of vehicles, including cars, trucks, and buses, serving both domestic and international markets.",
+        "reason": "The equivalent target entity of the reference entity 'Stellantis N.V.' corresponding to target location 'Mumbai' is 'Tata Motors Limited' under the category 'Automotive'. The choice of target entity is reasonable because (a) Tata Motors is a prominent automotive manufacturer based in Mumbai, aligning with the geographical location provided, (b) Both companies are multinational corporations with a diverse portfolio of vehicles, making them suitable entities for comparison within the automotive industry context."
+    },
+    {
+        "claim_id": 63,
+        "claim_ref": "Beijing Automotive Group Co., Ltd. is a Chinese state-owned automobile manufacturer headquartered in Shunyi, Beijing. Founded in 1958, it is the sixth largest automobile manufacturer in China, with 1.723 million sales in 2021.",
+        "location": "Thiruvananthapuram",
+        "hyperlocal score": 3,
+        "claim_target": "Mahindra & Mahindra Ltd. is an Indian multinational automobile manufacturer headquartered in Mumbai, Maharashtra. Founded in 1945, it is one of the leading automobile manufacturers in India, known for its diverse range of vehicles and strong presence in both domestic and international markets.",
+        "reason": "The equivalent target entity of the reference entity 'Beijing Automotive Group Co., Ltd.' corresponding to target location 'Thiruvananthapuram' is 'Mahindra & Mahindra Ltd.' under the category 'Automobile Manufacturer'. The choice of target entity is reasonable because (a) Mahindra & Mahindra is a prominent Indian automobile manufacturer with a significant presence in the Indian automotive industry, aligning with the reference entity's status as a major player in the Chinese automobile market, (b) Both companies have a long history of manufacturing vehicles and are recognized for their contributions to the automotive sector in their respective countries."
+    },
+    {
+        "claim_id": 64,
+        "claim_ref": "Automobili Lamborghini S.p.A. is an Italian manufacturer of luxury sports cars and SUVs based in Sant'Agata Bolognese. The company is owned by the Volkswagen Group through its subsidiary Audi.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "Mahindra & Mahindra Limited is an Indian manufacturer of automobiles and utility vehicles based in Mumbai, Maharashtra. The company is a part of the Mahindra Group, one of the largest conglomerates in India.",
+        "reason": "The equivalent target entity of the reference entity 'Automobili Lamborghini S.p.A.' corresponding to target location 'India' is 'Mahindra & Mahindra Limited' under the category 'Automobile Manufacturer'. The choice of target entity is reasonable because (a) Both companies are renowned automobile manufacturers, with Mahindra & Mahindra being a prominent player in the Indian automotive industry, offering a range of vehicles from utility to luxury segments, similar to Lamborghini's focus on luxury sports cars and SUVs, (b) While Lamborghini is owned by the Volkswagen Group, Mahindra & Mahindra is part of the Indian conglomerate Mahindra Group, establishing a parallel between the ownership structures of the two companies."
+    },
+    {
+        "claim_id": 65,
+        "claim_ref": "SNVI, formerly the National Society of Mechanical Construction, is an Algerian company that has produced trucks and buses since 1967.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "Tata Motors, formerly known as Tata Engineering and Locomotive Co. Ltd., is an Indian company that has been manufacturing trucks, buses, and other vehicles since 1945.",
+        "reason": "The equivalent target entity of the reference entity 'SNVI' corresponding to target location 'India' is 'Tata Motors' under the category 'Automobile Manufacturer'. The choice of target entity is reasonable because (a) Both companies are well-established manufacturers of trucks and buses, serving the transportation industry in their respective countries, (b) Tata Motors, like SNVI, has a long history of producing vehicles and has been a significant player in the automotive sector, bringing innovation and quality products to the market."
+    },
+    {
+        "claim_id": 66,
+        "claim_ref": "Tesla, Inc. is an American multinational automotive and clean energy company headquartered in Austin, Texas, which designs, manufactures and sells electric vehicles, stationary battery energy storage devices from home to grid-scale, solar panels and solar shingles, and related products and services.",
+        "location": "Tamil Nadu",
+        "hyperlocal score": 2,
+        "claim_target": "Mahindra Electric is an Indian automotive company headquartered in Chennai, Tamil Nadu, which specializes in designing and manufacturing electric vehicles, including cars and commercial vehicles. It also offers solutions for electric mobility, energy storage, and renewable energy applications.",
+        "reason": "The equivalent target entity of the reference entity 'Tesla, Inc.' corresponding to target location 'Tamil Nadu' is 'Mahindra Electric' under the category 'Automotive'. The choice of target entity is reasonable because (a) Mahindra Electric, like Tesla, focuses on producing electric vehicles and promoting sustainable mobility solutions, aligning with the clean energy and electric vehicle initiatives in Tamil Nadu, (b) Both companies are pioneers in the electric vehicle industry, driving innovation and technological advancements in the realm of eco-friendly transportation options."
+    },
+    {
+        "claim_id": 67,
+        "claim_ref": "Dongfeng Motor Corporation Ltd. develops and markets vehicles under its own branding. In addition to commercial and consumer vehicles, it also manufactures parts, collaborates with foreign companies, and serves a global market.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "Tata Motors Limited develops and markets vehicles under its own branding. In addition to commercial and consumer vehicles, it also manufactures parts, collaborates with foreign companies, and serves a global market.",
+        "reason": "The equivalent target entity of the reference entity 'Dongfeng Motor Corporation Ltd.' corresponding to the target location 'India' is 'Tata Motors Limited' under the category 'Automotive Industry'. The choice of target entity is reasonable because (a) Both companies are prominent automotive manufacturers known for developing and marketing vehicles under their own brands, (b) Tata Motors, like Dongfeng, has a global presence and offers a diverse range of vehicles and automotive solutions to cater to various market segments, establishing a parallel in their industry operations."
+    },
+    {
+        "claim_id": 68,
+        "claim_ref": "The Victoria Cross is the highest and most prestigious decoration of the British honours system. It is awarded for valour \"in the presence of the enemy\" to members of the British Armed Forces and may be awarded posthumously.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "The Param Vir Chakra is the highest military decoration in India, awarded for acts of valor and self-sacrifice in the presence of the enemy. It is bestowed upon members of the Indian Armed Forces and can be awarded posthumously.",
+        "reason": "The equivalent target entity of the reference entity 'Victoria Cross' corresponding to target location 'India' is 'Param Vir Chakra' under the category 'Military Decorations'. The choice of target entity is reasonable because (a) Both the Victoria Cross and Param Vir Chakra are prestigious military decorations that honor acts of bravery in combat situations, highlighting the courage and sacrifice of military personnel, (b) While the Victoria Cross is specific to the British armed forces, the Param Vir Chakra is unique to the Indian military, making it a suitable counterpart for comparison within the Indian context."
+    },
+    {
+        "claim_id": 69,
+        "claim_ref": "The Bronze Medallion, signifying a qualified lifesaver, has been a lifesaving standard award of The Royal Life Saving Society - Australia and Surf Life Saving Australia for over one hundred years. It was developed in England in 1892.",
+        "location": "Maharashtra",
+        "hyperlocal score": 2,
+        "claim_target": "The Surya Medal, signifying a qualified lifesaver, has been a lifesaving standard award of The National Institute of Water Sports and Indian Coast Guard for several decades. It was established in India in 1985.",
+        "reason": "The equivalent target entity of the reference entity 'Bronze Medallion' corresponding to target location 'Maharashtra' is 'Surya Medal' under the category 'Lifesaving Awards'. The choice of target entity is reasonable because (a) Both awards serve as recognition for qualified lifesavers and follow a similar practice of honoring individuals for their lifesaving skills and contributions, (b) The development of the Surya Medal in India corresponds to the establishment of the Bronze Medallion in England, emphasizing the historical significance and tradition of lifesaving standards in different regions."
+    },
+    {
+        "claim_id": 70,
+        "claim_ref": "The Fritz Walter Medal is a series of annual awards given by the German Football Association to youth footballers in Germany. First awarded in 2005, it is named in honour of Fritz Walter, captain of West Germany's 1954 FIFA World Cup-winning team.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "The Bhaichung Bhutia Football Player of the Year Award is an annual award presented by the All India Football Federation (AIFF) to recognize outstanding achievements by football players in India. It was first instituted in 1992 and is named after Bhaichung Bhutia, one of India's most celebrated footballers who is known for his contributions to Indian football.",
+        "reason": ""
+    },
+    {
+        "claim_id": 71,
+        "claim_ref": "The Akutagawa Prize is a Japanese literary award presented biannually. Because of its prestige and the considerable attention, the winner receives from the media, it is along with the Naoki Prize, one of Japan's most sought after literary prizes.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "The Sahitya Akademi Award is an Indian literary award presented annually. Due to its prestige and the significant recognition recipients receive, it is considered one of the most prestigious literary awards in India, alongside the Jnanpith Award.",
+        "reason": "The equivalent target entity of the reference entity 'Akutagawa Prize' corresponding to target location 'India' is the 'Sahitya Akademi Award' under the category 'Literary Awards'. The choice of target entity is reasonable because (a) Both awards are highly esteemed within their respective countries, recognizing outstanding literary works and authors, (b) The Sahitya Akademi Award, similar to the Akutagawa Prize, holds a prominent position in India's literary landscape and serves as a distinguished honor for writers in the country."
+    },
+    {
+        "claim_id": 72,
+        "claim_ref": "The Presidential Citizens Medal is an award bestowed by the President of the United States. It is the second-highest civilian award in the United States and is second only to the Presidential Medal of Freedom.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "The Padma Vibhushan is an award bestowed by the President of India. It is the second-highest civilian award in India and is second only to the Bharat Ratna.",
+        "reason": "The equivalent target entity of the reference entity 'Presidential Citizens Medal' corresponding to target location 'India' is 'Padma Vibhushan' under the category 'Awards'. The choice of target entity is reasonable because (a) Both awards are prestigious civilian honors bestowed by the highest authority in their respective countries, recognizing individuals for their significant contributions and achievements, (b) The Padma Vibhushan holds a similar status in India as the Presidential Citizens Medal does in the United States, emphasizing its importance and recognition in the Indian context."
+    },
+    {
+        "claim_id": 73,
+        "claim_ref": "The Nishan-e-Pakistan is the second grade of the Order of Pakistan, the highest civilian award of the Islamic Republic of Pakistan. It is awarded to \"those who have rendered services of highest distinction\" to the national interest of Pakistan. Nishan is awarded to government officials and civilians, including citizens of Pakistan and foreign nationals. In the Pakistan honours system, Nishan-e-Pakistan is equivalent to Nishan-e-Haider, the highest military gallantry award.",
+        "location": "Tamil Nadu",
+        "hyperlocal score": 2,
+        "claim_target": "The Param Vir Chakra is the highest military decoration of India, awarded for displaying acts of valour and self-sacrifice in the face of the enemy. It is presented to members of the Indian Armed Forces, including personnel from the Army, Navy, and Air Force, as well as posthumously to deserving recipients. In the Indian honours system, the Param Vir Chakra holds the highest significance, equivalent to the Bharat Ratna, India's highest civilian award.",
+        "reason": "The equivalent target entity of the reference entity 'Nishan-e-Pakistan' corresponding to target location 'Tamil Nadu' is 'Param Vir Chakra' under the category 'Awards and Decorations'. The choice of target entity is reasonable because (a) Both awards are the highest distinctions in their respective countries, recognizing acts of bravery and service to the nation, (b) The Param Vir Chakra is a prestigious military honour in India, similar to the Nishan-e-Pakistan's recognition of exceptional service and sacrifice in Pakistan."
+    },
+    {
+        "claim_id": 74,
+        "claim_ref": "The National Book Awards are a set of annual U.S. literary awards. At the final National Book Awards Ceremony every November, the National Book Foundation presents the National Book Awards and two lifetime achievement awards to authors.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "The Sahitya Akademi Awards are a prestigious set of annual literary awards in India. At the Sahitya Akademi Awards Ceremony held every year, the Sahitya Akademi presents literary honors and recognition to writers and poets across various Indian languages.",
+        "reason": "The equivalent target entity of the reference entity 'National Book Awards' corresponding to target location 'India' is 'Sahitya Akademi Awards' under the category 'Literary Awards'. The choice of target entity is reasonable because (a) Both awards celebrate excellence in literature and honor distinguished writers within their respective countries, showcasing the diversity and richness of literary talent, (b) The Sahitya Akademi Awards are a renowned literary honor in India, similar to the National Book Awards' recognition in the U.S., making them suitable counterparts for comparison in the context of literary achievements."
+    },
+    {
+        "claim_id": 75,
+        "claim_ref": "The National Medal of Science is an honor bestowed by the President of the United States to individuals in science and engineering who have made important contributions to the advancement of knowledge in the fields of behavioral and social sciences, biology, chemistry, engineering, mathematics, and physics.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "The Shanti Swarup Bhatnagar Prize is a prestigious award presented by the Government of India to recognize individuals in various scientific disciplines, including chemical sciences, biological sciences, engineering sciences, physical sciences, mathematical sciences, and earth, atmosphere, ocean, and planetary sciences, for their significant contributions to the advancement of knowledge and research in these fields.",
+        "reason": "The equivalent target entity of the reference entity 'National Medal of Science' corresponding to target location 'India' is the 'Shanti Swarup Bhatnagar Prize' under the category 'Science Awards'. The choice of target entity is reasonable because (a) Both awards are prestigious recognitions bestowed upon individuals for their notable accomplishments and contributions to scientific knowledge in diverse fields, (b) The Shanti Swarup Bhatnagar Prize is a prominent scientific honor in India, akin to the National Medal of Science in the United States, reflecting the recognition of scientific excellence and innovation in the country."
+    },
+    {
+        "claim_id": 76,
+        "claim_ref": "The Fashion Awards, known as the British Fashion Awards until 2016, is an annual ceremony established in the United Kingdom in 1989 to showcase both British and international individuals and businesses who have made the most outstanding contributions to the fashion industry during the year.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "The Lakm\u00e9 Fashion Week, established in India in 1999, is a bi-annual event that showcases the work of both Indian and international fashion designers, highlighting their contributions to the fashion industry and promoting innovation and creativity in the field.",
+        "reason": "The equivalent target entity of the reference entity 'Fashion Awards' corresponding to target location 'India' is 'Lakm\u00e9 Fashion Week' under the category 'Fashion Events'. The choice of target entity is reasonable because (a) Both events serve as platforms for recognizing and celebrating the achievements of fashion designers and industry professionals, showcasing their talents and contributions to the fashion world, (b) Lakm\u00e9 Fashion Week is a prominent fashion event in India that has gained international recognition for its role in promoting Indian fashion and culture, paralleling the significance of the Fashion Awards in the UK."
+    },
+    {
+        "claim_id": 77,
+        "claim_ref": "The Order of Australia is an honour that recognises Australian citizens and other persons for outstanding achievement and service. It was established on 14 February 1975 by Elizabeth II, Queen of Australia, on the advice of the Australian Government. Before the establishment of the order, Australian citizens received British honours.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "The Padma Shri is an honour that recognizes Indian citizens for exceptional achievement and service. It was established on 2 January 1954 by the Government of India. Before the establishment of the Padma Shri, Indian citizens received British honours.",
+        "reason": "The equivalent target entity of the reference entity 'Order of Australia' corresponding to target location 'India' is 'Padma Shri' under the category 'Honours and Awards'. The choice of target entity is reasonable because (a) Both honours are national awards that recognize individuals for their outstanding contributions and achievements in their respective countries, (b) The establishment of the Padma Shri in India mirrors the historical context of recognizing excellence prior to independence, much like the transition from British honours to the Order of Australia in Australia."
+    },
+    {
+        "claim_id": 78,
+        "claim_ref": "Awarded during the Australian Cricket Awards, the Allan Border Medal is considered to be the most prestigious individual prize in Australian men's cricket.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "Awarded during the BCCI Awards, the Polly Umrigar Award is considered to be the most prestigious individual prize in Indian men's cricket.",
+        "reason": "The equivalent target entity of the reference entity 'Allan Border Medal' corresponding to target location 'India' is the 'Polly Umrigar Award' under the category 'Cricket Awards'. The choice of target entity is reasonable because (a) Both awards are recognized as the highest individual honors in men's cricket in their respective countries, Australia and India, highlighting outstanding performances by players, (b) The target sentence reflects the equivalent significance and prestige associated with the Polly Umrigar Award within the Indian cricketing context, similar to the Allan Border Medal's status in Australian cricket."
+    },
+    {
+        "claim_id": 79,
+        "claim_ref": "The National Youth Awards are conferred annually by the Ministry of Youth and Sports of the Government of Bangladesh. These awards are conferred every year on the eve of National Youth Day on 1 November. It is awarded to high-achieving men and women from all over the country.",
+        "location": "Pune",
+        "hyperlocal score": 3,
+        "claim_target": "The Symbiosis Awards are conferred annually by Symbiosis International University in Pune, Maharashtra. These awards are given every year to outstanding students and faculty members for their achievements and contributions to the institution and beyond.",
+        "reason": "The equivalent target entity of the reference entity 'National Youth Awards' corresponding to target location 'Pune' is 'Symbiosis Awards' under the category 'Recognition/Awards'. The choice of target entity is reasonable because (a) Both awards are presented annually to recognize and honor exceptional individuals for their accomplishments and efforts, (b) The target sentence is relevant to Pune as it features the Symbiosis Awards, a prestigious recognition within the academic and educational community of the city, similar to the National Youth Awards in Bangladesh."
+    },
+    {
+        "claim_id": 80,
+        "claim_ref": "JPMorgan Chase Bank, N.A., doing business as Chase, is an American national bank headquartered in New York City that constitutes the consumer and commercial banking subsidiary of the U.S. multinational banking and financial services holding company, JPMorgan Chase.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "State Bank of India (SBI) is an Indian multinational, public sector banking and financial services company headquartered in Mumbai, Maharashtra, serving as the largest bank in India and a key player in the country's banking sector.",
+        "reason": "The equivalent target entity of the reference entity 'JPMorgan Chase Bank' corresponding to target location 'India' is 'State Bank of India (SBI)' under the category 'Banking'. The choice of target entity is reasonable because (a) SBI is a major financial institution in India, comparable to the significance of JPMorgan Chase Bank in the United States, (b) Both banks provide a wide range of consumer and commercial banking services, contributing significantly to the financial infrastructure and economy of their respective countries."
+    },
+    {
+        "claim_id": 81,
+        "claim_ref": "Saudi National Bank (SNB), also known as SNB AlAhli, is the largest commercial bank in Saudi Arabia. In April 2021, National Commercial Bank merged with Samba Financial Group under the name of Saudi National Bank.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "State Bank of India (SBI) is the largest commercial bank in India, offering a wide range of financial services to customers across the country. State Bank of India was formed from the merger of several banks, including the Bank of Calcutta, Bank of Bombay, and Bank of Madras, under the SBI Act in 1955.",
+        "reason": "The equivalent target entity of the reference entity 'Saudi National Bank (SNB)' corresponding to target location 'India' is 'State Bank of India (SBI)' under the category 'Banks'. The choice of target entity is reasonable because (a) Both banks are the largest commercial banks in their respective countries, playing a significant role in the financial sector and economy, (b) The target sentence highlights the historical merger that led to the formation of SBI, paralleling the merger between National Commercial Bank and Samba Financial Group that led to the establishment of Saudi National Bank."
+    },
+    {
+        "claim_id": 82,
+        "claim_ref": "BNP Paribas is a multinational universal bank and financial services holding company headquartered in Paris, France. It was founded in 2000 from the merger of two of France's foremost financial institutions, Banque Nationale de Paris and Paribas.",
+        "location": "Mumbai",
+        "hyperlocal score": 2,
+        "claim_target": "HDFC Bank is a leading Indian multinational banking and financial services company headquartered in Mumbai, Maharashtra. It was established in 1994 as a result of the merger of Housing Development Finance Corporation and Citibank's Indian operations.",
+        "reason": "The equivalent target entity of the reference entity 'BNP Paribas' corresponding to target location 'Mumbai' is 'HDFC Bank' under the category 'Banking and financial services'. The choice of target entity is reasonable because (a) Both BNP Paribas and HDFC Bank are well-known financial institutions with a significant presence in their respective regions, offering a wide range of banking and financial services to customers, (b) The merger history of BNP Paribas finds a parallel in HDFC Bank, where the establishment of the bank resulted from the consolidation of different financial entities, reflecting a similar evolution in the banking sector."
+    },
+    {
+        "claim_id": 83,
+        "claim_ref": "Barclays plc is a British multinational universal bank, headquartered in London, England. Barclays operates as two divisions, Barclays UK and Barclays International, supported by a service company, Barclays Execution Services.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "State Bank of India (SBI) is an Indian multinational public sector bank headquartered in Mumbai, Maharashtra. SBI operates as a government-owned banking and financial services company, serving customers across India and internationally through its various divisions and subsidiaries.",
+        "reason": "The equivalent target entity of the reference entity 'Barclays plc' corresponding to the target location 'India' is 'State Bank of India (SBI)' under the category 'Banking'. The choice of target entity is reasonable because (a) SBI is one of the largest and most prominent banking institutions in India, similar to Barclays' status in England, (b) Both banks cater to a wide range of customers and offer diverse financial services, reflecting their position as key players in the banking industry within their respective countries."
+    },
+    {
+        "claim_id": 84,
+        "claim_ref": "DBS Bank Limited, often known as DBS, is a Singaporean multinational banking and financial services corporation headquartered at the Marina Bay Financial Centre in the Marina Bay district of Singapore.",
+        "location": "Karnataka",
+        "hyperlocal score": 2,
+        "claim_target": "State Bank of India (SBI) is an Indian multinational public sector banking and financial services company headquartered in Mumbai, Maharashtra. It is one of the largest banks in India, with a vast network of branches and operations across the country.",
+        "reason": "The equivalent target entity of the reference entity 'DBS Bank Limited' corresponding to target location 'Karnataka' is 'State Bank of India (SBI)' under the category 'Banking'. The choice of target entity is reasonable because (a) While DBS is a prominent multinational bank based in Singapore, SBI is a major public sector bank in India, renowned for its extensive presence and services, (b) Both banks play significant roles in the financial sector of their respective countries, providing banking and financial services to a wide customer base and contributing to the economic development of their regions."
+    },
+    {
+        "claim_id": 85,
+        "claim_ref": "The Bank of America Corporation is an American multinational investment bank and financial services holding company headquartered at the Bank of America Corporate Center in Charlotte, North Carolina, with investment banking and auxiliary headquarters in Manhattan.",
+        "location": "Kerala",
+        "hyperlocal score": 2,
+        "claim_target": "The State Bank of India (SBI) is an Indian multinational, public sector banking and financial services company headquartered in Mumbai, Maharashtra, with a significant presence and operations in Kerala, India.",
+        "reason": "The equivalent target entity of the reference entity 'Bank of America Corporation' corresponding to target location 'Kerala' is 'State Bank of India (SBI)' under the category 'Banking'. The choice of target entity is reasonable because (a) The target sentence features the State Bank of India, a major banking institution in India with operations in Kerala, aligning with the reference entity's status as a multinational financial services company, (b) Both entities are prominent players in the banking and financial services sector, providing a range of services to customers and businesses in their respective regions."
+    },
+    {
+        "claim_id": 86,
+        "claim_ref": "Emirates NBD Bank PJSC is Dubai's government-owned bank and is one of the largest banking groups in the Middle East in terms of assets.",
+        "location": "Tamil Nadu",
+        "hyperlocal score": 2,
+        "claim_target": "State Bank of India (SBI) is an Indian government-owned bank and the largest banking group in India in terms of assets, with a significant presence in Tamil Nadu.",
+        "reason": "The equivalent target entity of the reference entity 'Emirates NBD Bank PJSC' corresponding to the target location 'Tamil Nadu' is 'State Bank of India (SBI)' under the category 'Banking institution'. The choice of the target entity is reasonable because (a) SBI is a government-owned bank similar to Emirates NBD Bank PJSC, establishing a parallel in their ownership structures and levels of government affiliation, (b) SBI is the largest banking group in India, much like how Emirates NBD Bank PJSC is one of the largest banking groups in the Middle East, highlighting their significant influence and market presence in their respective regions."
+    },
+    {
+        "claim_id": 87,
+        "claim_ref": "Bank Australia is an Australian customer-owned bank based in Collingwood, Victoria. The organisation can trace its origins back to 1957, when the CSIRO Co-operative Credit Society was formed.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "State Bank of India is an Indian multinational, public sector banking and financial services company based in Mumbai, Maharashtra. The organisation can trace its origins back to 1806, when the Bank of Calcutta (later renamed Bank of Bengal) was established.",
+        "reason": "The equivalent target entity of the reference entity 'Bank Australia' corresponding to target location 'India' is 'State Bank of India' under the category 'Banking'. The choice of target entity is reasonable because (a) The State Bank of India is a prominent banking institution in India, akin to Bank Australia's significance in Australia, (b) Both banks have a long history dating back several decades and have played crucial roles in the financial sector of their respective countries."
+    },
+    {
+        "claim_id": 88,
+        "claim_ref": "Wells Fargo & Company is an American multinational financial services company with a significant global presence. The company operates in 35 countries and serves over 70 million customers worldwide.",
+        "location": "West Bengal",
+        "hyperlocal score": 2,
+        "claim_target": "Bandhan Bank is an Indian banking and financial services company headquartered in Kolkata, West Bengal, with a strong presence within the state and across other regions in India. The bank serves millions of customers through its extensive branch network and digital banking services.",
+        "reason": "The equivalent target entity of the reference entity 'Wells Fargo & Company' corresponding to target location 'West Bengal' is 'Bandhan Bank' under the category 'Banking'. The choice of target entity is reasonable because (a) Both entities are banking and financial services companies with operations in specific regions, with Bandhan Bank focusing on the West Bengal region and expanding across India, (b) Bandhan Bank is headquartered in Kolkata, West Bengal, aligning with the target location and highlighting its significant presence within the state."
+    },
+    {
+        "claim_id": 89,
+        "claim_ref": "Soju is a clear and colorless Korean distilled alcoholic beverage. It is usually consumed neat. Its alcohol content varies from about 12.9% to 53% alcohol by volume, although since 2007 low alcohol soju below 20% has become more popular.",
+        "location": "Kolkata",
+        "hyperlocal score": 3,
+        "claim_target": "Feni is a traditional Indian spirit produced in the coastal regions of Goa. It is a distillation of either cashew fruit or coconut palm sap and is typically consumed neat or in cocktails. Feni's alcohol content ranges from 40% to 45% alcohol by volume, making it a popular choice among locals and tourists in the region.",
+        "reason": "The equivalent target entity of the reference entity 'Soju' corresponding to target location 'Kolkata' is 'Feni' under the category 'Alcoholic beverage'. The choice of target entity is reasonable because (a) Feni is a traditional Indian spirit that is common in regions like Goa, making it a suitable choice for comparison within the Indian context, (b) Both Soju and Feni are clear, distilled alcoholic beverages that are typically consumed neat, highlighting their similarities in production and consumption practices."
+    },
+    {
+        "claim_id": 90,
+        "claim_ref": "Whisky or whiskey is a type of liquor made from fermented grain mash. Various grains are used for different varieties, including barley, corn, rye, and wheat. Whisky is typically aged in wooden casks, which are typically made of charred white oak.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "Rum is a type of spirit made from sugarcane byproducts, such as molasses or sugarcane juice, and is typically aged in oak barrels. Various types of rum are produced in India, including white rum, dark rum, and spiced rum, each offering distinct flavors and characteristics to consumers.",
+        "reason": "The equivalent target entity of the reference entity 'Whisky' corresponding to target location 'India' is 'Rum' under the category 'Spirits'. The choice of target entity is reasonable because (a) Rum is a popular alcoholic beverage in India, known for its diverse varieties and flavors, making it a suitable alternative to whisky for the target location, (b) Both drinks undergo a similar process of aging in wooden barrels to develop their distinct tastes and aromas, establishing a parallel between the two spirits in terms of production and consumption."
+    },
+    {
+        "claim_id": 91,
+        "claim_ref": "Black tea is a type of tea that is more oxidized than oolong, yellow, white and green teas. Black tea is generally stronger in flavour than other teas.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "Chai tea, also known as masala chai, is a popular Indian beverage made from a blend of black tea, milk, spices such as cardamom, cinnamon, and ginger, and sweeteners like sugar or honey. Chai tea is enjoyed for its rich and aromatic flavor, making it a staple in Indian households and a symbol of hospitality and warmth.",
+        "reason": "The equivalent target entity of the reference entity 'Black tea' corresponding to target location 'India' is 'Chai tea' under the category 'Beverages'. The choice of target entity is reasonable because (a) Chai tea is a traditional Indian beverage that holds cultural significance and is widely consumed across the country, comparable to the popularity of black tea in other parts of the world, (b) Both black tea and chai tea offer distinctive flavors and aromas, with chai tea often incorporating spices and sweeteners to create a unique and flavorful beverage."
+    },
+    {
+        "claim_id": 92,
+        "claim_ref": "Champagne is a sparkling wine originated and produced in the Champagne wine region of France under the rules of the appellation, which demand specific vineyard practices, sourcing of grapes exclusively from designated places within it, specific grape-pressing methods and secondary fermentation of the wine in the bottle to cause carbonation.\n",
+        "location": "Arunachal Pradesh",
+        "hyperlocal score": 2,
+        "claim_target": "Apong is a traditional rice beer brewed and consumed by various tribes in Arunachal Pradesh, India, following unique and time-honored fermentation methods passed down through generations. This local alcoholic beverage holds cultural significance and is often served during festivals, rituals, and social gatherings in the region.",
+        "reason": "The equivalent target entity of the reference entity 'Champagne' corresponding to target location 'Arunachal Pradesh' is 'Apong' under the category 'Alcoholic Beverage'. The choice of target entity is reasonable because (a) Apong is a traditional alcoholic beverage specific to the tribal communities in Arunachal Pradesh, similar to Champagne's association with the Champagne region in France, (b) Both beverages have cultural importance and are integral to local traditions and celebrations, reflecting the unique heritage and practices of their respective regions."
+    },
+    {
+        "claim_id": 93,
+        "claim_ref": "A margarita is a cocktail consisting of tequila, triple sec, and lime juice. Some margarita recipes include simple syrup as well and are often served with salt on the rim of the glass.",
+        "location": "Goa",
+        "hyperlocal score": 2,
+        "claim_target": "A feni cocktail is a Goan specialty consisting of feni, a local spirit made from cashew apples or coconut palm sap, mixed with lime juice and sugar. Some variations of the feni cocktail may include additional ingredients like pineapple juice or soda water, and are traditionally served chilled in a glass.",
+        "reason": "The equivalent target entity of the reference entity 'margarita' corresponding to the target location 'Goa' is the 'feni cocktail' under the category 'Cocktails'. The choice of target entity is reasonable because (a) Both drinks are popular cocktails in their respective regions and represent local drinking cultures, with margaritas being well-known in international cocktail scenes and feni cocktails being a signature drink in Goa, (b) The feni cocktail, like the margarita, contains a mix of spirits and citrus flavors served in a specific style, making it a suitable comparison in the context of cocktail preferences."
+    },
+    {
+        "claim_id": 94,
+        "claim_ref": "Vodka is a clear distilled alcoholic beverage. Different varieties originated in Poland, Russia, and Sweden. Vodka is composed mainly of water and ethanol but sometimes with traces of impurities and flavourings.",
+        "location": "Tripura",
+        "hyperlocal score": 2,
+        "claim_target": "Chuak is a traditional distilled alcoholic beverage in Tripura, India. It is usually clear in color and is made from fermented rice or herbs, giving it a unique flavor profile. Chuak is a popular choice for festive occasions and cultural celebrations in the region.",
+        "reason": "The equivalent target entity of the reference entity 'Vodka' corresponding to target location 'Tripura' is 'Chuak' under the category 'Alcoholic beverage'. The choice of target entity is reasonable because (a) Chuak is a locally brewed alcoholic beverage specific to Tripura, similar to the regional origins of different varieties of Vodka in Poland, Russia, and Sweden, (b) Both Vodka and Chuak are distilled alcoholic drinks, highlighting a similarity in the production process and consumption habits."
+    },
+    {
+        "claim_id": 95,
+        "claim_ref": "Clear lemonade is a tangy refreshing drink. It is a popular beverage during summer months. It is made from lemon juice, sugar and water, sometimes carbonated, and often served chilled.",
+        "location": "Gujarat",
+        "hyperlocal score": 2,
+        "claim_target": "Aam panna is a sweet and tangy summer beverage popular in Gujarat. It is made from raw mangoes, sugar, salt, and spices, and is often served chilled to provide a refreshing and cooling drink during the hot months.",
+        "reason": "The equivalent target entity of the reference entity 'Clear lemonade' corresponding to target location 'Gujarat' is 'Aam panna' under the category 'Beverage'. The choice of target entity is reasonable because (a) Aam panna, like clear lemonade, is a popular summer beverage known for its refreshing and thirst-quenching properties, making it a suitable equivalent drink for the region of Gujarat, (b) Both beverages are made with a similar base of fruit (lemon in clear lemonade, raw mango in aam panna) and are enjoyed during the hot months for their cooling effects."
+    },
+    {
+        "claim_id": 96,
+        "claim_ref": "Chhaang or chhyang is a Nepalese and Tibetan alcoholic beverage also popular in parts of the eastern Himalayas, Yakkha, Limbu, Dura, Newar, Sunuwar, Rai, Gurung, Magar, Sherpa, Tamang and Lepcha communities. Among the Lepcha, it is called Chi. It is also known as jaarh in Nepal.",
+        "location": "Jharkhand",
+        "hyperlocal score": 2,
+        "claim_target": "Handia is a traditional rice beer consumed by the indigenous tribal communities of Jharkhand, such as the Santhal, Munda, Oraon, and Ho tribes. It is an integral part of their cultural and social gatherings, known for its unique taste and significance in tribal festivities.",
+        "reason": "The equivalent target entity of the reference entity 'Chhaang or chhyang' corresponding to target location 'Jharkhand' is 'Handia' under the category 'Alcoholic beverage'. The choice of target entity is reasonable because (a) Both Chhaang and Handia are indigenous alcoholic beverages consumed by tribal communities, reflecting the local cultural and culinary traditions of their respective regions. (b) Handia is specifically relevant to Jharkhand as it is a traditional rice beer enjoyed by the tribal groups in the state, similar to the cultural significance of Chhaang among the Nepalese and Tibetan communities."
+    },
+    {
+        "claim_id": 97,
+        "claim_ref": "Harry Potter and the Philosopher's Stone is a fantasy novel written by British author J. K. Rowling. The book was first published in the United Kingdom on 26 June 1997 by Bloomsbury. The novel has been adapted into a film.",
+        "location": "West Bengal",
+        "hyperlocal score": 2,
+        "claim_target": "Feluda is a detective novel series written by Indian author Satyajit Ray. The series was first published in West Bengal and has since gained immense popularity for its captivating tales of the detective character Feluda.",
+        "reason": "The equivalent target entity of the reference entity 'Harry Potter and the Philosopher's Stone' corresponding to target location 'West Bengal' is 'Feluda' under the category 'Literature'. The choice of target entity is reasonable because (a) Feluda is a renowned literary character in West Bengal, much like Harry Potter is internationally recognized, showcasing the literary significance and popularity of the character within the region, (b) Both works feature captivating stories that have captured the imagination of readers and have been adapted into other forms of media, highlighting their cultural impact and widespread appeal."
+    },
+    {
+        "claim_id": 98,
+        "claim_ref": "Norwegian Wood is a 1987 novel by Japanese author Haruki Murakami. The novel is a nostalgic story of loss. It is told from the first-person perspective of Toru Watanabe, who looks back on his days as a college student living in Tokyo.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "The Namesake is a novel written by Indian-American author Jhumpa Lahiri. The novel explores themes of identity, family, and cultural belonging through the story of Gogol Ganguli, a first-generation Indian-American struggling with his cultural heritage and personal identity.",
+        "reason": "The equivalent target entity of the reference entity 'Norwegian Wood' corresponding to the target location 'India' is 'The Namesake' under the category 'Novel'. The choice of target entity is reasonable because (a) Both novels delve into themes of cultural identity and personal reflection, resonating with readers through their poignant narratives, (b) 'The Namesake' by Jhumpa Lahiri is a renowned work in Indian-American literature, similar to the significance of 'Norwegian Wood' in Japanese literature, making it a suitable counterpart in the Indian context."
+    },
+    {
+        "claim_id": 99,
+        "claim_ref": "Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge, and the Teachings of Plants is a 2013 nonfiction book by Potawatomi professor Robin Wall Kimmerer, about the role of Indigenous knowledge as an alternative or complementary approach to Western mainstream scientific methodologies.",
+        "location": "Mumbai",
+        "hyperlocal score": 3,
+        "claim_target": "Maximum City: Bombay Lost and Found is a nonfiction book written by Suketu Mehta in 2004, focusing on the diverse and dynamic city of Mumbai, formerly known as Bombay, and its complex social, cultural, and economic landscapes.",
+        "reason": "The equivalent target entity of the reference entity 'Braiding Sweetgrass' corresponding to target location 'Mumbai' is 'Maximum City: Bombay Lost and Found' under the category 'Nonfiction Books'. The choice of target entity is reasonable because (a) Both books delve into the exploration of unique aspects of their respective locations, highlighting the richness and complexity of Indigenous wisdom in Braiding Sweetgrass and the multifaceted nature of Mumbai in Maximum City, (b) The target sentence aligns with Mumbai (formerly Bombay) as it features a prominent book that captures the essence of the city, its people, and its vibrant culture."
+    }
+]

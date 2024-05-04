@@ -31,14 +31,14 @@ import pandas as pd
 from pathlib import Path
 
 number = str(1)
-output_name = "50_100"
+output_name = "0_50"
 
-path_name = "/root/RnD_Project/rarr_with_non_seq/"+number+"/"
-questions_output_path = "/root/RnD_Project/mixtral_outputs/"+number+"/outputs_"+output_name+"/questions.json"
+path_name = "/root/RnD_Project/outputs/rarr_mixtral_few_shot_non_seq/"+number+"/"
+questions_output_path = "/root/RnD_Project/outputs/mixtral_few_shot/"+number+"/outputs_"+output_name+"/questions.json"
 evidences_output_path = path_name +  "outputs_"+output_name+"/evidences.json"
 agreements_output_path = path_name +  "outputs_"+output_name+"/agreements.json"
-edits_output_path = path_name +  "outputs_"+output_name+"/edits.json"
-results_output_path = path_name +  "outputs_"+output_name+"/results.json"
+edits_output_path =  path_name +  "outputs_"+output_name+"/edits.json"
+results_output_path =  path_name +  "outputs_"+output_name+"/results.json"
 
 def get_questions(
     claim_id: int,
@@ -47,6 +47,9 @@ def get_questions(
     is_verify: bool,
     model: str = "mixtral8x7b",
     temperature_qgen: float = 0.7):
+    
+    # target_sent: str,
+    # reason_for_target_sent: str,
 
     # Generate questions for the claim
     ques_gen_prompt = "QGEN_PROMPT_WITH_LOCATION_"+model
@@ -226,13 +229,16 @@ def write_questions_json(
     for claim_id, item in enumerate(data):
         claim = data[claim_id]["input_info"]["claim"]
         location = data[claim_id]["input_info"]["location"]
+        
+        # target_sent = data[claim_id]["input_info"]["target_sent"]
+        # reason = data[claim_id]["input_info"]["reason"]
 
         t1 = time.time()
         output_list.append(get_questions(claim_id, claim, location, is_verify)[-1])
+        # output_list.append(get_questions(claim_id, claim, location, target_sent, reason, is_verify)[-1])
         t2 = time.time()
         print(f"Claim: {claim_id}, Question generation module is run in {(t2-t1)/60:.2f} mint")
         break
-
     # Dump the list into the JSON file
     # output_file = Path(questions_output_path)
     # output_file.parent.mkdir(exist_ok=True, parents=True)
@@ -255,7 +261,10 @@ def write_evidences_json(
         location = item["location"]
         questions = item["questions"]
         print(f"Claim: {claim_id}, Question is taken from file")
-    
+
+        for i in range(len(questions)):
+            questions[i] = item["location"] + ": " + questions[i]
+            
         t1 = time.time()
         try:
             res = get_evidence(claim_id, claim, location, questions,
@@ -330,7 +339,7 @@ def write_edits_json(
             if item["claim_id"] == i:
                 evids.append(item)      
         agreement_data[i] = evids
-
+    
     if is_sequential_edit:
         output_list = []
         results_list = []
@@ -345,7 +354,7 @@ def write_edits_json(
                 flag = 0
             elif type(evid_data[claim_id]) == str:
                 flag = 0
-            
+            print(flag)
             edit_rev_list = []
             if(flag == 1):
                 original_claim = evid_data[claim_id]["claim_target"]
@@ -498,13 +507,30 @@ if __name__ == "__main__":
 
     eval_data_df = pd.read_csv("/root/RnD_Project/inputs/revised_final_dataset_200.csv")
     data = []
+    
+    # with open("/root/RnD_Project/outputs/mixtral_zero_shot/"+number+"/outputs_"+output_name+"/results.json", 'r') as json_file:
+    #     res_data = json.load(json_file)
+        
+    # for i in range(eval_data_df.shape[0]):
+    #     for j,item in enumerate(res_data):
+    #         if eval_data_df.loc[i, "Reference Sentence"].strip() == item["claim_ref"].strip():
+    #             if eval_data_df.loc[i, "Target Location"].strip() == item["location"].strip():
+    #                 elem_dict = {"input_info": 
+    #                     {"claim": eval_data_df.loc[i, "Reference Sentence"], 
+    #                     "location": eval_data_df.loc[i, "Target Location"],
+    #                     "target_sent": item["claim_target"],
+    #                     "reason": item["reason_for_target_sent"]}
+    #                 }
+    #                 data.append(elem_dict)
+    # write_questions_json(data, is_verify=False)
+    
     for i in range(eval_data_df.shape[0]):
         elem_dict = {"input_info": 
         {"claim": eval_data_df.loc[i, "Reference Sentence"], 
         "location": eval_data_df.loc[i, "Target Location"]}}
         data.append(elem_dict)
     
-    write_questions_json(data[50:100], is_verify=False)
+    write_questions_json(data[100:200], is_verify=False)
     write_evidences_json(max_passages_per_search_result_to_score=30,
                         ranking_model="cross_encoder")
     write_agreements_json()

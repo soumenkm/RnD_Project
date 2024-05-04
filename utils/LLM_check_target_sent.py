@@ -28,13 +28,17 @@ def parse_api_response(api_response: str) -> List[str]:
         Target sentence and reason
     """
     search_string = "Score:"
+    reason_search_string = "Reason:"
     score = 0
+    reason  = ""
     for response in api_response.split("\n"):
         if search_string in response:
             sentence = response.split(search_string)[1].strip()
-            if(int(sentence) == 1):
+            if('1' in sentence):
                 score = 1
-    return score
+        if reason_search_string in response:
+            reason = response.split(reason_search_string)[1].strip()
+    return score, reason
 
 def run_rarr_target_sentence_cq(
     claim: str,

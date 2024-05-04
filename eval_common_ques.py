@@ -15,7 +15,9 @@ from utils import (
 )
 import pandas as pd
 
-number = str(2)
+number = str(1)
+path = "/root/RnD_Project/outputs/rarr_mixtral_few_shot/"+number+"/outputs_"
+
 def evaluate_target_sent_by_common_ques(claim, model):
     """model = rarr or mixtral"""
     prompt = rarr_prompts.EVAL_BY_COMMON_QUES_PROMPT
@@ -56,16 +58,15 @@ if __name__ == "__main__":
             continue
         
     # Read the results.json file
-    with open("/root/RnD_Project/rarr_with_non_seq/"+number+"/outputs_0_50/results.json", 'r') as json_file:
+    with open(path+"0_50/results.json", 'r') as json_file:
         res_data_1 = json.load(json_file)
-    with open("/root/RnD_Project/rarr_with_non_seq/"+number+"/outputs_50_100/results.json", 'r') as json_file:
+    with open(path+"50_100/results.json", 'r') as json_file:
         res_data_2 = json.load(json_file)
-    with open("/root/RnD_Project/rarr_with_non_seq/"+number+"/outputs_100_200/results.json", 'r') as json_file:
+    with open(path+"100_200/results.json", 'r') as json_file:
         res_data_3 = json.load(json_file)
-    res_data = res_data_1 + res_data_2 +res_data_3 # if multiple file is there
-    # res_data = res_data_3 # if only 1 file is there
-    claim_data = []
+    res_data = res_data_1 + res_data_2 +res_data_3
 
+    claim_data = []
     for i,elem in enumerate(eval_data):
         for j,item in enumerate(res_data):
             if elem["input_info"]["ref_claim"].strip() == item["claim_ref"].strip():
@@ -94,7 +95,6 @@ if __name__ == "__main__":
     mixtral_list = []
     
     for i,item in enumerate(claim_data):
-
         for _ in range(2):  # try 3 times
             try:
                 res_dict_mixtral, mixtral_val = evaluate_target_sent_by_common_ques(item, "mixtral")
@@ -127,7 +127,7 @@ if __name__ == "__main__":
     print("rarr", rarr_metric)
     print("mixtral", mixtral_metric)
     
-    with open("/root/RnD_Project/rarr_with_non_seq/"+number+"/outputs_100_200/eval_results_3.json", 'w') as json_file:
+    with open(path+"100_200/eval_results_1.json", 'w') as json_file:
         json.dump(output_list, json_file, indent=4)
     
     

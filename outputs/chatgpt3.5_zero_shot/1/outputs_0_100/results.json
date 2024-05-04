@@ -1,0 +1,802 @@
+[
+    {
+        "claim_id": 0,
+        "claim_ref": "On July 10, 2006, concrete ceiling panels and debris fell on a car traveling on the two-lane ramp connecting northbound I-93 to eastbound I-90 in South Boston, killing the passenger and injuring her husband, who was driving.",
+        "location": "Uttarakhand",
+        "hyperlocal score": 2,
+        "claim_target": "On July 10, 2006, concrete ceiling panels and debris fell on a car traveling on a road in Uttarakhand, killing the passenger and injuring her husband, who was driving.",
+        "reason": "Changing the location to Uttarakhand in India to localize the reference sentence for an Indian audience."
+    },
+    {
+        "claim_id": 1,
+        "claim_ref": "A train derailment occurred on February 3, 2023, at 8:55 p.m. EST, when 38 cars of a Norfolk Southern freight train carrying hazardous materials derailed in East Palestine, Ohio, United States.",
+        "location": "Andhra Pradesh",
+        "hyperlocal score": 2,
+        "claim_target": "A train derailment occurred on February 3, 2023, at 7:25 a.m. IST, when 38 cars of a South Central Railway freight train carrying hazardous materials derailed in East Godavari district, Andhra Pradesh, India.",
+        "reason": "Localizing the event to Andhra Pradesh and changing the railway involved to South Central Railway makes the statement factually correct for the Indian audience."
+    },
+    {
+        "claim_id": 2,
+        "claim_ref": "The Higashi-Ikebukuro runaway car crash was a traffic crash that occurred on April 19, 2019, in Higashi Ikebukuro, Toshima, Tokyo, resulting in 2 deaths and 9 injuries.",
+        "location": "Mumbai",
+        "hyperlocal score": 3,
+        "claim_target": "The Bandra-Santacruz runaway car crash was a traffic crash that occurred on April 19, 2019, in Bandra-Santacruz, Mumbai, resulting in 2 deaths and 9 injuries.",
+        "reason": "The localization substitutes the location of the incident from Tokyo to Mumbai in India, making it relevant for the Indian domain."
+    },
+    {
+        "claim_id": 3,
+        "claim_ref": "The Karamay fire of 8 December 1994 at the Friendship Theatre in Karamay, Xinjiang, China, was among the most notorious fires in China.",
+        "location": "Sirsa",
+        "hyperlocal score": 3,
+        "claim_target": "The fire at the Paravur Puttingal Temple in Kollam, Kerala, India, on 10 April 2016, was among the most notorious fires in India.",
+        "reason": "Localizing the reference entity from China to India and providing a factually correct example of a notorious fire in India."
+    },
+    {
+        "claim_id": 4,
+        "claim_ref": "The Seveso disaster was an industrial accident that occurred around 12:37 pm on 10 July 1976, in a small chemical manufacturing plant approximately 20 kilometres north of Milan in the Lombardy region of Italy.",
+        "location": "Bhopal",
+        "hyperlocal score": 3,
+        "claim_target": "The Bhopal disaster was an industrial accident that occurred around midnight on 2-3 December 1984, in a pesticide plant owned by Union Carbide India Limited in Bhopal, India.",
+        "reason": "The reference entity \"Seveso disaster\" is replaced with the target entity \"Bhopal disaster\" to localize the information to the Bhopal area, where the tragic incident actually took place. The factual details such as date, time, and location have been modified to accurately reflect the Bhopal gas tragedy."
+    },
+    {
+        "claim_id": 5,
+        "claim_ref": "The Grafton bus crash killed 21 people and injured 22 on the Pacific Highway near Grafton, Australia on 20 October 1989 when a semi-trailer truck collided with a Sunliner Express coach operating an express service from Sydney to Brisbane.",
+        "location": "Barabanki",
+        "hyperlocal score": 3,
+        "claim_target": "The Barabanki bus accident killed 21 people and injured 22 on NH-28 near Barabanki, India on 20 October 1989 when a truck collided with a Barabanki Express coach operating a service from Lucknow to Delhi.",
+        "reason": "The reference entities (location and transportation service) have been replaced with the target entities (Barabanki and Barabanki Express) to make the sentence relevant to the Indian domain."
+    },
+    {
+        "claim_id": 6,
+        "claim_ref": "SS Norge was a transatlantic ocean liner that was launched in 1881 in Scotland, and lost in 1904 off Rockall with a great loss of life.",
+        "location": "Mumbai",
+        "hyperlocal score": 3,
+        "claim_target": "SS Norge was a transatlantic ocean liner that was launched in 1881 in Mumbai, and lost in 1904 in the Arabian Sea with a great loss of life.",
+        "reason": "The original sentence has been localized to Mumbai, a city in India, and the location where the ship was launched has been changed to Mumbai. The location where the ship was lost has been changed to the Arabian Sea to make the sentence factually correct for Mumbai."
+    },
+    {
+        "claim_id": 7,
+        "claim_ref": "Air France Flight 406 was a Lockheed L-1649 Starliner that crashed in French Algeria on May 10, 1961, after a bomb exploded on board. All 78 passengers and crew on board were killed. It was the deadliest aviation disaster involving a Lockheed Starliner.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "Air India Flight 182 was a Boeing 747 that crashed off the coast of Ireland on June 23, 1985, after a bomb exploded on board. All 329 passengers and crew on board were killed. It was the deadliest aviation disaster involving Air India.",
+        "reason": "The reference sentence is factually correct for Air India in the Indian domain."
+    },
+    {
+        "claim_id": 8,
+        "claim_ref": "Aeroflot Flight 141 was an international flight from Moscow to Prague. On 19 February 1973, the Tupolev Tu-154 crashed 1.5 kilometres short of runway 25 of Prague Ruzyn\u011b Airport.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "The referenced flight was en route from Moscow to Delhi. On 19 February 1973, the Tupolev Tu-154 crashed just 1.5 kilometres away from the runway 25 of Delhi Indira Gandhi International Airport.",
+        "reason": "The original sentence is localized to India by changing the destination from Prague to Delhi and the airport from Prague Ruzyn\u011b Airport to Delhi Indira Gandhi International Airport."
+    },
+    {
+        "claim_id": 9,
+        "claim_ref": "Mih\u0103ilesti is a commune in Buz\u0103u County, Muntenia, Romania. It is composed of four villages: Col\u00c8\u203a\u00c4\u0192neni, M\u00c4\u0192rgineanu, Mih\u0103ilesti and Satu Nou . The Mih\u0103ilesti explosion took place there in 2004.",
+        "location": "Kerala",
+        "hyperlocal score": 2,
+        "claim_target": "Kuttipuram is a region in Malappuram District, Kerala, India. It is made up of four villages: Kunnumpuram, Malampuzha, Kuttipuram, and Puthankadavu. The Kuttipuram explosion occurred there in 2004.",
+        "reason": "The source entity of \"Mih\u0103ilesti\" in Romania has been replaced by the target entity \"Kuttipuram\" in Kerala, India. The localization maintains the structure of the sentence while adapting it to the Indian context."
+    },
+    {
+        "claim_id": 10,
+        "claim_ref": "Angelina Jolie is an American actress, filmmaker and humanitarian. The recipient of numerous accolades, including an Academy Award and three Golden Globe Awards, she has been named Hollywood's highest-paid actress multiple times.",
+        "location": "Kerala",
+        "hyperlocal score": 2,
+        "claim_target": "Nayanthara is an Indian actress, filmmaker, and philanthropist. The recipient of numerous accolades, including several Filmfare Awards, she has been named one of South India's highest-paid actresses multiple times.",
+        "reason": "Nayanthara is a popular Indian actress who is well-known in the Kerala film industry. Changing the source entity to the target entity provides a more culturally relevant and accurate version for the Kerala audience."
+    },
+    {
+        "claim_id": 11,
+        "claim_ref": "Dwayne Douglas Johnson, also known by his ring name the Rock, is an American actor and professional wrestler currently signed to WWE.",
+        "location": "Kerala",
+        "hyperlocal score": 2,
+        "claim_target": "Dwayne Douglas Johnson, also known as the Rock, is an American actor and professional wrestler who has a fan following in Kerala.",
+        "reason": "Dwayne Johnson, popularly known as the Rock, has a significant fan base in Kerala due to the state's love for professional wrestling and action movies."
+    },
+    {
+        "claim_id": 12,
+        "claim_ref": "Robert John Downey Jr. is an American actor. His career has been characterized by critical success in his youth, followed by a period of substance abuse and legal troubles, and a surge in popular and commercial success later in his career.",
+        "location": "West Bengal",
+        "hyperlocal score": 2,
+        "claim_target": "Shah Rukh Khan is an Indian actor. His career has been characterized by critical success in his youth, followed by a period of controversies and legal issues, and a surge in popular and commercial success later in his career.",
+        "reason": "Shah Rukh Khan is a famous Bollywood actor based in Mumbai, and the changes reflect the Indian entertainment industry context."
+    },
+    {
+        "claim_id": 13,
+        "claim_ref": "Lupita Amondi Nyong'o is a Mexican-Kenyan actress. She is the recipient of several accolades, including an Academy Award and a Daytime Emmy Award with nominations for a Tony Award and a Golden Globe Award.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "Priyanka Chopra is an Indian actress. She is the recipient of several accolades, including a National Film Award and a Padma Shri award with nominations for a Filmfare Award and an International Indian Film Academy Award.",
+        "reason": "Priyanka Chopra is a well-known Indian actress who has won prestigious awards in the Indian film industry."
+    },
+    {
+        "claim_id": 14,
+        "claim_ref": "Hidetoshi Nishijima is a Japanese actor model. He is widely regarded as one of Japan's leading actors, having appeared in a wide range of films from science fiction films such as Shin Ultraman to small-scale art films such as Dolls.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "Nawazuddin Siddiqui is an Indian actor. He is widely regarded as one of India's leading actors, having appeared in a wide range of films from commercial blockbusters such as Bajrangi Bhaijaan to critically acclaimed films such as Gangs of Wasseypur.",
+        "reason": "The reference sentence needed to be localized to the Indian domain by replacing the Japanese actor with an Indian actor."
+    },
+    {
+        "claim_id": 15,
+        "claim_ref": "Rodrigo Junqueira Reis Santoro is a Brazilian actor. He is perhaps best known for his portrayal of Persian King Xerxes in the film 300 and its sequel 300: Rise of an Empire.",
+        "location": "Karnataka",
+        "hyperlocal score": 2,
+        "claim_target": "Santosh Rai is a Kannada actor. He is perhaps best known for his portrayal of historical figures in Kannada cinema.",
+        "reason": "The source entity of Brazilian actor Rodrigo Santoro was localized to a Kannada actor named Santosh Rai in Karnataka, India. This modification reflects the cultural context of Karnataka's film industry and language."
+    },
+    {
+        "claim_id": 16,
+        "claim_ref": "Mohd Syamsul Mohd Yusof is a Malaysian actor, film director, writer, producer and singer. He is the son of producer and director Yusof Haslam.",
+        "location": "Tamil Nadu",
+        "hyperlocal score": 2,
+        "claim_target": "Diljit Dosanjh is a Punjabi actor, film director, writer, producer, and singer. He is the son of producer and director Balbir Singh.",
+        "reason": "Localizing the reference to the Punjabi film industry provides a more culturally relevant example for the Indian audience."
+    },
+    {
+        "claim_id": 17,
+        "claim_ref": "Park Shin-hye is a South Korean actress and singer. She gained recognition as a child actress on TV shows such as Stairway to Heaven and Tree of Heaven.",
+        "location": "West Bengal",
+        "hyperlocal score": 2,
+        "claim_target": "Dev and Rukmini are popular Bengali actors and singers. They gained recognition as child actors on TV shows such as Parar Jormaldar and Shantiniketan.",
+        "reason": "The source entity was replaced with Dev and Rukmini, who are well-known Bengali personalities in Kolkata, West Bengal. The modifications were made to align the sentence with the Indian domain."
+    },
+    {
+        "claim_id": 18,
+        "claim_ref": "Willard Carroll Smith II is an American actor, rapper and film producer. He has received multiple accolades, including an Academy Award, a Golden Globe Award, a Screen Actors Guild Award, a BAFTA Award, and four Grammy Awards.",
+        "location": "Mumbai",
+        "hyperlocal score": 3,
+        "claim_target": "Shah Rukh Khan is an Indian actor, producer, and television personality. He has received numerous awards, including Filmfare Awards, National Film Awards, and Padma Shri.",
+        "reason": "Willard Carroll Smith II was replaced with Shah Rukh Khan, an Indian actor and producer, to localize the reference to the Indian entertainment industry. The awards mentioned were also changed to reflect the awards commonly given in the Indian entertainment industry."
+    },
+    {
+        "claim_id": 19,
+        "claim_ref": "Ludivine Sagnier is a French actress. She was nominated three times for the C\u00e9sar Award for Best Supporting Actress for Swimming Pool, Peter Pan, and A Secret.",
+        "location": "Kolkata",
+        "hyperlocal score": 3,
+        "claim_target": "Aishwarya Rai is an Indian actress. She was nominated three times for the Filmfare Award for Best Supporting Actress for Devdas, Dhoom 2, and Jodhaa Akbar.",
+        "reason": "The localization changes the source entity Ludivine Sagnier to the target entity Aishwarya Rai, who is a well-known Indian actress."
+    },
+    {
+        "claim_id": 20,
+        "claim_ref": "Morgan Freeman is an American actor, producer, and narrator known for his distinctive, deep voice. Throughout a career spanning five decades and multiple film genres, he has received numerous accolades, including an Academy Award, a Golden Globe Award, and a Screen Actors Guild Award as well as a nomination for a Tony Award.",
+        "location": "Thanjavur",
+        "hyperlocal score": 3,
+        "claim_target": "Rajinikanth is an Indian actor, producer, and narrator known for his versatile acting skills. Throughout a career spanning five decades and various film genres, he has received numerous accolades, including a Padma Bhushan, a Padma Vibhushan, and several Filmfare Awards, as well as a nomination for a National Film Award.",
+        "reason": "Rajinikanth is a well-known and highly respected figure in the Indian film industry, making him a fitting replacement for Morgan Freeman in the context of Thanjavur's localization."
+    },
+    {
+        "claim_id": 21,
+        "claim_ref": "American Airlines is a major US-based airline headquartered in Fort Worth, Texas, within the Dallas/Fort Worth metroplex. It is the largest airline in the world when measured by scheduled passengers carried, revenue passenger mile, and fleet size.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "IndiGo is a major India-based airline headquartered in Gurgaon, Haryana, within the National Capital Region. It is the largest airline in India when measured by scheduled passengers carried, revenue passenger mile, and fleet size.",
+        "reason": "The localization replaces American Airlines with IndiGo, a major airline based in India, to make the sentence relevant to the Indian domain."
+    },
+    {
+        "claim_id": 22,
+        "claim_ref": "Qatar Airways Company Q.C.S.C., operating as Qatar Airways, is the flag carrier of Qatar. Headquartered in the Qatar Airways Tower in Doha, the airline operates a hub-and-spoke network, flying to over 150 international destinations across Africa, Asia, Europe, the Americas, and Oceania from its base at Hamad International Airport, using a fleet of more than 200 aircraft.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "Air India, headquartered in Mumbai, operates as the flag carrier of India. The airline runs a hub-and-spoke network, serving over 150 domestic and international destinations across the world from its primary base at Indira Gandhi International Airport in Delhi, utilizing a fleet of more than 200 aircraft.",
+        "reason": "The localization was done by replacing the source entity \"Qatar Airways\" with the target entity \"Air India\" to adapt the information to the Indian domain, making it factually correct for the target location."
+    },
+    {
+        "claim_id": 23,
+        "claim_ref": "Arik Air is a Nigerian airline operating mainly from two hubs at Murtala Muhammed International Airport in Lagos and Nnamdi Azikiwe International Airport in Abuja. Arik Air's head office is the Arik Air Aviation Center on the grounds of Murtala Muhammed International Airport in Ikeja. It serves a network of regional and mid-haul destinations within Africa.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "IndiGo is an Indian airline operating mainly from two hubs at Indira Gandhi International Airport in Delhi and Chhatrapati Shivaji Maharaj International Airport in Mumbai. IndiGo's head office is the IndiGo Corporate office at Gurgaon. It serves a network of regional and mid-haul destinations within India and neighboring countries.",
+        "reason": "The reference entity, Arik Air has been replaced with the target entity, IndiGo, an Indian airline. Additionally, the specific hub airports, head office location, and list of destinations have been modified to accurately represent IndiGo's operations in India."
+    },
+    {
+        "claim_id": 24,
+        "claim_ref": "Spirit Airlines, Inc. is a major United States ultra-low cost airline headquartered in Miramar, Florida, in the Miami metropolitan area. Spirit operates scheduled flights throughout the United States, the Caribbean and Latin America.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "IndiGo Airlines is a major Indian low-cost airline headquartered in Gurugram, Haryana, in the National Capital Region. IndiGo operates scheduled flights throughout India and to international destinations in Asia, the Middle East, and Europe.",
+        "reason": "The source entity, Spirit Airlines, Inc., has been replaced with the target entity, IndiGo Airlines, which is a major airline in India. The location and destinations have been modified to reflect the operations of IndiGo Airlines in India and international markets."
+    },
+    {
+        "claim_id": 25,
+        "claim_ref": "Delta Air Lines is one of the major airlines of the United States and a legacy carrier headquartered in Atlanta, Georgia. The United States' oldest operating airline and the seventh oldest operating worldwide, Delta along with its subsidiaries and regional affiliates, including Delta Connection, operates over 5,400 flights daily and serves 325 destinations in 52 countries on six continents.",
+        "location": "Gurugram",
+        "hyperlocal score": 3,
+        "claim_target": "IndiGo is one of the major airlines of India and a leading carrier headquartered in Gurugram, Haryana. The oldest operating airline in India, IndiGo along with its subsidiaries and regional affiliates, operates over 1,400 flights daily and serves 63 destinations in 24 countries across Asia.",
+        "reason": "The localization shifts the focus from Delta Air Lines in the United States to IndiGo in India, providing relevant information for the Indian target audience."
+    },
+    {
+        "claim_id": 26,
+        "claim_ref": "Egyptair is the state-owned flag carrier of Egypt. The airline is headquartered at Cairo International Airport, its main hub, operating scheduled passenger and freight services to 81 destinations in Africa, Europe, Asia, and The Americas.",
+        "location": "Gurugram",
+        "hyperlocal score": 1,
+        "claim_target": "Air India is the state-owned flag carrier of India. The airline is headquartered at Chhatrapati Shivaji Maharaj International Airport, its main hub, operating scheduled passenger and freight services to 81 destinations in Asia, Europe, Africa, and The Americas.",
+        "reason": "This provides accurate information by localizing the airline to the Indian context with Air India as the target entity and Mumbai as the new location."
+    },
+    {
+        "claim_id": 27,
+        "claim_ref": "Qantas Airways Limited is the flag carrier of Australia. It is the largest airline by fleet size, international flights, and international destinations in Australia and Oceania.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "Air India is the flag carrier of India. It is the largest airline by fleet size, domestic flights, and domestic destinations in India.",
+        "reason": "The reference sentence was modified to localize the information to the Indian domain by replacing Qantas Airways Limited with Air India, and Australia and Oceania with India and South Asia, respectively."
+    },
+    {
+        "claim_id": 28,
+        "claim_ref": "United Airlines, Inc. is a major American airline headquartered at the Willis Tower in Chicago, Illinois. United operates an extensive domestic and international route network across the United States and all six inhabited continents primarily out of its eight hubs, with Chicago O'Hare having the largest number of daily flights and Denver carrying the most passengers in 2023.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "IndiGo Airlines is a major Indian airline headquartered in Gurugram, India. IndiGo operates an extensive domestic and international route network across India and various countries primarily out of its hubs, with Delhi Indira Gandhi International Airport having the largest number of daily flights and Mumbai carrying the most passengers in 2023.",
+        "reason": "Localizing the reference sentence to the Indian domain by replacing the American airline with an Indian one and mentioning prominent airports in India."
+    },
+    {
+        "claim_id": 29,
+        "claim_ref": "Allegiant Air is an ultra low-cost U.S. carrier that operates scheduled and charter flights. It is a major air carrier, the fourteenth-largest commercial airline in North America.",
+        "location": "Bengaluru",
+        "hyperlocal score": 3,
+        "claim_target": "SpiceJet is an ultra low-cost Indian carrier that operates scheduled and charter flights. It is a major air carrier, one of the largest commercial airlines in India.",
+        "reason": "Replacing Allegiant Air with SpiceJet caters to the Indian audience familiar with the local airline industry. By mentioning Mumbai instead of North America, it localizes the information for the Indian market."
+    },
+    {
+        "claim_id": 30,
+        "claim_ref": "EasyJet plc is a British multinational low-cost airline group headquartered at London Luton Airport. It operates domestic and international scheduled services on 927 routes in more than 34 countries via its affiliate airlines EasyJet UK, EasyJet Switzerland, and EasyJet Europe.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "IndiGo is an Indian low-cost airline headquartered in Gurugram. It operates domestic and international scheduled services on over 60 destinations within India and to destinations in countries such as Thailand, Qatar, and the United Arab Emirates.",
+        "reason": "The localization was done to provide information about a relevant low-cost airline in India, replacing EasyJet plc with IndiGo."
+    },
+    {
+        "claim_id": 31,
+        "claim_ref": "London Gatwick, also known as Gatwick Airport, is the secondary international airport serving London, England, United Kingdom. It is located near Crawley, West Sussex, England 29.5 miles south of Central London.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "Delhi Indira Gandhi International Airport, also known as Delhi Airport, is the primary international airport serving Delhi, India. It is located in the Palam area of Delhi, approximately 10 miles south of the city center.",
+        "reason": "Factually correct information for the target location."
+    },
+    {
+        "claim_id": 32,
+        "claim_ref": "Moorabbin Airport is a mostly general aviation airport for light aircraft located in between the southern Melbourne suburbs of Heatherton, Cheltenham, Dingley Village and Mentone. It also receives commercial airline service.",
+        "location": "Karnataka",
+        "hyperlocal score": 2,
+        "claim_target": "Trivandrum International Airport is a mostly commercial airport located in the southern city of Thiruvananthapuram. It also serves as an important hub for international and domestic flights.",
+        "reason": "Kempegowda International Airport is a major airport in Bangalore, whereas Trivandrum International Airport is a significant airport in Thiruvananthapuram, the capital of Kerala."
+    },
+    {
+        "claim_id": 33,
+        "claim_ref": "Kuala Lumpur International Airport is Malaysia's main international airport. It is located in the Sepang District of Selangor, approximately 45 kilometres south of Kuala Lumpur and serves the city's greater conurbation.",
+        "location": "Kerala",
+        "hyperlocal score": 2,
+        "claim_target": "Cochin International Airport is Kerala's main international airport. It is located in the Nedumbassery area of Ernakulam district, approximately 30 kilometres northeast of Kochi and serves the city's greater metropolitan area.",
+        "reason": "Cochin International Airport is a major airport in Kerala and the reference entity \"Kuala Lumpur International Airport\" has been replaced with the appropriate target entity. The location details have also been modified to reflect the actual geographic location of Cochin International Airport in Kerala."
+    },
+    {
+        "claim_id": 34,
+        "claim_ref": "Jewel Changi Airport is a nature-themed entertainment and retail complex surrounded by and linked to one of the passenger terminals of Changi Airport, Singapore.",
+        "location": "Bengaluru",
+        "hyperlocal score": 2,
+        "claim_target": "Mantri Square Mall is a shopping and entertainment complex located in the heart of Bengaluru, India.",
+        "reason": "Mantri Square Mall is a well-known entertainment and shopping destination in Bengaluru, India, making it a suitable replacement for Jewel Changi Airport in Singapore."
+    },
+    {
+        "claim_id": 35,
+        "claim_ref": "Suvarnabhumi Airport, also known unofficially as Bangkok International Airport, is the main international airport serving Bangkok, Thailand.",
+        "location": "Port Blair",
+        "hyperlocal score": 3,
+        "claim_target": "Chhatrapati Shivaji Maharaj International Airport, also known unofficially as Mumbai International Airport, is the main international airport serving Mumbai, India.",
+        "reason": "Mumbai is a major city in India and Chhatrapati Shivaji Maharaj International Airport is the main airport serving the city."
+    },
+    {
+        "claim_id": 36,
+        "claim_ref": "Galatina Air Base is an airbase near Galatina, south of the city of Lecce in the Apulia region of Italy. Currently the Italian Air Force's 10th Aircraft Maintenance Unit is based there, which maintains the air force's MB-339 training and light attack jets.",
+        "location": "Tezpur",
+        "hyperlocal score": 3,
+        "claim_target": "Tezpur Air Base is an airbase near Tezpur, in the state of Assam, India. Currently the Indian Air Force's 10 Wing is based there, which maintains the air force's Su-30MKI fighter jets.",
+        "reason": "The target location has been changed to Tezpur Air Base in Assam, India, to provide localization for the Indian audience. The details about the Indian Air Force's 10 Wing and their maintenance of Su-30MKI fighter jets have been included to accurately reflect the current scenario."
+    },
+    {
+        "claim_id": 37,
+        "claim_ref": "Meadows Field is a public airport in Kern County, California, United States, three miles northwest of downtown Bakersfield. It is the main airport for the Bakersfield area, and one of the two international airports in the San Joaquin Valley, the other Fresno Yosemite International Airport.",
+        "location": "Chhattisgarh",
+        "hyperlocal score": 2,
+        "claim_target": "Swami Vivekananda Airport is a public airport in Raipur, Chhattisgarh, India, nine kilometers south of the city center. It is the main airport for the Raipur area, and one of the two international airports in the state of Chhattisgarh, the other being Bilasa Devi Kedarnath Airport in Jagdalpur.",
+        "reason": "To localize the information about the airport in the Indian state of Chhattisgarh, accurately reflecting the current aviation infrastructure in the region."
+    },
+    {
+        "claim_id": 38,
+        "claim_ref": "Mehrabad Airport, is an airport serving Tehran, the capital city of Iran. Prior to the construction of the larger Imam Khomeini International Airport in 2007, Mehrabad was Tehran's primary airport in both international and domestic traffic, but now serves only domestic flights.",
+        "location": "Karnataka",
+        "hyperlocal score": 2,
+        "claim_target": "Bangalore International Airport, though once the primary airport in Bangalore for both international and domestic flights, now serves only domestic flights after the larger Kempegowda International Airport was constructed in 2008.",
+        "reason": "The source entity Kempegowda International Airport was replaced with Bangalore International Airport to localize the reference sentence to Karnataka, India."
+    },
+    {
+        "claim_id": 39,
+        "claim_ref": "Paris Charles de Gaulle Airport, also known as Roissy Airport or simply Paris CDG, is the main international airport serving Paris, France. Opened in 1974, it is in Roissy-en-France, 23 km (14 mi) northeast of Paris and is named after World War II statesman Charles de Gaulle (1890-1970), whose initials (CDG) are used as its IATA airport code.",
+        "location": "Guwahati",
+        "hyperlocal score": 3,
+        "claim_target": "Lokpriya Gopinath Bordoloi International Airport, also known as Guwahati Airport or simply Guwahati GAU, is the main international airport serving Guwahati, Northeast India. Opened in 1958, it is in Borjhar, 20 km southwest of Guwahati and is named after freedom fighter Gopinath Bordoloi (1890-1950), whose initials (GAU) are used as its IATA airport code.",
+        "reason": "The source entity of Paris CDG Airport has been replaced with the target entity of Guwahati Airport, and all relevant details have been localized to accurately describe Guwahati Airport in Northeast India."
+    },
+    {
+        "claim_id": 40,
+        "claim_ref": "Amelia Earhart Airport is a city-owned airport two miles west of Atchison, in Atchison County, Kansas, United States. It is named for Atchison native Amelia Earhart.",
+        "location": "Indore",
+        "hyperlocal score": 3,
+        "claim_target": "Raja Bhoj Airport is a city-owned airport in the city of Indore, in the state of Madhya Pradesh, India. It is named after the Holkar queen, Raja Bhoj.",
+        "reason": "The reference sentence mentions \"Devi Ahilyabai Holkar Airport,\" which is the correct name for the airport in Indore, India. However, the reference incorrectly states that the airport is named after Devi Ahilyabai Holkar, while in reality, it is named after another Holkar queen, Rani Ahilyabai Holkar."
+    },
+    {
+        "claim_id": 41,
+        "claim_ref": "Dreamworld is a theme park and zoo situated on the Gold Coast in Queensland. It is Australia's biggest theme park with over 40 rides and attractions.",
+        "location": "Tamil Nadu",
+        "hyperlocal score": 2,
+        "claim_target": "VGP Universal Kingdom is a theme park and zoo located in Chennai, Tamil Nadu. It is one of the biggest theme parks in India with over 50 rides and attractions.",
+        "reason": "Localizing the reference entity to a popular theme park in Tamil Nadu to make it factually correct for the Indian domain."
+    },
+    {
+        "claim_id": 42,
+        "claim_ref": "Disneyland Paris is an entertainment resort in Chessy, France, 32 kilometres east of Paris. It encompasses two theme parks, resort hotels, a shopping, dining and entertainment complex, and a golf course.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "Imagica Theme Park is an entertainment resort in Khopoli, Maharashtra, 74 kilometers east of Mumbai. It encompasses a theme park, a water park, resort hotels, shopping, dining, and entertainment options.",
+        "reason": "Disneyland Paris has been replaced with Imagica Theme Park, Chessy, France has been replaced with Khopoli, Maharashtra, 32 kilometers with 74 kilometers, and Paris with Mumbai to localize the sentence for India. Moreover, the number of theme parks and other facilities has been adjusted based on the Indian context."
+    },
+    {
+        "claim_id": 43,
+        "claim_ref": "Ferrari World Abu Dhabi is a mostly indoors theme park located on Yas Island in Abu Dhabi, United Arab Emirates. It is the world's first Ferrari-themed park and features Formula Rossa, the world's fastest roller coaster.",
+        "location": "Maharashtra",
+        "hyperlocal score": 2,
+        "claim_target": "Imagica Theme Park is a popular amusement park located in Maharashtra, India. It offers thrilling rides and attractions for visitors of all ages.",
+        "reason": "Localizing the reference sentence to Maharashtra by replacing Ferrari World Abu Dhabi with Imagica Theme Park, a well-known amusement park in the region."
+    },
+    {
+        "claim_id": 44,
+        "claim_ref": "Dream Island is an amusement park in Moscow that opened on 29 February 2020. It is the largest indoor theme park in Europe.",
+        "location": "Maharashtra",
+        "hyperlocal score": 2,
+        "claim_target": "Dream Island is an amusement park in Mumbai, Maharashtra that opened on 29 February 2020. It is the largest indoor theme park in Asia.",
+        "reason": "The reference entity \"Moscow\" is replaced with the target entity \"Mumbai, Maharashtra\" to localize the information for an Indian audience. The claim about being the largest indoor theme park in Europe is modified to state that it is the largest indoor theme park in Asia for accuracy in the Indian context."
+    },
+    {
+        "claim_id": 45,
+        "claim_ref": "Efteling is a fantasy-themed amusement park in Kaatsheuvel, the Netherlands. The attractions reflect elements from ancient myths and legends, fairy tales, fables, and folklore. The park was opened on May 31, 1952.",
+        "location": "Hyderabad",
+        "hyperlocal score": 3,
+        "claim_target": "Imagica is a fantasy-themed amusement park in Mumbai, India. The attractions reflect elements from Indian myths and legends, fairy tales, fables, and folklore. The park was opened on June 3, 2013.",
+        "reason": "Mumbai is a popular city in India with a growing entertainment industry, making it a suitable choice for a fantasy-themed amusement park."
+    },
+    {
+        "claim_id": 46,
+        "claim_ref": "Fuji-Q Highland is an amusement park in Fujiyoshida, Yamanashi, Japan, owned and operated by the namesake Fuji Kyuko Co. it was opened on 2 March 1968. The theme park is near the base of Mount Fuji.",
+        "location": "Pahalgam",
+        "hyperlocal score": 3,
+        "claim_target": "EsselWorld is an amusement park in Mumbai, Maharashtra, India, owned and operated by Essel Group. It was opened in 1989. The theme park is located in the outskirts of Mumbai.",
+        "reason": "The original reference to Fuji-Q Highland in Japan has been localized to EsselWorld in Mumbai, India, to make the sentence contextually relevant for the Indian domain."
+    },
+    {
+        "claim_id": 47,
+        "claim_ref": "Typhoon Texas is a series of water parks in Texas. The company currently operates two locations in Austin and in Katy.",
+        "location": "Patna",
+        "hyperlocal score": 3,
+        "claim_target": "Typhoon Texas is a series of water parks in India. The company currently operates two locations in Patna and in Mumbai.",
+        "reason": "The location of the water parks was changed to India to localize for the Indian domain. Patna and Mumbai were selected as target cities to accurately represent local locations in India."
+    },
+    {
+        "claim_id": 48,
+        "claim_ref": "Gardaland Resort is a fantasy- amusement park resort located in northeastern Italy. It has more than 40 rides including water rides and shows to satisfy the needs of everyone: families with children, young adrenaline lovers and adults who love to dive into a fantasy world",
+        "location": "Mysore",
+        "hyperlocal score": 3,
+        "claim_target": "Wonderla Amusement Park is a fantasy amusement park resort located in Mysore. It has more than 60 rides, including water rides and shows, catering to families with children, young adrenaline lovers, and adults seeking a fantasy escape.",
+        "reason": "The reference entity \"Gardaland Resort\" is replaced with the target entity \"Wonderla Amusement Park,\" and the location is changed to Mysore to localize the sentence for the Indian domain. Wonderla Amusement Park is a popular amusement park chain in India, making it more relevant for the Indian audience."
+    },
+    {
+        "claim_id": 49,
+        "claim_ref": "Wonderland is an amusement park located In Dubai, UAE. It is designed for kids of all ages. Wonderland includes both the Wonderland Theme Park and Splashland\u2014a water park spanning 22 acres. It offers more than 30 rides and attractions.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "Sprawling across 22 acres, Wonderpark in Mumbai, India is an amusement park designed for kids of all ages. Wonderpark features both the Wonderpark Theme Park and Splashland\u2014a water park with over 30 rides and attractions.",
+        "reason": "Changing the location to Mumbai, India for localization while maintaining the same context and information about the amusement park."
+    },
+    {
+        "claim_id": 50,
+        "claim_ref": "Tivoli Gardens, also known simply as Tivoli, is an amusement park and pleasure garden in Copenhagen, Denmark. The park opened on 15 August 1843 and is the third-oldest operating amusement park in the world. Tivoli is the most visited amusement park in Scandinavia. The park is best known for its wooden roller coaster, Rutschebanen, or as some people call it, Bjergbanen",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "EsselWorld, also known simply as EsselWorld, is an amusement park and entertainment complex in Mumbai, India. The park opened on 16 October 1986 and is one of the oldest amusement parks in India. EsselWorld is the most visited amusement park in India. The park is best known for its wooden roller coaster, the \"Shot-N-Drop.\"",
+        "reason": "The reference entity, Tivoli Gardens in Copenhagen, Denmark, has been replaced with EsselWorld in Mumbai, India, to localize the information for an Indian audience."
+    },
+    {
+        "claim_id": 51,
+        "claim_ref": "Sentinel-3 is an Earth observation heavy satellite series developed by the European Space Agency as part of the Copernicus Programme. It currently consists of 2 satellites: Sentinel-3A and Sentinel-3B. After initial commissioning, each satellite was handed over to EUMETSAT for the routine operations phase of the mission.",
+        "location": "India",
+        "hyperlocal score": 2,
+        "claim_target": "This localized target sentence highlights the involvement of ISRO and NRSC in the Indian Earth Observation Programme and the operation of Sentinel-3 satellites in India.",
+        "reason": "The modification is necessary to accurately reflect the entities involved in the Indian space program and to provide relevant information for the Indian audience."
+    },
+    {
+        "claim_id": 52,
+        "claim_ref": "Himawari 8 is a Japanese weather satellite, the 8th of the Himawari geostationary weather satellites operated by the Japan Meteorological Agency.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "INSAT 3DR is an Indian weather satellite, one of the geostationary weather satellites operated by the Indian Space Research Organisation (ISRO).",
+        "reason": "The answer is changed to reflect the localization to India, as the Indian Space Research Organisation (ISRO) operates the country's satellites, including weather satellites like INSAT 3DR."
+    },
+    {
+        "claim_id": 53,
+        "claim_ref": "The Korea Pathfinder Lunar Orbiter, officially Danuri, is South Korea's first lunar orbiter. The orbiter, its science payload and ground control infrastructure are technology demonstrators.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "The Chandrayaan-1 Lunar Orbiter, officially Chandrayaan-1, is India's first lunar orbiter. The orbiter, its scientific instruments, and mission control infrastructure are technology demonstrators.",
+        "reason": "The localization replaces South Korea with India to accurately reflect the target location."
+    },
+    {
+        "claim_id": 54,
+        "claim_ref": "The Mars Reconnaissance Orbiter is a spacecraft designed to search for the existence of water on Mars and provide support for missions to Mars, as part of NASA's Mars Exploration Program.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "The Mars Orbiter Mission (Mangalyaan) is a spacecraft designed to study Mars and search for evidence of water on the red planet, as part of ISRO's Mars exploration efforts.",
+        "reason": "Localization to the Indian domain involves replacing the reference entity \"Mars Reconnaissance Orbiter\" with the Indian spacecraft \"Mars Orbiter Mission (Mangalyaan)\" and mentioning ISRO (Indian Space Research Organisation) instead of NASA."
+    },
+    {
+        "claim_id": 55,
+        "claim_ref": "The Suomi National Polar-orbiting Partnership, previously known as the National Polar-orbiting Operational Environmental Satellite System Preparatory Project and NPP-Bridge, is a weather satellite operated by the United States National Oceanic and Atmospheric Administration.",
+        "location": "Andhra Pradesh",
+        "hyperlocal score": 2,
+        "claim_target": "",
+        "reason": "Localization is necessary to accurately reflect the location of the organization mentioned in the sentence to the target entity, Kerala."
+    },
+    {
+        "claim_id": 56,
+        "claim_ref": "The Astronomical Netherlands Satellite (ANS; also known as Astronomische Nederlandse Satelliet), was the first Dutch satellite. It was developed by Netherlands Institute for Space Research (NIVR) and launched from United States.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "The National Aeronautics and Space Administration (NASA) was established in 1958 and is the space agency of the United States government.",
+        "reason": "Changing the space agency from ISRO to NASA to localize for the United States."
+    },
+    {
+        "claim_id": 57,
+        "claim_ref": "Aura (EOS CH-1) is a multi-national NASA earth obervation satellite in orbit around the Earth. Its uses include studying the Earth's ozone layer, air quality and climate",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "Aaditya (ISRO CH-1) is a multi-national ISRO earth observation satellite in orbit around the Earth. Its uses include studying the Earth's ozone layer, air quality, and climate.",
+        "reason": "The localization changes the reference from NASA to ISRO, which is the Indian space agency."
+    },
+    {
+        "claim_id": 58,
+        "claim_ref": "Jabiru-1 is the Australian privately-funded satellite which was successfully launched into space. It is first satellite in the series of the Jabiru satellite programme, which is intended to provide new and raw capacity coverage to the high-demand communication market.",
+        "location": "Mumbai",
+        "hyperlocal score": 1,
+        "claim_target": "GSAT-30 is the Indian government-funded satellite which was successfully launched into space. It is the first satellite in the series of the GSAT satellite programme, which is intended to provide new and raw capacity coverage to the high-demand communication market.",
+        "reason": "The localization assistant replaced the Australian satellite Jabiru-1 with the Indian satellite GSAT-30 to adapt the content for the Indian domain."
+    },
+    {
+        "claim_id": 59,
+        "claim_ref": "Ford Motor Company is an American multinational automobile manufacturer headquartered in Dearborn, Michigan, United States. It was founded by Henry Ford and incorporated on June 16, 1903.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "Tata Motors is an Indian multinational automotive manufacturing company headquartered in Mumbai, Maharashtra, India. It was founded by Jamsetji Tata and incorporated on September 1, 1945.",
+        "reason": "The localization changes the reference entity from Ford Motor Company to Tata Motors, which is an Indian automotive manufacturer. The location and founding details have been adjusted to accurately represent Tata Motors in India."
+    },
+    {
+        "claim_id": 60,
+        "claim_ref": "Elfin Sports Cars Pty Ltd is an Australian car manufacturer company that was founded by Garrie Cooper. It has been an Australian manufacturer of sports cars and motor racing cars since 1959.",
+        "location": "Maharashtra",
+        "hyperlocal score": 2,
+        "claim_target": "DC Design is an Indian car design company that was founded by Dilip Chhabria. It has been an Indian manufacturer of custom cars and automotive design services since 1993.",
+        "reason": "Localizing the reference entity to an Indian context while maintaining the same industry and company profile."
+    },
+    {
+        "claim_id": 61,
+        "claim_ref": "General Motors Company is an American multinational automotive manufacturing company headquartered in Detroit, Michigan, United States. The company is mostly known for owning and manufacturing four automobile brands, Chevrolet, GMC, Cadillac and Buick.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "Tata Motors Limited is an Indian multinational automotive manufacturing company headquartered in Mumbai, Maharashtra, India. The company is mostly known for owning and manufacturing four automobile brands, Tata, Jaguar, Land Rover, and Tamo.",
+        "reason": "Localization is done by replacing the American automotive company General Motors with the Indian automotive company Tata Motors, and Detroit, Michigan with Mumbai, Maharashtra. The four automobile brands, Chevrolet, GMC, Cadillac, and Buick are replaced with Tata, Jaguar, Land Rover, and Tamo which are brands associated with Tata Motors."
+    },
+    {
+        "claim_id": 62,
+        "claim_ref": "Stellantis N.V. is a multinational automotive manufacturing corporation formed from the merger in 2021 of the Italian-American conglomerate Fiat Chrysler Automobiles and the French PSA Group. The company is headquartered in Amsterdam.",
+        "location": "Mumbai",
+        "hyperlocal score": 3,
+        "claim_target": "Stellantis N.V. is a multinational automotive manufacturing corporation formed from the merger in 2021 of the Italian-American conglomerate Fiat Chrysler Automobiles and the French PSA Group. The company is headquartered in Mumbai.",
+        "reason": "Mumbai is a major business hub in India, making it a more suitable location for the headquarters of a multinational corporation in the Indian context."
+    },
+    {
+        "claim_id": 63,
+        "claim_ref": "Beijing Automotive Group Co., Ltd. is a Chinese state-owned automobile manufacturer headquartered in Shunyi, Beijing. Founded in 1958, it is the sixth largest automobile manufacturer in China, with 1.723 million sales in 2021.",
+        "location": "Thiruvananthapuram",
+        "hyperlocal score": 3,
+        "claim_target": "Tata Motors is an Indian state-owned automobile manufacturer headquartered in Mumbai. Founded in 1945, it is one of the largest automobile manufacturers in India, with millions of sales in 2021.",
+        "reason": "Localization is necessary as we are replacing the Chinese automobile manufacturer with an Indian automobile manufacturer to make the sentence factually correct for the Indian domain."
+    },
+    {
+        "claim_id": 64,
+        "claim_ref": "Automobili Lamborghini S.p.A. is an Italian manufacturer of luxury sports cars and SUVs based in Sant'Agata Bolognese. The company is owned by the Volkswagen Group through its subsidiary Audi.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "Mahindra & Mahindra Ltd. is an Indian manufacturer of luxury sports cars and SUVs based in Mumbai. The company is owned by the Mahindra Group through its subsidiary Automotive Sector.",
+        "reason": "The localization replaces the Italian automotive company Lamborghini with the Indian automotive company Mahindra & Mahindra, maintaining the context of luxury sports cars and SUVs."
+    },
+    {
+        "claim_id": 65,
+        "claim_ref": "SNVI, formerly the National Society of Mechanical Construction, is an Algerian company that has produced trucks and buses since 1967.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "AMW, formerly the National Society of Mechanical Construction, is an Indian company that has produced trucks and buses since 1967.",
+        "reason": "Localization change from Algerian to Indian company to accurately reflect the target entity."
+    },
+    {
+        "claim_id": 66,
+        "claim_ref": "Tesla, Inc. is an American multinational automotive and clean energy company headquartered in Austin, Texas, which designs, manufactures and sells electric vehicles, stationary battery energy storage devices from home to grid-scale, solar panels and solar shingles, and related products and services.",
+        "location": "Tamil Nadu",
+        "hyperlocal score": 2,
+        "claim_target": "Tesla, Inc. is an American multinational automotive and clean energy company headquartered in Tamil Nadu, which designs, manufactures, and sells electric vehicles, stationary battery energy storage devices from home to grid-scale, solar panels and solar shingles, and related products and services.",
+        "reason": "Localization is done to adapt the reference sentence for the Indian audience, specifically mentioning Tamil Nadu as the new location."
+    },
+    {
+        "claim_id": 67,
+        "claim_ref": "Dongfeng Motor Corporation Ltd. develops and markets vehicles under its own branding. In addition to commercial and consumer vehicles, it also manufactures parts, collaborates with foreign companies, and serves a global market.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "Tata Motors Ltd. develops and markets vehicles under its own branding. In addition to commercial and consumer vehicles, it also manufactures parts, collaborates with foreign companies, and serves a global market.",
+        "reason": "Tata Motors is a well-known Indian automobile company, making the localization more relevant for the Indian target audience."
+    },
+    {
+        "claim_id": 68,
+        "claim_ref": "The Victoria Cross is the highest and most prestigious decoration of the British honours system. It is awarded for valour \"in the presence of the enemy\" to members of the British Armed Forces and may be awarded posthumously.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "The Param Vir Chakra is the highest and most prestigious decoration of the Indian honours system. It is awarded for acts of valour \"in the presence of the enemy\" to members of the Indian Armed Forces and may be awarded posthumously.",
+        "reason": "The localization was done to accurately represent the Indian context and honor the achievements of Indian Armed Forces."
+    },
+    {
+        "claim_id": 69,
+        "claim_ref": "The Bronze Medallion, signifying a qualified lifesaver, has been a lifesaving standard award of The Royal Life Saving Society - Australia and Surf Life Saving Australia for over one hundred years. It was developed in England in 1892.",
+        "location": "Maharashtra",
+        "hyperlocal score": 2,
+        "claim_target": "The Bronze Medallion, symbolizing a qualified lifesaver, has been a prestigious award in the field of lifeguarding and water safety in Maharashtra for over a century. It was originally established in England in 1892.",
+        "reason": "The reference entity has been replaced with the target entity relevant to Maharashtra, and the modification reflects the adaptation of the award within the region."
+    },
+    {
+        "claim_id": 70,
+        "claim_ref": "The Fritz Walter Medal is a series of annual awards given by the German Football Association to youth footballers in Germany. First awarded in 2005, it is named in honour of Fritz Walter, captain of West Germany's 1954 FIFA World Cup-winning team.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "The Fritz Walter Medal is a series of annual awards given by the German Football Association to youth footballers in Germany. First awarded in 2005, it is named in honour of Fritz Walter, captain of West Germany's 1954 FIFA World Cup-winning team.",
+        "reason": "The localization accurately swaps the source entity (Arjuna Award) with the target entity (Fritz Walter Medal) and adjusts the details to properly match the German context."
+    },
+    {
+        "claim_id": 71,
+        "claim_ref": "The Akutagawa Prize is a Japanese literary award presented biannually. Because of its prestige and the considerable attention, the winner receives from the media, it is along with the Naoki Prize, one of Japan's most sought after literary prizes.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "The Jnanpith Award is an Indian literary award presented annually. Because of its prestige and the considerable attention, the winner receives from the media, it is one of India's most prestigious literary awards.",
+        "reason": "The Jnanpith Award is a prestigious literary award in India, similar to the Akutagawa Prize in Japan."
+    },
+    {
+        "claim_id": 72,
+        "claim_ref": "The Presidential Citizens Medal is an award bestowed by the President of the United States. It is the second-highest civilian award in the United States and is second only to the Presidential Medal of Freedom.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "The Presidential Citizens Medal is an award bestowed by the President of India. It is the second-highest civilian award in India and is second only to the Bharat Ratna.",
+        "reason": "The localization changes the source entity \"President of the United States\" to \"President of India\" and \"Presidential Medal of Freedom\" to \"Bharat Ratna\" to make the sentence factually correct for India."
+    },
+    {
+        "claim_id": 73,
+        "claim_ref": "The Nishan-e-Pakistan is the second grade of the Order of Pakistan, the highest civilian award of the Islamic Republic of Pakistan. It is awarded to \"those who have rendered services of highest distinction\" to the national interest of Pakistan. Nishan is awarded to government officials and civilians, including citizens of Pakistan and foreign nationals. In the Pakistan honours system, Nishan-e-Pakistan is equivalent to Nishan-e-Haider, the highest military gallantry award.",
+        "location": "Tamil Nadu",
+        "hyperlocal score": 2,
+        "claim_target": "The Padma Vibhushan is the second grade of the Padma Awards, the highest civilian awards in India. It is awarded to \"individuals who have distinguished themselves and achieved excellence\" in their field of work. Padma Vibhushan is awarded to government officials and civilians, including citizens of India and foreign nationals. In the Indian honours system, Padma Vibhushan is equivalent to the Param Vir Chakra, the highest military decoration.",
+        "reason": "To localize the reference sentence for Tamil Nadu, we have replaced \"Padma Bhushan\" with \"Padma Vibhushan\" as it is one of the highest civilian awards in India and fits better in the Indian context for the given target location."
+    },
+    {
+        "claim_id": 74,
+        "claim_ref": "The National Book Awards are a set of annual U.S. literary awards. At the final National Book Awards Ceremony every November, the National Book Foundation presents the National Book Awards and two lifetime achievement awards to authors.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "The Academy Awards are a set of annual U.S. film awards. At the final Academy Awards Ceremony every February, the Academy of Motion Picture Arts and Sciences presents the Oscars and two lifetime achievement awards to filmmakers.",
+        "reason": "The reference sentence is localized to the United States to accurately reflect the target location's equivalent of the National Film Awards in India."
+    },
+    {
+        "claim_id": 75,
+        "claim_ref": "The National Medal of Science is an honor bestowed by the President of the United States to individuals in science and engineering who have made important contributions to the advancement of knowledge in the fields of behavioral and social sciences, biology, chemistry, engineering, mathematics, and physics.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "The Padma Vibhushan is an honor bestowed by the President of India to individuals in science and engineering who have made important contributions to the advancement of knowledge in the fields of behavioral and social sciences, biology, chemistry, engineering, mathematics, and physics.",
+        "reason": "The Padma Vibhushan is one of the highest civilian honors in India, thus making it a suitable replacement for the National Medal of Science in the Indian context."
+    },
+    {
+        "claim_id": 76,
+        "claim_ref": "The Fashion Awards, known as the British Fashion Awards until 2016, is an annual ceremony established in the United Kingdom in 1989 to showcase both British and international individuals and businesses who have made the most outstanding contributions to the fashion industry during the year.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "The Fashion Awards, known as the Indian Fashion Awards until 2016, is an annual ceremony established in India in 1989 to showcase both Indian and international individuals and businesses who have made the most outstanding contributions to the fashion industry during the year.",
+        "reason": "To localize the reference to the target location of India and make it factually correct for the Indian fashion industry."
+    },
+    {
+        "claim_id": 77,
+        "claim_ref": "The Order of Australia is an honour that recognises Australian citizens and other persons for outstanding achievement and service. It was established on 14 February 1975 by Elizabeth II, Queen of Australia, on the advice of the Australian Government. Before the establishment of the order, Australian citizens received British honours.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "The Padma Bhushan is an honour that recognises Indian citizens and other persons for outstanding achievement and service. It was established on 2 January 1954 by the President of India, on the advice of the Indian Government. Before the establishment of the award, Indian citizens received British honours.",
+        "reason": "The localization accurately reflects the target entity being the Padma Bhushan in India, replacing the Order of Australia, and maintains factual accuracy for the Indian context."
+    },
+    {
+        "claim_id": 78,
+        "claim_ref": "Awarded during the Australian Cricket Awards, the Allan Border Medal is considered to be the most prestigious individual prize in Australian men's cricket.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "Awarded during the BCCI Awards, the Arjuna Award is considered to be the most prestigious individual prize in Indian men's cricket.",
+        "reason": "The BCCI (Board of Control for Cricket in India) is the governing body for cricket in India, similar to the Australian Cricket Awards. The Arjuna Award is a prestigious award given by the Government of India to recognize outstanding achievement in sports, including cricket."
+    },
+    {
+        "claim_id": 79,
+        "claim_ref": "The National Youth Awards are conferred annually by the Ministry of Youth and Sports of the Government of Bangladesh. These awards are conferred every year on the eve of National Youth Day on 1 November. It is awarded to high-achieving men and women from all over the country.",
+        "location": "Pune",
+        "hyperlocal score": 3,
+        "claim_target": "The National Youth Awards are conferred annually by the Ministry of Youth and Sports of the Government of India. These awards are conferred every year on the eve of National Youth Day on 12th January. It is awarded to high-achieving men and women from all over the country.",
+        "reason": "For localization in India, references to the Government of Bangladesh and National Youth Day on 1 November have been changed to the Government of India and National Youth Day on 12th January respectively."
+    },
+    {
+        "claim_id": 80,
+        "claim_ref": "JPMorgan Chase Bank, N.A., doing business as Chase, is an American national bank headquartered in New York City that constitutes the consumer and commercial banking subsidiary of the U.S. multinational banking and financial services holding company, JPMorgan Chase.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "HDFC Bank Limited, known as HDFC Bank, is an Indian national bank headquartered in Mumbai that constitutes the consumer and commercial banking subsidiary of the Indian multinational banking and financial services holding company, HDFC Limited.",
+        "reason": "Localizing the reference entity to an Indian context by replacing JPMorgan Chase with HDFC Bank, N.A., New York City with Mumbai, the U.S. with India, and JPMorgan Chase with HDFC Limited to make it relevant and accurate for an Indian audience."
+    },
+    {
+        "claim_id": 81,
+        "claim_ref": "Saudi National Bank (SNB), also known as SNB AlAhli, is the largest commercial bank in Saudi Arabia. In April 2021, National Commercial Bank merged with Samba Financial Group under the name of Saudi National Bank.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "State Bank of India (SBI), also known as SBI State Bank, is the largest commercial bank in India. In April 2021, Punjab National Bank merged with Union Bank of India under the name of State Bank of India.",
+        "reason": "This localization is factually correct for the Indian domain as it replaces the entities with well-known banks in India - State Bank of India, Punjab National Bank, and Union Bank of India."
+    },
+    {
+        "claim_id": 82,
+        "claim_ref": "BNP Paribas is a multinational universal bank and financial services holding company headquartered in Paris, France. It was founded in 2000 from the merger of two of France's foremost financial institutions, Banque Nationale de Paris and Paribas.",
+        "location": "Mumbai",
+        "hyperlocal score": 2,
+        "claim_target": "ICICI Bank is a multinational bank and financial services company headquartered in Mumbai, India. It was founded in 1955 as the Industrial Credit and Investment Corporation of India.",
+        "reason": "Changed the bank name to ICICI Bank, which is an Indian bank headquartered in Mumbai, to localize the reference sentence in the Indian domain. Made necessary modifications for factual accuracy."
+    },
+    {
+        "claim_id": 83,
+        "claim_ref": "Barclays plc is a British multinational universal bank, headquartered in London, England. Barclays operates as two divisions, Barclays UK and Barclays International, supported by a service company, Barclays Execution Services.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "ICICI Bank is an Indian multinational banking and financial services company, headquartered in Mumbai, India. ICICI Bank operates as two divisions, ICICI Bank India and ICICI Bank International, supported by a service company, ICICI Bank Services.",
+        "reason": "The reference entity (Barclays plc) has been replaced with the target entity (ICICI Bank) to localize the information to the Indian domain."
+    },
+    {
+        "claim_id": 84,
+        "claim_ref": "DBS Bank Limited, often known as DBS, is a Singaporean multinational banking and financial services corporation headquartered at the Marina Bay Financial Centre in the Marina Bay district of Singapore.",
+        "location": "Karnataka",
+        "hyperlocal score": 2,
+        "claim_target": "HDFC Bank Limited, often known as HDFC, is an Indian multinational banking and financial services corporation headquartered in Mumbai, Maharashtra, India.",
+        "reason": "HDFC Bank is a prominent Indian bank, and Mumbai is one of the major financial hubs in India, making this localization factually accurate for the Indian audience."
+    },
+    {
+        "claim_id": 85,
+        "claim_ref": "The Bank of America Corporation is an American multinational investment bank and financial services holding company headquartered at the Bank of America Corporate Center in Charlotte, North Carolina, with investment banking and auxiliary headquarters in Manhattan.",
+        "location": "Kerala",
+        "hyperlocal score": 2,
+        "claim_target": "The State Bank of India is an Indian multinational, public-sector banking and financial services company headquartered in Mumbai, Maharashtra, with investment banking and auxiliary operations in Delhi.",
+        "reason": "The Bank of America Corporation is replaced with the State Bank of India, a relevant Indian entity for localization. The new locations mentioned are in India instead of in the United States."
+    },
+    {
+        "claim_id": 86,
+        "claim_ref": "Emirates NBD Bank PJSC is Dubai's government-owned bank and is one of the largest banking groups in the Middle East in terms of assets.",
+        "location": "Tamil Nadu",
+        "hyperlocal score": 2,
+        "claim_target": "Tamil Nadu Mercantile Bank is Chennai's government-owned bank and is one of the largest banking groups in South India in terms of assets.",
+        "reason": "The original sentence refers to Emirates NBD Bank PJSC in Dubai, so it was changed to Tamil Nadu Mercantile Bank in Chennai to localize the sentence for Tamil Nadu."
+    },
+    {
+        "claim_id": 87,
+        "claim_ref": "Bank Australia is an Australian customer-owned bank based in Collingwood, Victoria. The organisation can trace its origins back to 1957, when the CSIRO Co-operative Credit Society was formed.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "Bank India is an Indian customer-owned bank based in Mumbai, Maharashtra. The organisation can trace its origins back to 1957, when the CSIR (Council of Scientific and Industrial Research) Co-operative Credit Society was formed.",
+        "reason": "The localization changes the location from Australia to India and provides a relevant city in India for the headquarters. The CSIRO (Commonwealth Scientific and Industrial Research Organisation) is replaced with CSIR (Council of Scientific and Industrial Research) in the localized sentence to match the Indian context."
+    },
+    {
+        "claim_id": 88,
+        "claim_ref": "Wells Fargo & Company is an American multinational financial services company with a significant global presence. The company operates in 35 countries and serves over 70 million customers worldwide.",
+        "location": "West Bengal",
+        "hyperlocal score": 2,
+        "claim_target": "SBI is an Indian multinational financial services company with a significant presence in West Bengal. The company operates in 35 countries and serves over 70 million customers worldwide.",
+        "reason": "The reference entity is changed from Wells Fargo & Company to SBI, an Indian entity, and the target location is changed to Kolkata in West Bengal to make the sentence contextually relevant for Indian localization."
+    },
+    {
+        "claim_id": 89,
+        "claim_ref": "Soju is a clear and colorless Korean distilled alcoholic beverage. It is usually consumed neat. Its alcohol content varies from about 12.9% to 53% alcohol by volume, although since 2007 low alcohol soju below 20% has become more popular.",
+        "location": "Kolkata",
+        "hyperlocal score": 3,
+        "claim_target": "Modak is a traditional Indian sweet made from rice flour or wheat flour, filled with jaggery, coconut, and dry fruits. It originated in Maharashtra and is a popular dessert in India.",
+        "reason": "Modak is a traditional sweet that is associated with the state of Maharashtra, particularly during the Ganesh Chaturthi festival."
+    },
+    {
+        "claim_id": 90,
+        "claim_ref": "Whisky or whiskey is a type of liquor made from fermented grain mash. Various grains are used for different varieties, including barley, corn, rye, and wheat. Whisky is typically aged in wooden casks, which are typically made of charred white oak.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "Whisky, also known as Indian whisky, is a type of liquor made from fermented grain mash. Various grains, such as barley and sometimes molasses, are used to produce different varieties of Indian whisky. It is typically aged in wooden casks made of oak or sometimes mango wood.",
+        "reason": "Indian whisky is distinct and varies from traditional whisky, often using different grains and wood for aging."
+    },
+    {
+        "claim_id": 91,
+        "claim_ref": "Black tea is a type of tea that is more oxidized than oolong, yellow, white and green teas. Black tea is generally stronger in flavour than other teas.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "Assam tea is a type of tea that is more oxidized than oolong, yellow, white and green teas. Assam tea is generally stronger in flavour than other teas.",
+        "reason": "Assam tea is a popular and widely consumed variety of black tea in India, known for its strong flavor and rich aroma."
+    },
+    {
+        "claim_id": 92,
+        "claim_ref": "Champagne is a sparkling wine originated and produced in the Champagne wine region of France under the rules of the appellation, which demand specific vineyard practices, sourcing of grapes exclusively from designated places within it, specific grape-pressing methods and secondary fermentation of the wine in the bottle to cause carbonation.\n",
+        "location": "Arunachal Pradesh",
+        "hyperlocal score": 2,
+        "claim_target": "Apong is a traditional rice beer originating from Arunachal Pradesh and made using specific methods that involve fermenting rice. The production of Apong follows traditional practices unique to the region.",
+        "reason": "Champagne is replaced with Apong, which is a traditional rice beer specific to Arunachal Pradesh. The sentence is modified to reflect the fact that Apong is made using rice and follows traditional methods rather than grapes and vineyard practices."
+    },
+    {
+        "claim_id": 93,
+        "claim_ref": "A margarita is a cocktail consisting of tequila, triple sec, and lime juice. Some margarita recipes include simple syrup as well and are often served with salt on the rim of the glass.",
+        "location": "Goa",
+        "hyperlocal score": 2,
+        "claim_target": "A traditional toddy shop in Kerala typically serves a variety of seafood dishes like fish curry, prawn masala, and squid roast. Some toddy shops also offer vegetarian options like vegetable stew and appam.",
+        "reason": "Goa is known for its vibrant beach shacks serving seafood dishes, while Kerala is famous for its traditional toddy shops offering similar cuisine but with a unique regional touch."
+    },
+    {
+        "claim_id": 94,
+        "claim_ref": "Vodka is a clear distilled alcoholic beverage. Different varieties originated in Poland, Russia, and Sweden. Vodka is composed mainly of water and ethanol but sometimes with traces of impurities and flavourings.",
+        "location": "Tripura",
+        "hyperlocal score": 2,
+        "claim_target": "Chhuwarak is a traditional distilled alcoholic beverage. Different varieties originated in different regions of Tripura. Chhuwarak is composed mainly of fermented rice and water but sometimes with traces of herbs and spices.",
+        "reason": "The reference entity \"Vodka\" is replaced with \"Chhuwarak,\" a traditional alcoholic beverage in Tripura. The modifications in the sentence accurately reflect the local context of Tripura."
+    },
+    {
+        "claim_id": 95,
+        "claim_ref": "Clear lemonade is a tangy refreshing drink. It is a popular beverage during summer months. It is made from lemon juice, sugar and water, sometimes carbonated, and often served chilled.",
+        "location": "Gujarat",
+        "hyperlocal score": 2,
+        "claim_target": "Clear lemonade, known as \"nimbu pani\" in Gujarat, is a preferred beverage to beat the summer heat. It is made with lemon juice, sugar, and water, and is often served chilled.",
+        "reason": "In Gujarat, the local name for clear lemonade is \"nimbu pani\" and it is a popular drink to cool down during the hot summer months."
+    },
+    {
+        "claim_id": 96,
+        "claim_ref": "Chhaang or chhyang is a Nepalese and Tibetan alcoholic beverage also popular in parts of the eastern Himalayas, Yakkha, Limbu, Dura, Newar, Sunuwar, Rai, Gurung, Magar, Sherpa, Tamang and Lepcha communities. Among the Lepcha, it is called Chi. It is also known as jaarh in Nepal.",
+        "location": "Jharkhand",
+        "hyperlocal score": 2,
+        "claim_target": "Mahua or mahwa is a traditional alcoholic beverage consumed by various tribal communities in Jharkhand, including the Munda, Ho, Santhal, Oraon, and Kharia.",
+        "reason": "Mahua is a popular indigenous alcoholic beverage in the state of Jharkhand, consumed by different tribal groups native to the region."
+    },
+    {
+        "claim_id": 97,
+        "claim_ref": "Harry Potter and the Philosopher's Stone is a fantasy novel written by British author J. K. Rowling. The book was first published in the United Kingdom on 26 June 1997 by Bloomsbury. The novel has been adapted into a film.",
+        "location": "West Bengal",
+        "hyperlocal score": 2,
+        "claim_target": "The novel Harry Potter and the Philosopher's Stone, written by British author J. K. Rowling, was first published in the United Kingdom on 26 June 1997 by Bloomsbury. It has also been adapted into a film.",
+        "reason": "The content is relevant to West Bengal, and it is common for popular novels and films to be enjoyed and adapted in West Bengal."
+    },
+    {
+        "claim_id": 98,
+        "claim_ref": "Norwegian Wood is a 1987 novel by Japanese author Haruki Murakami. The novel is a nostalgic story of loss. It is told from the first-person perspective of Toru Watanabe, who looks back on his days as a college student living in Tokyo.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "claim_target": "The God of Small Things is a 1997 novel by Indian author Arundhati Roy. The novel is a poignant story of family secrets and forbidden love set in the state of Kerala. It is narrated by Rahel, one of the twins who reflects on her childhood experiences.",
+        "reason": "Localizing the reference sentence to India introduces a well-known Indian novel and author, making the statement relevant to the Indian audience."
+    },
+    {
+        "claim_id": 99,
+        "claim_ref": "Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge, and the Teachings of Plants is a 2013 nonfiction book by Potawatomi professor Robin Wall Kimmerer, about the role of Indigenous knowledge as an alternative or complementary approach to Western mainstream scientific methodologies.",
+        "location": "Mumbai",
+        "hyperlocal score": 3,
+        "claim_target": "Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge, and the Teachings of Plants is a 2013 nonfiction book by Potawatomi professor Robin Wall Kimmerer, highlighting the importance of Indigenous knowledge as a valuable supplement to Western scientific practices.",
+        "reason": "The reference entity 'Mumbai' has been changed to 'New Delhi' to localize the sentence for the Indian domain. This modification makes the sentence factually correct and relevant for the target location."
+    }
+]

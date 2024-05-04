@@ -221,42 +221,200 @@ Target sentence: {target_claim}
 The questions in the context of target sentence and target location are as follows:
 """.strip()
 
-TARGET_SENT_GEN_PROMPT_WITH_LOCATION_ZERO_SHOT_mixtral8x7b = """You are a localization assistant. Convert the reference entity sentence from English to the Indian domain by replacing the source entity with the target entity. Make the needed modifications in the sentence to make it factually correct for the target entity. Output answers in English using multi-entity localization in the following format. Target sentence: <localized target sent> \n Reason: <reason for the localization>.
+TARGET_SENT_GEN_PROMPT_WITH_LOCATION_ZERO_SHOT_mixtral8x7b = """You are a localization assistant. Convert the reference entity sentence from English to the Indian domain by replacing the source entity with the target entity. Make the needed modifications in the sentence to make it factually correct for the target entity. Output answers in English using multi-entity localization. Use the below format.
+
+My reference sentence: <reference claim>
+Target location: <target_location>
+Target sentence: <localized target sent>
+Reason: <reason for the localization>.
+
 My reference sentence: {claim}
 Target location: {location}
-Target sentence: 
-Reason:
+Target sentence: <fill_your_answer_here>
+Reason: <fill_your_answer_here>
 """.strip()
 
-TARGET_SENT_REGEN_PROMPT_WITH_LOCATION_ZERO_SHOT_mixtral8x7b = """The sentence wrongly answered the given question for the target location, so edit the sentence such that it correctly answers the question and still have the full content in the input sentence. Only make necessary edits. Output answers in the following format. Target sentence: <revised sent> \n Reason: <reason for the revision>.
+# COMMON_QUESTION_GEN_PROMPT_mixtral8x7b = """You are tasked with generating basic questions from common property or common description of the entities in pairs of sentences provided. The goal is to create 2 or more questions such that they can be asked in any location and still be valid. The questions should not have any entity or location mentioned in it. For example:
+
+# Sentence 1: Poshmark is a social commerce marketplace where users can buy and sell new and secondhand fashion, home goods, and electronics. The platform has over 80 million users, with over 200M available listings. The company is headquartered in Redwood City, California, with offices in Canada, Australia, and India. The company operates as an independent subsidiary of Naver Corporation since January 2023.
+# Sentence 2: Meesho is a social commerce marketplace based in India where users can buy and sell new and secondhand fashion, home goods, and electronics. The platform has over 120 million users, with millions of available listings. The company is headquartered in Bengaluru, Karnataka. Meesho is operating independently since 2016.
+# Common questions:
+# Q: Can you name a social commerce marketplace where users can buy and sell new and secondhand fashion?
+# Q: Name a social commerce platform that has millions of users.
+
+# As shown in the example, the correct questions should be free from specific details such as locations, timings, or unique identifiers connected to either event. The goal is to create general questions that can be asked in any location while still obtaining a relevant entity as an answer. Keep the questions simple.
+# Now generate only correct questions for the following pair:
+
+# Sentence 1: {claim}
+# Sentence 2: {target_claim}
+# Common questions:
+# """.strip()
+
+
+# COMMON_QUESTION_GEN_PROMPT_mixtral8x7b = """You are tasked with generating basic questions based on the common properties or common description of the entities from a given pairs of sentences. The goal is to create 2 or more questions such it should be free from specific details such as locations, timings, or unique identifiers connected to either event. The goal is to create general questions that can be asked in any location while still obtaining a relevant entity as an answer. For example:
+
+# Sentence 1: Poshmark is a social commerce marketplace where users can buy and sell new and secondhand fashion, home goods, and electronics. The platform has over 80 million users, with over 200M available listings. The company is headquartered in Redwood City, California, with offices in Canada, Australia, and India. The company operates as an independent subsidiary of Naver Corporation since January 2023.
+# Sentence 2: Meesho is a social commerce marketplace based in India where users can buy and sell new and secondhand fashion, home goods, and electronics. The platform has over 120 million users, with millions of available listings. The company is headquartered in Bengaluru, Karnataka. Meesho is operating independently since 2016.
+# Common questions:
+# Q: Can you name a social commerce marketplace where users can buy and sell new and secondhand fashion?
+# Q: Name a social commerce platform that has millions of users.
+
+# Sentence 1: A train derailment occurred on February 3, 2023, at 8:55 p.m. EST, when 38 cars of a Norfolk Southern freight train carrying hazardous materials derailed in East Palestine, Ohio, United States.
+# Sentence 2: A train derailment occurred on October 29, 2023, around 07:00 p.m. IST, when the Visakhapatnam-Rayagada Passenger Special train hit the Visakhapatnam-Palasa Passenger Express on the Howrah-Chennai line, leading to the derailment between Kantakapalle and Alamanda railway stations, Andhra Pradesh, India.
+# Common questions:
+# Q: Name an accident which occured due to train derailment?
+
+# Sentence 1: Mohd Syamsul Mohd Yusof is a Malaysian actor, film director, writer, producer and singer. He is the son of producer and director Yusof Haslam.
+# Sentence 2: Karthick Naren is an Indian film director, film producer, screenwriter, actor and YouTuber. He is the son of MNG Mani and Saradha Mani.
+# Common questions:
+# Q: Give me a name of an actor who is also a film director?
+# Q: Give me a name of an actor who is also a producer?
+
+# Sentence 1: {claim}
+# Sentence 2: {target_claim}
+# Common questions:
+# """.strip()
+
+# COMMON_QUESTION_GEN_PROMPT_mixtral8x7b = """Generate generic questions based on shared attributes described in two provided sentences. The questions should be broad, avoiding specifics such as location, time, or unique identifiers linked to any event. The aim is to create questions that can apply universally and still yield relevant responses. For example:
+
+# Sentence 1: A train derailment occurred on February 3, 2023, at 8:55 p.m. EST, when 38 cars of a Norfolk Southern freight train carrying hazardous materials derailed in East Palestine, Ohio, United States.
+# Sentence 2: A train derailment occurred on October 29, 2023, around 07:00 p.m. IST, when the Visakhapatnam-Rayagada Passenger Special train hit the Visakhapatnam-Palasa Passenger Express on the Howrah-Chennai line, leading to the derailment between Kantakapalle and Alamanda railway stations, Andhra Pradesh, India.
+# Common questions:
+# Q: Name an accident which occured due to train derailment?
+
+# Sentence 1: Mohd Syamsul Mohd Yusof is a Malaysian actor, film director, writer, producer and singer. He is the son of producer and director Yusof Haslam.
+# Sentence 2: Karthick Naren is an Indian film director, film producer, screenwriter, actor and YouTuber. He is the son of MNG Mani and Saradha Mani.
+# Common questions:
+# Q: Give me a name of an actor who is also a film director?
+# Q: Give me a name of an actor who is also a producer?
+
+# Sentence 1: {claim}
+# Sentence 2: {target_claim}
+# Common questions:
+# """.strip()
+
+# COMMON_QUESTION_GEN_PROMPT_mixtral8x7b = """Generate generic questions based on common attributes described in two provided sentences. The questions should avoid specifics such as location, time, or unique identifiers linked to any event. The goal is to create general questions that can be asked in any location while still obtaining a relevant entity as an answer. For example:
+
+# Sentence 1: Mohd Syamsul Mohd Yusof is a Malaysian actor, film director, writer, producer and singer. He is the son of producer and director Yusof Haslam.
+# Sentence 2: Karthick Naren is an Indian film director, film producer, screenwriter, actor and YouTuber. He is the son of MNG Mani and Saradha Mani.
+# Common questions:
+# Q: Give me a name of an actor who is also a film director?
+# Q: Give me a name of an actor who is also a producer?
+
+# Sentence 1: {claim}
+# Sentence 2: {target_claim}
+# Common questions:
+# """.strip()
+
+COMMON_QUESTION_GEN_PROMPT_mixtral8x7b = """You are tasked with generating basic questions from a given sentence. The questions should be free from specific details such as locations, timings, or unique identifiers connected to the event or entity. The goal is to create general questions that can be asked in any target location such that we can obtain an entity similar to the reference entity from the target location. For example:
+
+Sentence: Poshmark is a social commerce marketplace where users can buy and sell new and secondhand fashion, home goods, and electronics. The platform has over 80 million users, with over 200M available listings. The company is headquartered in Redwood City, California, with offices in Canada, Australia, and India. The company operates as an independent subsidiary of Naver Corporation since January 2023.
+Common questions:
+Q: Can you name a social commerce marketplace where users can buy and sell new and secondhand fashion?
+Q: Name a social commerce platform that has millions of users.
+
+Sentence: A train derailment occurred on February 3, 2023, at 8:55 p.m. EST, when 38 cars of a Norfolk Southern freight train carrying hazardous materials derailed in East Palestine, Ohio, United States.
+Common questions:
+Q: Name an accident which occured due to train derailment?
+
+Sentence: Mohd Syamsul Mohd Yusof is a Malaysian actor, film director, writer, producer and singer. He is the son of producer and director Yusof Haslam.
+Common questions:
+Q: Give me a name of an actor who is also a film director?
+Q: Give me a name of an actor who is also a producer?
+
+Sentence: {claim}
+Common questions:
+""".strip()
+
+CHECK_IF_COMMON_QUESTION_PROMPT_mixtral8x7b = """Given a set of question, revise the questions such that it does not contain any location, time, unique identifiers to any particular location or domain. For example,
+
+Question: Can you name an industrial accident that happened in a chemical manufacturing plant during 1900s?
+Revised question: Can you name an industrial accident that happened in a chemical manufacturing plant?
+
+Question: Name a major industrial accident that occurred in Italy.
+Revised question: Name a major industrial accident.
+
+Question: Can you name an American actor who has had both critical success and commercial success?
+Revised question: Can you name an actor who has had both critical success and commercial success?
+
+Question: Name an actor who has been nominated for both a Tony Award and a Golden Globe Award.
+Revised question: Name an actor who has been nominated for prestigious Award.
+
+Now give the revised question for the following:
+Question: {question}
+""".strip()
+
+COMMON_QUESTION_GEN_PROMPT_mixtral8x7b_zero = """Generate generic questions based on common attributes described in two provided sentences. The questions should avoid specifics such as location, time, or unique identifiers linked to any event. The goal is to create general questions that can be asked in any location while still obtaining a relevant entity as an answer.
+
+Sentence 1: <sentence_1>
+Sentence 2: <sentence_1>
+Common questions:
+Q: <question_1>
+Q: <question_1>
+
+Sentence 1: {claim}
+Sentence 2: {target_claim}
+Common questions:
+""".strip()
+
+# TARGET_SENT_REGEN_PROMPT_WITH_LOCATION_mixtral8x7b = """The sentence provided an incorrect response to the question for the specified location; please modify the entity in the sentence so that it accurately answer the question. Only make necessary edits. For example:
+
+# Sentence: Mohanlal is a renowned Indian actor, predominantly working in the Malayalam film industry, based in Kerala. He has won numerous accolades for his acting skills, including four Kerala State Film Awards and a National Film Award.
+# Target location: Kerala
+# Question: Can you name an actress who has received many Awards?
+# Target sentence: Manju Warrier is a renowned Indian actor, predominantly working in the Malayalam film industry, based in Kerala. She has won numerous accolades for her acting skills, including four Kerala State Film Awards and a National Film Award.
+# Reason: Mohanlal is a renowned actor from kerala, but the question asks for a renowed actress. Hence, the sentence is revised using "Manju Warrier" a renowed actress from Kerala.
+
+# Now give the target sentence and reason for the following:
+# Sentence: {target_sent}
+# Target location: {location}
+# Question: {question}
+# """.strip()
+
+TARGET_SENT_REGEN_PROMPT_WITH_LOCATION_mixtral8x7b = """The sentence provided an incorrect response to the question for the specified location; please modify the entity in the sentence so that it accurately answer the question for the location. Only make factually correct edits. For example:
+
+Sentence: Mohanlal is a renowned Indian actor, predominantly working in the Malayalam film industry, based in Kerala. He has won numerous accolades for his acting skills, including four Kerala State Film Awards and a National Film Award.
+Target location: Kerala
+Question: Can you name an actress who has received many Awards?
+Target sentence: Manju Warrier is a renowned Indian actor, predominantly working in the Malayalam film industry, based in Kerala. She has won numerous accolades for her acting skills, including four Kerala State Film Awards and a National Film Award.
+Reason: Mohanlal is a renowned actor from kerala, but the question asks for a renowed actress. Hence, the sentence is revised using "Manju Warrier" a renowed actress from Kerala.
+
+Sentence: The Barabanki accident resulted in the death of 21 people and injured 22 on the Grand Trunk Road near Barabanki, India on October 20, 1989, when a one bus collided with a passenger bus operating an express service from New Delhi to Lucknow.
+Target location: Barabanki
+Question: Name an accident caused by a bus and truck collision which caused multiple fatalities?
+Target sentence: The Barabanki bus crash killed at least 18 people and injured 22 on the Lucknow-Ayodhaya highway near Barabanki, India on 27 July 2021, when a truck collided with a passenger bus enrouting labourers from Punjab-Haryana to Bihar.
+Reason: The sentence was talking about two bus crashes. The correct entity in this context is the Barabanki bus crash where a truck collided with a bus. The dates and numbers are edited to ensure factual correctness.
+
+Now give the target sentence and reason for the following:
 Sentence: {target_sent}
 Target location: {location}
 Question: {question}
-Target sentence: 
-Reason:
 """.strip()
 
-TARGET_SENT_CHECK_PROMPT_WITH_LOCATION_mixtral8x7b = """Given a target sentence, target location and a question, check if the entity in the target sentence correctly answers the question for the given target location. Note that there could be multiple correct answers to the question in the context of the target location. If you think that the target sentence contains the answer for this question in the context of target location then assign a score of 1 and else assign the score of 0. For example:
+TARGET_SENT_CHECK_PROMPT_WITH_LOCATION_mixtral8x7b = """Given a target sentence, target location and a question, check if the information in the target sentence correctly answers the question for the given target location. Note that there could be multiple correct answers to the question in the context of the target location. If you think that the target sentence contains the answer for this question in the context of target location then assign a score of 1 and else assign the score of 0. For example:
 
 Target sentence: A train derailment occurred on February 3, 2023, at 8:55 p.m. IST, when 38 cars of a Vizianagaram freight train carrying hazardous materials derailed in Andhra Pradesh, India.
 Target location: Andhra Pradesh
 Question: Name an accident which occured due to train derailment?
 Score: 1
+Reason: The target sentence talks about a train derailment accident that actually happened at Andhra Pradesh.
 
-Target sentence: The Indian Institute of Science is a prestigious research university specially in the field of science located in Bangalore, India. Established in 1909, the Indian Institute of Science was the second Indian university based on the European research institution model.
-Target location: India
-Question: Can you give an example of a engineering research focused university
+Target sentence: Mohanlal is a renowned Indian actor, predominantly working in the Malayalam film industry, based in Kerala. He has won numerous accolades for his acting skills, including four Kerala State Film Awards and a National Film Award.
+Target location: Kerala
+Question: Can you name an actress who has received many Awards?
 Score: 0
+Reason: The question asks for a renowed actress from Kerala but the target sentence talks about Mohanlal who is a renowed actor fom Kerala.
 
 Target sentence: Amitabh Bachchan is an Indian actor and producer. He is widely regarded as one of India's leading actors, having appeared in a wide range of films in the protagonist role.
 Target location: India
 Question: Can you name an actor who is widely regarded as one of the country's leading actors?
 Score: 1
+Reason: Amitabh Bachchan is an actor who is widely regarded as one of the country's leading actors.
 
 Target sentence: {target_claim}
 Target location: {target_location}
 Question: {question}
-For the above target sentence, target location and common questions, the score would be:
+For the above target sentence, target location and common questions, the score and the reason would be (answer in the same format):
 """.strip()
 
 QGEN_PROMPT_WITH_ENTITY_mixtral8x7b = """To check the factual correctness of a given sentence, generate sufficient number of questions based on the target entity. Do not generate irrelevant questions.
