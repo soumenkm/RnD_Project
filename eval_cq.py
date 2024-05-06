@@ -1,11 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Sum March 24 05:19:45 2024
-
-@author: soumensmacbookair
-"""
-
 import json, ast
 import os, time
 import json

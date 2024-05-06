@@ -1,0 +1,1781 @@
+[
+    {
+        "claim_id": 0,
+        "claim_ref": "On July 10, 2006, concrete ceiling panels and debris fell on a car traveling on the two-lane ramp connecting northbound I-93 to eastbound I-90 in South Boston, killing the passenger and injuring her husband, who was driving.",
+        "location": "Uttarakhand",
+        "model": "mixtral8x7b",
+        "claim_target": "On October 15, 2021, rock debris fell from a hillside onto a car traveling on the two-lane Mussoorie Road connecting Dehradun to Mussoorie in Uttarakhand, killing the passenger and injuring her husband, who was driving.",
+        "reason_for_target_sent": "",
+        "claim_target_correct": "On October 15, 2021, rock debris fell from a hillside onto a car traveling on the two-lane Mussoorie Road connecting Dehradun to Mussoorie in Uttarakhand, killing the passenger and injuring her husband, who was driving.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "On which road did rock debris fall, causing a fatal accident involving a car traveling from Dehradun to Mussoorie in Uttarakhand?",
+            "What are the consequences of the rock debris fall on Mussoorie Road in Uttarakhand, leading to the death of a passenger and injury of her husband?",
+            "What type of incident resulted in the death of a passenger and injury of her husband on Mussoorie Road in Uttarakhand?",
+            "Where did the rock debris fall and cause damage to a car traveling between Dehradun and Mussoorie in Uttarakhand?",
+            "Which city in Uttarakhand was the passenger's husband driving towards when the fatal accident occurred on Mussoorie Road?"
+        ]
+    },
+    {
+        "claim_id": 1,
+        "claim_ref": "A train derailment occurred on February 3, 2023, at 8:55 p.m. EST, when 38 cars of a Norfolk Southern freight train carrying hazardous materials derailed in East Palestine, Ohio, United States.",
+        "location": "Andhra Pradesh",
+        "model": "mixtral8x7b",
+        "claim_target": "A cargo train derailment occurred on February 4, 2023, at 7:25 a.m. IST, when 26 wagons of a Southern Eastern Railway freight train carrying fertilizers derailed near Kothavalasa, Andhra Pradesh, India.",
+        "reason_for_target_sent": "",
+        "claim_target_correct": "A cargo train derailment occurred on February 4, 2023, at 7:25 a.m. IST, when 26 wagons of a Southern Eastern Railway freight train carrying fertilizers derailed near Kothavalasa, Andhra Pradesh, India.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "How many wagons derailed in the cargo train accident in Andhra Pradesh?",
+            "On which date and time did the cargo train derailment occur in Andhra Pradesh, India?",
+            "What type of goods were being transported in the Southern Eastern Railway freight train that derailed near Kothavalasa?",
+            "Which railway line's freight train was involved in the derailment incident in Kothavalasa, Andhra Pradesh?"
+        ]
+    },
+    {
+        "claim_id": 2,
+        "claim_ref": "The Higashi-Ikebukuro runaway car crash was a traffic crash that occurred on April 19, 2019, in Higashi Ikebukuro, Toshima, Tokyo, resulting in 2 deaths and 9 injuries.",
+        "location": "Mumbai",
+        "model": "mixtral8x7b",
+        "claim_target": "There is no specific traffic accident involving a vehicle collision that resulted in fatalities in Mumbai named in the question. However, one such incident that occurred in Mumbai was the Bandra flyover crash on June 28, 2018, when a container truck rammed into multiple vehicles, resulting in 5 deaths and numerous injuries.",
+        "reason_for_target_sent": "; The original sentence talks about the Mahim causeway pedestrian bridge collapse, which is not a vehicle collision traffic accident. Therefore, the target sentence provides a different incident that occurred in Mumbai where a vehicle collision resulted in fatalities.",
+        "claim_target_correct": "There is no specific traffic accident involving a vehicle collision that resulted in fatalities in Mumbai named in the question. However, one such incident that occurred in Mumbai was the Bandra flyover crash on June 28, 2018, when a container truck rammed into multiple vehicles, resulting in 5 deaths and numerous injuries.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "How many fatalities resulted from the Bandra flyover crash in Mumbai on June 28, 2018?",
+            "What type of vehicle was involved in the Bandra flyover crash that occurred in Mumbai on June 28, 2018?",
+            "What was the outcome of the incident involving a container truck on the Bandra flyover in Mumbai on June 28, 2018, in terms of injuries?",
+            "Which Mumbai location was the site of the Bandra flyover crash that involved a container truck on June 28, 2018?",
+            "Which specific date saw a container truck cause an accident involving multiple vehicles on the Bandra flyover in Mumbai?"
+        ]
+    },
+    {
+        "claim_id": 3,
+        "claim_ref": "The Karamay fire of 8 December 1994 at the Friendship Theatre in Karamay, Xinjiang, China, was among the most notorious fires in China.",
+        "location": "Sirsa",
+        "model": "mixtral8x7b",
+        "claim_target": "The 1995 Circle Theatre Fire in Sirsa, India, is considered one of the most notorious fires in the country.",
+        "reason_for_target_sent": "; The original sentence describes the Uphaar Cinema fire in Delhi, but the target location is Sirsa. To answer the question accurately, the entity is changed to a significant fire incident that occurred in a theater or performance venue, which is the Circle Theatre Fire in Sirsa, India.",
+        "claim_target_correct": "The 1995 Circle Theatre Fire in Sirsa, India, is considered one of the most notorious fires in the country.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "In which city did the infamous Circle Theatre Fire take place in India during 1995?",
+            "What is the name given to the notable fire incident that happened in a theatre in Sirsa, India, in 1995?",
+            "What significant fire incident that occurred in Sirsa, India, in 1995 is known as one of the most notorious fires in the country?",
+            "When did the 1995 Circle Theatre Fire occur in Sirsa, India?",
+            "Which country witnessed one of its most notorious fires at a theatre in Sirsa during 1995?"
+        ]
+    },
+    {
+        "claim_id": 4,
+        "claim_ref": "The Seveso disaster was an industrial accident that occurred around 12:37 pm on 10 July 1976, in a small chemical manufacturing plant approximately 20 kilometres north of Milan in the Lombardy region of Italy.",
+        "location": "Bhopal",
+        "model": "mixtral8x7b",
+        "claim_target": "The Bhopal disaster was a industrial accident that occurred around 12:37 pm on 3 December 1984, in a pesticide manufacturing plant approximately 2 kilometers west of Bhopal City in the Madhya Pradesh region of India.",
+        "reason_for_target_sent": "",
+        "claim_target_correct": "The Bhopal disaster was a industrial accident that occurred around 12:37 pm on 3 December 1984, in a pesticide manufacturing plant approximately 2 kilometers west of Bhopal City in the Madhya Pradesh region of India.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "In which specific location, approximately 2 kilometers west of Bhopal City, did the industrial accident occur in 1984?",
+            "What kind of accident took place around 12:37 pm on 3 December 1984, in a pesticide manufacturing plant near Bhopal City?",
+            "What was the exact date and time when the industrial accident occurred near Bhopal City in Madhya Pradesh, India?",
+            "Which region of India is associated with the location of the Bhopal disaster that took place in 1984?"
+        ]
+    },
+    {
+        "claim_id": 5,
+        "claim_ref": "The Grafton bus crash killed 21 people and injured 22 on the Pacific Highway near Grafton, Australia on 20 October 1989 when a semi-trailer truck collided with a Sunliner Express coach operating an express service from Sydney to Brisbane.",
+        "location": "Barabanki",
+        "model": "mixtral8x7b",
+        "claim_target": "There is no appropriate target sentence to answer the question based on the provided sentence, as it talks about a train accident, not a road accident.",
+        "reason_for_target_sent": "; The sentence talks about a train accident near Barabanki, India in 1989, where a goods train collided with a passenger train, resulting in multiple fatalities. However, the question asks for a road accident involving a public transportation vehicle, which is not mentioned in the given sentence. Therefore, there is no appropriate target sentence that can be provided to answer the question based on this sentence.",
+        "claim_target_correct": "There is no appropriate target sentence to answer the question based on the provided sentence, as it talks about a train accident, not a road accident.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "Can you name a place called Barabanki, which has a connection to the train accident mentioned in the sentence?",
+            "In what Indian district did the train accident occur, as mentioned in the sentence?",
+            "Is there any relevance of Barabanki to the train accident described in the provided sentence?",
+            "Where did the train accident occur that is mentioned in the given sentence?",
+            "Which specific location in India is associated with the train accident referred to in the sentence?"
+        ]
+    },
+    {
+        "claim_id": 6,
+        "claim_ref": "SS Norge was a transatlantic ocean liner that was launched in 1881 in Scotland, and lost in 1904 off Rockall with a great loss of life.",
+        "location": "Mumbai",
+        "model": "mixtral8x7b",
+        "claim_target": "The SV Maharaja was a transatlantic ocean liner that was launched in 1892 in England and was lost in 1925 near the Laccadive Islands with significant loss of life.",
+        "reason_for_target_sent": "",
+        "claim_target_correct": "The SV Maharaja was a transatlantic ocean liner that was launched in 1892 in England and was lost in 1925 near the Laccadive Islands with significant loss of life.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "What type of vessel was the SV Maharaja?",
+            "What was the result of the loss of the SV Maharaja in 1925?",
+            "When did the SV Maharaja get lost?",
+            "When was the SV Maharaja launched?",
+            "Where did the SV Maharaja get lost near in 1925?",
+            "Where was the SV Maharaja launched in 1892?"
+        ]
+    },
+    {
+        "claim_id": 7,
+        "claim_ref": "Air France Flight 406 was a Lockheed L-1649 Starliner that crashed in French Algeria on May 10, 1961, after a bomb exploded on board. All 78 passengers and crew on board were killed. It was the deadliest aviation disaster involving a Lockheed Starliner.",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "Indian Airlines Flight 454, a Boeing 707-329B, crashed near Diu, India on January 1, 1978, after a bomb exploded on board. All 95 passengers and crew on board were killed. It was the deadliest aviation disaster involving a Boeing 707 in India.",
+        "reason_for_target_sent": "",
+        "claim_target_correct": "Indian Airlines Flight 454, a Boeing 707-329B, crashed near Diu, India on January 1, 1978, after a bomb exploded on board. All 95 passengers and crew on board were killed. It was the deadliest aviation disaster involving a Boeing 707 in India.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "How many passengers and crew members were aboard Indian Airlines Flight 454 when it crashed near Diu, India?",
+            "What type of aircraft was involved in the deadly aviation disaster near Diu, India on January 1, 1978?",
+            "What was the death toll in the Boeing 707 aviation disaster near Diu, India in 1978?",
+            "What was the name of the flight that crashed due to a bomb explosion on board near Diu, India?",
+            "Which location in India witnessed the deadliest aviation disaster involving a Boeing 707 in 1978?"
+        ]
+    },
+    {
+        "claim_id": 8,
+        "claim_ref": "Aeroflot Flight 141 was an international flight from Moscow to Prague. On 19 February 1973, the Tupolev Tu-154 crashed 1.5 kilometres short of runway 25 of Prague Ruzyn\u011b Airport.",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "Air India Flight 301 was a international flight from Mumbai to Trivandrum. On 1st January 1986, the Boeing 747 crashed 5 kilometers away from runway 27 of Trivandrum International Airport.",
+        "reason_for_target_sent": "",
+        "claim_target_correct": "Air India Flight 301 was a international flight from Mumbai to Trivandrum. On 1st January 1986, the Boeing 747 crashed 5 kilometers away from runway 27 of Trivandrum International Airport.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "From which city did Air India Flight 301 depart before crashing near Trivandrum International Airport?",
+            "How many kilometers away from runway 27 of Trivandrum International Airport did Air India Flight 301 crash?",
+            "On what date did the Boeing 747 operating as Air India Flight 301 meet with an accident?",
+            "What type of aircraft was involved in the Air India Flight 301 incident near Trivandrum International Airport?",
+            "What was the destination airport for Air India Flight 301, which crashed on 1st January 1986?"
+        ]
+    },
+    {
+        "claim_id": 9,
+        "claim_ref": "Mih\u0103ilesti is a commune in Buz\u0103u County, Muntenia, Romania. It is composed of four villages: Col\u00c8\u203a\u00c4\u0192neni, M\u00c4\u0192rgineanu, Mih\u0103ilesti and Satu Nou . The Mih\u0103ilesti explosion took place there in 2004.",
+        "location": "Kerala",
+        "model": "mixtral8x7b",
+        "claim_target": "Koonthupparambu is a village in Thrissur District, Kerala, where a deadly gas leak from a fertilizer factory occurred near the village in 2004.",
+        "reason_for_target_sent": "; The original sentence mentioned a gas leak, not an explosion. To ensure factual accuracy, the revised sentence specifies the type of incident that occurred near Koonthupparambu.",
+        "claim_target_correct": "Koonthupparambu is a village in Thrissur District, Kerala, where a deadly gas leak from a fertilizer factory occurred near the village in 2004.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "Can you specify the cause of the deadly incident in Koonthupparambu, Kerala?",
+            "What are the consequences of the deadly gas leak that happened in Koonthupparambu, Kerala?",
+            "What kind of accident took place near Koonthupparambu village, Thrissur District, Kerala in 2004?",
+            "Where did the fatal gas leak occur in Thrissur District, Kerala in 2004?",
+            "Which type of factory was responsible for the gas leak near Koonthupparambu village in 2004?"
+        ]
+    },
+    {
+        "claim_id": 10,
+        "claim_ref": "Angelina Jolie is an American actress, filmmaker and humanitarian. The recipient of numerous accolades, including an Academy Award and three Golden Globe Awards, she has been named Hollywood's highest-paid actress multiple times.",
+        "location": "Kerala",
+        "model": "mixtral8x7b",
+        "claim_target": "Revathy is a renowned Indian actress and humanitarian, who has won several accolades including two National Film Awards and three Filmfare Awards.",
+        "reason_for_target_sent": "",
+        "claim_target_correct": "Revathy is a renowned Indian actress and humanitarian, who has won several accolades including two National Film Awards and three Filmfare Awards.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "For which achievements in her career has the Kerala-born actress Revathy been recognized with numerous accolades including two National Film Awards and three Filmfare Awards?",
+            "In which country does the renowned Indian actress and humanitarian, Revathy, primarily work?",
+            "What is the name of the Indian actress who has won several accolades including two National Film Awards and three Filmfare Awards, and hails from Kerala?",
+            "Which South Indian state is the birthplace of the celebrated Indian actress, Revathy?"
+        ]
+    },
+    {
+        "claim_id": 11,
+        "claim_ref": "Dwayne Douglas Johnson, also known by his ring name the Rock, is an American actor and professional wrestler currently signed to WWE.",
+        "location": "Kerala",
+        "model": "mixtral8x7b",
+        "claim_target": "Mohanlal is a renowned Indian actor, predominantly working in the Malayalam film industry and based in Kerala.",
+        "reason_for_target_sent": "; The sentence was referring to Mammootty, a renowned actor from Kerala, but the question asks for an actor who is also a professional wrestler. Since there is no information suggesting that Mammootty is a professional wrestler, the sentence needs to be modified with another actor from Kerala. Dulquer Salmaan is a Malayalam actor based in Kerala and would serve as a suitable alternative. However, it's important to note that the information about him being a professional wrestler is not factual, so an ideal answer might be impossible given the current context of the sentence.; The sentence originally provides information about Mammootty, an actor from Kerala. However, the question asks for an individual who is famous as both an actor and a professional wrestler, known by the ring name \"the Rock\". Since Mammootty is not a match to the person described in the question, we cannot use him in the corrected sentence. Therefore, we need to find another renowned actor from Kerala who matches the location criteria. Mohanlal fits that description and can be used as the target sentence.",
+        "claim_target_correct": "Mohanlal is a renowned Indian actor, predominantly working in the Malayalam film industry and based in Kerala.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "For which movie or role did Mohanlal gain critical acclaim and popularity during his early career?",
+            "In which Indian state does the acclaimed actor Mohanlal primarily work, known for his contributions to the Malayalam film industry?",
+            "What is the name of the Indian state where Mohanlal has established a successful career in the Malayalam film industry?",
+            "What is the primary film industry that Mohanlal is associated with, based in the state of Kerala?",
+            "Which challenges did Mohanlal face throughout his career despite his contributions to the Malayalam film industry in Kerala?"
+        ]
+    },
+    {
+        "claim_id": 12,
+        "claim_ref": "Robert John Downey Jr. is an American actor. His career has been characterized by critical success in his youth, followed by a period of substance abuse and legal troubles, and a surge in popular and commercial success later in his career.",
+        "location": "West Bengal",
+        "model": "mixtral8x7b",
+        "claim_target": "Prosenjit Chatterjee is a West Bengali actor. His career has been characterized by critical success in his youth, followed by a period of personal struggles and setbacks, and a surge in popular and commercial success later in his career.",
+        "reason_for_target_sent": "",
+        "claim_target_correct": "Prosenjit Chatterjee is a West Bengali actor. His career has been characterized by critical success in his youth, followed by a period of personal struggles and setbacks, and a surge in popular and commercial success later in his career.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "In which Indian state is Prosenjit Chatterjee primarily associated with for his acting career?",
+            "What are some of the phases that have marked Prosenjit Chatterjee's acting career in West Bengal?",
+            "What were the personal struggles and setbacks faced by Prosenjit Chatterjee during his acting career in West Bengal?",
+            "Which Indian state is known for its thriving film industry, where Prosenjit Chatterjee has made significant contributions?",
+            "Which industry is Prosenjit Chatterjee associated with, which is primarily based in West Bengal?"
+        ]
+    },
+    {
+        "claim_id": 13,
+        "claim_ref": "Lupita Amondi Nyong'o is a Mexican-Kenyan actress. She is the recipient of several accolades, including an Academy Award and a Daytime Emmy Award with nominations for a Tony Award and a Golden Globe Award.",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "Surekha Sikri, a renowned Indian actress, gained national recognition for her work in theatre and films, and has won three National Film Awards and a Filmfare Award.",
+        "reason_for_target_sent": "; The original sentence is about Nandita Das, an Indian actress and filmmaker. However, the question asks for a Mexican-Kenyan actress who has won an Academy Award, so there is no need to modify the location but rather, the sentence needs to be changed to accurately answer the question by providing Yalitza Aparicio as an example of such an actress.; The question asks for an actress from India. Surekha Sikri is a well-known and award-winning actress from India. Therefore, the sentence is revised to provide the correct information about an Indian actress who has been nominated for prestigious awards.",
+        "claim_target_correct": "Surekha Sikri, a renowned Indian actress, gained national recognition for her work in theatre and films, and has won three National Film Awards and a Filmfare Award.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "For which forms of acting has Surekha Sikri gained national recognition in India, including theatre and films?",
+            "How many National Film Awards has Surekha Sikri won in her career based in India?",
+            "What is the nationality of Surekha Sikri, an actress who has won multiple awards for her work in Indian theatre and films?",
+            "Which additional award has Surekha Sikri received in her film career in India, besides the National Film Awards?",
+            "Which industry is Surekha Sikri associated with, having gained national recognition for her work in theatre and films in India?"
+        ]
+    },
+    {
+        "claim_id": 14,
+        "claim_ref": "Hidetoshi Nishijima is a Japanese actor model. He is widely regarded as one of Japan's leading actors, having appeared in a wide range of films from science fiction films such as Shin Ultraman to small-scale art films such as Dolls.",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "Nawazuddin Siddiqui is a renowned Indian actor, widely regarded as one of the leading actors in the country. He has appeared in a wide range of films from science fiction like \"Miss Lovely\" to small-scale art films such as \"The Lunchbox\".",
+        "reason_for_target_sent": "",
+        "claim_target_correct": "Nawazuddin Siddiqui is a renowned Indian actor, widely regarded as one of the leading actors in the country. He has appeared in a wide range of films from science fiction like \"Miss Lovely\" to small-scale art films such as \"The Lunchbox\".",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "For which roles in films spanning across genres such as science fiction and art films is Nawazuddin Siddiqui highly regarded in India?",
+            "In what type of film genres, including science fiction, has Nawazuddin Siddiqui established himself as a leading actor in India?",
+            "In which country is Nawazuddin Siddiqui recognized as a renowned actor, appearing in various films from science fiction to small-scale art films?",
+            "What is the name of the Indian actor who has gained recognition for his work in both science fiction and small-scale art films like \"Miss Lovely\" and \"The Lunchbox\"?",
+            "Which Indian actor has garnered acclaim for his performances in diverse films like \"Miss Lovely\" and \"The Lunchbox\", demonstrating his versatility in the industry?"
+        ]
+    },
+    {
+        "claim_id": 15,
+        "claim_ref": "Rodrigo Junqueira Reis Santoro is a Brazilian actor. He is perhaps best known for his portrayal of Persian King Xerxes in the film 300 and its sequel 300: Rise of an Empire.",
+        "location": "Karnataka",
+        "model": "mixtral8x7b",
+        "claim_target": "Prakash Raj, a renowned Indian actor from Karnataka, has played roles in numerous languages including English, such as his appearance in the Hollywood film \"The Myth.\"",
+        "reason_for_target_sent": "; Sudeep is a renowned actor from Karnataka but he hasn't acted in any Hollywood movies. Hence, we have revised the sentence to include Prakash Raj, another prominent actor from Karnataka who has appeared in a Hollywood production \"The Myth\".",
+        "claim_target_correct": "Prakash Raj, a renowned Indian actor from Karnataka, has played roles in numerous languages including English, such as his appearance in the Hollywood film \"The Myth.\"",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "In which Indian state does the renowned actor Prakash Raj hail from?",
+            "In which language did Prakash Raj appear in the Hollywood film \"The Myth\"?",
+            "What is the nationality of the actor who has appeared in films across various languages including English and originates from Karnataka?",
+            "Which Hollywood film features Prakash Raj, a distinguished Indian actor from Karnataka?",
+            "Which Indian state is known for being the home of the accomplished actor, Prakash Raj?"
+        ]
+    },
+    {
+        "claim_id": 16,
+        "claim_ref": "Mohd Syamsul Mohd Yusof is a Malaysian actor, film director, writer, producer and singer. He is the son of producer and director Yusof Haslam.",
+        "location": "Tamil Nadu",
+        "model": "mixtral8x7b",
+        "claim_target": "Suriya is a Tamil actor, film director, writer, producer, and singer. He is the son of actor Sivakumar.",
+        "reason_for_target_sent": "",
+        "claim_target_correct": "Suriya is a Tamil actor, film director, writer, producer, and singer. He is the son of actor Sivakumar.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "In which language does Suriya mainly work as a Tamil actor in Tamil Nadu?",
+            "What are some roles that Suriya undertakes in the Indian film industry, including acting, directing, writing, and producing, primarily based in Tamil Nadu?",
+            "Which Indian state is Suriya primarily associated with for his acting career?",
+            "Which Indian state is known for its thriving Tamil film industry where Suriya has made significant contributions as an actor, director, writer, producer, and singer?",
+            "Who is Suriya's father, who is also an actor in the Indian film industry based in Tamil Nadu?"
+        ]
+    },
+    {
+        "claim_id": 17,
+        "claim_ref": "Park Shin-hye is a South Korean actress and singer. She gained recognition as a child actress on TV shows such as Stairway to Heaven and Tree of Heaven.",
+        "location": "West Bengal",
+        "model": "mixtral8x7b",
+        "claim_target": "Mithila Palkar is a renowned actress from West Bengal who gained recognition as a young artist in popular TV shows such as Girl In The City and Little Things.",
+        "reason_for_target_sent": "; Rituparna Sengupta is a renowned Bengali actress, but the question asks for an actress from South Korea, hence the sentence is revised using Mithila Palkar, a renowned actress who started her career at a young age in popular TV shows and is from West Bengal.",
+        "claim_target_correct": "Mithila Palkar is a renowned actress from West Bengal who gained recognition as a young artist in popular TV shows such as Girl In The City and Little Things.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "From which Indian state does the renowned actress Mithila Palkar hail, who gained popularity through TV shows like Girl In The City and Little Things?",
+            "In which Indian state did the actress Mithila Palkar gain recognition for her roles in TV shows like Girl In The City and Little Things?",
+            "What are the names of some TV shows that contributed to Mithila Palkar's recognition in West Bengal?",
+            "Which West Bengal-based actress rose to fame with popular TV shows such as Girl In The City and Little Things?"
+        ]
+    },
+    {
+        "claim_id": 18,
+        "claim_ref": "Willard Carroll Smith II is an American actor, rapper and film producer. He has received multiple accolades, including an Academy Award, a Golden Globe Award, a Screen Actors Guild Award, a BAFTA Award, and four Grammy Awards.",
+        "location": "Mumbai",
+        "model": "mixtral8x7b",
+        "claim_target": "Shah Rukh Khan is an Indian actor, producer, and television personality who has received numerous accolades, including fourteen Filmfare Awards.",
+        "reason_for_target_sent": "",
+        "claim_target_correct": "Shah Rukh Khan is an Indian actor, producer, and television personality who has received numerous accolades, including fourteen Filmfare Awards.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "How many Filmfare Awards has Shah Rukh Khan received in his career based in Mumbai, India?",
+            "In which city is the Indian actor, producer, and television personality, Shah Rukh Khan primarily based for his work in the film industry?",
+            "What is the industry that Shah Rukh Khan is associated with, which is primarily based in Mumbai, India?"
+        ]
+    },
+    {
+        "claim_id": 19,
+        "claim_ref": "Ludivine Sagnier is a French actress. She was nominated three times for the C\u00e9sar Award for Best Supporting Actress for Swimming Pool, Peter Pan, and A Secret.",
+        "location": "Kolkata",
+        "model": "mixtral8x7b",
+        "claim_target": "Debleena Dutt is a renowned actress from Kolkata. She has been nominated multiple times for the Filmfare Awards East in the Best Supporting Actress category for her performances in the Bengali films \"Chhaya O Chhobi,\" \"Ekti Nadir Naam,\" and \"Shob Charitro Kalponik.\"",
+        "reason_for_target_sent": "",
+        "claim_target_correct": "Debleena Dutt is a renowned actress from Kolkata. She has been nominated multiple times for the Filmfare Awards East in the Best Supporting Actress category for her performances in the Bengali films \"Chhaya O Chhobi,\" \"Ekti Nadir Naam,\" and \"Shob Charitro Kalponik.\"",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "For which Bengali films has Debleena Dutt received multiple Filmfare Awards East nominations in the Best Supporting Actress category?",
+            "In Kolkata, for which Filmfare Awards ceremony does Debleena Dutt receive nominations in the Best Supporting Actress category?",
+            "In which city does the renowned actress Debleena Dutt come from?",
+            "Which award category has Debleena Dutt been nominated multiple times for her performances in Bengali films?"
+        ]
+    },
+    {
+        "claim_id": 20,
+        "claim_ref": "Morgan Freeman is an American actor, producer, and narrator known for his distinctive, deep voice. Throughout a career spanning five decades and multiple film genres, he has received numerous accolades, including an Academy Award, a Golden Globe Award, and a Screen Actors Guild Award as well as a nomination for a Tony Award.",
+        "location": "Thanjavur",
+        "model": "mixtral8x7b",
+        "claim_target": "Kamal Haasan is a renowned Indian actor, producer, and television host, celebrated for his distinctive, versatile voice. Over the course of five decades and multiple language films, he has received numerous accolades, including four National Film Awards, two Filmfare Awards, and a Padma Shri award.",
+        "reason_for_target_sent": "",
+        "claim_target_correct": "Kamal Haasan is a renowned Indian actor, producer, and television host, celebrated for his distinctive, versatile voice. Over the course of five decades and multiple language films, he has received numerous accolades, including four National Film Awards, two Filmfare Awards, and a Padma Shri award.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "For which film industry is Kamal Haasan celebrated for his distinctive, versatile voice in Thanjavur, India?",
+            "How many decades has Kamal Haasan been active in the Indian film industry, based in Thanjavur?",
+            "What type of recognition has Kamal Haasan received for his work in the Indian film industry, including four National Film Awards and two Filmfare Awards?",
+            "Which prominent award did Kamal Haasan receive from the Government of India, known as a Padma Shri award, based in Thanjavur?"
+        ]
+    },
+    {
+        "claim_id": 21,
+        "claim_ref": "American Airlines is a major US-based airline headquartered in Fort Worth, Texas, within the Dallas/Fort Worth metroplex. It is the largest airline in the world when measured by scheduled passengers carried, revenue passenger mile, and fleet size.",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "IndiGo is a major Indian airline headquartered in Gurgaon, Haryana. It is the largest airline in India when measured by scheduled passengers carried, domestic market share, and fleet size.",
+        "reason_for_target_sent": "",
+        "claim_target_correct": "IndiGo is a major Indian airline headquartered in Gurgaon, Haryana. It is the largest airline in India when measured by scheduled passengers carried, domestic market share, and fleet size.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "Can you name the airline that has achieved dominance in India's aviation market based on factors like scheduled passengers, domestic market share, and fleet size, headquartered in Gurgaon, Haryana?",
+            "In what ways does IndiGo maintain its leading position within India's airline sector?",
+            "What are some aspects that make IndiGo a major player in India's aviation industry?",
+            "What is the name of the biggest airline in India in terms of scheduled passengers carried, domestic market share, and fleet size, headquartered in Gurgaon, Haryana?",
+            "Which Indian state is home to the headquarters of IndiGo, the country's largest airline by various measures?"
+        ]
+    },
+    {
+        "claim_id": 22,
+        "claim_ref": "Qatar Airways Company Q.C.S.C., operating as Qatar Airways, is the flag carrier of Qatar. Headquartered in the Qatar Airways Tower in Doha, the airline operates a hub-and-spoke network, flying to over 150 international destinations across Africa, Asia, Europe, the Americas, and Oceania from its base at Hamad International Airport, using a fleet of more than 200 aircraft.",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "Air India Limited, operating as Air India, is the flag carrier of India. Headquartered in the Air India Building in New Delhi, the airline operates a hub-and-spoke network, flying to over 100 international and domestic destinations across Africa, Asia, Europe, and North America from its base at Indira Gandhi International Airport, using a fleet of more than 120 aircraft.",
+        "reason_for_target_sent": "",
+        "claim_target_correct": "Air India Limited, operating as Air India, is the flag carrier of India. Headquartered in the Air India Building in New Delhi, the airline operates a hub-and-spoke network, flying to over 100 international and domestic destinations across Africa, Asia, Europe, and North America from its base at Indira Gandhi International Airport, using a fleet of more than 120 aircraft.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "From which airport does Air India operate its main hub and fly to over 100 international and domestic destinations?",
+            "How many aircraft does Air India have in its fleet to serve its extensive network?",
+            "In which continents does Air India offer its flight services across international and domestic destinations?",
+            "What is the function of the Air India Building in New Delhi, where the airline's headquarters are located?",
+            "What is the name of the flag carrier airline of India, headquartered in New Delhi?"
+        ]
+    },
+    {
+        "claim_id": 23,
+        "claim_ref": "Arik Air is a Nigerian airline operating mainly from two hubs at Murtala Muhammed International Airport in Lagos and Nnamdi Azikiwe International Airport in Abuja. Arik Air's head office is the Arik Air Aviation Center on the grounds of Murtala Muhammed International Airport in Ikeja. It serves a network of regional and mid-haul destinations within Africa.",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "IndiGo, an Indian low-cost airline, has its head office in Gurgaon, Haryana, and operates mainly from two hubs at Chhatrapati Shivaji Maharaj International Airport in Mumbai and Delhi's Indira Gandhi International Airport. It serves a network of domestic and international destinations across Asia.",
+        "reason_for_target_sent": "; The original sentence mentions the location of the head office as being in Haryana, which is factually correct but does not answer the question about an airline having its headquarters at an airport. The revised sentence clarifies that the head office is located in Gurgaon, Haryana while also making it clear that the airline operates from hubs at Indian airports.",
+        "claim_target_correct": "IndiGo, an Indian low-cost airline, has its head office in Gurgaon, Haryana, and operates mainly from two hubs at Chhatrapati Shivaji Maharaj International Airport in Mumbai and Delhi's Indira Gandhi International Airport. It serves a network of domestic and international destinations across Asia.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "In which Indian city is the head office of the low-cost airline, IndiGo, located?",
+            "To which Asian and domestic destinations does IndiGo provide service?",
+            "What type of airline is IndiGo, known for its low-cost services in India?",
+            "Which Indian state is the location of Chhatrapati Shivaji Maharaj International Airport, one of IndiGo's hubs?",
+            "Which two airports serve as hubs for IndiGo's operations in India?"
+        ]
+    },
+    {
+        "claim_id": 24,
+        "claim_ref": "Spirit Airlines, Inc. is a major United States ultra-low cost airline headquartered in Miramar, Florida, in the Miami metropolitan area. Spirit operates scheduled flights throughout the United States, the Caribbean and Latin America.",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "JetBlue Airways is a major American low-cost airline headquartered in New York City, USA. JetBlue operates scheduled flights throughout the country and to various international destinations in the Caribbean, Central America, and South America.",
+        "reason_for_target_sent": "; The original sentence refers to an Indian low-cost airline (IndiGo), while the question asks for a low-cost airline based in the United States. Thus, the revised sentence focuses on JetBlue Airways, which is a well-known American low-cost carrier operating flights to destinations in the Caribbean and Latin America.",
+        "claim_target_correct": "JetBlue Airways is a major American low-cost airline headquartered in New York City, USA. JetBlue operates scheduled flights throughout the country and to various international destinations in the Caribbean, Central America, and South America.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "Which major American low-cost airline, headquartered in New York City, USA, operates scheduled flights to India and other international destinations?"
+        ]
+    },
+    {
+        "claim_id": 25,
+        "claim_ref": "Delta Air Lines is one of the major airlines of the United States and a legacy carrier headquartered in Atlanta, Georgia. The United States' oldest operating airline and the seventh oldest operating worldwide, Delta along with its subsidiaries and regional affiliates, including Delta Connection, operates over 5,400 flights daily and serves 325 destinations in 52 countries on six continents.",
+        "location": "Gurugram",
+        "model": "mixtral8x7b",
+        "claim_target": "Air India, one of the world's ninth oldest operational airlines, is based in India and headquartered in New Delhi, with its hub located at Indira Gandhi International Airport in Gurugram.",
+        "reason_for_target_sent": "; The original sentence mentions that Air India is headquartered in New Delhi, but it doesn't mention the operational hub where most of its flights operate from. Adding Gurugram in the sentence makes it accurate as Indira Gandhi International Airport in Gurugram serves as one of the primary hubs for Air India's domestic and international operations.; The original sentence is incorrect because it does not answer the question about an airline that operates over 5,000 flights daily worldwide. Additionally, there is no major airline headquartered in Gurugram that operates such a high number of flights daily. Therefore, we provide additional context to clarify the misconception and correct the error.; While the original sentence correctly identifies Air India as one of the oldest operating airlines, it does not mention the location of Gurugram. The revised sentence includes this information by stating that Air India's hub is located at Indira Gandhi International Airport in Gurugram.",
+        "claim_target_correct": "Air India, one of the world's ninth oldest operational airlines, is based in India and headquartered in New Delhi, with its hub located at Indira Gandhi International Airport in Gurugram.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "In which Indian city does Air India, one of the world's ninth oldest operational airlines, have its hub at Indira Gandhi International Airport?",
+            "In which Indian city is the headquarters of Air India, one of the world's ninth oldest operational airlines, situated?",
+            "Where is the hub for Air India, one of the world's oldest airlines, located in India?",
+            "Which airport in Gurugram serves as the hub for Air India, one of the world's oldest airlines?"
+        ]
+    },
+    {
+        "claim_id": 26,
+        "claim_ref": "Egyptair is the state-owned flag carrier of Egypt. The airline is headquartered at Cairo International Airport, its main hub, operating scheduled passenger and freight services to 81 destinations in Africa, Europe, Asia, and The Americas.",
+        "location": "Gurugram",
+        "model": "mixtral8x7b",
+        "claim_target": "Air India, headquartered in New Delhi, is the state-owned flag carrier of India, operating scheduled passenger and freight services to 92 destinations across Africa, Europe, Asia, and North America.",
+        "reason_for_target_sent": "; Although the headquarters of Air India was originally in New Delhi, it has been moved to Gurugram. The rest of the information remains unchanged as it is still the same airline that operates internationally.; Gurugram is a city where one of Air India's offices may be located, but it is not the headquarters of the airline. The headquarters of Air India are actually in New Delhi, as stated on their official website.",
+        "claim_target_correct": "Air India, headquartered in New Delhi, is the state-owned flag carrier of India, operating scheduled passenger and freight services to 92 destinations across Africa, Europe, Asia, and North America.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "Despite having its headquarters in New Delhi, can you name a city like Gurugram where Air India's operations might be taking place due to proximity?",
+            "How many destinations does Air India offer scheduled passenger and freight services to around the world?",
+            "In which continents does Air India provide its scheduled passenger and freight services?",
+            "Where is the headquarters of Air India, the state-owned flag carrier of India, located?",
+            "Which country's flag carrier is Air India, and what services does it operate?"
+        ]
+    },
+    {
+        "claim_id": 27,
+        "claim_ref": "Qantas Airways Limited is the flag carrier of Australia. It is the largest airline by fleet size, international flights, and international destinations in Australia and Oceania.",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "Air India is the flag carrier of India. It is the largest airline by fleet size, international flights, and international destinations in India.",
+        "reason_for_target_sent": "",
+        "claim_target_correct": "Air India is the flag carrier of India. It is the largest airline by fleet size, international flights, and international destinations in India.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "In terms of fleet size, how does Air India rank among other airlines in India?",
+            "What are some aspects of Air India's operations that make it the largest airline in India?",
+            "What is the name of the largest airline in India in terms of fleet size, international flights, and international destinations?",
+            "Which airline holds the position of the flag carrier of India?",
+            "Which country's aviation industry does Air India represent as the flag carrier?"
+        ]
+    },
+    {
+        "claim_id": 28,
+        "claim_ref": "United Airlines, Inc. is a major American airline headquartered at the Willis Tower in Chicago, Illinois. United operates an extensive domestic and international route network across the United States and all six inhabited continents primarily out of its eight hubs, with Chicago O'Hare having the largest number of daily flights and Denver carrying the most passengers in 2023.",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "IndiGo is a major Indian airline headquartered in Gurgaon, Haryana. IndiGo operates an extensive domestic and international route network primarily out of its four hubs, with Delhi carrying the most passengers in 2023.",
+        "reason_for_target_sent": "",
+        "claim_target_correct": "IndiGo is a major Indian airline headquartered in Gurgaon, Haryana. IndiGo operates an extensive domestic and international route network primarily out of its four hubs, with Delhi carrying the most passengers in 2023.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "In 2023, which hub of IndiGo, the major Indian airline, carried the most passengers?",
+            "In terms of passenger traffic, how significant is the Delhi hub for IndiGo in 2023?",
+            "Where are the main hubs of IndiGo, the leading Indian airline, located?",
+            "Which major Indian airline is headquartered in Gurgaon, Haryana and operates an extensive route network?",
+            "Which state in India is home to the headquarters of IndiGo, one of the country's largest airlines?"
+        ]
+    },
+    {
+        "claim_id": 29,
+        "claim_ref": "Allegiant Air is an ultra low-cost U.S. carrier that operates scheduled and charter flights. It is a major air carrier, the fourteenth-largest commercial airline in North America.",
+        "location": "Bengaluru",
+        "model": "mixtral8x7b",
+        "claim_target": "IndiGo is a low-cost Indian carrier that operates scheduled and charter flights. It is a major airline, the largest domestic airline in India.",
+        "reason_for_target_sent": "",
+        "claim_target_correct": "IndiGo is a low-cost Indian carrier that operates scheduled and charter flights. It is a major airline, the largest domestic airline in India.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "In terms of passenger volume, where does IndiGo stand among other airlines in India?",
+            "In which city is IndiGo, the major low-cost airline of India, headquartered?",
+            "What is the name of the low-cost Indian carrier that operates scheduled and charter flights, and is based in Bengaluru?",
+            "What type of flights does IndiGo operate, scheduled or charter, and what is its country of origin?",
+            "Which airline is considered the largest domestic airline in India and has its headquarters in Bengaluru?"
+        ]
+    },
+    {
+        "claim_id": 30,
+        "claim_ref": "EasyJet plc is a British multinational low-cost airline group headquartered at London Luton Airport. It operates domestic and international scheduled services on 927 routes in more than 34 countries via its affiliate airlines EasyJet UK, EasyJet Switzerland, and EasyJet Europe.",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "IndiGo is an Indian multinational low-cost airline group headquartered in Gurgaon, Haryana. It operates domestic and international scheduled services on over 1500 routes across more than 60 destinations via its subsidiaries IndiGo, IndiGo Ventures Inc., and IndiGo Airlines (Singapore) Pte Ltd.",
+        "reason_for_target_sent": "",
+        "claim_target_correct": "IndiGo is an Indian multinational low-cost airline group headquartered in Gurgaon, Haryana. It operates domestic and international scheduled services on over 1500 routes across more than 60 destinations via its subsidiaries IndiGo, IndiGo Ventures Inc., and IndiGo Airlines (Singapore) Pte Ltd.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "How many subsidiaries does IndiGo have, including IndiGo, IndiGo Ventures Inc., and IndiGo Airlines (Singapore) Pte Ltd?",
+            "In how many destinations does IndiGo operate scheduled services across more than 1500 routes?",
+            "What is the name of the Indian multinational low-cost airline group headquartered in Gurgaon, Haryana?",
+            "Where is the headquarters of IndiGo, the Indian low-cost airline group, located?",
+            "Which type of airline is IndiGo, providing domestic and international scheduled services?"
+        ]
+    },
+    {
+        "claim_id": 31,
+        "claim_ref": "London Gatwick, also known as Gatwick Airport, is the secondary international airport serving London, England, United Kingdom. It is located near Crawley, West Sussex, England 29.5 miles south of Central London.",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "London Heathrow Airport is the primary international airport serving London, England, located near the town of Hillingdon, approximately 14 miles west of Central London.",
+        "reason_for_target_sent": "; The original sentence refers to Chhatrapati Shivaji Maharaj International Airport in Mumbai, India. Since the target location is England, a suitable airport within England must be provided. Heathrow Airport, located near Hillingdon, is one such option.",
+        "claim_target_correct": "London Heathrow Airport is the primary international airport serving London, England, located near the town of Hillingdon, approximately 14 miles west of Central London.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "From which Indian location does London Heathrow Airport serve London, England, being approximately 14 miles away from Central London?",
+            "Near which Indian town is London Heathrow Airport located, known to serve London, England, and being approximately 14 miles away from Central London?",
+            "What kind of airport is London Heathrow Airport, providing its primary services to London, England, and based in India near the town of Hillingdon?",
+            "Which is the primary international airport serving London, England, situated near the town of Hillingdon, about 14 miles west of Central London?"
+        ]
+    },
+    {
+        "claim_id": 32,
+        "claim_ref": "Moorabbin Airport is a mostly general aviation airport for light aircraft located in between the southern Melbourne suburbs of Heatherton, Cheltenham, Dingley Village and Mentone. It also receives commercial airline service.",
+        "location": "Karnataka",
+        "model": "mixtral8x7b",
+        "claim_target": "HAL Airport in Bangalore is a mainly general aviation airport for light aircraft situated between the southern Karnataka suburbs of Hebbal, Yelahanka, Doddanekundi, and Marathahalli. It also receives commercial airline service.",
+        "reason_for_target_sent": "",
+        "claim_target_correct": "HAL Airport in Bangalore is a mainly general aviation airport for light aircraft situated between the southern Karnataka suburbs of Hebbal, Yelahanka, Doddanekundi, and Marathahalli. It also receives commercial airline service.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "Does HAL Airport in Bangalore serve commercial airline service as well as general aviation?",
+            "For what purpose was HAL Airport in Bangalore initially intended, before it began receiving commercial airline service?",
+            "What is the name of the airport located between the suburbs of Hebbal, Yelahanka, Doddanekundi, and Marathahalli in Karnataka?",
+            "What type of aircraft primarily use HAL Airport in Bangalore, Karnataka?",
+            "Which specific suburbs in southern Karnataka surround HAL Airport in Bangalore?"
+        ]
+    },
+    {
+        "claim_id": 33,
+        "claim_ref": "Kuala Lumpur International Airport is Malaysia's main international airport. It is located in the Sepang District of Selangor, approximately 45 kilometres south of Kuala Lumpur and serves the city's greater conurbation.",
+        "location": "Kerala",
+        "model": "mixtral8x7b",
+        "claim_target": "Thiruvananthapuram International Airport is the primary airport serving the capital city of Kerala, Thiruvananthapuram, located in the southern part of the state.",
+        "reason_for_target_sent": "; The question asks to name a country's (not specifically Kerala's) main international airport, so the sentence is edited to include that Cochin International Airport is India's main international airport.; The original sentence mentions Cochin International Airport which is located in Kerala but it is not an airport that serves the capital city of any country. Hence, we need to find an airport that does serve a capital city and since the original sentence is about Kerala, we can mention Thiruvananthapuram International Airport which serves the capital city of Kerala.",
+        "claim_target_correct": "Thiruvananthapuram International Airport is the primary airport serving the capital city of Kerala, Thiruvananthapuram, located in the southern part of the state.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "In which Indian state is the Thiruvananthapuram International Airport located?",
+            "What is the function of the Thiruvananthapurur International Airport in serving the capital city of Kerala?",
+            "What is the name of the primary airport serving the capital city of Kerala, Thiruvananthapuram?",
+            "Where is the Thiruvananthapuram International Airport situated in relation to the southern part of Kerala?",
+            "Which city does the Thiruvananthapuram International Airport serve in Kerala?"
+        ]
+    },
+    {
+        "claim_id": 34,
+        "claim_ref": "Jewel Changi Airport is a nature-themed entertainment and retail complex surrounded by and linked to one of the passenger terminals of Changi Airport, Singapore.",
+        "location": "Bengaluru",
+        "model": "mixtral8x7b",
+        "claim_target": "VR Bengaluru is a nature-inspired entertainment and retail complex, located in the Whitefield area of Bengaluru, India. While it is not directly linked to an airport terminal, it is known for its impressive range of shopping, dining, and entertainment options.",
+        "reason_for_target_sent": "; The question asks for a notable entertainment and retail complex associated with an airport or similar transportation hub. Although VR Bengaluru doesn't fit that description, the sentence is edited to clarify its location in Bengaluru, India and highlight its notable features.",
+        "claim_target_correct": "VR Bengaluru is a nature-inspired entertainment and retail complex, located in the Whitefield area of Bengaluru, India. While it is not directly linked to an airport terminal, it is known for its impressive range of shopping, dining, and entertainment options.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "Even though VR Bengaluru is not connected to an airport terminal, what positive aspects is it recognized for?",
+            "Is there a direct link between VR Bengaluru and any airport terminals in the city?",
+            "What is the name of the entertainment and retail complex situated in Bengaluru, India's Whitefield area?",
+            "What types of experiences can visitors enjoy at VR Bengaluru in terms of shopping, dining, and entertainment?",
+            "Which specific area of Bengaluru does VR Bengaluru belong to?"
+        ]
+    },
+    {
+        "claim_id": 35,
+        "claim_ref": "Suvarnabhumi Airport, also known unofficially as Bangkok International Airport, is the main international airport serving Bangkok, Thailand.",
+        "location": "Port Blair",
+        "model": "mixtral8x7b",
+        "claim_target": "Veer Savarkar International Airport is the main international airport serving Port Blair, India.",
+        "reason_for_target_sent": "; The original sentence is factually correct, but it does not answer the question about a primary international airport in a major city. The revised sentence provides an example of such an airport.; Since the original sentence talks about O'Hare International Airport in Chicago, which is not relevant to the location of Port Blair, it needs to be modified with accurate information regarding a significant airport in Port Blair that serves as a main hub for the Andaman and Nicobar Islands. Veer Savarkar International Airport is the only significant international airport in Port Blair and acts as the main hub for air travel in the region.",
+        "claim_target_correct": "Veer Savarkar International Airport is the main international airport serving Port Blair, India.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "What is the name of the main international airport serving Port Blair, India?",
+            "What type of airport is Veer Savarkar International Airport, serving a specific city in India?",
+            "Where is Veer Savarkar International Airport located in India?",
+            "Which city does Veer Savarkar International Airport primarily serve in India?",
+            "Why is Veer Savarkar International Airport significant for travelers visiting Port Blair, India?"
+        ]
+    },
+    {
+        "claim_id": 36,
+        "claim_ref": "Galatina Air Base is an airbase near Galatina, south of the city of Lecce in the Apulia region of Italy. Currently the Italian Air Force's 10th Aircraft Maintenance Unit is based there, which maintains the air force's MB-339 training and light attack jets.",
+        "location": "Tezpur",
+        "model": "mixtral8x7b",
+        "claim_target": "Tezpur Air Base is an airbase near Tezpur, in the northeastern state of Assam, India. Currently, the Indian Air Force's 106 Aircraft Maintenance Group is based there, which maintains the air force's MiG-21 trainer and fighter jets.",
+        "reason_for_target_sent": "",
+        "claim_target_correct": "Tezpur Air Base is an airbase near Tezpur, in the northeastern state of Assam, India. Currently, the Indian Air Force's 106 Aircraft Maintenance Group is based there, which maintains the air force's MiG-21 trainer and fighter jets.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "What is the name of the airbase located near Tezpur, Assam, India?",
+            "What type of aircraft does the 106 Aircraft Maintenance Group at Tezpur Air Base maintain?",
+            "Where is the MiG-21 trainer and fighter jets maintenance group, 106 Aircraft Maintenance Group, located in Assam?",
+            "Which Indian state is home to the Tezpur Air Base, where the 106 Aircraft Maintenance Group maintains the MiG-21 trainer and fighter jets?",
+            "Which division of the Indian military is based at Tezpur Air Base?"
+        ]
+    },
+    {
+        "claim_id": 37,
+        "claim_ref": "Meadows Field is a public airport in Kern County, California, United States, three miles northwest of downtown Bakersfield. It is the main airport for the Bakersfield area, and one of the two international airports in the San Joaquin Valley, the other Fresno Yosemite International Airport.",
+        "location": "Chhattisgarh",
+        "model": "mixtral8x7b",
+        "claim_target": "Swami Vivekananda Airport is a public airport in Raipur, Chhattisgarh, India, seven kilometers south of the city center. It is the main airport for the Raipur area, and the only international airport in the region.",
+        "reason_for_target_sent": "",
+        "claim_target_correct": "Swami Vivekananda Airport is a public airport in Raipur, Chhattisgarh, India, seven kilometers south of the city center. It is the main airport for the Raipur area, and the only international airport in the region.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "How far is Swami Vivekananda Airport from the city center of Raipur, Chhattisgarh?",
+            "In which Indian state is Swami Vivekananda Airport situated?",
+            "What is the name of the public airport serving Raipur, Chhattisgarh, located seven kilometers south of the city center?",
+            "Which airport in Chhattisgarh is considered the main airport for the Raipur area and the only international airport in the region?",
+            "Which type of airport is Swami Vivekananda Airport in terms of its significance for the Raipur area and the surrounding region in Chhattisgarh?"
+        ]
+    },
+    {
+        "claim_id": 38,
+        "claim_ref": "Mehrabad Airport, is an airport serving Tehran, the capital city of Iran. Prior to the construction of the larger Imam Khomeini International Airport in 2007, Mehrabad was Tehran's primary airport in both international and domestic traffic, but now serves only domestic flights.",
+        "location": "Karnataka",
+        "model": "mixtral8x7b",
+        "claim_target": "Mangalore Airport (IXE) is an airport serving the city of Mangaluru, located in the state of Karnataka, India. It previously handled international flights, but now mainly operates domestic services.",
+        "reason_for_target_sent": "; The original sentence mentioned that Mangalore Airport served Bengaluru, which is not accurate. It actually serves the city of Mangaluru. I've added the airport's IATA code (IXE) and clarified its location to ensure factual correctness in response to the question about an airport serving a city within the state of Karnataka.; The original sentence correctly identifies the location of the airport as being in Karnataka state. However, it does not answer the question about an airport that once handled international flights but now only handles domestic ones. To make it accurate, a statement was added to address this point.",
+        "claim_target_correct": "Mangalore Airport (IXE) is an airport serving the city of Mangaluru, located in the state of Karnataka, India. It previously handled international flights, but now mainly operates domestic services.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "Did the Mangalore Airport previously handle international flights?",
+            "What changes occurred in the operational status of the Mangalore Airport, shifting its focus to primarily handling domestic services?",
+            "What cities does the Mangalore Airport mainly operate domestic services to and from in India?",
+            "What is the name of the airport serving the city of Mangaluru in Karnataka, India?",
+            "Which state of India is the Mangalore Airport located in?"
+        ]
+    },
+    {
+        "claim_id": 39,
+        "claim_ref": "Paris Charles de Gaulle Airport, also known as Roissy Airport or simply Paris CDG, is the main international airport serving Paris, France. Opened in 1974, it is in Roissy-en-France, 23 km (14 mi) northeast of Paris and is named after World War II statesman Charles de Gaulle (1890-1970), whose initials (CDG) are used as its IATA airport code.",
+        "location": "Guwahati",
+        "model": "mixtral8x7b",
+        "claim_target": "Lokpriya Gopinath Bordoloi International Airport, also known as Guwahati Airport or simply GAU, is the main international airport serving Guwahati, India. Opened in 1983, it is located in Borjhar, 20 km (12.4 mi) west of Guwahati and is named after the first Chief Minister of Assam, Lokpriya Gopinath Bordoloi (1890-1950), whose initials (GAU) are used as its IATA airport code.",
+        "reason_for_target_sent": "",
+        "claim_target_correct": "Lokpriya Gopinath Bordoloi International Airport, also known as Guwahati Airport or simply GAU, is the main international airport serving Guwahati, India. Opened in 1983, it is located in Borjhar, 20 km (12.4 mi) west of Guwahati and is named after the first Chief Minister of Assam, Lokpriya Gopinath Bordoloi (1890-1950), whose initials (GAU) are used as its IATA airport code.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "How far is the Lokpriya Gopinath Bordoloi International Airport from Guwahati, India?",
+            "In which city is the Lokpriya Gopinath Bordoloi International Airport situated in Guwahati, India's vicinity?",
+            "What is the name of the main international airport serving Guwahati, India, which was opened in 1983?",
+            "Where is the Lokpriya Gopinath Bordoloi International Airport located in relation to Guwahati, India?",
+            "Which Assam leader, known as the first Chief Minister of Assam (1890-1950), does the Lokpriya Gopinath Bordoloi International Airport honor with its name and IATA airport code?"
+        ]
+    },
+    {
+        "claim_id": 40,
+        "claim_ref": "Amelia Earhart Airport is a city-owned airport two miles west of Atchison, in Atchison County, Kansas, United States. It is named for Atchison native Amelia Earhart.",
+        "location": "Indore",
+        "model": "mixtral8x7b",
+        "claim_target": "Devi Ahilyabai Holkar Airport is a city-owned airport, located two miles west of Indore's city center in Madhya Pradesh, India. It is named after Indore's notable queen, Devi Ahilyabai Holkar.",
+        "reason_for_target_sent": "",
+        "claim_target_correct": "Devi Ahilyabai Holkar Airport is a city-owned airport, located two miles west of Indore's city center in Madhya Pradesh, India. It is named after Indore's notable queen, Devi Ahilyabai Holkar.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "How far is Devi Ahilyabai Holkar Airport from Indore's city center?",
+            "In which Indian state is Devi Ahilyabai Holkar Airport situated?",
+            "What is special about Devi Ahilyabai Holkar Airport, as it carries the name of a significant historical queen?",
+            "What is the name of the airport located two miles west of Indore's city center in Madhya Pradesh, India?",
+            "Who is the airport named after, providing a connection to Indore's history?"
+        ]
+    },
+    {
+        "claim_id": 41,
+        "claim_ref": "Dreamworld is a theme park and zoo situated on the Gold Coast in Queensland. It is Australia's biggest theme park with over 40 rides and attractions.",
+        "location": "Tamil Nadu",
+        "model": "mixtral8x7b",
+        "claim_target": "Arignar Anna Zoological Park is a popular attraction located in Vandalur, Tamil Nadu, which combines both a zoo and an amusement park with eco-educational activities.",
+        "reason_for_target_sent": "; While MGM Dizzee World is a theme park located in Chennai, Tamil Nadu, it does not have a zoo. Arignar Anna Zoological Park in Vandalur, Tamil Nadu is a suitable alternative as it combines both a zoo and an amusement park with eco-educational activities.",
+        "claim_target_correct": "Arignar Anna Zoological Park is a popular attraction located in Vandalur, Tamil Nadu, which combines both a zoo and an amusement park with eco-educational activities.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "In which city of Tamil Nadu is Arignar Anna Zoological Park situated?",
+            "What are some of the activities offered at Arignar Anna Zoological Park in Tamil Nadu?",
+            "What is the name of the popular attraction that combines a zoo and an amusement park with eco-educational activities in Tamil Nadu?",
+            "What type of establishment is Arignar Anna Zoological Park in Vandalur, Tamil Nadu?",
+            "Which Indian state features the Arignar Anna Zoological Park as a popular attraction?"
+        ]
+    },
+    {
+        "claim_id": 42,
+        "claim_ref": "Disneyland Paris is an entertainment resort in Chessy, France, 32 kilometres east of Paris. It encompasses two theme parks, resort hotels, a shopping, dining and entertainment complex, and a golf course.",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "Disneyland Delhi is an entertainment resort in New Delhi, India, located 16 kilometers southwest of the city center. It includes two theme parks, resort hotels, a shopping, dining and entertainment complex, and a golf course.",
+        "reason_for_target_sent": "",
+        "claim_target_correct": "Disneyland Delhi is an entertainment resort in New Delhi, India, located 16 kilometers southwest of the city center. It includes two theme parks, resort hotels, a shopping, dining and entertainment complex, and a golf course.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "How many theme parks does Disneyland Delhi include in its facilities?",
+            "What additional amenities does Disneyland Delhi offer besides the two theme parks?",
+            "What is the name of the entertainment resort located 16 kilometers southwest of New Delhi's city center?",
+            "What kind of accommodation options can visitors find at Disneyland Delhi?",
+            "Where exactly is Disneyland Delhi situated in relation to New Delhi, India's capital city?"
+        ]
+    },
+    {
+        "claim_id": 43,
+        "claim_ref": "Ferrari World Abu Dhabi is a mostly indoors theme park located on Yas Island in Abu Dhabi, United Arab Emirates. It is the world's first Ferrari-themed park and features Formula Rossa, the world's fastest roller coaster.",
+        "location": "Maharashtra",
+        "model": "mixtral8x7b",
+        "claim_target": "Adlabs Imagica is a popular indoor theme park situated in Khopoli, Maharashtra, India. It is the first theme park in India based on international standards and features Dare 2 Drop, one of the tallest vertical drop towers in the country.",
+        "reason_for_target_sent": "",
+        "claim_target_correct": "Adlabs Imagica is a popular indoor theme park situated in Khopoli, Maharashtra, India. It is the first theme park in India based on international standards and features Dare 2 Drop, one of the tallest vertical drop towers in the country.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "What is the name of the indoor theme park situated in Khopoli, Maharashtra, India?",
+            "What makes Adlabs Imagica a popular destination for entertainment seekers in Maharashtra, India?",
+            "What type of ride is Dare 2 Drop at Adlabs Imagica, and how does it compare to other vertical drop towers in India?",
+            "When was Adlabs Imagica established as the first theme park in India based on international standards?",
+            "Which Indian state is Adlabs Imagica located in?"
+        ]
+    },
+    {
+        "claim_id": 44,
+        "claim_ref": "Dream Island is an amusement park in Moscow that opened on 29 February 2020. It is the largest indoor theme park in Europe.",
+        "location": "Maharashtra",
+        "model": "mixtral8x7b",
+        "claim_target": "Adlabs Imagica is a well-known amusement park in Maharashtra, which opened on 18 April 2013. It features both indoor and outdoor attractions, making it a popular destination for both Indian and international tourists.",
+        "reason_for_target_sent": "; The original sentence is referring to EsselWorld, an amusement park that has been operational since 1989. However, the question asks about an amusement park that has opened recently in a major city. Adlabs Imagica was opened in 2013 and is located in Maharashtra, making it a more appropriate answer to the question.",
+        "claim_target_correct": "Adlabs Imagica is a well-known amusement park in Maharashtra, which opened on 18 April 2013. It features both indoor and outdoor attractions, making it a popular destination for both Indian and international tourists.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "What makes Adlabs Imagica appealing to both domestic and international tourists in Maharashtra?",
+            "What type of attractions does Adlabs Imagica offer - indoor or outdoor?",
+            "When was Adlabs Imagica, the amusement park in Maharashtra, inaugurated?",
+            "Which Indian state is home to the popular amusement park, Adlabs Imagica?",
+            "Who are the intended visitors of Adlabs Imagica, an amusement park situated in Maharashtra?"
+        ]
+    },
+    {
+        "claim_id": 45,
+        "claim_ref": "Efteling is a fantasy-themed amusement park in Kaatsheuvel, the Netherlands. The attractions reflect elements from ancient myths and legends, fairy tales, fables, and folklore. The park was opened on May 31, 1952.",
+        "location": "Hyderabad",
+        "model": "mixtral8x7b",
+        "claim_target": "Shilparamam is a cultural-themed amusement park in Hyderabad, India. The attractions reflect elements from ancient Indian myths and folklore. The park was opened on November 20, 1984.",
+        "reason_for_target_sent": "",
+        "claim_target_correct": "Shilparamam is a cultural-themed amusement park in Hyderabad, India. The attractions reflect elements from ancient Indian myths and folklore. The park was opened on November 20, 1984.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "In which city of India can one find the cultural-themed amusement park called Shilparamam?",
+            "What is the name of the cultural-themed amusement park located in Hyderabad, India?",
+            "When was Shilparamam, the themed park in Hyderabad, inaugurated?",
+            "Which elements from ancient Indian myths and folklore does Shilparamam showcase in its attractions?"
+        ]
+    },
+    {
+        "claim_id": 46,
+        "claim_ref": "Fuji-Q Highland is an amusement park in Fujiyoshida, Yamanashi, Japan, owned and operated by the namesake Fuji Kyuko Co. it was opened on 2 March 1968. The theme park is near the base of Mount Fuji.",
+        "location": "Pahalgam",
+        "model": "mixtral8x7b",
+        "claim_target": "The nearest amusement park from Pahalgam is \"Atal Sethu Amusement Park\" located in Srinagar, Garhwal district, Jammu and Kashmir, India. It features various rides, games, and attractions for all ages and has been in operation since 2010.",
+        "reason_for_target_sent": "; The original sentence does not mention any amusement park in Pahalgam. It is mentioned that Pahalgam is a tourist destination with various adventure activities. To provide a factually correct answer, the revised sentence clarifies that there are no amusement parks in or near Pahalgam and provides additional information about the nearby Kolahoi Mountain.; The original sentence states that there are no amusement parks near Pahalgam, but the target question asks for a named theme park. A nearby theme park, \"Atal Sethu Amusement Park,\" is mentioned in this revised sentence to accurately answer the given location and question.",
+        "claim_target_correct": "The nearest amusement park from Pahalgam is \"Atal Sethu Amusement Park\" located in Srinagar, Garhwal district, Jammu and Kashmir, India. It features various rides, games, and attractions for all ages and has been in operation since 2010.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "How far is Atal Sethu Amusement Park from Pahalgam?",
+            "What is the name of the amusement park located near Pahalgam, operational since 2010?",
+            "What types of facilities and attractions does Atal Sethu Amusement Park offer to its visitors?",
+            "When was the Atal Sethu Amusement Park established near Pahalgam?",
+            "Which district in Jammu and Kashmir, India, is Atal Sethu Amusement Park situated in?"
+        ]
+    },
+    {
+        "claim_id": 47,
+        "claim_ref": "Typhoon Texas is a series of water parks in Texas. The company currently operates two locations in Austin and in Katy.",
+        "location": "Patna",
+        "model": "mixtral8x7b",
+        "claim_target": "Wonderland Water Park is a water park in Patna. The company currently operates at one location in Patna.",
+        "reason_for_target_sent": "; While the original sentence mentions a water park located in Patna, the question asks for a chain of water parks. Wonderla is a well-known chain of amusement and water parks with a location named \"Wonderland Water Park\" in Patna.",
+        "claim_target_correct": "Wonderland Water Park is a water park in Patna. The company currently operates at one location in Patna.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "How many locations does the Wonderland Water Park currently operate in, as mentioned in the sentence?",
+            "In which city is the Wonderland Water Park located?",
+            "What company operates the water park in Patna?",
+            "What type of establishment is the Wonderland Water Park in Patna?"
+        ]
+    },
+    {
+        "claim_id": 48,
+        "claim_ref": "Gardaland Resort is a fantasy- amusement park resort located in northeastern Italy. It has more than 40 rides including water rides and shows to satisfy the needs of everyone: families with children, young adrenaline lovers and adults who love to dive into a fantasy world",
+        "location": "Mysore",
+        "model": "mixtral8x7b",
+        "claim_target": "The Mysore Palace is a historical-themed amusement park resort located in the cultural city of Mysore, India. It offers over 40 rides including water rides and live shows designed to cater to the diverse interests of all visitors - families with children, thrill-seekers, and those who appreciate cultural experiences.",
+        "reason_for_target_sent": "",
+        "claim_target_correct": "The Mysore Palace is a historical-themed amusement park resort located in the cultural city of Mysore, India. It offers over 40 rides including water rides and live shows designed to cater to the diverse interests of all visitors - families with children, thrill-seekers, and those who appreciate cultural experiences.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "How many rides are available at the \"Mysore Palace\" for visitors to enjoy?",
+            "What attractions does the \"Mysore Palace\" offer to its visitors, including families with children and thrill-seekers?",
+            "What type of establishment is the \"Mysore Palace\" located in Mysore, India?",
+            "What type of experiences can visitors expect at the \"Mysore Palace,\" such as water rides and live shows in Mysore, India?",
+            "Which city in India is home to the \"Mysore Palace\" amusement park resort?"
+        ]
+    },
+    {
+        "claim_id": 49,
+        "claim_ref": "Wonderland is an amusement park located In Dubai, UAE. It is designed for kids of all ages. Wonderland includes both the Wonderland Theme Park and Splashland\u2014a water park spanning 22 acres. It offers more than 30 rides and attractions.",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "EsselWorld is an amusement park located in Mumbai, India. It is designed for children of all ages. EsselWorld includes both the Water Kingdom and the EsselWorld theme park, spanning 64 acres. It offers more than 30 rides and attractions.",
+        "reason_for_target_sent": "",
+        "claim_target_correct": "EsselWorld is an amusement park located in Mumbai, India. It is designed for children of all ages. EsselWorld includes both the Water Kingdom and the EsselWorld theme park, spanning 64 acres. It offers more than 30 rides and attractions.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "How many acres does EsselWorld, the amusement park in India, span in total?",
+            "In terms of attractions, how many options does EsselWorld, the Indian amusement park, offer to its visitors?",
+            "What are the two components that make up EsselWorld, the amusement park in Mumbai?",
+            "What is the name of the amusement park in Mumbai, India, that caters to children of all ages and includes water and theme parks?",
+            "Which city in India is home to the EsselWorld amusement park and Water Kingdom?"
+        ]
+    },
+    {
+        "claim_id": 50,
+        "claim_ref": "Tivoli Gardens, also known simply as Tivoli, is an amusement park and pleasure garden in Copenhagen, Denmark. The park opened on 15 August 1843 and is the third-oldest operating amusement park in the world. Tivoli is the most visited amusement park in Scandinavia. The park is best known for its wooden roller coaster, Rutschebanen, or as some people call it, Bjergbanen",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "Adlabs Imagica, located near Mumbai, India, is a famous amusement park known for its thrilling roller coasters such as the \"Scream Machine.\" The park opened in 2013 and has become a popular destination for both locals and tourists visiting India.",
+        "reason_for_target_sent": "; EsselWorld is indeed an old and popular amusement park in India, but the original sentence does not mention its popularity among foreigners or tourists. The revised sentence clarifies that it is a popular destination for tourists visiting India.; EsselWorld doesn't have a historic roller coaster. Adlabs Imagica, located near Mumbai, is a famous amusement park with the \"Scream Machine\" roller coaster, which adds to its popularity among visitors.",
+        "claim_target_correct": "Adlabs Imagica, located near Mumbai, India, is a famous amusement park known for its thrilling roller coasters such as the \"Scream Machine.\" The park opened in 2013 and has become a popular destination for both locals and tourists visiting India.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "How has Adlabs Imagica contributed to the tourism industry in India since its opening in 2013?",
+            "What is the name of the famous amusement park in India, located near Mumbai and known for its thrilling roller coasters like \"Scream Machine\"?",
+            "What kind of attractions does Adlabs Imagica offer, with specific reference to its thrilling roller coaster \"Scream Machine\"?",
+            "When was Adlabs Imagica, the popular amusement park in India, opened to visitors?",
+            "Which Indian city is Adlabs Imagica situated near, making it a convenient destination for locals and tourists alike?"
+        ]
+    },
+    {
+        "claim_id": 51,
+        "claim_ref": "Sentinel-3 is an Earth observation heavy satellite series developed by the European Space Agency as part of the Copernicus Programme. It currently consists of 2 satellites: Sentinel-3A and Sentinel-3B. After initial commissioning, each satellite was handed over to EUMETSAT for the routine operations phase of the mission.",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "Resourcesat-2 and SCATSAT-1 are Earth observation satellites developed by the Indian Space Research Organisation (ISRO) as part of the Indian Remote Sensing Program. They currently consist of two satellites: Resourcesat-2 and SCATSAT-1. After initial commissioning, each satellite was handed over to the Indian National Satellite System (INSAT) for the routine operations phase of the mission.",
+        "reason_for_target_sent": "",
+        "claim_target_correct": "Resourcesat-2 and SCATSAT-1 are Earth observation satellites developed by the Indian Space Research Organisation (ISRO) as part of the Indian Remote Sensing Program. They currently consist of two satellites: Resourcesat-2 and SCATSAT-1. After initial commissioning, each satellite was handed over to the Indian National Satellite System (INSAT) for the routine operations phase of the mission.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "How many Earth observation satellites are part of the Indian Remote Sensing Program developed by ISRO, located in India?",
+            "What is the name of the two Earth observation satellites, Resourcesat-2 and SCATSAT-1, developed by ISRO in India?",
+            "What is the role of Resourcesat-2 and SCATSAT-1 as part of the Indian Remote Sensing Program located in India?",
+            "Which country's space research organization developed Resourcesat-2 and SCATSAT-1 for Earth observation?",
+            "Which organization is responsible for the routine operations phase of the mission after initial commissioning of Resourcesat-2 and SCATSAT-1?"
+        ]
+    },
+    {
+        "claim_id": 52,
+        "claim_ref": "Himawari 8 is a Japanese weather satellite, the 8th of the Himawari geostationary weather satellites operated by the Japan Meteorological Agency.",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "INSAT-3D is an Indian weather satellite, which is the 3rd in the series of geostationary weather satellites operated by the Indian Space Research Organization (ISRO).",
+        "reason_for_target_sent": "",
+        "claim_target_correct": "INSAT-3D is an Indian weather satellite, which is the 3rd in the series of geostationary weather satellites operated by the Indian Space Research Organization (ISRO).",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "In which series does the INSAT-3D satellite belong, among the geostationary weather satellites managed by ISRO in India?",
+            "What is the name of the third geostationary weather satellite in the series operated by ISRO, based in India?",
+            "What is the role or function of the INSAT-3D satellite in the Indian context?",
+            "Which organization operates the INSAT-3D weather satellite in India?",
+            "Which type of satellite is the INSAT-3D, and what does it represent in the series of satellites operated by ISRO in India?"
+        ]
+    },
+    {
+        "claim_id": 53,
+        "claim_ref": "The Korea Pathfinder Lunar Orbiter, officially Danuri, is South Korea's first lunar orbiter. The orbiter, its science payload and ground control infrastructure are technology demonstrators.",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "The Chandrayaan-2 is India's first lunar orbiter and technology demonstrator, with its payload and ground control infrastructure showcasing indigenous capabilities.",
+        "reason_for_target_sent": "",
+        "claim_target_correct": "The Chandrayaan-2 is India's first lunar orbiter and technology demonstrator, with its payload and ground control infrastructure showcasing indigenous capabilities.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "In which field does Chandrayaan-2, India's lunar orbiter, represent an achievement for the Indian space program?",
+            "What does Chandrayaan-2, India's lunar orbiter, demonstrate through its payload and ground control infrastructure?",
+            "What is India's first lunar orbiter and technology demonstrator called?",
+            "Which country does Chandrayaan-2, India's lunar orbiter, showcase indigenous capabilities of?"
+        ]
+    },
+    {
+        "claim_id": 54,
+        "claim_ref": "The Mars Reconnaissance Orbiter is a spacecraft designed to search for the existence of water on Mars and provide support for missions to Mars, as part of NASA's Mars Exploration Program.",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "The Chandrayaan-1, launched by India, was a spacecraft used for planetary exploration. Although its mission was not to search for water on planets outside of Earth, it did confirm the presence of water molecules on the Moon.",
+        "reason_for_target_sent": "; The Chandrayaan-2 Orbiter is a spacecraft launched by ISRO (Indian Space Research Organisation) to search for the existence of water on the Moon, which is a natural satellite of Earth and not a planet. Hence, the sentence is revised to reflect the fact that India has not launched a spacecraft to search for water on any planet outside of Earth.; While it is true that no spacecraft has been launched from India specifically to search for water on planets outside of Earth, India has contributed to planetary exploration with their Chandrayaan-1 mission. Therefore, the revised sentence provides factually correct and relevant information related to the location and the question.",
+        "claim_target_correct": "The Chandrayaan-1, launched by India, was a spacecraft used for planetary exploration. Although its mission was not to search for water on planets outside of Earth, it did confirm the presence of water molecules on the Moon.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "For which objective, other than searching for water, was the Chandrayaan-1 spacecraft launched by India into outer space?",
+            "In which mission did India's ISRO confirm the presence of water molecules on the Moon using the Chandrayaan-1 spacecraft?",
+            "What was the main purpose of the Chandrayaan-1 mission, considering it confirmed the presence of water molecules on the Moon but wasn't specifically designed for that?",
+            "What was the name of the spacecraft launched by India for planetary exploration that confirmed the presence of water molecules on the Moon?",
+            "Which country's space agency, specifically India, launched the Chandrayaan-1 spacecraft to explore outer space?"
+        ]
+    },
+    {
+        "claim_id": 55,
+        "claim_ref": "The Suomi National Polar-orbiting Partnership, previously known as the National Polar-orbiting Operational Environmental Satellite System Preparatory Project and NPP-Bridge, is a weather satellite operated by the United States National Oceanic and Atmospheric Administration.",
+        "location": "Andhra Pradesh",
+        "model": "mixtral8x7b",
+        "claim_target": "The INSAT-3DR is a weather satellite operated by the Indian Space Research Organisation (ISRO) and the India Meteorological Department (IMD), launched from Sriharikota in Andhra Pradesh.",
+        "reason_for_target_sent": "; Since the original sentence does not refer to a specific location or organization in the question, I have added details about the satellite's operation by ISRO and IMD and its launch site in Andhra Pradesh. This addition allows the sentence to provide context for the target location in response to the question.; Although the original sentence correctly identifies the location of the launch facility, it does not specify what was launched from there. The revised sentence clarifies that the INSAT-3DR weather satellite was launched from the Satish Dhawan Space Centre in Sriharikota, Andhra Pradesh.",
+        "claim_target_correct": "The INSAT-3DR is a weather satellite operated by the Indian Space Research Organisation (ISRO) and the India Meteorological Department (IMD), launched from Sriharikota in Andhra Pradesh.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "For what purpose is the INSAT-3DR weather satellite used, having been launched in Andhra Pradesh?",
+            "From which location in Andhra Pradesh was the INSAT-3DR weather satellite launched?",
+            "What is the name of the weather satellite operated by ISRO and IMD that was launched from Sriharikota in Andhra Pradesh?",
+            "Which Indian space organization launched the INSAT-3DR weather satellite in Andhra Pradesh?",
+            "Who are the operators of the INSAT-3DR weather satellite, based in Andhra Pradesh?"
+        ]
+    },
+    {
+        "claim_id": 56,
+        "claim_ref": "The Astronomical Netherlands Satellite (ANS; also known as Astronomische Nederlandse Satelliet), was the first Dutch satellite. It was developed by Netherlands Institute for Space Research (NIVR) and launched from United States.",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "The Rohini Technology Payload (RTP) was the first Indian satellite, developed by the Indian Space Research Organisation (ISRO) and launched from Soviet Union.",
+        "reason_for_target_sent": "",
+        "claim_target_correct": "The Rohini Technology Payload (RTP) was the first Indian satellite, developed by the Indian Space Research Organisation (ISRO) and launched from Soviet Union.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "What is the significance of the Rohini Technology Payload (RTP) as India's first satellite?",
+            "What was the name of the first Indian satellite, developed by ISRO and launched from the Soviet Union?",
+            "When was India's first satellite, the Rohini Technology Payload (RTP), launched?",
+            "Which country assisted India in launching its first satellite, the Rohini Technology Payload (RTP)?",
+            "Who was responsible for the development of the Rohini Technology Payload (RTP), India's first satellite?"
+        ]
+    },
+    {
+        "claim_id": 57,
+        "claim_ref": "Aura (EOS CH-1) is a multi-national NASA earth obervation satellite in orbit around the Earth. Its uses include studying the Earth's ozone layer, air quality and climate",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "The SCATSAT-1, launched by ISRO, is a national Earth observation satellite primarily used for observing the oceanography and weather patterns of the Indian region. However, other satellites like NASA's Aura are involved in studying the Earth's ozone layer and air quality.",
+        "reason_for_target_sent": "; Although ISRO's SCATSAT-1 focuses on oceanography and weather patterns over India, the original sentence doesn't mention any satellite observing the ozone layer or air quality. Hence, we need to introduce another satellite like NASA's Aura to accurately answer the question related to studying the Earth's ozone layer and air quality.",
+        "claim_target_correct": "The SCATSAT-1, launched by ISRO, is a national Earth observation satellite primarily used for observing the oceanography and weather patterns of the Indian region. However, other satellites like NASA's Aura are involved in studying the Earth's ozone layer and air quality.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "Apart from SCATSAT-1, which Earth observation satellite is involved in studying the Earth's ozone layer and air quality?",
+            "In what ways does the SCATSAT-1 contribute to monitoring the oceanography and weather patterns of the Indian region?",
+            "What is the name of the Earth observation satellite launched by ISRO to observe the oceanography and weather patterns of the Indian region?",
+            "What is the primary function of the SCATSAT-1 satellite in observing the Indian region?",
+            "Which country's space organization launched the SCATSAT-1 satellite for observing the Indian region?"
+        ]
+    },
+    {
+        "claim_id": 58,
+        "claim_ref": "Jabiru-1 is the Australian privately-funded satellite which was successfully launched into space. It is first satellite in the series of the Jabiru satellite programme, which is intended to provide new and raw capacity coverage to the high-demand communication market.",
+        "location": "Mumbai",
+        "model": "mixtral8x7b",
+        "claim_target": "The Indian Remote Sensing (IRS) series satellites, launched by the Indian Space Research Organisation (ISRO) from Satish Dhawan Space Centre in Sriharikota, Andhra Pradesh, are examples of satellites that are part of a larger satellite system.",
+        "reason_for_target_sent": "; The provided sentence talks about a government-funded satellite launch, not privately-funded as per the question. Also, there is no location mentioned related to Mumbai for any private satellite launches, and therefore the answer mentions the correct information based on factual accuracy.; Although no privately-funded satellites have been launched in Mumbai, the Indian Space Research Organisation (ISRO) has launched several satellites from Andhra Pradesh, including the Indian Remote Sensing (IRS) series, which are part of a larger satellite system for Earth observation and remote sensing purposes.",
+        "claim_target_correct": "The Indian Remote Sensing (IRS) series satellites, launched by the Indian Space Research Organisation (ISRO) from Satish Dhawan Space Centre in Sriharikota, Andhra Pradesh, are examples of satellites that are part of a larger satellite system.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "From which location in Andhra Pradesh were the Indian Remote Sensing (IRS) series satellites launched by ISRO, providing remote sensing services to Mumbai?",
+            "In addition to the IRS series, what other types of satellites or space missions has ISRO launched from Satish Dhawan Space Centre in Andhra Pradesh for use in Mumbai?",
+            "What are some applications of the Indian Remote Sensing (IRS) series satellites that benefit Mumbai's development and infrastructure?",
+            "What is the name of the satellite system that includes the Indian Remote Sensing (IRS) series satellites launched by ISRO from Satish Dhawan Space Centre in Andhra Pradesh and utilized in Mumbai?",
+            "Which organization based in Mumbai is responsible for launching the Indian Remote Sensing (IRS) series satellites?"
+        ]
+    },
+    {
+        "claim_id": 59,
+        "claim_ref": "Ford Motor Company is an American multinational automobile manufacturer headquartered in Dearborn, Michigan, United States. It was founded by Henry Ford and incorporated on June 16, 1903.",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "Tata Motors is an Indian multinational automobile manufacturing company headquartered in Mumbai, Maharashtra, India. It was founded by Jamsetji Tata and established in 1945.",
+        "reason_for_target_sent": "",
+        "claim_target_correct": "Tata Motors is an Indian multinational automobile manufacturing company headquartered in Mumbai, Maharashtra, India. It was founded by Jamsetji Tata and established in 1945.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "In which city is the headquarters of Tata Motors located in India?",
+            "What is the name of the Indian multinational automobile manufacturing company headquartered in Mumbai, Maharashtra?",
+            "When was Tata Motors established in India?",
+            "Which country's automobile industry does Tata Motors represent and contribute to?",
+            "Who founded Tata Motors, the company based in India?"
+        ]
+    },
+    {
+        "claim_id": 60,
+        "claim_ref": "Elfin Sports Cars Pty Ltd is an Australian car manufacturer company that was founded by Garrie Cooper. It has been an Australian manufacturer of sports cars and motor racing cars since 1959.",
+        "location": "Maharashtra",
+        "model": "mixtral8x7b",
+        "claim_target": "The company \"Mahindra Racing\" is based in Maharashtra, India and is known for its involvement in the motorsport industry, particularly in Formula E. It was founded in 1945 as a steel trading company by Mahindra & Mohammad and has since expanded into various sectors, including automotive, technology, and defense.",
+        "reason_for_target_sent": "; The original sentence mentioned \"Premier Limited\" which is not specifically known for manufacturing sports cars. Hence, it has been replaced with \"Mahindra Racing\", a well-known company based in Maharashtra that specializes in high-performance racing vehicles.; The original sentence is factually correct but it does not answer the question about a company that manufactures both regular road cars and racing cars. Mahindra Racing is primarily involved in motorsport racing and not in the manufacturing of regular road cars. However, the company Mahindra Group, which includes Mahindra Racing, has a subsidiary called Mahindra Vehicle Manufacturers Limited that manufactures regular road cars. Therefore, the sentence is revised to reflect Mahindra Racing's involvement in motorsport racing and its connection to the Mahindra Group, which does manufacture regular road cars.",
+        "claim_target_correct": "The company \"Mahindra Racing\" is based in Maharashtra, India and is known for its involvement in the motorsport industry, particularly in Formula E. It was founded in 1945 as a steel trading company by Mahindra & Mohammad and has since expanded into various sectors, including automotive, technology, and defense.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "In which Indian state is the motorsport company \"Mahindra Racing\" headquartered?",
+            "In which sectors has \"Mahindra Racing\" expanded its operations beyond motorsport since its inception in Maharashtra?",
+            "What is the primary focus of \"Mahindra Racing's\" operations in the motorsport industry?",
+            "When was \"Mahindra Racing\" founded as a steel trading company by Mahindra & Mohammad in Maharashtra, India?",
+            "Which motorsport category is \"Mahindra Racing\" particularly known for participating in, based in Maharashtra, India?"
+        ]
+    },
+    {
+        "claim_id": 61,
+        "claim_ref": "General Motors Company is an American multinational automotive manufacturing company headquartered in Detroit, Michigan, United States. The company is mostly known for owning and manufacturing four automobile brands, Chevrolet, GMC, Cadillac and Buick.",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "Tata Motors is an Indian multinational automotive manufacturing company headquartered in Mumbai, Maharashtra, India. The company is mostly known for owning and manufacturing several automobile brands, including Jaguar Land Rover, Tata Daewoo, and Tata Marcopolo.",
+        "reason_for_target_sent": "",
+        "claim_target_correct": "Tata Motors is an Indian multinational automotive manufacturing company headquartered in Mumbai, Maharashtra, India. The company is mostly known for owning and manufacturing several automobile brands, including Jaguar Land Rover, Tata Daewoo, and Tata Marcopolo.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "In which city is the headquarters of Tata Motors, the Indian multinational automotive manufacturing company based in Maharashtra?",
+            "What is the name of the Indian multinational automotive manufacturing company headquartered in Mumbai, Maharashtra?",
+            "What kind of company is Tata Motors, known for its operations in the automotive manufacturing sector in India?",
+            "Which country is Tata Motors headquartered in, an Indian multinational automotive manufacturing company known for owning several automobile brands?",
+            "Which well-known automobile brands does Tata Motors own and manufacture, including Jaguar Land Rover, Tata Daewoo, and Tata Marcopolo?"
+        ]
+    },
+    {
+        "claim_id": 62,
+        "claim_ref": "Stellantis N.V. is a multinational automotive manufacturing corporation formed from the merger in 2021 of the Italian-American conglomerate Fiat Chrysler Automobiles and the French PSA Group. The company is headquartered in Amsterdam.",
+        "location": "Mumbai",
+        "model": "mixtral8x7b",
+        "claim_target": "Tata Motors, headquartered in Mumbai, is a multinational automotive manufacturing company that was formed following the acquisition of TELCO by the Tata Group, and has grown to become one of India's largest auto manufacturers.",
+        "reason_for_target_sent": "; The original sentence describes Stellantis N.V., which is headquartered in Amsterdam and not in Mumbai. Tata Motors, based in Mumbai, is an example of a multinational automotive manufacturing corporation that was formed through a merger and has grown to be one of India's largest auto manufacturers.; The original sentence mentions that Tata Motors is based in Mumbai, but it doesn't specify how the company resulted from a merger. Therefore, we added additional information about how Tata Motors was formed by acquiring another large company (TELCO) and merged it with the Tata Group to become one of India's largest auto manufacturers.",
+        "claim_target_correct": "Tata Motors, headquartered in Mumbai, is a multinational automotive manufacturing company that was formed following the acquisition of TELCO by the Tata Group, and has grown to become one of India's largest auto manufacturers.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "What is the name of the multinational automotive manufacturing company headquartered in Mumbai that was formed after TELCO's acquisition by the Tata Group?",
+            "What is the origin of Tata Motors, a prominent auto manufacturer in India based in Mumbai?",
+            "Which Indian city serves as the headquarters for Tata Motors, one of India's largest auto manufacturers?",
+            "Which company grew to become one of India's largest auto manufacturers following its establishment in Mumbai?",
+            "Who acquired TELCO, leading to the formation of Tata Motors in Mumbai?"
+        ]
+    },
+    {
+        "claim_id": 63,
+        "claim_ref": "Beijing Automotive Group Co., Ltd. is a Chinese state-owned automobile manufacturer headquartered in Shunyi, Beijing. Founded in 1958, it is the sixth largest automobile manufacturer in China, with 1.723 million sales in 2021.",
+        "location": "Thiruvananthapuram",
+        "model": "mixtral8x7b",
+        "claim_target": "Tata Motors Limited is a major global automobile manufacturer headquartered in Mumbai, India, but it has a significant presence in Thiruvananthapuram, Kerala through its manufacturing facility. Established in 1945, the company is known for producing passenger and commercial vehicles, including buses, trucks, and cars.",
+        "reason_for_target_sent": "; The original sentence describes a state-owned automobile manufacturer in Kerala, but the question asks for a large automobile manufacturer. Therefore, I have revised the sentence to name Tata Motors Limited, one of India's largest automobile manufacturers with a significant presence in Thiruvananthapuram, Kerala.",
+        "claim_target_correct": "Tata Motors Limited is a major global automobile manufacturer headquartered in Mumbai, India, but it has a significant presence in Thiruvananthapuram, Kerala through its manufacturing facility. Established in 1945, the company is known for producing passenger and commercial vehicles, including buses, trucks, and cars.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "How has the presence of Tata Motors Limited's manufacturing facility impacted the industrial growth in Thiruvananthapuram, Kerala?",
+            "In which Indian city does Tata Motors Limited have a significant manufacturing presence besides Mumbai?",
+            "What type of vehicles does Tata Motors Limited manufacture at its Thiruvananthapuram facility?",
+            "When was the Tata Motors Limited established and when did it start its operations in Thiruvananthapuram?",
+            "Which global automobile manufacturer has its manufacturing facility in Thiruvananthapuram, Kerala?"
+        ]
+    },
+    {
+        "claim_id": 64,
+        "claim_ref": "Automobili Lamborghini S.p.A. is an Italian manufacturer of luxury sports cars and SUVs based in Sant'Agata Bolognese. The company is owned by the Volkswagen Group through its subsidiary Audi.",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "Ferrari N.V., an Italian luxury sports car manufacturer, has its parent company Exor S.p.A. based in Turin, Italy and listed on the Borsa Italiana. The Indian conglomerate, Tata Motors, owns Jaguar Land Rover Automotive PLC, a luxury vehicle manufacturer based in Coventry, UK.",
+        "reason_for_target_sent": "; The original sentence is talking about Mahindra & Mahindra Limited, which is a multinational car manufacturing corporation based in India but it doesn't own any luxury sports car manufacturer brand. Ferrari N.V., an Italian luxury sports car manufacturer, is owned by Exor S.p.A., which is based in Turin, Italy and listed on the Borsa Italiana.; The original sentence did not mention any car brand related to India. To answer the question accurately for the location \"India\", the revised sentence includes information about Tata Motors, an Indian multinational automotive company that owns Jaguar Land Rover Automotive PLC.",
+        "claim_target_correct": "Ferrari N.V., an Italian luxury sports car manufacturer, has its parent company Exor S.p.A. based in Turin, Italy and listed on the Borsa Italiana. The Indian conglomerate, Tata Motors, owns Jaguar Land Rover Automotive PLC, a luxury vehicle manufacturer based in Coventry, UK.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "What is the nationality of Ferrari N.V., the parent company of the Italian luxury sports car manufacturer?",
+            "What type of vehicles does Jaguar Land Rover Automotive PLC manufacture, as owned by the Indian conglomerate, Tata Motors?",
+            "Where is the headquarters of Tata Motors, the Indian conglomerate that owns Jaguar Land Rover Automotive PLC?",
+            "Which Indian conglomerate, Tata Motors, owns Jaguar Land Rover Automotive PLC, a luxury vehicle manufacturer based in Coventry, UK?",
+            "Which Italian-based company, Exor S.p.A., lists its shares on the Borsa Italiana and owns Ferrari N.V.?"
+        ]
+    },
+    {
+        "claim_id": 65,
+        "claim_ref": "SNVI, formerly the National Society of Mechanical Construction, is an Algerian company that has produced trucks and buses since 1967.",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "Tata Motors, formerly known as Telco, is an Indian company that has produced trucks and buses since 1954.",
+        "reason_for_target_sent": "",
+        "claim_target_correct": "Tata Motors, formerly known as Telco, is an Indian company that has produced trucks and buses since 1954.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "In which country is Tata Motors, a well-known producer of trucks and buses, headquartered?",
+            "What is the former name of the Indian company that is currently recognized as Tata Motors?",
+            "When did Tata Motors, a prominent Indian vehicle manufacturer, begin its production of trucks and buses?",
+            "Which Indian company has been manufacturing trucks and buses since the year 1954 under the name Tata Motors, previously known as Telco?",
+            "Which type of vehicles has Tata Motors been manufacturing in India since 1954?"
+        ]
+    },
+    {
+        "claim_id": 66,
+        "claim_ref": "Tesla, Inc. is an American multinational automotive and clean energy company headquartered in Austin, Texas, which designs, manufactures and sells electric vehicles, stationary battery energy storage devices from home to grid-scale, solar panels and solar shingles, and related products and services.",
+        "location": "Tamil Nadu",
+        "model": "mixtral8x7b",
+        "claim_target": "\"Tesla, Inc. has an automotive and clean energy manufacturing facility in Tamil Nadu, India where they produce electric vehicles, stationary battery energy storage devices, and solar panels.\"",
+        "reason_for_target_sent": "",
+        "claim_target_correct": "\"Tesla, Inc. has an automotive and clean energy manufacturing facility in Tamil Nadu, India where they produce electric vehicles, stationary battery energy storage devices, and solar panels.\"",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "In Tamil Nadu, India, which products related to clean energy does Tesla, Inc. manufacture alongside electric vehicles?",
+            "In which Indian state is Tesla, Inc.'s automotive and clean energy manufacturing facility located?",
+            "What kind of vehicles does Tesla, Inc. produce at their Tamil Nadu facility?",
+            "What type of products does Tesla, Inc. manufacture at their facility in Tamil Nadu, India?",
+            "Which American company, Tesla, Inc., has a manufacturing presence in Tamil Nadu for producing electric vehicles and solar panels?"
+        ]
+    },
+    {
+        "claim_id": 67,
+        "claim_ref": "Dongfeng Motor Corporation Ltd. develops and markets vehicles under its own branding. In addition to commercial and consumer vehicles, it also manufactures parts, collaborates with foreign companies, and serves a global market.",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "Tata Motors Limited develops and markets vehicles under its own branding. In addition to commercial and consumer vehicles, it also manufactures parts, collaborates with foreign companies, and serves a global market.",
+        "reason_for_target_sent": "",
+        "claim_target_correct": "Tata Motors Limited develops and markets vehicles under its own branding. In addition to commercial and consumer vehicles, it also manufactures parts, collaborates with foreign companies, and serves a global market.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "Apart from vehicles, what other products does Tata Motors Limited manufacture in India?",
+            "What is the role of Tata Motors Limited in the automotive industry within India?",
+            "What kind of products does Tata Motors Limited develop and market under its own branding in India?",
+            "Which global market does Tata Motors Limited serve with its products and services based in India?",
+            "With which foreign companies does Tata Motors Limited collaborate in the Indian market?"
+        ]
+    },
+    {
+        "claim_id": 68,
+        "claim_ref": "The Victoria Cross is the highest and most prestigious decoration of the British honours system. It is awarded for valour \"in the presence of the enemy\" to members of the British Armed Forces and may be awarded posthumously.",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "The Param Vir Chakra is the highest and most prestigious decoration of the Indian honours system. It is awarded for the most conspicuous bravery or some daring or pre-eminent act of valor or self-sacrifice in the presence of the enemy during warfare, to members of the Indian Armed Forces and may be awarded posthumously.",
+        "reason_for_target_sent": "",
+        "claim_target_correct": "The Param Vir Chakra is the highest and most prestigious decoration of the Indian honours system. It is awarded for the most conspicuous bravery or some daring or pre-eminent act of valor or self-sacrifice in the presence of the enemy during warfare, to members of the Indian Armed Forces and may be awarded posthumously.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "In which country can military personnel receive the Param Vir Chakra as the highest decoration for valor and self-sacrifice during warfare?",
+            "To whom is the Param Vir Chakra awarded, specifying the personnel of the Indian Armed Forces?",
+            "What are some circumstances that lead to the Param Vir Chakra being bestowed upon an individual in India?",
+            "What is the name of the highest and most prestigious decoration in the Indian honours system called?",
+            "Which military act conducted in the presence of the enemy during warfare is recognized by the Param Vir Chakra award in India?"
+        ]
+    },
+    {
+        "claim_id": 69,
+        "claim_ref": "The Bronze Medallion, signifying a qualified lifesaver, has been a lifesaving standard award of The Royal Life Saving Society - Australia and Surf Life Saving Australia for over one hundred years. It was developed in England in 1892.",
+        "location": "Maharashtra",
+        "model": "mixtral8x7b",
+        "claim_target": "The Silver Medallion, signifying a qualified lifesaver, has been a lifesaving standard award of the Maharashtra Lifesaving Society for over fifty years. It was developed in England in 1892.",
+        "reason_for_target_sent": "",
+        "claim_target_correct": "The Silver Medallion, signifying a qualified lifesaver, has been a lifesaving standard award of the Maharashtra Lifesaving Society for over fifty years. It was developed in England in 1892.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "What does the Silver Medallion signify in the context of the Maharashtra Lifesaving Society?",
+            "What is the name of the lifesaving standard award that has been presented by the Maharashtra Lifesaving Society for over fifty years?",
+            "Where was the Silver Medallion, the lifesaving standard award, originally developed in 1892?",
+            "Which organization in Maharashtra has been presenting the Silver Medallion for more than five decades?"
+        ]
+    },
+    {
+        "claim_id": 70,
+        "claim_ref": "The Fritz Walter Medal is a series of annual awards given by the German Football Association to youth footballers in Germany. First awarded in 2005, it is named in honour of Fritz Walter, captain of West Germany's 1954 FIFA World Cup-winning team.",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "The AIFF Golden Baby Leagues Player of the Year Award is a series of annual awards given by the All India Football Federation to youth footballers in India. First awarded in 2018, it is named in honor of the late Indian football legend, Baichung Bhutia.",
+        "reason_for_target_sent": "",
+        "claim_target_correct": "The AIFF Golden Baby Leagues Player of the Year Award is a series of annual awards given by the All India Football Federation to youth footballers in India. First awarded in 2018, it is named in honor of the late Indian football legend, Baichung Bhutia.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "For which age group are the AIFF Golden Baby Leagues Player of the Year Awards presented in India?",
+            "What organization presents the AIFF Golden Baby Leagues Player of the Year Awards in India?",
+            "When were the AIFF Golden Baby Leagues Player of the Year Awards first presented in India?",
+            "Which annual awards given by the All India Football Federation are dedicated to recognizing youth footballers in India?",
+            "Who is the namesake of the AIFF Golden Baby Leagues Player of the Year Award, honoring his contributions to Indian football?"
+        ]
+    },
+    {
+        "claim_id": 71,
+        "claim_ref": "The Akutagawa Prize is a Japanese literary award presented biannually. Because of its prestige and the considerable attention, the winner receives from the media, it is along with the Naoki Prize, one of Japan's most sought after literary prizes.",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "The Jnanpith Award is a prestigious Indian literary award presented annually, recognized as one of India's most coveted literary accolades, similar to the Sahitya Akademi Award.",
+        "reason_for_target_sent": "; While the original sentence correctly describes the significance of the Jnanpith Award in Indian literature, it does not address the question about a prize given twice a year. Therefore, no modification is needed directly related to the location or the question since the original statement is factually correct and unrelated to either.",
+        "claim_target_correct": "The Jnanpith Award is a prestigious Indian literary award presented annually, recognized as one of India's most coveted literary accolades, similar to the Sahitya Akademi Award.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "For which notable achievements in Indian literature is the Jnanpith Award presented annually?",
+            "How often is the Jnanpith Award presented each year in India?",
+            "In terms of significance, how does the Jnanpith Award compare to the Sahitya Akademi Award in India?",
+            "What is the name of the prestigious Indian literary award presented annually, considered one of India's most sought-after literary honors?",
+            "Which country confers the Jnanpith Award as a recognition for outstanding contributions to Indian literature?"
+        ]
+    },
+    {
+        "claim_id": 72,
+        "claim_ref": "The Presidential Citizens Medal is an award bestowed by the President of the United States. It is the second-highest civilian award in the United States and is second only to the Presidential Medal of Freedom.",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "The Padma Vibhushan is an award bestowed by the President of India. It is the second-highest civilian award in India, surpassed only by the Bharat Ratna.",
+        "reason_for_target_sent": "",
+        "claim_target_correct": "The Padma Vibhushan is an award bestowed by the President of India. It is the second-highest civilian award in India, surpassed only by the Bharat Ratna.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "Can you name some notable recipients of the Padma Vibhushan award in India?",
+            "What are the criteria for receiving the Padma Vibhushan award in India?",
+            "What is the name of the second-highest civilian award in India, following the Bharat Ratna?",
+            "Which position does the Padma Vibhushan hold among the civilian awards given by the President of India?",
+            "Who presents the Padma Vibhushan award in India?"
+        ]
+    },
+    {
+        "claim_id": 73,
+        "claim_ref": "The Nishan-e-Pakistan is the second grade of the Order of Pakistan, the highest civilian award of the Islamic Republic of Pakistan. It is awarded to \"those who have rendered services of highest distinction\" to the national interest of Pakistan. Nishan is awarded to government officials and civilians, including citizens of Pakistan and foreign nationals. In the Pakistan honours system, Nishan-e-Pakistan is equivalent to Nishan-e-Haider, the highest military gallantry award.",
+        "location": "Tamil Nadu",
+        "model": "mixtral8x7b",
+        "claim_target": "The Kalaignar Karunanidhi Classical Tamil Award is a prestigious state award in India, presented in the southern state of Tamil Nadu to recognize outstanding contributions to the promotion and development of classical Tamil language, literature, and culture.",
+        "reason_for_target_sent": "; The Thiruvalluvar Award is indeed a high-level civilian award given in Tamil Nadu, but the question asks for an example of a civilian honor given in some countries. So, we need to provide an example that fits the criteria of being given in a country, not just a state. Therefore, I've changed the award to the Kalaignar Karunanidhi Classical Tamil Award, which is an international award given in India for contributions to classical Tamil language, literature, and culture.; The provided sentence is already factually correct; however, to better answer the question, it is clarified that this is a state award within India's honors system, specifically in Tamil Nadu.",
+        "claim_target_correct": "The Kalaignar Karunanidhi Classical Tamil Award is a prestigious state award in India, presented in the southern state of Tamil Nadu to recognize outstanding contributions to the promotion and development of classical Tamil language, literature, and culture.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "For which specific purpose is the Kalaignar Karunanidhi Classical Tamil Award given in India's southern state of Tamil Nadu?",
+            "What is the name of the prestigious state award presented in Tamil Nadu for outstanding work in promoting and developing classical Tamil?",
+            "What kind of contributions are recognized by the Kalaignar Karunanidhi Classical Tamil Award in Tamil Nadu, India?",
+            "Which Indian state confers the Kalaignar Karunanidhi Classical Tamil Award to recognize significant contributions to classical Tamil language, literature, and culture?"
+        ]
+    },
+    {
+        "claim_id": 74,
+        "claim_ref": "The National Book Awards are a set of annual U.S. literary awards. At the final National Book Awards Ceremony every November, the National Book Foundation presents the National Book Awards and two lifetime achievement awards to authors.",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "The Sahitya Akademi Awards are a set of annual literary awards in India. At the annual Sahitya Akademi Awards Ceremony every January, the Sahitya Akademi presents the Sahitya Akademi Awards to recognize and promote literature in Indian languages.",
+        "reason_for_target_sent": "",
+        "claim_target_correct": "The Sahitya Akademi Awards are a set of annual literary awards in India. At the annual Sahitya Akademi Awards Ceremony every January, the Sahitya Akademi presents the Sahitya Akademi Awards to recognize and promote literature in Indian languages.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "In which Indian languages are the Sahitya Akademi Awards presented?",
+            "What is the purpose of the Sahitya Akademi Awards in India?",
+            "What type of awards are the Sahitya Akademi Awards in India?",
+            "When is the annual Sahitya Akademi Awards Ceremony held in India?",
+            "Which organization presents the Sahitya Akademi Awards annually in India?"
+        ]
+    },
+    {
+        "claim_id": 75,
+        "claim_ref": "The National Medal of Science is an honor bestowed by the President of the United States to individuals in science and engineering who have made important contributions to the advancement of knowledge in the fields of behavioral and social sciences, biology, chemistry, engineering, mathematics, and physics.",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "The Indian National Science Academy Award is an honor bestowed by the President of India to individuals who have made significant contributions to the advancement of knowledge in various fields of science and technology.",
+        "reason_for_target_sent": "",
+        "claim_target_correct": "The Indian National Science Academy Award is an honor bestowed by the President of India to individuals who have made significant contributions to the advancement of knowledge in various fields of science and technology.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "For which notable achievements in science and technology does the Indian National Science Academy Award individuals in India?",
+            "In what ways does the Indian National Science Academy Award promote scientific development within India?",
+            "What type of honor is the Indian National Science Academy Award, given by the President of India?",
+            "Which field of study does the Indian National Science Academy Award recognize for significant contributions to knowledge advancement?",
+            "Who presents the Indian National Science Academy Award in India?"
+        ]
+    },
+    {
+        "claim_id": 76,
+        "claim_ref": "The Fashion Awards, known as the British Fashion Awards until 2016, is an annual ceremony established in the United Kingdom in 1989 to showcase both British and international individuals and businesses who have made the most outstanding contributions to the fashion industry during the year.",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "The Fashion Awards, known as the British Fashion Awards until 2016, is an annual ceremony established in the United Kingdom in 1989 to showcase both British and international individuals and businesses who have made the most outstanding contributions to the fashion industry during the year, now has its Indian counterpart - The India Fashion Awards.",
+        "reason_for_target_sent": "",
+        "claim_target_correct": "The Fashion Awards, known as the British Fashion Awards until 2016, is an annual ceremony established in the United Kingdom in 1989 to showcase both British and international individuals and businesses who have made the most outstanding contributions to the fashion industry during the year, now has its Indian counterpart - The India Fashion Awards.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "In which year was The India Fashion Awards established as the Indian counterpart of The Fashion Awards?",
+            "What is the name of the annual ceremony established in the United Kingdom in 1989 to honor outstanding contributions to the fashion industry, which now has an Indian counterpart?",
+            "What is the purpose of The India Fashion Awards, the Indian counterpart of The Fashion Awards?",
+            "When was The Fashion Awards, previously known as the British Fashion Awards, first established in the United Kingdom?",
+            "Which country hosts The India Fashion Awards, an annual ceremony honoring individuals and businesses for their contributions to the fashion industry?"
+        ]
+    },
+    {
+        "claim_id": 77,
+        "claim_ref": "The Order of Australia is an honour that recognises Australian citizens and other persons for outstanding achievement and service. It was established on 14 February 1975 by Elizabeth II, Queen of Australia, on the advice of the Australian Government. Before the establishment of the order, Australian citizens received British honours.",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "The Padma Awards are an honor that recognizes Indian citizens for distinguished service of a high order in various spheres of activities including arts, education, industry, literature, science, sports, public affairs, and social service. It was established on January 2, 1954, by the Government of India. Before the establishment of the Padma Awards, Indian citizens received British honors.",
+        "reason_for_target_sent": "",
+        "claim_target_correct": "The Padma Awards are an honor that recognizes Indian citizens for distinguished service of a high order in various spheres of activities including arts, education, industry, literature, science, sports, public affairs, and social service. It was established on January 2, 1954, by the Government of India. Before the establishment of the Padma Awards, Indian citizens received British honors.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "In which year did the Padma Awards first begin recognizing Indian citizens for their contributions in various fields?",
+            "What are some of the areas in which Indian citizens can be distinguished with the Padma Awards, such as arts, education, industry, and social service?",
+            "What is the name of the honor that recognizes distinguished service of a high order in various spheres of activities for Indian citizens?",
+            "When were the Padma Awards established by the Government of India to recognize Indian citizens?",
+            "Which honors were previously awarded to Indian citizens before the establishment of the Padma Awards?"
+        ]
+    },
+    {
+        "claim_id": 78,
+        "claim_ref": "Awarded during the Australian Cricket Awards, the Allan Border Medal is considered to be the most prestigious individual prize in Australian men's cricket.",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "Awarded during the Indian Cricket Awards, the BCCI Player of the Year is considered to be the most prestigious individual prize in Indian men's cricket.",
+        "reason_for_target_sent": "",
+        "claim_target_correct": "Awarded during the Indian Cricket Awards, the BCCI Player of the Year is considered to be the most prestigious individual prize in Indian men's cricket.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "In India, what is the name of the esteemed individual award given to cricketers at the Indian Cricket Awards?",
+            "What is the significance of the BCCI Player of the Year award within the Indian cricket community?",
+            "Which individual prize is regarded as the most prestigious in Indian men's cricket, being awarded during the Indian Cricket Awards?",
+            "Which organization, based in India, presents the BCCI Player of the Year award during the Indian Cricket Awards?",
+            "Who are considered eligible for the BCCI Player of the Year title, which is one of the most prestigious awards in Indian men's cricket?"
+        ]
+    },
+    {
+        "claim_id": 79,
+        "claim_ref": "The National Youth Awards are conferred annually by the Ministry of Youth and Sports of the Government of Bangladesh. These awards are conferred every year on the eve of National Youth Day on 1 November. It is awarded to high-achieving men and women from all over the country.",
+        "location": "Pune",
+        "model": "mixtral8x7b",
+        "claim_target": "The Maharashtra State Youth Awards are conferred annually by the Directorate of Sports and Youth Services, Government of Maharashtra. These awards are presented every year on the eve of Maharashtra State Youth Day on 23rd January to recognize and honor the achievements of exceptional young men and women from various fields across the state.",
+        "reason_for_target_sent": "",
+        "claim_target_correct": "The Maharashtra State Youth Awards are conferred annually by the Directorate of Sports and Youth Services, Government of Maharashtra. These awards are presented every year on the eve of Maharashtra State Youth Day on 23rd January to recognize and honor the achievements of exceptional young men and women from various fields across the state.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "For whom are these awards conferred annually in Pune to recognize their achievements in various fields?",
+            "What is the purpose of presenting the Maharashtra State Youth Awards annually in Pune?",
+            "What type of awards are presented annually by the Directorate of Sports and Youth Services, Government of Maharashtra, in Pune?",
+            "When are the Maharashtra State Youth Awards usually presented each year in Pune?",
+            "Which government department based in Pune presents the Maharashtra State Youth Awards every year?"
+        ]
+    },
+    {
+        "claim_id": 80,
+        "claim_ref": "JPMorgan Chase Bank, N.A., doing business as Chase, is an American national bank headquartered in New York City that constitutes the consumer and commercial banking subsidiary of the U.S. multinational banking and financial services holding company, JPMorgan Chase.",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "The State Bank of India (SBI) is an Indian multinational public sector banking and financial services company, headquartered in Mumbai, with a subsidiary, State Bank of India New York, that operates as a national bank in the United States.",
+        "reason_for_target_sent": "; The original sentence describes SBI as an Indian national bank, but the question asks about a national bank in the United States operating under a different name for its consumer and commercial banking services. Therefore, the revised sentence includes information about SBI's U.S. subsidiary that operates as a national bank with a different name.",
+        "claim_target_correct": "The State Bank of India (SBI) is an Indian multinational public sector banking and financial services company, headquartered in Mumbai, with a subsidiary, State Bank of India New York, that operates as a national bank in the United States.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "In which Indian city is the headquarters of the State Bank of India located?",
+            "Through which country does the State Bank of India have a presence with its subsidiary, State Bank of India New York?",
+            "What is the name of the Indian multinational public sector banking and financial services company headquartered in Mumbai, India?",
+            "What type of organization is the State Bank of India, being a public sector banking and financial services company in India?",
+            "Which subsidiary of State Bank of India operates as a national bank in the United States?"
+        ]
+    },
+    {
+        "claim_id": 81,
+        "claim_ref": "Saudi National Bank (SNB), also known as SNB AlAhli, is the largest commercial bank in Saudi Arabia. In April 2021, National Commercial Bank merged with Samba Financial Group under the name of Saudi National Bank.",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "State Bank of India is the largest commercial bank in India. In April 2021, Punjab National Bank and Oriental Bank of Commerce merged with United Bank of India under the name of State Bank of India.",
+        "reason_for_target_sent": "",
+        "claim_target_correct": "State Bank of India is the largest commercial bank in India. In April 2021, Punjab National Bank and Oriental Bank of Commerce merged with United Bank of India under the name of State Bank of India.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "In April 2021, which banks merged with United Bank of India to become part of State Bank of India in India?",
+            "What is the new identity of Punjab National Bank and Oriental Bank of Commerce after merging with United Bank of India under the State Bank of India name in India?",
+            "Which Indian bank, State Bank of India, resulted from the merger of three banks including Punjab National Bank, Oriental Bank of Commerce, and United Bank of India in April 2021?",
+            "Which is the largest commercial bank in India, known as State Bank of India?"
+        ]
+    },
+    {
+        "claim_id": 82,
+        "claim_ref": "BNP Paribas is a multinational universal bank and financial services holding company headquartered in Paris, France. It was founded in 2000 from the merger of two of France's foremost financial institutions, Banque Nationale de Paris and Paribas.",
+        "location": "Mumbai",
+        "model": "mixtral8x7b",
+        "claim_target": "HDFC Bank is a multinational universal bank and financial services holding company headquartered in Mumbai, India. It was founded in 1994 through the merger of two Indian banks, Hindustan Commercial Bank and The HDFC Bank.",
+        "reason_for_target_sent": "",
+        "claim_target_correct": "HDFC Bank is a multinational universal bank and financial services holding company headquartered in Mumbai, India. It was founded in 1994 through the merger of two Indian banks, Hindustan Commercial Bank and The HDFC Bank.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "How has HDFC Bank's presence in Mumbai influenced the financial services landscape in India?",
+            "In which Indian city is HDFC Bank based?",
+            "What are the names of the two Indian banks that merged to form HDFC Bank in 1994?",
+            "What is the name of the multinational universal bank and financial services holding company headquartered in Mumbai, India?",
+            "When was HDFC Bank established in Mumbai through the merger of two Indian banks?"
+        ]
+    },
+    {
+        "claim_id": 83,
+        "claim_ref": "Barclays plc is a British multinational universal bank, headquartered in London, England. Barclays operates as two divisions, Barclays UK and Barclays International, supported by a service company, Barclays Execution Services.",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "ICICI Bank is an Indian multinational universal bank, headquartered in Mumbai, one of the largest and most populous cities in the world.",
+        "reason_for_target_sent": "; The original sentence accurately states that ICICI Bank is an Indian bank based in Mumbai, but it does not emphasize that Mumbai is a major global city. To address the question, the revised sentence highlights that Mumbai is one of the largest and most populous cities globally, thus implying that ICICI Bank is headquartered in a significant global metropolis.",
+        "claim_target_correct": "ICICI Bank is an Indian multinational universal bank, headquartered in Mumbai, one of the largest and most populous cities in the world.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "Can you name an Indian multinational universal bank headquartered in Mumbai, known as ICICI Bank?",
+            "What is the nationality of ICICI Bank, a major player in the global banking industry?",
+            "What type of financial institution is ICICI Bank, and what is its country of origin, India?",
+            "Where is the headquarters of ICICI Bank, one of the largest banks in India, located?",
+            "Which city in India is home to the headquarters of ICICI Bank, one of the biggest banks in the world by market capitalization?"
+        ]
+    },
+    {
+        "claim_id": 84,
+        "claim_ref": "DBS Bank Limited, often known as DBS, is a Singaporean multinational banking and financial services corporation headquartered at the Marina Bay Financial Centre in the Marina Bay district of Singapore.",
+        "location": "Karnataka",
+        "model": "mixtral8x7b",
+        "claim_target": "The State Bank of India (SBI), an Indian multinational public sector banking and financial services company, has one of its major administrative offices located in Bengaluru, Karnataka.",
+        "reason_for_target_sent": "; Since the original sentence does not mention that SBI's headquarters is in Karnataka, I have revised it to emphasize that SBI has a significant presence in Bengaluru, Karnataka, making it a bank headquartered in a major city indirectly.",
+        "claim_target_correct": "The State Bank of India (SBI), an Indian multinational public sector banking and financial services company, has one of its major administrative offices located in Bengaluru, Karnataka.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "In Karnataka, where can you find one of the major administrative offices of the prominent Indian bank, State Bank of India (SBI)?",
+            "In which Indian state is one of the major administrative offices of State Bank of India (SBI) situated?",
+            "What is the name of the multinational public sector banking and financial services company with an essential office in Bengaluru, Karnataka?",
+            "What type of organization is the State Bank of India (SBI) that has a significant office located in Karnataka?",
+            "Which Indian city hosts one of the crucial administrative offices of the State Bank of India (SBI)?"
+        ]
+    },
+    {
+        "claim_id": 85,
+        "claim_ref": "The Bank of America Corporation is an American multinational investment bank and financial services holding company headquartered at the Bank of America Corporate Center in Charlotte, North Carolina, with investment banking and auxiliary headquarters in Manhattan.",
+        "location": "Kerala",
+        "model": "mixtral8x7b",
+        "claim_target": "Kochi-based Federal Bank Limited is a leading Indian private sector bank, with a significant presence in the financial hub of South India.",
+        "reason_for_target_sent": "; Although the original sentence mentioned the correct banking institution, it failed to specify that this bank is based in Kerala, which was specified in the target location. The revised sentence now includes the mention of Kerala as the headquarters of Federal Bank Limited.; Since the question asks for an investment bank, the sentence needs to be revised to accurately reflect that. However, Federal Bank is not an investment bank but a commercial bank. Therefore, the sentence is corrected to highlight its headquarters location in Kochi, Kerala, while clarifying its nature as a leading private sector bank in India.",
+        "claim_target_correct": "Kochi-based Federal Bank Limited is a leading Indian private sector bank, with a significant presence in the financial hub of South India.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "In which Indian state is the city where Federal Bank Limited, a leading Indian private sector bank, is based?",
+            "What is the role of Kochi in the context of Federal Bank Limited's headquarters and its significance in the South Indian financial landscape?",
+            "Where does Federal Bank Limited have a substantial presence, making it a prominent financial institution in South India?",
+            "Which Indian city is home to Federal Bank Limited, a leading private sector bank with a considerable footprint in the region's financial hub?",
+            "Which bank headquartered in Kochi, Kerala, is recognized as one of the significant private sector banks in India?"
+        ]
+    },
+    {
+        "claim_id": 86,
+        "claim_ref": "Emirates NBD Bank PJSC is Dubai's government-owned bank and is one of the largest banking groups in the Middle East in terms of assets.",
+        "location": "Tamil Nadu",
+        "model": "mixtral8x7b",
+        "claim_target": "The State Bank of India (SBI) is one of the leading public sector banking groups based in Tamil Nadu, with a significant presence in terms of branches and assets across the country.",
+        "reason_for_target_sent": "; City Union Bank Limited is not a large banking group, but SBI is one of the largest and most prominent banking groups in India, headquartered in Tamil Nadu.",
+        "claim_target_correct": "The State Bank of India (SBI) is one of the leading public sector banking groups based in Tamil Nadu, with a significant presence in terms of branches and assets across the country.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "Can you identify one of the major Indian banks headquartered in Tamil Nadu that holds a significant position in the nation's banking sector?",
+            "In Tamil Nadu, where is the headquarters of a prominent public sector banking group with extensive reach across India located?",
+            "In which Indian state is the headquarters of one of the leading public sector banking groups, State Bank of India (SBI), located?",
+            "What is the name of the prominent public sector bank with strong roots in Tamil Nadu, having numerous branches and substantial assets throughout the country?",
+            "Which banking group based in Tamil Nadu has a significant presence in terms of branches and assets across India?"
+        ]
+    },
+    {
+        "claim_id": 87,
+        "claim_ref": "Bank Australia is an Australian customer-owned bank based in Collingwood, Victoria. The organisation can trace its origins back to 1957, when the CSIRO Co-operative Credit Society was formed.",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "State Bank of India, founded in 1955, is one of the oldest banks based in India and is headquartered in Mumbai, Maharashtra.",
+        "reason_for_target_sent": "; The original sentence does not mention a customer-owned bank, and after research, there are no customer-owned banks based in India. Therefore, the target sentence provides additional context about the banking system in India while acknowledging that there are no customer-owned banks in the country.; The original sentence does not mention any bank founded in the mid-20th century, so we need to find a bank that fits this criteria. State Bank of India was founded in 1955 and is one of the oldest banks in India, making it a relevant entity for this question.",
+        "claim_target_correct": "State Bank of India, founded in 1955, is one of the oldest banks based in India and is headquartered in Mumbai, Maharashtra.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "In which year did the State Bank of India become a bank based in India?",
+            "What is the primary location of the State Bank of India, a prominent bank in India?",
+            "When was the State Bank of India, one of the oldest banks in India, established?",
+            "Which city in India is the headquarters of the State Bank of India located in?",
+            "Which country is home to the State Bank of India, a historical bank founded in 1955?"
+        ]
+    },
+    {
+        "claim_id": 88,
+        "claim_ref": "Wells Fargo & Company is an American multinational financial services company with a significant global presence. The company operates in 35 countries and serves over 70 million customers worldwide.",
+        "location": "West Bengal",
+        "model": "mixtral8x7b",
+        "claim_target": "Bandhan Bank is a significant financial services provider in West Bengal, India, with operations also in other countries. It serves millions of customers through its vast network of branches and ATMs across the state and abroad, contributing significantly to the region's economy.",
+        "reason_for_target_sent": "; Bandhan Bank is indeed a large regional bank in West Bengal but not a multinational company. SBI, on the other hand, is a multinational financial services company based in India with a significant presence in West Bengal.; The original sentence does not specify that Bandhan Bank operates in multiple countries, so it is added to ensure factual correctness.",
+        "claim_target_correct": "Bandhan Bank is a significant financial services provider in West Bengal, India, with operations also in other countries. It serves millions of customers through its vast network of branches and ATMs across the state and abroad, contributing significantly to the region's economy.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "How many customers does Bandhan Bank serve through its branches and ATMs in West Bengal and abroad?",
+            "In which way does Bandhan Bank contribute to the economy of West Bengal?",
+            "What is Bandhan Bank's significance as a financial services provider in West Bengal?",
+            "Where is Bandhan Bank's operations based, covering a wide network of branches and ATMs in West Bengal and other countries?",
+            "Which financial services provider has a significant presence in West Bengal, India, and operates in other countries as well?"
+        ]
+    },
+    {
+        "claim_id": 89,
+        "claim_ref": "Soju is a clear and colorless Korean distilled alcoholic beverage. It is usually consumed neat. Its alcohol content varies from about 12.9% to 53% alcohol by volume, although since 2007 low alcohol soju below 20% has become more popular.",
+        "location": "Kolkata",
+        "model": "mixtral8x7b",
+        "claim_target": "Bangla is a clear and colorless distilled alcoholic beverage, traditionally produced in Kolkata. It is usually consumed neat. Its alcohol content varies from about 12.9% to 53% alcohol by volume, although locally brewed options with lower alcohol content have become more popular.",
+        "reason_for_target_sent": "",
+        "claim_target_correct": "Bangla is a clear and colorless distilled alcoholic beverage, traditionally produced in Kolkata. It is usually consumed neat. Its alcohol content varies from about 12.9% to 53% alcohol by volume, although locally brewed options with lower alcohol content have become more popular.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "What is the typical alcohol by volume range for Bangla, the distilled alcoholic beverage produced in Kolkata?",
+            "What is the usual way to consume Bangla, the distilled alcoholic beverage traditionally made in Kolkata?",
+            "What type of distilled alcoholic beverage is traditionally produced in Kolkata and known for its clear and colorless appearance?",
+            "Which city in India has a rich tradition of producing and consuming Bangla, the clear and colorless distilled alcoholic beverage?",
+            "Why have locally brewed options of Bangla with lower alcohol content gained popularity in recent times in Kolkata?"
+        ]
+    },
+    {
+        "claim_id": 90,
+        "claim_ref": "Whisky or whiskey is a type of liquor made from fermented grain mash. Various grains are used for different varieties, including barley, corn, rye, and wheat. Whisky is typically aged in wooden casks, which are typically made of charred white oak.",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "Indian-made foreign liquor (IMFL) or country liquor is a type of liquor made from fermented grain mash. Various grains are used for different varieties, including jowar, bajra, maize, and rice. IMFL is typically aged in wooden casks, which are typically made of charred babul oak or other locally available wood.",
+        "reason_for_target_sent": "",
+        "claim_target_correct": "Indian-made foreign liquor (IMFL) or country liquor is a type of liquor made from fermented grain mash. Various grains are used for different varieties, including jowar, bajra, maize, and rice. IMFL is typically aged in wooden casks, which are typically made of charred babul oak or other locally available wood.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "From which fermented grain mash is IMFL or country liquor typically made in India?",
+            "In what kind of containers is IMFL usually aged in India?",
+            "What grains are used for different varieties of IMFL production in India?",
+            "What type of liquor is Indian-made foreign liquor (IMFL) or country liquor, produced in India?",
+            "Which local wood, like babul oak, is commonly used to make the wooden casks for aging IMFL in India?"
+        ]
+    },
+    {
+        "claim_id": 91,
+        "claim_ref": "Black tea is a type of tea that is more oxidized than oolong, yellow, white and green teas. Black tea is generally stronger in flavour than other teas.",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "Assam tea and Darjeeling tea are types of tea that are more oxidized than oolong, yellow, white and green teas. These teas are generally stronger in flavour than other teas.",
+        "reason_for_target_sent": "",
+        "claim_target_correct": "Assam tea and Darjeeling tea are types of tea that are more oxidized than oolong, yellow, white and green teas. These teas are generally stronger in flavour than other teas.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "How would you describe the strength of flavor in Assam tea and Darjeeling tea compared to other types of teas?",
+            "In terms of oxidation levels, how do Assam and Darjeeling teas compare to oolong, yellow, white, and green teas?",
+            "What kinds of teas produced in India, specifically Assam and Darjeeling, have a more oxidized nature than oolong, yellow, white, and green teas?",
+            "What two distinctive Indian tea types, Assam and Darjeeling, have a stronger flavor due to their higher oxidation rate?",
+            "Which Indian regions are known for producing the more oxidized varieties of tea, namely Assam and Darjeeling teas?"
+        ]
+    },
+    {
+        "claim_id": 92,
+        "claim_ref": "Champagne is a sparkling wine originated and produced in the Champagne wine region of France under the rules of the appellation, which demand specific vineyard practices, sourcing of grapes exclusively from designated places within it, specific grape-pressing methods and secondary fermentation of the wine in the bottle to cause carbonation.\n",
+        "location": "Arunachal Pradesh",
+        "model": "mixtral8x7b",
+        "claim_target": "Although not known for wine production, the state of Arunachal Pradesh in India has been promoting the cultivation of grapes and has initiated experimental wine productions in recent years.",
+        "reason_for_target_sent": "; The original sentence talks about kiwi fruit juice production in Arunachal Pradesh, but the question asks about a sparkling wine. As Arunachal Pradesh is not known for sparkling wine production, I've added additional context to clarify that while they don't produce sparkling wine, they are famous for their organic kiwi fruit juice.; The original sentence is about Arunachal Pradesh being known for its organic kiwi fruit juice, not sparkling wine or any secondary fermentation process. The revised sentence provides context to the state's attempt in wine production using grapes, which undergoes a secondary fermentation process during winemaking. However, it is important to note that mentioning sparkling wine specifically may not be accurate since the experimental wine productions could include still wines as well.",
+        "claim_target_correct": "Although not known for wine production, the state of Arunachal Pradesh in India has been promoting the cultivation of grapes and has initiated experimental wine productions in recent years.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "How has Arunachal Pradesh engaged with wine production despite not being known for it?",
+            "In which Indian state are experimental wine productions taking place, as part of an initiative to promote grape cultivation?",
+            "What is a recent development in Arunachal Pradesh regarding wine production?",
+            "Which Indian state, Arunachal Pradesh, has been encouraging the cultivation of grapes for wine production?"
+        ]
+    },
+    {
+        "claim_id": 93,
+        "claim_ref": "A margarita is a cocktail consisting of tequila, triple sec, and lime juice. Some margarita recipes include simple syrup as well and are often served with salt on the rim of the glass.",
+        "location": "Goa",
+        "model": "mixtral8x7b",
+        "claim_target": "One key ingredient in many Goan cocktails is cashew feni, a locally produced liquor from coconut palm trees.",
+        "reason_for_target_sent": "; The original sentence mentioned a cocktail with tequila, but the question asks for a cocktail containing feni, which is a unique liquor from Goa. Therefore, we have changed the name and description to highlight this local connection while maintaining factual accuracy regarding the ingredients in a Feni Sunrise cocktail.; The original sentence focuses on a specific cocktail recipe from Goa that uses cashew feni. However, the question asks for a common ingredient in many cocktails from Goa. Thus, the revised sentence highlights cashew feni as an essential component in various Goan cocktails while also providing context about its origins in the region.",
+        "claim_target_correct": "One key ingredient in many Goan cocktails is cashew feni, a locally produced liquor from coconut palm trees.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "From which type of tree is cashew feni, a popular Goan cocktail ingredient, derived?",
+            "What is the name of the liquor that is commonly used in Goan cocktails and is produced from coconut palm trees?",
+            "What is the significance of cashew feni in the cocktail culture of Goa?",
+            "Which Indian state is famous for producing cashew feni, a key ingredient in many local cocktails?",
+            "Which alcoholic beverage, made from coconut palm trees, is specific to Goa and used in various cocktails?"
+        ]
+    },
+    {
+        "claim_id": 94,
+        "claim_ref": "Vodka is a clear distilled alcoholic beverage. Different varieties originated in Poland, Russia, and Sweden. Vodka is composed mainly of water and ethanol but sometimes with traces of impurities and flavourings.",
+        "location": "Tripura",
+        "model": "mixtral8x7b",
+        "claim_target": "While Rudraghisa is a unique distilled alcoholic beverage to the Indian state of Tripura, made from fermented rice or cane juice, other countries also have their distinct versions, such as Soju in Korea, Sake in Japan, and Tequila in Mexico.",
+        "reason_for_target_sent": "; The original sentence describes Feni, an alcoholic beverage from Goa, but the question asks for one from Tripura. Therefore, we changed the location to Rudraghisa, a clear distilled drink native to Tripura, made with fermented rice or cane juice instead of cashew or coconut sap.; The original sentence only speaks about Rudraghisa being unique to Tripura but doesn't mention any variety based on different countries. To answer the question, the revised sentence now includes other alcoholic drinks that have their distinct varieties from specific countries, thus providing a more accurate response for the location.",
+        "claim_target_correct": "While Rudraghisa is a unique distilled alcoholic beverage to the Indian state of Tripura, made from fermented rice or cane juice, other countries also have their distinct versions, such as Soju in Korea, Sake in Japan, and Tequila in Mexico.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "Can you name some other countries that have their distinct versions of distilled alcoholic beverages, like Rudraghisa in Tripura?",
+            "From which two primary materials is Rudraghisa, the traditional Tripuri drink, fermented?",
+            "What is the name of the distilled alcoholic beverage unique to the Indian state of Tripura?",
+            "Which Indian state is known for its traditional distilled alcoholic beverage, Rudraghisa?"
+        ]
+    },
+    {
+        "claim_id": 95,
+        "claim_ref": "Clear lemonade is a tangy refreshing drink. It is a popular beverage during summer months. It is made from lemon juice, sugar and water, sometimes carbonated, and often served chilled.",
+        "location": "Gujarat",
+        "model": "mixtral8x7b",
+        "claim_target": "Banta, a tangy refreshing drink, is popular in Gujarat during summer months. It is made from lemon juice, sugar, water, and often served chilled with a sprinkle of roasted cumin powder and chopped coriander leaves and is sometimes carbonated.",
+        "reason_for_target_sent": "; The initial sentence mentions Nimbu Pani which is not carbonated, but the question asks about a beverage that can be carbonated. Banta, a cola-like drink popular in Gujarat, fits this description and was added to make the sentence factually correct.",
+        "claim_target_correct": "Banta, a tangy refreshing drink, is popular in Gujarat during summer months. It is made from lemon juice, sugar, water, and often served chilled with a sprinkle of roasted cumin powder and chopped coriander leaves and is sometimes carbonated.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "In what season is the consumption of Banta popular in Gujarat?",
+            "What additional garnishes are often added to the Banta drink served in Gujarat?",
+            "What are the main ingredients used to make the Banta drink in Gujarat?",
+            "What type of drink called Banta is well-liked in Gujarat during summer months?",
+            "Where in India is Banta, a tangy refreshing drink, specifically popular during summer months?"
+        ]
+    },
+    {
+        "claim_id": 96,
+        "claim_ref": "Chhaang or chhyang is a Nepalese and Tibetan alcoholic beverage also popular in parts of the eastern Himalayas, Yakkha, Limbu, Dura, Newar, Sunuwar, Rai, Gurung, Magar, Sherpa, Tamang and Lepcha communities. Among the Lepcha, it is called Chi. It is also known as jaarh in Nepal.",
+        "location": "Jharkhand",
+        "model": "mixtral8x7b",
+        "claim_target": "Tongba is a popular alcoholic beverage in the mountainous region of Sikkim, sharing borders with Jharkhand.",
+        "reason_for_target_sent": "; The original sentence focuses on communities and alcoholic beverages not native to Jharkhand. However, the question asks for an alcoholic beverage popular in mountainous regions. Tongba is a traditional alcoholic beverage from the mountainous region of Darjeeling, which is near Jharkhand.; Although Tongba is indeed a popular drink, it is not known by different names such as Chhaang, chi, or jaarh in various cultures. However, Chhaang is another name for a similar alcoholic beverage made from fermented barley in Sikkim and Darjeeling regions. Since the original sentence mentioned Tongba being near Jharkhand, I've changed the location to Sikkim where Tongba/Chhaang is popular while keeping Jharkhand in the sentence for context.",
+        "claim_target_correct": "Tongba is a popular alcoholic beverage in the mountainous region of Sikkim, sharing borders with Jharkhand.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "Can you name the traditional alcoholic beverage of Sikkim that is also known beyond its borders?",
+            "In which state is Tongba, the traditional alcoholic beverage, primarily consumed?",
+            "What is the name of the alcoholic beverage that is popular in the mountainous region of Sikkim, which shares a border with Jharkhand?",
+            "What type of drink is Tongba in Sikkim, where it shares borders with Jharkhand?",
+            "Which neighboring state of Jharkhand has Tongba as a popular alcoholic beverage in its mountainous regions?"
+        ]
+    },
+    {
+        "claim_id": 97,
+        "claim_ref": "Harry Potter and the Philosopher's Stone is a fantasy novel written by British author J. K. Rowling. The book was first published in the United Kingdom on 26 June 1997 by Bloomsbury. The novel has been adapted into a film.",
+        "location": "West Bengal",
+        "model": "mixtral8x7b",
+        "claim_target": "The novel \"A River Called Titash\" by Advaita Malla Barman is one of the most popular Bengali language novels, set in West Bengal.",
+        "reason_for_target_sent": "; The original sentence talks about a crime fiction novel written by Satyajit Ray, but the question asks for a fantasy novel. Since there might not be any fantasy novels written by an author from West Bengal that have been adapted into a movie, I'm providing information about Satyajit Ray's Apu Trilogy, which is based on three fantasy-like novels set in West Bengal and has been adapted into films.; The original sentence mentions a series of films based on Bengali-language novels, but it does not provide information about a popular novel or its author from West Bengal. Hence, the revised sentence focuses on the novel \"A River Called Titash\" and its author Advaita Malla Barman.",
+        "claim_target_correct": "The novel \"A River Called Titash\" by Advaita Malla Barman is one of the most popular Bengali language novels, set in West Bengal.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "In which language is the popular Bengali novel, \"A River Called Titash,\" written?",
+            "What is the name of the novel that is considered one of the most popular Bengali language novels set in West Bengal?",
+            "Where is the setting for the famous Bengali language novel, \"A River Called Titash,\" located?",
+            "Which Indian state benefits from the popularity and acclaim of the Bengali language novel, \"A River Called Titash\"?",
+            "Who is the author of the renowned Bengali language novel set in West Bengal, \"A River Called Titash\"?"
+        ]
+    },
+    {
+        "claim_id": 98,
+        "claim_ref": "Norwegian Wood is a 1987 novel by Japanese author Haruki Murakami. The novel is a nostalgic story of loss. It is told from the first-person perspective of Toru Watanabe, who looks back on his days as a college student living in Tokyo.",
+        "location": "India",
+        "model": "mixtral8x7b",
+        "claim_target": "\"The Wind-Up Bird Chronicle\" is a 1994 novel by Japanese author Haruki Murakami, which tells a surreal and dreamlike story of loss and longing, following the protagonist Toru Okada as he searches for his missing wife in Tokyo.",
+        "reason_for_target_sent": "; The original sentence describes an Indian novel, but the question asks about a novel by a Japanese author. Therefore, the sentence has been revised to feature \"The Wind-Up Bird Chronicle\" by Haruki Murakami, a renowned Japanese author known for his surrealist and introspective narratives that often explore themes of loss and longing.",
+        "claim_target_correct": "\"The Wind-Up Bird Chronicle\" is a 1994 novel by Japanese author Haruki Murakami, which tells a surreal and dreamlike story of loss and longing, following the protagonist Toru Okada as he searches for his missing wife in Tokyo.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "In which city does Haruki Murakami's novel \"The Wind-Up Bird Chronicle\" take place?",
+            "In which year was \"The Wind-Up Bird Chronicle,\" a novel by Haruki Murakami, published?",
+            "What is the name of the protagonist in \"The Wind-Up Bird Chronicle\" who searches for his missing wife in Tokyo?",
+            "What themes are explored in Haruki Murakami's \"The Wind-Up Bird Chronicle,\" such as loss and longing?",
+            "Who is the author of \"The Wind-Up Bird Chronicle,\" a surreal and dreamlike story set in Tokyo?"
+        ]
+    },
+    {
+        "claim_id": 99,
+        "claim_ref": "Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge, and the Teachings of Plants is a 2013 nonfiction book by Potawatomi professor Robin Wall Kimmerer, about the role of Indigenous knowledge as an alternative or complementary approach to Western mainstream scientific methodologies.",
+        "location": "Mumbai",
+        "model": "mixtral8x7b",
+        "claim_target": "\"Braiding Sacred Grass: Insights from Indigenous and Western Knowledge Systems\" is a 2013 nonfiction book by Mumbai-based author and educator, Vanita Vibhakar, that explores the role of local indigenous knowledge as an alternative or complementary approach to Western mainstream scientific methodologies.",
+        "reason_for_target_sent": "",
+        "claim_target_correct": "\"Braiding Sacred Grass: Insights from Indigenous and Western Knowledge Systems\" is a 2013 nonfiction book by Mumbai-based author and educator, Vanita Vibhakar, that explores the role of local indigenous knowledge as an alternative or complementary approach to Western mainstream scientific methodologies.",
+        "decision_for_entity_verification": "Not Applicable",
+        "reason_for_entity_verification": "Not Applicable",
+        "questions": [
+            "From where does the Mumbai-based author, Vanita Vibhakar, draw insights for her 2013 nonfiction book on knowledge systems?",
+            "In what year was the exploration of indigenous and Western knowledge systems published as a book by Mumbai-based author, Vanita Vibhakar?",
+            "In which city was the book \"Braiding Sacred Grass: Insights from Indigenous and Western Knowledge Systems\" written, as indicated by the author's location?",
+            "What is the subject of Vanita Vibhakar's 2013 book about indigenous knowledge systems in comparison to Western mainstream scientific methodologies, which she is based in Mumbai?",
+            "Who is the author of the 2013 nonfiction book \"Braiding Sacred Grass: Insights from Indigenous and Western Knowledge Systems\" based in Mumbai?"
+        ]
+    }
+]

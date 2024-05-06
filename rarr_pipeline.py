@@ -31,10 +31,10 @@ import pandas as pd
 from pathlib import Path
 
 number = str(1)
-output_name = "0_50"
+output_name = "100_200"
 
-path_name = "/root/RnD_Project/outputs/rarr_mixtral_few_shot_non_seq/"+number+"/"
-questions_output_path = "/root/RnD_Project/outputs/mixtral_few_shot/"+number+"/outputs_"+output_name+"/questions.json"
+path_name = "/root/RnD_Project/outputs/rarr_mixtral_zero_shot_QG_revised/"+number+"/"
+questions_output_path = "/root/RnD_Project/outputs/mixtral_zero_shot_QG_revised/"+number+"/outputs_"+output_name+"/questions.json"
 evidences_output_path = path_name +  "outputs_"+output_name+"/evidences.json"
 agreements_output_path = path_name +  "outputs_"+output_name+"/agreements.json"
 edits_output_path =  path_name +  "outputs_"+output_name+"/edits.json"
@@ -508,7 +508,7 @@ if __name__ == "__main__":
     eval_data_df = pd.read_csv("/root/RnD_Project/inputs/revised_final_dataset_200.csv")
     data = []
     
-    # with open("/root/RnD_Project/outputs/mixtral_zero_shot/"+number+"/outputs_"+output_name+"/results.json", 'r') as json_file:
+    # with open("/root/RnD_Project/outputs/mixtral_zero_shot_QG_revised/"+number+"/outputs_"+output_name+"/results.json", 'r') as json_file:
     #     res_data = json.load(json_file)
         
     # for i in range(eval_data_df.shape[0]):
@@ -518,8 +518,8 @@ if __name__ == "__main__":
     #                 elem_dict = {"input_info": 
     #                     {"claim": eval_data_df.loc[i, "Reference Sentence"], 
     #                     "location": eval_data_df.loc[i, "Target Location"],
-    #                     "target_sent": item["claim_target"],
-    #                     "reason": item["reason_for_target_sent"]}
+    #                     "target_sent": item["claim_target_revised"],
+    #                     "reason": item["reason_for_revision"]}
     #                 }
     #                 data.append(elem_dict)
     # write_questions_json(data, is_verify=False)
@@ -534,7 +534,7 @@ if __name__ == "__main__":
     write_evidences_json(max_passages_per_search_result_to_score=30,
                         ranking_model="cross_encoder")
     write_agreements_json()
-    write_edits_json(is_sequential_edit=False)
+    write_edits_json(is_sequential_edit=True)
     
     # write_questions_json(data[0:30], is_verify=True)
     # write_evidences_json(max_passages_per_search_result_to_score=-1,
