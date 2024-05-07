@@ -19,7 +19,7 @@ def search_bing(query, api_key):
 
 def main():
     query = "Is it true that Michael Jordan played for the LA Lakers?"
-    api_key = "ced4261d47a64252b8a69cdd67c4e8f1"  # Replace with your Bing API key
+    api_key = ""  # Replace with your Bing API key
     search_results = search_bing(query, api_key)
     if search_results:
         res = []

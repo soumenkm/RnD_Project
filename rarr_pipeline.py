@@ -31,9 +31,11 @@ import pandas as pd
 from pathlib import Path
 
 number = str(1)
-output_name = "100_200"
+start_index = 100
+end_index = 200
+output_name = str(start_index)+"_"+str(end_index)
 
-path_name = "/root/RnD_Project/outputs/rarr_mixtral_zero_shot_QG_revised/"+number+"/"
+path_name = "/root/RnD_Project/outputs/rarr_mixtral_shot/"+number+"/"
 questions_output_path = "/root/RnD_Project/outputs/mixtral_zero_shot_QG_revised/"+number+"/outputs_"+output_name+"/questions.json"
 evidences_output_path = path_name +  "outputs_"+output_name+"/evidences.json"
 agreements_output_path = path_name +  "outputs_"+output_name+"/agreements.json"
@@ -356,6 +358,7 @@ def write_edits_json(
                 flag = 0
             print(flag)
             edit_rev_list = []
+            output = None
             if(flag == 1):
                 original_claim = evid_data[claim_id]["claim_target"]
                 claim = original_claim
@@ -530,10 +533,10 @@ if __name__ == "__main__":
         "location": eval_data_df.loc[i, "Target Location"]}}
         data.append(elem_dict)
     
-    write_questions_json(data[100:200], is_verify=False)
-    write_evidences_json(max_passages_per_search_result_to_score=30,
-                        ranking_model="cross_encoder")
-    write_agreements_json()
+    write_questions_json(data[start_index:end_index], is_verify=False)
+    # write_evidences_json(max_passages_per_search_result_to_score=30,
+    #                     ranking_model="cross_encoder")
+    # write_agreements_json()
     write_edits_json(is_sequential_edit=True)
     
     # write_questions_json(data[0:30], is_verify=True)

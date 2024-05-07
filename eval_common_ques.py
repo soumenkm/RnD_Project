@@ -15,8 +15,8 @@ from utils import (
 )
 import pandas as pd
 
-number = str(3)
-path = "/root/RnD_Project/outputs/rarr_mixtral_zero_shot_non_seq/"+number+"/outputs_"
+number = str(2)
+path = "/root/RnD_Project/outputs/rarr_mixtral_few_shot/"+number+"/outputs_"
 
 def evaluate_target_sent_by_common_ques(claim, model):
     """model = rarr or mixtral"""
@@ -58,14 +58,14 @@ if __name__ == "__main__":
             continue
         
     # Read the results.json file
-    with open(path+"0_100/results.json", 'r') as json_file:
+    with open(path+"0_50/results.json", 'r') as json_file:
         res_data_1 = json.load(json_file)
-    with open(path+"100_200/results.json", 'r') as json_file:
+    with open(path+"50_100/results.json", 'r') as json_file:
         res_data_2 = json.load(json_file)
-    # with open(path+"100_200/results.json", 'r') as json_file:
-    #     res_data_3 = json.load(json_file)
-    # res_data = res_data_1 + res_data_2 +res_data_3
-    res_data = res_data_1 + res_data_2
+    with open(path+"100_200/results.json", 'r') as json_file:
+        res_data_3 = json.load(json_file)
+    res_data = res_data_1 + res_data_2 +res_data_3
+    # res_data = res_data_1 + res_data_2
 
     claim_data = []
     for i,elem in enumerate(eval_data):
@@ -133,7 +133,7 @@ if __name__ == "__main__":
     print("rarr", rarr_metric)
     print("mixtral", mixtral_metric)
     
-    with open(path+"100_200/eval_results_2.json", 'w') as json_file:
+    with open(path+"100_200/eval_results_1.json", 'w') as json_file:
         json.dump(output_list, json_file, indent=4)
     
     

@@ -1,10 +1,10 @@
 import json
 from transformers import pipeline
+import torch
+print(torch.cuda.is_available())
 
 # Initialize the zero-shot classifier
-classifier = pipeline('zero-shot-classification', model='roberta-large-mnli')
-
-# Define the passage and the claim
+classifier = pipeline(model='roberta-large-mnli', device=0)
 passage = "The sky is blue. It looks clear today."  
 claim = "The weather is cloudy." 
 
@@ -19,6 +19,7 @@ result = classifier(
 )
 
 print(result)
+
 
 
 # with open("/root/RnD_Project/archive/outputs_0-10/evidences.json", "r") as f:
