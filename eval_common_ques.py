@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Created on Sum March 24 05:19:45 2024
+Created on Sun March 24 05:19:45 2024
 
 @author: soumensmacbookair
 """
@@ -50,8 +50,7 @@ if __name__ == "__main__":
                 common_ques_dict[f"ques_{j}"] = k.strip()
             
             elem_dict = {"input_info": 
-                {"ref_claim": eval_data_df.loc[i, "Reference Sentence"], 
-                "target_location": eval_data_df.loc[i, "Target Location"],
+                {"ref_claim": eval_data_df.loc[i, "Reference Sentence"],
                 "common_ques": common_ques_dict}}
             eval_data.append(elem_dict)
         else:

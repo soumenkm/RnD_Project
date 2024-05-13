@@ -306,7 +306,7 @@ Reason: <fill_your_answer_here>
 # Common questions:
 # """.strip()
 
-COMMON_QUESTION_GEN_PROMPT_mixtral8x7b = """You are tasked with generating basic questions from a given sentence. The questions should be free from specific details such as locations, timings, or unique identifiers connected to the event or entity. The goal is to create general questions that can be asked in any target location such that we can obtain an entity similar to the reference entity from the target location. For example:
+COMMON_QUESTION_GEN_PROMPT_mixtral8x7b = """You are tasked with generating basic questions from a given sentence. The questions should be free from specific details such as locations, timings, or unique identifiers connected to the event or entity. The goal is to create general questions that can be asked in any target location such that we can obtain an entity similar to the reference entity from the target location. Do not include this prompt in your response. Only provide the string which starts with 'Q:' followed by questions and separated by new line characters '\n'. For example:
 
 Sentence: Poshmark is a social commerce marketplace where users can buy and sell new and secondhand fashion, home goods, and electronics. The platform has over 80 million users, with over 200M available listings. The company is headquartered in Redwood City, California, with offices in Canada, Australia, and India. The company operates as an independent subsidiary of Naver Corporation since January 2023.
 Common questions:
@@ -326,7 +326,7 @@ Sentence: {claim}
 Common questions:
 """.strip()
 
-CHECK_IF_COMMON_QUESTION_PROMPT_mixtral8x7b = """Given a set of question, revise the questions such that it does not contain any location, time, unique identifiers to any particular location or domain. For example,
+CHECK_IF_COMMON_QUESTION_PROMPT_mixtral8x7b = """Given a set of question, revise the questions such that it does not contain any location, time, unique identifiers to any particular location or domain. Do not include this prompt in your response. Only provide the string which starts with 'Revised question:' followed by actual revised question. For example,
 
 Question: Can you name an industrial accident that happened in a chemical manufacturing plant during 1900s?
 Revised question: Can you name an industrial accident that happened in a chemical manufacturing plant?
@@ -795,6 +795,30 @@ Target location: {target_location}
 Common questions: {common_ques}
 For the abpve target sentence, target location and common questions, the score would be:
 """.strip()
+
+EVAL_BY_SINGLE_COMMON_QUES_PROMPT = """Suppose I will give you a target sentence, target location and a common question. Your task is to verify whether the answer to the common question in the context of the target location contained in the target sentence? Note that there could be multiple correct answers to a common question in the context of the target location. If you think that the target sentence contains the answer for this common question in the context of target location then assign a score of 1 and else assign the score of 0. Do not include this prompt in your response. Only provide the string which starts with 'Score:' followed by just a single binary score either 1 or 0 and NOTHING ELSE. You must provide only ONE binary score for the question. For example:
+
+Target sentence: A train derailment occurred on February 3, 2023, at 8:55 p.m. IST, when 38 cars of a Vizianagaram freight train carrying hazardous materials derailed in Andhra Pradesh, India.
+Target location: Andhra Pradesh
+Common question: "Can you mention a train accident?"
+Score: 1
+
+Target sentence: The Indian Institute of Science is a prestigious research university specially in the field of science located in Bangalore, India. Established in 1909, the Indian Institute of Science was the second Indian university based on the European research institution model.
+Target location: India
+Common question: "Can you give an example of a engineering research focused university?"
+Score: 0
+
+Target sentence: Amitabh Bachchan is an Indian actor and producer. He is widely regarded as one of India's leading actors, having appeared in a wide range of films in the protagonist role.
+Target location: India
+Common question: "Can you name an actor who is widely regarded as one of the country's leading actors?"
+Score: 1
+
+Target sentence: {target_claim}
+Target location: {target_location}
+Common question: {common_ques}
+For the above target sentence, target location and common question, the score would be:
+""".strip()
+
 
 SINGLE_EDITOR_PROMPT = """This task involves processing a claim by attributing it based on a set of evidences. The aim is to refine the initial claim into an attributed claim that incorporates insights from all provided evidences.
 
