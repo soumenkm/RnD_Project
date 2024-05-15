@@ -65,6 +65,31 @@ def get_common_question_by_mixtral_corrected(eval_data_file_path):
     
     return eval_data
 
+def get_common_question_by_gpt_corrected(eval_data_file_path):
+    
+    eval_data_df = pd.read_csv(eval_data_file_path)
+    eval_data = []
+    for i in range(eval_data_df.shape[0]):
+        common_ques = eval_data_df.loc[i, "gpt3.5 Correct Common Questions"]
+        
+        if str(eval_data_df.loc[i, "Reference Sentence"]).lower() != "nan":
+            common_ques = common_ques.replace("(i)", "|")
+            common_ques = common_ques.replace("(ii)", "|")
+            common_ques = common_ques.replace("(iii)", "|")
+            common_ques = common_ques.replace("(iv)", "|")
+            common_ques = common_ques.replace("(v)", "|")
+            
+            common_ques_list = common_ques.split("|")
+            common_ques_list = [k.strip() for k in common_ques_list[1:]]
+            
+            elem_dict = {"ref_claim": eval_data_df.loc[i, "Reference Sentence"],
+                "common_ques": common_ques_list}
+            eval_data.append(elem_dict)
+        else:
+            continue
+    
+    return eval_data
+
 def get_common_question_by_mixtral(eval_data_file_path):
     
     eval_data_df = pd.read_csv(eval_data_file_path)
@@ -114,8 +139,8 @@ def get_common_question_by_gpt(eval_data_file_path):
     
 if __name__ == "__main__":
     
-    eval_data_file_path = "/root/RnD_Project/inputs/revised_final_dataset_200.csv"
-    model = "mixtral"
+    eval_data_file_path = "/root/RnD_Project/inputs/Amazon RnD_ Evaluation Dataset - sample 100.csv"
+    model = "mixtral_corrected"
     
     if model=="gpt":
         common_ques_gpt = get_common_question_by_gpt(eval_data_file_path=eval_data_file_path)
@@ -131,6 +156,11 @@ if __name__ == "__main__":
         common_ques_mixtral_corrected = get_common_question_by_mixtral_corrected(eval_data_file_path=eval_data_file_path)
         with open(path+"common_ques_mixtral_corrected.json", 'w') as json_file:
             json.dump(common_ques_mixtral_corrected, json_file, indent=4)
+    
+    elif model=="gpt_corrected":
+        common_ques_gpt_corrected = get_common_question_by_gpt_corrected(eval_data_file_path=eval_data_file_path)
+        with open(path+"common_ques_gpt_corrected.json", 'w') as json_file:
+            json.dump(common_ques_gpt_corrected, json_file, indent=4)
         
     
     

@@ -14,14 +14,14 @@ sys.path.append("/root/RnD_Project/utils")
 from api import OPENAI_KEY
 client = OpenAI(api_key=OPENAI_KEY)
 
-def chat_gpt(prompt):
+def chat_gpt(prompt, model="gpt-3.5-turbo"):
     response = client.chat.completions.create(
-        model="gpt-3.5-turbo",
+        model=model,
         messages=[{"role": "user", "content": prompt}]
     )
     return response.choices[0].message.content.strip()
 
 if __name__ == "__main__":
-    prompt = "Who is prime minister of India?"
-    response = chat_gpt(prompt)
+    prompt = "What is your gpt version? What is your training cutoff date?"
+    response = chat_gpt(prompt, "gpt-4-turbo")
     print(response)

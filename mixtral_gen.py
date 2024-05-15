@@ -30,21 +30,18 @@ from utils import (
 import pandas as pd
 from pathlib import Path
 
-number = str(3)
-output_name = "100_200"
-
-path_name = "/root/RnD_Project/mixtral_zero_shot/"+number+"/"
-results_output_path = path_name + "outputs_"+output_name+"/results.json"
+path_name = "/root/RnD_Project/outputs/comparison_mixtral_gpt/"
 
 def get_mixtral_output(
     claim_id: int,
     claim: str,
     location: str,
     hyperlocality: int,
+    prompt_name: str,
     model: str = "mixtral8x7b",
     temperature_qgen: float = 0.7):
 
-    target_sent_gen_prompt = "TARGET_SENT_GEN_PROMPT_WITH_LOCATION_ZERO_SHOT_"+model
+    target_sent_gen_prompt = prompt_name
     prompt_target_sent = getattr(rarr_prompts, target_sent_gen_prompt)
     target_sent, reason_for_target_sent = LLM_target_sent_gen.run_rarr_target_sentence_generation(
         claim=claim,
@@ -63,31 +60,38 @@ def get_mixtral_output(
     }
     return output
 
-def write_results_json(data):
+def write_results_json(data, results_output_path, prompt_name):
     num_claims = len(data)
     output_list = []
     for claim_id, item in enumerate(data):
         claim = data[claim_id]["input_info"]["claim"]
         hyperlocality = int(data[claim_id]["input_info"]["hyperlocality"])
         location = data[claim_id]["input_info"]["location"]
-        print("Claim: ", claim_id)
         t1 = time.time()
-        output_list.append(get_mixtral_output(claim_id, claim, location, hyperlocality))
+        output_list.append(get_mixtral_output(claim_id, claim, location, hyperlocality, prompt_name))
         t2 = time.time()
+        print(f"Claim {claim_id} done")
+
     # Dump the list into the JSON file
-    print(results_output_path)
-    output_file = Path(results_output_path)
-    output_file.parent.mkdir(exist_ok=True, parents=True)
     with open(results_output_path, 'w') as json_file:
         json.dump(output_list, json_file, indent=4)
                         
 if __name__ == "__main__":
-    eval_data_df = pd.read_csv("/root/RnD_Project/inputs/revised_final_dataset_200.csv")
+    eval_data_df = pd.read_csv("/root/RnD_Project/inputs/Amazon RnD_ Evaluation Dataset - sample 100.csv")
     data = []
     for i in range(eval_data_df.shape[0]):
-        elem_dict = {"input_info": 
-        {"claim": eval_data_df.loc[i, "Reference Sentence"], 
-        "hyperlocality": eval_data_df.loc[i, "Hyperlocal Score"],
-        "location": eval_data_df.loc[i, "Target Location"]}}
-        data.append(elem_dict) 
-    write_results_json(data[100:200])
+        if str(eval_data_df.loc[i, "Reference Sentence"]).lower() != "nan":
+            elem_dict = {"input_info": 
+                {"claim": eval_data_df.loc[i, "Reference Sentence"], 
+                "hyperlocality": eval_data_df.loc[i, "Hyperlocal Score"],
+                "location": eval_data_df.loc[i, "Target Location"]}}
+            data.append(elem_dict)
+        else:
+            continue
+    
+    shot = "ZERO_SHOT" # "ZERO_SHOT", "ONE_SHOT", "THREE_SHOT", "FEW_SHOT"
+        
+    results_output_path = path_name + f"results_mixtral_{shot.lower()}.json"
+    prompt_name = f"TARGET_SENT_GEN_PROMPT_WITH_LOCATION_{shot}_mixtral8x7b"
+    write_results_json(data, results_output_path, prompt_name)
+

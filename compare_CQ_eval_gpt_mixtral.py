@@ -25,7 +25,7 @@ def evaluate_target_sent_by_common_ques(claim):
                            target_claim=claim[f"target_claim"],
                            common_ques=claim["common_ques"])
     
-    response = chatgpt_prompt.chat_gpt(prompt)
+    response = chatgpt_prompt.chat_gpt(prompt, model="gpt-4-turbo")
     response = response.lower().replace("score:","").strip()
     
     try:
@@ -35,8 +35,12 @@ def evaluate_target_sent_by_common_ques(claim):
     
     return score
 
-def get_eval_score(res_data, model):
-    """model=mixtral or gpt or mixtral_corrected"""
+def get_eval_score(result_path, model):
+    """model=gpt_corrected or mixtral_corrected"""
+    
+    # Read the results.json file
+    with open(result_path, 'r') as json_file:
+        res_data = json.load(json_file)
     
     with open(path+f"common_ques_{model}.json", "r") as f:
         cq_data = json.load(f)
@@ -44,6 +48,7 @@ def get_eval_score(res_data, model):
     cq_ref_claim_list = [j["ref_claim"] for j in cq_data]
     
     score_list = []
+    output_list = []
     for i, elem in enumerate(res_data):
         idx = cq_ref_claim_list.index(elem["claim_ref"])
         for cq in cq_data[idx]["common_ques"]:
@@ -53,25 +58,35 @@ def get_eval_score(res_data, model):
             score = evaluate_target_sent_by_common_ques(claim=claim)
             if score != -1:
                 score_list.append(score)
+                
+            output_list.append({**claim, **{"score": score}})
         
         print(f"model: {model}, claim: {i} done")
     
-    return sum(score_list)/len(score_list)
+    avg_score = sum(score_list)/len(score_list)
+    output_list.append({"cq_score_sum": sum(score_list), "cq_count": len(score_list)})
+    output_list.append({"cq_correctness_avg": avg_score})
+    
+    target_sent_model = "_".join(result_path.split("_")[-3:])
+    with open(path+f"cq_by_{model}_{target_sent_model}", 'w') as json_file:
+        json.dump(output_list, json_file, indent=4)
+        
+    return avg_score
 
 if __name__ == "__main__":
-        
-    # Read the results.json file
-    with open("/root/RnD_Project/outputs/mixtral_zero_shot/1/outputs_0_100/results.json", 'r') as json_file:
-        res_data_1 = json.load(json_file)
-    with open("/root/RnD_Project/outputs/mixtral_zero_shot/1/outputs_100_200/results.json", 'r') as json_file:
-        res_data_2 = json.load(json_file)
     
-    res_data = res_data_1 + res_data_2 
+    cq_model = ["gpt_corrected", "mixtral_corrected"]
+    target_sent_model = ["gpt_zero_shot", "gpt_one_shot", "gpt_three_shot", "gpt_few_shot",
+                         "mixtral_zero_shot", "mixtral_one_shot", "mixtral_three_shot", "mixtral_few_shot"]
     
-    mixtral_score = get_eval_score(res_data=res_data, model="mixtral_corrected")
-    # gpt_score = get_eval_score(res_data=res_data, model="gpt")
+    result_path_list = []
+    for i in target_sent_model:
+        result_path_list.append(f"/root/RnD_Project/outputs/comparison_mixtral_gpt/results_{i}.json")
     
-    print(f"mixtral_score: {mixtral_score}")
+    for i in cq_model:
+        for j in result_path_list:
+            cq_score = get_eval_score(result_path=j, model=i)
+            print(f"cq_score for cq_model: {i} and target_sent_model: {j} is: {cq_score}")
   
     
     

@@ -37,7 +37,7 @@ You said: {claim}
 To verify it,
 """.strip()
 
-TARGET_SENT_GEN_PROMPT_WITH_LOCATION_mixtral8x7b = """You will modify the things that I said. I will give you a reference sentence and target location. You will re-write the factually correct target sentence corresponding to an entity from the target location.
+TARGET_SENT_GEN_PROMPT_WITH_LOCATION_FEW_SHOT_mixtral8x7b = """You will modify the things that I said. I will give you a reference sentence and target location. You will re-write the factually correct target sentence corresponding to an entity from the target location.
 For example:
 
 My reference sentence: The Eiffel Tower is a wrought-iron lattice tower on the Champ de Mars in Paris, France. It is named after the engineer Gustave Eiffel, whose company designed and built the tower from 1887 to 1889.
@@ -87,6 +87,46 @@ Target location: West Bengal
 The target sentence for the target location and the reasons generated are:
 Target sentence: The Howrah Bridge is a cantilever bridge spanning the Hooghly River, the wide river that flows through West Bengal and connects the cities of Howrah and Kolkata.
 Reason: The equivalent target entity of the reference entity 'Golden Gate Bridge' corresponding to target location 'West Bengal' is 'Howrah Bridge' under the catgory 'Infrastructure'. The choice of target entity is reasonable because (a) The target sentence aligns with West Bengal as it features the Howrah Bridge, a significant infrastructure landmark in the region, akin to the Golden Gate Bridge's prominence in San Francisco, (b) Both bridges serve as vital transportation links, connecting populous areas and facilitating the movement of people and goods, thus contributing to the economic and social development of their respective regions.
+
+My reference sentence: {claim}
+Target location: {location}
+The target sentence for the target location and the reasons generated are:
+""".strip()
+
+TARGET_SENT_GEN_PROMPT_WITH_LOCATION_ONE_SHOT_mixtral8x7b = """You will modify the things that I said. I will give you a reference sentence and target location. You will re-write the factually correct target sentence corresponding to an entity from the target location.
+For example:
+
+My reference sentence: Rishi Sunak is a British politician who has served as Prime Minister of the United Kingdom and Leader of the Conservative Party since 2022.
+Target location: India
+The target sentence for the target location and the reasons generated are:
+Target sentence: Narendra Modi is an Indian politician who has served as Prime Minister of India and leader of the Bharatiya Janata Party since 2014.
+Reason: The equivalent target entity of the reference entity 'Rishi Sunak' corresponding to target location 'India' is 'Narendra Modi' under the category 'Political figure'. The choice of target entity is reasonable because (a) Both Rishi Sunak and Narendra Modi are prominent political figures who hold positions of significant power and influence in their respective countries. Sunak serves as Prime Minister of the United Kingdom, while Modi holds the position of Prime Minister in India, (b) Both politicians are affiliated with major political parties in their countries. Rishi Sunak is a member of the Conservative Party in the UK, while Narendra Modi is associated with the Bharatiya Janata Party (BJP) in India.
+
+My reference sentence: {claim}
+Target location: {location}
+The target sentence for the target location and the reasons generated are:
+""".strip()
+
+TARGET_SENT_GEN_PROMPT_WITH_LOCATION_THREE_SHOT_mixtral8x7b = """You will modify the things that I said. I will give you a reference sentence and target location. You will re-write the factually correct target sentence corresponding to an entity from the target location.
+For example:
+
+My reference sentence: Rishi Sunak is a British politician who has served as Prime Minister of the United Kingdom and Leader of the Conservative Party since 2022.
+Target location: India
+The target sentence for the target location and the reasons generated are:
+Target sentence: Narendra Modi is an Indian politician who has served as Prime Minister of India and leader of the Bharatiya Janata Party since 2014.
+Reason: The equivalent target entity of the reference entity 'Rishi Sunak' corresponding to target location 'India' is 'Narendra Modi' under the category 'Political figure'. The choice of target entity is reasonable because (a) Both Rishi Sunak and Narendra Modi are prominent political figures who hold positions of significant power and influence in their respective countries. Sunak serves as Prime Minister of the United Kingdom, while Modi holds the position of Prime Minister in India, (b) Both politicians are affiliated with major political parties in their countries. Rishi Sunak is a member of the Conservative Party in the UK, while Narendra Modi is associated with the Bharatiya Janata Party (BJP) in India.
+
+My reference sentence: James Cameron is a Canadian filmmaker and screenwriter, renowned for his contributions to the world of Hollywood cinema. He is widely regarded as one of the most influential directors in the film industry, having helmed several blockbuster hits and groundbreaking projects. Cameron's illustrious career includes directing some of the highest-grossing films in cinematic history, such as "Titanic" and "Avatar", both of which shattered box office records and garnered critical acclaim worldwide. He is particularly celebrated for his pioneering work in pushing the boundaries of technology and visual effects in filmmaking.
+Target location: Telengana
+The target sentence for the target location and the reasons generated are:
+Target sentence: S. S. Rajamouli is an Indian director and screenwriter, known for his work in Telugu industry based in Telengana, India. He is considered one of the leading filmmakers in the Indian film industry, having directed some of the highest-grossing Indian films of all time. His most notable works include the "Telugu-language fantasy action film series", Baahubali and RRR which broke several box office records and gained international recognition.
+Reason: The equivalent target entity of the reference entity 'James Cameron' corresponding to target location 'Telengana' is 'S. S. Rajamouli' under the category 'Director'. The choice of target entity is reasonable because (a) Both directors have directed blockbuster hits and groundbreaking projects that have achieved immense popularity and critical acclaim, (b) Both directors have a similar gender, being male filmmakers, which adds to the parallelism between the two entities.
+
+My reference sentence: "Amazon" is a multinational technology company headquartered in Seattle, Washington. Founded by Jeff Bezos in 1994, it began as an online marketplace for books but has since expanded into various other product categories, including electronics, clothing, and groceries. With its vast selection of goods, convenient shopping experience, and innovative services like Amazon Prime, it has become one of the largest and most influential e-commerce platforms in the world.
+Target location: Bengaluru
+The target sentence for the target location and the reasons generated are:
+Target sentence: "Flipkart" is an Indian e-commerce company headquartered in Bengaluru, Karnataka. Founded by Sachin Bansal and Binny Bansal in 2007, it started as an online bookstore before diversifying into a wide range of product categories, including electronics, fashion, and home goods. With its user-friendly interface, extensive product offerings, and competitive pricing, Flipkart has emerged as one of India's leading e-commerce platforms, revolutionizing the way millions of people shop online in the country.
+Reason: The equivalent target entity of the reference entity 'Amazon' corresponding to target location 'Bengaluru' is 'Flipkart' under the catgory 'E-commerce'. The choice of target entity is reasonable because (a) The target sentence is fitting for Bengaluru because Flipkart, like Amazon, is a prominent e-commerce platform with its headquarters in the city, contributing to the region's reputation as a hub for technology and innovation, (b) Both companies have experienced significant growth and success, transforming the way people shop online and establishing themselves as key players in the global e-commerce industry.
 
 My reference sentence: {claim}
 Target location: {location}
