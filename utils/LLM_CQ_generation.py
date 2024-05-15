@@ -49,8 +49,9 @@ def run_common_question_generation(
     
     llm_input = prompt[0].format(claim=claim).strip()
     response = prompt_model(model = llm, prompt = llm_input)
-    print(response)
+
     ques_list = response.split("\n")
+    ques_list = [i for i in ques_list if "Q:" in i]
     
     out_list = []
     for i in ques_list:

@@ -11,7 +11,8 @@ import os, time
 import json
 from prompts import rarr_prompts
 from utils import (
-    chatgpt_prompt
+    chatgpt_prompt,
+    LLM_CQ_generation
 )
 import pandas as pd
 
@@ -35,7 +36,7 @@ def evaluate_target_sent_by_common_ques(claim):
     return score
 
 def get_eval_score(res_data, model):
-    """model=mixtral or gpt"""
+    """model=mixtral or gpt or mixtral_corrected"""
     
     with open(path+f"common_ques_{model}.json", "r") as f:
         cq_data = json.load(f)
@@ -60,17 +61,17 @@ def get_eval_score(res_data, model):
 if __name__ == "__main__":
         
     # Read the results.json file
-    with open("/root/RnD_Project/outputs/chatgpt3.5_zero_shot/1/outputs_0_100/results.json", 'r') as json_file:
+    with open("/root/RnD_Project/outputs/mixtral_zero_shot/1/outputs_0_100/results.json", 'r') as json_file:
         res_data_1 = json.load(json_file)
-    with open("/root/RnD_Project/outputs/chatgpt3.5_zero_shot/1/outputs_100_200/results.json", 'r') as json_file:
+    with open("/root/RnD_Project/outputs/mixtral_zero_shot/1/outputs_100_200/results.json", 'r') as json_file:
         res_data_2 = json.load(json_file)
     
     res_data = res_data_1 + res_data_2 
     
-    mixtral_score = get_eval_score(res_data=res_data, model="mixtral")
-    gpt_score = get_eval_score(res_data=res_data, model="gpt")
+    mixtral_score = get_eval_score(res_data=res_data, model="mixtral_corrected")
+    # gpt_score = get_eval_score(res_data=res_data, model="gpt")
     
-    print(f"mixtral_score: {mixtral_score}, gpt_score: {gpt_score}")
+    print(f"mixtral_score: {mixtral_score}")
   
     
     

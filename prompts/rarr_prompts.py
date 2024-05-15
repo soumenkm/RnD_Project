@@ -306,7 +306,12 @@ Reason: <fill_your_answer_here>
 # Common questions:
 # """.strip()
 
-COMMON_QUESTION_GEN_PROMPT_mixtral8x7b = """You are tasked with generating basic questions from a given sentence. The questions should be free from specific details such as locations, timings, or unique identifiers connected to the event or entity. The goal is to create general questions that can be asked in any target location such that we can obtain an entity similar to the reference entity from the target location. Do not include this prompt in your response. Only provide the string which starts with 'Q:' followed by questions and separated by new line characters '\n'. For example:
+COMMON_QUESTION_GEN_PROMPT_mixtral8x7b = """You are tasked with generating basic questions from a given sentence. The questions should be free from specific details such as locations, timings, or unique identifiers connected to the event or entity. The goal is to create general questions that can be asked in any target location such that we can obtain an entity similar to the reference entity from the target location. Do not include this prompt or the given sentence in your response. Only provide the response string which starts with 'Q:' followed by questions and separated by new line characters '\n' for multiple questions. Your response should look like this:
+
+Q: <question1>
+Q: <question2>
+
+For more understanding consider few input and output examples:
 
 Sentence: Poshmark is a social commerce marketplace where users can buy and sell new and secondhand fashion, home goods, and electronics. The platform has over 80 million users, with over 200M available listings. The company is headquartered in Redwood City, California, with offices in Canada, Australia, and India. The company operates as an independent subsidiary of Naver Corporation since January 2023.
 Common questions:

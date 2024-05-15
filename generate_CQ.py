@@ -11,7 +11,8 @@ import os, time
 import json
 from prompts import rarr_prompts
 from utils import (
-    chatgpt_prompt
+    chatgpt_prompt,
+    LLM_CQ_generation
 )
 import pandas as pd
 
@@ -39,7 +40,7 @@ def generate_common_question_by_gpt(claim):
     
     return out_list
 
-def get_common_question_by_mixtral(eval_data_file_path):
+def get_common_question_by_mixtral_corrected(eval_data_file_path):
     
     eval_data_df = pd.read_csv(eval_data_file_path)
     eval_data = []
@@ -64,9 +65,32 @@ def get_common_question_by_mixtral(eval_data_file_path):
     
     return eval_data
 
-if __name__ == "__main__":
+def get_common_question_by_mixtral(eval_data_file_path):
     
-    eval_data_file_path = "/root/RnD_Project/inputs/revised_final_dataset_200.csv"
+    eval_data_df = pd.read_csv(eval_data_file_path)
+    eval_data = []
+    for i in range(eval_data_df.shape[0]):
+        ref_sent = eval_data_df.loc[i, "Reference Sentence"]
+        
+        if str(ref_sent).lower() != "nan":
+            
+            common_ques_list = LLM_CQ_generation.run_common_question_generation(
+                claim=ref_sent,
+                model="mixtral8x7b",
+                prompt=[rarr_prompts.COMMON_QUESTION_GEN_PROMPT_mixtral8x7b,
+                        rarr_prompts.CHECK_IF_COMMON_QUESTION_PROMPT_mixtral8x7b])
+                    
+            elem_dict = {"ref_claim": ref_sent,
+                "common_ques": common_ques_list}
+            eval_data.append(elem_dict)
+            print(f"CQ for {i} is generated.")
+        else:
+            continue
+    
+    return eval_data
+
+def get_common_question_by_gpt(eval_data_file_path):
+    
     eval_data_df = pd.read_csv(eval_data_file_path)
     eval_data = []
     for i in range(eval_data_df.shape[0]):
@@ -86,12 +110,28 @@ if __name__ == "__main__":
         common_ques_gpt.append(res_dict)
         print(f"CQ for {i} is generated.")
     
-    common_ques_mixtral = get_common_question_by_mixtral(eval_data_file_path=eval_data_file_path)
+    return common_ques_gpt
     
-    with open(path+"common_ques_gpt.json", 'w') as json_file:
-        json.dump(common_ques_gpt, json_file, indent=4)
-    with open(path+"common_ques_mixtral.json", 'w') as json_file:
-        json.dump(common_ques_mixtral, json_file, indent=4)
+if __name__ == "__main__":
+    
+    eval_data_file_path = "/root/RnD_Project/inputs/revised_final_dataset_200.csv"
+    model = "mixtral"
+    
+    if model=="gpt":
+        common_ques_gpt = get_common_question_by_gpt(eval_data_file_path=eval_data_file_path)
+        with open(path+"common_ques_gpt.json", 'w') as json_file:
+            json.dump(common_ques_gpt, json_file, indent=4)
+        
+    elif model=="mixtral":
+        common_ques_mixtral = get_common_question_by_mixtral(eval_data_file_path=eval_data_file_path)
+        with open(path+"common_ques_mixtral.json", 'w') as json_file:
+            json.dump(common_ques_mixtral, json_file, indent=4)
+    
+    elif model=="mixtral_corrected":
+        common_ques_mixtral_corrected = get_common_question_by_mixtral_corrected(eval_data_file_path=eval_data_file_path)
+        with open(path+"common_ques_mixtral_corrected.json", 'w') as json_file:
+            json.dump(common_ques_mixtral_corrected, json_file, indent=4)
+        
     
     
     
