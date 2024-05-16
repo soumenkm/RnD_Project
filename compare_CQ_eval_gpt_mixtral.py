@@ -20,7 +20,7 @@ path = "/root/RnD_Project/outputs/comparison_mixtral_gpt/"
 
 def evaluate_target_sent_by_common_ques(claim):
     
-    prompt = rarr_prompts.EVAL_BY_SINGLE_COMMON_QUES_PROMPT
+    prompt = rarr_prompts.EVAL_BY_SINGLE_COMMON_QUES_PROMPT_2
     prompt = prompt.format(target_location=claim["target_location"],
                            target_claim=claim[f"target_claim"],
                            common_ques=claim["common_ques"])
@@ -75,9 +75,9 @@ def get_eval_score(result_path, model):
 
 if __name__ == "__main__":
     
-    cq_model = ["gpt_corrected", "mixtral_corrected"]
-    target_sent_model = ["gpt_zero_shot", "gpt_one_shot", "gpt_three_shot", "gpt_few_shot",
-                         "mixtral_zero_shot", "mixtral_one_shot", "mixtral_three_shot", "mixtral_few_shot"]
+    cq_model = ["mixtral_corrected"]
+    target_sent_model = ["gpt_zero_shot", "gpt_three_shot",
+                         "mixtral_zero_shot", "mixtral_three_shot"]
     
     result_path_list = []
     for i in target_sent_model:

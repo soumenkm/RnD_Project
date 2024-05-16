@@ -864,6 +864,29 @@ Common question: {common_ques}
 For the above target sentence, target location and common question, the score would be:
 """.strip()
 
+EVAL_BY_SINGLE_COMMON_QUES_PROMPT_2 = """Suppose I will give you a target sentence, target location and a common question. Your task is to verify whether the answer to the common question in the context of the target location contained in the target sentence? Note that there could be multiple correct answers to a common question in the context of the target location. If you think that the target sentence contains the answer for this common question in the context of target location then assign a score of 1 and else assign the score of 0. Do not include this prompt in your response. Only provide the string which starts with 'Score:' followed by just a single binary score either 1 or 0 and NOTHING ELSE. You must provide only ONE binary score for the question. For example:
+
+Target sentence: IndiGo is a major Indian low-cost airline headquartered in Gurgaon, Haryana, India. IndiGo operates scheduled flights throughout India, Middle East, Asia, Southeast Asia, and Europe.
+Target location: India
+Common question: "What is the name of a major low cost airline?"
+Score: 1
+
+Target sentence: Funtasia Water Park is a water park in Patna. The company currently operates a single location in Patna.
+Target location: Patna
+Common question: "Can you give an example of an amusement park which is located in the state capital?"
+Score: 1
+
+Target sentence: Awarded during the Indian Sports Honors, the Arjuna Award is considered to be the second most prestigious individual prize in sports.
+Target location: India
+Common question: "What is considered the highest individual prize in a sport?"
+Score: 0
+
+Target sentence: {target_claim}
+Target location: {target_location}
+Common question: {common_ques}
+For the above target sentence, target location and common question, the score would be:
+""".strip()
+
 
 SINGLE_EDITOR_PROMPT = """This task involves processing a claim by attributing it based on a set of evidences. The aim is to refine the initial claim into an attributed claim that incorporates insights from all provided evidences.
 
