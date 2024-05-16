@@ -133,6 +133,34 @@ Target location: {location}
 The target sentence for the target location and the reasons generated are:
 """.strip()
 
+TARGET_SENT_GEN_PROMPT_2_WITH_LOCATION_THREE_SHOT_mixtral8x7b = """You will modify the things that I said. I will give you a reference sentence and target location. You will re-write the factually correct target sentence corresponding to an entity from the target location.
+For example:
+
+My reference sentence: Starbucks Corporation is an American multinational chain of coffeehouses and roastery reserves headquartered in Seattle, Washington. It was founded in 1971 and is currently the world's largest coffeehouse chain. As of November 2022, the company had 35,711 stores in 80 countries, 15,873 of which were located in the United States. Of Starbucks' U.S.-based stores, over 8,900 are company-operated, while the remainder are licensed.
+Target location: India
+The target sentence for the target location and the reasons generated are:
+Target sentence: Cafe Coffee Day is an Indian multinational chain of coffeehouses headquartered in Bengaluru, Karnataka. It was founded in 1996, and is currently one of the largest coffeehouse chains in India. As of November 2022, the company had over 2,500 stores across the country. Of Cafe Coffee Day's stores in India, over 2,000 are company-operated, while the remainder are licensed.
+Reason: The equivalent target entity of the reference entity 'Starbucks Corporation' corresponding to target location 'India' is 'Cafe Coffee Day' under the category 'Multinational chain of coffeehouses'. The choice of target entity is reasonable because (a) Both Starbucks Corporation and Cafe Coffee Day are prominent coffeehouse chains that operate on a multinational level. Starbucks is an American chain, while Cafe Coffee Day is an Indian chain. (b) Both companies have a significant number of stores in their respective countries. Starbucks has a substantial presence in the United States, while Cafe Coffee Day has a widespread presence in India.
+
+My reference sentence: Dr. James Andrews is an American orthopedic surgeon. He is a surgeon for knee, elbow, and shoulder injuries and is a specialist in repairing damaged ligaments.
+Target location: Mumbai
+The target sentence for the target location and the reasons generated are:
+Target sentence: Dr. Pradeep Sharma is a renowned orthopedic surgeon based in Mumbai. He specializes in treating knee, elbow, and shoulder injuries and is well-known for his expertise in repairing damaged ligaments.
+Reason: The equivalent target entity of the reference entity 'Dr. James Andrews' corresponding to the target location 'Mumbai' is 'Dr. Pradeep Sharma' under the category 'Orthopedic Surgeon'. The choice of target entity is reasonable because: (a) Both Dr. James Andrews and Dr. Pradeep Sharma are renowned orthopedic surgeons known for their expertise in treating knee, elbow, and shoulder injuries. This parallel ensures that the target entity maintains the same professional focus and reputation as the reference entity. (b) Dr. James Andrews is well-known in the United States for his specialization in repairing damaged ligaments, and Dr. Pradeep Sharma holds a similar reputation in Mumbai, India. This localization ensures the target sentence remains factually accurate and contextually relevant.
+
+My reference sentence: Johns Hopkins University is a private research university in Baltimore, Maryland. Founded in 1876, Johns Hopkins was the first U.S. university based on the European research institution model.
+Target location: Karnataka
+The target sentence for the target location and the reasons generated are:
+Target sentence: The Indian Institute of Science is a prestigious research university located in Bangalore, India. Established in 1909, the Indian Institute of Science was the first Indian university based on the European research institution model.
+Reason: The equivalent target entity of the reference entity 'Johns Hopkins University' corresponding to the target location 'Karnataka' is 'The Indian Institute of Science' under the category 'Research University'. The choice of target entity is reasonable because: (a) Both Johns Hopkins University and the Indian Institute of Science (IISc) are prestigious research universities renowned for their contributions to science and education. This ensures that the target entity maintains the same level of academic excellence and research focus as the reference entity. (b) Johns Hopkins University was the first U.S. university based on the European research institution model, and similarly, the Indian Institute of Science was the first Indian university to adopt this model. This parallel highlights the pioneering role both institutions played in their respective countries' higher education systems.
+
+My reference sentence: {claim}
+Target location: {location}
+The target sentence for the target location and the reasons generated are:
+""".strip()
+
+
+
 VERIFY_TARGET_ENTITY_PROMPT_mixtral8x7b = """In this task, you will be provided with a reference sentence containing a reference entity and a target sentence containing a target entity. The reference entities have been adapted to the target entities based on the target location. Your task is to verify the factual accuracy of the target entities in the target sentence corresponding to the target location. If the target entity is not attributed to the target location, you will reject it. However, if the target entity belongs to the target location, you must consider other factors such as cultural influences, biases, popularity, gender, and personal characteristics before accepting or rejecting the entity. Ensure that the accepted target entity aligns appropriately with the target location and meets the criteria provided. Do not change the target sentence if the decision is 'Accepted'.
 For example:
 
@@ -262,6 +290,19 @@ The questions in the context of target sentence and target location are as follo
 """.strip()
 
 TARGET_SENT_GEN_PROMPT_WITH_LOCATION_ZERO_SHOT_mixtral8x7b = """You are a localization assistant. Convert the reference entity sentence from English to the Indian domain by replacing the source entity with the target entity. Make the needed modifications in the sentence to make it factually correct for the target entity. Output answers in English using multi-entity localization. Use the below format.
+
+My reference sentence: <reference claim>
+Target location: <target_location>
+Target sentence: <localized target sent>
+Reason: <reason for the localization>.
+
+My reference sentence: {claim}
+Target location: {location}
+Target sentence: <fill_your_answer_here>
+Reason: <fill_your_answer_here>
+""".strip()
+
+TARGET_SENT_GEN_PROMPT_2_WITH_LOCATION_ZERO_SHOT_mixtral8x7b = """As a localization assistant, your role is to adapt sentences from English to suit the Indian domain. For each sentence provided, identify the source entity and replace it with an appropriate target entity relevant to the Indian context as per the target location. Additionally, make any necessary modifications to the sentence to ensure it remains factually correct after the change. Your answers should be in English and utilize multi-entity localization. Use the format outlined below to present your responses.
 
 My reference sentence: <reference claim>
 Target location: <target_location>

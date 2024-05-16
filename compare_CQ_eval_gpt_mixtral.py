@@ -20,7 +20,7 @@ path = "/root/RnD_Project/outputs/comparison_mixtral_gpt/"
 
 def evaluate_target_sent_by_common_ques(claim):
     
-    prompt = rarr_prompts.EVAL_BY_SINGLE_COMMON_QUES_PROMPT_2
+    prompt = rarr_prompts.EVAL_BY_SINGLE_COMMON_QUES_PROMPT
     prompt = prompt.format(target_location=claim["target_location"],
                            target_claim=claim[f"target_claim"],
                            common_ques=claim["common_ques"])
@@ -68,7 +68,7 @@ def get_eval_score(result_path, model):
     output_list.append({"cq_correctness_avg": avg_score})
     
     target_sent_model = "_".join(result_path.split("_")[-3:])
-    with open(path+f"cq_by_{model}_{target_sent_model}", 'w') as json_file:
+    with open(path+f"cq_by_{model}_{target_sent_model}_target_sent_prompt_2", 'w') as json_file:
         json.dump(output_list, json_file, indent=4)
         
     return avg_score
@@ -81,7 +81,7 @@ if __name__ == "__main__":
     
     result_path_list = []
     for i in target_sent_model:
-        result_path_list.append(f"/root/RnD_Project/outputs/comparison_mixtral_gpt/results_{i}.json")
+        result_path_list.append(f"/root/RnD_Project/outputs/comparison_mixtral_gpt/results_{i}_target_sent_prompt_2.json")
     
     for i in cq_model:
         for j in result_path_list:

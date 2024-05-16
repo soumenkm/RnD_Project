@@ -89,9 +89,9 @@ if __name__ == "__main__":
         else:
             continue
     
-    shot = "ZERO_SHOT" # "ZERO_SHOT", "ONE_SHOT", "THREE_SHOT", "FEW_SHOT"
+    shot = "THREE_SHOT" # "ZERO_SHOT", "ONE_SHOT", "THREE_SHOT", "FEW_SHOT"
         
-    results_output_path = path_name + f"results_mixtral_{shot.lower()}.json"
-    prompt_name = f"TARGET_SENT_GEN_PROMPT_WITH_LOCATION_{shot}_mixtral8x7b"
+    results_output_path = path_name + f"results_mixtral_{shot.lower()}_target_sent_prompt_2.json"
+    prompt_name = f"TARGET_SENT_GEN_PROMPT_2_WITH_LOCATION_{shot}_mixtral8x7b"
     write_results_json(data, results_output_path, prompt_name)
 
