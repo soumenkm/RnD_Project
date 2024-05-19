@@ -12,7 +12,7 @@ import time
 from typing import List
 from llama_cpp import Llama
 sys.path.append("/root/RnD_Project/prompts")
-import rarr_prompts
+import rarr_prompts, dynamic_prompt_for_target_sent_gen
 
 def prompt_model(model, prompt):
     prompt = "[INST]" + prompt + "[/INST]"
@@ -68,9 +68,53 @@ def run_rarr_target_sentence_generation(
         print("Model not found!")
     
     llm_input = prompt.format(location=location, claim=claim).strip()
+    count_local = llm_input.count(location)
     response = prompt_model(model = llm, prompt = llm_input)
     target_sent, reason = parse_api_response(response.strip())
-    return target_sent, reason
+    return target_sent, reason, count_local
+
+def run_rarr_dynamic_target_sentence_generation(
+    claim: str,
+    model: str,
+    prompt: str,
+    location: str = None,
+) -> List[str]:
+    """Generates target sentence based on target location in a claim.
+
+    Given a piece of text (claim), we use Mixtral to generate target sentence.
+
+    Args:
+        claim: Text to generate questions off of.
+        model: Name of the OpenAI GPT-3 model to use.
+        prompt: The prompt template to query GPT-3 with.
+    Returns:
+        target sentence and reason
+    """
+    
+    if(model == "mixtral8x7b"):
+        llm = Llama(
+        model_path="/root/llama.cpp/models/mixtral-8x7b-instruct-v0.1.Q4_K_M.gguf",  
+        n_ctx=32768,  # The max sequence length to use - note that longer sequence lengths require much more resources
+        n_threads=8,            # The number of CPU threads to use, tailor to your system and the resulting performance
+        n_gpu_layers=35 ,        # The number of layers to offload to GPU, if you have GPU acceleration available
+        verbose=False
+        ) 
+    else:
+        print("Model not found!")
+    
+    llm_input = prompt.format(location=location, 
+        claim=claim,
+        dyn_ref_claim_1=dynamic_prompt_for_target_sent_gen.prompt_data[location]["dyn_ref_claim_1"],
+        dyn_ref_claim_2=dynamic_prompt_for_target_sent_gen.prompt_data[location]["dyn_ref_claim_2"],
+        dyn_tar_claim_1=dynamic_prompt_for_target_sent_gen.prompt_data[location]["dyn_tar_claim_1"],
+        dyn_tar_claim_2=dynamic_prompt_for_target_sent_gen.prompt_data[location]["dyn_tar_claim_2"],
+        dyn_reason_1=dynamic_prompt_for_target_sent_gen.prompt_data[location]["dyn_reason_1"],
+        dyn_reason_2=dynamic_prompt_for_target_sent_gen.prompt_data[location]["dyn_reason_2"]).strip()
+    
+    count_local = llm_input.count(location)
+    response = prompt_model(model = llm, prompt = llm_input)
+    target_sent, reason = parse_api_response(response.strip())
+    return target_sent, reason, count_local
 
 def run_rarr_target_sentence_regeneration(
     claim: str,
@@ -129,10 +173,10 @@ if __name__ == "__main__":
     location = data[claim_id]["input_info"]["location"]
 
     t1 = time.time()
-    target_sent, reason = run_rarr_target_sentence_generation(
+    target_sent, reason = run_rarr_dynamic_target_sentence_generation(
         claim=claim,
         model="mixtral8x7b",
-        prompt=rarr_prompts.TARGET_SENT_GEN_PROMPT_WITH_LOCATION_mixtral8x7b,
+        prompt=dynamic_prompt_for_target_sent_gen.TARGET_SENT_GEN_PROMPT_WITH_LOCATION_TWO_SHOT_mixtral8x7b,
         location=location)
     t2 = time.time()
     print(f"Claim: {claim_id}, Target sentence generation module is run in {(t2-t1)/60:.2f} mint")

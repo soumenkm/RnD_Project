@@ -1,0 +1,1002 @@
+[
+    {
+        "claim_id": 0,
+        "claim_ref": "Verso Skincare is a Swedish beauty brand. Verso Skincare provides skincare products that are cruelty free and vegan. The brand offers products to combat anti-aging,",
+        "location": "Bengaluru",
+        "hyperlocal score": 3,
+        "model": "mixtral8x7b",
+        "claim_target": "Just Herbs is an Indian beauty brand based in Bengaluru that provides skincare products made with natural and organic ingredients. The brand offers products that are free from harmful chemicals, animal-cruelty free, and suitable for vegetarians.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Verso Skincare' corresponding to the target location 'Bengaluru' is 'Just Herbs' under the category 'Beauty brand'. The choice of target entity is reasonable because (a) both Verso Skincare and Just Herbs are beauty brands that focus on providing skincare products with natural and organic ingredients, (b) both brands prioritize ethical and sustainable practices, such as being cruelty-free and suitable for vegetarians, (c) Just Herbs is based in Bengaluru, making it a relevant target entity for the given location.",
+        "num_location_in_prompt": 6
+    },
+    {
+        "claim_id": 1,
+        "claim_ref": "The Pursuit of Happyness is a 2006 American biographical drama film directed by Gabriele Muccino and starring Will Smith as Chris Gardner, a homeless salesman. Smith's son, Jaden Smith, co-stars, making his film debut as Gardner's son, Christopher Jr.",
+        "location": "Tamil Nadu",
+        "hyperlocal score": 2,
+        "model": "mixtral8x7b",
+        "claim_target": "Nan Mahan Alla is a 2005 Indian Tamil-language drama film directed by Santosh Sivan and starring R. Madhavan as Raja, a poor rickshaw puller. Madhavan's daughter, Saranya Madhavan, co-stars, making her acting debut as Raja's daughter, Rani.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'The Pursuit of Happyness' corresponding to target location 'Tamil Nadu' is 'Nan Mahan Alla' under the category 'Film'. The choice of target entity is reasonable because (a) Both 'The Pursuit of Happyness' and 'Nan Mahan Alla' are films about male protagonists who face significant challenges in their lives and work towards providing a better future for their children, (b) Both films feature well-known actors in lead roles (Will Smith in 'The Pursuit of Happyness' and R. Madhavan in 'Nan Mahan Alla') who have made significant contributions to their respective film industries, (c) Both films highlight the struggles of their respective characters in different settings,",
+        "num_location_in_prompt": 8
+    },
+    {
+        "claim_id": 2,
+        "claim_ref": "MannKind Corporation is a biopharmaceutical company focusing on the discovery, development, and commercialization of therapeutic products for diseases such as diabetes and pulmonary arterial hypertension. ",
+        "location": "Mumbai",
+        "hyperlocal score": 3,
+        "model": "mixtral8x7b",
+        "claim_target": "Glenmark Pharmaceuticals Limited is a research-based pharmaceutical company focusing on the discovery, development, and commercialization of therapeutic products for various therapeutic areas, including diabetes, cardiovascular diseases, respiratory disorders, and dermatology.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'MannKind Corporation' corresponding to target location 'Mumbai' is 'Glenmark Pharmaceuticals Limited' under the category 'Biopharmaceutical/Pharmaceutical company'. The choice of target entity is reasonable because (a) Both MannKind Corporation and Glenmark Pharmaceuticals Limited are companies engaged in the research, development, and commercialization of pharmaceutical products for various therapeutic areas, (b) Both companies have a global presence, with MannKind Corporation based in the United States and Glenmark Pharmaceuticals Limited headquartered in Mumbai, India, showcasing their commitment to addressing healthcare needs in their respective regions and beyond, (c) Both entities contribute significantly to their respective domestic markets, with MannKind focusing on diabetes and pulmonary arterial hypertension treatments, while Glenmark offers products for a wide range of ther",
+        "num_location_in_prompt": 9
+    },
+    {
+        "claim_id": 3,
+        "claim_ref": "Rafi Bastos is a Brazilian comedian, actor, journalist and Youtuber.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "model": "mixtral8x7b",
+        "claim_target": "Kapil Sharma is an Indian comedian, actor, TV host, and producer.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Rafi Bastos' corresponding to target location 'India' is 'Kapil Sharma' under the category 'Comedian'. The choice of target entity is reasonable because (a) Both Rafi Bastos and Kapil Sharma are well-known figures in their respective countries, recognized for their contributions to entertainment, (b) Both have diversified their careers in entertainment, working as comedians, actors, and television personalities, and (c) Kapil Sharma's popular TV show 'The Kapil Sharma Show' has gained significant recognition in India, similar to Rafi Bastos' work in Brazil.",
+        "num_location_in_prompt": 11
+    },
+    {
+        "claim_id": 4,
+        "claim_ref": "Unilever PLC is a British multinational fast-moving consumer goods company founded on 2 September 1929 following the merger of British soap maker Lever Brothers and Dutch margarine producer Margarine Unie. It is headquartered in London.\n",
+        "location": "Mumbai",
+        "hyperlocal score": 3,
+        "model": "mixtral8x7b",
+        "claim_target": "Hindustan Unilever Limited (HUL) is an Indian multinational fast-moving consumer goods company founded on 17 October 1933 as Lever Brothers India Limited following an agreement between Unilever and local Indian investors. It is headquartered in Mumbai.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Unilever PLC' corresponding to target location 'Mumbai' is 'Hindustan Unilever Limited (HUL)' under the category 'Indian multinational fast-moving consumer goods company'. The choice of target entity is reasonable because (a) Both Unilever PLC and HUL are part of the same multinational corporation, with Unilever PLC being the parent company and HUL being one of its many subsidiaries, (b) HUL, headquartered in Mumbai, serves as the Indian arm of Unilever PLC, making it a significant player in India's consumer goods market.",
+        "num_location_in_prompt": 9
+    },
+    {
+        "claim_id": 5,
+        "claim_ref": "JD.com, Inc., also known as Jingdong, formerly called 360buy, is a Chinese e-commerce company headquartered in Beijing. It is one of the two massive B2C online retailers in China by transaction volume and revenue, a member of the Fortune Global 500 and a major competitor to Alibaba-run Tmall.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "model": "mixtral8x7b",
+        "claim_target": "Flipkart Private Limited is an Indian e-commerce company headquartered in Bangalore, Karnataka, India. It is one of the two massive B2C online retailers in India by transaction volume and revenue, a prominent member of the NASSCOM Top 15 Tech Companies, and a major competitor to Amazon India.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'JD.com, Inc.' corresponding to target location 'India' is 'Flipkart Private Limited' under the category 'E-commerce company'. The choice of target entity is reasonable because (a) Both JD.com, Inc. and Flipkart Private Limited are leading e-commerce companies in their respective countries with significant market shares, (b) Both companies are major competitors to other global e-commerce giants in their respective markets, with JD.com, Inc. competing with Alibaba in China and Flipkart Private Limited competing with Amazon in India, (c) Flipkart's headquarters in Bangalore, Karnataka, India, further supports its status as a prominent Indian e-commerce company.",
+        "num_location_in_prompt": 11
+    },
+    {
+        "claim_id": 6,
+        "claim_ref": "China National Pharmaceutical Group Corporation, commonly referred to as Sinopharm, is a Chinese state-owned enterprise. The corporation was the indirect major shareholder of publicly traded companies Sinopharm Group, China Traditional Chinese Medicine, Shanghai Shyndec Pharmaceutical, and Beijing Tiantan Biological Products.\n",
+        "location": "Pune",
+        "hyperlocal score": 3,
+        "model": "mixtral8x7b",
+        "claim_target": "Glenmark Pharmaceuticals Ltd. is an Indian multinational pharmaceutical company based in Pune, Maharashtra, India. The company operates in more than 80 countries with a focus on key therapeutic areas, including dermatology, respiratory, and oncology.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'China National Pharmaceutical Group Corporation (Sinopharm)' corresponding to the target location 'Pune' is 'Glenmark Pharmaceuticals Ltd.' under the category 'Pharmaceutical company'. The choice of target entity is reasonable because (a) both are significant players in their respective national pharmaceutical industries, with Sinopharm being state-owned in China and Glenmark being a private limited company in India, (b) both companies have a global presence, operating in multiple countries, with Sinopharm being one of China's largest healthcare companies, and Glenmark being a prominent player in the global generics market with a strong focus on research and development (R&D).",
+        "num_location_in_prompt": 8
+    },
+    {
+        "claim_id": 7,
+        "claim_ref": "Nicholas James Vujicic is an Australian-American Christian evangelist and motivational speaker of Serbian descent. Vujicic has tetra-amelia syndrome, a disorder characterised by the absence of arms and legs.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "model": "mixtral8x7b",
+        "claim_target": "Sadhguru Jaggi Vasudev is an Indian yoga guru, mystic, and author who founded the Isha Foundation, a non-profit organization focused on spiritual growth and environmental conservation.",
+        "reason_for_target_sent": "The equivalent target entity of the reference person 'Nicholas James Vujicic' corresponding to target location 'India' is 'Sadhguru Jaggi Vasudev' under the category 'Motivational speaker and spiritual figure'. The choice of target entity is reasonable because (a) Both Vujicic and Sadhguru are influential motivational speakers and spiritual figures who have inspired millions around the world, (b) Both have unique life stories - Vujicic was born with tetra-amelia syndrome, while Sadhguru has spoken about his journey of self-discovery, and (c) Their backgrounds are different, but their impact on people's lives is significant, transcending geographical boundaries and cultures.",
+        "num_location_in_prompt": 11
+    },
+    {
+        "claim_id": 8,
+        "claim_ref": "The Union Pacific Railroad is a Class I freight-hauling railroad that operates 8,300 locomotives over 32,200 miles routes in 23 U.S. states west of Chicago and New Orleans.",
+        "location": "Haryana",
+        "hyperlocal score": 2,
+        "model": "mixtral8x7b",
+        "claim_target": "Indian Railways is a Class I freight-hauling railway network, operating over 11,000 locomotives on more than 67,000 miles of routes across India, including Haryana.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'The Union Pacific Railroad' corresponding to target location 'Haryana' is 'Indian Railways' under the category 'Freight-hauling railway network'. The choice of target entity is reasonable because (a) Both Union Pacific Railroad and Indian Railways are Class I rail networks with extensive operations, serving large regions across their respective countries, (b) Both are known for their freight services, operating thousands of locomotives over vast distances, providing crucial transportation infrastructure for their economies, (c) Indian Railways, headquartered in New Delhi, serves Haryana as one of its 28 states, making it a suitable equivalent for this specific target location.",
+        "num_location_in_prompt": 7
+    },
+    {
+        "claim_id": 9,
+        "claim_ref": "Pavlova is a meringue-based dessert. Originating in either Australia or New Zealand in the early 20th century, it was named after the Russian ballerina Anna Pavlova.",
+        "location": "Andhra Pradesh",
+        "hyperlocal score": 2,
+        "model": "mixtral8x7b",
+        "claim_target": "Bobbatlu, also known as Pootharekulu, is a popular meringue-based dessert in Andhra Pradesh, India. It is made using gram flour, jaggery, and ghee, often filled with coconut, peanuts, or lentils, and has been passed down through generations as a traditional sweet dish.",
+        "reason_for_target_sent": "The equivalent target entity of the reference dessert 'Pavlova' corresponding to target location 'Andhra Pradesh' is 'Bobbatlu/ Pootharekulu' under the category 'Meringue-based Dessert'. The choice of target entity is reasonable because (a) Both Pavlova and Bobbatlu/Pootharekulu are meringue-based desserts, with similar textures and ingredients, (b) Both desserts have historical significance in their respective cultures, with Pavlova originating in Australia or New Zealand and Bobbatlu/Pootharekulu being a traditional sweet dish in Andhra Pradesh, India, passed down through generations of local families.",
+        "num_location_in_prompt": 7
+    },
+    {
+        "claim_id": 10,
+        "claim_ref": "Cox Communications, Inc. is an American digital cable television provider, telecommunications and home automation services. It is the third-largest cable television provider in the United States, serving approximately 6.5 million customers, including 2.9 million digital cable subscribers, 3.5 million Internet subscribers, and almost 3.2 million digital telephone subscribers, making it the seventh-largest telephone carrier in the country. ",
+        "location": "India",
+        "hyperlocal score": 1,
+        "model": "mixtral8x7b",
+        "claim_target": "Jio Platforms Limited is an Indian digital services company, providing mobile telecommunications, broadband services, and digital services including digital payments, smart home solutions, and more. It is the largest mobile network operator in India, serving approximately 420 million subscribers, making it the third-largest mobile network operator in the world. Jio Platforms Limited also offers fiber-based broadband services to over 5 million users, and its digital services are used by around 200 million users across India.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Cox Communications, Inc.' corresponding to target location 'India' is 'Jio Platforms Limited' under the category 'Digital services provider'. The choice of target entity is reasonable because (a) Both Cox Communications and Jio Platforms Limited offer digital services, including telecommunications, internet, and home automation services, (b) Both companies are significant players in their respective countries, with Cox being one of the largest cable television providers in the US, while Jio Platforms Limited is the largest mobile network operator in India, (c) Both companies have a substantial user base, with Cox serving approximately 6.5 million",
+        "num_location_in_prompt": 11
+    },
+    {
+        "claim_id": 11,
+        "claim_ref": "Gimbap, also romanized as kimbap, is a Korean dish made from cooked rice, vegetables, fish, and meat rolled in gim- dried sheets of seaweed and served in bite-sized slices. The origins of gimbap are debated.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "model": "mixtral8x7b",
+        "claim_target": "Dosa, also known as dosa or thosai, is an Indian dish made from a fermented batter of lentils and rice, filled with various vegetables, spices, and occasionally meat or cheese. It is cooked on a flat griddle and served in wedge-shaped slices. The origins of dosa can be traced back to the Indian subcontinent, although there are debates about its exact origin within the region.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'gimbap' corresponding to target location 'India' is 'dosa' under the category 'Traditional dish'. The choice of target entity is reasonable because (a) both are popular dishes with unique flavors, ingredients, and preparation methods, (b) gimbap is a rolled dish, while dosa is a filled dish, showcasing different ways of serving, (c) dosa's origin can be traced back to the Indian subcontinent, making it a relevant target entity for the Indian context, even though there might be debates about its exact origin within the region, similar to gimbap.",
+        "num_location_in_prompt": 11
+    },
+    {
+        "claim_id": 12,
+        "claim_ref": "Gonzalo Peillat is an Argentine-German field hockey player who plays as a defender for German club Mannheimer HC and for the Germany national team. In 2015, Peillat was awarded the FIH 2014 Rising Star of the Year.",
+        "location": "Karnal",
+        "hyperlocal score": 3,
+        "model": "mixtral8x7b",
+        "claim_target": "Dilpreet Singh is an Indian field hockey player who plays as a forward for Indian club Punjab National Bank and for the Indian national team. In 2019, Singh was awarded the FIH Men's Young Player of the Year.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Gonzalo Peillat' corresponding to target location 'Karnal' is 'Dilpreet Singh' under the category 'Field Hockey Players'. The choice of target entity is reasonable because (a) Both Peillat and Singh are prominent field hockey players who have achieved success at the international level, playing as defenders and forwards for their respective clubs and national teams, (b) Both players have received prestigious awards for their outstanding performances in 2014 (Peillat with FIH Rising Star of the Year) and 2019 (Singh with FIH Men's Young Player of the Year) further emphasizing their exceptional talents in the sport, (c) The alignment with Karnal is established as Dilpreet Singh hails from Punjab, which shares proximity with Karnal, and Singh has made significant contributions to the sport at both",
+        "num_location_in_prompt": 0
+    },
+    {
+        "claim_id": 13,
+        "claim_ref": "The Brest European Short Film Festival is a film festival dedicated to short films, happening every year in Brest, in the Brittany region in France.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "model": "mixtral8x7b",
+        "claim_target": "The International Film Festival of India (IFFI) is a film festival dedicated to showcasing feature and short films, held annually in Goa, India.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Brest European Short Film Festival' corresponding to the target location 'India' is 'International Film Festival of India (IFFI)' under the category 'Film festival'. The choice of target entity is reasonable because (a) both are prestigious film festivals held annually in their respective countries, France and India, (b) while Brest European Short Film Festival focuses on short films, IFFI features both feature and short films, providing a platform for filmmakers to showcase their work and network with industry professionals.",
+        "num_location_in_prompt": 11
+    },
+    {
+        "claim_id": 14,
+        "claim_ref": "State Farm Insurance is a group of mutual insurance companies throughout the United States with corporate headquarters in Bloomington, Illinois. Founded in 1922, it is the largest property, casualty, and auto insurance provider in the United States.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "model": "mixtral8x7b",
+        "claim_target": "Life Insurance Corporation of India (LIC) is a group of public sector insurance companies in India, with corporate headquarters in Mumbai, Maharashtra. Incorporated in 1956, it is the largest life insurance company in India in terms of total revenue.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'State Farm Insurance' corresponding to target location 'India' is 'Life Insurance Corporation of India (LIC)' under the category 'Group of insurance companies'. The choice of target entity is reasonable because (a) Both State Farm Insurance and LIC are leading insurance providers in their respective countries, with State Farm being a major player in the United States, and LIC being central to India's insurance industry, (b) Both companies were founded around the same time, with State Farm in 1922 and LIC in 1956, and have grown to become significant players in their markets, contributing to their countries' financial sectors.",
+        "num_location_in_prompt": 11
+    },
+    {
+        "claim_id": 15,
+        "claim_ref": "Takashi Tachibana is a Japanese social activist, journalist, accountant and politician who is the founder and leader of the NHK Party.",
+        "location": "Kolkata",
+        "hyperlocal score": 3,
+        "model": "mixtral8x7b",
+        "claim_target": "Amitava Chakraborty is an Indian social activist, journalist, writer, and politician who is the founder and leader of the Kolkata-based \"People's Voice\" party.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Takashi Tachibana' corresponding to target location 'Kolkata' is 'Amitava Chakraborty' under the category 'Social activist, journalist, politician'. The choice of target entity is reasonable because (a) Both Takashi Tachibana and Amitava Chakraborty are prominent figures in social activism, journalism, and politics in their respective regions, (b) Both individuals have founded and lead their own political parties (NHK Party in Japan and People's Voice in Kolkata), allowing them to have significant influence over their respective political landscapes, (c) Their dedication to their causes, advocacy for transparency and accountability in their respective fields make them ideal target entities for this transformation.",
+        "num_location_in_prompt": 7
+    },
+    {
+        "claim_id": 16,
+        "claim_ref": "Alenka Puhar is a Slovenian journalist, author, translator, and historian. In 1982, she wrote a groundbreaking psychohistory-inspired book \"The Primal Text of Life\" about the 19th century social history of early childhood in Slovene Lands, then part of the Austro-Hungarian Empire.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "model": "mixtral8x7b",
+        "claim_target": "Nandita Haksar is an Indian author, lawyer, human rights activist, and lecturer. In 1984, she wrote a groundbreaking book \"Across the Himalayas: A Political Journey\" about the political history and the lives of people in the northeastern region of India.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Alenka Puhar' corresponding to target location 'India' is 'Nandita Haksar' under the category 'Author'. The choice of target entity is reasonable because (a) Both Alenka Puhar and Nandita Haksar are authors who have made significant contributions in their respective countries with groundbreaking books, (b) Their books deal with different subjects - Alenka Puhar's work focuses on early childhood in Slovene Lands during the 19th century, while Nandita Haksar's work explores the political history and lives of people in India's northeastern region, (c) Both individuals are accomplished professionals in their fields, with Alenka Puhar being a Slovenian journalist, author, translator, and historian, while Nandita H",
+        "num_location_in_prompt": 11
+    },
+    {
+        "claim_id": 17,
+        "claim_ref": "Malcolm Timothy Gladwell CM is an English-born Canadian journalist, author, and public speaker. He has been a staff writer for The New Yorker since 1996. He has published seven books.",
+        "location": "Delhi",
+        "hyperlocal score": 3,
+        "model": "mixtral8x7b",
+        "claim_target": "Arundhati Roy is an Indian author, essayist, and activist. She has been a prominent figure in Indian literature and politics since the publication of her debut novel, \"The God of Small Things,\" which won the Booker Prize in 1997. She has published several works of fiction, non-fiction, and essays.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Malcolm Timothy Gladwell' corresponding to target location 'Delhi' is 'Arundhati Roy' under the category 'Author and Activist'. The choice of target entity is reasonable because (a) Both Malcolm Gladwell and Arundhati Roy are accomplished authors known for their unique perspectives and writing styles, with Roy's debut novel earning critical acclaim and Gladwell's work as a staff writer for The New Yorker gaining international recognition, (b) Both individuals are not only writers but also public figures who engage in social and political commentary, contributing to public discourse in their respective countries and beyond.",
+        "num_location_in_prompt": 6
+    },
+    {
+        "claim_id": 18,
+        "claim_ref": "St Thomas' Hospital is a large NHS teaching hospital in Central London, England. It is one of the institutions that compose the King's Health Partners, an academic health science center.",
+        "location": "Kolkata",
+        "hyperlocal score": 3,
+        "model": "mixtral8x7b",
+        "claim_target": "SSKM Hospital is a large government teaching hospital in Central Kolkata, India. It is one of the institutions that comprise the West Bengal University of Health Sciences, an academic health science center.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'St Thomas' Hospital' corresponding to the target location 'Kolkata' is 'SSKM Hospital' under the category 'Large teaching hospital'. The choice of target entity is reasonable because (a) Both St Thomas' Hospital and SSKM Hospital are major medical institutions in their respective cities, serving as teaching hospitals and providing advanced medical care, (b) Both institutions are associated with academic health science centers, with St Thomas' Hospital being part of King's Health Partners in London and SSKM Hospital being associated with the West Bengal University of Health Sciences in Kolkata.",
+        "num_location_in_prompt": 7
+    },
+    {
+        "claim_id": 19,
+        "claim_ref": "The SLS Dubai Hotel & Residences is a luxurious property located in the Business Bay neighborhood of Dubai. It offers a range of amenities and services, including deep-tissue massages, spa, stunning views of the city and a rooftop nightlife venue.",
+        "location": "Bengaluru",
+        "hyperlocal score": 3,
+        "model": "mixtral8x7b",
+        "claim_target": "The Oberoi, Bengaluru is a luxurious property located in the heart of Bengaluru, offering world-class amenities and services such as spa treatments, fine dining, and breathtaking views of the city.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'The SLS Dubai Hotel & Residences' corresponding to target location 'Bengaluru' is 'The Oberoi, Bengaluru' under the category 'Luxurious Hotel'. The choice of target entity is reasonable because (a) Both The SLS Dubai Hotel & Residences and The Oberoi, Bengaluru are luxury hotels known for their exceptional amenities, services, and comfortable accommodations, (b) Both hotels offer world-class spa treatments, fine dining experiences, and stunning views of their respective cities, providing guests with unforgettable experiences during their stays.",
+        "num_location_in_prompt": 6
+    },
+    {
+        "claim_id": 20,
+        "claim_ref": "Starbucks Corporation is an American multinational chain of coffeehouses and roastery reserves headquartered in Seattle, Washington. It was founded in 1971 and is currently the world's largest coffeehouse chain.\n  As of November 2022, the company had 35,711 stores in 80 countries, 15,873 of which were located in the United States. Of Starbucks' U.S.-based stores, over 8,900 are company-operated, while the remainder are licensed.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "model": "mixtral8x7b",
+        "claim_target": "Cafe Coffee Day (CCD) is an Indian multinational chain of coffeehouses headquartered in Bengaluru, Karnataka. It was founded in 1996 and is currently one of the largest coffeehouse chains in India with over 1,700 outlets across the country.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Starbucks Corporation' corresponding to target location 'India' is 'Cafe Coffee Day (CCD)' under the category 'Multinational chain of coffeehouses'. The choice of target entity is reasonable because (a) Both Starbucks Corporation and Cafe Coffee Day are popular coffeehouse chains with significant national and international presence, (b) Cafe Coffee Day, being one of the largest coffeehouse chains in India, serves as a strong counterpart to Starbucks in the US, (c) Both companies were founded in 1971 (Starbucks) and 1996 (CCD) respectively, making them contemporaries in their respective markets, (d) The scale of their expansion, with Starbucks having 35,711 stores globally compared to CCD's",
+        "num_location_in_prompt": 11
+    },
+    {
+        "claim_id": 21,
+        "claim_ref": "Oracle Corporation\u00a0is an American multinational computer technology company\u00a0headquartered in Austin, Texas, United States. Oracle has offices in many countries including Australia, United Kingdom, Netherlands, Brazil, Germany, Denmark, India.",
+        "location": "Pune",
+        "hyperlocal score": 3,
+        "model": "mixtral8x7b",
+        "claim_target": "Wipro Limited is an Indian multinational corporation, headquartered in Bengaluru, Karnataka, India. Wipro has offices in many countries including the United States, United Kingdom, Australia, South Africa, and also has a significant presence in Pune, Maharashtra, India.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Oracle Corporation' corresponding to the target location 'Pune' is 'Wipro Limited' under the category 'Multinational corporation'. The choice of target entity is reasonable because (a) both Oracle Corporation and Wipro Limited are prominent multinational corporations, operating in multiple countries, providing technology solutions and services, (b) Oracle Corporation has offices in India, including Pune, and Wipro Limited, being an Indian corporation, has a significant presence in Pune with its extensive operations, research and development centers, and employee base in the city.",
+        "num_location_in_prompt": 8
+    },
+    {
+        "claim_id": 22,
+        "claim_ref": "Nestl\u00e9 S.A. is a Swiss multinational food and drink processing conglomerate corporation headquartered in Vevey, Switzerland. It has been the largest publicly held food company in the world, measured by revenue and other metrics, since 2014. ",
+        "location": "India",
+        "hyperlocal score": 1,
+        "model": "mixtral8x7b",
+        "claim_target": "Hindustan Unilever Limited (HUL) is an Indian multinational fast-moving consumer goods company headquartered in Mumbai, Maharashtra, India. It has been the largest publicly traded fast-moving consumer goods company in India, measured by revenue, since 2014.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Nestl\u00e9 S.A.' corresponding to target location 'India' is 'Hindustan Unilever Limited (HUL)' under the category 'Multinational fast-moving consumer goods company'. The choice of target entity is reasonable because (a) Both Nestl\u00e9 S.A. and HUL are leading companies in their respective countries, operating in the food and drink processing sector with significant global presence, (b) Both companies have consistently ranked as the largest publicly traded entities in their countries, measured by revenue, since 2014, demonstrating their economic dominance in their respective markets.",
+        "num_location_in_prompt": 11
+    },
+    {
+        "claim_id": 23,
+        "claim_ref": "Sanofi S.A. is a French multinational pharmaceutical and healthcare company headquartered in Paris, France. The corporation was established in 1973 and merged with Synth\u00e9labo in 1999 to form Sanofi-Synth\u00e9labo. ",
+        "location": "Ahmedabad",
+        "hyperlocal score": 2,
+        "model": "mixtral8x7b",
+        "claim_target": "Zydus Cadila is an Indian multinational pharmaceutical company headquartered in Ahmedabad, India. The corporation was established in 1952 and merged with Cadila Healthcare in 2009 to form Zydus Cadila.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Sanofi S.A.' corresponding to the target location 'Ahmedabad' is 'Zydus Cadila' under the category 'Pharmaceutical company'. The choice of target entity is reasonable because (a) Both Sanofi S.A. and Zydus Cadila are multinational pharmaceutical companies with a significant presence in their respective regions, (b) Both companies have a rich history, with Zydus Cadila being established in 1952, making it one of India's oldest pharmaceutical companies, and Sanofi S.A. being established in 1973 in France, (c) Both companies have expanded through mergers, with Sanofi merging with Synth\u00e9labo in 1999, and Zydus merging with Cadila Healthcare in 2009, further solid",
+        "num_location_in_prompt": 4
+    },
+    {
+        "claim_id": 24,
+        "claim_ref": "BNP Paribas is a multinational universal bank and financial services holding company headquartered in Paris, France. It was founded in 2000 from the merger of two of France's foremost financial institutions, Banque Nationale de Paris and Paribas.",
+        "location": "Mumbai",
+        "hyperlocal score": 2,
+        "model": "mixtral8x7b",
+        "claim_target": "HDFC Bank is a multinational banking and financial services company headquartered in Mumbai, India. It was established in 1994 as a subsidiary of Housing Development Finance Corporation (HDFC), one of India's leading housing finance companies.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'BNP Paribas' corresponding to target location 'Mumbai' is 'HDFC Bank' under the category 'Multinational banking and financial services company'. The choice of target entity is reasonable because (a) Both BNP Paribas and HDFC Bank are prominent financial institutions, serving as key players in their respective countries' financial sectors, (b) Both were founded through mergers of significant financial institutions, with BNP Paribas emerging from the merger of Banque Nationale de Paris and Paribas, while HDFC Bank started as a subsidiary of HDFC, and (c) Both companies have expanded beyond their domestic markets, conducting business in various countries around the world.",
+        "num_location_in_prompt": 9
+    },
+    {
+        "claim_id": 25,
+        "claim_ref": "Henry Wadsworth Longfellow was an American poet and educator. His original works include the poems \"Paul Revere's Ride\", \"The Song of Hiawatha\", and \"Evangeline\". ",
+        "location": "India",
+        "hyperlocal score": 1,
+        "model": "mixtral8x7b",
+        "claim_target": "Rabindranath Tagore was an Indian poet, musician, and educator who won the Nobel Prize in Literature in 1913. His original works include \"Gitanjali\", \"Gora\", and \"The Post Office\".",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Henry Wadsworth Longfellow' corresponding to target location 'India' is 'Rabindranath Tagore' under the category 'Poet and educator'. The choice of target entity is reasonable because (a) both were renowned figures in their respective countries, with Longfellow being a prominent poet in the United States and Tagore being the first non-European laureate of the Nobel Prize in Literature, (b) both authors contributed significantly to their national cultures, with Longfellow's works being deeply rooted in American history, and Tagore's creations encompassing poetry, music, and art, forming the foundation of Bengali literature and culture.",
+        "num_location_in_prompt": 11
+    },
+    {
+        "claim_id": 26,
+        "claim_ref": "Seventeen is a South Korean pop boy band formed by Pledis Entertainment. The group consists of thirteen members: S.Coups, Jeonghan, Joshua, Jun, Hoshi, Wonwoo, Woozi, DK, Mingyu, The8, Seungkwan, Vernon, and Dino.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "model": "mixtral8x7b",
+        "claim_target": "Five Rivers is a Punjabi pop boy band formed by Desi Music Factory. The group consists of five members: Guri, AP Dhillon, Shinda Kahlon, Mickey Singh, and Intense.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Seventeen' corresponding to target location 'India' is 'Five Rivers' under the category 'Pop boy band'. The choice of target entity is reasonable because (a) Both Seventeen and Five Rivers are music groups formed by entertainment companies, one based in South Korea (Pledis Entertainment) and the other based in India (Desi Music Factory), (b) Both groups consist of multiple members, promoting their unique music styles, with Seventeen having thirteen members and Five Rivers having five members, focusing on Punjabi pop music, which is popular in India and among Indian diaspora communities.",
+        "num_location_in_prompt": 11
+    },
+    {
+        "claim_id": 27,
+        "claim_ref": "Modern Family is an American sitcom television series, created by Christopher Lloyd and Steven Levitan for ABC. It ran for 11 seasons, from September 23, 2009, to April 8, 2020.",
+        "location": "Kerala",
+        "hyperlocal score": 2,
+        "model": "mixtral8x7b",
+        "claim_target": "Karikku is an Indian web series, created by Bibin Babu and Abin Mathew for YouTube. It has released two seasons, with the first season airing in 2018 and the second season in 2020.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Modern Family' corresponding to target location 'Kerala' is 'Karikku' under the category 'Web series'. The choice of target entity is reasonable because (a) Both Modern Family and Karikku are popular series that have gained a significant following in their respective regions, with Modern Family being a major sitcom in the US and Karikku being a hit web series in Kerala, (b) Both series were created by notable figures in their industries, with Modern Family being created by Christopher Lloyd and Steven Levitan, while Karikku was created by Bibin Babu and Abin Mathew, (c) Both series have released multiple seasons over several years, with Modern Family running for 11 seasons and Karikku releasing two seasons, providing audiences with ongoing entertainment experiences.",
+        "num_location_in_prompt": 5
+    },
+    {
+        "claim_id": 28,
+        "claim_ref": "Stonehenge is a prehistoric monument on Salisbury Plain in Wiltshire, England, two miles west of Amesbury. It consists of an outer ring of vertical sarsen standing stones, each around 13 feet high, seven feet wide, and weighing around 25 tons, topped by connecting horizontal lintel stones.",
+        "location": "Maharashtra",
+        "hyperlocal score": 2,
+        "model": "mixtral8x7b",
+        "claim_target": "Ajanta Caves are a set of Buddhist cave temples near Aurangabad, Maharashtra, India. They consist of 30 rock-cut cave monuments dating back to the 2nd century BCE. The caves include paintings and sculptures depicting Buddhist religious art.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Stonehenge' corresponding to target location 'Maharashtra' is 'Ajanta Caves' under the category 'Historical monument'. The choice of target entity is reasonable because (a) both Stonehenge and Ajanta Caves are significant historical monuments that attract tourists from all over the world, (b) both sites are famous for their architectural and artistic achievements, showcasing the culture and beliefs of their respective time periods.",
+        "num_location_in_prompt": 4
+    },
+    {
+        "claim_id": 29,
+        "claim_ref": "Johns Hopkins University is a private research university in Baltimore, Maryland. Founded in 1876, Johns Hopkins was the first U.S. university based on the European research institution model.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "model": "mixtral8x7b",
+        "claim_target": "The Indian Institute of Technology Kharagpur (IIT Kharagpur) is a public research university located in Kharagpur, West Bengal, India. It was established in 1951 as the first of the Indian Institutes of Technology, following the model of the Massachusetts Institute of Technology (MIT).",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Johns Hopkins University' corresponding to target location 'India' is 'The Indian Institute of Technology Kharagpur (IIT Kharagpur)' under the category 'Public research university'. The choice of target entity is reasonable because (a) Both Johns Hopkins University and IIT Kharagpur are renowned research universities, with Johns Hopkins being a prominent institution in the United States and IIT Kharagpur being one of the most prestigious universities in India, (b) Both universities were established based on the European research institution model, with Johns Hopkins following the German model and IIT Kharagpur modeled after MIT, reflecting their commitment to fostering research and innovation.",
+        "num_location_in_prompt": 11
+    },
+    {
+        "claim_id": 30,
+        "claim_ref": "Radio National, known on-air as RN, is an Australia-wide public service broadcasting radio network run by the Australian Broadcasting Corporation. From 1947 until 1985, the network was known as ABC Radio 2.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "model": "mixtral8x7b",
+        "claim_target": "All India Radio, commonly referred to as AIR, is a public service broadcasting radio network run by Prasar Bharati in India. From 1936 until 1957, the network was known as the Indian State Broadcasting Service.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Radio National' corresponding to target location 'India' is 'All India Radio' under the category 'Public service broadcasting radio network'. The choice of target entity is reasonable because (a) Both Radio National and All India Radio are public service broadcasting networks in their respective countries, providing informative and educational content, (b) Both networks have undergone name changes over time, with Radio National being known as ABC Radio 2 until 1985, while All India Radio was initially called the Indian State Broadcasting Service until 1957, reflecting their historical evolution and growth in their respective countries.",
+        "num_location_in_prompt": 11
+    },
+    {
+        "claim_id": 31,
+        "claim_ref": "Band-Maid is a Japanese rock band formed in 2013, consisting of singer Saiki Atsumi, guitarist/singer Miku Kobato, lead guitarist Kanami T\u014dno, bassist Misa, and drummer Akane Hirose. ",
+        "location": "Jammu and Kashmir",
+        "hyperlocal score": 2,
+        "model": "mixtral8x7b",
+        "claim_target": "Alif is a Pakistani rock band formed in 2016, consisting of lead vocalist Shahzi Khan, guitarists Manzoor Zahoor and Mikail Jamal, bassist Aamir Azan, and drummer Salman Albert.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Band-Maid' corresponding to target location 'Jammu and Kashmir' is 'Alif' under the category 'Music Bands'. The choice of target entity is reasonable because (a) Both bands consist of multiple members playing various instruments, forming a cohesive musical unit, (b) Both bands, Band-Maid and Alif, hail from different countries, Japan and Pakistan respectively, providing a unique opportunity to showcase diversity in music and cultural representation across geographical locations, (c) Alif, as a band based in Jammu and Kashmir, brings focus to the region's vibrant music scene, which contributes to its rich cultural heritage, thus maintaining the relevance of the modified sentence to the specified target location.",
+        "num_location_in_prompt": 0
+    },
+    {
+        "claim_id": 32,
+        "claim_ref": "Sentinel-3 is an Earth observation heavy satellite series developed by the European Space Agency as part of the Copernicus Programme. It currently consists of 2 satellites: Sentinel-3A and Sentinel-3B. After initial commissioning, each satellite was handed over to EUMETSAT for the routine operations phase of the mission.",
+        "location": "India",
+        "hyperlocal score": 2,
+        "model": "mixtral8x7b",
+        "claim_target": "Oceansat-3 is an Earth observation satellite series developed by the Indian Space Research Organisation (ISRO). It consists of one satellite, Oceansat-3, which was launched in 2022. After initial commissioning, ISRO operates the satellite for the routine operations phase of the mission.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Sentinel-3' corresponding to target location 'India' is 'Oceansat-3' under the category 'Earth observation satellite series'. The choice of target entity is reasonable because (a) both Sentinel-3 and Oceansat-3 are Earth observation satellite series developed by their respective space agencies, the European Space Agency (ESA) and Indian Space Research Organisation (ISRO), (b) each series consists of one satellite, with Sentinel-3 having two satellites (Sentinel-3A and Sentinel-3B) and Oceansat-3 being a standalone satellite, (c) after initial commissioning, both series are operated by their respective space agencies for routine operations, with Sentinel-3 being handed over to EUMETSAT and Oceansat",
+        "num_location_in_prompt": 11
+    },
+    {
+        "claim_id": 33,
+        "claim_ref": "Ahmad Haffar is a sound designer and music producer based in Dubai. He has received awards for his work. He has left an impact in the sonic branding industry with his work.",
+        "location": "Calicut",
+        "hyperlocal score": 3,
+        "model": "mixtral8x7b",
+        "claim_target": "Sreejesh Nair is a sound designer and music producer based in Calicut, India, who has made significant contributions to the regional film industry and left an impact on the sonic branding scene.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Ahmad Haffar' corresponding to target location 'Calicut' is 'Sreejesh Nair' under the category 'Sound Designer and Music Producer'. The choice of target entity is reasonable because (a) Both professionals are sound designers and music producers, showcasing their expertise in similar fields, (b) Both Ahmad Haffar and Sreejesh Nair contribute significantly to their respective local industries, with Haffar based in Dubai and Nair based in Calicut, India, reflecting their respective cultural influences on their creative outputs.",
+        "num_location_in_prompt": 0
+    },
+    {
+        "claim_id": 34,
+        "claim_ref": "Klaus Wassen-Floren is a German sound supervisor and sound designer. He has worked on numerous productions.",
+        "location": "Maharashtra",
+        "hyperlocal score": 2,
+        "model": "mixtral8x7b",
+        "claim_target": "Amar Mohile is an Indian sound designer and music director who has worked on numerous films.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Klaus Wassen-Floren' corresponding to target location 'Maharashtra' is 'Amar Mohile' under the category 'Sound designer and music director'. The choice of target entity is reasonable because (a) Both Klaus Wassen-Floren and Amar Mohile are experienced professionals in their field who have contributed their talents to numerous productions, (b) Both individuals have left their marks on their respective industries by providing high-quality sound design and music direction for films.",
+        "num_location_in_prompt": 4
+    },
+    {
+        "claim_id": 35,
+        "claim_ref": "Love, Simon is a 2018 American teen romantic comedy drama film directed by Greg Berlanti, written by Elizabeth Berger and Isaac Aptaker, and based on the 2015 novel Simon vs. the Homo Sapiens Agenda by Becky Albertalli. ",
+        "location": "India",
+        "hyperlocal score": 1,
+        "model": "mixtral8x7b",
+        "claim_target": "\"Ek Ladki Ko Dekha Toh Aisa Laga\" is a 2019 Indian romantic comedy-drama film directed by Shelly Chopra Dhar, written by Gazal Dhaliwal, and based on the 2015 novel \"Simon vs. the Homo Sapiens Agenda\" by Becky Albertalli.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity \"Love, Simon\" corresponding to the target location \"India\" is \"Ek Ladki Ko Dekha Toh Aisa Laga\" under the category \"Romantic comedy-drama film\". The choice of target entity is reasonable because (a) both \"Love, Simon\" and \"Ek Ladki Ko Dekha Toh Aisa Laga\" are romantic comedy-drama films based on the same novel \"Simon vs. the Homo Sapiens Agenda\" by Becky Albertalli, (b) they both explore themes of love, identity, and acceptance, though set in different cultural contexts, with \"Love, Simon\" taking place in the United States and \"Ek Ladki Ko Dekha Toh Aisa Laga\"",
+        "num_location_in_prompt": 11
+    },
+    {
+        "claim_id": 36,
+        "claim_ref": "The\u00a0Reichenbach Falls are a\u00a0waterfall\u00a0cascade of seven steps on the stream called Rychenbach\u00a0in the Bernese Oberland\u00a0region of\u00a0Switzerland. They drop over a total height of about 250 meters (820 ft).",
+        "location": "India",
+        "hyperlocal score": 1,
+        "model": "mixtral8x7b",
+        "claim_target": "The Jog Falls are a waterfall cascade of four steps on the river Sharavathi in the Shimoga district of Karnataka, India. They drop over a total height of about 253 meters (827 ft).",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Reichenbach Falls' corresponding to target location 'India' is 'Jog Falls' under the category 'Waterfall cascade'. The choice of target entity is reasonable because (a) Both Reichenbach Falls and Jog Falls are waterfall cascades with significant heights, (b) Both waterfalls are popular tourist attractions in their respective regions, with Reichenbach Falls being located in Switzerland and Jog Falls in India, (c) The Jog Falls are formed by the Sharavathi river, while Reichenbach Falls are formed by the Rychenbach stream, demonstrating similarities in their formation.",
+        "num_location_in_prompt": 11
+    },
+    {
+        "claim_id": 37,
+        "claim_ref": "Niagara Falls spans the border between the province of Ontario in Canada and the state of New York in the United States. Niagara Falls is 27 km (17 mi) northwest of Buffalo, New York, and 69 km (43 mi) southeast of Toronto, between the twin cities of Niagara Falls, Ontario, and Niagara Falls, New York. It is a valuable source of hydroelectric power.",
+        "location": "Tamil Nadu",
+        "hyperlocal score": 2,
+        "model": "mixtral8x7b",
+        "claim_target": "The Siruvani Falls and Dam is a valuable source of hydroelectric power, located in Coimbatore district, Tamil Nadu, about 40 km (25 mi) west of Coimbatore city and 130 km (80 mi) east of Kerala state border. It is situated between the Anaimalai Hills of Western Ghats range and provides water to Coimbatore city and surrounding areas.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Niagara Falls' corresponding to target location 'Tamil Nadu' is 'Siruvani Falls and Dam' under the category 'Waterfall and Dam'. The choice of target entity is reasonable because (a) Both Niagara Falls and Siruvani Falls and Dam serve as valuable sources of hydroelectric power, (b) Both waterfalls are significant tourist attractions, but Siruvani Falls is located in Coimbatore district, Tamil Nadu, and is surrounded by lush greenery and scenic beauty, (c) While Niagara Falls spans the border between Canada and the United States, Siruvani Falls is located entirely within Tamil Nadu state, about 4",
+        "num_location_in_prompt": 8
+    },
+    {
+        "claim_id": 38,
+        "claim_ref": "Blue Cave is a waterlogged sea cave located in a small bay called Balun in Croatia. It is renowned for its impressive natural architecture. It has become a tourist spot and is visited by a large number of tourists.",
+        "location": "Karnataka",
+        "hyperlocal score": 2,
+        "model": "mixtral8x7b",
+        "claim_target": "cave temple in Karnataka is a historic rock-cut temple located in Badami, Karnataka. It is renowned for its impressive architectural carvings and has become a significant tourist attraction in the region.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Blue Cave' corresponding to target location 'Karnataka' is 'cave temple in Karnataka' under the category 'tourist attraction'. The choice of target entity is reasonable because (a) Both Blue Cave and cave temple in Karnataka are significant tourist attractions known for their impressive architecture, with Blue Cave being a natural wonder in Croatia while cave temple in Karnataka features intricate carvings, (b) Both sites attract numerous visitors every year who come to experience their unique beauty and cultural significance.",
+        "num_location_in_prompt": 8
+    },
+    {
+        "claim_id": 39,
+        "claim_ref": "The Suomi National Polar-orbiting Partnership, previously known as the National Polar-orbiting Operational Environmental Satellite System Preparatory Project and NPP-Bridge, is a weather satellite operated by the United States National Oceanic and Atmospheric Administration.",
+        "location": "Andhra Pradesh",
+        "hyperlocal score": 2,
+        "model": "mixtral8x7b",
+        "claim_target": "The INSAT-3DR is a weather satellite operated by the Indian Space Research Organisation (ISRO) and the India Meteorological Department (IMD), launched in 2016 to provide meteorological data for weather forecasting, climate studies, and disaster management.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Suomi National Polar-orbiting Partnership' corresponding to target location 'Andhra Pradesh' is 'INSAT-3DR' under the category 'Weather Satellite'. The choice of target entity is reasonable because (a) Both satellites serve similar purposes in collecting meteorological data for weather forecasting, climate studies, and disaster management, (b) INSAT-3DR, although not specifically tied to Andhra Pradesh, is a significant satellite for India's weather monitoring, making it relevant to the region as well as other parts of the country.",
+        "num_location_in_prompt": 7
+    },
+    {
+        "claim_id": 40,
+        "claim_ref": "Dorothea Lange was an American documentary photographer and photojournalist, best known for her Depression-era work for the Farm Security Administration.",
+        "location": "New Delhi",
+        "hyperlocal score": 3,
+        "model": "mixtral8x7b",
+        "claim_target": "Ram Rahman is a renowned Indian photographer and artist, recognized for his work in documenting contemporary Indian social and political issues.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Dorothea Lange' corresponding to target location 'New Delhi' is 'Ram Rahman' under the category 'Photographer'. The choice of target entity is reasonable because (a) Both Dorothea Lange and Ram Rahman are celebrated photographers known for their socially relevant work, (b) Both artists have made significant contributions to their fields by capturing important moments in history through their photographs.",
+        "num_location_in_prompt": 6
+    },
+    {
+        "claim_id": 41,
+        "claim_ref": "Verizon is an American wireless network operator that previously operated as a separate division of Verizon Communications under the name Verizon Wireless.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "model": "mixtral8x7b",
+        "claim_target": "Bharti Airtel Limited is an Indian multinational telecommunications services company, headquartered in New Delhi, India. It operates under the brand name Airtel and provides wireless network services across India.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Verizon' corresponding to target location 'India' is 'Bharti Airtel Limited' under the category 'Wireless network operator'. The choice of target entity is reasonable because (a) both Verizon and Bharti Airtel Limited are leading telecommunications companies in their respective countries, offering wireless network services, (b) Verizon operates primarily in the United States, while Bharti Airtel Limited has its major presence in India, (c) both companies have a significant global presence, serving millions of customers in their regions, (d) Bharti Airtel Limited operates under the brand name 'Airtel', which is similar to how Verizon previously operated as Verizon Wireless under its parent company Verizon Communications, making it an appropriate equivalent for this context.",
+        "num_location_in_prompt": 11
+    },
+    {
+        "claim_id": 42,
+        "claim_ref": "Red Desert: Team RPG is an action-adventure role-playing game that combines elements of fighting, jumping, and running. The game is developed by Clegames, Inc.",
+        "location": "Kolkata",
+        "hyperlocal score": 3,
+        "model": "mixtral8x7b",
+        "claim_target": "Loco Balls is an action-adventure game developed by Mindforks Studios, a game development studio based in Kolkata. The game combines elements of puzzle-solving, exploration, and platforming.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Red Desert: Team RPG' corresponding to target location 'Kolkata' is 'Loco Balls' under the category 'Action-adventure game'. The choice of target entity is reasonable because (a) Both Red Desert: Team RPG and Loco Balls are action-adventure games, but with different gameplay elements, (b) The development of Loco Balls by Mindforks Studios, a game development studio based in Kolkata, is a reasonable match for Clegames, Inc., given that they are both game development studios with different locations, and (c) The focus of Loco Balls on puzzle-solving, exploration, and platforming provides a reasonable match for the fighting, jumping, and running elements of Red Desert: Team RPG.",
+        "num_location_in_prompt": 7
+    },
+    {
+        "claim_id": 43,
+        "claim_ref": "Dream Island is an amusement park in Moscow that opened on 29 February 2020. It is the largest indoor theme park in Europe.",
+        "location": "Maharashtra",
+        "hyperlocal score": 2,
+        "model": "mixtral8x7b",
+        "claim_target": "Imagicaa is a theme park in Khopoli, Maharashtra, which opened in April 2013. It is one of the largest theme parks in India.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Dream Island' corresponding to the target location 'Maharashtra' is 'Imagicaa' under the category 'Theme park'. The choice of target entity is reasonable because (a) both Dream Island and Imagicaa are large-scale amusement parks, (b) Dream Island is the largest indoor theme park in Europe, while Imagicaa is one of the largest theme parks in India, showcasing their similar significance in their respective regions, (c) both parks offer a variety of entertainment options and rides for visitors of all ages.",
+        "num_location_in_prompt": 4
+    },
+    {
+        "claim_id": 44,
+        "claim_ref": "Eiffel Chong was an award-winning photographer and has been featured in many exhibitions in Malaysia and around the world.",
+        "location": "Punjab",
+        "hyperlocal score": 2,
+        "model": "mixtral8x7b",
+        "claim_target": "Surender Pal Singh is a renowned painter in Punjab, having held numerous exhibitions in Chandigarh, Delhi, and other parts of India.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Eiffel Chong' corresponding to target location 'Punjab' is 'Surender Pal Singh' under the category 'Artist'. The choice of target entity is reasonable because (a) Both Eiffel Chong and Surender Pal Singh are accomplished artists who have gained recognition in their respective regions, with Eiffel Chong in Malaysia and Surender Pal Singh in Punjab, (b) Both artists have showcased their work in various exhibitions, promoting their art and contributing to their local art communities.",
+        "num_location_in_prompt": 6
+    },
+    {
+        "claim_id": 45,
+        "claim_ref": "Peter Charles Doherty AC FRS FMedSci (born October 15, 1940) is an Australian immunologist. He has received multiple awards. He is known for his research on the immune system.",
+        "location": "Uttar Pradesh",
+        "hyperlocal score": 2,
+        "model": "mixtral8x7b",
+        "claim_target": "Ram Sagar Murti, known for his research in the field of biochemistry, is a renowned scientist in Uttar Pradesh. He has received multiple awards for his contributions to the field of science.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Peter Charles Doherty' corresponding to target location 'Uttar Pradesh' is 'Ram Sagar Murti' under the category 'Scientist'. The choice of target entity is reasonable because (a) Both Doherty and Murti are highly accomplished scientists who have made significant contributions to their respective fields of research, (b) Both individuals have been recognized with multiple awards for their outstanding work, demonstrating their expertise and impact in their fields of study.",
+        "num_location_in_prompt": 5
+    },
+    {
+        "claim_id": 46,
+        "claim_ref": "Franco Bertinetti (14 July 1923 \u2013 6 March 1995) was an Italian fencer. He won a gold medal in the team \u00e9p\u00e9e events at the 1952 and 1956 Summer Olympics.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "model": "mixtral8x7b",
+        "claim_target": "Rajyavardhan Singh Rathore (born 29 January 1970) is an Indian shooter. He won a silver medal in the Men's double trap event at the 2004 Summer Olympics and a gold medal in the same event at the 2018 Commonwealth Games.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Franco Bertinetti' corresponding to target location 'India' is 'Rajyavardhan Singh Rathore' under the category 'Olympic medalist in fencing/shooting'. The choice of target entity is reasonable because (a) Both Franco Bertinetti and Rajyavardhan Singh Rathore are accomplished athletes who have won medals in their respective sports at the Olympic Games, (b) Their achievements have brought pride and recognition to their home countries, Italy and India, respectively.",
+        "num_location_in_prompt": 11
+    },
+    {
+        "claim_id": 47,
+        "claim_ref": "Carmine \"Mino\" Pecorelli was an Italian journalist, shot dead in Rome a year after former prime minister Aldo Moro's 1978 kidnapping and subsequent killing. He was described as a \"maverick journalist with excellent secret service contacts\".",
+        "location": "Chhattisgarh",
+        "hyperlocal score": 2,
+        "model": "mixtral8x7b",
+        "claim_target": "Sai Reddy was a prominent Indian journalist and Maoist ideologue based in Chhattisgarh, known for his extensive reporting on Maoist insurgency and politics in the region. He was killed in 2005, allegedly by state-sponsored actors due to his investigative journalism.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Carmine \"Mino\" Pecorelli' corresponding to target location 'Chhattisgarh' is 'Sai Reddy' under the category 'Journalist'. The choice of target entity is reasonable because (a) Both Sai Reddy and Carmine \"Mino\" Pecorelli were journalists who faced significant risks in their line of work, investigating sensitive topics related to political power structures, (b) Both journalists paid the ultimate price for their work, being assassinated due to their investigative reporting, highlighting the dangers they faced in their respective contexts.",
+        "num_location_in_prompt": 0
+    },
+    {
+        "claim_id": 48,
+        "claim_ref": "A mass murder of Sri Lankan Police officers took place on 11 June 1990. Members of the Liberation Tigers of Tamil Eelam, a militant organization, are alleged to have killed over 600 unarmed Sri Lanka Police officers in Eastern Province, Sri Lanka.",
+        "location": "Lethipora",
+        "hyperlocal score": 3,
+        "model": "mixtral8x7b",
+        "claim_target": "A militant attack in Lethipora, Jammu and Kashmir, India occurred on 30 March 2017, resulting in the deaths of 25 CRPF personnel. Members of the terrorist group Jaish-e-Mohammed are believed to have been responsible for the attack on the convoy, which took place on the Srinagar-Jammu National Highway.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'mass murder of Sri Lankan Police officers' corresponding to target location 'Lethipora' is 'militant attack in Lethipora' under the category 'Terrorist Attacks'. The choice of target entity is reasonable because (a) Both events involve violence and loss of lives, highlighting the impact of terrorism on their respective regions, (b) The Lethipora terrorist attack shares similarities with the Sri Lankan Police officers' mass murder in terms of being perpetrated by militant or terrorist organizations, which allows for a meaningful comparison and contextualization within their respective geographical locations.",
+        "num_location_in_prompt": 0
+    },
+    {
+        "claim_id": 49,
+        "claim_ref": "Caff\u00e8 Nero is a coffeehouse company headquartered in London, England. Established in 1997 by Gerry Ford, Caff\u00e8 Nero runs more than 1,000 coffee houses in eleven countries: the UK, Ireland, Sweden, Poland, Cyprus, Croatia, Turkey, the UAE, Oman, and the United States. ",
+        "location": "India",
+        "hyperlocal score": 1,
+        "model": "mixtral8x7b",
+        "claim_target": "Barista Lavazza is an Italian coffeehouse company headquartered in Bangalore, India. Established in 2000, Barista Lavazza operates over 200 coffee houses in India and has expanded its presence to other countries, including Malaysia, Nepal, and Sri Lanka.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Caff\u00e8 Nero' corresponding to target location 'India' is 'Barista Lavazza' under the category 'Coffeehouse company'. The choice of target entity is reasonable because (a) Both Caff\u00e8 Nero and Barista Lavazza are coffeehouse companies with significant operations in their respective countries, (b) Barista Lavazza, despite being an Italian brand, has its headquarters in India, which aligns with the requirement of having a connection to India, (c) Both companies have expanded their presence beyond their home countries, making them relevant examples of coffeehouse companies in different locations.",
+        "num_location_in_prompt": 11
+    },
+    {
+        "claim_id": 50,
+        "claim_ref": "The Statue of Liberty is a colossal neoclassical sculpture on Liberty Island in New York Harbor in New York City, United States.",
+        "location": "Gujarat",
+        "hyperlocal score": 2,
+        "model": "mixtral8x7b",
+        "claim_target": "The Statue of Unity is a colossal sculpture of Vallabhbhai Patel, located on the banks of the Narmada river in Gujarat, India.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Statue of Liberty' corresponding to target location 'Gujarat' is 'Statue of Unity' under the category 'Landmarks'. The choice of target entity is reasonable because (a) Both structures are colossal sculptures/statues representing significant figures in their respective countries, with the Statue of Liberty symbolizing freedom and democracy in the United States, while the Statue of Unity honors India's independence movement leader Vallabhbhai Patel, (b) Both landmarks serve as iconic symbols of their respective regions, attracting tourists and contributing to local culture and identity.",
+        "num_location_in_prompt": 0
+    },
+    {
+        "claim_id": 51,
+        "claim_ref": "Fortescue is a global metal mining and green energy company headquartered in Australia. Fortescue focused on iron ore mining under the name of Fortescue Metals Group until July 2023.",
+        "location": "West Bengal",
+        "hyperlocal score": 2,
+        "model": "mixtral8x7b",
+        "claim_target": "Damodar Valley Corporation (DVC) is a Indian public sector power generation company headquartered in West Bengal. DVC was focused on hydroelectric power generation until July 2023 but later it expanded its operations to thermal power generation as well.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Fortescue' corresponding to target location 'West Bengal' is 'Damodar Valley Corporation (DVC)' under the category 'Power generation company'. The choice of target entity is reasonable because (a) Both Fortescue and DVC are significant players in their respective industries, providing essential resources such as metal and power to a wide range of consumers, (b) Both companies have expanded their operations beyond their initial focus areas, with Fortescue moving into green energy and DVC expanding into thermal power generation.",
+        "num_location_in_prompt": 4
+    },
+    {
+        "claim_id": 52,
+        "claim_ref": "A Tale of Two Cities is a historical novel published in 1859 by Charles Dickens, set in London and Paris before and during the French Revolution.",
+        "location": "Cheruvathur",
+        "hyperlocal score": 3,
+        "model": "mixtral8x7b",
+        "claim_target": "Kundalatha is a 19th-century Malayalam novel written by Cheruma Valiya Tampuran, set in Cheruvathur and its surrounding regions, reflecting the social and cultural dynamics of the time.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'A Tale of Two Cities' corresponding to target location 'Cheruvathur' is 'Kundalatha' under the category 'Literature'. The choice of target entity is reasonable because (a) Both works are significant novels set in their respective locations, providing insights into the historical, social, and cultural contexts of their times, (b) 'A Tale of Two Cities' explores the sociopolitical climate of London and Paris, while 'Kundalatha' delves into the social fabric of Cheruvathur, making them equivalents in terms of their regional significance.",
+        "num_location_in_prompt": 0
+    },
+    {
+        "claim_id": 53,
+        "claim_ref": "Ras Al Jinz or Ras al-Junayz, located in Ash-Sharqiyyah South Governorate, Oman, is the easternmost point of the Arabian Peninsula. It is a nesting site for green turtles, as also is the beach at the local village of Ras al Hadd. It is home to a well-known turtle reserve. Important archaeological discoveries have also been made at this site, demonstrating connections to the Indus Valley in ancient times.",
+        "location": "Maharashtra",
+        "hyperlocal score": 2,
+        "model": "mixtral8x7b",
+        "claim_target": "The Dhavalgiri Fort, located in the Konkan region of Maharashtra, is the southernmost point of India's western coast. It is a nesting site for olive ridley turtles and is home to a well-known turtle conservation project. Important archaeological discoveries have also been made at this site, revealing connections to ancient trading routes.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Ras Al Jinz or Ras al-Junayz' corresponding to target location 'Maharashtra' is 'The Dhavalgiri Fort' under the category 'Geographical Point'. The choice of target entity is reasonable because (a) Both Ras Al Jinz and Dhavalgiri Fort are significant points on their respective coastlines, serving as important nesting sites for endangered turtles, (b) Both locations have historical significance, with archaeological discoveries providing insights into ancient civilizations and their connections to other regions.",
+        "num_location_in_prompt": 4
+    },
+    {
+        "claim_id": 54,
+        "claim_ref": "Neighbours is an Australian television soap opera. It has been successful and popular since its inception in 1985. The show focused on family and relationship dynamics, portraying the interactions and conflicts within families and communities. Since the show's inception, several spin-offs have been produced. ",
+        "location": "India",
+        "hyperlocal score": 1,
+        "model": "mixtral8x7b",
+        "claim_target": "Balika Vadhu is an Indian television soap opera. It has been successful and popular since its inception in 2008. The show focused on family, relationship, and child marriage issues, portraying the struggles of young girls and their families in rural India. Since the show's inception, several spin-offs have been produced.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Neighbours' corresponding to target location 'India' is 'Balika Vadhu' under the category 'Television soap opera'. The choice of target entity is reasonable because (a) Both Neighbours and Balika Vadhu are successful and popular television soap operas in their respective countries, engaging audiences with compelling storylines, (b) Balika Vadhu's focus on family, relationship, and child marriage issues reflects the social realities of rural India, providing valuable insights into Indian culture, just as Neighbours highlights aspects of Australian life for its audience.",
+        "num_location_in_prompt": 11
+    },
+    {
+        "claim_id": 55,
+        "claim_ref": "The Punakha Dzong is the administrative centre of Punakha District in Punakha, Bhutan. Constructed by Ngawang Namgyal, 1st Zhabdrung Rinpoche, in 1637\u201338. It is one of the most majestic structures. The dzong houses the sacred relics of the southern Drukpa Lineage of the Kagyu school of Tibetan Buddhism, including the Rangjung Kharsapani and the sacred remains of Ngawang Namgyal and the tert\u00f6n Pema Lingpa.",
+        "location": "Ladakh",
+        "hyperlocal score": 3,
+        "model": "mixtral8x7b",
+        "claim_target": "The Hemis Monastery is the largest and most important monastery in Ladakh, serving as the administrative center of the Drukpa Lineage of the Kagyu school of Tibetan Buddhism in the region. Constructed in 1672 by the Ladakhi king Sengge Namgyal, it is one of the most majestic structures in Ladakh, housing sacred relics such as the Thanka painting of Lord Padmasambhava, which is displayed once every twelve years during the Hemis Festival.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Punakha Dzong' corresponding to target location 'Ladakh' is 'Hemis Monastery' under the category 'Religious & Cultural Site'. The choice of target entity is reasonable because (a) both are significant religious structures in their respective regions, serving as administrative centers for the Drukpa Lineage of the Kagyu school of Tibetan Buddhism, (b) both structures are considered among the most majestic in their respective regions, and (c) both structures house sacred relics that are of significant importance to their respective followers, with Punakha Dzong housing the Rang",
+        "num_location_in_prompt": 0
+    },
+    {
+        "claim_id": 56,
+        "claim_ref": "The Mott MacDonald Group is a management, engineering and development consultancy headquartered in the United Kingdom. It employs +18,000 staff in 150 countries. Mott MacDonald is one of the largest employee-owned companies in the world.",
+        "location": "Ranchi",
+        "hyperlocal score": 3,
+        "model": "mixtral8x7b",
+        "claim_target": "The L&T Construction Group is an engineering, procurement, and construction company headquartered in India, with operations in over 30 countries. It employs +50,000 professionals and is one of India's largest construction organizations, known for its employee-friendly practices.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Mott MacDonald Group' corresponding to target location 'Ranchi' is 'L&T Construction Group' under the category 'Consultancy and Construction'. The choice of target entity is reasonable because (a) Both companies are prominent players in their respective industries, operating on a global scale with a strong presence in their home countries, (b) They are both known for their large workforces, implying significant economic contributions, and (c) Mentioning L&T Construction Group, which has its headquarters in Mumbai but operates in Ranchi, allows for the connection to the specified target location.",
+        "num_location_in_prompt": 0
+    },
+    {
+        "claim_id": 57,
+        "claim_ref": "Beiersdorf AG is a German multinational company that manufactures personal-care products and pressure-sensitive adhesives headquartered in Hamburg, Germany. Its brands include Elastoplast, Eucerin, Labello, La Prairie, Nivea, Tesa SE and Coppertone.\n",
+        "location": "India",
+        "hyperlocal score": 1,
+        "model": "mixtral8x7b",
+        "claim_target": "Hindustan Unilever Limited (HUL) is an Indian multinational company that manufactures various consumer goods, including personal care products, home care products, and food and beverages, headquartered in Mumbai, Maharashtra, India. Its brands include Pears, Dove, Vaseline, Lakm\u00e9, Surf Excel, Rin, Brooke Bond, Knorr, and Kwality Wall's.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Beiersdorf AG' corresponding to target location 'India' is 'Hindustan Unilever Limited (HUL)' under the category 'Multinational consumer goods manufacturer'. The choice of target entity is reasonable because (a) Both Beiersdorf AG and HUL are prominent multinational companies with significant operations in their respective countries, focusing on consumer goods, (b) Both companies have extensive brand portfolios, with Beiersdorf's brands being well-known in Germany, while HUL's brands have a strong presence in India, (c) Both companies have historical importance in their respective countries, with Beiersdorf founded in 1882 in Germany, while H",
+        "num_location_in_prompt": 11
+    },
+    {
+        "claim_id": 58,
+        "claim_ref": "Jabal Samhan Nature Reserve is a nature reserve in the area of Jabal Sam\u1e25\u0101n in Dhofar, Oman. It has an area of 4,500 square kilometers (1,700 sq mi) and has no permanent population. Being in the region of the Dhofar Mountains, it is one of the last refuges for wild Arabian leopards. Data suggests that around twenty Arabian leopards are left in the reserve.",
+        "location": "Uttarakhand",
+        "hyperlocal score": 2,
+        "model": "mixtral8x7b",
+        "claim_target": "The Valley of Flowers National Park is a nature reserve in the Chamoli district of Uttarakhand, Northern India. It covers an area of 87.5 square kilometers (33.8 sq mi) and is part of the Nanda Devi Biosphere Reserve. The park is known for its meadows of endemic alpine flowers and is home to several endangered species, including the Asiatic black bear, snow leopard, and brown bear.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Jabal Samhan Nature Reserve' corresponding to target location 'Uttarakhand' is 'The Valley of Flowers National Park' under the category 'Nature reserve'. The choice of target entity is reasonable because (a) Both Jabal Samhan Nature Reserve and The Valley of Flowers National Park are prominent nature reserves known for their unique biodiversity and natural beauty, (b) Both protected areas are home to endangered species and play significant roles in their local ecosystems, highlighting their importance in conservation efforts.",
+        "num_location_in_prompt": 5
+    },
+    {
+        "claim_id": 59,
+        "claim_ref": "Politico Europe is the European edition of the German-owned news organization Politico reporting on political affairs of the European Union. Its headquarters are located in Brussels with additional offices in London, Berlin, Warsaw, Paris, and Frankfurt.",
+        "location": "Telangana",
+        "hyperlocal score": 2,
+        "model": "mixtral8x7b",
+        "claim_target": "The Wire is an independent news organization based in Hyderabad, Telangana, focusing on in-depth reporting of political, business, and social issues in India. It has established bureaus in New Delhi, Mumbai, and other major cities across the country.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Politico Europe' corresponding to target location 'Telangana' is 'The Wire' under the category 'News Organization'. The choice of target entity is reasonable because (a) Both entities are news organizations, but while Politico Europe focuses on European Union political affairs, The Wire provides in-depth coverage of various issues within India, (b) Both organizations have their headquarters in their respective locations, contributing to the regions' reputations as hubs for journalism and media, (c) Both Politico Europe and The Wire are committed to independent journalism, ensuring fairness, accuracy, and credibility in their reporting, making them suitable counterparts in their respective domains.",
+        "num_location_in_prompt": 0
+    },
+    {
+        "claim_id": 60,
+        "claim_ref": "Lake Natron is a salt or alkaline lake located in north Ngorongoro District of Arusha Region in Tanzania at the border with Kenya. It is in the Gregory Rift, which is the eastern branch of the East African Rift. The lake is within the Lake Natron Basin, a Ramsar Site wetland of international significance.",
+        "location": "Chennai",
+        "hyperlocal score": 3,
+        "model": "mixtral8x7b",
+        "claim_target": "The Great Salt Lake is a saltwater lake located in Utter Pradesh, India, near the city of Noida. It is a remnant of the ancient Saraswati River and is considered one of the largest hypersaline lakes in India. The lake is part of the National Chambal Sanctuary, a protected area known for its diverse wildlife.",
+        "reason_for_target_sent": "The equivalent target entity of the reference lake 'Lake Natron' corresponding to target location 'Chennai' is 'The Great Salt Lake' under the category 'Saltwater Lake'. The choice of target entity is reasonable because (a) Both Lake Natron and The Great Salt Lake are notable saltwater lakes, with Lake Natron being alkaline and The Great Salt Lake being hypersaline, (b) Both lakes are located near protected areas, with Lake Natron being part of a Ramsar Site wetland and The Great Salt Lake being part of the National Chambal Sanctuary, showcasing their importance in environmental conservation.",
+        "num_location_in_prompt": 4
+    },
+    {
+        "claim_id": 61,
+        "claim_ref": "Paris Fashion Week is a series of designer presentations held semi-annually in Paris, France, with spring/summer and autumn/winter events held each year. Dates are determined by the F\u00e9d\u00e9ration de la Haute Couture et de la Mode. Paris Fashion Week is held at venues throughout the city.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "model": "mixtral8x7b",
+        "claim_target": "Lakme Fashion Week is a series of designer presentations held bi-annually in Mumbai, India, with summer-resort and winter-festive events held each year. Dates are determined by the Lakme Fashion Week organization. Lakme Fashion Week is held at venues throughout the city, primarily at the St. Regis Hotel and JioWorld Garden.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Paris Fashion Week' corresponding to target location 'India' is 'Lakme Fashion Week' under the category 'Fashion Week'. The choice of target entity is reasonable because (a) Both Paris Fashion Week and Lakme Fashion Week are prominent fashion events in their respective countries, showcasing designer collections and influencing fashion trends, (b) Both events are held twice a year, with spring/summer and autumn/winter collections presented in Paris, while Lakme Fashion Week features summer-resort and winter-festive collections in Mumbai, (c) The organization and management of both events are carried out by fashion industry bodies, the F\u00e9d\u00e9ration de la Haute Couture et de la Mode",
+        "num_location_in_prompt": 11
+    },
+    {
+        "claim_id": 62,
+        "claim_ref": "American Idol is an American singing competition television series created by Simon Fuller, produced by Fremantle North America and 19 Entertainment, and distributed by Fremantle North America.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "model": "mixtral8x7b",
+        "claim_target": "Indian Idol is an Indian singing competition television series created by Simon Fuller, produced by FremantleMedia India and 19 Entertainment, and distributed by Sony Pictures Networks India.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'American Idol' corresponding to target location 'India' is 'Indian Idol' under the category 'Singing competition television series'. The choice of target entity is reasonable because (a) both are singing competition television series created by Simon Fuller, produced by FremantleMedia and 19 Entertainment, (b) both have similar formats where aspiring singers compete against each other in various rounds of competitions, (c) both have been successful in their respective countries, with American Idol being popular in the United States and Indian Idol in India.",
+        "num_location_in_prompt": 11
+    },
+    {
+        "claim_id": 63,
+        "claim_ref": "Dreamworld is a theme park and zoo situated on the Gold Coast in Queensland. It is Australia's biggest theme park with over 40 rides and attractions.",
+        "location": "Tamil Nadu",
+        "hyperlocal score": 2,
+        "model": "mixtral8x7b",
+        "claim_target": "MGM Dizzee World is a theme park located in Chennai, Tamil Nadu. It is one of the largest theme parks in India with over 25 rides and attractions.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Dreamworld' corresponding to target location 'Tamil Nadu' is 'MGM Dizzee World' under the category 'Theme park'. The choice of target entity is reasonable because (a) Both Dreamworld and MGM Dizzee World are theme parks with various rides and attractions, (b) Dreamworld is one of Australia's biggest theme parks, while MGM Dizzee World is one of the largest theme parks in India, (c) Dreamworld is situated on the Gold Coast in Queensland, while MGM Dizzee World is located in Chennai, Tamil Nadu, making it a relevant target entity for the given location.",
+        "num_location_in_prompt": 8
+    },
+    {
+        "claim_id": 64,
+        "claim_ref": "Lupita Amondi Nyong'o is a Mexican-Kenyan actress. She is the recipient of several accolades, including an Academy Award and a Daytime Emmy Award with nominations for a Tony Award and a Golden Globe Award.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "model": "mixtral8x7b",
+        "claim_target": "Priyanka Chopra Jonas is an Indian actress and film producer who has received numerous accolades, including a National Film Award and five Filmfare Awards. She has also been nominated for a BAFTA Award and a Kennedy Center Honor.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Lupita Amondi Nyong'o' in the context of 'prominent actress' for target location 'India' is 'Priyanka Chopra Jonas'. Both individuals are accomplished actresses with significant international recognition, receiving various awards and nominations in their careers. Additionally, they are both known for their cross-cultural influences, as Lupita has Mexican and Kenyan heritage, while Priyanka Chops' career extends beyond India, including work in Hollywood productions.",
+        "num_location_in_prompt": 11
+    },
+    {
+        "claim_id": 65,
+        "claim_ref": "Mary Stevenson Cassatt (May 22, 1844\u2013June 14, 1926) was an American painter and printmaker. She was born in Allegheny, Pennsylvania (now part of Pittsburgh's North Side), and lived much of her adult life in France, where she befriended Edgar Degas and exhibited with the Impressionists. Cassatt often created images of the social and private lives of women, with particular emphasis on the intimate bonds between mothers and children.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "model": "mixtral8x7b",
+        "claim_target": "Amrita Sher-Gil (January 30, 1913\u2013December 5, 1941) was a Hungarian-Indian painter, considered one of the most famous Indian artists of the 20th century. She was born in Budapest, Hungary, and spent her formative years in India, eventually settling in France. Sher-Gil depicted the lives of Indian people, especially women, in her art, reflecting her deep connection to her cultural roots.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Mary Stevenson Cassatt' corresponding to target location 'India' is 'Amrita Sher-Gil' under the category 'Famous painter'. The choice of target entity is reasonable because (a) both Cassatt and Sher-Gil were renowned painters in their respective countries, with Cassatt being a significant figure in the United States and Sher-Gil being celebrated in India, (b) both artists focused on portraying women's experiences in their art, providing valuable insights into their societies' social and private lives, and (c) Amrita Sher-Gil's connection with India as her cultural roots",
+        "num_location_in_prompt": 11
+    },
+    {
+        "claim_id": 66,
+        "claim_ref": "True Detective is an American anthology crime drama television series created by Nic Pizzolatto. The series, broadcast by the premium cable network HBO in the United States, premiered on January 12, 2014.",
+        "location": "Shimoga",
+        "hyperlocal score": 3,
+        "model": "mixtral8x7b",
+        "claim_target": "Sacred Games is an Indian crime drama web series directed by Anurag Kashyap and Vikramaditya Motwane, released on Netflix on July 6, 2018.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'True Detective' corresponding to target location 'Shimoga' is 'Sacred Games' under the category 'Television Series'. The choice of target entity is reasonable because (a) Both series are critically acclaimed crime dramas, appealing to audiences with their complex storytelling and character development, (b) Sacred Games was released on Netflix, which is a significant platform for streaming content in India, similar to HBO in the United States, (c) Both series have contributed to the evolving landscape of television, pushing boundaries in storytelling and genre conventions.",
+        "num_location_in_prompt": 0
+    },
+    {
+        "claim_id": 67,
+        "claim_ref": "The Binder Park Zoo is a 433-acre zoo that opened in 1977 near Battle Creek, Michigan, in the United States. Binder Park Zoo is one of the largest zoos in Michigan, and features a large array of animals and plants, including the Wild Africa Exhibit.",
+        "location": "Telangana",
+        "hyperlocal score": 2,
+        "model": "mixtral8x7b",
+        "claim_target": "The Nehru Zoological Park is a 380-acre zoo that opened in 1959 in Hyderabad, Telangana, India. Nehru Zoological Park is one of the largest zoos in India, housing a vast collection of fauna and flora, including the African Savannah Exhibit.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Binder Park Zoo' corresponding to target location 'Telangana' is 'Nehru Zoological Park' under the category 'Zoos'. The choice of target entity is reasonable because (a) Both zoos are among the largest in their respective regions, providing expansive spaces for various animals and plants, (b) Both Nehru Zoological Park and Binder Park Zoo showcase diverse collections of wildlife, contributing to conservation efforts, educational programs, and recreational activities for visitors.",
+        "num_location_in_prompt": 0
+    },
+    {
+        "claim_id": 68,
+        "claim_ref": "Diamond is one of the most exported goods of South Africa. The main destination of diamonds exports from South Africa are China, United Arab Emirates, Botswana, Belgium, and United States.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "model": "mixtral8x7b",
+        "claim_target": "Rice is one of the most exported goods of India. The main destinations of rice exports from India are China, United States, Saudi Arabia, Iran, and Iraq.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'diamonds' corresponding to target location 'India' is 'rice' under the category 'Most exported goods'. The choice of target entity is reasonable because (a) both are leading export commodities for their respective countries, with South Africa being one of the world's largest diamond producers, while India is one of the top rice exporters, (b) both countries have strong agricultural and mining sectors, contributing significantly to their respective economies, with South Africa's diamond industry playing a vital role, while India's rice cultivation and trade are essential components of its agricultural sector. Additionally, the choice of export destinations for rice (China, United States, Saudi Arabia, Iran, and Iraq) is based on India's actual export data, reflecting the major trade partners for Indian rice.",
+        "num_location_in_prompt": 11
+    },
+    {
+        "claim_id": 69,
+        "claim_ref": "Cents are the smallest units of currency in Australia. It is the decimal fraction of the Australian Dollar; 100 cents make up one Australian Dollar.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "model": "mixtral8x7b",
+        "claim_target": "Paise are the smallest units of currency in India. It is the decimal fraction of the Indian Rupee; 100 paise make up one Indian Rupee.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'cents' corresponding to target location 'India' is 'paise' under the category 'Smallest units of currency'. The choice of target entity is reasonable because (a) Both cents and paise are the smallest units of currency in their respective countries, (b) They are decimal fractions of their respective primary units of currency, with 100 cents making up one Australian Dollar and 100 paise making up one Indian Rupee, (c) They represent similar concepts of smaller units in their respective monetary systems.",
+        "num_location_in_prompt": 11
+    },
+    {
+        "claim_id": 70,
+        "claim_ref": "Marc Jorgenson\u00a0is a Canadian electronics inventor, writer, musician and recording engineer. He is best known as a sound designer, contributing to several video games, a feature film, dozens of toys and e-books.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "model": "mixtral8x7b",
+        "claim_target": "Ravishankar S.\u00a0is an Indian electronics engineer, writer, musician, and sound designer. He is best known for his work as a sound designer, contributing to several video games, a feature film, dozens of toys, and e-books.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Marc Jorgenson' corresponding to target location 'India' is 'Ravishankar S.' under the category 'Electronics engineer, writer, musician, and sound designer'. The choice of target entity is reasonable because (a) both are professionals in similar fields with accomplishments in electronics, writing, music, and sound design, (b) both have contributed significantly to various media forms, such as video games, films, toys, and e-books, making this comparison contextually relevant.",
+        "num_location_in_prompt": 11
+    },
+    {
+        "claim_id": 71,
+        "claim_ref": "The Battle of Fort Sumter was the bombardment of Fort Sumter near Charleston, South Carolina by the South Carolina militia. It ended with its surrender by the United States Army, beginning the American Civil War.",
+        "location": "Kerala",
+        "hyperlocal score": 2,
+        "model": "mixtral8x7b",
+        "claim_target": "The Battle of Colachel was a naval battle fought in 1741 between the Dutch East India Company and the Kingdom of Travancore near Colachel, a coastal town in present-day Kanyakumari district, Kerala. It ended with the victory of the Travancore army, marking a significant event in the history of Kerala.",
+        "reason_for_target_sent": "The equivalent target entity of the reference event 'The Battle of Fort Sumter' corresponding to target location 'Kerala' is 'The Battle of Colachel' under the category 'Naval battle'. The choice of target event is reasonable because (a) Both battles are significant military conflicts that ended in the victory of the weaker side, (b) Both battles had long-lasting impacts on their respective regions, with The Battle of Fort Sumter marking the beginning of the American Civil War, and The Battle of Colachel enabling Travancore to expand its territories and strengthen its naval power in the Indian Ocean.",
+        "num_location_in_prompt": 5
+    },
+    {
+        "claim_id": 72,
+        "claim_ref": "Bibliomotocarro is a mobile library in southern region of Italy. It promotes reading and education. It is committed to providing access to books and literature. It contains a wide variety of books, ranging from children's books to classic literature.",
+        "location": "Chennai",
+        "hyperlocal score": 3,
+        "model": "mixtral8x7b",
+        "claim_target": "Bookwagon is a mobile library in Chennai, India, promoting reading and education. It is dedicated to providing access to books and literature, with a wide variety of books available, including children's books and classics.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Bibliomotocarro' corresponding to target location 'Chennai' is 'Bookwagon' under the category 'Mobile library'. The choice of target entity is reasonable because (a) Both Bibliomotocarro and Bookwagon share the same purpose, which is promoting reading, education, and providing access to books and literature, (b) Both mobile libraries have a diverse collection of books, catering to various interests, ages, and preferences, making them valuable resources within their respective communities.",
+        "num_location_in_prompt": 4
+    },
+    {
+        "claim_id": 73,
+        "claim_ref": "Love on the Spectrum is an Australian reality television show that follows people on the autism spectrum as they explore the dating world. The show is produced by Northern Pictures for ABC TV, and was made available to stream on ABC iview and Netflix.\n",
+        "location": "Agra",
+        "hyperlocal score": 3,
+        "model": "mixtral8x7b",
+        "claim_target": "\"Indian Matchmaking\" is an Indian reality television show that follows individuals as they navigate the world of arranged marriages, a cultural tradition in India. The show is produced by Smriti Mundhra and released on Netflix.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Love on the Spectrum' corresponding to target location 'Agra' is 'Indian Matchmaking' under the category 'Reality TV'. The choice of target entity is reasonable because (a) Both shows are reality TV formats, showcasing real people's experiences in their dating lives, (b) Indian Matchmaking specifically highlights the unique cultural context of arranged marriages in India, providing a fitting equivalent for Agra, a city known for its rich cultural heritage, including the iconic Taj Mahal, a mausoleum built for love.",
+        "num_location_in_prompt": 0
+    },
+    {
+        "claim_id": 74,
+        "claim_ref": "Hangzhou Zoo is a zoo located in Hangzhou, Zhejiang province, People's Republic of China. The zoo was officially opened in 1958. It offers a diverse collection of animals making it a significant attraction in Hangzhou.",
+        "location": "Jaipur",
+        "hyperlocal score": 3,
+        "model": "mixtral8x7b",
+        "claim_target": "Jaipur Zoo is a zoological garden situated in Jaipur, Rajasthan, India. Established in 1877, it houses a wide variety of indigenous and exotic animals, making it a popular attraction for both locals and tourists in Jaipur.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Hangzhou Zoo' corresponding to target location 'Jaipur' is 'Jaipur Zoo' under the category 'Zoos'. The choice of target entity is reasonable because (a) Both entities are zoos, which provide visitors with opportunities to observe and learn about various animal species, (b) Jaipur Zoo, like Hangzhou Zoo, is a significant attraction in its respective city, serving as a recreational and educational venue for residents and tourists alike.",
+        "num_location_in_prompt": 0
+    },
+    {
+        "claim_id": 75,
+        "claim_ref": "American football (referred to simply as football in the United States and Canada), also known as gridiron football, is a team sport played by two teams of eleven players on a rectangular field with goalposts at each end. The objective is to advance the ball into the opposing team's end zone for a touchdown or kicking the ball through the opponent's goalposts for a field goal.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "model": "mixtral8x7b",
+        "claim_target": "Association football (often referred to as football in India, although commonly called soccer in some other countries), is a team sport played by two teams of eleven players on a rectangular field with a goalpost at each end. The objective is to advance the ball into the opposing team's goal for a score or kicking the ball into the opponent's goalposts for a goal.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'American football' corresponding to target location 'India' is 'Association football' under the category 'Team sport'. The choice of target entity is reasonable because (a) both versions of football are popular sports worldwide, but have different rule sets, with Association football being more globally uniform and American football being specific to the US and Canada, (b) both sports are played by two teams of eleven players on a field with goalposts, and (c) the objective of both sports involves advancing the ball into the opponent's scoring area, either for a touchdown/score or a goal.",
+        "num_location_in_prompt": 11
+    },
+    {
+        "claim_id": 76,
+        "claim_ref": "The Order of Australia is an honour that recognises Australian citizens and other persons for outstanding achievement and service. It was established on 14 February 1975 by Elizabeth II, Queen of Australia, on the advice of the Australian Government. Before the establishment of the order, Australian citizens received British honours.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "model": "mixtral8x7b",
+        "claim_target": "The Padma Awards are an honor that recognizes notable Indians and, on rare occasions, non-Indian figures for their distinguished achievements and service. It was established on January 2, 1954, by the Government of India. Before the establishment of the Padma Awards, notable Indians received British honors.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'The Order of Australia' corresponding to target location 'India' is 'The Padma Awards' under the category 'Honour recognizing distinguished achievements and service'. The choice of target entity is reasonable because (a) both entities serve similar purposes in recognizing their citizens' outstanding achievements and meritorious service, (b) they were both established around the same time, with the Order of Australia in 1975 and the Padma Awards in 1954, and (c) before their establishments, citizens of their respective countries received British honors, indicating a shift towards recognizing domestic achievements.",
+        "num_location_in_prompt": 11
+    },
+    {
+        "claim_id": 77,
+        "claim_ref": "Standard Chinese is designated as the official language of mainland China. There are standard Chinese speakers in other countries like United Nations, Singapore, and Taiwan.",
+        "location": "Karnataka",
+        "hyperlocal score": 2,
+        "model": "mixtral8x7b",
+        "claim_target": "Kannada is designated as the official language of Karnataka, with speakers in other countries such as Mauritius and the United States.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Standard Chinese' corresponding to target location 'Karnataka' is 'Kannada' under the category 'Official language'. The choice of target entity is reasonable because (a) Both Standard Chinese and Kannada are official languages in their respective regions, with Standard Chinese being used in mainland China and Kannada in Karnataka, (b) Both languages have speakers in other countries - Standard Chinese in places like Singapore and Taiwan, while Kannada has speakers in countries such as Mauritius and the United States, reflecting their influence and reach beyond their respective territories.",
+        "num_location_in_prompt": 8
+    },
+    {
+        "claim_id": 78,
+        "claim_ref": "The Russian State Library is one of the three national libraries of Russia, located in Moscow. It is the largest library in the country, largest in Europe and one of the largest in the world. Its holdings crossed over 47 million units in 2017. ",
+        "location": "Bengaluru",
+        "hyperlocal score": 3,
+        "model": "mixtral8x7b",
+        "claim_target": "The Indian Institute of Science is one of the three national research institutions of India, located in Bengaluru. It is the largest research institution in the country, with a focus on advanced scientific and technological research. Its holdings and resources are extensive, including millions of books, journals, and research papers, making it one of the leading institutions of its kind in Asia.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'The Russian State Library' corresponding to target location 'Bengaluru' is 'The Indian Institute of Science' under the category 'National research institution'. The choice of target entity is reasonable because (a) Both The Russian State Library and The Indian Institute of Science are premier research institutions in their respective countries, (b) Both institutions have large collections of resources, making them significant contributors to academic research, (c) Both institutions are located in major metropolitan cities - Moscow and Bengaluru, respectively, and (d) They are both national in scope, with a mandate to serve their countries' research communities as well as support national development efforts in their respective fields of expertise.",
+        "num_location_in_prompt": 6
+    },
+    {
+        "claim_id": 79,
+        "claim_ref": "EGMA Sinkhole a.k.a. Peynirlik\u00f6n\u00fc Sinkhole, is a sinkhole and the deepest cave in Turkey. It is located at Sug\u00f6z\u00fc village of Anamur, Mersin. The sinkhole is 1,429 m (4,688 ft) deep and 3,118 m (10,230 ft) long. EGMA is an acronym that stands for Evren G\u00fcnay - Mehmet Ali \u00d6zel.",
+        "location": "Andhra Pradesh",
+        "hyperlocal score": 2,
+        "model": "mixtral8x7b",
+        "claim_target": "The Tadipatri Gliding Rock Sinkhole is a sinkhole located in Tadipatri, Anantapur district, Andhra Pradesh, India, and is considered one of the deepest sinkholes in the country, reaching a depth of approximately 457 meters (1,499 feet) and stretching 230 meters (755 feet) in width.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'EGMA Sinkhole' corresponding to target location 'Andhra Pradesh' is 'Tadipatri Gliding Rock Sinkhole' under the category 'Sinkhole'. The choice of target entity is reasonable because (a) Both EGMA Sinkhole and Tadipatri Gliding Rock Sinkhole are natural geological features characterized by their significant depths, (b) Both sinkholes provide valuable insights into the region's unique geological formations, making them notable attractions for geologists, researchers, and tourists alike.",
+        "num_location_in_prompt": 7
+    },
+    {
+        "claim_id": 80,
+        "claim_ref": "The Mall of America is the largest shopping mall in the United States of America. The mall offers a wide range of attractions and amenities, including shopping, dining, and entertainment options.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "model": "mixtral8x7b",
+        "claim_target": "Select Citywalk is one of the largest shopping malls in India, located in New Delhi. The mall provides a variety of attractions and amenities, such as shopping, dining, and entertainment options.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'The Mall of America' corresponding to target location 'India' is 'Select Citywalk' under the category 'Largest shopping mall'. The choice of target entity is reasonable because (a) Both The Mall of America and Select Citywalk are significant shopping destinations in their respective countries, attracting numerous visitors, (b) Both malls offer diverse shopping, dining, and entertainment options, catering to various tastes and preferences of customers, and (c) Select Citywalk, located in New Delhi, India, is one of the most prominent and largest shopping malls in India, making it a fitting counterpart for this comparison.",
+        "num_location_in_prompt": 11
+    },
+    {
+        "claim_id": 81,
+        "claim_ref": "The Imperial Palace is the main residence of the Emperor of Japan. It is a large park-like area located in the Chiyoda district of the Chiyoda ward of Tokyo and contains several buildings including the Fukiage Palace where a Emperor has his living quarters, the main palace where various ceremonies and receptions take place, some residences of the Imperial Family, an archive, museums and administrative offices.",
+        "location": "Rajasthan",
+        "hyperlocal score": 2,
+        "model": "mixtral8x7b",
+        "claim_target": "The City Palace is the main residence of the Maharaja of Jaipur. It is a large fortified complex located in the heart of Jaipur, the capital of Rajasthan, and contains several buildings including the Chandra Mahal where the Maharaja has his living quarters, the Mubarak Mahal which serves as a museum showcasing the royal garments and textiles, some residences of the royal family, an archive, and administrative offices.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'The Imperial Palace' corresponding to target location 'Rajasthan' is 'The City Palace' under the category 'Main residence of royalty'. The choice of target entity is reasonable because (a) Both the Imperial Palace and City Palace serve as the main residences of the respective heads of state, with living quarters, ceremonial spaces, and administrative offices, (b) Both complexes contain multiple buildings, museums, and archives, preserving historical artifacts, culture, and traditions for future generations, (c) While the Imperial Palace is located in Tokyo, Japan, and City Palace is situated in Jaipur, India, they both attract numerous tourists and history enthusiasts, showcasing",
+        "num_location_in_prompt": 5
+    },
+    {
+        "claim_id": 82,
+        "claim_ref": "David Matthew Altshuler is a clinical endocrinologist and human geneticist. He is Executive Vice President, Global Research and Chief Scientific Officer at Vertex Pharmaceuticals. ",
+        "location": "India",
+        "hyperlocal score": 1,
+        "model": "mixtral8x7b",
+        "claim_target": "Dr. Soumya Swaminathan is a clinical scientist and pediatrician. She is Chief Scientist at the World Health Organization (WHO).",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'David Matthew Altshuler' corresponding to target location 'India' is 'Dr. Soumya Swaminathan' under the category 'Prominent clinical scientist'. The choice of target entity is reasonable because (a) both are prominent figures in their respective fields, with Altshuler being a clinical endocrinologist and human geneticist and Swaminathan being a clinical scientist and pediatrician, (b) both hold important leadership positions in their respective organizations, with Altshuler serving as Executive Vice President, Global Research and Chief Scientific Officer at Vertex Pharmaceuticals and Swaminathan serving as Chief Scientist at the World Health Organization (WHO).",
+        "num_location_in_prompt": 11
+    },
+    {
+        "claim_id": 83,
+        "claim_ref": "Angel food cake, or angel cake, is a type of sponge cake made with egg whites, flour, and sugar. A whipping agent, such as cream of tartar, is commonly added. It differs from other cakes because it uses no butter. Its aerated texture comes from whipped egg white.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "model": "mixtral8x7b",
+        "claim_target": "Rava cake, also known as semolina cake, is a popular Indian cake recipe made with semolina, sugar, and yogurt. A raising agent, such as baking powder or baking soda, is commonly added. It differs from other cakes because it does not use butter or wheat flour, instead relying on whipped egg whites for its light, crumbly texture.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Angel food cake' corresponding to target location 'India' is 'Rava cake' under the category 'Type of cake'. The choice of target entity is reasonable because (a) Both angel food cake and rava cake are unique in their ingredients and preparation methods, (b) Rava cake is a popular recipe in India made with semolina (rava), while angel food cake uses egg whites and no butter, (c) Both cakes rely on whipped egg whites for their light, airy texture, making them comparable in terms of their unique structures.",
+        "num_location_in_prompt": 11
+    },
+    {
+        "claim_id": 84,
+        "claim_ref": "DLR Site Lampoldshausen is an institution which has its focus on propulsion systems and aerospace applications. It is involved in research and development related to rocket propulsion and combustion chambers, emphasizing the importance of fatigue life prediction and materials testing for reliable performance in aerospace and energy generation applications",
+        "location": "Bengaluru",
+        "hyperlocal score": 2,
+        "model": "mixtral8x7b",
+        "claim_target": "Indian Institute of Science (IISc) is a research institution in Bengaluru that specializes in various fields, including propulsion systems and aerospace applications. The institution conducts research and development in areas such as combustion engines, fatigue life prediction, and materials testing, with a focus on reliable performance in aerospace and energy generation applications.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'DLR Site Lampoldshausen' corresponding to target location 'Bengaluru' is 'Indian Institute of Science (IISc)' under the category 'Research institution'. The choice of target entity is reasonable because (a) Both DLR Site Lampoldshausen and IISc conduct research in propulsion systems and aerospace applications, (b) Both entities are involved in researching and developing combustion engines, fatigue life prediction, and materials testing, (c) By choosing a well-known and reputable institution like IISc, it ensures the continuity of the original context, as both entities are dedicated to research, development, and education in their respective fields.",
+        "num_location_in_prompt": 6
+    },
+    {
+        "claim_id": 85,
+        "claim_ref": "Intense Tropical Cyclone Enawo was the strongest tropical cyclone of the 2016-17 South-West Indian Ocean cyclone season. Enawo was the strongest tropical cyclone to strike Madagascar since Gafilo in 2004, killing 78 people and causing $400 million in damages.",
+        "location": "Odisha",
+        "hyperlocal score": 2,
+        "model": "mixtral8x7b",
+        "claim_target": "Cyclone Fani was the strongest tropical cyclone to strike Odisha in recent years, since Phailin in 2013, causing extensive damage and killing 64 people in 2019.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Intense Tropical Cyclone Enawo' corresponding to target location 'Odisha' is 'Cyclone Fani' under the catgory 'Meteorology'. The choice of target entity is reasonable because (a) Both cyclones are the strongest tropical cyclones to hit their respective regions in recent years, with significant impacts on local communities, (b) Both cyclones have caused substantial loss of life and property, highlighting the importance of understanding and preparing for such extreme weather events in both the South-West Indian Ocean and the Bay of Bengal regions.",
+        "num_location_in_prompt": 0
+    },
+    {
+        "claim_id": 86,
+        "claim_ref": "Vietnam is the world's largest producer and exporter of culinary black pepper. The value of black pepper exported from Vietnam is in billions. The destinations for it's exports are India, China, United States, United Arab Emirates, Germany and many other countries.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "model": "mixtral8x7b",
+        "claim_target": "India is one of the leading producers and exporters of tea, spices, and rice in the world. The value of tea and spice exports from India reaches billions of dollars, with major destinations including the United States, Vietnam, China, UAE, and several other countries.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Vietnam' corresponding to the target location 'India' is 'India' under the category 'Leading producer and exporter of agricultural products'. The choice of target entity is reasonable because (a) Both Vietnam and India are significant producers of agricultural products, with Vietnam being the world's largest producer of black pepper, while India contributes significantly to tea, spices, and rice production, (b) Both countries export their agricultural products to multiple destinations, including developed and developing countries, creating a global impact on agricultural trade.",
+        "num_location_in_prompt": 12
+    },
+    {
+        "claim_id": 87,
+        "claim_ref": "The Monkey King or Sun Wukong is a fictional character best known as one of the main players in the 16th-century Chinese novel Journey to the West, and many later stories and adaptations. In the novel, Sun Wukong is a monkey born from a stone who acquires supernatural powers through Taoist practices.",
+        "location": "West Bengal",
+        "hyperlocal score": 2,
+        "model": "mixtral8x7b",
+        "claim_target": "Ganesha or Ganapati is a widely revered Hindu deity, often recognized as the remover of obstacles and the god of beginnings. In Hindu mythology, Ganesha is depicted as a man with the head of an elephant, symbolizing wisdom and strength.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'The Monkey King or Sun Wukong' corresponding to target location 'West Bengal' is 'Ganesha or Ganapati' under the category 'Hindu deity'. The choice of target entity is reasonable because (a) Both Sun Wukong and Ganesha are significant figures in their respective mythologies, with Sun Wukong being a central character in Chinese literature and Ganesha being a prominent deity in Hinduism, (b) Both entities have distinct appearances representing symbolic meanings, such as Sun Wukong's supernatural powers derived through Taoist practices and Ganesha's wisdom and strength embodied in his elephant head.",
+        "num_location_in_prompt": 4
+    },
+    {
+        "claim_id": 88,
+        "claim_ref": "Phillip Youmans (born February 18, 2000) is an American filmmaker. He is the first African-American director to win the Founders Prize at Tribeca Film Festival, which he received for his 2019 directorial debut, Burning Cane.\n\n",
+        "location": "Bangalore",
+        "hyperlocal score": 3,
+        "model": "mixtral8x7b",
+        "claim_target": "Pushkar Mallikarjun is an Indian filmmaker based in Bangalore, Karnataka. He is the first Kannada director to win the prestigious National Film Award for Best First Film of a Director, which he received for his 2021 directorial debut, Olavina Udugore.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Phillip Youmans' corresponding to target location 'Bangalore' is 'Pushkar Mallikarjun' under the category 'Filmmaker'. The choice of target entity is reasonable because (a) Both directors have achieved significant recognition in their respective film industries for their directorial debuts at a young age, with Youmans winning at Tribeca Film Festival, while Mallikarjun won the National Film Award in India, (b) Both directors showcase the diversity and talent present in their respective film industries, highlighting their regions' unique cultural contributions on an international stage.",
+        "num_location_in_prompt": 0
+    },
+    {
+        "claim_id": 89,
+        "claim_ref": "Paula Michelle White-Cain is an American televangelist and a proponent of prosperity theology.\n  White became chair of the evangelical advisory board in Donald Trump's administration. She delivered the invocation at his inauguration, on January 20, 2017. She is the first female clergy member to deliver the invocation.",
+        "location": "Coimbatore",
+        "hyperlocal score": 3,
+        "model": "mixtral8x7b",
+        "claim_target": "Sri Sri Ravi Shankar is an Indian spiritual leader and founder of the Art of Living Foundation, a volunteer-based organization that focuses on providing service, human values, and spirituality to communities worldwide. He has been a prominent figure in interfaith dialogues, collaborating with various governments, including the administration of Prime Minister Narendra Modi, to promote peace and spiritual well-being. He is the first spiritual leader from India to address the United Nations General Assembly, delivering his speech in 2016.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Paula Michelle White-Cain' corresponding to target location 'Coimbatore' is 'Sri Sri Ravi Shankar' under the category 'Religious figure'. The choice of target entity is reasonable because (a) Both individuals are prominent figures within their respective religious communities, with Paula Michelle White-Cain being a televangelist and Sri Sri Ravi Shankar being a spiritual leader, (b) Both have had significant interactions with high-level political leaders, with Paula Michelle White-Cain serving as chair of Donald Trump's evangelical advisory board and Sri Sri Ravi Shankar collaborating with",
+        "num_location_in_prompt": 0
+    },
+    {
+        "claim_id": 90,
+        "claim_ref": "Matsuo Bash\u014d, born Matsuo Kinsaku, later known as Matsuo Ch\u016bemon Munefusa, was the most famous Japanese poet of the Edo period. During his lifetime, Bash\u014d was recognized for his works in the collaborative haikai no renga form; today, after centuries of commentary, he is recognized as the greatest master of haiku.",
+        "location": "Kudki",
+        "hyperlocal score": 3,
+        "model": "mixtral8x7b",
+        "claim_target": "Mahakavi Kumaranasan, also known as Kudkil Velukutty Nair, was one of the most renowned Malayalam poets of the modern era in Kerala, India. During his lifetime, Kumaranasan was celebrated for his contributions to Malayalam literature, particularly in the areas of poetry and drama; today, he is remembered as one of the greatest masters of Malayalam poetry.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Matsuo Bash\u014d' corresponding to target location 'Kudki' is 'Mahakavi Kumaranasan' under the category 'Poets'. The choice of target entity is reasonable because (a) Both poets are considered masters of their respective literary traditions, with Bash\u014d being renowned for his haiku in Japan and Kumaranasan for his Malayalam poetry in Kerala, India, (b) Both poets have made significant contributions to their literary forms during their lifetimes, with Bash\u014d excelling in collaborative haikai no renga and Kumaranasan in poetry and drama, (c) Their works continue to be celebrated and studied, with Bash\u014d",
+        "num_location_in_prompt": 0
+    },
+    {
+        "claim_id": 91,
+        "claim_ref": "Kinji Fukasaku was a Japanese film director and screenwriter. Known for his \"broad range and innovative filmmaking\", Fukasaku has worked in many different genres and styles, but was best known for his gritty yakuza films, typified by the Battles Without Honor and Humanity series.",
+        "location": "Mumbai",
+        "hyperlocal score": 3,
+        "model": "mixtral8x7b",
+        "claim_target": "Ram Gopal Varma is an Indian film director and producer, known for his versatile filmmaking in various genres, particularly recognized for his work in Indian crime cinema.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Kinji Fukasaku' corresponding to target location 'Mumbai' is 'Ram Gopal Varma' under the category 'Film director and producer'. The choice of target entity is reasonable because (a) Both Fukasaku and Varma have made significant contributions to their national cinemas by working in various genres and styles, (b) They are best known for their innovative approach in portraying crime stories in their respective countries; Fukasaku for his yakuza films in Japan and Varma for his Indian crime cinema, including his gangster film series such as \"Shiva\" and \"Company\".",
+        "num_location_in_prompt": 9
+    },
+    {
+        "claim_id": 92,
+        "claim_ref": "Tutankhamun, Tutankhamon or Tutankhamen, also known as Tutankhaten, was the antepenultimate pharaoh of the Eighteenth Dynasty of ancient Egypt. His death marked the cessation of the dynasty's royal line.\n",
+        "location": "Pataliputra",
+        "hyperlocal score": 3,
+        "model": "mixtral8x7b",
+        "claim_target": "Ashoka the Great was an Indian emperor who ruled the Maurya Empire during its peak in the 3rd century BCE, with Pataliputra serving as his capital. His reign marked a significant period of cultural development, social reform, and expansion of the empire.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Tutankhamun' corresponding to target location 'Pataliputra' is 'Ashoka the Great' under the category 'Historical figures'. The choice of target entity is reasonable because (a) Both Tutankhamun and Ashoka the Great were significant figures in their respective civilizations, ruling during periods of great change and development, (b) Pataliputra, like ancient Egypt's Thebes, was a capital city during Ashoka's reign, serving as a center of political power, cultural exchange, and historical significance.",
+        "num_location_in_prompt": 0
+    },
+    {
+        "claim_id": 93,
+        "claim_ref": "Andrei Dmitrievich Sakharov was a Soviet physicist and a Nobel Peace Prize laureate, which he was awarded in 1975 for emphasizing human rights around the world.",
+        "location": "India",
+        "hyperlocal score": 1,
+        "model": "mixtral8x7b",
+        "claim_target": "Rajagopal Pachauri was an Indian scientist and environmentalist, who was awarded the Nobel Peace Prize in 2007, sharing it with the Intergovernmental Panel on Climate Change (IPCC) for their contributions in raising awareness about climate change and promoting sustainable development.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Andrei Dmitrievich Sakharov' corresponding to target location 'India' is 'Rajagopal Pachauri' under the category 'Nobel Peace Prize laureate'. The choice of target entity is reasonable because (a) both Sakharov and Pachauri are notable laureates of the Nobel Peace Prize, recognized for their significant contributions in their respective fields, Sakharov for human rights and Pachauri for environmental protection, (b) both individuals have made substantial impacts within their countries as well as internationally, with Sakharov advocating for human rights within the Soviet Union and Pachauri promoting sustainable development in India and globally.",
+        "num_location_in_prompt": 11
+    },
+    {
+        "claim_id": 94,
+        "claim_ref": "William Dwight Billings was an American ecologist. He was one of the foundational figures in the field of plant physiological ecology and made major contributions to desert and arctic/alpine ecology.\n",
+        "location": "Thiruvananthapuram",
+        "hyperlocal score": 3,
+        "model": "mixtral8x7b",
+        "claim_target": "Madhav Gadgil is an Indian ecologist who has made significant contributions to the field of environmental policy and conservation biology in India, with a focus on Western Ghats biodiversity.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'William Dwight Billings' corresponding to target location 'Thiruvananthapuram' is 'Madhav Gadgil' under the category 'Ecologist'. The choice of target entity is reasonable because (a) Both ecologists have made substantial contributions to their respective fields, with Billings focusing on plant physiological ecology in North America and Gadgil concentrating on environmental policy and conservation biology in India, (b) Both individuals are renowned for their work in their respective regions, with Gadgil's research on the Western Ghats biodiversity having significant implications for conservation efforts in Thiruvananthapuram, making him a fitting target entity for this location.",
+        "num_location_in_prompt": 0
+    },
+    {
+        "claim_id": 95,
+        "claim_ref": "Ahmed Shawqi, nicknamed the Prince of Poets, was an Egyptian poet laureate, linguist, and one of the most famous Arabic literary writers of the modern era in the Arab World.",
+        "location": "Uttar Pradesh",
+        "hyperlocal score": 2,
+        "model": "mixtral8x7b",
+        "claim_target": "Harivansh Rai Bachchan was a renowned Indian poet, lyricist, and playwright, considered one of the most influential literary figures in modern Hindi literature.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Ahmed Shawqi' corresponding to target location 'Uttar Pradesh' is 'Harivansh Rai Bachchan' under the category 'Literary Figure'. The choice of target entity is reasonable because (a) both Ahmed Shawqi and Harivansh Rai Bachchan were highly influential literary figures in their respective languages, shaping modern poetry and literature with their unique contributions, (b) both individuals are celebrated for their literary works, which remain significant in Arabic and Hindi literature respectively, inspiring future generations of writers and poets.",
+        "num_location_in_prompt": 5
+    },
+    {
+        "claim_id": 96,
+        "claim_ref": "George Washington was an American Founding Father, military officer, and politician who served as the first president of the United States from 1789 to 1797. ",
+        "location": "New Delhi",
+        "hyperlocal score": 3,
+        "model": "mixtral8x7b",
+        "claim_target": "Mahatma Gandhi was an Indian independence activist, lawyer, and politician who served as the leader of the Indian National Congress during the country's struggle for independence from British rule.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'George Washington' corresponding to target location 'New Delhi' is 'Mahatma Gandhi' under the category 'Political leader'. The choice of target entity is reasonable because (a) Both George Washington and Mahatma Gandhi were prominent leaders in their respective nations, playing crucial roles in their countries' fights for independence, (b) Both leaders were known for their moral integrity, political acumen, and charismatic leadership styles, inspiring millions of people in their respective countries.",
+        "num_location_in_prompt": 6
+    },
+    {
+        "claim_id": 97,
+        "claim_ref": "Comcast Cable Communications, LLC, doing business as Xfinity, is an American telecommunications business segment and division of Comcast Corporation. ",
+        "location": "Bengaluru",
+        "hyperlocal score": 3,
+        "model": "mixtral8x7b",
+        "claim_target": "Bharti Airtel Limited is an Indian telecommunications company providing services in various categories, operating under the brand name Airtel.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'Comcast Cable Communications, LLC' corresponding to target location 'Bengaluru' is 'Bharti Airtel Limited' under the category 'Telecommunications company'. The choice of target entity is reasonable because (a) Both Comcast Cable Communications, LLC and Bharti Airtel Limited are prominent telecommunications companies operating in their respective countries, (b) Both organizations provide various services within their field, with Comcast focusing on cable communications in the US, while Bharti Airtel offers multiple telecom services, including mobile, broadband, and enterprise solutions in India and other countries.",
+        "num_location_in_prompt": 6
+    },
+    {
+        "claim_id": 98,
+        "claim_ref": "On July 6, 2017, a two-hectare wildfire began west of 100 Mile House, British Columbia, Canada marking the beginning of the record-breaking 2017 wildfire season in British Columbia. ",
+        "location": "Odisha",
+        "hyperlocal score": 2,
+        "model": "mixtral8x7b",
+        "claim_target": "On October 29, 2018, a devastating cyclone named Titli made landfall in Ganjam district, Odisha, India, marking the beginning of one of the state's most intense cyclonic seasons.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'two-hectare wildfire in British Columbia, Canada' corresponding to target location 'Odisha' is 'Cyclone Titli in Ganjam district, Odisha, India' under the category 'Natural Disasters'. The choice of target entity is reasonable because (a) Both events represent significant natural disasters in their respective regions, (b) By comparing a wildfire in British Columbia to a cyclone in Odisha, it showcases how different types of natural disasters pose challenges in different parts of the world, fostering global awareness of various environmental hazards.",
+        "num_location_in_prompt": 0
+    },
+    {
+        "claim_id": 99,
+        "claim_ref": "The Bank of America Corporation is an American multinational investment bank and financial services holding company headquartered at the Bank of America Corporate Center in Charlotte, North Carolina, with investment banking and auxiliary headquarters in Manhattan.",
+        "location": "Kerala",
+        "hyperlocal score": 2,
+        "model": "mixtral8x7b",
+        "claim_target": "Federal Bank Limited is an Indian private sector bank headquartered in Aluva, Kerala, with a significant presence in various parts of the country.",
+        "reason_for_target_sent": "The equivalent target entity of the reference entity 'The Bank of America Corporation' corresponding to target location 'Kerala' is 'Federal Bank Limited' under the category 'Private sector bank'. The choice of target entity is reasonable because (a) Both Bank of America Corporation and Federal Bank Limited are prominent financial institutions providing various banking and financial services to their customers. Bank of America Corporation is a multinational bank based in the US, while Federal Bank Limited is a private sector bank based in Kerala, (b) Both entities are headquartered in significant locations for their respective regions, with Bank of America Corporation located in Charlotte, North Carolina, and Federal Bank Limited located in Aluva, Kerala, which is a significant commercial hub in the state.",
+        "num_location_in_prompt": 5
+    }
+]
