@@ -224,7 +224,7 @@ prompt_data = {
     }
 }
 
-TARGET_SENT_GEN_PROMPT_INITIAL_A_DYN_TWO_SHOT_WITH_LOCATION_mixtral8x7b = """You will modify the things that I said. I will give you a reference sentence and target location. You will re-write the factually correct target sentence corresponding to an entity from the target location.
+TS_PROMPT_initial_A_dynamic_2_shot = """You will modify the things that I said. I will give you a reference sentence and target location. You will re-write the factually correct target sentence corresponding to an entity from the target location.
 For example:
 
 My reference sentence: {dyn_ref_claim_1}
@@ -244,7 +244,21 @@ Target location: {location}
 The target sentence for the target location and the reasons generated are:
 """.strip()
 
-TARGET_SENT_GEN_PROMPT_INITIAL_B_DYN_TWO_SHOT_WITH_LOCATION_mixtral8x7b = """As a localization assistant, your role is to adapt sentences from English to suit the Indian domain. For each sentence provided, identify the source entity and replace it with an appropriate target entity relevant to the Indian context as per the target location. Additionally, make any necessary modifications to the sentence to ensure it remains factually correct after the change. Your answers should be in English and utilize multi-entity localization. Use the format outlined below to present your responses.
+TS_PROMPT_initial_A_dynamic_1_shot = """You will modify the things that I said. I will give you a reference sentence and target location. You will re-write the factually correct target sentence corresponding to an entity from the target location.
+For example:
+
+My reference sentence: {dyn_ref_claim_1}
+Target location: {location}
+The target sentence for the target location and the reasons generated are:
+Target sentence: {dyn_tar_claim_1}
+Reason: {dyn_reason_1}
+
+My reference sentence: {claim}
+Target location: {location}
+The target sentence for the target location and the reasons generated are:
+""".strip()
+
+TS_PROMPT_initial_B_dynamic_2_shot = """As a localization assistant, your role is to adapt sentences from English to suit the Indian domain. For each sentence provided, identify the source entity and replace it with an appropriate target entity relevant to the Indian context as per the target location. Additionally, make any necessary modifications to the sentence to ensure it remains factually correct after the change. Your answers should be in English and utilize multi-entity localization. Use the format outlined below to present your responses.
 
 My reference sentence: {dyn_ref_claim_1}
 Target location: {location}
@@ -263,7 +277,7 @@ Target location: {location}
 The target sentence for the target location and the reasons generated are:
 """.strip()
 
-TARGET_SENT_GEN_PROMPT_INITIAL_B_DYN_ONE_SHOT_WITH_LOCATION_mixtral8x7b = """As a localization assistant, your role is to adapt sentences from English to suit the Indian domain. For each sentence provided, identify the source entity and replace it with an appropriate target entity relevant to the Indian context as per the target location. Additionally, make any necessary modifications to the sentence to ensure it remains factually correct after the change. Your answers should be in English and utilize multi-entity localization. Use the format outlined below to present your responses.
+TS_PROMPT_initial_B_dynamic_1_shot = """As a localization assistant, your role is to adapt sentences from English to suit the Indian domain. For each sentence provided, identify the source entity and replace it with an appropriate target entity relevant to the Indian context as per the target location. Additionally, make any necessary modifications to the sentence to ensure it remains factually correct after the change. Your answers should be in English and utilize multi-entity localization. Use the format outlined below to present your responses.
 
 My reference sentence: {dyn_ref_claim_1}
 Target location: {location}
@@ -274,4 +288,179 @@ Reason: {dyn_reason_1}
 My reference sentence: {claim}
 Target location: {location}
 The target sentence for the target location and the reasons generated are:
+""".strip()
+
+TS_PROMPT_initial_A_static_0_shot = """You will modify the things that I said. I will give you a reference sentence and target location. You will re-write the factually correct target sentence corresponding to an entity from the target location.
+For example:
+
+My reference sentence: <reference claim>
+Target location: <target_location>
+Target sentence: <localized target sent>
+Reason: <reason for the localization>.
+
+My reference sentence: {claim}
+Target location: {location}
+Target sentence: <fill_your_answer_here>
+Reason: <fill_your_answer_here>
+""".strip()
+
+TS_PROMPT_initial_B_static_0_shot = """As a localization assistant, your role is to adapt sentences from English to suit the Indian domain. For each sentence provided, identify the source entity and replace it with an appropriate target entity relevant to the Indian context as per the target location. Additionally, make any necessary modifications to the sentence to ensure it remains factually correct after the change. Your answers should be in English and utilize multi-entity localization. Use the format outlined below to present your responses.
+
+My reference sentence: <reference claim>
+Target location: <target_location>
+Target sentence: <localized target sent>
+Reason: <reason for the localization>.
+
+My reference sentence: {claim}
+Target location: {location}
+Target sentence: <fill_your_answer_here>
+Reason: <fill_your_answer_here>
+""".strip()
+
+TS_PROMPT_initial_A_example_T1_static_3_shot = """You will modify the things that I said. I will give you a reference sentence and target location. You will re-write the factually correct target sentence corresponding to an entity from the target location.
+For example:
+
+My reference sentence: Rishi Sunak is a British politician who has served as Prime Minister of the United Kingdom and Leader of the Conservative Party since 2022.
+Target location: India
+The target sentence for the target location and the reasons generated are:
+Target sentence: Narendra Modi is an Indian politician who has served as Prime Minister of India and leader of the Bharatiya Janata Party since 2014.
+Reason: The equivalent target entity of the reference entity 'Rishi Sunak' corresponding to target location 'India' is 'Narendra Modi' under the category 'Political figure'. The choice of target entity is reasonable because (a) Both Rishi Sunak and Narendra Modi are prominent political figures who hold positions of significant power and influence in their respective countries. Sunak serves as Prime Minister of the United Kingdom, while Modi holds the position of Prime Minister in India, (b) Both politicians are affiliated with major political parties in their countries. Rishi Sunak is a member of the Conservative Party in the UK, while Narendra Modi is associated with the Bharatiya Janata Party (BJP) in India.
+
+My reference sentence: James Cameron is a Canadian filmmaker and screenwriter, renowned for his contributions to the world of Hollywood cinema. He is widely regarded as one of the most influential directors in the film industry, having helmed several blockbuster hits and groundbreaking projects. Cameron's illustrious career includes directing some of the highest-grossing films in cinematic history, such as "Titanic" and "Avatar", both of which shattered box office records and garnered critical acclaim worldwide. He is particularly celebrated for his pioneering work in pushing the boundaries of technology and visual effects in filmmaking.
+Target location: Telengana
+The target sentence for the target location and the reasons generated are:
+Target sentence: S. S. Rajamouli is an Indian director and screenwriter, known for his work in Telugu industry based in Telengana, India. He is considered one of the leading filmmakers in the Indian film industry, having directed some of the highest-grossing Indian films of all time. His most notable works include the "Telugu-language fantasy action film series", Baahubali and RRR which broke several box office records and gained international recognition.
+Reason: The equivalent target entity of the reference entity 'James Cameron' corresponding to target location 'Telengana' is 'S. S. Rajamouli' under the category 'Director'. The choice of target entity is reasonable because (a) Both directors have directed blockbuster hits and groundbreaking projects that have achieved immense popularity and critical acclaim, (b) Both directors have a similar gender, being male filmmakers, which adds to the parallelism between the two entities.
+
+My reference sentence: "Amazon" is a multinational technology company headquartered in Seattle, Washington. Founded by Jeff Bezos in 1994, it began as an online marketplace for books but has since expanded into various other product categories, including electronics, clothing, and groceries. With its vast selection of goods, convenient shopping experience, and innovative services like Amazon Prime, it has become one of the largest and most influential e-commerce platforms in the world.
+Target location: Bengaluru
+The target sentence for the target location and the reasons generated are:
+Target sentence: "Flipkart" is an Indian e-commerce company headquartered in Bengaluru, Karnataka. Founded by Sachin Bansal and Binny Bansal in 2007, it started as an online bookstore before diversifying into a wide range of product categories, including electronics, fashion, and home goods. With its user-friendly interface, extensive product offerings, and competitive pricing, Flipkart has emerged as one of India's leading e-commerce platforms, revolutionizing the way millions of people shop online in the country.
+Reason: The equivalent target entity of the reference entity 'Amazon' corresponding to target location 'Bengaluru' is 'Flipkart' under the catgory 'E-commerce'. The choice of target entity is reasonable because (a) The target sentence is fitting for Bengaluru because Flipkart, like Amazon, is a prominent e-commerce platform with its headquarters in the city, contributing to the region's reputation as a hub for technology and innovation, (b) Both companies have experienced significant growth and success, transforming the way people shop online and establishing themselves as key players in the global e-commerce industry.
+
+My reference sentence: {claim}
+Target location: {location}
+The target sentence for the target location and the reasons generated are:
+""".strip()
+
+TS_PROMPT_initial_A_example_T2_static_3_shot = """You will modify the things that I said. I will give you a reference sentence and target location. You will re-write the factually correct target sentence corresponding to an entity from the target location.
+For example:
+
+My reference sentence: Starbucks Corporation is an American multinational chain of coffeehouses and roastery reserves headquartered in Seattle, Washington. It was founded in 1971 and is currently the world's largest coffeehouse chain. As of November 2022, the company had 35,711 stores in 80 countries, 15,873 of which were located in the United States. Of Starbucks' U.S.-based stores, over 8,900 are company-operated, while the remainder are licensed.
+Target location: India
+The target sentence for the target location and the reasons generated are:
+Target sentence: Cafe Coffee Day is an Indian multinational chain of coffeehouses headquartered in Bengaluru, Karnataka. It was founded in 1996, and is currently one of the largest coffeehouse chains in India. As of November 2022, the company had over 2,500 stores across the country. Of Cafe Coffee Day's stores in India, over 2,000 are company-operated, while the remainder are licensed.
+Reason: The equivalent target entity of the reference entity 'Starbucks Corporation' corresponding to target location 'India' is 'Cafe Coffee Day' under the category 'Multinational chain of coffeehouses'. The choice of target entity is reasonable because (a) Both Starbucks Corporation and Cafe Coffee Day are prominent coffeehouse chains that operate on a multinational level. Starbucks is an American chain, while Cafe Coffee Day is an Indian chain. (b) Both companies have a significant number of stores in their respective countries. Starbucks has a substantial presence in the United States, while Cafe Coffee Day has a widespread presence in India.
+
+My reference sentence: Dr. James Andrews is an American orthopedic surgeon. He is a surgeon for knee, elbow, and shoulder injuries and is a specialist in repairing damaged ligaments.
+Target location: Mumbai
+The target sentence for the target location and the reasons generated are:
+Target sentence: Dr. Pradeep Sharma is a renowned orthopedic surgeon based in Mumbai. He specializes in treating knee, elbow, and shoulder injuries and is well-known for his expertise in repairing damaged ligaments.
+Reason: The equivalent target entity of the reference entity 'Dr. James Andrews' corresponding to the target location 'Mumbai' is 'Dr. Pradeep Sharma' under the category 'Orthopedic Surgeon'. The choice of target entity is reasonable because: (a) Both Dr. James Andrews and Dr. Pradeep Sharma are renowned orthopedic surgeons known for their expertise in treating knee, elbow, and shoulder injuries. This parallel ensures that the target entity maintains the same professional focus and reputation as the reference entity. (b) Dr. James Andrews is well-known in the United States for his specialization in repairing damaged ligaments, and Dr. Pradeep Sharma holds a similar reputation in Mumbai, India. This localization ensures the target sentence remains factually accurate and contextually relevant.
+
+My reference sentence: Johns Hopkins University is a private research university in Baltimore, Maryland. Founded in 1876, Johns Hopkins was the first U.S. university based on the European research institution model.
+Target location: Karnataka
+The target sentence for the target location and the reasons generated are:
+Target sentence: The Indian Institute of Science is a prestigious research university located in Bangalore, India. Established in 1909, the Indian Institute of Science was the first Indian university based on the European research institution model.
+Reason: The equivalent target entity of the reference entity 'Johns Hopkins University' corresponding to the target location 'Karnataka' is 'The Indian Institute of Science' under the category 'Research University'. The choice of target entity is reasonable because: (a) Both Johns Hopkins University and the Indian Institute of Science (IISc) are prestigious research universities renowned for their contributions to science and education. This ensures that the target entity maintains the same level of academic excellence and research focus as the reference entity. (b) Johns Hopkins University was the first U.S. university based on the European research institution model, and similarly, the Indian Institute of Science was the first Indian university to adopt this model. This parallel highlights the pioneering role both institutions played in their respective countries' higher education systems.
+
+My reference sentence: {claim}
+Target location: {location}
+The target sentence for the target location and the reasons generated are:
+""".strip()
+
+TS_PROMPT_initial_B_example_T1_static_3_shot = """As a localization assistant, your role is to adapt sentences from English to suit the Indian domain. For each sentence provided, identify the source entity and replace it with an appropriate target entity relevant to the Indian context as per the target location. Additionally, make any necessary modifications to the sentence to ensure it remains factually correct after the change. Your answers should be in English and utilize multi-entity localization. Use the format outlined below to present your responses.
+
+My reference sentence: Rishi Sunak is a British politician who has served as Prime Minister of the United Kingdom and Leader of the Conservative Party since 2022.
+Target location: India
+The target sentence for the target location and the reasons generated are:
+Target sentence: Narendra Modi is an Indian politician who has served as Prime Minister of India and leader of the Bharatiya Janata Party since 2014.
+Reason: The equivalent target entity of the reference entity 'Rishi Sunak' corresponding to target location 'India' is 'Narendra Modi' under the category 'Political figure'. The choice of target entity is reasonable because (a) Both Rishi Sunak and Narendra Modi are prominent political figures who hold positions of significant power and influence in their respective countries. Sunak serves as Prime Minister of the United Kingdom, while Modi holds the position of Prime Minister in India, (b) Both politicians are affiliated with major political parties in their countries. Rishi Sunak is a member of the Conservative Party in the UK, while Narendra Modi is associated with the Bharatiya Janata Party (BJP) in India.
+
+My reference sentence: James Cameron is a Canadian filmmaker and screenwriter, renowned for his contributions to the world of Hollywood cinema. He is widely regarded as one of the most influential directors in the film industry, having helmed several blockbuster hits and groundbreaking projects. Cameron's illustrious career includes directing some of the highest-grossing films in cinematic history, such as "Titanic" and "Avatar", both of which shattered box office records and garnered critical acclaim worldwide. He is particularly celebrated for his pioneering work in pushing the boundaries of technology and visual effects in filmmaking.
+Target location: Telengana
+The target sentence for the target location and the reasons generated are:
+Target sentence: S. S. Rajamouli is an Indian director and screenwriter, known for his work in Telugu industry based in Telengana, India. He is considered one of the leading filmmakers in the Indian film industry, having directed some of the highest-grossing Indian films of all time. His most notable works include the "Telugu-language fantasy action film series", Baahubali and RRR which broke several box office records and gained international recognition.
+Reason: The equivalent target entity of the reference entity 'James Cameron' corresponding to target location 'Telengana' is 'S. S. Rajamouli' under the category 'Director'. The choice of target entity is reasonable because (a) Both directors have directed blockbuster hits and groundbreaking projects that have achieved immense popularity and critical acclaim, (b) Both directors have a similar gender, being male filmmakers, which adds to the parallelism between the two entities.
+
+My reference sentence: "Amazon" is a multinational technology company headquartered in Seattle, Washington. Founded by Jeff Bezos in 1994, it began as an online marketplace for books but has since expanded into various other product categories, including electronics, clothing, and groceries. With its vast selection of goods, convenient shopping experience, and innovative services like Amazon Prime, it has become one of the largest and most influential e-commerce platforms in the world.
+Target location: Bengaluru
+The target sentence for the target location and the reasons generated are:
+Target sentence: "Flipkart" is an Indian e-commerce company headquartered in Bengaluru, Karnataka. Founded by Sachin Bansal and Binny Bansal in 2007, it started as an online bookstore before diversifying into a wide range of product categories, including electronics, fashion, and home goods. With its user-friendly interface, extensive product offerings, and competitive pricing, Flipkart has emerged as one of India's leading e-commerce platforms, revolutionizing the way millions of people shop online in the country.
+Reason: The equivalent target entity of the reference entity 'Amazon' corresponding to target location 'Bengaluru' is 'Flipkart' under the catgory 'E-commerce'. The choice of target entity is reasonable because (a) The target sentence is fitting for Bengaluru because Flipkart, like Amazon, is a prominent e-commerce platform with its headquarters in the city, contributing to the region's reputation as a hub for technology and innovation, (b) Both companies have experienced significant growth and success, transforming the way people shop online and establishing themselves as key players in the global e-commerce industry.
+
+My reference sentence: {claim}
+Target location: {location}
+The target sentence for the target location and the reasons generated are:
+""".strip()
+
+TS_PROMPT_initial_B_example_T2_static_3_shot = """As a localization assistant, your role is to adapt sentences from English to suit the Indian domain. For each sentence provided, identify the source entity and replace it with an appropriate target entity relevant to the Indian context as per the target location. Additionally, make any necessary modifications to the sentence to ensure it remains factually correct after the change. Your answers should be in English and utilize multi-entity localization. Use the format outlined below to present your responses.
+
+My reference sentence: Starbucks Corporation is an American multinational chain of coffeehouses and roastery reserves headquartered in Seattle, Washington. It was founded in 1971 and is currently the world's largest coffeehouse chain. As of November 2022, the company had 35,711 stores in 80 countries, 15,873 of which were located in the United States. Of Starbucks' U.S.-based stores, over 8,900 are company-operated, while the remainder are licensed.
+Target location: India
+The target sentence for the target location and the reasons generated are:
+Target sentence: Cafe Coffee Day is an Indian multinational chain of coffeehouses headquartered in Bengaluru, Karnataka. It was founded in 1996, and is currently one of the largest coffeehouse chains in India. As of November 2022, the company had over 2,500 stores across the country. Of Cafe Coffee Day's stores in India, over 2,000 are company-operated, while the remainder are licensed.
+Reason: The equivalent target entity of the reference entity 'Starbucks Corporation' corresponding to target location 'India' is 'Cafe Coffee Day' under the category 'Multinational chain of coffeehouses'. The choice of target entity is reasonable because (a) Both Starbucks Corporation and Cafe Coffee Day are prominent coffeehouse chains that operate on a multinational level. Starbucks is an American chain, while Cafe Coffee Day is an Indian chain. (b) Both companies have a significant number of stores in their respective countries. Starbucks has a substantial presence in the United States, while Cafe Coffee Day has a widespread presence in India.
+
+My reference sentence: Dr. James Andrews is an American orthopedic surgeon. He is a surgeon for knee, elbow, and shoulder injuries and is a specialist in repairing damaged ligaments.
+Target location: Mumbai
+The target sentence for the target location and the reasons generated are:
+Target sentence: Dr. Pradeep Sharma is a renowned orthopedic surgeon based in Mumbai. He specializes in treating knee, elbow, and shoulder injuries and is well-known for his expertise in repairing damaged ligaments.
+Reason: The equivalent target entity of the reference entity 'Dr. James Andrews' corresponding to the target location 'Mumbai' is 'Dr. Pradeep Sharma' under the category 'Orthopedic Surgeon'. The choice of target entity is reasonable because: (a) Both Dr. James Andrews and Dr. Pradeep Sharma are renowned orthopedic surgeons known for their expertise in treating knee, elbow, and shoulder injuries. This parallel ensures that the target entity maintains the same professional focus and reputation as the reference entity. (b) Dr. James Andrews is well-known in the United States for his specialization in repairing damaged ligaments, and Dr. Pradeep Sharma holds a similar reputation in Mumbai, India. This localization ensures the target sentence remains factually accurate and contextually relevant.
+
+My reference sentence: Johns Hopkins University is a private research university in Baltimore, Maryland. Founded in 1876, Johns Hopkins was the first U.S. university based on the European research institution model.
+Target location: Karnataka
+The target sentence for the target location and the reasons generated are:
+Target sentence: The Indian Institute of Science is a prestigious research university located in Bangalore, India. Established in 1909, the Indian Institute of Science was the first Indian university based on the European research institution model.
+Reason: The equivalent target entity of the reference entity 'Johns Hopkins University' corresponding to the target location 'Karnataka' is 'The Indian Institute of Science' under the category 'Research University'. The choice of target entity is reasonable because: (a) Both Johns Hopkins University and the Indian Institute of Science (IISc) are prestigious research universities renowned for their contributions to science and education. This ensures that the target entity maintains the same level of academic excellence and research focus as the reference entity. (b) Johns Hopkins University was the first U.S. university based on the European research institution model, and similarly, the Indian Institute of Science was the first Indian university to adopt this model. This parallel highlights the pioneering role both institutions played in their respective countries' higher education systems.
+
+My reference sentence: {claim}
+Target location: {location}
+The target sentence for the target location and the reasons generated are:
+""".strip()
+
+CQ_EVAL_PROMPT_gpt4_E1 = """Suppose I will give you a target sentence, target location and a common question. Your task is to verify whether the answer to the common question in the context of the target location contained in the target sentence? Note that there could be multiple correct answers to a common question in the context of the target location. If you think that the target sentence contains the answer for this common question in the context of target location then assign a score of 1 and else assign the score of 0. Do not include this prompt in your response. Only provide the string which starts with 'Score:' followed by just a single binary score either 1 or 0 and NOTHING ELSE. You must provide only ONE binary score for the question. For example:
+
+Target sentence: A train derailment occurred on February 3, 2023, at 8:55 p.m. IST, when 38 cars of a Vizianagaram freight train carrying hazardous materials derailed in Andhra Pradesh, India.
+Target location: Andhra Pradesh
+Common question: "Can you mention a train accident?"
+Score: 1
+
+Target sentence: The Indian Institute of Science is a prestigious research university specially in the field of science located in Bangalore, India. Established in 1909, the Indian Institute of Science was the second Indian university based on the European research institution model.
+Target location: India
+Common question: "Can you give an example of a engineering research focused university?"
+Score: 0
+
+Target sentence: Amitabh Bachchan is an Indian actor and producer. He is widely regarded as one of India's leading actors, having appeared in a wide range of films in the protagonist role.
+Target location: India
+Common question: "Can you name an actor who is widely regarded as one of the country's leading actors?"
+Score: 1
+
+Target sentence: {target_claim}
+Target location: {target_location}
+Common question: {common_ques}
+For the above target sentence, target location and common question, the score would be:
+""".strip()
+
+CQ_EVAL_PROMPT_gpt4_E2 = """Suppose I will give you a target sentence, target location and a common question. Your task is to verify whether the answer to the common question in the context of the target location contained in the target sentence? Note that there could be multiple correct answers to a common question in the context of the target location. If you think that the target sentence contains the answer for this common question in the context of target location then assign a score of 1 and else assign the score of 0. Do not include this prompt in your response. Only provide the string which starts with 'Score:' followed by just a single binary score either 1 or 0 and NOTHING ELSE. You must provide only ONE binary score for the question. For example:
+
+Target sentence: IndiGo is a major Indian low-cost airline headquartered in Gurgaon, Haryana, India. IndiGo operates scheduled flights throughout India, Middle East, Asia, Southeast Asia, and Europe.
+Target location: India
+Common question: "What is the name of a major low cost airline?"
+Score: 1
+
+Target sentence: Funtasia Water Park is a water park in Patna. The company currently operates a single location in Patna.
+Target location: Patna
+Common question: "Can you give an example of an amusement park which is located in the state capital?"
+Score: 1
+
+Target sentence: Awarded during the Indian Sports Honors, the Arjuna Award is considered to be the second most prestigious individual prize in sports.
+Target location: India
+Common question: "What is considered the highest individual prize in a sport?"
+Score: 0
+
+Target sentence: {target_claim}
+Target location: {target_location}
+Common question: {common_ques}
+For the above target sentence, target location and common question, the score would be:
 """.strip()

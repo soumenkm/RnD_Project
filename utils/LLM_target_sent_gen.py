@@ -12,7 +12,7 @@ import time
 from typing import List
 from llama_cpp import Llama
 sys.path.append("/root/RnD_Project/prompts")
-import rarr_prompts, dynamic_prompt_for_target_sent_gen
+import ablation_prompts 
 
 def prompt_model(model, prompt):
     prompt = "[INST]" + prompt + "[/INST]"
@@ -39,6 +39,7 @@ def parse_api_response(api_response: str) -> List[str]:
     return sentence, reason
 
 def run_rarr_target_sentence_generation(
+    quant: str,
     claim: str,
     model: str,
     prompt: str,
@@ -55,10 +56,14 @@ def run_rarr_target_sentence_generation(
     Returns:
         target sentence and reason
     """
+    if quant == "Q4":
+        model_path = "/root/llama.cpp/models/mixtral-8x7b-instruct-v0.1.Q4_K_M.gguf"
+    elif quant == "Q6":
+        model_path = "/root/llama.cpp/models/mixtral-8x7b-instruct-v0.1.Q6_K.gguf"
     
     if(model == "mixtral8x7b"):
         llm = Llama(
-        model_path="/root/llama.cpp/models/mixtral-8x7b-instruct-v0.1.Q4_K_M.gguf",  
+        model_path=model_path,  
         n_ctx=32768,  # The max sequence length to use - note that longer sequence lengths require much more resources
         n_threads=8,            # The number of CPU threads to use, tailor to your system and the resulting performance
         n_gpu_layers=35 ,        # The number of layers to offload to GPU, if you have GPU acceleration available
@@ -74,9 +79,11 @@ def run_rarr_target_sentence_generation(
     return target_sent, reason, count_local
 
 def run_rarr_dynamic_target_sentence_generation(
+    quant: str,
     claim: str,
     model: str,
     prompt: str,
+    prompt_name: str,
     location: str = None,
 ) -> List[str]:
     """Generates target sentence based on target location in a claim.
@@ -91,9 +98,14 @@ def run_rarr_dynamic_target_sentence_generation(
         target sentence and reason
     """
     
+    if quant == "Q4":
+        model_path = "/root/llama.cpp/models/mixtral-8x7b-instruct-v0.1.Q4_K_M.gguf"
+    elif quant == "Q6":
+        model_path = "/root/llama.cpp/models/mixtral-8x7b-instruct-v0.1.Q6_K.gguf"
+    
     if(model == "mixtral8x7b"):
         llm = Llama(
-        model_path="/root/llama.cpp/models/mixtral-8x7b-instruct-v0.1.Q6_K.gguf",  
+        model_path=model_path,  
         n_ctx=32768,  # The max sequence length to use - note that longer sequence lengths require much more resources
         n_threads=8,            # The number of CPU threads to use, tailor to your system and the resulting performance
         n_gpu_layers=35 ,        # The number of layers to offload to GPU, if you have GPU acceleration available
@@ -102,15 +114,22 @@ def run_rarr_dynamic_target_sentence_generation(
     else:
         print("Model not found!")
     
-    llm_input = prompt.format(location=location, 
-        claim=claim,
-        dyn_ref_claim_1=dynamic_prompt_for_target_sent_gen.prompt_data[location]["dyn_ref_claim_1"],
-        dyn_ref_claim_2=dynamic_prompt_for_target_sent_gen.prompt_data[location]["dyn_ref_claim_2"],
-        dyn_tar_claim_1=dynamic_prompt_for_target_sent_gen.prompt_data[location]["dyn_tar_claim_1"],
-        dyn_tar_claim_2=dynamic_prompt_for_target_sent_gen.prompt_data[location]["dyn_tar_claim_2"],
-        dyn_reason_1=dynamic_prompt_for_target_sent_gen.prompt_data[location]["dyn_reason_1"],
-        dyn_reason_2=dynamic_prompt_for_target_sent_gen.prompt_data[location]["dyn_reason_2"]).strip()
-    
+    if "1_shot" in prompt_name:
+        llm_input = prompt.format(location=location, 
+            claim=claim,
+            dyn_ref_claim_1=ablation_prompts.prompt_data[location]["dyn_ref_claim_1"],
+            dyn_tar_claim_1=ablation_prompts.prompt_data[location]["dyn_tar_claim_1"],
+            dyn_reason_1=ablation_prompts.prompt_data[location]["dyn_reason_1"]).strip()
+    elif "2_shot" in prompt_name:
+        llm_input = prompt.format(location=location, 
+            claim=claim,
+            dyn_ref_claim_1=ablation_prompts.prompt_data[location]["dyn_ref_claim_1"],
+            dyn_ref_claim_2=ablation_prompts.prompt_data[location]["dyn_ref_claim_2"],
+            dyn_tar_claim_1=ablation_prompts.prompt_data[location]["dyn_tar_claim_1"],
+            dyn_tar_claim_2=ablation_prompts.prompt_data[location]["dyn_tar_claim_2"],
+            dyn_reason_1=ablation_prompts.prompt_data[location]["dyn_reason_1"],
+            dyn_reason_2=ablation_prompts.prompt_data[location]["dyn_reason_2"]).strip()
+        
     count_local = llm_input.count(location)
     response = prompt_model(model = llm, prompt = llm_input)
     target_sent, reason = parse_api_response(response.strip())

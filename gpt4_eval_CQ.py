@@ -9,21 +9,21 @@ Created on Sun March 24 05:19:45 2024
 import json, ast
 import os, time
 import json
-from prompts import rarr_prompts
+from prompts import ablation_prompts
 from utils import (
     chatgpt_prompt,
     LLM_CQ_generation
 )
 import pandas as pd
 
-path = "/root/RnD_Project/outputs/dynamic_prompt_results/"
+path = "/root/RnD_Project/outputs/mixtral_ablation_results/"
 
 def evaluate_target_sent_by_common_ques(claim, gpt4_prompt):
     
-    if gpt4_prompt == "GPT4_E1":
-        prompt = rarr_prompts.EVAL_BY_SINGLE_COMMON_QUES_PROMPT_GPT4_E1
-    elif gpt4_prompt == "GPT4_E2":
-        prompt = rarr_prompts.EVAL_BY_SINGLE_COMMON_QUES_PROMPT_GPT4_E2
+    if gpt4_prompt == "gpt4_E1":
+        prompt = ablation_prompts.CQ_EVAL_PROMPT_gpt4_E1
+    elif gpt4_prompt == "gpt4_E2":
+        prompt = ablation_prompts.CQ_EVAL_PROMPT_gpt4_E2
     
     prompt = prompt.format(target_location=claim["target_location"],
                            target_claim=claim[f"target_claim"],
@@ -80,10 +80,20 @@ def get_eval_score(result_path, cq_model, ts_model, gpt4_prompt):
 if __name__ == "__main__":
     
     cq_model = "mixtral_corrected"
-    result_path = "/root/RnD_Project/outputs/dynamic_prompt_results/results_mixtral_Q6_dynamic_target_sent_gen.json"
-    ts_model = "mixtral_Q6_dynamic"
-    gpt4_prompt = "GPT4_E2"
+    quant_list = ["Q4", "Q6"]
+    initial_prompt_list = ["initial_A", "initial_B"]
+    shot_example_prompt_list = ["static_0_shot" ,"example_T1_static_3_shot",
+                           "example_T2_static_3_shot", "dynamic_1_shot",
+                           "dynamic_2_shot"]
+    gpt4_prompt_list = ["gpt4_E1", "gpt4_E2"]
     
-    cq_score = get_eval_score(result_path=result_path, cq_model=cq_model, ts_model=ts_model, gpt4_prompt=gpt4_prompt)
-    print(f"cq_score for cq_model: {cq_model} and target_sent_model: {ts_model} is: {cq_score}")
+    q = quant_list[1]
+    i = initial_prompt_list[1]
+    s = shot_example_prompt_list[3]
+    g = gpt4_prompt_list[1]
+    
+    result_path = f"/root/RnD_Project/outputs/mixtral_ablation_results/target_sent_results_mixtral_{q}_{i}_{s}.json"
+
+    cq_score = get_eval_score(result_path=result_path, cq_model=cq_model, ts_model=f"{q}_{i}_{s}", gpt4_prompt=g)
+    print(f"cq_score for cq_model: {cq_model} and target_sent_model: {q}_{i}_{s} and gpt4_prompt: {g} is: {cq_score}")
   
