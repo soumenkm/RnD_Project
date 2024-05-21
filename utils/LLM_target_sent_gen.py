@@ -93,7 +93,7 @@ def run_rarr_dynamic_target_sentence_generation(
     
     if(model == "mixtral8x7b"):
         llm = Llama(
-        model_path="/root/llama.cpp/models/mixtral-8x7b-instruct-v0.1.Q4_K_M.gguf",  
+        model_path="/root/llama.cpp/models/mixtral-8x7b-instruct-v0.1.Q6_K.gguf",  
         n_ctx=32768,  # The max sequence length to use - note that longer sequence lengths require much more resources
         n_threads=8,            # The number of CPU threads to use, tailor to your system and the resulting performance
         n_gpu_layers=35 ,        # The number of layers to offload to GPU, if you have GPU acceleration available

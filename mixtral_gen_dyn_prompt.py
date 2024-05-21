@@ -134,5 +134,5 @@ if __name__ == "__main__":
         else:
             continue
         
-    results_output_path = path_name + f"results_mixtral_dynamic_target_sent_gen.json"
+    results_output_path = path_name + f"results_mixtral_Q6_dynamic_target_sent_gen.json"
     write_results_json(data, results_output_path)
