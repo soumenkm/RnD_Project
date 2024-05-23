@@ -43,5 +43,5 @@ for k, v in q4_q6_dict.items():
         "q4_score": q4_dict[k]["score"],
         "q6_score": q6_dict[k]["score"]})
 
-with open("gpt4_score_mismatch.json", "w") as f:
+with open(path_name + "score_mismatch_between_Q4_and_Q6_initial_B_static_0_shot_gpt4_E2.json", "w") as f:
     json.dump(res, f, indent=4)
