@@ -16,7 +16,7 @@ from utils import (
 )
 import pandas as pd
 
-path = "/root/RnD_Project/outputs/comparison_mixtral_gpt/"
+path = "/root/RnD_Project/outputs/mixtral_ablation_results/"
 
 def revise_common_question_by_gpt(question):
     rev_prompt = rarr_prompts.CHECK_IF_COMMON_QUESTION_PROMPT_mixtral8x7b
@@ -58,6 +58,7 @@ def get_common_question_by_mixtral_corrected(eval_data_file_path):
             common_ques_list = [k.strip() for k in common_ques_list[1:]]
             
             elem_dict = {"ref_claim": eval_data_df.loc[i, "Reference Sentence"],
+                "ground_truth_ann_target_claim": eval_data_df.loc[i, "Final Target Sentence"],
                 "common_ques": common_ques_list}
             eval_data.append(elem_dict)
         else:

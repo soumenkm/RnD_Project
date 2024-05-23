@@ -1,6 +1,7 @@
 [
     {
         "ref_claim": "Verso Skincare is a Swedish beauty brand. Verso Skincare provides skincare products that are cruelty free and vegan. The brand offers products to combat anti-aging,",
+        "ground_truth_ann_target_claim": "WOW science Skincare is an Indian beauty brand. It provides skincare products that are cruelty free and chemical free. The brand offers products to combat anti-aging,",
         "common_ques": [
             "Can you name a beauty brand that offers cruelty-free skincare products?",
             "Tell me about a brand that offers skincare products to combat anti-aging."
@@ -8,6 +9,7 @@
     },
     {
         "ref_claim": "The Pursuit of Happyness is a 2006 American biographical drama film directed by Gabriele Muccino and starring Will Smith as Chris Gardner, a homeless salesman. Smith's son, Jaden Smith, co-stars, making his film debut as Gardner's son, Christopher Jr.",
+        "ground_truth_ann_target_claim": "Soorarai Pottru is a 2020 Indian drama film directed by Sudha Kongara and starring Suriya as Nedumaaran Rajangam (Maara), a former Indian Air Force captain. Arjunan's son Ilan and daughter Iyal make their debut with this film.",
         "common_ques": [
             "Can you name a film which marks the debut of a famous actor's son?",
             "Mention a drama film."
@@ -15,12 +17,14 @@
     },
     {
         "ref_claim": "MannKind Corporation is a biopharmaceutical company focusing on the discovery, development, and commercialization of therapeutic products for diseases such as diabetes and pulmonary arterial hypertension. ",
+        "ground_truth_ann_target_claim": "Cipla is a multinational pharmaceutical company focusing on the research, development, manufacturing and development, manufacturing and marketing of a wide range of medicines for diseases such as diabetes and respiratory disease.",
         "common_ques": [
             "What is an example of a pharmaceutical company focusing on  development, and treatment for diabetes?"
         ]
     },
     {
         "ref_claim": "Rafi Bastos is a Brazilian comedian, actor, journalist and Youtuber.",
+        "ground_truth_ann_target_claim": "Aakash Gupta is an Indian stand-up comedian, actor, and YouTuber.",
         "common_ques": [
             "Can you provide an example of a comedian who is also an actor?",
             "Name a comedian who is also a YouTuber."
@@ -28,6 +32,7 @@
     },
     {
         "ref_claim": "Unilever PLC is a British multinational fast-moving consumer goods company founded on 2 September 1929 following the merger of British soap maker Lever Brothers and Dutch margarine producer Margarine Unie. It is headquartered in London.\n",
+        "ground_truth_ann_target_claim": "Hindustan Unilever Limited is an Indian final good and fast-moving consumer goods company, a subsidiary of Unilever, founded on 17 October 1933. Following the merger of constituent groups, it was renamed Hindustan Lever Limited. It is headquartered in Mumbai. ",
         "common_ques": [
             "Can you name a fast-moving consumer goods company?",
             "Which company in the fast-moving consumer goods industry was founded many years ago?"
@@ -35,6 +40,7 @@
     },
     {
         "ref_claim": "JD.com, Inc., also known as Jingdong, formerly called 360buy, is a Chinese e-commerce company headquartered in Beijing. It is one of the two massive B2C online retailers in China by transaction volume and revenue, a member of the Fortune Global 500 and a major competitor to Alibaba-run Tmall.",
+        "ground_truth_ann_target_claim": "Pantaloons is an Indian fast fashion store brand headquartered in Mumbai. It is a massive B2C retail store and online retailer in India",
         "common_ques": [
             "Can you name a company that is massive B2C retailer?",
             "Name a company that does online business."
@@ -42,6 +48,7 @@
     },
     {
         "ref_claim": "China National Pharmaceutical Group Corporation, commonly referred to as Sinopharm, is a Chinese state-owned enterprise. The corporation was the indirect major shareholder of publicly traded companies Sinopharm Group, China Traditional Chinese Medicine, Shanghai Shyndec Pharmaceutical, and Beijing Tiantan Biological Products.\n",
+        "ground_truth_ann_target_claim": "Emcure Pharmaceuticals Limited, commonly known as Emcure, is an Indian enterprise.",
         "common_ques": [
             "Can you provide an example of a pharmaceutical enterprise?",
             "Can you mention a name of the company that has \"Pharmaceutical\" in its name?"
@@ -49,18 +56,21 @@
     },
     {
         "ref_claim": "Nicholas James Vujicic is an Australian-American Christian evangelist and motivational speaker of Serbian descent. Vujicic has tetra-amelia syndrome, a disorder characterised by the absence of arms and legs.",
+        "ground_truth_ann_target_claim": "Sandeep Maheshwari is an Indian motivational speaker, writer, YouTuber, photographer, and entrepreneur.",
         "common_ques": [
             "Can you name a motivational speaker?"
         ]
     },
     {
         "ref_claim": "The Union Pacific Railroad is a Class I freight-hauling railroad that operates 8,300 locomotives over 32,200 miles routes in 23 U.S. states west of Chicago and New Orleans.",
+        "ground_truth_ann_target_claim": "RITES Limited is a multidisciplinary engineering and consultancy organization that provides rolling stock internationally, including locomotives, coaches, trainsets, etc.",
         "common_ques": [
             "Can you provide a name of a railway company whose operations include locomotives?"
         ]
     },
     {
         "ref_claim": "Pavlova is a meringue-based dessert. Originating in either Australia or New Zealand in the early 20th century, it was named after the Russian ballerina Anna Pavlova.",
+        "ground_truth_ann_target_claim": "Junnu is a milk pudding dessert. Originating in India, it was likely named after the Telugu word for colostrum milk.",
         "common_ques": [
             "Can you name a dessert named after something well known?",
             "Can you name a dessert whose origin is known?"
@@ -68,6 +78,7 @@
     },
     {
         "ref_claim": "Cox Communications, Inc. is an American digital cable television provider, telecommunications and home automation services. It is the third-largest cable television provider in the United States, serving approximately 6.5 million customers, including 2.9 million digital cable subscribers, 3.5 million Internet subscribers, and almost 3.2 million digital telephone subscribers, making it the seventh-largest telephone carrier in the country. ",
+        "ground_truth_ann_target_claim": "Vodafone Idea is an Indian  telecommunication company. It is the third-largest mobile telecommunication network in India serving over 226 million subscribers, mobile network services and internet broadband services and mobile internet.",
         "common_ques": [
             "Can you name a telecommunications company?",
             "What company ranks as one of the top telecommunication providers in terms of subscribers?"
@@ -75,6 +86,7 @@
     },
     {
         "ref_claim": "Gimbap, also romanized as kimbap, is a Korean dish made from cooked rice, vegetables, fish, and meat rolled in gim- dried sheets of seaweed and served in bite-sized slices. The origins of gimbap are debated.",
+        "ground_truth_ann_target_claim": "Patra, also known as Alu vadi, is an Indian dish made from colocasia (arbi) leaves coated with gram flour (besan) batter, rolled and steamed, and then filled with a mixture of spices, before being sliced into bite-sized pieces. Its origins can be traced back to the Indian subcontinent.",
         "common_ques": [
             "Can you name a dish that is served in bite-sized pieces?",
             "Name a dish which is also known by another name."
@@ -82,6 +94,7 @@
     },
     {
         "ref_claim": "Gonzalo Peillat is an Argentine-German field hockey player who plays as a defender for German club Mannheimer HC and for the Germany national team. In 2015, Peillat was awarded the FIH 2014 Rising Star of the Year.",
+        "ground_truth_ann_target_claim": "Surender Kumar is an Indian field hockey player, who plays as a defender for the Indian national team.",
         "common_ques": [
             "Can you name a field hockey player who plays as a defender?",
             "Name a field hockey player who plays for the national team."
@@ -89,12 +102,14 @@
     },
     {
         "ref_claim": "The Brest European Short Film Festival is a film festival dedicated to short films, happening every year in Brest, in the Brittany region in France.",
+        "ground_truth_ann_target_claim": "The Filmsaaz Festival is a film festival dedicated to short film, and documentaries happening every year in India.",
         "common_ques": [
             "What is an example of an annual film festival dedicated to short films?"
         ]
     },
     {
         "ref_claim": "State Farm Insurance is a group of mutual insurance companies throughout the United States with corporate headquarters in Bloomington, Illinois. Founded in 1922, it is the largest property, casualty, and auto insurance provider in the United States.",
+        "ground_truth_ann_target_claim": "LIC (Life Insurance Corporation) is a mutual insurance company throughout India with corporate headquarters in Mumbai, Maharashtra. Founded in 1956, it is the largest life insurance provider in India.",
         "common_ques": [
             "Can you give an example of a mutual insurance company?",
             "Can you name of one of the largest insurance company?"
@@ -102,6 +117,7 @@
     },
     {
         "ref_claim": "Takashi Tachibana is a Japanese social activist, journalist, accountant and politician who is the founder and leader of the NHK Party.",
+        "ground_truth_ann_target_claim": "Swapan Dasgupta is a Kolkata-based  journalist and politician. He is member in Bharatiya Janata Party.",
         "common_ques": [
             "Who is a journalist that is also involved in politics?",
             "Can you give an example of a journalist who is a member of a political party?"
@@ -109,6 +125,7 @@
     },
     {
         "ref_claim": "Alenka Puhar is a Slovenian journalist, author, translator, and historian. In 1982, she wrote a groundbreaking psychohistory-inspired book \"The Primal Text of Life\" about the 19th century social history of early childhood in Slovene Lands, then part of the Austro-Hungarian Empire.",
+        "ground_truth_ann_target_claim": "Kaveree Bamzai is an Indian journalist, author and film critic. In 2019, she wrote a book 'No Regrets:The Guilt-Free Woman's Guide to a Good Life' about what not to do, what to remember and what to forget.",
         "common_ques": [
             "Can you name a journalist who is also an author?",
             "Name a journalist who has published a book."
@@ -116,6 +133,7 @@
     },
     {
         "ref_claim": "Malcolm Timothy Gladwell CM is an English-born Canadian journalist, author, and public speaker. He has been a staff writer for The New Yorker since 1996. He has published seven books.",
+        "ground_truth_ann_target_claim": "Vivek Bindra is an Indian motivational speaker, author, and business coach. He is the CEO of Bada Business Pvt. Ltd. He has published ten books.",
         "common_ques": [
             "Can you name a motivational speaker who is also an author?",
             "Name a motivational speaker who has published many books."
@@ -123,6 +141,7 @@
     },
     {
         "ref_claim": "St Thomas' Hospital is a large NHS teaching hospital in Central London, England. It is one of the institutions that compose the King's Health Partners, an academic health science center.",
+        "ground_truth_ann_target_claim": "SSKM Hospital is a public medical college and hospital in Kolkata, India. It is one of the institutions that make up the West Bengal Health Science University, an academic health science university.",
         "common_ques": [
             "Can you name a large teaching hospital?",
             "Can you name a hospital located in one of the major cities of the country?"
@@ -130,6 +149,7 @@
     },
     {
         "ref_claim": "The SLS Dubai Hotel & Residences is a luxurious property located in the Business Bay neighborhood of Dubai. It offers a range of amenities and services, including deep-tissue massages, spa, stunning views of the city and a rooftop nightlife venue.",
+        "ground_truth_ann_target_claim": "The Ritz-Carlton is a luxurious property located in the Ashok Nagar neighborhood of Bangalore. It offers a range of amenities and services, including spa, stunning views of the city, and a top floor club lounge.",
         "common_ques": [
             "Can you name a luxurious hotel property?",
             "Which hotel offers a wide range of amenities incluidng spa?"
@@ -137,6 +157,7 @@
     },
     {
         "ref_claim": "Starbucks Corporation is an American multinational chain of coffeehouses and roastery reserves headquartered in Seattle, Washington. It was founded in 1971 and is currently the world's largest coffeehouse chain.\n  As of November 2022, the company had 35,711 stores in 80 countries, 15,873 of which were located in the United States. Of Starbucks' U.S.-based stores, over 8,900 are company-operated, while the remainder are licensed.",
+        "ground_truth_ann_target_claim": "Cafe Coffee Day is an Indian multinational chain of coffeehouses headquartered in Bengaluru, Karnataka. It was founded in 1996, and is currently one of the largest coffeehouse chains in India.",
         "common_ques": [
             "Name one of the largest coffeehouse chain companies in the country?",
             "Can you name a multinational chain of coffeehouse?"
@@ -144,6 +165,7 @@
     },
     {
         "ref_claim": "Oracle Corporation\u00a0is an American multinational computer technology company\u00a0headquartered in Austin, Texas, United States. Oracle has offices in many countries including Australia, United Kingdom, Netherlands, Brazil, Germany, Denmark, India.",
+        "ground_truth_ann_target_claim": "Tech Mahindra\u00a0is an Indian multinational\u00a0information technology services and consulting company. headquartered in Pune, Maharashtra, India. Tech Mahindra has offices in many countries including China, South Korea, Canada, Australia, United Kingdom.",
         "common_ques": [
             "Can you name a multinational technology company having headquarters in a major city?",
             "Name a technoogy company which has its office in Australia and United Kingdom."
@@ -151,6 +173,7 @@
     },
     {
         "ref_claim": "Nestl\u00e9 S.A. is a Swiss multinational food and drink processing conglomerate corporation headquartered in Vevey, Switzerland. It has been the largest publicly held food company in the world, measured by revenue and other metrics, since 2014. ",
+        "ground_truth_ann_target_claim": "ITC Limited is an Indian multinational FMCG, hotels, paperboards and packaging conglomerate company headquartered in Kolkata, India. It has been one of the largest publicly held  company in India, measured by revenue and other metrics.",
         "common_ques": [
             "Which company is often measured as the largest in the FMCG industry by revenue and other metrics?",
             "Is there any conglomerate company in the food industry?"
@@ -158,6 +181,7 @@
     },
     {
         "ref_claim": "Sanofi S.A. is a French multinational pharmaceutical and healthcare company headquartered in Paris, France. The corporation was established in 1973 and merged with Synth\u00e9labo in 1999 to form Sanofi-Synth\u00e9labo. ",
+        "ground_truth_ann_target_claim": "Zydus Lifesciences Limited is an Indian multinational pharmaceutical company headquartered in Ahmedabad, Gujarat, India. The corporation was established in 1952 and merged another  pharmaceutical company called German Remedies in 2003 with itself and in 2022, Cadila Healthcare Ltd. was renamed Zydus Lifesciences Ltd.",
         "common_ques": [
             "Can you name a multinational pharmaceutical company?",
             "Which pharmaceutical corporation went through a merger?"
@@ -165,6 +189,7 @@
     },
     {
         "ref_claim": "BNP Paribas is a multinational universal bank and financial services holding company headquartered in Paris, France. It was founded in 2000 from the merger of two of France's foremost financial institutions, Banque Nationale de Paris and Paribas.",
+        "ground_truth_ann_target_claim": "The Central Bank of India is an Indian commercial bank and financial services holding company headquartered in Mumbai, India. It was founded in 1911 by Sir Sorabji Pochkhanawala with Sir Pherozeshah Mehta as the chairman.",
         "common_ques": [
             "Can you name a bank headquartered in a major city?",
             "Name a bank which is also a financial service holding company."
@@ -172,6 +197,7 @@
     },
     {
         "ref_claim": "Henry Wadsworth Longfellow was an American poet and educator. His original works include the poems \"Paul Revere's Ride\", \"The Song of Hiawatha\", and \"Evangeline\". ",
+        "ground_truth_ann_target_claim": "R. Parthasarathy was an Indian poet and educator. His original works include the poems  \"Rough Passage\" and \"The Stones of Bamiyan\".",
         "common_ques": [
             "Can you name a poet who is also an author?",
             "Can you mention an individual whose original work includes collection of poems?"
@@ -179,24 +205,28 @@
     },
     {
         "ref_claim": "Seventeen is a South Korean pop boy band formed by Pledis Entertainment. The group consists of thirteen members: S.Coups, Jeonghan, Joshua, Jun, Hoshi, Wonwoo, Woozi, DK, Mingyu, The8, Seungkwan, Vernon, and Dino.",
+        "ground_truth_ann_target_claim": "Euphoria is an Indian pop rock band formed by Dr. Palash Sen. The group consists of several members: Palash Sen, Debajyoti Bhaduri, Rakesh Bhardwaj, Prashant Trivedi, Vaishali Barua, Vishal Mehta, Vishal Dixit, Aditya Shankar Benia, Amborish Saikia, Ashok Roy, Akshat Sharma, Jayashree Basu.",
         "common_ques": [
             "Name a pop music band which consists of several members."
         ]
     },
     {
         "ref_claim": "Modern Family is an American sitcom television series, created by Christopher Lloyd and Steven Levitan for ABC. It ran for 11 seasons, from September 23, 2009, to April 8, 2020.",
+        "ground_truth_ann_target_claim": "Marimayam is a Malayalam-language Indian sitcom television serial, created by R. Unnikrishnan for the Mazhavil Manorama channel. It has been airing since October 31, 2011, and is still ongoing, with over 700 episodes.",
         "common_ques": [
             "Which sitcom television serial aired for multiple years?"
         ]
     },
     {
         "ref_claim": "Stonehenge is a prehistoric monument on Salisbury Plain in Wiltshire, England, two miles west of Amesbury. It consists of an outer ring of vertical sarsen standing stones, each around 13 feet high, seven feet wide, and weighing around 25 tons, topped by connecting horizontal lintel stones.",
+        "ground_truth_ann_target_claim": "Ajanta and Ellora caves are prehistoric rock-cut cave monuments located in the Aurangabad district of Maharashtra, India, Ajanta Caves is approximately 104 kilometers from the city of Aurangabad and Ellora Caves are situated 29 kilometers (18 miles) north-west of Aurangabad. The Ajanta Caves constitute ancient monasteries and worship-halls of different Buddhist traditions carved into a 75-metre (246 ft) wall of rock. Ellora caves consist of 17 Hindu (caves 13-29), 12 Buddhist (caves 1-12) and 5 Jain (caves 30-34) caves built close to one another.",
         "common_ques": [
             "Can you provide an example of a prehistoric monument?"
         ]
     },
     {
         "ref_claim": "Johns Hopkins University is a private research university in Baltimore, Maryland. Founded in 1876, Johns Hopkins was the first U.S. university based on the European research institution model.",
+        "ground_truth_ann_target_claim": "The Indian Institute of Science is a public research university in Bangalore, Karnataka, India. Established in 1909, the Indian Institute of Science was the first to introduce a master's programs in engineering.",
         "common_ques": [
             "Can you give an example of a research university?",
             "Can you provide name of a university which introduced something new?"
@@ -204,12 +234,14 @@
     },
     {
         "ref_claim": "Radio National, known on-air as RN, is an Australia-wide public service broadcasting radio network run by the Australian Broadcasting Corporation. From 1947 until 1985, the network was known as ABC Radio 2.",
+        "ground_truth_ann_target_claim": "Fever 104 FM, is an India-wide private broadcasting radio network run by the HT Media Ltd. From its inception in 2006, the network is known as Fever FM.",
         "common_ques": [
             "Can you name a radio station who has broadcasted for many years?"
         ]
     },
     {
         "ref_claim": "Band-Maid is a Japanese rock band formed in 2013, consisting of singer Saiki Atsumi, guitarist/singer Miku Kobato, lead guitarist Kanami T\u014dno, bassist Misa, and drummer Akane Hirose. ",
+        "ground_truth_ann_target_claim": "Pragaash was an Indian rock band formed in 2012, consisting of singer/guitarist Noma Nazir Bhatt, bassist Aneeqa Khalid, and drummer Farah Deeba.",
         "common_ques": [
             "Can you recall a rock band which consists of a singer/guitarist and drummer?",
             "Name a rock band which was formed almost a decade ago."
@@ -217,6 +249,7 @@
     },
     {
         "ref_claim": "Sentinel-3 is an Earth observation heavy satellite series developed by the European Space Agency as part of the Copernicus Programme. It currently consists of 2 satellites: Sentinel-3A and Sentinel-3B. After initial commissioning, each satellite was handed over to EUMETSAT for the routine operations phase of the mission.",
+        "ground_truth_ann_target_claim": "Bhaskara II is an Earth observation satellite series developed by the Indian Space Research Organisation (ISRO) as a part of its operational satellite program. Bhaskara currently consists of 2 satellites: Bhaskara I and Bhaskara II.",
         "common_ques": [
             "Can you provide an example of an Earth observation satellite?",
             "Mention the name of an earth observation satellite that consists of two satellites?"
@@ -224,6 +257,7 @@
     },
     {
         "ref_claim": "Ahmad Haffar is a sound designer and music producer based in Dubai. He has received awards for his work. He has left an impact in the sonic branding industry with his work.",
+        "ground_truth_ann_target_claim": "Sanal George is a sound designer and production sound mixer based in Mumbai. He has received numerous awards for his work. He has left an impact in the film and entertainment industry with his work.",
         "common_ques": [
             "Can you name a Sound designer who has received numerous awards for his work?",
             "Can you name a sound designer who left an impact with his work?"
@@ -231,6 +265,7 @@
     },
     {
         "ref_claim": "Klaus Wassen-Floren is a German sound supervisor and sound designer. He has worked on numerous productions.",
+        "ground_truth_ann_target_claim": "Shantanu Hudlikar is an Indian sound supervisor and sound designer. He has worked on numerous productions.",
         "common_ques": [
             "Can you name a sound supervisor and sound designer?",
             "Name a sound designer and supervisor who worked on numerous productions?"
@@ -238,12 +273,14 @@
     },
     {
         "ref_claim": "Love, Simon is a 2018 American teen romantic comedy drama film directed by Greg Berlanti, written by Elizabeth Berger and Isaac Aptaker, and based on the 2015 novel Simon vs. the Homo Sapiens Agenda by Becky Albertalli. ",
+        "ground_truth_ann_target_claim": "Salaam Namaste is a 2005 Indian romantic comedy drama film directed by Siddharth Anand, written by Abbas Tyrewala and Siddharth Anand.",
         "common_ques": [
             "Can you name a romantic comedy-drama film?"
         ]
     },
     {
         "ref_claim": "The\u00a0Reichenbach Falls are a\u00a0waterfall\u00a0cascade of seven steps on the stream called Rychenbach\u00a0in the Bernese Oberland\u00a0region of\u00a0Switzerland. They drop over a total height of about 250 meters (820 ft).",
+        "ground_truth_ann_target_claim": "The Khandadhar Falls is a waterfall of a single drop on the stream called Korapani Nala in Nandapani region of Bonaigarh in the Sundargarh district in the Indian state of Odisha. It drops over a total height of about 244 meters (801 ft).",
         "common_ques": [
             "Can you mention a waterfall that has a significant height?",
             "Name a waterfall which drops on a stream?"
@@ -251,6 +288,7 @@
     },
     {
         "ref_claim": "Niagara Falls spans the border between the province of Ontario in Canada and the state of New York in the United States. Niagara Falls is 27 km (17 mi) northwest of Buffalo, New York, and 69 km (43 mi) southeast of Toronto, between the twin cities of Niagara Falls, Ontario, and Niagara Falls, New York. It is a valuable source of hydroelectric power.",
+        "ground_truth_ann_target_claim": "Hogenakkal Waterfalls spans the border between the state of Karnataka and the state of Tamil Nadu in India. It is located approximately 199 kilometers (124 miles) southeast of Bangalore, Karnataka, and 46 kilometers (29 miles) northwest of Dharmapuri, Tamil Nadu. The waterfall is a valuable source of hydroelectric power.",
         "common_ques": [
             "Can you name a famous waterfall?",
             "Can you mention a water body that serves as a source of hydroelectric power?"
@@ -258,6 +296,7 @@
     },
     {
         "ref_claim": "Blue Cave is a waterlogged sea cave located in a small bay called Balun in Croatia. It is renowned for its impressive natural architecture. It has become a tourist spot and is visited by a large number of tourists.",
+        "ground_truth_ann_target_claim": "The Badami cave temples are a complex of Hindu and Jain cave temples located in Badami, a town in the Bagalkot district in northern part of Karnataka. It is renowned for its impressive Indian rock-cut architecture, particularly Badami Chalukya architecture. It has become a tourist spot and is visited by a large number of tourists.",
         "common_ques": [
             "Can you name a cave that is renowned for its architecture?",
             "Can you give an example of a cave that has become a tourist spot and is visited by many tourists?"
@@ -265,12 +304,14 @@
     },
     {
         "ref_claim": "The Suomi National Polar-orbiting Partnership, previously known as the National Polar-orbiting Operational Environmental Satellite System Preparatory Project and NPP-Bridge, is a weather satellite operated by the United States National Oceanic and Atmospheric Administration.",
+        "ground_truth_ann_target_claim": "The Kalpana-1, previously known as the MetSat-1, was a meteorological weather satellite operated by the Indian Space Research Organisation.",
         "common_ques": [
             "Can you mention a weather satellite that was previously known by a different name?"
         ]
     },
     {
         "ref_claim": "Dorothea Lange was an American documentary photographer and photojournalist, best known for her Depression-era work for the Farm Security Administration.",
+        "ground_truth_ann_target_claim": "Dayanita Singh is an Indian photographer and photojournalist, best known for her Museum Bhavan, a collection of museums in book form at the Hayward Gallery, London.",
         "common_ques": [
             "Who is a notable figure in the field of photojournalism?",
             "Can you name a well known photographer who is also a photojournalist?"
@@ -278,12 +319,14 @@
     },
     {
         "ref_claim": "Verizon is an American wireless network operator that previously operated as a separate division of Verizon Communications under the name Verizon Wireless.",
+        "ground_truth_ann_target_claim": "Jio is an Indian national LTE network and 4G and 5G wireless service operator that previously operated as Reliance Jio Infocomm Limited before rebranding to its current name, Jio.",
         "common_ques": [
             "Can you provide an example of a wireless network operator?"
         ]
     },
     {
         "ref_claim": "Red Desert: Team RPG is an action-adventure role-playing game that combines elements of fighting, jumping, and running. The game is developed by Clegames, Inc.",
+        "ground_truth_ann_target_claim": "Ashwathama: The Immortal is an action role-playing game. This game was developed by Virtualinfocom.",
         "common_ques": [
             "Can you name a role-playing game?",
             "Can you name an online game which has action in it?"
@@ -291,12 +334,14 @@
     },
     {
         "ref_claim": "Dream Island is an amusement park in Moscow that opened on 29 February 2020. It is the largest indoor theme park in Europe.",
+        "ground_truth_ann_target_claim": "Essel World is an amusement park in Mumbai that opened in 1989. It is one of the largest amusement parks in India.",
         "common_ques": [
             "Can you name one of the largest amusement parks of the region?"
         ]
     },
     {
         "ref_claim": "Eiffel Chong was an award-winning photographer and has been featured in many exhibitions in Malaysia and around the world.",
+        "ground_truth_ann_target_claim": "Raghu Rai is an award-winning photographer and has been featured in many exhibitions in India and around the world.",
         "common_ques": [
             "Can you name an award-winning photographer?",
             "Who is a photographer known for having their work featured in international exhibitions?"
@@ -304,6 +349,7 @@
     },
     {
         "ref_claim": "Peter Charles Doherty AC FRS FMedSci (born October 15, 1940) is an Australian immunologist. He has received multiple awards. He is known for his research on the immune system.",
+        "ground_truth_ann_target_claim": "Javed Naim Agrewala (born May 14, 1961) is an Indian immunologist. He has received multiple awards. He is known for his research on tuberculosis.",
         "common_ques": [
             "What is one example of a person who works in the field of immunology?",
             "Can you name an individual who has been recognized for their contributions and research?",
@@ -312,18 +358,21 @@
     },
     {
         "ref_claim": "Franco Bertinetti (14 July 1923 \u2013 6 March 1995) was an Italian fencer. He won a gold medal in the team \u00e9p\u00e9e events at the 1952 and 1956 Summer Olympics.",
+        "ground_truth_ann_target_claim": "Leander Paes (17 June 1973) is an Indian former tennis player. He won a bronze medal in the men's singles event at the 1996 Atlanta Olympics.",
         "common_ques": [
             "Can you name a sportsperson who won an Olympic medal?"
         ]
     },
     {
         "ref_claim": "Carmine \"Mino\" Pecorelli was an Italian journalist, shot dead in Rome a year after former prime minister Aldo Moro's 1978 kidnapping and subsequent killing. He was described as a \"maverick journalist with excellent secret service contacts\".",
+        "ground_truth_ann_target_claim": "Sai Reddy was an Indian journalist, stabbed dead in Basaguda.",
         "common_ques": [
             "Can you provide an example of a journalist who was unfortunately killed because of their work?"
         ]
     },
     {
         "ref_claim": "A mass murder of Sri Lankan Police officers took place on 11 June 1990. Members of the Liberation Tigers of Tamil Eelam, a militant organization, are alleged to have killed over 600 unarmed Sri Lanka Police officers in Eastern Province, Sri Lanka.",
+        "ground_truth_ann_target_claim": "A mass attack on Central Reserve Police Force (CRPF) took place on 14 February 2019. Members of the militant organization are alleged to have killed over 40 unarmed CRPF in Lethipora, Jammu and Kashmir, India.",
         "common_ques": [
             "Can you mention a specific incident of mass violence against police officers?",
             "Can you recall a significant event involving the death of many police officers due to a militant group's actions?"
@@ -331,6 +380,7 @@
     },
     {
         "ref_claim": "Caff\u00e8 Nero is a coffeehouse company headquartered in London, England. Established in 1997 by Gerry Ford, Caff\u00e8 Nero runs more than 1,000 coffee houses in eleven countries: the UK, Ireland, Sweden, Poland, Cyprus, Croatia, Turkey, the UAE, Oman, and the United States. ",
+        "ground_truth_ann_target_claim": "Frespresso is a coffeehouse company headquartered in India. Established in 2010 by Dhiren Surjiani, runs more than 25 frespresso outlets in India and Malaysia.",
         "common_ques": [
             "What is the name of a coffeehouse company with an international presence?",
             "Can you mention a company that operates over several outlets in the country?"
@@ -338,6 +388,7 @@
     },
     {
         "ref_claim": "The Statue of Liberty is a colossal neoclassical sculpture on Liberty Island in New York Harbor in New York City, United States.",
+        "ground_truth_ann_target_claim": "The Statue of Unity is a colossal sculpture on the island of Sadhu Bet near Vadodara in the Gujarat, India.",
         "common_ques": [
             "Can you name a famous colossal sculpture?",
             "Can you name a famous statue?"
@@ -345,12 +396,14 @@
     },
     {
         "ref_claim": "Fortescue is a global metal mining and green energy company headquartered in Australia. Fortescue focused on iron ore mining under the name of Fortescue Metals Group until July 2023.",
+        "ground_truth_ann_target_claim": "Khadim's is a well-known footwear and accessories retail company headquartered in West Bengal. Khadim's focused in providing a wide range of shoes, bags, and related products for men, women, and children, catering to various tastes and preferences.",
         "common_ques": [
             "Can you tell a name of a company?"
         ]
     },
     {
         "ref_claim": "A Tale of Two Cities is a historical novel published in 1859 by Charles Dickens, set in London and Paris before and during the French Revolution.",
+        "ground_truth_ann_target_claim": "The House of Blue Mangoes is a historical novel published in 2002 by David Davidar, set in Chevathar during the historical events like caste conflicts, World War II, and India's struggle for independence",
         "common_ques": [
             "What is an example of a historical novel?",
             "Can you name a novel that is set during the political change happening in the country?"
@@ -358,6 +411,7 @@
     },
     {
         "ref_claim": "Ras Al Jinz or Ras al-Junayz, located in Ash-Sharqiyyah South Governorate, Oman, is the easternmost point of the Arabian Peninsula. It is a nesting site for green turtles, as also is the beach at the local village of Ras al Hadd. It is home to a well-known turtle reserve. Important archaeological discoveries have also been made at this site, demonstrating connections to the Indus Valley in ancient times.",
+        "ground_truth_ann_target_claim": "Velas Beach, located in the state of Maharashtra, India, is at the beginning of the UNESCO World Heritage Western Ghats. the beach is the nesting site for thousands of Olive Ridley turtles, who come here to lay their eggs, in the village of Velas. It is a well known turtle reserve. It hosts an annual Turtle Festival.",
         "common_ques": [
             "Can you name a place that is known as a nesting site for turtles?",
             "Can you name a turtle reserve?"
@@ -365,6 +419,7 @@
     },
     {
         "ref_claim": "Neighbours is an Australian television soap opera. It has been successful and popular since its inception in 1985. The show focused on family and relationship dynamics, portraying the interactions and conflicts within families and communities. Since the show's inception, several spin-offs have been produced. ",
+        "ground_truth_ann_target_claim": "Yeh Hai Mohabbatein is an Indian romantic drama television series. It has been successful and popular since its inception in 2013 till its conclusion in 2019. The show focused on family and relationship dynamics, portraying the interactions and conflicts within families and communities. Since the show's conclusion a spin-off has been produced.",
         "common_ques": [
             "Can you name a television series which has been successful since its inception?",
             "What is an example of a television series that focuses on family and relationship dynamics?",
@@ -373,6 +428,7 @@
     },
     {
         "ref_claim": "The Punakha Dzong is the administrative centre of Punakha District in Punakha, Bhutan. Constructed by Ngawang Namgyal, 1st Zhabdrung Rinpoche, in 1637\u201338. It is one of the most majestic structures. The dzong houses the sacred relics of the southern Drukpa Lineage of the Kagyu school of Tibetan Buddhism, including the Rangjung Kharsapani and the sacred remains of Ngawang Namgyal and the tert\u00f6n Pema Lingpa.",
+        "ground_truth_ann_target_claim": "The Thiksey Monastery is the administrative centre of Thiksey District in Ladakh, India. Constructed by Spon Paldan Sherab, in the 15th century. It is one of the most majestic structures. The monastery houses precious relics of the Gelugpa sect of Tibetan Buddhism, including the peerless statue of Maitreya Buddha and sacred remains of numerous revered lamas and masters.",
         "common_ques": [
             "Can you mention a majestic structure that serves as an administrative center?",
             "Which adminstrative structure houses relics of Tibetian Buddhism?",
@@ -381,6 +437,7 @@
     },
     {
         "ref_claim": "The Mott MacDonald Group is a management, engineering and development consultancy headquartered in the United Kingdom. It employs +18,000 staff in 150 countries. Mott MacDonald is one of the largest employee-owned companies in the world.",
+        "ground_truth_ann_target_claim": "The MECON Limited is a management, engineering and development consultancy headquartered in Ranchi. It employs several thousand staff across various locations in India and abroad. MECON Limited is one of the premier consulting firms in India.",
         "common_ques": [
             "Can you name a company which provides management, engineering and development consultancy?",
             "Name a company which provides employment to thousands of people."
@@ -388,12 +445,14 @@
     },
     {
         "ref_claim": "Beiersdorf AG is a German multinational company that manufactures personal-care products and pressure-sensitive adhesives headquartered in Hamburg, Germany. Its brands include Elastoplast, Eucerin, Labello, La Prairie, Nivea, Tesa SE and Coppertone.\n",
+        "ground_truth_ann_target_claim": "Lotus Herbals is an Indian company that manufactures personal-care and skincare products, headquartered in Delhi. Its brands include Lotus Herbals, Lotus WhiteGlow, Lotus Sunsense, and Lotus Men.",
         "common_ques": [
             "Can you provide an example of a company that produces personal-care products?"
         ]
     },
     {
         "ref_claim": "Jabal Samhan Nature Reserve is a nature reserve in the area of Jabal Sam\u1e25\u0101n in Dhofar, Oman. It has an area of 4,500 square kilometers (1,700 sq mi) and has no permanent population. Being in the region of the Dhofar Mountains, it is one of the last refuges for wild Arabian leopards. Data suggests that around twenty Arabian leopards are left in the reserve.",
+        "ground_truth_ann_target_claim": "Jim Corbett National Park is a national park in the Nainital district of Uttarakhand, India. It has an area of approximately 1,318 km\u00b2. It is the refuge for the endangered Bengal tigers. Data suggests that around 252 Bengal tigers are left in the reserve.",
         "common_ques": [
             "Can you name a place known for its conservation efforts aimed at preserving endangered wild animals?",
             "Name a place which is a refuge for an animal."
@@ -401,18 +460,21 @@
     },
     {
         "ref_claim": "Politico Europe is the European edition of the German-owned news organization Politico reporting on political affairs of the European Union. Its headquarters are located in Brussels with additional offices in London, Berlin, Warsaw, Paris, and Frankfurt.",
+        "ground_truth_ann_target_claim": "Enadu is the Telugu-language news organisation reporting on political affairs of India. Its headquarter is located in Telangana.",
         "common_ques": [
             "Can you mention a news organization that reports on political affairs?"
         ]
     },
     {
         "ref_claim": "Lake Natron is a salt or alkaline lake located in north Ngorongoro District of Arusha Region in Tanzania at the border with Kenya. It is in the Gregory Rift, which is the eastern branch of the East African Rift. The lake is within the Lake Natron Basin, a Ramsar Site wetland of international significance.",
+        "ground_truth_ann_target_claim": "Pulicat Lake is a brackish water lagoon located in the north of Chennai, on the Coromandel Coast, Andhra Pradesh-Tamil Nadu border. It is situated in the Thiruvallur district of Tamil Nadu, and it extends into the state of Andhra Pradesh. The lagoon encompasses the Pulicat Lake Bird Sanctuary.",
         "common_ques": [
             "Can you name a lake at the border of a region?"
         ]
     },
     {
         "ref_claim": "Paris Fashion Week is a series of designer presentations held semi-annually in Paris, France, with spring/summer and autumn/winter events held each year. Dates are determined by the F\u00e9d\u00e9ration de la Haute Couture et de la Mode. Paris Fashion Week is held at venues throughout the city.",
+        "ground_truth_ann_target_claim": "India Fashion Week is a series of designer presentations held twice a year in India, with spring/summer and autumn/winter events held each year. Dates are determined by the Fashion Design Council of India (FDCI). India Fashion Week is held at various venues throughout India.",
         "common_ques": [
             "Name a series of designer presentations having spring/summer and autumn/winter events.",
             "Can you provide an example of a Fashion Week which is held at various venues throughout the region?"
@@ -420,12 +482,14 @@
     },
     {
         "ref_claim": "American Idol is an American singing competition television series created by Simon Fuller, produced by Fremantle North America and 19 Entertainment, and distributed by Fremantle North America.",
+        "ground_truth_ann_target_claim": "Indian Idol is an Indian singing competition television series adapted from the original British show Pop Idol, originally produced by Miditech Studios and distributed by Sony Pictures Networks India.",
         "common_ques": [
             "Can you name a reality show based on singing?"
         ]
     },
     {
         "ref_claim": "Dreamworld is a theme park and zoo situated on the Gold Coast in Queensland. It is Australia's biggest theme park with over 40 rides and attractions.",
+        "ground_truth_ann_target_claim": "Black Thunder - Water Theme Park is a water park is situated in Coimbatore in Tamil Nadu. It is Tamil Nadu's biggest water park with over 70 rides and attractions.",
         "common_ques": [
             "Can you name a theme park with numerous rides?",
             "Could you provide the name of one of the biggest amusement park of the region?"
@@ -433,24 +497,28 @@
     },
     {
         "ref_claim": "Lupita Amondi Nyong'o is a Mexican-Kenyan actress. She is the recipient of several accolades, including an Academy Award and a Daytime Emmy Award with nominations for a Tony Award and a Golden Globe Award.",
+        "ground_truth_ann_target_claim": "Priyanka Chopra is an Indian actress and producer. She is the recipient of several accolades, including National Film Award, five Filmfare Awards and the Padma Shri Award.",
         "common_ques": [
             "Can you name an actress who is the recipient of several accolades?"
         ]
     },
     {
         "ref_claim": "Mary Stevenson Cassatt (May 22, 1844\u2013June 14, 1926) was an American painter and printmaker. She was born in Allegheny, Pennsylvania (now part of Pittsburgh's North Side), and lived much of her adult life in France, where she befriended Edgar Degas and exhibited with the Impressionists. Cassatt often created images of the social and private lives of women, with particular emphasis on the intimate bonds between mothers and children.",
+        "ground_truth_ann_target_claim": "Amrita Sher-Gil (January 30, 1913 \u2013 December 5, 1941) was a Hungarian-Indian painter and artist. She was born in Budapest, Hungary. and lived much of her adult life traveling between Europe and India and exhibiting her paintings. Sher-Gil often created images of women, with particular emphasis on intimate bonds.",
         "common_ques": [
             "Can you provide with an example of a painter who often created images of women?"
         ]
     },
     {
         "ref_claim": "True Detective is an American anthology crime drama television series created by Nic Pizzolatto. The series, broadcast by the premium cable network HBO in the United States, premiered on January 12, 2014.",
+        "ground_truth_ann_target_claim": "Malgudi Days is an Indian anthology drama television series created by T.S. Narasimhan. The series, broadcast by the national public broadcaster Doordarshan in India, premiered on September 24, 1986.",
         "common_ques": [
             "Can you provide an example of an anthology drama television series?"
         ]
     },
     {
         "ref_claim": "The Binder Park Zoo is a 433-acre zoo that opened in 1977 near Battle Creek, Michigan, in the United States. Binder Park Zoo is one of the largest zoos in Michigan, and features a large array of animals and plants, including the Wild Africa Exhibit.",
+        "ground_truth_ann_target_claim": "The Nehru Zoological Park is a 380-acre zoo that opened in 1963 near Mir Alam Tank in Bahadurpura, Hyderabad, Telangana, India. The Nehru Zoological Park is one of the largest zoos in Telangana and features a wide variety of animals and plants, including the Indian rhino and Asiatic Lion Exhibit.",
         "common_ques": [
             "Name a zoo known for its wide variety of animals and plants.",
             "Can you provide with an example of one of the largest zoos in the region."
@@ -458,6 +526,7 @@
     },
     {
         "ref_claim": "Diamond is one of the most exported goods of South Africa. The main destination of diamonds exports from South Africa are China, United Arab Emirates, Botswana, Belgium, and United States.",
+        "ground_truth_ann_target_claim": "Gold Jewelry is one of the most exported goods of India. The main destination of Gold Jewelry exports from India are United States, United Arab Emirates, Thailand and Singapore.",
         "common_ques": [
             "Name one of the most exported product.",
             "Can you name a product whose main destination of export is United States and United Arab Emirates?"
@@ -465,6 +534,7 @@
     },
     {
         "ref_claim": "Cents are the smallest units of currency in Australia. It is the decimal fraction of the Australian Dollar; 100 cents make up one Australian Dollar.",
+        "ground_truth_ann_target_claim": "Paisa is the smallest units of currency in India. It is the decimal fraction of the Indian Rupee; 100 paisa make up one Indian Rupee.",
         "common_ques": [
             "Name the smallest unit of currency?",
             "Which currency unit is the decimal fraction of its bigger unit?"
@@ -472,6 +542,7 @@
     },
     {
         "ref_claim": "Marc Jorgenson\u00a0is a Canadian electronics inventor, writer, musician and recording engineer. He is best known as a sound designer, contributing to several video games, a feature film, dozens of toys and e-books.",
+        "ground_truth_ann_target_claim": "Ashish Ambekar is an Indian sound designer, musician, and recording engineer. He is best known as a sound designer, contributing to several feature films and video games.",
         "common_ques": [
             "Name the sound designer who has contributed to video games and films?",
             "Can you give an example of a sound designer who also is a musician?"
@@ -479,6 +550,7 @@
     },
     {
         "ref_claim": "The Battle of Fort Sumter was the bombardment of Fort Sumter near Charleston, South Carolina by the South Carolina militia. It ended with its surrender by the United States Army, beginning the American Civil War.",
+        "ground_truth_ann_target_claim": "Bekal Fort, in Kasargod District, was an important military station for Tipu Sultan when he led a military expedition to capture Malabar. The fort came under the British East India Company's control and became the headquarters of the Bekal Taluk of South Canara District in Bombay presidency.",
         "common_ques": [
             "Name the forts that played pivotal roles in military campaigns or conflicts?",
             "Mention the forts that symbolizes significant moments or turning points in the history of a region or nation?",
@@ -488,6 +560,7 @@
     },
     {
         "ref_claim": "Bibliomotocarro is a mobile library in southern region of Italy. It promotes reading and education. It is committed to providing access to books and literature. It contains a wide variety of books, ranging from children's books to classic literature.",
+        "ground_truth_ann_target_claim": "The Connemara Public Library is a library in southern region of India. It promotes reading and education. It is committed to providing access to books and literature. It contains a wide variety of books, ranging from rare books to classic literature and publications.",
         "common_ques": [
             "Can you name a library that \npromotes reading and education?",
             "Can you provide a name for a library located in southern region of a country?",
@@ -496,6 +569,7 @@
     },
     {
         "ref_claim": "Love on the Spectrum is an Australian reality television show that follows people on the autism spectrum as they explore the dating world. The show is produced by Northern Pictures for ABC TV, and was made available to stream on ABC iview and Netflix.\n",
+        "ground_truth_ann_target_claim": "In Real Love is an Indian reality television show that follows people with varying relationship experiences and backgrounds as they explore and navigate the complex world of love and relationships. The show is produced by Monozygotic and was made available to stream on Netflix.",
         "common_ques": [
             "Can you name a reality television show which streams on Netflix?",
             "Can you provide an example of a reality show that follows the love life of its participants?"
@@ -503,6 +577,7 @@
     },
     {
         "ref_claim": "Hangzhou Zoo is a zoo located in Hangzhou, Zhejiang province, People's Republic of China. The zoo was officially opened in 1958. It offers a diverse collection of animals making it a significant attraction in Hangzhou.",
+        "ground_truth_ann_target_claim": "Jaipur Zoo is a zoo located in Jaipur, Rajasthan, India. The zoo was officially opened in 1877. It offers a diverse collection of wildlife making it a significant attraction in Jaipur.",
         "common_ques": [
             "Can you mention a zoo that is a popular attraction in its respective city?",
             "Which zoo offers diverse collection of wildlife?"
@@ -510,6 +585,7 @@
     },
     {
         "ref_claim": "American football (referred to simply as football in the United States and Canada), also known as gridiron football, is a team sport played by two teams of eleven players on a rectangular field with goalposts at each end. The objective is to advance the ball into the opposing team's end zone for a touchdown or kicking the ball through the opponent's goalposts for a field goal.",
+        "ground_truth_ann_target_claim": "Football, also known as soccer, is a team sport played by two teams of eleven players on a rectangular field with goalposts at each end. The objective is to kick the ball through the opponent's goalposts for a goal.",
         "common_ques": [
             "Can you name a team sport played by two teams of eleven players on a rectangular field with goalposts at each end?",
             "What is another name for the sport where the objective is to kick the ball through the opponent's goalposts for a field goal?",
@@ -518,12 +594,14 @@
     },
     {
         "ref_claim": "The Order of Australia is an honour that recognises Australian citizens and other persons for outstanding achievement and service. It was established on 14 February 1975 by Elizabeth II, Queen of Australia, on the advice of the Australian Government. Before the establishment of the order, Australian citizens received British honours.",
+        "ground_truth_ann_target_claim": "The Bharat Ratna is an honor that recognizes Indian citizens for their exceptional service and contribution in any field. It was established on 2 January 1954 by Rajendra Prasad, former President of India, based on the recommendations of the Government of India.",
         "common_ques": [
             "Name an honour that recognises citizens of its country for their outstanding service."
         ]
     },
     {
         "ref_claim": "Standard Chinese is designated as the official language of mainland China. There are standard Chinese speakers in other countries like United Nations, Singapore, and Taiwan.",
+        "ground_truth_ann_target_claim": "Kannada is designated as the official language of mainland Karnataka. There are standard Kannada speakers in other countries, like United Nations, Singapore, and Malaysia.",
         "common_ques": [
             "What is an example of a country's official language?",
             "Can you name a language whose speakers are in multiple countries?"
@@ -531,6 +609,7 @@
     },
     {
         "ref_claim": "The Russian State Library is one of the three national libraries of Russia, located in Moscow. It is the largest library in the country, largest in Europe and one of the largest in the world. Its holdings crossed over 47 million units in 2017. ",
+        "ground_truth_ann_target_claim": "The State Central Library is one of the state libraries of India, located in Hyderabad. It is the largest library in the state of Telangana. Its holdings crossed over five hundred thousand units in 2021.",
         "common_ques": [
             "Can you name a library known for being one of the largest in its region?",
             "Which library houses a vast collection of items?"
@@ -538,12 +617,14 @@
     },
     {
         "ref_claim": "EGMA Sinkhole a.k.a. Peynirlik\u00f6n\u00fc Sinkhole, is a sinkhole and the deepest cave in Turkey. It is located at Sug\u00f6z\u00fc village of Anamur, Mersin. The sinkhole is 1,429 m (4,688 ft) deep and 3,118 m (10,230 ft) long. EGMA is an acronym that stands for Evren G\u00fcnay - Mehmet Ali \u00d6zel.",
+        "ground_truth_ann_target_claim": "The Borra Caves, one of the largest in India. It is located on the East Coast of India. The cave is 80 m (260 ft) deep.",
         "common_ques": [
             "Can you name a cave whose depth is known?"
         ]
     },
     {
         "ref_claim": "The Mall of America is the largest shopping mall in the United States of America. The mall offers a wide range of attractions and amenities, including shopping, dining, and entertainment options.",
+        "ground_truth_ann_target_claim": "Lulu Mall is the largest shopping mall in India. The mall offers a wide range of attractions and amenities, including shopping, dining, and entertainment options.",
         "common_ques": [
             "Name the largest shopping mall in the country.",
             "Which mall offers wide range of \nattractions and amenities?",
@@ -552,6 +633,7 @@
     },
     {
         "ref_claim": "The Imperial Palace is the main residence of the Emperor of Japan. It is a large park-like area located in the Chiyoda district of the Chiyoda ward of Tokyo and contains several buildings including the Fukiage Palace where a Emperor has his living quarters, the main palace where various ceremonies and receptions take place, some residences of the Imperial Family, an archive, museums and administrative offices.",
+        "ground_truth_ann_target_claim": "The Udaipur City Palace was the residence of the Maharanas of Udaipur. It is a large palace complex located on the east bank of Lake Pichola and contains several palaces including the Sheesh Mahal, Shambu Niwas the residences of the royal family, temples, and administrative offices.",
         "common_ques": [
             "Can you name a palace which is or was a residence of the region's emperor?",
             "Describe a large palace complex with multiple buildings within it."
@@ -559,12 +641,14 @@
     },
     {
         "ref_claim": "David Matthew Altshuler is a clinical endocrinologist and human geneticist. He is Executive Vice President, Global Research and Chief Scientific Officer at Vertex Pharmaceuticals. ",
+        "ground_truth_ann_target_claim": "Anuranjan Anand is a human geneticist. He is a professor at the Molecular Biology and Genetics Unit and an associate faculty member at the Neuroscience Unit of the Jawaharlal Nehru Centre for Advanced Scientific Research.",
         "common_ques": [
             "Can you name a human geneticist who holds an important position in an organisation?"
         ]
     },
     {
         "ref_claim": "Angel food cake, or angel cake, is a type of sponge cake made with egg whites, flour, and sugar. A whipping agent, such as cream of tartar, is commonly added. It differs from other cakes because it uses no butter. Its aerated texture comes from whipped egg white.",
+        "ground_truth_ann_target_claim": "Pitha is a type of cake or dumpling made with rice flour or wheat flour, and often filled with sweet or savory ingredients- sugar, jaggery, sesame seeds and some versions may have a filling, garnish, or sauce. Its soft and spongy to crispy and flaky texture can vary widely depending on the ingredients and method used.",
         "common_ques": [
             "Can you name a dessert which is a type of a cake?",
             "Name a dessert which has flour as one of its ingredients."
@@ -572,6 +656,7 @@
     },
     {
         "ref_claim": "DLR Site Lampoldshausen is an institution which has its focus on propulsion systems and aerospace applications. It is involved in research and development related to rocket propulsion and combustion chambers, emphasizing the importance of fatigue life prediction and materials testing for reliable performance in aerospace and energy generation applications",
+        "ground_truth_ann_target_claim": "Liquid Propulsion Systems Centre is an institution which has its focus on propulsion systems and aerospace applications. It is involved in research and development related to rocket propulsion and combustion chambers, emphasizing the importance of fatigue life prediction and materials testing for reliable performance in aerospace and energy generation applications",
         "common_ques": [
             "Can you mention an institution that focuses on aerospace applications?",
             "Name an institution involved in research and development related to rocket propulsion."
@@ -579,6 +664,7 @@
     },
     {
         "ref_claim": "Intense Tropical Cyclone Enawo was the strongest tropical cyclone of the 2016-17 South-West Indian Ocean cyclone season. Enawo was the strongest tropical cyclone to strike Madagascar since Gafilo in 2004, killing 78 people and causing $400 million in damages.",
+        "ground_truth_ann_target_claim": "Intense Tropical Cyclone Phailin was the strongest tropical cyclone of the 2013. Phailin was the strongest tropical cyclone to strike Odisha since the 1999 Odisha cyclone, killing over 46 people and causing US$4.26 billion in damages.",
         "common_ques": [
             "Can you give an example of a tropical cyclone that caused loss of lives?",
             "Provide the name of one of the strongest tropical cyclones."
@@ -586,6 +672,7 @@
     },
     {
         "ref_claim": "Vietnam is the world's largest producer and exporter of culinary black pepper. The value of black pepper exported from Vietnam is in billions. The destinations for it's exports are India, China, United States, United Arab Emirates, Germany and many other countries.",
+        "ground_truth_ann_target_claim": "India is the world's largest producer and exporter of culinary spices. The value of spices exported from India is in billions. The destinations for it's exports are United States, United Arab Emirates, Bangladesh and many other countries.",
         "common_ques": [
             "Name a food ingredient of which the country is the largest producer and exporter.",
             "Name a food ingredient which exported to United States and United Arab Emirates."
@@ -593,6 +680,7 @@
     },
     {
         "ref_claim": "The Monkey King or Sun Wukong is a fictional character best known as one of the main players in the 16th-century Chinese novel Journey to the West, and many later stories and adaptations. In the novel, Sun Wukong is a monkey born from a stone who acquires supernatural powers through Taoist practices.",
+        "ground_truth_ann_target_claim": "Bantul is a fictional character best known as one of the main players in the 1964 Indian comic strip. In the comic strip, Bantul is a superhero, with a well-built body and God-like strength.",
         "common_ques": [
             "Can you recall a well-known fictional character who has superhero powers?",
             "Name a cartoon character which came in existence  many years ago."
@@ -600,6 +688,7 @@
     },
     {
         "ref_claim": "Phillip Youmans (born February 18, 2000) is an American filmmaker. He is the first African-American director to win the Founders Prize at Tribeca Film Festival, which he received for his 2019 directorial debut, Burning Cane.\n\n",
+        "ground_truth_ann_target_claim": "Kishan Srikanth (born 6 January 1996) is an Indian director. He is the youngest director to win National Film Award for Best Children's Film, which he received for his 2009 directorial debut, Care of Footpath.",
         "common_ques": [
             "Can you mention a director who won a major award for their debut film?",
             "Name a director who has created history in their country."
@@ -607,18 +696,21 @@
     },
     {
         "ref_claim": "Paula Michelle White-Cain is an American televangelist and a proponent of prosperity theology.\n  White became chair of the evangelical advisory board in Donald Trump's administration. She delivered the invocation at his inauguration, on January 20, 2017. She is the first female clergy member to deliver the invocation.",
+        "ground_truth_ann_target_claim": "Sadhguru is an Indian spiritual leader and speaker and proponent of integral yoga. Sadhguru founded the Isha Foundation, a non-profit organization. He has also addressed at the annual World Economic Forum in 2007, 2017 and 2020.",
         "common_ques": [
             "Can you name a motivational speaker who has addressed an important event?"
         ]
     },
     {
         "ref_claim": "Matsuo Bash\u014d, born Matsuo Kinsaku, later known as Matsuo Ch\u016bemon Munefusa, was the most famous Japanese poet of the Edo period. During his lifetime, Bash\u014d was recognized for his works in the collaborative haikai no renga form; today, after centuries of commentary, he is recognized as the greatest master of haiku.",
+        "ground_truth_ann_target_claim": "Mirabai, born Jashoda Rao Ratan Singh Rathore, later known as Sant Mirabai, was a famous Hindu mystic poet. During her lifetime, Mirabai was recognized as a devotee of Krishna; today, after centuries of commentary, she is recognized as one of the greatest masters of doha.",
         "common_ques": [
             "Can you name a poet who is recognized for their works?"
         ]
     },
     {
         "ref_claim": "Kinji Fukasaku was a Japanese film director and screenwriter. Known for his \"broad range and innovative filmmaking\", Fukasaku has worked in many different genres and styles, but was best known for his gritty yakuza films, typified by the Battles Without Honor and Humanity series.",
+        "ground_truth_ann_target_claim": "Rohit Shetty is an Indian film director, writer, and producer. Known for his \"high octane and mass-friendly films\", Shetty has worked in various genres, but is best known for action, comedy, and masala films typified by the series, Golmaal and Singham.",
         "common_ques": [
             "Can you name a film director known for working across various genres?",
             "Can you name a film director who also holds other professional titles in the movie industry?"
@@ -626,6 +718,7 @@
     },
     {
         "ref_claim": "Tutankhamun, Tutankhamon or Tutankhamen, also known as Tutankhaten, was the antepenultimate pharaoh of the Eighteenth Dynasty of ancient Egypt. His death marked the cessation of the dynasty's royal line.\n",
+        "ground_truth_ann_target_claim": "Vasudeva Kanva was the founder and ruler of the Kanva dynasty of ancient India. His death marked the succession of his son Bhumimitra.",
         "common_ques": [
             "Can you name an individual who was the ruler of a dynasty?",
             "Name a ruler who ruled in the ancient period."
@@ -633,12 +726,14 @@
     },
     {
         "ref_claim": "Andrei Dmitrievich Sakharov was a Soviet physicist and a Nobel Peace Prize laureate, which he was awarded in 1975 for emphasizing human rights around the world.",
+        "ground_truth_ann_target_claim": "Mother Teresa was an Albanian-Indian Roman Catholic nun and a Nobel Peace Prize laureate, which she was awarded in 1979 for her humanitarian work among India's poor.",
         "common_ques": [
             "Can you name a person who was awarded Nobel Peace Prize for their contribution towards betterment of the society?"
         ]
     },
     {
         "ref_claim": "William Dwight Billings was an American ecologist. He was one of the foundational figures in the field of plant physiological ecology and made major contributions to desert and arctic/alpine ecology.\n",
+        "ground_truth_ann_target_claim": "N. Balakrishnan Nair was an Indian ecologist and marine biologist. He was one of the pioneering figures in the field of tropical wetland mangrove ecology and made major contributions to the understanding and conservation of mangrove ecosystems and the management of marine algae and seagrass on India's tropical coastlines.",
         "common_ques": [
             "Can you name an ecologist?",
             "Name an individual who made significant contributions to a specific field of ecology?"
@@ -646,6 +741,7 @@
     },
     {
         "ref_claim": "Ahmed Shawqi, nicknamed the Prince of Poets, was an Egyptian poet laureate, linguist, and one of the most famous Arabic literary writers of the modern era in the Arab World.",
+        "ground_truth_ann_target_claim": "Amir Khusrow, nicknamed the Parrot of India, was an Indian poet, sufi singer, and scholar and one of the most famous writers of the medieval era in India.",
         "common_ques": [
             "Can you name a poet who is known as one of the most famous writers of their era?",
             "Name a poet who was given a nickname."
@@ -653,12 +749,14 @@
     },
     {
         "ref_claim": "George Washington was an American Founding Father, military officer, and politician who served as the first president of the United States from 1789 to 1797. ",
+        "ground_truth_ann_target_claim": "Rajendra Prasad was an Indian freedom fighter, politician, lawyer and scholar who served as the first President of India from 1950 to 1962.",
         "common_ques": [
             "Who was a prominent leader who served as the first president of a country?"
         ]
     },
     {
         "ref_claim": "Comcast Cable Communications, LLC, doing business as Xfinity, is an American telecommunications business segment and division of Comcast Corporation. ",
+        "ground_truth_ann_target_claim": "Atria Convergence Technologies (ACT) is an Indian telecommunications company.",
         "common_ques": [
             "Can you name a company which does business in telecommunications?",
             "Can you name a company which provides internet services?"
@@ -666,6 +764,7 @@
     },
     {
         "ref_claim": "On July 6, 2017, a two-hectare wildfire began west of 100 Mile House, British Columbia, Canada marking the beginning of the record-breaking 2017 wildfire season in British Columbia. ",
+        "ground_truth_ann_target_claim": "In March 2015, a significant wildfire sparked across the Simlipal national park, Odisha, India, marking the beginning of a significant wildfire season in the region.",
         "common_ques": [
             "Name a place where a wildfire marked the beginning of a wildfire season?",
             "Mention a natural calamity caused by fire?"
@@ -673,6 +772,7 @@
     },
     {
         "ref_claim": "The Bank of America Corporation is an American multinational investment bank and financial services holding company headquartered at the Bank of America Corporate Center in Charlotte, North Carolina, with investment banking and auxiliary headquarters in Manhattan.",
+        "ground_truth_ann_target_claim": "Dhanlaxmi Bank Limited is a Indian private sector bank and financial services holding company, headquartered in Dhanlaxmi Buildings, in Naickanal, Thrissur, Kerala.",
         "common_ques": [
             "Can you name a bank and a financial service holding company?",
             "Can you name a bank headquarters located in a building named after itself?"
