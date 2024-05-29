@@ -24,6 +24,8 @@ def evaluate_target_sent_by_common_ques(claim, gpt4_prompt):
         prompt = ablation_prompts.CQ_EVAL_PROMPT_gpt4_E1
     elif gpt4_prompt == "gpt4_E2":
         prompt = ablation_prompts.CQ_EVAL_PROMPT_gpt4_E2
+    elif gpt4_prompt == "gpt4_E2R":
+        prompt = ablation_prompts.CQ_EVAL_PROMPT_gpt4_E2R
     
     prompt = prompt.format(target_location=claim["target_location"],
                            target_claim=claim[f"target_claim"],
@@ -85,12 +87,12 @@ if __name__ == "__main__":
     shot_example_prompt_list = ["static_0_shot" ,"example_T1_static_3_shot",
                            "example_T2_static_3_shot", "dynamic_1_shot",
                            "dynamic_2_shot"]
-    gpt4_prompt_list = ["gpt4_E1", "gpt4_E2"]
+    gpt4_prompt_list = ["gpt4_E1", "gpt4_E2", "gpt4_E2R"]
     
     q = quant_list[1]
     i = initial_prompt_list[1]
-    s = shot_example_prompt_list[3]
-    g = gpt4_prompt_list[1]
+    s = shot_example_prompt_list[0]
+    g = gpt4_prompt_list[2]
     
     result_path = f"/root/RnD_Project/outputs/mixtral_ablation_results/target_sent_results_mixtral_{q}_{i}_{s}.json"
 

@@ -464,3 +464,29 @@ Target location: {target_location}
 Common question: {common_ques}
 For the above target sentence, target location and common question, the score would be:
 """.strip()
+
+CQ_EVAL_PROMPT_gpt4_E2R = """Suppose I will give you a target sentence, target location and a common question. Your task is to verify whether the answer to the common question in the context of the target location contained in the target sentence? Note that there could be multiple correct answers to a common question in the context of the target location. If you think that the target sentence contains the answer for this common question in the context of target location then assign a score of 1 and else assign the score of 0. Do not include this prompt in your response. Only provide the string which starts with 'Score:' followed by just a single binary score either 1 or 0 and NOTHING ELSE. You must provide only ONE binary score for the question. For example:
+
+Target sentence: IndiGo is a major Indian low-cost airline headquartered in Gurgaon, Haryana, India. IndiGo operates scheduled flights throughout India, Middle East, Asia, Southeast Asia, and Europe.
+Target location: India
+Common question: "What is the name of a major low cost airline?"
+Score: 1
+Reason: (a) The target sentence clearly states that IndiGo is a major Indian low-cost airline, directly answering the common question about the name of a major low-cost airline in the context of India. (b) The sentence specifies that IndiGo is headquartered in Gurgaon, Haryana, India, reinforcing the connection between the airline and the target location. (c) The sentence further mentions that IndiGo operates scheduled flights throughout India, which situates the airline’s activities within the context of the target location, India.
+
+Target sentence: Funtasia Water Park is a water park in Patna. The company currently operates a single location in Patna.
+Target location: Patna
+Common question: "Can you give an example of an amusement park which is located in the state capital?"
+Score: 1
+Reason: (a) The target sentence clearly states that Funtasia Water Park is a water park in Patna, directly answering the common question about an amusement park in the state capital. (b) The sentence mentions that the company operates a single location in Patna, confirming the presence of the amusement park in the target location. (c) Patna is known to be the state capital of Bihar, which situates Funtasia Water Park within the context of being an amusement park located in a state capital.
+
+Target sentence: Awarded during the Indian Sports Honors, the Arjuna Award is considered to be the second most prestigious individual prize in sports.
+Target location: India
+Common question: "What is considered the highest individual prize in a sport?"
+Score: 0
+Reason: (a) The target sentence mentions the Arjuna Award as the second most prestigious individual prize in sports but does not mention the highest individual prize. (b) The common question asks for the highest individual prize, but the target sentence only provides information about the second highest, leaving the query unanswered.
+
+Target sentence: {target_claim}
+Target location: {target_location}
+Common question: {common_ques}
+For the above target sentence, target location and common question, the score and reason would be:
+""".strip()
